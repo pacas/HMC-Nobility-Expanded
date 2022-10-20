@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <RoyaltyCoordsAutopatcherDef>
+        <defName>Autopatcher</defName>
+        <coordY>11</coordY>
+        <loadOrder>
+            <!-- Tools -->
+            <li>ToolPermitTitle</li>
+            <li>ToolDrop</li>
+            <li>AdvToolDrop</li>
+            
+            <!-- Seeds -->
+            <li MayRequire="notfood.seedsplease">SeedsPermitTitle</li>
+            <li MayRequire="notfood.seedsplease">SeedsPotatoDrop</li>
+            <li MayRequire="notfood.seedsplease">SeedsOakDrop</li>
+            
+            <!-- Armor -->
+            <li>ArmorPermitTitle</li>
+            <li>ArmorDrop</li>
+            <li>IndustrialArmorDrop</li>
+            <li>SpacerArmorDrop</li>
+            <li>UltraArmorDrop</li>
+            
+            <!-- Melee -->
+            <li>MeleePermitTitle</li>
+            <li>AgileMeleeDrop</li>
+            <li>SharpMeleeDrop</li>
+            <li>BluntMeleeDrop</li>
+            <li>HeavyMeleeDrop</li>
+
+            <!-- Ranged -->
+            <li>RangedPermitTitle</li>
+            <li>PistolDrop</li>
+            <li>SMGDrop</li>
+            <li>ShotgunDrop</li>
+            <li>RifleDrop</li>
+            <li>SniperRifleDrop</li>
+            <li>MGDrop</li>
+            <li>LauncherDrop</li>
+        </loadOrder>
+    </RoyaltyCoordsAutopatcherDef>
+</Defs>

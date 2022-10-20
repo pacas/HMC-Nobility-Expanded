@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- Vanilla Titles -->
+    <RoyalTitlePermitDef ParentName="DropResourcesTitle">
+        <defName>BasePermitVanillaTitle</defName>
+        <label>Base Requests</label>
+        <uiPosition>(1,0)</uiPosition>
+        <description>Requests for a drop of basic resources or a shuttle.</description>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesTitle">
+        <defName>WorkersPermitVanillaTitle</defName>
+        <label>Workers</label>
+        <uiPosition>(1,4)</uiPosition>
+        <description>Requests for temporary workers.</description>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesTitle">
+        <defName>SoldiersPermitVanillaTitle</defName>
+        <label>Soldiers</label>
+        <uiPosition>(1,6)</uiPosition>
+        <description>Requests for temporary soldiers.</description>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesTitle">
+        <defName>OrbitalPermitVanillaTitle</defName>
+        <label>Orbital strikes</label>
+        <uiPosition>(1,9)</uiPosition>
+        <description>Requests for orbital strikes.</description>
+    </RoyalTitlePermitDef>
+
+    <!-- New drops-->
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>BlocksDrop</defName>
+        <label>Blocks drop</label>
+        <description>Request a drop of 200 random blocks (bricks included).\n\nPermit points cost - 1 point.</description>
+        <minTitle>Acolyte</minTitle>
+        <uiPosition>(0,3)</uiPosition>
+        <cooldownDays>14</cooldownDays>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>200</Steel>
+            </itemsToDrop>
+            <favorCost>2</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedThingsBase">
+        <defName>BlocksDropStuff</defName>
+        <dynamicCoords>False</dynamicCoords>
+        <thingsToChoose>
+            <li>BlocksMarble</li>
+            <li>BlocksSandstone</li>
+            <li>BlocksGranite</li>
+            <li>BlocksLimestone</li>
+            <li>BlocksSlate</li>
+            <li>ClayBrick</li>
+        </thingsToChoose>
+    </OrderedStuffDef>
+
+    <RoyalTitlePermitDef>
+        <defName>CallMilitaryAidSmallPlus</defName>
+        <label>call bigger trooper squad</label>
+        <description>Call a group of 6 light troopers to aid you in battle.\n\nPermit points cost - 4 points.</description>
+        <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+        <minTitle>Praetor</minTitle>
+        <faction>Empire</faction>
+        <prerequisite>CallMilitaryAidSmall</prerequisite>
+        <permitPointCost>4</permitPointCost>
+        <uiPosition>(1,7)</uiPosition>
+        <royalAid>
+            <favorCost>6</favorCost>
+            <pawnKindDef>Empire_Fighter_Trooper</pawnKindDef>
+            <pawnCount>6</pawnCount>
+            <targetingRange>39.9</targetingRange>
+        </royalAid>
+        <cooldownDays>40</cooldownDays>
+    </RoyalTitlePermitDef>
+</Defs>
