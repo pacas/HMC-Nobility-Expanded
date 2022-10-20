@@ -1,5 +1,15 @@
 ----------------------------------------------------------------------
 
+- Changelog "HMC Empire Rewards" v0.5 (1.3):
+
+1) Redesigned privilege table - now it is dynamic and is generated depending on the installed mods! This will allow in the future to add privileges for many different mods, which can be disabled for other users!
+2) All privileges were divided into groups, and now the groups have titles!
+
+1) Переработана таблица привилегий - теперь она динамическая и генерируется в зависимости от установленных модов! Это позволит в будущем добавить привилегии для множества разных модификаций, которые могут быть отключены у других пользователей!
+2) Все привилегии были разделены на группы, а теперь у групп есть ещё и заголовки!
+
+----------------------------------------------------------------------
+
 - Changelog "HMC Empire Rewards" v0.4 (1.3):
 
 1) The Empire title system has been redesigned - new titles, smoother opening of privileges, more growth opportunities!
