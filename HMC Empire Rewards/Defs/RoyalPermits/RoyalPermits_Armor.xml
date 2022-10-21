@@ -57,6 +57,7 @@
     <OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>ArmorDropPlusStuff</defName>
         <quality>Excellent</quality>
+        <column>1</column>
         <stuffList>
             <li>TitaniumBar</li>
             <li>TitaniumBar</li>
@@ -115,6 +116,7 @@
     <OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>IndustrialArmorDropPlusStuff</defName>
         <quality>Excellent</quality>
+        <column>1</column>
         <stuffList>
             <li>TitaniumBar</li>
             <li>TitaniumBar</li>
@@ -174,6 +176,7 @@
     <OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>SpacerArmorDropPlusStuff</defName>
         <quality>Excellent</quality>
+        <column>1</column>
         <stuffList>
             <li>PobediteAlloy</li>
             <li>PobediteAlloy</li>
@@ -235,6 +238,7 @@
     <OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>UltraArmorDropPlusStuff</defName>
         <quality>Excellent</quality>
+        <column>1</column>
         <stuffList>
             <li>AlphaPoly</li>
             <li>BetaPoly</li>

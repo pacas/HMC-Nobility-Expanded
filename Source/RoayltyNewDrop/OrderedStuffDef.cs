@@ -13,6 +13,6 @@ namespace RimWorld
         public List<ThingDef> stuffList;
         public List<ThingDef> thingsToChoose;
         public List<int> ammunition;
-        public bool dynamicCoords;
+        public string column;
     }
 }

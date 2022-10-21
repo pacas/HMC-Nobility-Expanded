@@ -55,6 +55,7 @@
         <typeOfQuality>Range</typeOfQuality>
         <typeOfItem>Random</typeOfItem>
         <quality>Excellent</quality>
+        <column>1</column>
         <stuffList>
             <li>Titanium</li>
         </stuffList>
@@ -123,6 +124,7 @@
         <typeOfQuality>Range</typeOfQuality>
         <typeOfItem>Random</typeOfItem>
         <quality>Excellent</quality>
+        <column>1</column>
         <stuffList>
             <li>Titanium</li>
         </stuffList>
@@ -191,6 +193,7 @@
         <typeOfQuality>Range</typeOfQuality>
         <typeOfItem>Random</typeOfItem>
         <quality>Excellent</quality>
+        <column>1</column>
         <stuffList>
             <li>Titanium</li>
         </stuffList>
@@ -253,6 +256,7 @@
         <typeOfQuality>Range</typeOfQuality>
         <typeOfItem>Random</typeOfItem>
         <quality>Excellent</quality>
+        <column>1</column>
         <stuffList>
             <li>Titanium</li>
         </stuffList>

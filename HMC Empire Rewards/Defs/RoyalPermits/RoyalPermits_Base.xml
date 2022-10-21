@@ -17,33 +17,33 @@
             <favorCost>99</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
+
+    <OrderedStuffDef Name="OrderedBase" Abstract="True">
+        <column>0</column>
+    </OrderedStuffDef>
     
-    <OrderedStuffDef Name="OrderedStuffBase" Abstract="True">
+    <OrderedStuffDef ParentName="OrderedBase" Name="OrderedStuffBase" Abstract="True">
         <typeOfDrop>StuffQuality</typeOfDrop>
         <typeOfQuality>Specific</typeOfQuality>
         <typeOfItem>Specific</typeOfItem>
         <ammoUsage>False</ammoUsage>
         <quality>Normal</quality>
-        <dynamicCoords>True</dynamicCoords>
     </OrderedStuffDef>
     
-    <OrderedStuffDef Name="OrderedGunBase" Abstract="True">
+    <OrderedStuffDef ParentName="OrderedBase" Name="OrderedGunBase" Abstract="True">
         <typeOfDrop>Quality</typeOfDrop>
         <typeOfItem>Random</typeOfItem>
         <typeOfQuality>Specific</typeOfQuality>
         <ammoUsage>True</ammoUsage>
         <quality>Normal</quality>
-        <dynamicCoords>True</dynamicCoords>
     </OrderedStuffDef>
     
-    <OrderedStuffDef Name="OrderedThingsBase" Abstract="True">
+    <OrderedStuffDef ParentName="OrderedBase" Name="OrderedThingsBase" Abstract="True">
         <typeOfDrop>Pure</typeOfDrop>
         <typeOfItem>Random</typeOfItem>
-        <dynamicCoords>True</dynamicCoords>
     </OrderedStuffDef>
     
     <!-- Планы -->
-    <!-- патроны -->
     <!-- турели? -->
     <!-- броня знати -->
     <!-- животные? -->
