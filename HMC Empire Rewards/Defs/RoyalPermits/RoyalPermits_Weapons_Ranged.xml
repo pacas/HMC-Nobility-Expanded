@@ -61,6 +61,7 @@
         <defName>PistolDropPlusStuff</defName>
         <typeOfQuality>Range</typeOfQuality>
         <quality>Excellent</quality>
+        <column>1</column>
         <thingsToChoose>
             <li>RF_Gun_AT2K</li>
             <li>RF_Gun_93R</li>
@@ -136,6 +137,7 @@
         <defName>SMGDropPlusStuff</defName>
         <typeOfQuality>Range</typeOfQuality>
         <quality>Excellent</quality>
+        <column>1</column>
         <thingsToChoose>
             <li>RF_Gun_Skorpion</li>
             <li>RF_Gun_Vector</li>
@@ -203,6 +205,7 @@
         <defName>ShotgunDropPlusStuff</defName>
         <typeOfQuality>Range</typeOfQuality>
         <quality>Excellent</quality>
+        <column>1</column>
         <thingsToChoose>
             <li>Gun_ChainShotgun</li>
             <li>Gun_TacticalShotgun</li>
@@ -276,6 +279,7 @@
         <defName>RifleDropPlusStuff</defName>
         <typeOfQuality>Range</typeOfQuality>
         <quality>Excellent</quality>
+        <column>1</column>
         <thingsToChoose>
             <li>Gun_M4A1Gun</li>
             <li>Gun_AssaultRifle</li>
@@ -351,6 +355,7 @@
         <defName>SniperRifleDropPlusStuff</defName>
         <typeOfQuality>Range</typeOfQuality>
         <quality>Excellent</quality>
+        <column>1</column>
         <thingsToChoose>
             <li>Gun_SniperRifle</li>
             <li>Gun_M42A_USCM</li>
@@ -424,6 +429,7 @@
         <defName>MGDropPlusStuff</defName>
         <typeOfQuality>Range</typeOfQuality>
         <quality>Excellent</quality>
+        <column>1</column>
         <thingsToChoose>
             <li>Gun_HeavyCombatRifle</li>
             <li>Gun_HHMG</li>
@@ -495,6 +501,7 @@
         <defName>LauncherDropPlusStuff</defName>
         <typeOfQuality>Range</typeOfQuality>
         <quality>Excellent</quality>
+        <column>1</column>
         <thingsToChoose>
             <li>Gun_IncendiaryLauncher</li>
             <li>FlamethrowerRM</li>

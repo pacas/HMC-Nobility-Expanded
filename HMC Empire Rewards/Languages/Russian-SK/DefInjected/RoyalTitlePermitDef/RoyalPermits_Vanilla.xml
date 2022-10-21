@@ -2,14 +2,14 @@
 <LanguageData>
 
     <!-- ванильные заголовки -->
-    <BasePermitVanillaTitle.label>Базовые запросы</BasePermitVanillaTitle.label>
-    <BasePermitVanillaTitle.description>Запросы доставки основных ресурсов или вызова челнока.</BasePermitVanillaTitle.description>
-    <WorkersPermitVanillaTitle.label>Рабочие</WorkersPermitVanillaTitle.label>
-    <WorkersPermitVanillaTitle.description>Запросы временных рабочих.</WorkersPermitVanillaTitle.description>
-    <SoldiersPermitVanillaTitle.label>Солдаты</SoldiersPermitVanillaTitle.label>
-    <SoldiersPermitVanillaTitle.description>Запросы временных солдат.</SoldiersPermitVanillaTitle.description>
-    <OrbitalPermitVanillaTitle.label>Орбитальные удары</OrbitalPermitVanillaTitle.label>
-    <OrbitalPermitVanillaTitle.description>Запросы орбитальных ударов.</OrbitalPermitVanillaTitle.description>
+    <BasePermitTitle.label>Базовые запросы</BasePermitTitle.label>
+    <BasePermitTitle.description>Запросы доставки основных ресурсов или вызова челнока.</BasePermitTitle.description>
+    <WorkersPermitTitle.label>Рабочие</WorkersPermitTitle.label>
+    <WorkersPermitTitle.description>Запросы временных рабочих.</WorkersPermitTitle.description>
+    <SoldiersPermitTitle.label>Солдаты</SoldiersPermitTitle.label>
+    <SoldiersPermitTitle.description>Запросы временных солдат.</SoldiersPermitTitle.description>
+    <OrbitalPermitTitle.label>Орбитальные удары</OrbitalPermitTitle.label>
+    <OrbitalPermitTitle.description>Запросы орбитальных ударов.</OrbitalPermitTitle.description>
 
     <!-- почти ванильные привилегии -->
     <BlocksDrop.label>Запрос каменных блоков</BlocksDrop.label>

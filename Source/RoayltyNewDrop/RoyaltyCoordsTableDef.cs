@@ -4,9 +4,9 @@ using Verse;
 
 namespace RimWorld
 {
-    public class RoyaltyCoordsAutopatcherDef : Def
+    public class RoyaltyCoordsTableDef : Def
     {
-        public int coordY;
+        public int coordX;
         [ItemCanBeNull] public List<RoyalTitlePermitDef> loadOrder;
     }
 }

@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <RoyaltyCoordsAutopatcherDef>
-        <defName>Autopatcher</defName>
-        <coordY>11</coordY>
+    <RoyaltyCoordsTableDef>
+        <defName>CoordsTableColumn_0</defName>
+        <coordX>0</coordX>
         <loadOrder>
+            <!-- Vanilla and more -->
+            <li>BasePermitTitle</li>
+            <li>SteelDrop</li>
+            <li>FoodDrop</li>
+            <li>BlocksDrop</li>
+            <li>WorkersPermitTitle</li>
+            <li>CallLaborerTeam</li>
+            <li>SoldiersPermitTitle</li>
+            <li>CallMilitaryAidSmall</li>
+            <li>CallMilitaryAidLarge</li>
+            <li>OrbitalPermitTitle</li>
+            <li>CallOrbitalStrike</li>
+            
             <!-- Tools -->
             <li>ToolPermitTitle</li>
             <li>ToolDrop</li>
@@ -38,5 +51,5 @@
             <li>MGDrop</li>
             <li>LauncherDrop</li>
         </loadOrder>
-    </RoyaltyCoordsAutopatcherDef>
+    </RoyaltyCoordsTableDef>
 </Defs>

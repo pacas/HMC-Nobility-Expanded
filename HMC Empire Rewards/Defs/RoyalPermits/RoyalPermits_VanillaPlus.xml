@@ -3,28 +3,28 @@
 
     <!-- Vanilla Titles -->
     <RoyalTitlePermitDef ParentName="DropResourcesTitle">
-        <defName>BasePermitVanillaTitle</defName>
+        <defName>BasePermitTitle</defName>
         <label>Base Requests</label>
         <uiPosition>(1,0)</uiPosition>
         <description>Requests for a drop of basic resources or a shuttle.</description>
     </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesTitle">
-        <defName>WorkersPermitVanillaTitle</defName>
+        <defName>WorkersPermitTitle</defName>
         <label>Workers</label>
         <uiPosition>(1,4)</uiPosition>
         <description>Requests for temporary workers.</description>
     </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesTitle">
-        <defName>SoldiersPermitVanillaTitle</defName>
+        <defName>SoldiersPermitTitle</defName>
         <label>Soldiers</label>
         <uiPosition>(1,6)</uiPosition>
         <description>Requests for temporary soldiers.</description>
     </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesTitle">
-        <defName>OrbitalPermitVanillaTitle</defName>
+        <defName>OrbitalPermitTitle</defName>
         <label>Orbital strikes</label>
         <uiPosition>(1,9)</uiPosition>
         <description>Requests for orbital strikes.</description>
@@ -36,7 +36,6 @@
         <label>Blocks drop</label>
         <description>Request a drop of 200 random blocks (bricks included).\n\nPermit points cost - 1 point.</description>
         <minTitle>Acolyte</minTitle>
-        <uiPosition>(0,3)</uiPosition>
         <cooldownDays>14</cooldownDays>
         <royalAid>
             <itemsToDrop>
@@ -45,18 +44,6 @@
             <favorCost>2</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedThingsBase">
-        <defName>BlocksDropStuff</defName>
-        <dynamicCoords>False</dynamicCoords>
-        <thingsToChoose>
-            <li>BlocksMarble</li>
-            <li>BlocksSandstone</li>
-            <li>BlocksGranite</li>
-            <li>BlocksLimestone</li>
-            <li>BlocksSlate</li>
-            <li>ClayBrick</li>
-        </thingsToChoose>
-    </OrderedStuffDef>
 
     <RoyalTitlePermitDef>
         <defName>CallMilitaryAidSmallPlus</defName>
@@ -67,7 +54,6 @@
         <faction>Empire</faction>
         <prerequisite>CallMilitaryAidSmall</prerequisite>
         <permitPointCost>4</permitPointCost>
-        <uiPosition>(1,7)</uiPosition>
         <royalAid>
             <favorCost>6</favorCost>
             <pawnKindDef>Empire_Fighter_Trooper</pawnKindDef>

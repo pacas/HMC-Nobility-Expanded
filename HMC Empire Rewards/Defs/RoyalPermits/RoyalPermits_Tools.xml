@@ -66,6 +66,7 @@
     <OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>ToolDropPlusStuff</defName>
         <quality>Excellent</quality>
+        <column>1</column>
         <stuffList>
             <li>Titanium</li>
             <li>Titanium</li>
@@ -119,6 +120,7 @@
     <OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>AdvToolDropPlusStuff</defName>
         <quality>Excellent</quality>
+        <column>1</column>
         <stuffList>
             <li>Titanium</li>
         </stuffList>
