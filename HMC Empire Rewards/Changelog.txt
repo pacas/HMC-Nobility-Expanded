@@ -1,5 +1,17 @@
 ----------------------------------------------------------------------
 
+- Changelog "HMC Empire Rewards" v0.6 (1.3):
+
+1) Redesigned privilege table (again) - now it is dynamic (this time in its entirety, not in part)!
+2) A new group of privileges - apparel! This group contains apparel sets for the different roles of the colonists.
+3) Renaming of privileges - no more request of this, drop of that...
+
+1) Переработана таблица привилегий (опять) - теперь она динамическая (в этот раз полностью, а не частично).
+2) Новая группа привилегий - одежда! В этой группе собраны сеты одежды под разные роли колонистов.
+3) Переименование привилегий - никаких больше запрос того, запрос сего...
+
+----------------------------------------------------------------------
+
 - Changelog "HMC Empire Rewards" v0.5 (1.3):
 
 1) Redesigned privilege table - now it is dynamic and is generated depending on the installed mods! This will allow in the future to add privileges for many different mods, which can be disabled for other users!

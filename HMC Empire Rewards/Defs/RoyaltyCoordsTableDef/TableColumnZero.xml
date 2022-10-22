@@ -33,6 +33,15 @@
             <li>IndustrialArmorDrop</li>
             <li>SpacerArmorDrop</li>
             <li>UltraArmorDrop</li>
+
+            <!-- Apparel -->
+            <li>ApparelPermitTitle</li>
+            <li>SoldierAccessoriesDrop</li>
+            <li>SmithOutfitDrop</li>
+            <li>SlaveOutfitDrop</li>
+            <li>MinerOutfitDrop</li>
+            <li>ChefOutfitDrop</li>
+            <li>RoyalOutfitDrop</li>
             
             <!-- Melee -->
             <li>MeleePermitTitle</li>

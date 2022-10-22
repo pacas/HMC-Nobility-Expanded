@@ -33,7 +33,7 @@
     <!-- New drops-->
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>BlocksDrop</defName>
-        <label>Blocks drop</label>
+        <label>Blocks</label>
         <description>Request a drop of 200 random blocks (bricks included).\n\nPermit points cost - 1 point.</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>14</cooldownDays>
@@ -47,7 +47,7 @@
 
     <RoyalTitlePermitDef>
         <defName>CallMilitaryAidSmallPlus</defName>
-        <label>call bigger trooper squad</label>
+        <label>big trooper squad</label>
         <description>Call a group of 6 light troopers to aid you in battle.\n\nPermit points cost - 4 points.</description>
         <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
         <minTitle>Praetor</minTitle>
