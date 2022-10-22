@@ -34,6 +34,15 @@
             <li>SpacerArmorDropPlus</li>
             <li>UltraArmorDropPlus</li>
 
+            <!-- Apparel -->
+            <li>ApparelPermitTitle</li>
+            <li>SoldierAccessoriesAltDrop</li>
+            <li>FarmerOutfitDrop</li>
+            <li>ConstructorOutfitDrop</li>
+            <li>MedicOutfitDrop</li>
+            <li>HazmatOutfitDrop</li>
+            <li>PsychicOutfitDrop</li>
+
             <!-- Melee -->
             <li>MeleePermitTitle</li>
             <li>AgileMeleeDropPlus</li>

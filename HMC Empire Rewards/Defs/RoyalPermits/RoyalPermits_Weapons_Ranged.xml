@@ -11,7 +11,7 @@
   
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>PistolDrop</defName>
-        <label>pistol drop</label>
+        <label>pistol</label>
         <description>Request a drop of random pistol with ammo.\n - Quality: Normal\n\nPermit points cost - 1 point.</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>15</cooldownDays>
@@ -44,7 +44,7 @@
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>PistolDropPlus</defName>
-        <label>pistol drop +</label>
+        <label>pistol +</label>
         <description>Request a drop of random pistol with ammo. Better guns in the selection.\n - Quality: Good - Masterwork\n\nPermit points cost - 2 points.</description>
         <minTitle>Knight</minTitle>
         <cooldownDays>40</cooldownDays>
@@ -80,7 +80,7 @@
   
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>SMGDrop</defName>
-        <label>SMG drop</label>
+        <label>SMG</label>
         <description>Request a drop of random SMG with ammo.\n - Quality: Normal\n\nPermit points cost - 2 point.</description>
         <minTitle>Knight</minTitle>
         <cooldownDays>22</cooldownDays>
@@ -120,7 +120,7 @@
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>SMGDropPlus</defName>
-        <label>SMG drop +</label>
+        <label>SMG +</label>
         <description>Request a drop of random SMG with ammo. Better guns in the selection.\n - Quality: Good - Masterwork\n\nPermit points cost - 3 points.</description>
         <minTitle>Legatus</minTitle>
         <cooldownDays>40</cooldownDays>
@@ -158,7 +158,7 @@
   
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>ShotgunDrop</defName>
-        <label>shotgun drop</label>
+        <label>shotgun</label>
         <description>Request a drop of random shotgun with ammo. Only basic ones.\n - Quality: Normal\n\nPermit points cost - 2 point.</description>
         <minTitle>Knight</minTitle>
         <cooldownDays>25</cooldownDays>
@@ -188,7 +188,7 @@
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>ShotgunDropPlus</defName>
-        <label>shotgun drop +</label>
+        <label>shotgun +</label>
         <description>Request a drop of random shotgun with ammo. Better guns in the selection.\n - Quality: Good - Masterwork\n\nPermit points cost - 3 points.</description>
         <minTitle>Legatus</minTitle>
         <cooldownDays>50</cooldownDays>
@@ -224,7 +224,7 @@
   
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>RifleDrop</defName>
-        <label>rifle drop</label>
+        <label>rifle</label>
         <description>Request a drop of random rifle with ammo. Only basic ones.\n - Quality: Normal\n\nPermit points cost - 3 point.</description>
         <minTitle>Praetor</minTitle>
         <cooldownDays>40</cooldownDays>
@@ -262,7 +262,7 @@
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>RifleDropPlus</defName>
-        <label>rifle drop +</label>
+        <label>rifle +</label>
         <description>Request a drop of random rifle with ammo. Better guns in the selection, advanced rifles included.\n - Quality: Good - Masterwork\n\nPermit points cost - 3 points.</description>
         <minTitle>Baron</minTitle>
         <cooldownDays>90</cooldownDays>
@@ -310,7 +310,7 @@
   
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>SniperRifleDrop</defName>
-        <label>sniper rifle drop</label>
+        <label>sniper rifle</label>
         <description>Request a drop of random sniper rifle with ammo. Only basic ones.\n - Quality: Normal\n\nPermit points cost - 3 point.</description>
         <minTitle>Baron</minTitle>
         <cooldownDays>60</cooldownDays>
@@ -338,7 +338,7 @@
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>SniperRifleDropPlus</defName>
-        <label>sniper rifle drop +</label>
+        <label>sniper rifle +</label>
         <description>Request a drop of random sniper rifle with ammo. Advanced rifles included.\n - Quality: Good - Masterwork\n\nPermit points cost - 5 points.</description>
         <minTitle>Count</minTitle>
         <cooldownDays>120</cooldownDays>
@@ -382,7 +382,7 @@
   
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>MGDrop</defName>
-        <label>machine gun drop</label>
+        <label>machine gun</label>
         <description>Request a drop of random machine gun with ammo. Only basic ones.\n - Quality: Normal\n\nPermit points cost - 3 point.</description>
         <minTitle>Baron</minTitle>
         <cooldownDays>55</cooldownDays>
@@ -412,7 +412,7 @@
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>MGDropPlus</defName>
-        <label>machine gun drop +</label>
+        <label>machine gun +</label>
         <description>Request a drop of random machine gun with ammo. Better guns in the selection, advanced machine guns included.\n - Quality: Good - Masterwork\n\nPermit points cost - 5 points.</description>
         <minTitle>Count</minTitle>
         <cooldownDays>105</cooldownDays>
@@ -448,7 +448,7 @@
   
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>LauncherDrop</defName>
-        <label>grenade launcher drop</label>
+        <label>grenade launcher</label>
         <description>Request a drop of random grenade launcher, rocket launcher or flamethrower with ammo. Only basic ones. Single-use excluded.\n - Quality: Normal\n\nPermit points cost - 3 point.</description>
         <minTitle>Viscount</minTitle>
         <cooldownDays>65</cooldownDays>
@@ -484,7 +484,7 @@
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>LauncherDropPlus</defName>
-        <label>grenade launcher drop +</label>
+        <label>grenade launcher +</label>
         <description>Request a drop of random grenade launcher, rocket launcher or flamethrower with ammo. Better guns in the selection, advanced machine guns included. Single-use excluded.\n - Quality: Good - Masterwork\n\nPermit points cost - 5 points.</description>
         <minTitle>Count</minTitle>
         <cooldownDays>130</cooldownDays>

@@ -11,7 +11,7 @@
   
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>AgileMeleeDrop</defName>
-        <label>Agile melee weapon drop</label>
+        <label>Agile weapon</label>
         <description>Request a drop of random agile melee weapon (daggers and shortswords).\n - Material: Steel\n - Quality: Normal\n\nPermit points cost - 1 point.</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>21</cooldownDays>
@@ -37,7 +37,7 @@
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>AgileMeleeDropPlus</defName>
-        <label>agile melee weapon drop +</label>
+        <label>agile weapon +</label>
         <description>Request a drop of random agile melee weapon (daggers and shortswords).\n - Material: Titanium\n - Quality: Good - Masterwork\n\nPermit points cost - 3 points.</description>
         <minTitle>Legatus</minTitle>
         <cooldownDays>60</cooldownDays>
@@ -71,7 +71,7 @@
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>SharpMeleeDrop</defName>
-        <label>Sharp melee weapon drop</label>
+        <label>Sharp weapon</label>
         <description>Request a drop of random sharp melee weapon (exclude daggers and shortswords).\n - Material: Steel\n - Quality: Normal\n\nPermit points cost - 1 point.</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>21</cooldownDays>
@@ -106,7 +106,7 @@
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>SharpMeleeDropPlus</defName>
-        <label>sharp melee weapon drop +</label>
+        <label>sharp weapon +</label>
         <description>Request a drop of random sharp melee weapon (exclude daggers and shortswords).\n - Material: Titanium\n - Quality: Good - Masterwork\n\nPermit points cost - 3 points.</description>
         <minTitle>Legatus</minTitle>
         <cooldownDays>60</cooldownDays>
@@ -148,7 +148,7 @@
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>BluntMeleeDrop</defName>
-        <label>Blunt melee weapon drop</label>
+        <label>Blunt weapon</label>
         <description>Request a drop of random blunt melee weapon (exclude daggers and shortswords).\n - Material: Steel\n - Quality: Normal\n\nPermit points cost - 1 point.</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>21</cooldownDays>
@@ -175,7 +175,7 @@
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>BluntMeleeDropPlus</defName>
-        <label>blunt melee weapon drop +</label>
+        <label>blunt weapon +</label>
         <description>Request a drop of random blunt melee weapon (exclude daggers and shortswords).\n - Material: Titanium\n - Quality: Good - Masterwork\n\nPermit points cost - 3 points.</description>
         <minTitle>Legatus</minTitle>
         <cooldownDays>60</cooldownDays>
@@ -209,7 +209,7 @@
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>HeavyMeleeDrop</defName>
-        <label>Heavy melee weapon drop</label>
+        <label>Heavy weapon</label>
         <description>Request a drop of random heavy melee weapon.\n - Material: Steel\n - Quality: Normal\n\nPermit points cost - 1 point.</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>21</cooldownDays>
@@ -238,7 +238,7 @@
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>HeavyMeleeDropPlus</defName>
-        <label>heavy melee weapon drop +</label>
+        <label>heavy weapon +</label>
         <description>Request a drop of random heavy melee weapon.\n - Material: Titanium\n - Quality: Good - Masterwork\n\nPermit points cost - 3 points.</description>
         <minTitle>Legatus</minTitle>
         <cooldownDays>60</cooldownDays>

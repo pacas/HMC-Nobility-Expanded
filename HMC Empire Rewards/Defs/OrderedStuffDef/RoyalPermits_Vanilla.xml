@@ -27,7 +27,6 @@
 
     <OrderedStuffDef ParentName="OrderedThingsBase">
         <defName>BlocksDropStuff</defName>
-        <dynamicCoords>False</dynamicCoords>
         <thingsToChoose>
             <li>BlocksMarble</li>
             <li>BlocksSandstone</li>
