@@ -206,14 +206,13 @@
     </RoyalTitlePermitDef>
     <OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>UltraArmorDropStuff</defName>
-        <thingsToChoose>
-            <li>MeleeWeapon_GreatSword</li>
-            <li>MeleeWeapon_Glaive</li>
-            <li>MeleeWeapon_Partisan</li>
-            <li>MeleeWeapon_Tsurugi</li>
-            <li>MeleeWeapon_Sledgehammer</li>
-            <li>MeleeWeapon_Tsurugi</li>
-        </thingsToChoose>
+        <quality>Normal</quality>
+        <stuffList>
+            <li>TitaniumBar</li>
+            <li>TitaniumBar</li>
+            <li>TitaniumBar</li>
+            <li>TitaniumBar</li>
+        </stuffList>
     </OrderedStuffDef>
     
     
