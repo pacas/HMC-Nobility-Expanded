@@ -1,5 +1,13 @@
 ----------------------------------------------------------------------
 
+- Changelog "HMC Empire Rewards" v0.6.1 (1.3):
+
+1) Fixed ultra armor drop.
+
+1) Исправлен запрос ультра брони.
+
+----------------------------------------------------------------------
+
 - Changelog "HMC Empire Rewards" v0.6 (1.3):
 
 1) Redesigned privilege table (again) - now it is dynamic (this time in its entirety, not in part)!

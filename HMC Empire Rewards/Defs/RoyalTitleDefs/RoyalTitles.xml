@@ -1210,8 +1210,8 @@
     <!-- Эрцгерцог -->
     <RoyalTitleDef ParentName="BaseEmpireTitleNPC">
         <defName>Consul</defName>
-        <label>Archduke</label>
-        <labelFemale>Archduchess</labelFemale>
+        <label>archduke</label>
+        <labelFemale>archduchess</labelFemale>
         <description>The title of Archduke is the lowest level of the Imperial highest nobility.\n\nIn the Empire, Archduchess command entire regions of planets, controlling the lands entrusted to them by the head of the House. In wartime, the Archduke can lead an entire army consisting of several divisions, supported by several space fleets. Some command from a super-capital ship or control space-based megastructures.</description>
         <seniority>750</seniority>
         <commonality>0.1</commonality>
