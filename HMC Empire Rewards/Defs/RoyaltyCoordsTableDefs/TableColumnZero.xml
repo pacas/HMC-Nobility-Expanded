@@ -59,6 +59,10 @@
             <li>SniperRifleDrop</li>
             <li>MGDrop</li>
             <li>LauncherDrop</li>
+
+            <!-- Animals -->
+            <li>AnimalsPermitTitle</li>
+            <li>FarmAnimalDrop</li>
         </loadOrder>
     </RoyaltyCoordsTableDef>
 </Defs>

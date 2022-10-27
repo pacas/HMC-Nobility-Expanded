@@ -12,6 +12,7 @@ namespace RimWorld
         public string quality;
         public List<ThingDef> stuffList;
         public List<ThingDef> thingsToChoose;
+        public List<PawnKindDef> pawnToChoose;
         public List<int> ammunition;
         public string column;
     }

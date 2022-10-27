@@ -193,7 +193,7 @@
         <description>Request a drop of ultra armor pack.\n - Material: Ferrotitanium alloy \n - Quality: Normal\nPermit points cost - 6 points.</description>
         <minTitle>Viscount</minTitle>
         <cooldownDays>90</cooldownDays>
-        <permitPointCost>5</permitPointCost>
+        <permitPointCost>6</permitPointCost>
         <royalAid>
             <itemsToDrop>
                 <Apparel_PowerArmorHelmet>1</Apparel_PowerArmorHelmet>
@@ -223,7 +223,7 @@
         <minTitle>Count</minTitle>
         <cooldownDays>180</cooldownDays>
         <prerequisite>UltraArmorDrop</prerequisite>
-        <permitPointCost>6</permitPointCost>
+        <permitPointCost>8</permitPointCost>
         <royalAid>
             <itemsToDrop>
                 <Apparel_PowerArmorHelmet>1</Apparel_PowerArmorHelmet>
