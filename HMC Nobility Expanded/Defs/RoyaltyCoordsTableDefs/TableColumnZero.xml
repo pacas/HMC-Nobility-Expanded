@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <RoyaltyCoordsTableDef>
+        <defName>CoordsTableColumn_0</defName>
+        <coordX>0</coordX>
+        <loadOrder>
+            <!-- Vanilla and more -->
+            <li>BasePermitTitle</li>
+            <li>SteelDrop</li>
+            <li>FoodDrop</li>
+            <li>BlocksDrop</li>
+            <li>WorkersPermitTitle</li>
+            <li>CallLaborerTeam</li>
+            <li>SoldiersPermitTitle</li>
+            <li>CallMilitaryAidSmall</li>
+            <li>CallMilitaryAidLarge</li>
+            <li>OrbitalPermitTitle</li>
+            <li>CallOrbitalStrike</li>
+            
+            <!-- Tools -->
+            <li>ToolPermitTitle</li>
+            <li>ToolDrop</li>
+            <li>AdvToolDrop</li>
+            
+            <!-- Seeds -->
+            <li MayRequire="notfood.seedsplease">SeedsPermitTitle</li>
+            <li MayRequire="notfood.seedsplease">SeedsPotatoDrop</li>
+            <li MayRequire="notfood.seedsplease">SeedsOakDrop</li>
+            
+            <!-- Armor -->
+            <li>ArmorPermitTitle</li>
+            <li>ArmorDrop</li>
+            <li>IndustrialArmorDrop</li>
+            <li>SpacerArmorDrop</li>
+            <li>UltraArmorDrop</li>
+
+            <!-- Apparel -->
+            <li>ApparelPermitTitle</li>
+            <li>SoldierAccessoriesDrop</li>
+            <li>SmithOutfitDrop</li>
+            <li>SlaveOutfitDrop</li>
+            <li>MinerOutfitDrop</li>
+            <li>ChefOutfitDrop</li>
+            <li>RoyalOutfitDrop</li>
+            
+            <!-- Melee -->
+            <li>MeleePermitTitle</li>
+            <li>AgileMeleeDrop</li>
+            <li>SharpMeleeDrop</li>
+            <li>BluntMeleeDrop</li>
+            <li>HeavyMeleeDrop</li>
+
+            <!-- Ranged -->
+            <li>RangedPermitTitle</li>
+            <li>PistolDrop</li>
+            <li>SMGDrop</li>
+            <li>ShotgunDrop</li>
+            <li>RifleDrop</li>
+            <li>SniperRifleDrop</li>
+            <li>MGDrop</li>
+            <li>LauncherDrop</li>
+
+            <!-- Animals -->
+            <li>AnimalsPermitTitle</li>
+            <li>FarmAnimalDrop</li>
+            <li>BattleAnimalDrop</li>
+            <li>ExoticAnimalDrop</li>
+            <li MayRequire="roolo.giddyupcore">MountsAnimalDrop</li>
+        </loadOrder>
+    </RoyaltyCoordsTableDef>
+</Defs>
