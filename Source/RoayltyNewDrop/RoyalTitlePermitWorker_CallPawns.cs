@@ -67,9 +67,12 @@ namespace RimWorld
         {
             OrderedStuffDef stuff = DefDatabase<OrderedStuffDef>.GetNamed(def.defName + "Stuff");
             int randomIndex = random.Next(stuff.pawnToChoose.Count);
-            Pawn pawn = PawnGenerator.GeneratePawn(stuff.pawnToChoose[randomIndex], Faction.OfPlayer);
 
-            TradeUtility.SpawnDropPod(spawnPos, map, pawn);
+            for (var index = 0; index < def.royalAid.pawnCount; ++index)
+            {
+                Pawn pawn = PawnGenerator.GeneratePawn(stuff.pawnToChoose[randomIndex], Faction.OfPlayer);
+                TradeUtility.SpawnDropPod(spawnPos + new IntVec3(index, 0, 0), map, pawn);
+            }
             if (!free)
                 caller.royalty.TryRemoveFavor(Faction.OfEmpire, def.royalAid.favorCost);
             caller.royalty.GetPermit(def, Faction.OfEmpire).Notify_Used();

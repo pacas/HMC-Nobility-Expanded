@@ -5,7 +5,7 @@
     <RoyalTitlePermitDef ParentName="SendPawns">
         <defName>SpiderAnimalDrop</defName>
         <label>spiders</label>
-        <description>Request a drop of two random spiders from Alpha Animals. Web them down!\n\nPermit points cost - 2 point.</description>
+        <description>Request a drop of two random spiders of the same species from Alpha Animals. Web them down!\n\nPermit points cost - 2 point.</description>
         <permitPointCost>2</permitPointCost>
         <minTitle>Knight</minTitle>
         <cooldownDays>28</cooldownDays>
