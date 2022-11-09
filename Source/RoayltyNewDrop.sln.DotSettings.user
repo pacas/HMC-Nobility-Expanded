@@ -84,4 +84,5 @@
 	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=J_003A_005CSteam_005Csteamapps_005Ccommon_005CRimWorld_005CRimWorldWin64_005FData_005CManaged_005CUnityEngine_002EXRModule_002Edll/@EntryIndexedValue">True</s:Boolean>
 	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
   &lt;Assembly Path="J:\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll" /&gt;&#xD;
+  &lt;Assembly Path="J:\Steam\steamapps\common\RimWorld\Mods\CombatExtended\Assemblies\CombatExtended.dll" /&gt;&#xD;
 &lt;/AssemblyExplorer&gt;</s:String></wpf:ResourceDictionary>

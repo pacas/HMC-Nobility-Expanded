@@ -178,7 +178,7 @@ namespace RimWorld
                     break;
             }
             thing.stackCount = def.royalAid.itemsToDrop[index].count;
-            if (stuffDefOrdered.ammoUsage == "True")
+            if (stuffDefOrdered.ammoUsage == "Gun")
             {
                 AmmoSetDef ammoUser = thing.TryGetComp<CompAmmoUser>().Props.ammoSet;
                 if (!ammoUser.ammoTypes.NullOrEmpty())
