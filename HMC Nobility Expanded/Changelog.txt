@@ -1,5 +1,13 @@
 ----------------------------------------------------------------------
 
+- Changelog "HMC Empire Rewards" v0.7.1 (1.3):
+
+1) Fixed animals drops with more than one animal.
+
+1) Исправлены запросы животных с более чем одним животным.
+
+----------------------------------------------------------------------
+
 - Changelog "HMC Empire Rewards" v0.7 (1.3):
 
 1) New category of privileges - animals.

@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <!-- Main bases -->
-    
-    <RoyalTitlePermitDef Name="DropResourcesPlus" Abstract="True">
-        <workerClass>RoyalTitlePermitWorker_DropResourcesPlus</workerClass>
+    <!-- Main abstract -->
+    <RoyalTitlePermitDef Name="MainDropBase" Abstract="True">
         <faction>Empire</faction>
         <permitPointCost>1</permitPointCost>
         <cooldownDays>45</cooldownDays>
@@ -14,20 +12,27 @@
         </royalAid>
     </RoyalTitlePermitDef>
 
-    <RoyalTitlePermitDef Name="SendPawns" Abstract="True">
-        <workerClass>RoyalTitlePermitWorker_CallPawns</workerClass>
-        <permitPointCost>1</permitPointCost>
-        <cooldownDays>45</cooldownDays>
-        <usableOnWorldMap>false</usableOnWorldMap>
-        <royalAid>
-            <targetingRange>39.9</targetingRange>
-        </royalAid>
-    </RoyalTitlePermitDef>
-
     <OrderedStuffDef Name="OrderedBase" Abstract="True">
         <column>0</column>
     </OrderedStuffDef>
 
+    
+    <!-- Main bases -->
+    
+    <RoyalTitlePermitDef ParentName="MainDropBase" Name="DropResourcesPlus" Abstract="True">
+        <workerClass>RoyalTitlePermitWorker_DropResourcesPlus</workerClass>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="MainDropBase" Name="DropBuildings" Abstract="True">
+        <workerClass>RoyalTitlePermitWorker_DropBuildings</workerClass>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="MainDropBase" Name="SendPawns" Abstract="True">
+        <workerClass>RoyalTitlePermitWorker_CallPawns</workerClass>
+        <usableOnWorldMap>false</usableOnWorldMap>
+    </RoyalTitlePermitDef>
+    
+    
     <!-- Permits bases -->
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus" Name="DropResourcesTitle" Abstract="True">
@@ -46,6 +51,7 @@
         <permitPointCost>2</permitPointCost>
     </RoyalTitlePermitDef>
 
+    
     <!-- Stuff bases -->
     
     <OrderedStuffDef ParentName="OrderedBase" Name="OrderedStuffBase" Abstract="True">
@@ -60,8 +66,14 @@
         <typeOfDrop>Quality</typeOfDrop>
         <typeOfItem>Random</typeOfItem>
         <typeOfQuality>Specific</typeOfQuality>
-        <ammoUsage>True</ammoUsage>
+        <ammoUsage>Gun</ammoUsage>
         <quality>Normal</quality>
+    </OrderedStuffDef>
+
+    <OrderedStuffDef ParentName="OrderedBase" Name="OrderedTurretBase" Abstract="True">
+        <typeOfDrop>Stuff</typeOfDrop>
+        <typeOfItem>Random</typeOfItem>
+        <ammoUsage>Turret</ammoUsage>
     </OrderedStuffDef>
     
     <OrderedStuffDef ParentName="OrderedBase" Name="OrderedThingsBase" Abstract="True">
@@ -70,6 +82,7 @@
     </OrderedStuffDef>
     
     <!-- todo -->
-    <!-- турели -->
+    <!-- здания? -->
+    <!-- вынести count в ordered def -->
 </Defs>
 

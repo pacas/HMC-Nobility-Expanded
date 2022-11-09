@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesTitle">
+        <defName>TurretsPermitTitle</defName>
+        <label>Turrets</label>
+        <description>Request a drop of different turrets.</description>
+    </RoyalTitlePermitDef>
+    
+    <!-- Pistol -->
+  
+    <RoyalTitlePermitDef ParentName="DropBuildings">
+        <defName>LightAutoTurretDrop</defName>
+        <label>sentry light turret</label>
+        <description>Request a drop of sentry light turret with ammo.\n - Quality: Normal\n\nPermit points cost - 2 point.</description>
+        <minTitle>Acolyte</minTitle>
+        <cooldownDays>55</cooldownDays>
+        <permitPointCost>2</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>10</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedTurretBase">
+        <defName>LightAutoTurretDropStuff</defName>
+        <thingsToChoose>
+            <li>Turret_MiniTurret</li>
+        </thingsToChoose>
+        <stuffList>
+            <li>TitaniumBar</li>
+        </stuffList>
+        <ammunition>
+            <li>600</li>
+        </ammunition>
+    </OrderedStuffDef>
+
+    <RoyalTitlePermitDef ParentName="DropBuildings">
+        <defName>HeavyAutoTurretDrop</defName>
+        <label>sentry heavy turret</label>
+        <description>Request a drop of sentry heavy turret with ammo.\n - Quality: Normal\n\nPermit points cost - 4 point.</description>
+        <minTitle>Praetor</minTitle>
+        <cooldownDays>50</cooldownDays>
+        <prerequisite>LightAutoTurretDrop</prerequisite>
+        <permitPointCost>4</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>14</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedTurretBase">
+        <defName>HeavyAutoTurretDropStuff</defName>
+        <column>1</column>
+        <thingsToChoose>
+            <li>Turret_Autocannon</li>
+        </thingsToChoose>
+        <stuffList>
+            <li>TitaniumBar</li>
+        </stuffList>
+        <ammunition>
+            <li>600</li>
+        </ammunition>
+    </OrderedStuffDef>
+    
+</Defs>

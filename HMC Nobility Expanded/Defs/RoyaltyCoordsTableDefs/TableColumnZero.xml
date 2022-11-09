@@ -60,6 +60,10 @@
             <li>MGDrop</li>
             <li>LauncherDrop</li>
 
+            <!-- Turrets -->
+            <li>TurretsPermitTitle</li>
+            <li>LightAutoTurretDrop</li>
+
             <!-- Animals -->
             <li>AnimalsPermitTitle</li>
             <li>FarmAnimalDrop</li>
