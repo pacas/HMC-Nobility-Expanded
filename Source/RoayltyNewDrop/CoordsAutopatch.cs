@@ -1,4 +1,6 @@
-﻿using System.Reflection;
+﻿using System;
+using System.Collections.Generic;
+using System.Reflection;
 using HarmonyLib;
 using UnityEngine;
 using Verse;
@@ -11,12 +13,17 @@ namespace RimWorld
         static HarmonyPatches()
         {
             Harmony harmonyInstance = new Harmony("hmc.pacas.empire");
+            
             MethodInfo original = AccessTools.Method(typeof(PermitsCardUtility), "DrawPosition");
             MethodInfo prefix = typeof(CoordsAutopatch).GetMethod("Prefix");
             harmonyInstance.Patch(original, new HarmonyMethod(prefix));
+            
+            original = AccessTools.Method(typeof(PermitsCardUtility), "PermitUnlocked");
+            prefix = typeof(PermitUnlockedPatch).GetMethod("Prefix");
+            harmonyInstance.Patch(original, new HarmonyMethod(prefix));
         }
     }
-    
+
     [HarmonyPatch(typeof(PermitsCardUtility), "DrawPosition")]
     public class CoordsAutopatch
     {
@@ -27,7 +34,8 @@ namespace RimWorld
             Vector2 newCoords;
             if (stuffDefOrdered != null)
             {
-                RoyaltyCoordsTableDef autopatcher = DefDatabase<RoyaltyCoordsTableDef>.GetNamed("CoordsTableColumn_" + stuffDefOrdered.column);
+                RoyaltyCoordsTableDef autopatcher =
+                    DefDatabase<RoyaltyCoordsTableDef>.GetNamed("CoordsTableColumn_" + stuffDefOrdered.column);
                 index = autopatcher.loadOrder.IndexOf(permit);
                 newCoords = new Vector2(autopatcher.coordX * 200f, index * 50f);
             }
@@ -37,11 +45,56 @@ namespace RimWorld
                 index = autopatcher.loadOrder.IndexOf(permit);
                 newCoords = new Vector2(100f, index * 50f);
             }
+            else if (permit.defName.Contains("PermitSmallTitle"))
+            {
+                RoyaltyCoordsTableDef autopatcher = DefDatabase<RoyaltyCoordsTableDef>.GetNamed("CoordsTableColumn_0");
+                index = autopatcher.loadOrder.IndexOf(permit);
+                newCoords = new Vector2(140f, index * 50f);
+            }
             else
             {
                 newCoords = new Vector2(permit.uiPosition.x * 400f, permit.uiPosition.y * 50f);
             }
+
             __result = newCoords + newCoords * new Vector2(0.25f, 0.35f);
+            return false;
+        }
+    }
+
+    [HarmonyPatch(typeof(PermitsCardUtility), "PermitUnlocked")]
+    public class PermitUnlockedPatch
+    {
+        public static bool Prefix(ref RoyalTitlePermitDef permit, ref Pawn pawn, ref bool __result)
+        {
+            if (pawn.royalty.HasPermit(permit, PermitsCardUtility.selectedFaction))
+            {
+                __result = true;
+                return false;
+            }
+
+            List<FactionPermit> allFactionPermits = pawn.royalty.AllFactionPermits;
+            for (int index = 0; index < allFactionPermits.Count; ++index)
+            {
+                if (allFactionPermits[index].Permit.prerequisite == permit &&
+                    allFactionPermits[index].Faction == PermitsCardUtility.selectedFaction)
+                {
+                    __result = true;
+                    return false;
+                }
+                try
+                {
+                    RoyalTitlePermitDef secondPrerequisite = allFactionPermits[index].Permit.prerequisite.prerequisite;
+                    if (secondPrerequisite == permit &&
+                        allFactionPermits[index].Faction == PermitsCardUtility.selectedFaction)
+                    {
+                        __result = true;
+                        return false;
+                    }
+                }
+                catch (NullReferenceException) {}
+            }
+
+            __result = false;
             return false;
         }
     }

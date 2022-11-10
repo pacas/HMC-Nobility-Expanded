@@ -8,13 +8,13 @@
     </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesTitle">
-        <defName>TurretsMannedPermitTitle</defName>
+        <defName>TurretsMannedPermitSmallTitle</defName>
         <label>Manned turrets</label>
         <description>Request a drop of different manned turrets.</description>
     </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesTitle">
-        <defName>TurretsAutoPermitTitle</defName>
+        <defName>TurretsAutoPermitSmallTitle</defName>
         <label>Autoturrets</label>
         <description>Request a drop of different autoturrets.</description>
     </RoyalTitlePermitDef>
