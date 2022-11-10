@@ -62,11 +62,11 @@
 
             <!-- Turrets -->
             <li>TurretsPermitTitle</li>
-            <li>TurretsMannedPermitTitle</li>
+            <li>TurretsMannedPermitSmallTitle</li>
             <li>BallistaDrop</li>
             <li>MG1LightTurretDrop</li>
             <li>MG2LightTurretDrop</li>
-            <li>TurretsAutoPermitTitle</li>
+            <li>TurretsAutoPermitSmallTitle</li>
             <li>LightAutoTurretDrop</li>
             <li>BigLightAutoTurretDrop</li>
             <li>HighTechLightAutoTurretDrop</li>
