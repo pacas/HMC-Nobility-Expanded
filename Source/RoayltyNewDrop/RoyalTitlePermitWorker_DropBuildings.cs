@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using CombatExtended;
-using CombatExtended.Compatibility;
 using RimWorld.Planet;
 using UnityEngine;
 using Verse;
