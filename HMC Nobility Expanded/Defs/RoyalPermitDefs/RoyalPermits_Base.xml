@@ -42,6 +42,13 @@
         </royalAid>
     </RoyalTitlePermitDef>
 
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus" Name="DropResourcesSmallTitle" Abstract="True">
+        <permitPointCost>98</permitPointCost>
+        <royalAid>
+            <favorCost>98</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+
     <RoyalTitlePermitDef ParentName="DropResourcesPlus" Name="DropOutfitTitle" Abstract="True">
         <minTitle>Knight</minTitle>
         <cooldownDays>30</cooldownDays>
