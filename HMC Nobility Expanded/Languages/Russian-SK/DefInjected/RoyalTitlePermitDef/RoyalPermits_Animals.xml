@@ -7,24 +7,24 @@
 
     <!-- ==== -->
     <FarmAnimalDrop.label>фермерские</FarmAnimalDrop.label>
-    <FarmAnimalDrop.description>Запрос доставки двух случайных фермерских животных одного вида.\n\nТребуемое количество очков привилегий - 2.</FarmAnimalDrop.description>
+    <FarmAnimalDrop.description>Запрос доставки двух случайных фермерских животных одного вида.</FarmAnimalDrop.description>
     
     <CaravanAnimalDrop.label>караванные</CaravanAnimalDrop.label>
-    <CaravanAnimalDrop.description>Запрос доставки двух случайных караванных животных одного вида.\n\nТребуемое количество очков привилегий - 2.</CaravanAnimalDrop.description>
+    <CaravanAnimalDrop.description>Запрос доставки двух случайных караванных животных одного вида.</CaravanAnimalDrop.description>
 
     <BattleAnimalDrop.label>боевые</BattleAnimalDrop.label>
-    <BattleAnimalDrop.description>Запрос доставки двух случайных боевых животных одного вида. Или гуся.\n\nТребуемое количество очков привилегий - 3.</BattleAnimalDrop.description>
+    <BattleAnimalDrop.description>Запрос доставки двух случайных боевых животных одного вида. Или гуся.</BattleAnimalDrop.description>
 
     <ExoticAnimalDrop.label>экзотические</ExoticAnimalDrop.label>
-    <ExoticAnimalDrop.description>Запрос доставки одного случайного экхотического зверя. Или кота.\n\nТребуемое количество очков привилегий - 4.</ExoticAnimalDrop.description>
+    <ExoticAnimalDrop.description>Запрос доставки одного случайного экхотического зверя. Или кота.</ExoticAnimalDrop.description>
 
     <PetAnimalDrop.label>питомцы</PetAnimalDrop.label>
-    <PetAnimalDrop.description>Запрос доставки одного случайного питомца. \n\nТребуемое количество очков привилегий - 1.</PetAnimalDrop.description>
+    <PetAnimalDrop.description>Запрос доставки одного случайного питомца. </PetAnimalDrop.description>
 
     <MountsAnimalDrop.label>ездовые</MountsAnimalDrop.label>
-    <MountsAnimalDrop.description>Запрос доставки одного случайного ездового животного. \n\nТребуемое количество очков привилегий - 2.</MountsAnimalDrop.description>
+    <MountsAnimalDrop.description>Запрос доставки одного случайного ездового животного. </MountsAnimalDrop.description>
 
     <SpiderAnimalDrop.label>пауки</SpiderAnimalDrop.label>
-    <SpiderAnimalDrop.description>Запрос доставки двух случайных пауков одного вида из мода Alpha Animals.\n\nТребуемое количество очков привилегий - 2.</SpiderAnimalDrop.description>
+    <SpiderAnimalDrop.description>Запрос доставки двух случайных пауков одного вида из мода Alpha Animals.</SpiderAnimalDrop.description>
 
 </LanguageData>

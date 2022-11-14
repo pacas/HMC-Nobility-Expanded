@@ -11,7 +11,7 @@
     <RoyalTitlePermitDef ParentName="SendPawns">
         <defName>FarmAnimalDrop</defName>
         <label>farm</label>
-        <description>Request a drop of two random farm animals of the same species.\n\nPermit points cost - 2 point.</description>
+        <description>Request a drop of two random farm animals of the same species.</description>
         <permitPointCost>2</permitPointCost>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>18</cooldownDays>
@@ -63,7 +63,7 @@
     <RoyalTitlePermitDef ParentName="SendPawns">
         <defName>CaravanAnimalDrop</defName>
         <label>caravan</label>
-        <description>Request a drop of two random caravan animals of the same species.\n\nPermit points cost - 2 point.</description>
+        <description>Request a drop of two random caravan animals of the same species.</description>
         <permitPointCost>2</permitPointCost>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>24</cooldownDays>
@@ -102,7 +102,7 @@
     <RoyalTitlePermitDef ParentName="SendPawns">
         <defName>BattleAnimalDrop</defName>
         <label>war beasts</label>
-        <description>Request a drop of two random battle animals of the same species. Or goose.\n\nPermit points cost - 3 point.</description>
+        <description>Request a drop of two random battle animals of the same species. Or goose.</description>
         <permitPointCost>3</permitPointCost>
         <minTitle>Knight</minTitle>
         <cooldownDays>40</cooldownDays>
@@ -147,7 +147,7 @@
     <RoyalTitlePermitDef ParentName="SendPawns">
         <defName>PetAnimalDrop</defName>
         <label>pets</label>
-        <description>Request a drop of one random pet animal.\n\nPermit points cost - 1 point.</description>
+        <description>Request a drop of one random pet animal.</description>
         <permitPointCost>1</permitPointCost>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>18</cooldownDays>
@@ -186,7 +186,7 @@
     <RoyalTitlePermitDef ParentName="SendPawns">
         <defName>ExoticAnimalDrop</defName>
         <label>exotic</label>
-        <description>Request a drop of one random exotic animal. Or cat.\n\nPermit points cost - 4 point.</description>
+        <description>Request a drop of one random exotic animal. Or cat.</description>
         <permitPointCost>4</permitPointCost>
         <minTitle>Baron</minTitle>
         <cooldownDays>60</cooldownDays>

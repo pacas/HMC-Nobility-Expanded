@@ -91,7 +91,16 @@
     <!-- todo -->
     <!-- здания? -->
     <!-- вынести count в ordered def -->
-    <!-- микрозаголовок -->
+
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>EmptyTableSpace</defName>
+        <label>Empty</label>
+        <description>Empty</description>
+        <permitPointCost>90</permitPointCost>
+        <royalAid>
+            <favorCost>90</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
     
 </Defs>
 

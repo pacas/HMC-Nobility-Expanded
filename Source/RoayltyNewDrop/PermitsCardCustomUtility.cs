@@ -139,37 +139,42 @@ namespace RimWorld
                     Widgets.LabelCacheHeight(ref rect3, selectedPermit.description);
                     y2 += rect3.height + 16f;
                 }
-
+                TaggedString taggedString;
+                string tagged;
                 var rect4 = new Rect(0.0f, y2, rect1.width, 0.0f);
                 string label = "Cooldown".Translate() + ": " +
                                "PeriodDays".Translate(selectedPermit.cooldownDays);
+
+                if (selectedPermit.permitPointCost < 90)
+                {
+                    label += "\n" + (string) ("PrivilegesPointsRequired"
+                        .Translate(selectedPermit.permitPointCost));
+                }
+                
                 if (selectedPermit.royalAid != null && selectedPermit.royalAid.favorCost > 0 &&
                     !selectedFaction.def.royalFavorLabel.NullOrEmpty())
-                    label = label +
-                            (string)("\n" + "CooldownUseFavorCost"
-                                         .Translate(selectedFaction.def.royalFavorLabel.Named("HONOR"))
-                                         .CapitalizeFirst() + ": ") + selectedPermit.royalAid.favorCost.ToString();
-                TaggedString taggedString;
+                    label += "\n" + (string) ("CooldownUseFavorCost"
+                        .Translate(selectedFaction.def.royalFavorLabel.Named("HONOR"))
+                        .CapitalizeFirst() + ": ") + selectedPermit.royalAid.favorCost.ToString();
+
                 if (selectedPermit.minTitle != null)
                 {
-                    var str1 = label;
                     taggedString =
                         "RequiresTitle".Translate((NamedArgument)selectedPermit.minTitle.GetLabelForBothGenders());
-                    var str2 = taggedString.Resolve()
+                    tagged = taggedString.Resolve()
                         .Colorize(currentTitle == null || currentTitle.seniority < selectedPermit.minTitle.seniority
                             ? ColorLibrary.RedReadable
                             : Color.white);
-                    label = str1 + "\n" + str2;
+                    label += "\n" + tagged;
                 }
 
                 if (selectedPermit.prerequisite != null)
                 {
-                    var str3 = label;
                     taggedString = "UpgradeFrom".Translate(selectedPermit.prerequisite.LabelCap);
-                    var str4 = taggedString.Resolve().Colorize(PermitUnlocked(selectedPermit.prerequisite, pawn)
+                    tagged = taggedString.Resolve().Colorize(PermitUnlocked(selectedPermit.prerequisite, pawn)
                         ? Color.white
                         : ColorLibrary.RedReadable);
-                    label = str3 + "\n" + str4;
+                    label += "\n" + tagged;
                 }
 
                 Widgets.LabelCacheHeight(ref rect4, label);
@@ -212,7 +217,7 @@ namespace RimWorld
             for (var index = 0; index < defsListForReading.Count; ++index)
             {
                 var permit = defsListForReading[index];
-                if (CanDrawPermit(permit))
+                if (CanDrawPermit(permit) && permit.permitPointCost != 90)
                 {
                     var vector2 = DrawPosition(permit);
                     var textColor = Widgets.NormalOptionColor;

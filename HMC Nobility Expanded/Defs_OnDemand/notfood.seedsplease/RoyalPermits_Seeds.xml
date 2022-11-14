@@ -10,7 +10,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>SeedsPotatoDrop</defName>
         <label>random grains seeds drop</label>
-        <description>Call for a drop of 100 random grains seeds.\n - Contains: rice, wheat, corn, beans.\n\nPermit points cost - 1 point.</description>
+        <description>Call for a drop of 100 random grains seeds.\n - Contains: rice, wheat, corn, beans.</description>
         <minTitle>Acolyte</minTitle>
         <royalAid>
             <itemsToDrop>
@@ -34,7 +34,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>SeedsPotatoDropPlus</defName>
         <label>random vegetables seeds drop</label>
-        <description>Call for a drop of 100 random vegetables seeds.\n - Contains: potato, carrot, tomato.\n\nPermit points cost - 1 point.</description>
+        <description>Call for a drop of 100 random vegetables seeds.\n - Contains: potato, carrot, tomato.</description>
         <minTitle>Acolyte</minTitle>
         <royalAid>
             <itemsToDrop>
@@ -58,7 +58,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>SeedsOakDrop</defName>
         <label>random tree seeds drop</label>
-        <description>Call for a drop of 30 random tree seeds.\n\nPermit points cost - 1 point.</description>
+        <description>Call for a drop of 30 random tree seeds.</description>
         <minTitle>Acolyte</minTitle>
         <royalAid>
             <itemsToDrop>
@@ -92,7 +92,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>SeedsOakDropPlus</defName>
         <label>random fruit tree seeds drop</label>
-        <description>Call for a drop of 15 random fruit tree seeds.\n - Contains: apple, banana, orange and peach trees.\n\nPermit points cost - 2 points.</description>
+        <description>Call for a drop of 15 random fruit tree seeds.\n - Contains: apple, banana, orange and peach trees.</description>
         <minTitle>Knight</minTitle>
         <permitPointCost>2</permitPointCost>
         <royalAid>
