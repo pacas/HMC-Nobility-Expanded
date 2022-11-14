@@ -1,5 +1,27 @@
 ----------------------------------------------------------------------
 
+- Changelog "HMC Empire Rewards" v0.8 (1.3):
+
+1) New color scheme to simplify interaction.
+2) Division of the table into more obvious categories and subcategories.
+3) Two new categories - automatic and manned turrets.
+4) New subcategories for clothing.
+5) The cost of privileges is now displayed in the left menu next to the required title.
+6) Changed table structure for future improvement.
+7) New worker for buildings drop will allow to add other building privileges in the future.
+8) Minor fixes.
+
+1) Новая цветовая схема для упрощения взаимодействия.
+2) Разделение таблицы на более очевидные категории и подкатегории.
+3) Две новые категория - автоматические и управляемые турели.
+4) Новые подкатегории для одежды.
+5) Теперь стоимость привилегий отображается в левом меню радом с необходимым титулом.
+6) Изменена структура таблицы для будущего её улучшения.
+7) Новый воркер для сброса зданий позволит добавлять сброс других строений в будущем.
+8) Мелкие исправления ошибок.
+
+----------------------------------------------------------------------
+
 - Changelog "HMC Empire Rewards" v0.7.1 (1.3):
 
 1) Fixed animals drops with more than one animal.
