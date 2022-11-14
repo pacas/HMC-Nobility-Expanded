@@ -6,21 +6,21 @@
         <defName>BasePermitTitle</defName>
         <label>Base Requests</label>
         <uiPosition>(1,0)</uiPosition>
-        <description>Requests for a drop of basic resources or a shuttle.</description>
+        <description>Requests for a drop of basic resources or a shuttle</description>
     </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesTitle">
         <defName>WorkersPermitTitle</defName>
         <label>Workers</label>
         <uiPosition>(1,4)</uiPosition>
-        <description>Requests for temporary workers.</description>
+        <description>Requests for temporary workers</description>
     </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesTitle">
         <defName>SoldiersPermitTitle</defName>
         <label>Soldiers</label>
         <uiPosition>(1,6)</uiPosition>
-        <description>Requests for temporary soldiers.</description>
+        <description>Requests for temporary soldiers</description>
     </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesTitle">
@@ -34,7 +34,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>BlocksDrop</defName>
         <label>Blocks</label>
-        <description>Request a drop of 200 random blocks (bricks included).\n\nPermit points cost - 1 point.</description>
+        <description>Request a drop of 200 random blocks (bricks included).</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>14</cooldownDays>
         <royalAid>
@@ -48,7 +48,7 @@
     <RoyalTitlePermitDef>
         <defName>CallMilitaryAidSmallPlus</defName>
         <label>big trooper squad</label>
-        <description>Call a group of 6 light troopers to aid you in battle.\n\nPermit points cost - 4 points.</description>
+        <description>Call a group of 6 light troopers to aid you in battle.</description>
         <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
         <minTitle>Praetor</minTitle>
         <faction>Empire</faction>

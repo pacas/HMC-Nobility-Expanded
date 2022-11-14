@@ -60,6 +60,8 @@ namespace RimWorld
     [HarmonyPatch(typeof(PermitsCardCustomUtility), "DrawPosition")]
     public class CoordsAutopatch
     {
+        
+        /* a have no fucking idea why its working only after harmony patch */
         public static bool Prefix(ref RoyalTitlePermitDef permit, ref Vector2 __result)
         {
             OrderedStuffDef stuffDefOrdered = DefDatabase<OrderedStuffDef>.GetNamedSilentFail(permit.defName + "Stuff");
@@ -79,6 +81,12 @@ namespace RimWorld
                 newCoords = new Vector2(60f, index * 50f + 5f);
             }
             else if (permit.permitPointCost == 98)
+            {
+                RoyaltyCoordsTableDef autopatcher = DefDatabase<RoyaltyCoordsTableDef>.GetNamed("CoordsTableColumn_0");
+                index = autopatcher.loadOrder.IndexOf(permit);
+                newCoords = new Vector2(120f, index * 50f + 5f);
+            }
+            else if (permit.permitPointCost == 90)
             {
                 RoyaltyCoordsTableDef autopatcher = DefDatabase<RoyaltyCoordsTableDef>.GetNamed("CoordsTableColumn_0");
                 index = autopatcher.loadOrder.IndexOf(permit);

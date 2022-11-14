@@ -4,7 +4,7 @@
     <RoyalTitlePermitDef ParentName="SendPawns">
         <defName>MountsAnimalDrop</defName>
         <label>mounts</label>
-        <description>Request a drop of one random mount animal.\n\nPermit points cost - 2 point.</description>
+        <description>Request a drop of one random mount animal.</description>
         <permitPointCost>2</permitPointCost>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>28</cooldownDays>

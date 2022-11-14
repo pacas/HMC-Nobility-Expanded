@@ -2,33 +2,51 @@
 <Defs>
 
     <RoyalTitlePermitDef ParentName="DropResourcesTitle">
-        <defName>TurretsPermitTitle</defName>
-        <label>Turrets</label>
-        <description>Request a drop of different turrets.</description>
-    </RoyalTitlePermitDef>
-
-    <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
-        <defName>TurretsMannedPermitSmallTitle</defName>
-        <label>Manned turrets</label>
+        <defName>TurretsMannedPermitTitle</defName>
+        <label>Manned Turrets</label>
         <description>Request a drop of different manned turrets.</description>
     </RoyalTitlePermitDef>
 
-    <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
-        <defName>TurretsAutoPermitSmallTitle</defName>
+    <RoyalTitlePermitDef ParentName="DropResourcesTitle">
+        <defName>AutoTurretsPermitTitle</defName>
         <label>Autoturrets</label>
         <description>Request a drop of different autoturrets.</description>
     </RoyalTitlePermitDef>
 
-    <!-- Medieval -->
-    <!-- Ballista and Catapult-->
+    <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
+        <defName>TurretsMedievalPermitSmallTitle</defName>
+        <label>Medieval turrets</label>
+        <description>Request a drop of ballistas or catapul.</description>
+    </RoyalTitlePermitDef>
 
+    <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
+        <defName>TurretsMachinegunsPermitSmallTitle</defName>
+        <label>Stationary Machine Guns</label>
+        <description>Request a drop of different machine guns.</description>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
+        <defName>MortarsPermitSmallTitle</defName>
+        <label>Mortars and Artillery</label>
+        <description>Request a drop of different mortars and artillery.</description>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
+        <defName>RocketsPermitSmallTitle</defName>
+        <label>Rocket Launchers</label>
+        <description>Request a drop of different rocket launchers.</description>
+    </RoyalTitlePermitDef>
+
+    
+    <!-- Manned -->
+    <!-- Ballista and Catapult-->
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>BallistaDrop</defName>
         <label>ballista</label>
-        <description>Request a drop of two ballistas with ammo.\n - Material: Wood Planks\n\nPermit points cost - 2 point.</description>
+        <description>Request a drop of two ballistas with ammo.\n - Material: Wood Planks</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>60</cooldownDays>
-        <permitPointCost>3</permitPointCost>
+        <permitPointCost>2</permitPointCost>
         <royalAid>
             <itemsToDrop>
                 <Steel>2</Steel>
@@ -52,7 +70,7 @@
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>CatapultDrop</defName>
         <label>catapult</label>
-        <description>Request a drop of a catapult with ammo.\n - Material: Wood Planks\n\nPermit points cost - 2 point.</description>
+        <description>Request a drop of one catapult with ammo.\n - Material: Wood Planks</description>
         <minTitle>Knight</minTitle>
         <cooldownDays>100</cooldownDays>
         <permitPointCost>2</permitPointCost>
@@ -77,16 +95,13 @@
         </ammunition>
     </OrderedStuffDef>
 
-
-    <!-- Industrial -->
     <!-- MG1 -->
-
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>MG1LightTurretDrop</defName>
         <label>7.62x51mm M240B MG</label>
-        <description>Request a drop of one 7.62x51mm M240B MG with ammo.\n - Material: Stein Alloy\n\nPermit points cost - 2 point.</description>
+        <description>Request a drop of one 7.62x51mm M240B MG with ammo.\n - Material: Stein Alloy</description>
         <minTitle>Knight</minTitle>
-        <cooldownDays>50</cooldownDays>
+        <cooldownDays>60</cooldownDays>
         <permitPointCost>2</permitPointCost>
         <royalAid>
             <itemsToDrop>
@@ -111,9 +126,9 @@
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>MG1HeavyTurretDrop</defName>
         <label>50BMG M2 Browning MG</label>
-        <description>Request a drop of one 50BMG M2 Browning MG with ammo.\n - Material: Ferrotitanium Alloy\n\nPermit points cost - 3 point.</description>
+        <description>Request a drop of one 50BMG M2 Browning MG with ammo.\n - Material: Ferrotitanium Alloy</description>
         <minTitle>Praetor</minTitle>
-        <cooldownDays>100</cooldownDays>
+        <cooldownDays>80</cooldownDays>
         <permitPointCost>3</permitPointCost>
         <royalAid>
             <itemsToDrop>
@@ -137,13 +152,12 @@
     </OrderedStuffDef>
 
     <!-- MG2 -->
-
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>MG2LightTurretDrop</defName>
         <label>M134 minigun</label>
-        <description>Request a drop of one M134 minigun with ammo.\n - Material: Stein Alloy\n\nPermit points cost - 3 point.</description>
+        <description>Request a drop of one M134 minigun with ammo.\n - Material: Stein Alloy</description>
         <minTitle>Praetor</minTitle>
-        <cooldownDays>50</cooldownDays>
+        <cooldownDays>70</cooldownDays>
         <permitPointCost>3</permitPointCost>
         <royalAid>
             <itemsToDrop>
@@ -168,9 +182,9 @@
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>MG2HeavyTurretDrop</defName>
         <label>14.5mm KPV MG</label>
-        <description>Request a drop of one 14.5mm KPV MG with ammo.\n - Material: Ferrotitanium Alloy\n\nPermit points cost - 3 point.</description>
+        <description>Request a drop of one 14.5mm KPV MG with ammo.\n - Material: Ferrotitanium Alloy</description>
         <minTitle>Legatus</minTitle>
-        <cooldownDays>100</cooldownDays>
+        <cooldownDays>90</cooldownDays>
         <permitPointCost>3</permitPointCost>
         <royalAid>
             <itemsToDrop>
@@ -193,13 +207,297 @@
         </ammunition>
     </OrderedStuffDef>
 
+    <!-- Mortars -->
+    <!-- AGS -->
+    <RoyalTitlePermitDef ParentName="DropBuildings">
+        <defName>AGS17TurretDrop</defName>
+        <label>AGS-17</label>
+        <description>Request a drop of one AGS-17 with ammo.\n - Material: Stein Alloy</description>
+        <minTitle>Praetor</minTitle>
+        <cooldownDays>78</cooldownDays>
+        <permitPointCost>3</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>12</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedTurretBase">
+        <defName>AGS17TurretDropStuff</defName>
+        <thingsToChoose>
+            <li>Turret_AGSThirty</li>
+        </thingsToChoose>
+        <stuffList>
+            <li>SteelBar</li>
+        </stuffList>
+        <ammunition>
+            <li>45</li>
+        </ammunition>
+    </OrderedStuffDef>
+
+    <RoyalTitlePermitDef ParentName="DropBuildings">
+        <defName>AGS30TurretDrop</defName>
+        <label>AGS-30</label>
+        <description>Request a drop of one AGS-30 with ammo.\n - Material: Ferrotitanium Alloy</description>
+        <minTitle>Legatus</minTitle>
+        <cooldownDays>86</cooldownDays>
+        <prerequisite>AGS17TurretDrop</prerequisite>
+        <permitPointCost>2</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>14</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedTurretBase">
+        <defName>AGS30TurretDropStuff</defName>
+        <column>1</column>
+        <thingsToChoose>
+            <li>Turret_AGS30GrenadeLauncher</li>
+        </thingsToChoose>
+        <stuffList>
+            <li>TitaniumBar</li>
+        </stuffList>
+        <ammunition>
+            <li>50</li>
+        </ammunition>
+    </OrderedStuffDef>
+
+    <!-- 81/90 -->
+    <RoyalTitlePermitDef ParentName="DropBuildings">
+        <defName>A81MortarDrop</defName>
+        <label>81mm artillery mortar</label>
+        <description>Request a drop of one 81mm artillery mortar with ammo.\n - Material: Stein Alloy</description>
+        <minTitle>Legatus</minTitle>
+        <cooldownDays>80</cooldownDays>
+        <permitPointCost>3</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>12</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedTurretBase">
+        <defName>A81MortarDropStuff</defName>
+        <thingsToChoose>
+            <li>Turret_Mortar</li>
+        </thingsToChoose>
+        <stuffList>
+            <li>SteelBar</li>
+        </stuffList>
+        <ammunition>
+            <li>10</li>
+        </ammunition>
+    </OrderedStuffDef>
+
+    <RoyalTitlePermitDef ParentName="DropBuildings">
+        <defName>A90MortarDrop</defName>
+        <label>90mm flak turret</label>
+        <description>Request a drop of one 90mm flak turret with ammo.\n - Material: Stein Alloy</description>
+        <minTitle>Baron</minTitle>
+        <cooldownDays>95</cooldownDays>
+        <permitPointCost>4</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>14</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedTurretBase">
+        <defName>A90MortarDropStuff</defName>
+        <column>1</column>
+        <thingsToChoose>
+            <li>Turret_Flak</li>
+        </thingsToChoose>
+        <stuffList>
+            <li>SteelBar</li>
+        </stuffList>
+        <ammunition>
+            <li>10</li>
+        </ammunition>
+    </OrderedStuffDef>
+
+    <!-- 120/155 -->
+    <RoyalTitlePermitDef ParentName="DropBuildings">
+        <defName>A120MortarDrop</defName>
+        <label>120mm tank cannon turret</label>
+        <description>Request a drop of one 120mm tank cannon turret with ammo.\n - Material: Stein Alloy</description>
+        <minTitle>Viscount</minTitle>
+        <cooldownDays>110</cooldownDays>
+        <permitPointCost>4</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>20</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedTurretBase">
+        <defName>A120MortarDropStuff</defName>
+        <thingsToChoose>
+            <li>Turret_Cannon</li>
+        </thingsToChoose>
+        <stuffList>
+            <li>SteelBar</li>
+        </stuffList>
+        <ammunition>
+            <li>10</li>
+        </ammunition>
+    </OrderedStuffDef>
+
+    <RoyalTitlePermitDef ParentName="DropBuildings">
+        <defName>A155MortarDrop</defName>
+        <label>155mm Howitzer cannon turret</label>
+        <description>Request a drop of one 155mm Howitzer cannon turret with ammo.\n - Material: Stein Alloy</description>
+        <minTitle>Count</minTitle>
+        <cooldownDays>120</cooldownDays>
+        <permitPointCost>5</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>24</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedTurretBase">
+        <defName>A155MortarDropStuff</defName>
+        <column>1</column>
+        <thingsToChoose>
+            <li>HowitzerTurretGun</li>
+        </thingsToChoose>
+        <stuffList>
+            <li>SteelBar</li>
+        </stuffList>
+        <ammunition>
+            <li>10</li>
+        </ammunition>
+    </OrderedStuffDef>
+
+    <!-- RK -->
+    <!-- RK1 -->
+    <RoyalTitlePermitDef ParentName="DropBuildings">
+        <defName>JavelinTurretDrop</defName>
+        <label>MS FGM-148 Javelin</label>
+        <description>Request a drop of one MS FGM-148 Javelin with ammo.\n - Material: Ferrotitanium Alloy</description>
+        <minTitle>Baron</minTitle>
+        <cooldownDays>80</cooldownDays>
+        <permitPointCost>3</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>14</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedTurretBase">
+        <defName>JavelinTurretDropStuff</defName>
+        <thingsToChoose>
+            <li>LightMissileSystem</li>
+        </thingsToChoose>
+        <stuffList>
+            <li>SteelBar</li>
+        </stuffList>
+        <ammunition>
+            <li>10</li>
+        </ammunition>
+    </OrderedStuffDef>
+    
+    <RoyalTitlePermitDef ParentName="DropBuildings">
+        <defName>TOWTurretDrop</defName>
+        <label>BGM-71 TOW</label>
+        <description>Request a drop of one BGM-71 TOW with ammo.\n - Material: Stein Alloy</description>
+        <minTitle>Baron</minTitle>
+        <prerequisite>JavelinTurretDrop</prerequisite>
+        <cooldownDays>80</cooldownDays>
+        <permitPointCost>2</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>14</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedTurretBase">
+        <defName>TOWTurretDropStuff</defName>
+        <column>1</column>
+        <thingsToChoose>
+            <li>Turret_TOWLauncher</li>
+        </thingsToChoose>
+        <stuffList>
+            <li>TitaniumBar</li>
+        </stuffList>
+        <ammunition>
+            <li>10</li>
+        </ammunition>
+    </OrderedStuffDef>
+
+    <!-- RK2 -->
+    <RoyalTitlePermitDef ParentName="DropBuildings">
+        <defName>MediumRKDrop</defName>
+        <label>Medium missile system</label>
+        <description>Request a drop of one medium missile system with ammo.\n - Material: Stein Alloy</description>
+        <minTitle>Viscount</minTitle>
+        <cooldownDays>110</cooldownDays>
+        <permitPointCost>4</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>20</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedTurretBase">
+        <defName>MediumRKDropStuff</defName>
+        <thingsToChoose>
+            <li>MediumMissileSystem</li>
+        </thingsToChoose>
+        <stuffList>
+            <li>SteelBar</li>
+        </stuffList>
+        <ammunition>
+            <li>10</li>
+        </ammunition>
+    </OrderedStuffDef>
+
+    <RoyalTitlePermitDef ParentName="DropBuildings">
+        <defName>HeavyRKDrop</defName>
+        <label>Heavy missile system</label>
+        <description>Request a drop of one heavy missile system with ammo.\n - Material: Stein Alloy</description>
+        <minTitle>Count</minTitle>
+        <cooldownDays>130</cooldownDays>
+        <prerequisite>MediumRKDrop</prerequisite>
+        <permitPointCost>4</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>24</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedTurretBase">
+        <defName>HeavyRKDropStuff</defName>
+        <column>1</column>
+        <thingsToChoose>
+            <li>RLGun</li>
+        </thingsToChoose>
+        <stuffList>
+            <li>SteelBar</li>
+        </stuffList>
+        <ammunition>
+            <li>10</li>
+        </ammunition>
+    </OrderedStuffDef>
+
     <!-- AI -->
     <!-- Sentry -->
-  
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>LightAutoTurretDrop</defName>
         <label>sentry light turret</label>
-        <description>Request a drop of two sentry light turrets with ammo.\n - Material: Stein Alloy\n\nPermit points cost - 3 point.</description>
+        <description>Request a drop of two sentry light turrets with ammo.\n - Material: Stein Alloy</description>
         <minTitle>Legatus</minTitle>
         <cooldownDays>70</cooldownDays>
         <permitPointCost>3</permitPointCost>
@@ -226,7 +524,7 @@
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>HeavyAutoTurretDrop</defName>
         <label>sentry heavy turret</label>
-        <description>Request a drop of two sentry heavy turrets with ammo.\n - Material: Ferrotitanium Alloy\n\nPermit points cost - 6 point.</description>
+        <description>Request a drop of two sentry heavy turrets with ammo.\n - Material: Ferrotitanium Alloy</description>
         <minTitle>Baron</minTitle>
         <cooldownDays>100</cooldownDays>
         <prerequisite>LightAutoTurretDrop</prerequisite>
@@ -253,11 +551,10 @@
     </OrderedStuffDef>
 
     <!-- Big Sentry -->
-
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>BigLightAutoTurretDrop</defName>
         <label>sentry rocket launcher</label>
-        <description>Request a drop of one sentry rocket launcher with ammo.\n - Material: Ferrotitanium Alloy\n\nPermit points cost - 5 point.</description>
+        <description>Request a drop of one sentry rocket launcher with ammo.\n - Material: Ferrotitanium Alloy</description>
         <minTitle>Viscount</minTitle>
         <cooldownDays>90</cooldownDays>
         <permitPointCost>5</permitPointCost>
@@ -265,7 +562,7 @@
             <itemsToDrop>
                 <Steel>1</Steel>
             </itemsToDrop>
-            <favorCost>16</favorCost>
+            <favorCost>20</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
     <OrderedStuffDef ParentName="OrderedTurretBase">
@@ -284,7 +581,7 @@
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>BigHeavyAutoTurretDrop</defName>
         <label>sentry naval turret</label>
-        <description>Request a drop of one sentry naval turret with ammo.\n - Material: Ferrotitanium Alloy\n\nPermit points cost - 5 point.</description>
+        <description>Request a drop of one sentry naval turret with ammo.\n - Material: Ferrotitanium Alloy</description>
         <minTitle>Baron</minTitle>
         <cooldownDays>90</cooldownDays>
         <permitPointCost>5</permitPointCost>
@@ -292,7 +589,7 @@
             <itemsToDrop>
                 <Steel>1</Steel>
             </itemsToDrop>
-            <favorCost>16</favorCost>
+            <favorCost>20</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
     <OrderedStuffDef ParentName="OrderedTurretBase">
@@ -310,19 +607,18 @@
     </OrderedStuffDef>
 
     <!-- HighTech Sentry -->
-
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>HighTechLightAutoTurretDrop</defName>
         <label>sentry blaster turret</label>
-        <description>Request a drop of two sentry blaster turrets with ammo.\n - Material: Ferrotitanium Alloy\n\nPermit points cost - 7 point.</description>
+        <description>Request a drop of two sentry blaster turrets with ammo.\n - Material: Ferrotitanium Alloy</description>
         <minTitle>Count</minTitle>
         <cooldownDays>120</cooldownDays>
-        <permitPointCost>5</permitPointCost>
+        <permitPointCost>7</permitPointCost>
         <royalAid>
             <itemsToDrop>
                 <Steel>2</Steel>
             </itemsToDrop>
-            <favorCost>16</favorCost>
+            <favorCost>24</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
     <OrderedStuffDef ParentName="OrderedTurretBase">
@@ -341,15 +637,15 @@
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>HighTechHeavyAutoTurretDrop</defName>
         <label>sentry laserbeam turret</label>
-        <description>Request a drop of two sentry laserbeam turrets with ammo.\n - Material: Ferrotitanium Alloy\n\nPermit points cost - 7 point.</description>
+        <description>Request a drop of two sentry laserbeam turrets with ammo.\n - Material: Ferrotitanium Alloy</description>
         <minTitle>Count</minTitle>
         <cooldownDays>120</cooldownDays>
-        <permitPointCost>5</permitPointCost>
+        <permitPointCost>7</permitPointCost>
         <royalAid>
             <itemsToDrop>
                 <Steel>2</Steel>
             </itemsToDrop>
-            <favorCost>16</favorCost>
+            <favorCost>24</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
     <OrderedStuffDef ParentName="OrderedTurretBase">

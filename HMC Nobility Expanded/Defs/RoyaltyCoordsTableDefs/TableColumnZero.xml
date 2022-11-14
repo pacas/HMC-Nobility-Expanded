@@ -9,23 +9,32 @@
             <li>SteelDrop</li>
             <li>FoodDrop</li>
             <li>BlocksDrop</li>
+            <li>EmptyTableSpace</li>
+            
             <li>WorkersPermitTitle</li>
             <li>CallLaborerTeam</li>
+            <li>EmptyTableSpace</li>
+            
             <li>SoldiersPermitTitle</li>
             <li>CallMilitaryAidSmall</li>
             <li>CallMilitaryAidLarge</li>
+            <li>EmptyTableSpace</li>
+            
             <li>OrbitalPermitTitle</li>
             <li>CallOrbitalStrike</li>
+            <li>EmptyTableSpace</li>
             
             <!-- Tools -->
             <li>ToolPermitTitle</li>
             <li>ToolDrop</li>
             <li>AdvToolDrop</li>
+            <li>EmptyTableSpace</li>
             
             <!-- Seeds -->
             <li MayRequire="notfood.seedsplease">SeedsPermitTitle</li>
             <li MayRequire="notfood.seedsplease">SeedsPotatoDrop</li>
             <li MayRequire="notfood.seedsplease">SeedsOakDrop</li>
+            <li MayRequire="notfood.seedsplease">EmptyTableSpace</li>
             
             <!-- Armor -->
             <li>ArmorPermitTitle</li>
@@ -33,15 +42,19 @@
             <li>IndustrialArmorDrop</li>
             <li>SpacerArmorDrop</li>
             <li>UltraArmorDrop</li>
+            <li>EmptyTableSpace</li>
 
             <!-- Apparel -->
             <li>ApparelPermitTitle</li>
-            <li>SoldierAccessoriesDrop</li>
+            <li>WorkerPermitSmallTitle</li>
             <li>SmithOutfitDrop</li>
             <li>SlaveOutfitDrop</li>
             <li>MinerOutfitDrop</li>
             <li>ChefOutfitDrop</li>
+            <li>SpecialPermitSmallTitle</li>
+            <li>SoldierAccessoriesDrop</li>
             <li>RoyalOutfitDrop</li>
+            <li>EmptyTableSpace</li>
             
             <!-- Melee -->
             <li>MeleePermitTitle</li>
@@ -49,6 +62,7 @@
             <li>SharpMeleeDrop</li>
             <li>BluntMeleeDrop</li>
             <li>HeavyMeleeDrop</li>
+            <li>EmptyTableSpace</li>
 
             <!-- Ranged -->
             <li>RangedPermitTitle</li>
@@ -59,17 +73,27 @@
             <li>SniperRifleDrop</li>
             <li>MGDrop</li>
             <li>LauncherDrop</li>
+            <li>EmptyTableSpace</li>
 
             <!-- Turrets -->
-            <li>TurretsPermitTitle</li>
-            <li>TurretsMannedPermitSmallTitle</li>
+            <li>TurretsMannedPermitTitle</li>
+            <li>TurretsMedievalPermitSmallTitle</li>
             <li>BallistaDrop</li>
+            <li>TurretsMachinegunsPermitSmallTitle</li>
             <li>MG1LightTurretDrop</li>
             <li>MG2LightTurretDrop</li>
-            <li>TurretsAutoPermitSmallTitle</li>
+            <li>MortarsPermitSmallTitle</li>
+            <li>AGS17TurretDrop</li>
+            <li>A81MortarDrop</li>
+            <li>A120MortarDrop</li>
+            <li>RocketsPermitSmallTitle</li>
+            <li>JavelinTurretDrop</li>
+            <li>MediumRKDrop</li>
+            <li>AutoTurretsPermitTitle</li>
             <li>LightAutoTurretDrop</li>
             <li>BigLightAutoTurretDrop</li>
             <li>HighTechLightAutoTurretDrop</li>
+            <li>EmptyTableSpace</li>
 
             <!-- Animals -->
             <li>AnimalsPermitTitle</li>

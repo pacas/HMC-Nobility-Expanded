@@ -271,7 +271,7 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="CoordsAutopatch.cs" />
+        <Compile Include="HarmonyPermitTablePatch.cs" />
         <Compile Include="OrderedStuffDef.cs" />
         <Compile Include="PermitsCardCustomUtility.cs" />
         <Compile Include="RoyalTitlePermitWorker_CallPawns.cs" />

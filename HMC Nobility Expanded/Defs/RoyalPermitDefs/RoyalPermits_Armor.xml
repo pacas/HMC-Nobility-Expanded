@@ -13,7 +13,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>ArmorDrop</defName>
         <label>medieval armor</label>
-        <description>Request a drop of medieval armor pack.\n - Material: Steel\n - Quality: Normal\nPermit points cost - 1 point.</description>
+        <description>Request a drop of medieval armor pack.\n - Material: Steel\n - Quality: Normal</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>25</cooldownDays>
         <royalAid>
@@ -39,7 +39,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>ArmorDropPlus</defName>
         <label>medieval armor +</label>
-        <description>Request a drop of medieval armor pack.\n - Material: Ferrotitanium alloy \n - Quality: Excellent\nPermit points cost - 2 points.</description>
+        <description>Request a drop of medieval armor pack.\n - Material: Ferrotitanium alloy \n - Quality: Excellent</description>
         <minTitle>Knight</minTitle>
         <cooldownDays>45</cooldownDays>
         <prerequisite>ArmorDrop</prerequisite>
@@ -71,7 +71,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>IndustrialArmorDrop</defName>
         <label>industrial armor</label>
-        <description>Request a drop of industrial armor pack.\n - Material: Steel\n - Quality: Normal\nPermit points cost - 2 point.</description>
+        <description>Request a drop of industrial armor pack.\n - Material: Steel\n - Quality: Normal</description>
         <minTitle>Knight</minTitle>
         <cooldownDays>35</cooldownDays>
         <royalAid>
@@ -98,7 +98,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>IndustrialArmorDropPlus</defName>
         <label>industrial armor +</label>
-        <description>Request a drop of industrial armor pack.\n - Material: Ferrotitanium alloy \n - Quality: Excellent\nPermit points cost - 2 points.</description>
+        <description>Request a drop of industrial armor pack.\n - Material: Ferrotitanium alloy \n - Quality: Excellent</description>
         <minTitle>Legatus</minTitle>
         <cooldownDays>55</cooldownDays>
         <prerequisite>IndustrialArmorDrop</prerequisite>
@@ -130,7 +130,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>SpacerArmorDrop</defName>
         <label>spacer armor</label>
-        <description>Request a drop of spacer armor pack.\n - Material: Alnico alloy\n - Quality: Normal\nPermit points cost - 3 points.</description>
+        <description>Request a drop of spacer armor pack.\n - Material: Alnico alloy\n - Quality: Normal</description>
         <minTitle>Baron</minTitle>
         <cooldownDays>50</cooldownDays>
         <permitPointCost>3</permitPointCost>
@@ -158,7 +158,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>SpacerArmorDropPlus</defName>
         <label>spacer armor +</label>
-        <description>Request a drop of spacer armor pack.\n - Material: Pobedite alloy \n - Quality: Excellent\nPermit points cost - 5 points.</description>
+        <description>Request a drop of spacer armor pack.\n - Material: Pobedite alloy \n - Quality: Excellent</description>
         <minTitle>Viscount</minTitle>
         <prerequisite>SpacerArmorDrop</prerequisite>
         <cooldownDays>70</cooldownDays>
@@ -190,7 +190,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>UltraArmorDrop</defName>
         <label>ultra armor</label>
-        <description>Request a drop of ultra armor pack.\n - Material: Ferrotitanium alloy \n - Quality: Normal\nPermit points cost - 6 points.</description>
+        <description>Request a drop of ultra armor pack.\n - Material: Ferrotitanium alloy \n - Quality: Normal</description>
         <minTitle>Viscount</minTitle>
         <cooldownDays>90</cooldownDays>
         <permitPointCost>6</permitPointCost>
@@ -219,7 +219,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>UltraArmorDropPlus</defName>
         <label>ultra armor +</label>
-        <description>Request a drop of ultra armor pack.\n - Material: Alpha and Beta poly \n - Quality: Excellent\nPermit points cost - 8 points.</description>
+        <description>Request a drop of ultra armor pack.\n - Material: Alpha and Beta poly \n - Quality: Excellent</description>
         <minTitle>Count</minTitle>
         <cooldownDays>180</cooldownDays>
         <prerequisite>UltraArmorDrop</prerequisite>
