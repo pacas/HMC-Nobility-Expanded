@@ -11,7 +11,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>ToolDrop</defName>
         <label>conventional tools</label>
-        <description>Request a drop of tool box with handaxe, hammer, pickaxe, hoe, sickle, knife and broom.\n - Material: Steel\n - Quality: Normal</description>
+        <description>Request a drop of tool box with various tools.</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>10</cooldownDays>
         <royalAid>
@@ -45,7 +45,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>ToolDropPlus</defName>
         <label>conventional tools +</label>
-        <description>Request a drop of tool box with handaxe, hammer, pickaxe, hoe, sickle, knife and broom with better base materials.\n - Material: Titanium\n - Quality: Excellent</description>
+        <description>Request a drop of tool box with various tools with better base materials.</description>
         <minTitle>Praetor</minTitle>
         <cooldownDays>50</cooldownDays>
         <prerequisite>ToolDrop</prerequisite>
@@ -83,7 +83,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>AdvToolDrop</defName>
         <label>multitool</label>
-        <description>Request a drop of one multitool.\n - Material: Alnico alloy\n - Quality: Normal</description>
+        <description>Request a drop of one multitool.</description>
         <minTitle>Baron</minTitle>
         <permitPointCost>2</permitPointCost>
         <royalAid>
@@ -105,7 +105,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>AdvToolDropPlus</defName>
         <label>multitool +</label>
-        <description>Request a drop of one multitool.\n - Material: Titanium\n - Quality: Excellent</description>
+        <description>Request a drop of one multitool.</description>
         <minTitle>Count</minTitle>
         <cooldownDays>80</cooldownDays>
         <prerequisite>AdvToolDrop</prerequisite>

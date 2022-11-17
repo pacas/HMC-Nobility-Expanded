@@ -12,7 +12,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>PistolDrop</defName>
         <label>pistol</label>
-        <description>Request a drop of random pistol with ammo.\n - Quality: Normal</description>
+        <description>Request a drop of random pistol with ammo.</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>15</cooldownDays>
         <royalAid>
@@ -45,7 +45,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>PistolDropPlus</defName>
         <label>pistol +</label>
-        <description>Request a drop of random pistol with ammo. Better guns in the selection.\n - Quality: Good - Masterwork</description>
+        <description>Request a drop of random pistol with ammo. Better guns in the selection.</description>
         <minTitle>Knight</minTitle>
         <cooldownDays>40</cooldownDays>
         <prerequisite>PistolDrop</prerequisite>
@@ -81,7 +81,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>SMGDrop</defName>
         <label>SMG</label>
-        <description>Request a drop of random SMG with ammo.\n - Quality: Normal</description>
+        <description>Request a drop of random SMG with ammo.</description>
         <minTitle>Knight</minTitle>
         <cooldownDays>22</cooldownDays>
         <permitPointCost>2</permitPointCost>
@@ -121,7 +121,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>SMGDropPlus</defName>
         <label>SMG +</label>
-        <description>Request a drop of random SMG with ammo. Better guns in the selection.\n - Quality: Good - Masterwork</description>
+        <description>Request a drop of random SMG with ammo. Better guns in the selection.</description>
         <minTitle>Legatus</minTitle>
         <cooldownDays>40</cooldownDays>
         <prerequisite>SMGDrop</prerequisite>
@@ -159,7 +159,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>ShotgunDrop</defName>
         <label>shotgun</label>
-        <description>Request a drop of random shotgun with ammo. Only basic ones.\n - Quality: Normal</description>
+        <description>Request a drop of random shotgun with ammo. Only basic ones.</description>
         <minTitle>Knight</minTitle>
         <cooldownDays>25</cooldownDays>
         <permitPointCost>2</permitPointCost>
@@ -189,7 +189,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>ShotgunDropPlus</defName>
         <label>shotgun +</label>
-        <description>Request a drop of random shotgun with ammo. Better guns in the selection.\n - Quality: Good - Masterwork</description>
+        <description>Request a drop of random shotgun with ammo. Better guns in the selection.</description>
         <minTitle>Legatus</minTitle>
         <cooldownDays>50</cooldownDays>
         <prerequisite>ShotgunDrop</prerequisite>
@@ -225,7 +225,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>RifleDrop</defName>
         <label>rifle</label>
-        <description>Request a drop of random rifle with ammo. Only basic ones.\n - Quality: Normal</description>
+        <description>Request a drop of random rifle with ammo. Only basic ones.</description>
         <minTitle>Praetor</minTitle>
         <cooldownDays>40</cooldownDays>
         <permitPointCost>3</permitPointCost>
@@ -263,7 +263,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>RifleDropPlus</defName>
         <label>rifle +</label>
-        <description>Request a drop of random rifle with ammo. Better guns in the selection, advanced rifles included.\n - Quality: Good - Masterwork</description>
+        <description>Request a drop of random rifle with ammo. Better guns in the selection, advanced rifles included.</description>
         <minTitle>Baron</minTitle>
         <cooldownDays>90</cooldownDays>
         <prerequisite>RifleDrop</prerequisite>
@@ -311,7 +311,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>SniperRifleDrop</defName>
         <label>sniper rifle</label>
-        <description>Request a drop of random sniper rifle with ammo. Only basic ones.\n - Quality: Normal</description>
+        <description>Request a drop of random sniper rifle with ammo. Only basic ones.</description>
         <minTitle>Baron</minTitle>
         <cooldownDays>60</cooldownDays>
         <permitPointCost>3</permitPointCost>
@@ -339,7 +339,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>SniperRifleDropPlus</defName>
         <label>sniper rifle +</label>
-        <description>Request a drop of random sniper rifle with ammo. Advanced rifles included.\n - Quality: Good - Masterwork</description>
+        <description>Request a drop of random sniper rifle with ammo. Advanced rifles included.</description>
         <minTitle>Count</minTitle>
         <cooldownDays>120</cooldownDays>
         <prerequisite>SniperRifleDrop</prerequisite>
@@ -383,7 +383,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>MGDrop</defName>
         <label>machine gun</label>
-        <description>Request a drop of random machine gun with ammo. Only basic ones.\n - Quality: Normal</description>
+        <description>Request a drop of random machine gun with ammo. Only basic ones.</description>
         <minTitle>Baron</minTitle>
         <cooldownDays>55</cooldownDays>
         <permitPointCost>3</permitPointCost>
@@ -413,7 +413,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>MGDropPlus</defName>
         <label>machine gun +</label>
-        <description>Request a drop of random machine gun with ammo. Better guns in the selection, advanced machine guns included.\n - Quality: Good - Masterwork</description>
+        <description>Request a drop of random machine gun with ammo. Better guns in the selection, advanced machine guns included.</description>
         <minTitle>Count</minTitle>
         <cooldownDays>105</cooldownDays>
         <prerequisite>MGDrop</prerequisite>
@@ -449,7 +449,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>LauncherDrop</defName>
         <label>grenade launcher</label>
-        <description>Request a drop of random grenade launcher, rocket launcher or flamethrower with ammo. Only basic ones. Single-use excluded.\n - Quality: Normal</description>
+        <description>Request a drop of random grenade launcher, rocket launcher or flamethrower with ammo. Only basic ones. Single-use excluded.</description>
         <minTitle>Viscount</minTitle>
         <cooldownDays>65</cooldownDays>
         <permitPointCost>3</permitPointCost>
@@ -485,7 +485,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>LauncherDropPlus</defName>
         <label>grenade launcher +</label>
-        <description>Request a drop of random grenade launcher, rocket launcher or flamethrower with ammo. Better guns in the selection, advanced machine guns included. Single-use excluded.\n - Quality: Good - Masterwork</description>
+        <description>Request a drop of random grenade launcher, rocket launcher or flamethrower with ammo. Better guns in the selection, advanced machine guns included. Single-use excluded.</description>
         <minTitle>Count</minTitle>
         <cooldownDays>130</cooldownDays>
         <prerequisite>LauncherDrop</prerequisite>

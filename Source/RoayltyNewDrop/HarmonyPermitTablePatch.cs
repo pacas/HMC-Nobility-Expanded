@@ -26,6 +26,10 @@ namespace RimWorld
             original = AccessTools.Method(typeof(StatsReportUtility), "Reset");
             prefix = typeof(StatsResetPatch).GetMethod("Prefix");
             harmonyInstance.Patch(original, new HarmonyMethod(prefix));
+            
+            original = AccessTools.Method(typeof(Dialog_InfoCard), "get_InitialSize");
+            prefix = typeof(WindowSizePatch).GetMethod("Prefix");
+            harmonyInstance.Patch(original, new HarmonyMethod(prefix));
         }
     }
 
@@ -116,7 +120,8 @@ namespace RimWorld
             ref Def ___def,
             ref ThingDef ___stuff,
             ref Action ___executeAfterFillCardOnce,
-            ref Rect cardRect)
+            ref Rect cardRect
+        )
         {
             if (___tab == Dialog_InfoCard.InfoCardTab.Stats)
             {
@@ -153,6 +158,18 @@ namespace RimWorld
                 return false;
             ___executeAfterFillCardOnce();
             ___executeAfterFillCardOnce = null;
+            return false;
+        }
+    }
+    
+    [HarmonyPatch(typeof(Dialog_InfoCard), "get_InitialSize")]
+    public class WindowSizePatch
+    {
+        
+        /* a have no fucking idea why its working only after harmony patch */
+        public static bool Prefix(ref Vector2 __result)
+        {
+            __result = new Vector2(1050f, 870f);
             return false;
         }
     }

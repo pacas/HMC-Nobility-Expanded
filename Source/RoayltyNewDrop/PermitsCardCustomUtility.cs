@@ -71,7 +71,7 @@ namespace RimWorld
             if (selectedFaction.def.HasRoyalTitles)
             {
                 string label = "ReturnAllPermits".Translate();
-                var rect2 = new Rect(rect.xMax - 180f, rect.y - 4f, 180f, 51f);
+                var rect2 = new Rect(rect.xMax - 180f, rect.y - 4f, 180f, 30f);
                 var num = TotalReturnPermitsCost(pawn);
                 if (Widgets.ButtonText(rect2, label))
                 {
@@ -103,19 +103,19 @@ namespace RimWorld
                         selectedFaction.def.royalFavorLabel.Named("FAVOR")));
             }
             var currentTitle = pawn.royalty.GetCurrentTitle(selectedFaction);
-            var rect3 = new Rect((float)(rect.xMax - 360.0 - 4.0), rect.y - 4f, 360f, 55f);
+            var rect3 = new Rect((float)(rect.xMin + 80.0), rect.y - 4f, rect.xMax - 320f, 30f);
             var label1 = "CurrentTitle".Translate() + ": " +
                 (currentTitle != null
                     ? currentTitle.GetLabelFor(pawn).CapitalizeFirst()
-                    : (string)"None".Translate()) + "\n" + "UnusedPermits".Translate() + ": " +
+                    : (string)"None".Translate()) + "                  " + "UnusedPermits".Translate() + ": " +
                 pawn.royalty.GetPermitPoints(selectedFaction).ToString();
             if (!selectedFaction.def.royalFavorLabel.NullOrEmpty())
-                label1 = label1 + "\n" + selectedFaction.def.royalFavorLabel.CapitalizeFirst() + ": " +
+                label1 = label1 + "                  " + selectedFaction.def.royalFavorLabel.CapitalizeFirst() + ": " +
                          pawn.royalty.GetFavor(selectedFaction).ToString();
             Widgets.Label(rect3, label1);
-            rect.yMin += 55f;
+            rect.yMin += 35f;
             var rect4 = new Rect(rect);
-            rect4.width *= 0.33f;
+            rect4.width *= 0.30f;
             DoLeftRect(rect4, pawn);
             DoRightRect(new Rect(rect) {xMin = rect4.xMax + 10f}, pawn);
         }
@@ -133,8 +133,7 @@ namespace RimWorld
                 Widgets.LabelCacheHeight(ref rect2, selectedPermit.LabelCap);
                 Text.Font = GameFont.Small;
                 var y2 = y1 + rect2.height;
-                if (!selectedPermit.description.NullOrEmpty())
-                {
+                if (!selectedPermit.description.NullOrEmpty()) {
                     var rect3 = new Rect(0.0f, y2, rect1.width, 0.0f);
                     Widgets.LabelCacheHeight(ref rect3, selectedPermit.description);
                     y2 += rect3.height + 16f;
@@ -145,20 +144,17 @@ namespace RimWorld
                 string label = "Cooldown".Translate() + ": " +
                                "PeriodDays".Translate(selectedPermit.cooldownDays);
 
-                if (selectedPermit.permitPointCost < 90)
-                {
+                if (selectedPermit.permitPointCost < 90) {
                     label += "\n" + (string) ("PrivilegesPointsRequired"
                         .Translate(selectedPermit.permitPointCost));
                 }
-                
                 if (selectedPermit.royalAid != null && selectedPermit.royalAid.favorCost > 0 &&
                     !selectedFaction.def.royalFavorLabel.NullOrEmpty())
                     label += "\n" + (string) ("CooldownUseFavorCost"
                         .Translate(selectedFaction.def.royalFavorLabel.Named("HONOR"))
                         .CapitalizeFirst() + ": ") + selectedPermit.royalAid.favorCost.ToString();
-
-                if (selectedPermit.minTitle != null)
-                {
+                
+                if (selectedPermit.minTitle != null) {
                     taggedString =
                         "RequiresTitle".Translate((NamedArgument)selectedPermit.minTitle.GetLabelForBothGenders());
                     tagged = taggedString.Resolve()
@@ -167,15 +163,65 @@ namespace RimWorld
                             : Color.white);
                     label += "\n" + tagged;
                 }
-
-                if (selectedPermit.prerequisite != null)
-                {
+                
+                if (selectedPermit.prerequisite != null) {
                     taggedString = "UpgradeFrom".Translate(selectedPermit.prerequisite.LabelCap);
                     tagged = taggedString.Resolve().Colorize(PermitUnlocked(selectedPermit.prerequisite, pawn)
                         ? Color.white
                         : ColorLibrary.RedReadable);
                     label += "\n" + tagged;
                 }
+
+                OrderedStuffDef stuffDefOrdered = DefDatabase<OrderedStuffDef>.GetNamedSilentFail(selectedPermit.defName + "Stuff");
+                label += "\n\n";
+                bool isThingsExists = stuffDefOrdered.thingsToChoose != null;
+                bool isPawnsExists = stuffDefOrdered.pawnToChoose != null;
+                bool isStuffExists = stuffDefOrdered.stuffList != null;
+                bool isRoyalAidExists = selectedPermit.royalAid != null;
+                
+                if (isThingsExists && stuffDefOrdered.thingsToChoose.Count > 1) {
+                    if (!isStuffExists || stuffDefOrdered.stuffList.Count != stuffDefOrdered.thingsToChoose.Count)
+                    {
+                        label += "ItemIncludedInPermit".Translate() + "\n";
+                        for (var index = 0; index < stuffDefOrdered.thingsToChoose.Count; ++index) {
+                            label += "  - " + stuffDefOrdered.thingsToChoose[index].LabelCap + "\n";
+                        }
+                    } else {
+                        for (var index = 0; index < stuffDefOrdered.thingsToChoose.Count; ++index) {
+                            label += "  - " + "StuffDescription".Translate(
+                                stuffDefOrdered.stuffList[index].stuffProps.stuffAdjective,
+                                stuffDefOrdered.thingsToChoose[index].label) + "\n";
+                        }
+                    }
+                } else if (isPawnsExists && stuffDefOrdered.pawnToChoose.Count > 1) {
+                    label += "ItemIncludedInPermit".Translate() + "\n";
+                    for (var index = 0; index < stuffDefOrdered.pawnToChoose.Count; ++index) {
+                        label += "  - " + stuffDefOrdered.pawnToChoose[index].LabelCap + "\n";
+                    }
+                } else if (isRoyalAidExists && 
+                           selectedPermit.royalAid.itemsToDrop != null && 
+                           selectedPermit.royalAid.itemsToDrop[0].thingDef.defName != "Steel" &&
+                           isStuffExists) {
+                    label += "ItemIncludedInPermit".Translate() + "\n";
+                    for (var index = 0; index < selectedPermit.royalAid.itemsToDrop.Count; ++index) {
+                        label += "  - " + "StuffDescription".Translate(
+                            stuffDefOrdered.stuffList[index].stuffProps.stuffAdjective,
+                            selectedPermit.royalAid.itemsToDrop[index].Label) + "\n";
+                    }
+                } 
+                if (isThingsExists && isStuffExists && isRoyalAidExists && 
+                    stuffDefOrdered.stuffList.Count == 1 &&
+                    selectedPermit.royalAid.itemsToDrop != null &&
+                    selectedPermit.royalAid.itemsToDrop[0].thingDef.defName == "Steel") {
+                    label += "  - " + "StuffDescription".Translate(
+                        stuffDefOrdered.stuffList[0].stuffProps.stuffAdjective,
+                        stuffDefOrdered.thingsToChoose[0].label) + "\n";
+                }
+                if (stuffDefOrdered.typeOfQuality != null) {
+                    string qualityLabel = stuffDefOrdered.typeOfQuality + stuffDefOrdered.quality;
+                    label += qualityLabel.Translate()+ "\n";
+                }
+
 
                 Widgets.LabelCacheHeight(ref rect4, label);
                 var rect5 = new Rect(0.0f, rect1.height - 50f, rect1.width, 50f);
