@@ -198,11 +198,11 @@ namespace RimWorld
             switch (stuffDefOrdered.typeOfQuality)
             {
                 case "Specific":
-                    return new ThingStuffPairWithQuality(item, stuff, GenerateFromString(stuffDefOrdered.quality)).MakeThing();
+                    return new ThingStuffPairWithQuality(item, stuff, NobilitySupportUtility.GenerateFromString(stuffDefOrdered.quality)).MakeThing();
                 case "Range":
-                    return new ThingStuffPairWithQuality(item, stuff, GenerateFromStringRange(stuffDefOrdered.quality)).MakeThing();
+                    return new ThingStuffPairWithQuality(item, stuff, NobilitySupportUtility.GenerateFromStringRange(stuffDefOrdered.quality)).MakeThing();
                 default:
-                    return new ThingStuffPairWithQuality(item, stuff, GenerateFromString(stuffDefOrdered.quality)).MakeThing();
+                    return new ThingStuffPairWithQuality(item, stuff, NobilitySupportUtility.GenerateFromString(stuffDefOrdered.quality)).MakeThing();
             }
         }
         
@@ -219,93 +219,18 @@ namespace RimWorld
             switch (stuffDefOrdered.typeOfQuality)
             {
                 case "Specific":
-                    comp.SetQuality(GenerateFromString(stuffDefOrdered.quality), ArtGenerationContext.Outsider);
+                    comp.SetQuality(NobilitySupportUtility.GenerateFromString(stuffDefOrdered.quality), ArtGenerationContext.Outsider);
                     break;
                 case "Range":
-                    comp.SetQuality(GenerateFromStringRange(stuffDefOrdered.quality), ArtGenerationContext.Outsider);
+                    comp.SetQuality(NobilitySupportUtility.GenerateFromStringRange(stuffDefOrdered.quality), ArtGenerationContext.Outsider);
                     break;
                 default:
-                    comp.SetQuality(GenerateFromString(stuffDefOrdered.quality), ArtGenerationContext.Outsider);
+                    comp.SetQuality(NobilitySupportUtility.GenerateFromString(stuffDefOrdered.quality), ArtGenerationContext.Outsider);
                     break;
             }
             return thing;
         }
 
-        private QualityCategory GenerateFromString(string quality)
-        {
-            switch (quality)
-            {
-                case "Awful":
-                    return QualityCategory.Awful;
-                case "Poor":
-                    return QualityCategory.Poor;
-                case "Normal":
-                    return QualityCategory.Normal;
-                case "Good":
-                    return QualityCategory.Good;
-                case "Excellent":
-                    return QualityCategory.Excellent;
-                case "Legendary":
-                    return QualityCategory.Legendary;
-                default:
-                    return QualityCategory.Normal;
-            }
-        }
         
-        private QualityCategory GenerateFromStringRange(string quality)
-        {
-            var list = new List<QualityCategory>();
-            switch (quality)
-            {
-                case "Poor":
-                    list.AddRange(new List<QualityCategory>
-                    {
-                        QualityCategory.Awful,
-                        QualityCategory.Poor,
-                        QualityCategory.Normal,
-                    });
-                    return list[random.Next(list.Count)];
-                case "Normal":
-                    list.AddRange(new List<QualityCategory>
-                    {
-                        QualityCategory.Good,
-                        QualityCategory.Poor,
-                        QualityCategory.Normal,
-                    });
-                    return list[random.Next(list.Count)];
-                case "Good":
-                    list.AddRange(new List<QualityCategory>
-                    {
-                        QualityCategory.Good,
-                        QualityCategory.Excellent,
-                        QualityCategory.Normal,
-                    });
-                    return list[random.Next(list.Count)];
-                case "Excellent":
-                    list.AddRange(new List<QualityCategory>
-                    {
-                        QualityCategory.Good,
-                        QualityCategory.Excellent,
-                        QualityCategory.Masterwork,
-                    });
-                    return list[random.Next(list.Count)];
-                case "Masterwork":
-                    list.AddRange(new List<QualityCategory>
-                    {
-                        QualityCategory.Legendary,
-                        QualityCategory.Excellent,
-                        QualityCategory.Masterwork,
-                    });
-                    return QualityCategory.Masterwork;
-                default:
-                    list.AddRange(new List<QualityCategory>
-                    {
-                        QualityCategory.Good,
-                        QualityCategory.Poor,
-                        QualityCategory.Normal,
-                    });
-                    return list[random.Next(list.Count)];
-            }
-        }
     }
 }

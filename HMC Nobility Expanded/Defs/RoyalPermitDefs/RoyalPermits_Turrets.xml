@@ -43,7 +43,7 @@
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>BallistaDrop</defName>
         <label>ballista</label>
-        <description>Request a drop of two ballistas with ammo.\n - Material: Wood Planks</description>
+        <description>Request a drop of two ballistas with ammo.</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>60</cooldownDays>
         <permitPointCost>2</permitPointCost>
@@ -70,7 +70,7 @@
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>CatapultDrop</defName>
         <label>catapult</label>
-        <description>Request a drop of one catapult with ammo.\n - Material: Wood Planks</description>
+        <description>Request a drop of one catapult with ammo.</description>
         <minTitle>Knight</minTitle>
         <cooldownDays>100</cooldownDays>
         <permitPointCost>2</permitPointCost>
@@ -99,7 +99,7 @@
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>MG1LightTurretDrop</defName>
         <label>7.62x51mm M240B MG</label>
-        <description>Request a drop of one 7.62x51mm M240B MG with ammo.\n - Material: Stein Alloy</description>
+        <description>Request a drop of one 7.62x51mm M240B MG with ammo.</description>
         <minTitle>Knight</minTitle>
         <cooldownDays>60</cooldownDays>
         <permitPointCost>2</permitPointCost>
@@ -126,7 +126,7 @@
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>MG1HeavyTurretDrop</defName>
         <label>50BMG M2 Browning MG</label>
-        <description>Request a drop of one 50BMG M2 Browning MG with ammo.\n - Material: Ferrotitanium Alloy</description>
+        <description>Request a drop of one 50BMG M2 Browning MG with ammo.</description>
         <minTitle>Praetor</minTitle>
         <cooldownDays>80</cooldownDays>
         <permitPointCost>3</permitPointCost>
@@ -155,7 +155,7 @@
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>MG2LightTurretDrop</defName>
         <label>M134 minigun</label>
-        <description>Request a drop of one M134 minigun with ammo.\n - Material: Stein Alloy</description>
+        <description>Request a drop of one M134 minigun with ammo.</description>
         <minTitle>Praetor</minTitle>
         <cooldownDays>70</cooldownDays>
         <permitPointCost>3</permitPointCost>
@@ -182,7 +182,7 @@
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>MG2HeavyTurretDrop</defName>
         <label>14.5mm KPV MG</label>
-        <description>Request a drop of one 14.5mm KPV MG with ammo.\n - Material: Ferrotitanium Alloy</description>
+        <description>Request a drop of one 14.5mm KPV MG with ammo.</description>
         <minTitle>Legatus</minTitle>
         <cooldownDays>90</cooldownDays>
         <permitPointCost>3</permitPointCost>
@@ -212,7 +212,7 @@
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>AGS17TurretDrop</defName>
         <label>AGS-17</label>
-        <description>Request a drop of one AGS-17 with ammo.\n - Material: Stein Alloy</description>
+        <description>Request a drop of one AGS-17 with ammo.</description>
         <minTitle>Praetor</minTitle>
         <cooldownDays>78</cooldownDays>
         <permitPointCost>3</permitPointCost>
@@ -239,7 +239,7 @@
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>AGS30TurretDrop</defName>
         <label>AGS-30</label>
-        <description>Request a drop of one AGS-30 with ammo.\n - Material: Ferrotitanium Alloy</description>
+        <description>Request a drop of one AGS-30 with ammo.</description>
         <minTitle>Legatus</minTitle>
         <cooldownDays>86</cooldownDays>
         <prerequisite>AGS17TurretDrop</prerequisite>
@@ -269,7 +269,7 @@
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>A81MortarDrop</defName>
         <label>81mm artillery mortar</label>
-        <description>Request a drop of one 81mm artillery mortar with ammo.\n - Material: Stein Alloy</description>
+        <description>Request a drop of one 81mm artillery mortar with ammo.</description>
         <minTitle>Legatus</minTitle>
         <cooldownDays>80</cooldownDays>
         <permitPointCost>3</permitPointCost>
@@ -296,7 +296,7 @@
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>A90MortarDrop</defName>
         <label>90mm flak turret</label>
-        <description>Request a drop of one 90mm flak turret with ammo.\n - Material: Stein Alloy</description>
+        <description>Request a drop of one 90mm flak turret with ammo.</description>
         <minTitle>Baron</minTitle>
         <cooldownDays>95</cooldownDays>
         <permitPointCost>4</permitPointCost>
@@ -325,7 +325,7 @@
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>A120MortarDrop</defName>
         <label>120mm tank cannon turret</label>
-        <description>Request a drop of one 120mm tank cannon turret with ammo.\n - Material: Stein Alloy</description>
+        <description>Request a drop of one 120mm tank cannon turret with ammo.</description>
         <minTitle>Viscount</minTitle>
         <cooldownDays>110</cooldownDays>
         <permitPointCost>4</permitPointCost>
@@ -352,7 +352,7 @@
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>A155MortarDrop</defName>
         <label>155mm Howitzer cannon turret</label>
-        <description>Request a drop of one 155mm Howitzer cannon turret with ammo.\n - Material: Stein Alloy</description>
+        <description>Request a drop of one 155mm Howitzer cannon turret with ammo.</description>
         <minTitle>Count</minTitle>
         <cooldownDays>120</cooldownDays>
         <permitPointCost>5</permitPointCost>
@@ -382,7 +382,7 @@
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>JavelinTurretDrop</defName>
         <label>MS FGM-148 Javelin</label>
-        <description>Request a drop of one MS FGM-148 Javelin with ammo.\n - Material: Ferrotitanium Alloy</description>
+        <description>Request a drop of one MS FGM-148 Javelin with ammo.</description>
         <minTitle>Baron</minTitle>
         <cooldownDays>80</cooldownDays>
         <permitPointCost>3</permitPointCost>
@@ -409,7 +409,7 @@
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>TOWTurretDrop</defName>
         <label>BGM-71 TOW</label>
-        <description>Request a drop of one BGM-71 TOW with ammo.\n - Material: Stein Alloy</description>
+        <description>Request a drop of one BGM-71 TOW with ammo.</description>
         <minTitle>Baron</minTitle>
         <prerequisite>JavelinTurretDrop</prerequisite>
         <cooldownDays>80</cooldownDays>
@@ -439,7 +439,7 @@
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>MediumRKDrop</defName>
         <label>Medium missile system</label>
-        <description>Request a drop of one medium missile system with ammo.\n - Material: Stein Alloy</description>
+        <description>Request a drop of one medium missile system with ammo.</description>
         <minTitle>Viscount</minTitle>
         <cooldownDays>110</cooldownDays>
         <permitPointCost>4</permitPointCost>
@@ -466,7 +466,7 @@
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>HeavyRKDrop</defName>
         <label>Heavy missile system</label>
-        <description>Request a drop of one heavy missile system with ammo.\n - Material: Stein Alloy</description>
+        <description>Request a drop of one heavy missile system with ammo.</description>
         <minTitle>Count</minTitle>
         <cooldownDays>130</cooldownDays>
         <prerequisite>MediumRKDrop</prerequisite>
@@ -497,7 +497,7 @@
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>LightAutoTurretDrop</defName>
         <label>sentry light turret</label>
-        <description>Request a drop of two sentry light turrets with ammo.\n - Material: Stein Alloy</description>
+        <description>Request a drop of two sentry light turrets with ammo.</description>
         <minTitle>Legatus</minTitle>
         <cooldownDays>70</cooldownDays>
         <permitPointCost>3</permitPointCost>
@@ -524,7 +524,7 @@
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>HeavyAutoTurretDrop</defName>
         <label>sentry heavy turret</label>
-        <description>Request a drop of two sentry heavy turrets with ammo.\n - Material: Ferrotitanium Alloy</description>
+        <description>Request a drop of two sentry heavy turrets with ammo.</description>
         <minTitle>Baron</minTitle>
         <cooldownDays>100</cooldownDays>
         <prerequisite>LightAutoTurretDrop</prerequisite>
@@ -554,7 +554,7 @@
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>BigLightAutoTurretDrop</defName>
         <label>sentry rocket launcher</label>
-        <description>Request a drop of one sentry rocket launcher with ammo.\n - Material: Ferrotitanium Alloy</description>
+        <description>Request a drop of one sentry rocket launcher with ammo.</description>
         <minTitle>Viscount</minTitle>
         <cooldownDays>90</cooldownDays>
         <permitPointCost>5</permitPointCost>
@@ -581,7 +581,7 @@
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>BigHeavyAutoTurretDrop</defName>
         <label>sentry naval turret</label>
-        <description>Request a drop of one sentry naval turret with ammo.\n - Material: Ferrotitanium Alloy</description>
+        <description>Request a drop of one sentry naval turret with ammo.</description>
         <minTitle>Baron</minTitle>
         <cooldownDays>90</cooldownDays>
         <permitPointCost>5</permitPointCost>
@@ -610,7 +610,7 @@
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>HighTechLightAutoTurretDrop</defName>
         <label>sentry blaster turret</label>
-        <description>Request a drop of two sentry blaster turrets with ammo.\n - Material: Ferrotitanium Alloy</description>
+        <description>Request a drop of two sentry blaster turrets with ammo.</description>
         <minTitle>Count</minTitle>
         <cooldownDays>120</cooldownDays>
         <permitPointCost>7</permitPointCost>
@@ -637,7 +637,7 @@
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>HighTechHeavyAutoTurretDrop</defName>
         <label>sentry laserbeam turret</label>
-        <description>Request a drop of two sentry laserbeam turrets with ammo.\n - Material: Ferrotitanium Alloy</description>
+        <description>Request a drop of two sentry laserbeam turrets with ammo.</description>
         <minTitle>Count</minTitle>
         <cooldownDays>120</cooldownDays>
         <permitPointCost>7</permitPointCost>

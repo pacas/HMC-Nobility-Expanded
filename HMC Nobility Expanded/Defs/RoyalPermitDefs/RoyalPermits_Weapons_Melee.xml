@@ -12,7 +12,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>AgileMeleeDrop</defName>
         <label>Agile weapon</label>
-        <description>Request a drop of random agile melee weapon (daggers and shortswords).\n - Material: Steel\n - Quality: Normal</description>
+        <description>Request a drop of random agile melee weapon (daggers and shortswords).</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>21</cooldownDays>
         <royalAid>
@@ -38,7 +38,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>AgileMeleeDropPlus</defName>
         <label>agile weapon +</label>
-        <description>Request a drop of random agile melee weapon (daggers and shortswords).\n - Material: Titanium\n - Quality: Good - Masterwork</description>
+        <description>Request a drop of random agile melee weapon (daggers and shortswords).</description>
         <minTitle>Legatus</minTitle>
         <cooldownDays>60</cooldownDays>
         <prerequisite>AgileMeleeDrop</prerequisite>
@@ -72,7 +72,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>SharpMeleeDrop</defName>
         <label>Sharp weapon</label>
-        <description>Request a drop of random sharp melee weapon (exclude daggers and shortswords).\n - Material: Steel\n - Quality: Normal</description>
+        <description>Request a drop of random sharp melee weapon (exclude daggers and shortswords).</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>21</cooldownDays>
         <royalAid>
@@ -107,7 +107,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>SharpMeleeDropPlus</defName>
         <label>sharp weapon +</label>
-        <description>Request a drop of random sharp melee weapon (exclude daggers and shortswords).\n - Material: Titanium\n - Quality: Good - Masterwork</description>
+        <description>Request a drop of random sharp melee weapon (exclude daggers and shortswords).</description>
         <minTitle>Legatus</minTitle>
         <cooldownDays>60</cooldownDays>
         <prerequisite>SharpMeleeDrop</prerequisite>
@@ -149,7 +149,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>BluntMeleeDrop</defName>
         <label>Blunt weapon</label>
-        <description>Request a drop of random blunt melee weapon (exclude daggers and shortswords).\n - Material: Steel\n - Quality: Normal</description>
+        <description>Request a drop of random blunt melee weapon (exclude daggers and shortswords).</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>21</cooldownDays>
         <royalAid>
@@ -176,7 +176,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>BluntMeleeDropPlus</defName>
         <label>blunt weapon +</label>
-        <description>Request a drop of random blunt melee weapon (exclude daggers and shortswords).\n - Material: Titanium\n - Quality: Good - Masterwork</description>
+        <description>Request a drop of random blunt melee weapon (exclude daggers and shortswords).</description>
         <minTitle>Legatus</minTitle>
         <cooldownDays>60</cooldownDays>
         <prerequisite>BluntMeleeDrop</prerequisite>
@@ -210,7 +210,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>HeavyMeleeDrop</defName>
         <label>Heavy weapon</label>
-        <description>Request a drop of random heavy melee weapon.\n - Material: Steel\n - Quality: Normal</description>
+        <description>Request a drop of random heavy melee weapon.</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>21</cooldownDays>
         <royalAid>
@@ -239,7 +239,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>HeavyMeleeDropPlus</defName>
         <label>heavy weapon +</label>
-        <description>Request a drop of random heavy melee weapon.\n - Material: Titanium\n - Quality: Good - Masterwork</description>
+        <description>Request a drop of random heavy melee weapon.</description>
         <minTitle>Legatus</minTitle>
         <cooldownDays>60</cooldownDays>
         <prerequisite>HeavyMeleeDrop</prerequisite>

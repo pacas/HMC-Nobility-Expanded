@@ -2,5 +2,25 @@
 <LanguageData>
     
     <PrivilegesPointsRequired>Permit points cost: {0}</PrivilegesPointsRequired>
+    <ItemIncludedInPermit>Contains:</ItemIncludedInPermit>
+
+    <!-- ================= -->
+    <SpecificAwful>Quality: Awful</SpecificAwful>
+    <SpecificPoor>Quality: Poor</SpecificPoor>
+    <SpecificNormal>Quality: Normal</SpecificNormal>
+    <SpecificGood>Quality: Good</SpecificGood>
+    <SpecificExcellent>Quality: Excellent</SpecificExcellent>
+    <SpecificMasterwork>Quality: Masterwork</SpecificMasterwork>
+    <SpecificLegendary>Quality: Legendary</SpecificLegendary>
+
+    <RangeAwful>Quality: Awful-Poor</RangeAwful>
+    <RangePoor>Quality: Awful-Normal</RangePoor>
+    <RangeNormal>Quality: Poor-Good</RangeNormal>
+    <RangeGood>Quality: Normal-Excellent</RangeGood>
+    <RangeExcellent>Quality: Good-Masterwork</RangeExcellent>
+    <RangeMasterwork>Quality: Excellent-Legendary</RangeMasterwork>
+    <RangeLegendary>Quality: Masterwork-Legendary</RangeLegendary>
+
+    <StuffDescription>{0} {1}</StuffDescription>
 
 </LanguageData>

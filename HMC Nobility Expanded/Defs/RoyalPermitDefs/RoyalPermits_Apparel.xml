@@ -25,7 +25,7 @@
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
         <defName>SoldierAccessoriesDrop</defName>
         <label>heavy soldier accessories</label>
-        <description>Request a drop of classic heavy soldier accessories. Full armor is not included.\n - Quality: Good\n - Contains: backpack, heavy armor vest, ammo vest and armored mask</description>
+        <description>Request a drop of classic heavy soldier accessories. Full armor is not included.</description>
         <permitPointCost>4</permitPointCost>
         <cooldownDays>45</cooldownDays>
         <minTitle>Praetor</minTitle>
@@ -53,7 +53,7 @@
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
         <defName>SoldierAccessoriesAltDrop</defName>
         <label>recon soldier accessories</label>
-        <description>Request a drop of classic recon soldier accessories. Full armor is not included.\n - Quality: Good\n - Contains: backpack, light armor vest, ammo belt and visor</description>
+        <description>Request a drop of classic recon soldier accessories. Full armor is not included.</description>
         <permitPointCost>3</permitPointCost>
         <minTitle>Praetor</minTitle>
         <cooldownDays>40</cooldownDays>
@@ -83,7 +83,7 @@
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
         <defName>SmithOutfitDrop</defName>
         <label>smith outfit</label>
-        <description>Request a drop of smith outfit.\n - Quality: Good</description>
+        <description>Request a drop of smith outfit.</description>
         <permitPointCost>1</permitPointCost>
         <minTitle>Acolyte</minTitle>
         <royalAid>
@@ -112,7 +112,7 @@
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
         <defName>FarmerOutfitDrop</defName>
         <label>farmer outfit</label>
-        <description>Request a drop of farmer outfit.\n - Quality: Good</description>
+        <description>Request a drop of farmer outfit.</description>
         <permitPointCost>1</permitPointCost>
         <minTitle>Acolyte</minTitle>
         <royalAid>
@@ -143,7 +143,7 @@
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
         <defName>ChefOutfitDrop</defName>
         <label>chef outfit</label>
-        <description>Request a drop of chef outfit.\n - Quality: Good</description>
+        <description>Request a drop of chef outfit.</description>
         <royalAid>
             <itemsToDrop>
                 <Apparel_FSChefJacket>1</Apparel_FSChefJacket>
@@ -167,7 +167,7 @@
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
         <defName>MedicOutfitDrop</defName>
         <label>medic outfit</label>
-        <description>Request a drop of medic outfit.\n - Quality: Good</description>
+        <description>Request a drop of medic outfit.</description>
         <permitPointCost>3</permitPointCost>
         <royalAid>
             <itemsToDrop>
@@ -195,7 +195,7 @@
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
         <defName>MinerOutfitDrop</defName>
         <label>miner outfit</label>
-        <description>Request a drop of miner outfit.\n - Quality: Good</description>
+        <description>Request a drop of miner outfit.</description>
         <royalAid>
             <itemsToDrop>
                 <Apparello_Workglove>1</Apparello_Workglove>
@@ -221,7 +221,7 @@
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
         <defName>ConstructorOutfitDrop</defName>
         <label>constructor outfit</label>
-        <description>Request a drop of constructor outfit.\n - Quality: Good</description>
+        <description>Request a drop of constructor outfit.</description>
         <permitPointCost>1</permitPointCost>
         <royalAid>
             <itemsToDrop>
@@ -251,7 +251,7 @@
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
         <defName>SlaveOutfitDrop</defName>
         <label>slave outfit</label>
-        <description>Request a drop of slave outfit.\n - Quality: Good</description>
+        <description>Request a drop of slave outfit.</description>
         <permitPointCost>1</permitPointCost>
         <cooldownDays>10</cooldownDays>
         <royalAid>
@@ -280,7 +280,7 @@
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
         <defName>HazmatOutfitDrop</defName>
         <label>hazmat outfit</label>
-        <description>Request a drop of outfit to work in radioactive environments.\n - Quality: Good</description>
+        <description>Request a drop of outfit to work in radioactive environments.</description>
         <cooldownDays>50</cooldownDays>
         <royalAid>
             <itemsToDrop>
@@ -305,7 +305,7 @@
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
         <defName>RoyalOutfitDrop</defName>
         <label>royal outfit</label>
-        <description>Request a drop of outfit for your royal person!\n - Quality: Good - Masterwork</description>
+        <description>Request a drop of outfit for your royal person!</description>
         <permitPointCost>5</permitPointCost>
         <cooldownDays>80</cooldownDays>
         <minTitle>Baron</minTitle>
@@ -336,7 +336,7 @@
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
         <defName>PsychicOutfitDrop</defName>
         <label>psychic outfit</label>
-        <description>Request a drop of psychic outfit.\n - Quality: Good - Masterwork</description>
+        <description>Request a drop of psychic outfit.</description>
         <permitPointCost>5</permitPointCost>
         <minTitle>Legatus</minTitle>
         <cooldownDays>90</cooldownDays>

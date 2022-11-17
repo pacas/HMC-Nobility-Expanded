@@ -7,14 +7,14 @@
     
     <!-- обычные -->
     <ToolDrop.label>обычные инструменты</ToolDrop.label>
-    <ToolDrop.description>Запрос доставки ящика с ручным топором, молотком, киркой, мотыгой, серпом, ножом и метлой.\n - Материал: сталь\n - Качество: обычное</ToolDrop.description>
+    <ToolDrop.description>Запрос доставки ящика с ручным топором, молотком, киркой, мотыгой, серпом, ножом и метлой.</ToolDrop.description>
     <ToolDropPlus.label>обычные инструменты +</ToolDropPlus.label>
-    <ToolDropPlus.description>Запрос доставки ящика с ручным топором, молотком, киркой, мотыгой, серпом, ножом и метлой.\n - Материал: титан\n - Качество: отличное</ToolDropPlus.description>
+    <ToolDropPlus.description>Запрос доставки ящика с ручным топором, молотком, киркой, мотыгой, серпом, ножом и метлой.</ToolDropPlus.description>
 
     <!-- мультитул -->
     <AdvToolDrop.label>мультитул</AdvToolDrop.label>
-    <AdvToolDrop.description>Запрос доставки одного мультитула.\n - Материал: альнико\n - Качество: обычное</AdvToolDrop.description>
+    <AdvToolDrop.description>Запрос доставки одного мультитула.</AdvToolDrop.description>
     <AdvToolDropPlus.label>мультитул +</AdvToolDropPlus.label>
-    <AdvToolDropPlus.description>Запрос доставки одного мультитула.\n - Материал: титан\n - Качество: отличное</AdvToolDropPlus.description>
+    <AdvToolDropPlus.description>Запрос доставки одного мультитула.</AdvToolDropPlus.description>
 
 </LanguageData>

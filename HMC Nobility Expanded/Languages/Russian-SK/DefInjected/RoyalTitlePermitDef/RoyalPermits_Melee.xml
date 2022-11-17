@@ -7,26 +7,26 @@
     
     <!-- маневренное -->
     <AgileMeleeDrop.label>манёвренное оружие</AgileMeleeDrop.label>
-    <AgileMeleeDrop.description>Запрос доставки случайного маневренного оружия ближнего боя (кинжалы и короткие мечи).\n - Материал: сталь\n - Качество: обычное</AgileMeleeDrop.description>
+    <AgileMeleeDrop.description>Запрос доставки случайного маневренного оружия ближнего боя (кинжалы и короткие мечи).</AgileMeleeDrop.description>
     <AgileMeleeDropPlus.label>манёвренное оружие +</AgileMeleeDropPlus.label>
-    <AgileMeleeDropPlus.description>Запрос доставки случайного улучшенного маневренного оружия ближнего боя (кинжалы и короткие мечи).\n - Материал: титан\n - Качество: хорошее-шедевр</AgileMeleeDropPlus.description>
+    <AgileMeleeDropPlus.description>Запрос доставки случайного улучшенного маневренного оружия ближнего боя (кинжалы и короткие мечи).</AgileMeleeDropPlus.description>
 
     <!-- острое -->
     <SharpMeleeDrop.label>режущее оружие</SharpMeleeDrop.label>
-    <SharpMeleeDrop.description>Запрос доставки случайного режущего оружия ближнего боя (исключая кинжалы и короткие мечи).\n - Материал: сталь\n - Качество: обычное</SharpMeleeDrop.description>
+    <SharpMeleeDrop.description>Запрос доставки случайного режущего оружия ближнего боя (исключая кинжалы и короткие мечи).</SharpMeleeDrop.description>
     <SharpMeleeDropPlus.label>режущее оружие +</SharpMeleeDropPlus.label>
-    <SharpMeleeDropPlus.description>Запрос доставки случайного улучшенного режущего оружия ближнего боя (исключая кинжалы и короткие мечи).\n - Материал: титан\n - Качество: хорошее-шедевр</SharpMeleeDropPlus.description>
+    <SharpMeleeDropPlus.description>Запрос доставки случайного улучшенного режущего оружия ближнего боя (исключая кинжалы и короткие мечи).</SharpMeleeDropPlus.description>
 
     <!-- ударное -->
     <BluntMeleeDrop.label>ударное оружие</BluntMeleeDrop.label>
-    <BluntMeleeDrop.description>Запрос доставки случайного ударного оружия ближнего боя.\n - Материал: сталь\n - Качество: обычное</BluntMeleeDrop.description>
+    <BluntMeleeDrop.description>Запрос доставки случайного ударного оружия ближнего боя.</BluntMeleeDrop.description>
     <BluntMeleeDropPlus.label>ударное оружия +</BluntMeleeDropPlus.label>
-    <BluntMeleeDropPlus.description>Запрос доставки случайного улучшенного ударного оружия ближнего боя.\n - Материал: титан\n - Качество: хорошее-шедевр</BluntMeleeDropPlus.description>
+    <BluntMeleeDropPlus.description>Запрос доставки случайного улучшенного ударного оружия ближнего боя.</BluntMeleeDropPlus.description>
 
     <!-- тяжелое -->
     <HeavyMeleeDrop.label>тяжёлое оружия</HeavyMeleeDrop.label>
-    <HeavyMeleeDrop.description>Запрос доставки случайного тяжёлого оружия ближнего боя.\n - Материал: сталь\n - Качество: обычное</HeavyMeleeDrop.description>
+    <HeavyMeleeDrop.description>Запрос доставки случайного тяжёлого оружия ближнего боя.</HeavyMeleeDrop.description>
     <HeavyMeleeDropPlus.label>тяжёлое оружие +</HeavyMeleeDropPlus.label>
-    <HeavyMeleeDropPlus.description>Запрос доставки случайного улучшенного тяжёлого оружия ближнего боя.\n - Материал: титан\n - Качество: хорошее-шедевр</HeavyMeleeDropPlus.description>
+    <HeavyMeleeDropPlus.description>Запрос доставки случайного улучшенного тяжёлого оружия ближнего боя.</HeavyMeleeDropPlus.description>
 
 </LanguageData>

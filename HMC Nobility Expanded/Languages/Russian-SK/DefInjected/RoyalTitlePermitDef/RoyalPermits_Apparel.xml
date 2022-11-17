@@ -11,34 +11,34 @@
     
     <!-- солдатское -->
     <SoldierAccessoriesDrop.label>набор штурмовика</SoldierAccessoriesDrop.label>
-    <SoldierAccessoriesDrop.description>Запрос доставки набора аксесссуаров для штурмовика. Полная броня не входит в комплект.\n - Качество: хорошее\n - Содержит: рюкзак, тяжелый бронежилет, жилет с патронами и бронированную маску.</SoldierAccessoriesDrop.description>
+    <SoldierAccessoriesDrop.description>Запрос доставки набора аксесссуаров для штурмовика. Полная броня не входит в комплект.</SoldierAccessoriesDrop.description>
     <SoldierAccessoriesAltDrop.label>набор разведчика</SoldierAccessoriesAltDrop.label>
-    <SoldierAccessoriesAltDrop.description>Запрос доставки набора аксесссуаров для разведчика. Полная броня не входит в комплект.\n - Качество: хорошее\n - Содержит: рюкзак, легкий бронежилет, пояс для боеприпасов и визор.</SoldierAccessoriesAltDrop.description>
+    <SoldierAccessoriesAltDrop.description>Запрос доставки набора аксесссуаров для разведчика. Полная броня не входит в комплект.</SoldierAccessoriesAltDrop.description>
 
     <!-- обычное -->
     <SmithOutfitDrop.label>одежда кузнеца</SmithOutfitDrop.label>
-    <SmithOutfitDrop.description>Запрос доставки набора одежды кузнеца.\n - Качество: хорошее</SmithOutfitDrop.description>
+    <SmithOutfitDrop.description>Запрос доставки набора одежды кузнеца.</SmithOutfitDrop.description>
     <FarmerOutfitDrop.label>одежда фермера</FarmerOutfitDrop.label>
-    <FarmerOutfitDrop.description>Запрос доставки набора одежды фермера.\n - Качество: хорошее</FarmerOutfitDrop.description>
+    <FarmerOutfitDrop.description>Запрос доставки набора одежды фермера.</FarmerOutfitDrop.description>
 
     <ChefOutfitDrop.label>одежда повара</ChefOutfitDrop.label>
-    <ChefOutfitDrop.description>Запрос доставки набора одежды повара.\n - Качество: хорошее</ChefOutfitDrop.description>
+    <ChefOutfitDrop.description>Запрос доставки набора одежды повара.</ChefOutfitDrop.description>
     <MedicOutfitDrop.label>одежда врача</MedicOutfitDrop.label>
-    <MedicOutfitDrop.description>Запрос доставки набора одежды врача.\n - Качество: хорошее</MedicOutfitDrop.description>
+    <MedicOutfitDrop.description>Запрос доставки набора одежды врача.</MedicOutfitDrop.description>
 
     <MinerOutfitDrop.label>одежда шахтёра</MinerOutfitDrop.label>
-    <MinerOutfitDrop.description>Запрос доставки набора одежды шахтёра.\n - Качество: хорошее</MinerOutfitDrop.description>
+    <MinerOutfitDrop.description>Запрос доставки набора одежды шахтёра.</MinerOutfitDrop.description>
     <ConstructorOutfitDrop.label>одежда строителя</ConstructorOutfitDrop.label>
-    <ConstructorOutfitDrop.description>Запрос доставки набора одежды строителя.\n - Качество: хорошее</ConstructorOutfitDrop.description>
+    <ConstructorOutfitDrop.description>Запрос доставки набора одежды строителя.</ConstructorOutfitDrop.description>
 
     <SlaveOutfitDrop.label>одежда раба</SlaveOutfitDrop.label>
-    <SlaveOutfitDrop.description>Запрос доставки набора одежды раба.\n - Качество: хорошее</SlaveOutfitDrop.description>
+    <SlaveOutfitDrop.description>Запрос доставки набора одежды раба.</SlaveOutfitDrop.description>
     <HazmatOutfitDrop.label>набор химзащиты</HazmatOutfitDrop.label>
-    <HazmatOutfitDrop.description>Запрос доставки набора химзащиты.\n - Качество: хорошее</HazmatOutfitDrop.description>
+    <HazmatOutfitDrop.description>Запрос доставки набора химзащиты.</HazmatOutfitDrop.description>
 
     <RoyalOutfitDrop.label>одеяния знати</RoyalOutfitDrop.label>
-    <RoyalOutfitDrop.description>Запрос доставки набора одеяния знати.\n - Качество: хорошее</RoyalOutfitDrop.description>
+    <RoyalOutfitDrop.description>Запрос доставки набора одеяния знати.</RoyalOutfitDrop.description>
     <PsychicOutfitDrop.label>одежда из элтекса</PsychicOutfitDrop.label>
-    <PsychicOutfitDrop.description>Запрос доставки набора одежды из элтекса.\n - Качество: хорошее</PsychicOutfitDrop.description>
+    <PsychicOutfitDrop.description>Запрос доставки набора одежды из элтекса.</PsychicOutfitDrop.description>
 
 </LanguageData>
