@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
-using Verse;
 
 namespace RimWorld
 {
     public class NobilitySupportUtility
     {
         private static System.Random random = new System.Random();
+        public string curTab = "Tools"; 
         
         public static QualityCategory GenerateFromString(string quality)
         {
