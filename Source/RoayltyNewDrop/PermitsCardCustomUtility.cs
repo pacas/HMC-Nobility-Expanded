@@ -9,7 +9,7 @@ namespace RimWorld
     [StaticConstructorOnStartup]
     public static class PermitsCardCustomUtility
     {
-        public static Vector2 rightScrollPosition;
+        private static Vector2 rightScrollPosition;
         public static RoyalTitlePermitDef selectedPermit;
         public static Faction selectedFaction;
         public static NobilitySupportUtility utility = new NobilitySupportUtility();
@@ -105,10 +105,10 @@ namespace RimWorld
             var label1 = "CurrentTitle".Translate() + ": " +
                 (currentTitle != null
                     ? currentTitle.GetLabelFor(pawn).CapitalizeFirst()
-                    : (string)"None".Translate()) + "               " + "UnusedPermits".Translate() + ": " +
+                    : (string)"None".Translate()) + "            " + "UnusedPermits".Translate() + ": " +
                 pawn.royalty.GetPermitPoints(selectedFaction).ToString();
             if (!selectedFaction.def.royalFavorLabel.NullOrEmpty())
-                label1 = label1 + "               " + selectedFaction.def.royalFavorLabel.CapitalizeFirst() + ": " +
+                label1 = label1 + "            " + selectedFaction.def.royalFavorLabel.CapitalizeFirst() + ": " +
                          pawn.royalty.GetFavor(selectedFaction).ToString();
             Widgets.Label(rect3, label1);
             
@@ -116,12 +116,12 @@ namespace RimWorld
             Text.Font = GameFont.Small;
             rect.yMin += 35f;
             var leftRect = new Rect(rect);
-            rect.xMin += (rect.xMax - rect.xMin - 50f) * 0.3f;
+            rect.xMin += (rect.xMax - rect.xMin) * 0.3f + 30f;
             var rightRect = new Rect(rect);
             leftRect.width *= 0.30f;
             DoLeftRect(leftRect, pawn);
             DoRightRect(rightRect, pawn);
-            if (Widgets.ButtonText(chooseCategoryRect, "ChooseCategory".Translate()))
+            if (Widgets.ButtonText(chooseCategoryRect, "ChoosePermitCategory".Translate()))
             {
                 var tabOptions = SetCategoryButton();
                 Find.WindowStack.Add(new FloatMenu(tabOptions));
@@ -130,7 +130,7 @@ namespace RimWorld
         }
 
         
-        public static void DoLeftRect(Rect rect, Pawn pawn)
+        private static void DoLeftRect(Rect rect, Pawn pawn)
         {
             var y1 = 0.0f;
             var currentTitle = pawn.royalty.GetCurrentTitle(selectedFaction);
@@ -265,7 +265,7 @@ namespace RimWorld
         }
 
         
-        public static void DoRightRect(Rect rect, Pawn pawn)
+        private static void DoRightRect(Rect rect, Pawn pawn)
         {
             Widgets.DrawMenuSection(rect);
             if (selectedFaction == null)
@@ -414,28 +414,28 @@ namespace RimWorld
         }
         
         
-        public static List<FloatMenuOption> SetCategoryButton()
+        private static List<FloatMenuOption> SetCategoryButton()
         {
             var tabOptions = new List<FloatMenuOption>();
             var seeds = DefDatabase<RoyalTitlePermitDef>.GetNamedSilentFail("SeedsPermitTitle");
             var dict = new Dictionary<string, Action>
             {
-                { "Resources", () => utility.curTab = "Resources" },
-                { "Pawns", () => utility.curTab = "Pawns" },
-                { "Airstrike", () => utility.curTab = "Airstrike" },
-                { "Tools", () => utility.curTab = "Tools" },
-                { "Armor", () => utility.curTab = "Armor" },
-                { "Apparel", () => utility.curTab = "Apparel" },
-                { "Melee", () => utility.curTab = "Melee" },
-                { "Ranged", () => utility.curTab = "Ranged" },
-                { "Turrets", () => utility.curTab = "Turrets" },
-                { "Animals", () => utility.curTab = "Animals" }
+                { "PermitCategory_Resources", () => utility.curTab = "Resources" },
+                { "PermitCategory_Pawns", () => utility.curTab = "Pawns" },
+                { "PermitCategory_Airstrike", () => utility.curTab = "Airstrike" },
+                { "PermitCategory_Tools", () => utility.curTab = "Tools" },
+                { "PermitCategory_Armor", () => utility.curTab = "Armor" },
+                { "PermitCategory_Apparel", () => utility.curTab = "Apparel" },
+                { "PermitCategory_Melee", () => utility.curTab = "Melee" },
+                { "PermitCategory_Ranged", () => utility.curTab = "Ranged" },
+                { "PermitCategory_Turrets", () => utility.curTab = "Turrets" },
+                { "PermitCategory_Animals", () => utility.curTab = "Animals" }
             };
             if (seeds != null)
                 dict.Add("Seeds", () => utility.curTab = "Seeds");
             foreach (var table in dict)
             {
-                tabOptions.Add(new FloatMenuOption(table.Key, table.Value));
+                tabOptions.Add(new FloatMenuOption(table.Key.Translate(), table.Value));
             }
             return tabOptions;
         }

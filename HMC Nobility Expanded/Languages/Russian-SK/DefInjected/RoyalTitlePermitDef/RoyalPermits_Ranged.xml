@@ -13,8 +13,8 @@
 
     <!-- ПП -->
     <SMGDrop.label>пистолет-пулемёт</SMGDrop.label>
-    <SMGDrop.description>Запрос доставки случайного пистолет-пулемёта и патронов к нему.</SMGDrop.description>
-    <SMGDropPlus.label>пистолета-пулемёт +</SMGDropPlus.label>
+    <SMGDrop.description>Запрос доставки случайного пистолета-пулемёта и патронов к нему.</SMGDrop.description>
+    <SMGDropPlus.label>пистолет-пулемёт +</SMGDropPlus.label>
     <SMGDropPlus.description>Запрос доставки случайного пистолета-пулемёта и патронов к нему. Более качественные ПП в выборке.</SMGDropPlus.description>
 
     <!-- дробовик -->
