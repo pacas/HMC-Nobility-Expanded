@@ -121,22 +121,15 @@ namespace RimWorld
             leftRect.width *= 0.30f;
             DoLeftRect(leftRect, pawn);
             DoRightRect(rightRect, pawn);
-            if (Widgets.ButtonText(chooseCategoryRect, "ChooseCategory".Translate())) {
-                var tabOptions = new List<FloatMenuOption>();
-                var dict = new Dictionary<string, Action>
-                {
-                    { "Apparel", () => utility.curTab = "Apparel" },
-                    { "Resources", () => utility.curTab = "Resources" },
-                    { "Tools", () => utility.curTab = "Tools" }
-                };
-                foreach (var table in dict)
-                {
-                    tabOptions.Add(new FloatMenuOption(table.Key, table.Value));
-                }
+            if (Widgets.ButtonText(chooseCategoryRect, "ChooseCategory".Translate()))
+            {
+                var tabOptions = SetCategoryButton();
                 Find.WindowStack.Add(new FloatMenu(tabOptions));
             }
+                
         }
 
+        
         public static void DoLeftRect(Rect rect, Pawn pawn)
         {
             var y1 = 0.0f;
@@ -162,7 +155,6 @@ namespace RimWorld
 
                 if (selectedPermit.permitPointCost < 90)
                 {
-                    
                     label += "Cooldown".Translate() + ": " +
                             "PeriodDays".Translate(selectedPermit.cooldownDays);
                     label += "\n" + (string)("PrivilegesPointsRequired"
@@ -272,6 +264,7 @@ namespace RimWorld
             Widgets.EndGroup();
         }
 
+        
         public static void DoRightRect(Rect rect, Pawn pawn)
         {
             Widgets.DrawMenuSection(rect);
@@ -307,18 +300,18 @@ namespace RimWorld
                         ? TexUI.FinishedResearchColor
                         : TexUI.AvailResearchColor;
                     Color borderResearchColor;
-                    var rect2 = new Rect(vector2.x, vector2.y, 200f, 50f);
+                    var permitRect = new Rect(vector2.x, vector2.y, 200f, 50f);
                     if (permit.permitPointCost == 99)
                     {
                         textColor = new Color(1f, 0.5f, 0.0f, 1.0f);
                         bgColor = new Color(0.06f, 0.06f, 0.06f, 1);
-                        rect2 = new Rect(vector2.x, vector2.y, 300f, 50f);
+                        permitRect = new Rect(vector2.x, vector2.y, 300f, 50f);
                     }
                     else if (permit.permitPointCost == 98)
                     {
                         textColor = new Color(1f, 0.8f, 0.2f, 1.0f);
                         bgColor = new Color(0.06f, 0.06f, 0.06f, 1);
-                        rect2 = new Rect(vector2.x, vector2.y, 150f, 50f);
+                        permitRect = new Rect(vector2.x, vector2.y, 150f, 50f);
                     }
                     else if (!permit.AvailableForPawn(pawn, selectedFaction) && !PermitUnlocked(permit, pawn)) {
                         textColor = Color.red;
@@ -332,7 +325,7 @@ namespace RimWorld
                     {
                         borderResearchColor = TexUI.DefaultBorderResearchColor;
                     }
-                    if (Widgets.CustomButtonText(ref rect2, string.Empty, bgColor, textColor, borderResearchColor))
+                    if (Widgets.CustomButtonText(ref permitRect, string.Empty, bgColor, textColor, borderResearchColor))
                     {
                         SoundDefOf.Click.PlayOneShotOnCamera();
                         selectedPermit = permit;
@@ -342,7 +335,7 @@ namespace RimWorld
                     var color = GUI.color;
                     GUI.color = textColor;
                     Text.Anchor = TextAnchor.MiddleCenter;
-                    Widgets.Label(rect2, permit.LabelCap);
+                    Widgets.Label(permitRect, permit.LabelCap);
                     GUI.color = color;
                     Text.Anchor = (TextAnchor)anchor;
                 }
@@ -351,6 +344,7 @@ namespace RimWorld
             Widgets.EndScrollView();
         }
 
+        
         private static void DrawLines()
         {
             var start = new Vector2();
@@ -380,6 +374,7 @@ namespace RimWorld
             }
         }
 
+        
         private static bool PermitUnlocked(RoyalTitlePermitDef permit, Pawn pawn)
         {
             if (pawn.royalty.HasPermit(permit, selectedFaction)) return true;
@@ -405,43 +400,44 @@ namespace RimWorld
             return false;
         }
 
+        
         private static Vector2 DrawPosition(RoyalTitlePermitDef permit)
-        {
-            var stuffDefOrdered = DefDatabase<OrderedStuffDef>.GetNamedSilentFail(permit.defName + "Stuff");
-            int index;
-            Vector2 newCoords;
-            Log.Message(permit.label);
-            if (stuffDefOrdered != null)
-            {
-                var autopatcher =
-                    DefDatabase<RoyaltyCoordsTableDef>.GetNamed("CoordsTableColumn_" + stuffDefOrdered.column);
-                index = autopatcher.loadOrder.IndexOf(permit);
-                newCoords = new Vector2(autopatcher.coordX * 200f, index * 50f);
-            }
-            else if (permit.permitPointCost == 99)
-            {
-                var autopatcher = DefDatabase<RoyaltyCoordsTableDef>.GetNamed("CoordsTableColumn_0");
-                index = autopatcher.loadOrder.IndexOf(permit);
-                newCoords = new Vector2(60f, index * 50f);
-            }
-            else if (permit.permitPointCost == 98)
-            {
-                var autopatcher = DefDatabase<RoyaltyCoordsTableDef>.GetNamed("CoordsTableColumn_0");
-                index = autopatcher.loadOrder.IndexOf(permit);
-                newCoords = new Vector2(120f, index * 40f);
-            }
-            else
-            {
-                newCoords = new Vector2(permit.uiPosition.x * 200f, permit.uiPosition.y * 50f);
-            }
-            return newCoords + newCoords * PermitOptionSpacing;
-        }
+        {return PermitOptionSpacing;}
+        /* Fake static method, replaced in runtime with real */
 
+        
         private static bool CanDrawPermit(RoyalTitlePermitDef permit)
         {
             if (permit.permitPointCost <= 0)
                 return false;
             return permit.faction == null || permit.faction == selectedFaction.def;
+        }
+        
+        
+        public static List<FloatMenuOption> SetCategoryButton()
+        {
+            var tabOptions = new List<FloatMenuOption>();
+            var seeds = DefDatabase<RoyalTitlePermitDef>.GetNamedSilentFail("SeedsPermitTitle");
+            var dict = new Dictionary<string, Action>
+            {
+                { "Resources", () => utility.curTab = "Resources" },
+                { "Pawns", () => utility.curTab = "Pawns" },
+                { "Airstrike", () => utility.curTab = "Airstrike" },
+                { "Tools", () => utility.curTab = "Tools" },
+                { "Armor", () => utility.curTab = "Armor" },
+                { "Apparel", () => utility.curTab = "Apparel" },
+                { "Melee", () => utility.curTab = "Melee" },
+                { "Ranged", () => utility.curTab = "Ranged" },
+                { "Turrets", () => utility.curTab = "Turrets" },
+                { "Animals", () => utility.curTab = "Animals" }
+            };
+            if (seeds != null)
+                dict.Add("Seeds", () => utility.curTab = "Seeds");
+            foreach (var table in dict)
+            {
+                tabOptions.Add(new FloatMenuOption(table.Key, table.Value));
+            }
+            return tabOptions;
         }
     }
 }

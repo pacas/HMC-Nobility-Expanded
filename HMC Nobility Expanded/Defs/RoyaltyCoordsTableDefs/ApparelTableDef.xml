@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <RoyaltyCoordsTableDef>
+        <defName>CoordsTableApparel_0</defName>
+        <coordX>0</coordX>
+        <loadOrder>
+            <li>ApparelPermitTitle</li>
+            <li>WorkerPermitSmallTitle</li>
+            <li>SmithOutfitDrop</li>
+            <li>SlaveOutfitDrop</li>
+            <li>MinerOutfitDrop</li>
+            <li>ChefOutfitDrop</li>
+            <li>SpecialPermitSmallTitle</li>
+            <li>SoldierAccessoriesDrop</li>
+            <li>RoyalOutfitDrop</li>
+        </loadOrder>
+    </RoyaltyCoordsTableDef>
+
+    <RoyaltyCoordsTableDef>
+        <defName>CoordsTableApparel_1</defName>
+        <coordX>1</coordX>
+        <loadOrder>
+            <li>ApparelPermitTitle</li>
+            <li>WorkerPermitSmallTitle</li>
+            <li>FarmerOutfitDrop</li>
+            <li>ConstructorOutfitDrop</li>
+            <li>MedicOutfitDrop</li>
+            <li>HazmatOutfitDrop</li>
+            <li>SpecialPermitSmallTitle</li>
+            <li>SoldierAccessoriesAltDrop</li>
+            <li>PsychicOutfitDrop</li>
+        </loadOrder>
+    </RoyaltyCoordsTableDef>
+</Defs>

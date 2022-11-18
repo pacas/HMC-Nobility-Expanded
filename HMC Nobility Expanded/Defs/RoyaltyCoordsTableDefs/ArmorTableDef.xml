@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <RoyaltyCoordsTableDef>
+        <defName>CoordsTableArmor_0</defName>
+        <coordX>0</coordX>
+        <loadOrder>
+            <li>ArmorPermitTitle</li>
+            <li>ArmorDrop</li>
+            <li>IndustrialArmorDrop</li>
+            <li>SpacerArmorDrop</li>
+            <li>UltraArmorDrop</li>
+        </loadOrder>
+    </RoyaltyCoordsTableDef>
+
+    <RoyaltyCoordsTableDef>
+        <defName>CoordsTableArmor_1</defName>
+        <coordX>1</coordX>
+        <loadOrder>
+            <li>ArmorPermitTitle</li>
+            <li>ArmorDropPlus</li>
+            <li>IndustrialArmorDropPlus</li>
+            <li>SpacerArmorDropPlus</li>
+            <li>UltraArmorDropPlus</li>
+        </loadOrder>
+    </RoyaltyCoordsTableDef>
+</Defs>
