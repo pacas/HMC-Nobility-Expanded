@@ -165,10 +165,7 @@ namespace RimWorld
     [HarmonyPatch(typeof(Dialog_InfoCard), "get_InitialSize")]
     public class WindowSizePatch
     {
-        
-        /* a have no fucking idea why its working only after harmony patch */
-        public static bool Prefix(ref Vector2 __result)
-        {
+        public static bool Prefix(ref Vector2 __result) {
             __result = new Vector2(1050f, 870f);
             return false;
         }
