@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <RoyaltyCoordsTableDef>
+        <defName>CoordsTableRanged_0</defName>
+        <coordX>0</coordX>
+        <loadOrder>
+            <li>RangedPermitTitle</li>
+            <li>PistolDrop</li>
+            <li>SMGDrop</li>
+            <li>ShotgunDrop</li>
+            <li>RifleDrop</li>
+            <li>SniperRifleDrop</li>
+            <li>MGDrop</li>
+            <li>LauncherDrop</li>
+        </loadOrder>
+    </RoyaltyCoordsTableDef>
+
+    <RoyaltyCoordsTableDef>
+        <defName>CoordsTableRanged_1</defName>
+        <coordX>1</coordX>
+        <loadOrder>
+            <li>RangedPermitTitle</li>
+            <li>PistolDropPlus</li>
+            <li>SMGDropPlus</li>
+            <li>ShotgunDropPlus</li>
+            <li>RifleDropPlus</li>
+            <li>SniperRifleDropPlus</li>
+            <li>MGDropPlus</li>
+            <li>LauncherDropPlus</li>
+        </loadOrder>
+    </RoyaltyCoordsTableDef>
+</Defs>

@@ -64,8 +64,6 @@ namespace RimWorld
     [HarmonyPatch(typeof(PermitsCardCustomUtility), "DrawPosition")]
     public class CoordsAutopatch
     {
-        
-        /* a have no fucking idea why its working only after harmony patch */
         public static bool Prefix(ref RoyalTitlePermitDef permit, ref Vector2 __result)
         {
             OrderedStuffDef stuffDefOrdered = DefDatabase<OrderedStuffDef>.GetNamedSilentFail(permit.defName + "Stuff");
@@ -73,34 +71,33 @@ namespace RimWorld
             Vector2 newCoords;
             if (stuffDefOrdered != null)
             {
-                RoyaltyCoordsTableDef autopatcher =
-                    DefDatabase<RoyaltyCoordsTableDef>.GetNamed("CoordsTableColumn_" + stuffDefOrdered.column);
-                index = autopatcher.loadOrder.IndexOf(permit);
-                newCoords = new Vector2(autopatcher.coordX * 200f, index * 50f);
-            }
-            else if (permit.permitPointCost == 99)
-            {
-                RoyaltyCoordsTableDef autopatcher = DefDatabase<RoyaltyCoordsTableDef>.GetNamed("CoordsTableColumn_0");
-                index = autopatcher.loadOrder.IndexOf(permit);
-                newCoords = new Vector2(60f, index * 50f + 5f);
-            }
-            else if (permit.permitPointCost == 98)
-            {
-                RoyaltyCoordsTableDef autopatcher = DefDatabase<RoyaltyCoordsTableDef>.GetNamed("CoordsTableColumn_0");
-                index = autopatcher.loadOrder.IndexOf(permit);
-                newCoords = new Vector2(120f, index * 50f + 5f);
-            }
-            else if (permit.permitPointCost == 90)
-            {
-                RoyaltyCoordsTableDef autopatcher = DefDatabase<RoyaltyCoordsTableDef>.GetNamed("CoordsTableColumn_0");
-                index = autopatcher.loadOrder.IndexOf(permit);
-                newCoords = new Vector2(120f, index * 50f + 5f);
+                RoyaltyCoordsTableDef categoryTable = DefDatabase<RoyaltyCoordsTableDef>.GetNamedSilentFail(
+                    "CoordsTable" + PermitsCardCustomUtility.utility.curTab + "_" + stuffDefOrdered.column);
+                if (categoryTable == null)
+                    categoryTable = DefDatabase<RoyaltyCoordsTableDef>.GetNamed("CoordsTableColumn_" + stuffDefOrdered.column);
+                
+                index = categoryTable.loadOrder.IndexOf(permit);
+                newCoords = new Vector2(categoryTable.coordX * 200f, index * 50f);
             }
             else
             {
-                newCoords = new Vector2(permit.uiPosition.x * 400f, permit.uiPosition.y * 50f);
+                RoyaltyCoordsTableDef categoryTable =
+                    DefDatabase<RoyaltyCoordsTableDef>.GetNamedSilentFail("CoordsTable" + PermitsCardCustomUtility.utility.curTab + "_0");
+                if (permit.permitPointCost == 99) {
+                    index = categoryTable.loadOrder.IndexOf(permit);
+                    newCoords = new Vector2(60f, index * 50f + 5f);
+                }
+                else if (permit.permitPointCost == 98) {
+                    index = categoryTable.loadOrder.IndexOf(permit);
+                    newCoords = new Vector2(120f, index * 50f + 5f);
+                } 
+                else if (permit.permitPointCost == 90) {
+                    index = categoryTable.loadOrder.IndexOf(permit);
+                    newCoords = new Vector2(120f, index * 50f + 5f);
+                } else {
+                    newCoords = new Vector2(permit.uiPosition.x * 400f, permit.uiPosition.y * 50f);
+                }
             }
-
             __result = newCoords + newCoords * new Vector2(0.25f, 0.35f);
             return false;
         }
@@ -161,7 +158,7 @@ namespace RimWorld
             return false;
         }
     }
-    
+
     [HarmonyPatch(typeof(Dialog_InfoCard), "get_InitialSize")]
     public class WindowSizePatch
     {

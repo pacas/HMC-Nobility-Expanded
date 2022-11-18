@@ -1,12 +1,13 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace RimWorld
 {
     public class NobilitySupportUtility
     {
-        private static System.Random random = new System.Random();
-        public string curTab = "Tools"; 
-        
+        private static Random random = new Random();
+        public string curTab = "Resources";
+
         public static QualityCategory GenerateFromString(string quality)
         {
             switch (quality)
