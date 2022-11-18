@@ -3,8 +3,9 @@
     
     <PrivilegesPointsRequired>Permit points cost: {0}</PrivilegesPointsRequired>
     <ItemIncludedInPermit>Contains:</ItemIncludedInPermit>
+    <ChoosePermitCategory>Choose category</ChoosePermitCategory>
 
-    <!-- ================= -->
+    <!-- ===== Quality ===== -->
     <SpecificAwful>Quality: Awful</SpecificAwful>
     <SpecificPoor>Quality: Poor</SpecificPoor>
     <SpecificNormal>Quality: Normal</SpecificNormal>
@@ -21,6 +22,20 @@
     <RangeMasterwork>Quality: Excellent-Legendary</RangeMasterwork>
     <RangeLegendary>Quality: Masterwork-Legendary</RangeLegendary>
 
+    <!-- ===== Material ===== -->
     <StuffDescription>{0} {1}</StuffDescription>
+
+    <!-- ===== Category ===== -->
+    <PermitCategory_Resources>Basic Resources</PermitCategory_Resources>
+    <PermitCategory_Pawns>Workers and Soldiers</PermitCategory_Pawns>
+    <PermitCategory_Airstrike>Airstrikes</PermitCategory_Airstrike>
+    <PermitCategory_Tools>Tools</PermitCategory_Tools>
+    <PermitCategory_Armor>Armor</PermitCategory_Armor>
+    <PermitCategory_Apparel>Apparel and Accessories</PermitCategory_Apparel>
+    <PermitCategory_Melee>Melee Weapons</PermitCategory_Melee>
+    <PermitCategory_Ranged>Ranged Weapons</PermitCategory_Ranged>
+    <PermitCategory_Turrets>Turrets and Mortars</PermitCategory_Turrets>
+    <PermitCategory_Animals>Animals</PermitCategory_Animals>
+    <PermitCategory_Seeds>Seeds</PermitCategory_Seeds>
 
 </LanguageData>
