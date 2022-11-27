@@ -163,7 +163,7 @@ namespace RimWorld
     public class WindowSizePatch
     {
         public static bool Prefix(ref Vector2 __result) {
-            __result = new Vector2(980f, 880f);
+            __result = new Vector2(1050f, 880f);
             return false;
         }
     }

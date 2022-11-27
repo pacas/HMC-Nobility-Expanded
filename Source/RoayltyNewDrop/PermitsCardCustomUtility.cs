@@ -116,10 +116,19 @@ namespace RimWorld
             Text.Font = GameFont.Small;
             rect.yMin += 35f;
             var leftRect = new Rect(rect);
-            rect.xMin += (rect.xMax - rect.xMin) * 0.3f + 30f;
+            leftRect.xMin = 10f;
+            leftRect.xMax = 230f;
+            /*leftRect.width = 230f;*/
+            var middleRect = new Rect(rect);
+            middleRect.xMin = 240f;
+            middleRect.xMax = 790f;
+            /*middleRect.width = 570f;*/
             var rightRect = new Rect(rect);
-            leftRect.width *= 0.30f;
+            rightRect.xMin = 810f;
+            rightRect.xMax = 1050f;
+            /*rightRect.width = 240f;*/
             DoLeftRect(leftRect, pawn);
+            DoMiddleRect(middleRect, pawn);
             DoRightRect(rightRect, pawn);
             if (Widgets.ButtonText(chooseCategoryRect, "ChoosePermitCategory".Translate()))
             {
@@ -132,25 +141,125 @@ namespace RimWorld
         
         private static void DoLeftRect(Rect rect, Pawn pawn)
         {
-            var y1 = 0.0f;
-            var currentTitle = pawn.royalty.GetCurrentTitle(selectedFaction);
             var rect1 = new Rect(rect);
             Widgets.BeginGroup(rect1);
             if (selectedPermit != null)
             {
                 Text.Font = GameFont.Medium;
-                var rect2 = new Rect(0.0f, y1, rect1.width, 0.0f);
+                var rect2 = new Rect(0.0f, 0.0f, rect1.width, 0.0f);
                 Widgets.LabelCacheHeight(ref rect2, selectedPermit.LabelCap);
                 Text.Font = GameFont.Small;
-                var y2 = y1 + rect2.height;
+                var y = rect2.height;
                 if (!selectedPermit.description.NullOrEmpty()) {
-                    var rect3 = new Rect(0.0f, y2, rect1.width, 0.0f);
+                    var rect3 = new Rect(0.0f, y, rect1.width, 0.0f);
                     Widgets.LabelCacheHeight(ref rect3, selectedPermit.description);
-                    y2 += rect3.height + 16f;
+                    y += rect3.height + 16f;
                 }
+                var rect4 = new Rect(0.0f, y, rect1.width, 0.0f);
+                string label = "DropComment_" + selectedPermit.defName;
+
+                Widgets.LabelCacheHeight(ref rect4, label.Translate());
+                var rect5 = new Rect(0.0f, rect1.height - 50f, rect1.width, 50f);
+                if (selectedPermit.AvailableForPawn(pawn, selectedFaction) && !PermitUnlocked(selectedPermit, pawn) &&
+                    Widgets.ButtonText(rect5, "AcceptPermit".Translate()))
+                {
+                    SoundDefOf.Quest_Accepted.PlayOneShotOnCamera();
+                    pawn.royalty.AddPermit(selectedPermit, selectedFaction);
+                }
+            }
+            Widgets.EndGroup();
+        }
+
+        
+        private static void DoMiddleRect(Rect rect, Pawn pawn)
+        {
+            Widgets.DrawMenuSection(rect);
+            if (selectedFaction == null)
+                return;
+            var defsListForReading = DefDatabase<RoyalTitlePermitDef>.AllDefsListForReading;
+            var outRect = rect.ContractedBy(10f);
+            var rect1 = new Rect();
+            for (var index = 0; index < defsListForReading.Count; ++index)
+            {
+                var permit = defsListForReading[index];
+                if (CanDrawPermit(permit))
+                {
+                    if (permit.permitPointCost == 98)
+                        rect1.width = Mathf.Max(rect1.width, (float)(DrawPosition(permit).x + 150.0 + 26.0));
+                    else
+                        rect1.width = Mathf.Max(rect1.width, (float)(DrawPosition(permit).x + 200.0 + 26.0));
+                    rect1.height = Mathf.Max(rect1.height, (float)(DrawPosition(permit).y + 50.0 + 26.0));
+                }
+            }
+
+            Widgets.BeginScrollView(outRect, ref rightScrollPosition, rect1);
+            Widgets.BeginGroup(rect1.ContractedBy(10f));
+            DrawLines();
+            for (var index = 0; index < defsListForReading.Count; ++index)
+            {
+                var permit = defsListForReading[index];
+                if (CanDrawPermit(permit) && permit.permitPointCost != 90)
+                {
+                    var vector2 = DrawPosition(permit);
+                    var textColor = Widgets.NormalOptionColor;
+                    var bgColor = PermitUnlocked(permit, pawn)
+                        ? TexUI.FinishedResearchColor
+                        : TexUI.AvailResearchColor;
+                    Color borderResearchColor;
+                    var permitRect = new Rect(vector2.x, vector2.y, 200f, 50f);
+                    if (permit.permitPointCost == 99)
+                    {
+                        textColor = new Color(1f, 0.5f, 0.0f, 1.0f);
+                        bgColor = new Color(0.06f, 0.06f, 0.06f, 1);
+                        permitRect = new Rect(vector2.x, vector2.y, 300f, 50f);
+                    }
+                    else if (permit.permitPointCost == 98)
+                    {
+                        textColor = new Color(1f, 0.8f, 0.2f, 1.0f);
+                        bgColor = new Color(0.06f, 0.06f, 0.06f, 1);
+                        permitRect = new Rect(vector2.x, vector2.y, 150f, 50f);
+                    }
+                    else if (!permit.AvailableForPawn(pawn, selectedFaction) && !PermitUnlocked(permit, pawn)) {
+                        textColor = Color.red;
+                    }
+                    if (selectedPermit == permit)
+                    {
+                        borderResearchColor = TexUI.HighlightBorderResearchColor;
+                        bgColor += TexUI.HighlightBgResearchColor;
+                    }
+                    else
+                    {
+                        borderResearchColor = TexUI.DefaultBorderResearchColor;
+                    }
+                    if (Widgets.CustomButtonText(ref permitRect, string.Empty, bgColor, textColor, borderResearchColor))
+                    {
+                        SoundDefOf.Click.PlayOneShotOnCamera();
+                        selectedPermit = permit;
+                    }
+
+                    var anchor = (int)Text.Anchor;
+                    var color = GUI.color;
+                    GUI.color = textColor;
+                    Text.Anchor = TextAnchor.MiddleCenter;
+                    Widgets.Label(permitRect, permit.LabelCap);
+                    GUI.color = color;
+                    Text.Anchor = (TextAnchor)anchor;
+                }
+            }
+            Widgets.EndGroup();
+            Widgets.EndScrollView();
+        }
+        
+        private static void DoRightRect(Rect rect, Pawn pawn)
+        {
+            var currentTitle = pawn.royalty.GetCurrentTitle(selectedFaction);
+            var rect1 = new Rect(rect);
+            Widgets.BeginGroup(rect1);
+            if (selectedPermit != null)
+            {
                 TaggedString taggedString;
                 string tagged;
-                var rect4 = new Rect(0.0f, y2, rect1.width, 0.0f);
+                var rect4 = new Rect(0.0f, 0.0f, rect1.width, 0.0f);
                 string label = "";
 
                 if (selectedPermit.permitPointCost < 90)
@@ -251,97 +360,9 @@ namespace RimWorld
                         label += qualityLabel.Translate() + "\n";
                     }
                 }
-
                 Widgets.LabelCacheHeight(ref rect4, label);
-                var rect5 = new Rect(0.0f, rect1.height - 50f, rect1.width, 50f);
-                if (selectedPermit.AvailableForPawn(pawn, selectedFaction) && !PermitUnlocked(selectedPermit, pawn) &&
-                    Widgets.ButtonText(rect5, "AcceptPermit".Translate()))
-                {
-                    SoundDefOf.Quest_Accepted.PlayOneShotOnCamera();
-                    pawn.royalty.AddPermit(selectedPermit, selectedFaction);
-                }
             }
             Widgets.EndGroup();
-        }
-
-        
-        private static void DoRightRect(Rect rect, Pawn pawn)
-        {
-            Widgets.DrawMenuSection(rect);
-            if (selectedFaction == null)
-                return;
-            var defsListForReading = DefDatabase<RoyalTitlePermitDef>.AllDefsListForReading;
-            var outRect = rect.ContractedBy(10f);
-            var rect1 = new Rect();
-            for (var index = 0; index < defsListForReading.Count; ++index)
-            {
-                var permit = defsListForReading[index];
-                if (CanDrawPermit(permit))
-                {
-                    if (permit.permitPointCost == 98)
-                        rect1.width = Mathf.Max(rect1.width, (float)(DrawPosition(permit).x + 150.0 + 26.0));
-                    else
-                        rect1.width = Mathf.Max(rect1.width, (float)(DrawPosition(permit).x + 200.0 + 26.0));
-                    rect1.height = Mathf.Max(rect1.height, (float)(DrawPosition(permit).y + 50.0 + 26.0));
-                }
-            }
-
-            Widgets.BeginScrollView(outRect, ref rightScrollPosition, rect1);
-            Widgets.BeginGroup(rect1.ContractedBy(10f));
-            DrawLines();
-            for (var index = 0; index < defsListForReading.Count; ++index)
-            {
-                var permit = defsListForReading[index];
-                if (CanDrawPermit(permit) && permit.permitPointCost != 90)
-                {
-                    var vector2 = DrawPosition(permit);
-                    var textColor = Widgets.NormalOptionColor;
-                    var bgColor = PermitUnlocked(permit, pawn)
-                        ? TexUI.FinishedResearchColor
-                        : TexUI.AvailResearchColor;
-                    Color borderResearchColor;
-                    var permitRect = new Rect(vector2.x, vector2.y, 200f, 50f);
-                    if (permit.permitPointCost == 99)
-                    {
-                        textColor = new Color(1f, 0.5f, 0.0f, 1.0f);
-                        bgColor = new Color(0.06f, 0.06f, 0.06f, 1);
-                        permitRect = new Rect(vector2.x, vector2.y, 300f, 50f);
-                    }
-                    else if (permit.permitPointCost == 98)
-                    {
-                        textColor = new Color(1f, 0.8f, 0.2f, 1.0f);
-                        bgColor = new Color(0.06f, 0.06f, 0.06f, 1);
-                        permitRect = new Rect(vector2.x, vector2.y, 150f, 50f);
-                    }
-                    else if (!permit.AvailableForPawn(pawn, selectedFaction) && !PermitUnlocked(permit, pawn)) {
-                        textColor = Color.red;
-                    }
-                    if (selectedPermit == permit)
-                    {
-                        borderResearchColor = TexUI.HighlightBorderResearchColor;
-                        bgColor += TexUI.HighlightBgResearchColor;
-                    }
-                    else
-                    {
-                        borderResearchColor = TexUI.DefaultBorderResearchColor;
-                    }
-                    if (Widgets.CustomButtonText(ref permitRect, string.Empty, bgColor, textColor, borderResearchColor))
-                    {
-                        SoundDefOf.Click.PlayOneShotOnCamera();
-                        selectedPermit = permit;
-                    }
-
-                    var anchor = (int)Text.Anchor;
-                    var color = GUI.color;
-                    GUI.color = textColor;
-                    Text.Anchor = TextAnchor.MiddleCenter;
-                    Widgets.Label(permitRect, permit.LabelCap);
-                    GUI.color = color;
-                    Text.Anchor = (TextAnchor)anchor;
-                }
-            }
-            Widgets.EndGroup();
-            Widgets.EndScrollView();
         }
 
         
