@@ -1,66 +1,65 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
     
-    <DropComment>Комментарий от имперского провизора:</DropComment>
+    <DropComment>Сomment from the imperial caterer:</DropComment>
     
     <!-- Ресурсы -->
-    <DropComment_SteelDrop>Железо, кровь нации... Пока у вас есть железо для создания стали, жизнь не так уж и плоха.</DropComment_SteelDrop>
-    <DropComment_SilverDrop>Деньги нужны всем, и неважно сколько. Хотя почему-то некоторые плавят их обратно в слитки серебра...</DropComment_SilverDrop>
-    <DropComment_FoodDrop>Еда нужна каждому. Ну почти каждому, меня до сих пор бросает в дрожь от этих гуманоидных роботов. А, и да, не забудьте сразу убрать еду подальше от ваших питомцев.</DropComment_FoodDrop>
-    <DropComment_GlitterMedDrop>Что-то случилось? У нас есть обширный запас медицинского оборудования, и я только рад бы поделится, но знаете сколько вас таких? На всех и так не хватает, приходится отправлять не очень много.</DropComment_GlitterMedDrop>
-    <DropComment_BlocksDrop>Что? Эти булыжники? Зачем они вам, для мощения улиц что ли? У нас на Фортуне такое только на всяких старых площадях встретить можно. В любом случае дело ваше.</DropComment_BlocksDrop>
-    <DropComment_CallTransportShuttle>Нужно что-то перевезти? Это всегда пожалуйста, вышлю вам птичку.</DropComment_CallTransportShuttle>
+    <DropComment_SteelDrop>Iron, the lifeblood of a nation... As long as you have the iron to make steel, life is not so bad.</DropComment_SteelDrop>
+    <DropComment_SilverDrop>Everyone needs money, no matter how much. Although for some reason some people melt it back into bars of silver...</DropComment_SilverDrop>
+    <DropComment_FoodDrop>Everyone needs food. Well, almost everyone, I still get the shivers from those humanoid robots. Oh, and yes, don't forget to put the food away from your pets straight away.</DropComment_FoodDrop>
+    <DropComment_GlitterMedDrop>Is there a problem? We have an extensive supply of medical equipment, and I'd be happy to share, but do you know how many of you there are? We don't have enough for everyone, so we don't have to send very much.</DropComment_GlitterMedDrop>
+    <DropComment_BlocksDrop>What? These cobblestones? What do you use them for, paving streets or something? In Fortuna, we only find them in old squares. Anyway, it's up to you.</DropComment_BlocksDrop>
+    <DropComment_CallTransportShuttle>Need something moved? You are welcome, I will send you a bird.</DropComment_CallTransportShuttle>
 
     <!-- Люди -->
-    <DropComment_CallLaborerTeam>Не хватает рук? У нас есть отборный низкоквалифицированный персонал с нижних уровней планеты специально для вас!</DropComment_CallLaborerTeam>
-    <DropComment_CallLaborerGang>Вам не хватает той пачки рабочих, что мы готовы прислать? Ну, мы можем предложить побольше таких работяг разве что, не отправлять же вам наших специалистов.</DropComment_CallLaborerGang>
-    <DropComment_CallMilitaryAidSmall>На вас напают местные племена? К счастью, у нас тут такого нет. Для решения данной проблемы готов предоставить вам отборных солдат имперской гвардии, только что из училища без какой-либо квалификации!</DropComment_CallMilitaryAidSmall>
-    <DropComment_CallMilitaryAidSmallPlus>Рейдеров настолько много, что вам не хватает солдат? Так держите больше солдат, это всегда решает проблему!</DropComment_CallMilitaryAidSmallPlus>
-    <DropComment_CallMilitaryAidLarge>Против пиратов юнцы из гвардии не справляются? У нас есть местные элитные наёмные подразделения, за звонкую монету они готовы уничтожить любую цель!</DropComment_CallMilitaryAidLarge>
-    <DropComment_CallMilitaryAidGrand>Всё настолько плохо? Если вам готовы предоставить такие привилегии, то нет проблемы с которой не справятся элитные части императорской гвардии. Главное не пускайте их в свою тюрьму, просто не стоит.</DropComment_CallMilitaryAidGrand>
+    <DropComment_CallLaborerTeam>Not enough hands? We have a selection of low-skilled workers from the lower levels of the planet just for you!</DropComment_CallLaborerTeam>
+    <DropComment_CallLaborerGang>Are you not satisfied with the stack of workers we've already provided? Well, we can just offer more of them, we can't send you our specialists.</DropComment_CallLaborerGang>
+    <DropComment_CallMilitaryAidSmall>Are you being attacked by local tribes? Fortunately we have no such thing here. To solve this problem, I am able to provide you with selected soldiers of the Imperial Guard, fresh out of training school without any qualifications!</DropComment_CallMilitaryAidSmall>
+    <DropComment_CallMilitaryAidSmallPlus>Are there so many raiders that you don't have enough soldiers? So have more soldiers, that always solves the problem!</DropComment_CallMilitaryAidSmallPlus>
+    <DropComment_CallMilitaryAidLarge>Can't the young boys in the guard do the job against the pirates? We have local elite mercenary units who will destroy any target for a penny!</DropComment_CallMilitaryAidLarge>
+    <DropComment_CallMilitaryAidGrand>Is it that bad? If you are allowed that kind of privilege, there is no problem that the elite units of the Imperial Guard can't handle. The main thing is not to let them into your prison, you just shouldn't.</DropComment_CallMilitaryAidGrand>
 
     <!-- Артобстрел -->
-    <DropComment_CallOrbitalStrike>Бомба, вовремя сброшенная в скопление врагов, решает необходисть в дополнительных солдатах.</DropComment_CallOrbitalStrike>
-    <DropComment_CallOrbitalSalvo>Множество бомб, вовремя сброшенных в скопление врагов, решают проблемы необходимости выделения на фронт солдат в целом.</DropComment_CallOrbitalSalvo>
+    <DropComment_CallOrbitalStrike>A bomb dropped in time in a cluster of enemies solves the need for additional soldiers.</DropComment_CallOrbitalStrike>
+    <DropComment_CallOrbitalSalvo>Lots of bombs dropped in time to a cluster of enemies solves the problems of the need to allocate soldiers to the front as a whole.</DropComment_CallOrbitalSalvo>
 
     <!-- Животные -->
-    <DropComment_FarmAnimalDrop>Ферма... Нам на Фортуну всё поставляют с менее развитых планет. Однако предоставить таких животных всё же возможно, поговорю с провизором с Цереры, он всё организует.</DropComment_FarmAnimalDrop>
-    <DropComment_CaravanAnimalDrop>Караванные животные? Ну, придётся вызвать другого провизора, у нас тут таких нет. Я свяжусь если вам надо.</DropComment_CaravanAnimalDrop>
-    <DropComment_BattleAnimalDrop>Боевые звери почти не используются в Империи, потому не рассчитывайте на обученных зверей. Однако просто подходящие животные есть, можно устроить.</DropComment_BattleAnimalDrop>
-    <DropComment_PetAnimalDrop>Хотите домашнего питомца? У нас их много, лучшие породы! Я бы даже бесплатно выдавал, но канцелярия против.</DropComment_PetAnimalDrop>
-    <DropComment_ExoticAnimalDrop>Экзотика... И почему все обладающие хоть какой-то властью интересуются ими? Возможность поставки есть, но я не рекомендую, лучше посмотрите чего ещё.</DropComment_ExoticAnimalDrop>
-    <DropComment_MountsAnimalDrop>Хотите стать наездником? Все знатные личности Империи умеют ездить верхом, так что вам тоже стоит научиться!</DropComment_MountsAnimalDrop>
-    <DropComment_SpiderAnimalDrop>Пауки? Серьезно? Я не стал бы даже приближаться к ним, а вы хотите жить с ними? Вы безумны.</DropComment_SpiderAnimalDrop>
+    <DropComment_FarmAnimalDrop>The Farm... We get everything on Fortuna from less developed planets. However, it is still possible to provide such animals, I will talk to the Provider from Ceres, he will arrange everything.</DropComment_FarmAnimalDrop>
+    <DropComment_CaravanAnimalDrop>Caravan animals? Well, I have to call another caterer, we don't have one here. I'll be in touch if you need me.</DropComment_CaravanAnimalDrop>
+    <DropComment_BattleAnimalDrop>Fighting beasts are barely used in the Empire, so don't count on trained beasts. However, just suitable animals are available, can be arranged.</DropComment_BattleAnimalDrop>
+    <DropComment_PetAnimalDrop>Do you want a pet? We have plenty of them, the best breeds! I would even give them away for free, but the clerk's office is against it.</DropComment_PetAnimalDrop>
+    <DropComment_ExoticAnimalDrop>Exotic... And why is everyone with any influence interested in them? The possibility of supply is there, but I don't recommend it, you'd better look for something else.</DropComment_ExoticAnimalDrop>
+    <DropComment_MountsAnimalDrop>Do you want to become a rider? All the nobles of the Empire know how to ride, so you should learn too!</DropComment_MountsAnimalDrop>
+    <DropComment_SpiderAnimalDrop>Spiders? Seriously? I wouldn't even go near them, and you want to live with them? You're insane.</DropComment_SpiderAnimalDrop>
 
     <!-- Одежда -->
-    <DropComment_SoldierAccessoriesDrop>А, снаряжение штурмовика. Если вашему охраннику нужно дополнительное снаряжение помимо брони, то это ваш выбор. Такого не возьмут пули, не то что этих разведчиков.</DropComment_SoldierAccessoriesDrop>
-    <DropComment_SoldierAccessoriesAltDrop>А, снаряжение разведчика. Всегда полезно иметь охрану, способную быстро реагировать на угрозы, а то все эти штурмовики такие медленные...</DropComment_SoldierAccessoriesAltDrop>
-    <DropComment_SmithOutfitDrop>Одежда для кузнеца? Не имею ни малейшего понятия, что же там должно быть, уточняю... А, понял, легко устроим.</DropComment_SmithOutfitDrop>
-    <DropComment_FarmerOutfitDrop>Одежда для фермера? Не имею ни малейшего понятия, что же там должно быть, уточняю... А, понял, легко устроим.</DropComment_FarmerOutfitDrop>
-    <DropComment_ChefOutfitDrop>Одежда для повара? Не имею ни малейшего понятия, что же там должно быть, уточняю... А, понял, легко устроим.</DropComment_ChefOutfitDrop>
-    <DropComment_MedicOutfitDrop>Одежда для доктора? У нас много медицинского снаряжения, подобрать что-то не проблема.</DropComment_MedicOutfitDrop>
-    <DropComment_MinerOutfitDrop>Одежда для шахтёра? Не имею ни малейшего понятия, что же там должно быть, уточняю... А, понял, легко устроим.</DropComment_MinerOutfitDrop>
-    <DropComment_ConstructorOutfitDrop>Одежда для строителя? Не имею ни малейшего понятия, что же там должно быть, уточняю... А, понял, легко устроим.</DropComment_ConstructorOutfitDrop>
-    <DropComment_SlaveOutfitDrop>Одежда для раба? А им вообще нужна конкретная одежда? Ну, мы вышлем вам что-то подходящее.</DropComment_SlaveOutfitDrop>
+    <DropComment_SoldierAccessoriesDrop>Ah, stormtrooper gear. If your guard needs extra gear besides armor, that's your choice. That one won't take bullets, not like these scouts.</DropComment_SoldierAccessoriesDrop>
+    <DropComment_SoldierAccessoriesAltDrop>Ah, scouting gear. It's always good to have guards who can react quickly to threats, because all those stormtroopers are so slow...</DropComment_SoldierAccessoriesAltDrop>
+    <DropComment_SmithOutfitDrop>Clothes for the blacksmith? I don't have the slightest idea what's supposed to be there, so I clarify... Oh, I see, it's easy to arrange.</DropComment_SmithOutfitDrop>
+    <DropComment_FarmerOutfitDrop>Clothes for the farmer? I don't have the slightest idea what's supposed to be there, so I clarify... Oh, I see, it's easy to arrange.</DropComment_FarmerOutfitDrop>
+    <DropComment_ChefOutfitDrop>Clothes for the chef? I don't have the slightest idea what's supposed to be there, so I clarify... Oh, I see, it's easy to arrange.</DropComment_ChefOutfitDrop>
+    <DropComment_MedicOutfitDrop>Clothing for the doctor? We have a lot of medical gear, it's not a problem to find something.</DropComment_MedicOutfitDrop>
+    <DropComment_MinerOutfitDrop>Clothes for the miner? I don't have the slightest idea what's supposed to be there, so I clarify... Oh, I see, it's easy to arrange.</DropComment_MinerOutfitDrop>
+    <DropComment_ConstructorOutfitDrop>Clothes for the constructor? I don't have the slightest idea what's supposed to be there, so I clarify... Oh, I see, it's easy to arrange.</DropComment_ConstructorOutfitDrop>
+    <DropComment_SlaveOutfitDrop>Clothes for a slave? Do they need specific clothes at all? Well, we'll send you something appropriate.</DropComment_SlaveOutfitDrop>
     <DropComment_HazmatOutfitDrop>Химзащита? Вы что там такое делаете, что вам нужна химзащита? Вам лучше бы не нарушать галактический кодекс, раз вы стали частью Империи. Но если что, я ничего не видел.</DropComment_HazmatOutfitDrop>
     <DropComment_RoyalOutfitDrop>Одежда для знати. У нас на Фортуне есть свой определённый стиль одежды, если хотите, я запрошу полный набор. Качество гарантируется.</DropComment_RoyalOutfitDrop>
     <DropComment_PsychicOutfitDrop>Одежда для псайкеров? Люди, они, конечно, уважаемые, но их многие боятся, потому даже известные псайкеры предпочитают не афишировать свои способности. Однако право ваше, мы готовы предоставить вам комплект.</DropComment_PsychicOutfitDrop>
 
     <!-- Броня -->
-    <DropComment_ArmorDrop>Что такое бацинет? Неважно, просто перенаправляю запрос.</DropComment_ArmorDrop>
-    <DropComment_ArmorDropPlus>Серьезно? Бацинет из ферротитана? Ваше право, но какое-то странное использование материала как по мне.</DropComment_ArmorDropPlus>
-    <DropComment_IndustrialArmorDrop>Классическая броня наших новых колоний. Один комплект у нас всегда готов к отправке, уточните ваши размеры тела.</DropComment_IndustrialArmorDrop>
-    <DropComment_IndustrialArmorDropPlus>Хмм, улучшенная классическая колониальная броня? Я бы рекомендовал просто заказать чего получше, но как хотите.</DropComment_IndustrialArmorDropPlus>
-    <DropComment_SpacerArmorDrop>Вот это отличный выбор, у вас есть вкус. Броня имперской гвардии надёжна и проста в обращении, и у нас всегда есть огромный запас починенной брони после битв с механоидами!</DropComment_SpacerArmorDrop>
-    <DropComment_SpacerArmorDropPlus>Набор высших офицеров имперской гвардии. Обычно такие наборы не достать, но многие создаваемые на Вулкане комплекты идут через Фортуну, так что я готов организовать вам такой.</DropComment_SpacerArmorDropPlus>
-    <DropComment_UltraArmorDrop>За разрешением на выдачу такого комплекта мне придётся обращатся к столичной канцелярии на Юноне. Это действительно один из лучших видов брони во всей Империи, производимая только на Вулкане, и получают её только одни из самых титулованных людей в Империи.</DropComment_UltraArmorDrop>
-    <DropComment_UltraArmorDropPlus>Улучшенный комплект ультра брони? Я имею права даже обращаться за ней, перенаправляю вас сразу на столичную канцелярию...</DropComment_UltraArmorDropPlus>
-
+    <DropComment_ArmorDrop>What is bacinet? Never mind, just redirecting the request.</DropComment_ArmorDrop>
+    <DropComment_ArmorDropPlus>Seriously? Bacinet made of ferrotitanium? Your right, but that seems like an odd use of material to me.</DropComment_ArmorDropPlus>
+    <DropComment_IndustrialArmorDrop>The classic armor of our new colonies. We always have one set ready to ship, specify your body size.</DropComment_IndustrialArmorDrop>
+    <DropComment_IndustrialArmorDropPlus>Hmm, improved classic colonial armor? I would recommend just ordering something better, but suit yourself.</DropComment_IndustrialArmorDropPlus>
+    <DropComment_SpacerArmorDrop>Now that's a great choice, you have taste. Imperial Guard armor is reliable and easy to handle, and we always have a huge supply of repaired armor after battles with mechanoids!</DropComment_SpacerArmorDrop>
+    <DropComment_SpacerArmorDropPlus>A kit of the highest officers of the Imperial Guard. Normally you can't get such kits, but many kits created on Vulcan go through Fortuna, so I'm willing to arrange one for you.</DropComment_SpacerArmorDropPlus>
+    <DropComment_UltraArmorDrop>I would have to go to the Capital Office on Juno for permission to issue such a suite. It is indeed one of the finest armors in the Empire, produced only on Vulcan, and only some of the most titled people in the Empire receive it.</DropComment_UltraArmorDrop>
+    <DropComment_UltraArmorDropPlus>An upgraded set of ultra armor? I have no right to even apply for it, I refer you directly to the Capital Office...</DropComment_UltraArmorDropPlus>
 
     <!-- Инструменты -->
-    <DropComment_ToolDrop>Набор инструментов? Ну, это никогда лишним не будет, особенно если выдать их рабам на плантациях.</DropComment_ToolDrop>
-    <DropComment_ToolDropPlus>Хотите долговечные инструменты? Ну, это устроить несложно. Таким инструментом и самому поработать не грех.</DropComment_ToolDropPlus>
-    <DropComment_AdvToolDrop>Мультитул - инструмент рабочих планет ядра Империи. Они нечасто появляются за его пределами, но вы можете запросить один такой.</DropComment_AdvToolDrop>
+    <DropComment_ToolDrop>A set of tools? Well, that's never too much to ask, especially if you give them out to the slaves on the plantations.</DropComment_ToolDrop>
+    <DropComment_ToolDropPlus>Do you want durable tools? Well, that's not hard to arrange. It's not a bad thing to work with such a tool yourself.</DropComment_ToolDropPlus>
+    <DropComment_AdvToolDrop>The Multitool is a tool of the workers of the Empire's core. They do not appear often outside of it, but you can request one.</DropComment_AdvToolDrop>
     <DropComment_AdvToolDropPlus>Мультитул от AdvancedMachines™ - лучший доступный для покупки мультитул. Империя закупает их целыми партиями, так что и вам найдётся.</DropComment_AdvToolDropPlus>
 
     <!-- Турели -->
@@ -80,7 +79,7 @@
     <DropComment_TOWTurretDrop>Ракетная система ближнего действия. Ни один обычный рейдер не пройдёт мимо такой.</DropComment_TOWTurretDrop>
     <DropComment_MediumRKDrop>Продвинутая ракетная система, уничтожающая целые отряды врага. Классная вещь, жаль я ни разу не видел её в действии.</DropComment_MediumRKDrop>
     <DropComment_HeavyRKDrop>Самая большая ракетная система из доступных для передачи Империей. Я настоятельно рекомендую затарится боеприпасами.</DropComment_HeavyRKDrop>
-    <DropComment_LightAutoTurretDrop>Миниатюрная автотурель. Уже неплохо, но малый калибр мешает ей раскрыть потенциал.</DropComment_LightAutoTurretDrop>
+    <DropComment_LightAutoTurretDrop>Миниатюрная автотурель. Уже неплохо, но малый калибр мешает ей раскрыть свой потенциал.</DropComment_LightAutoTurretDrop>
     <DropComment_HeavyAutoTurretDrop>Полноценная автотурель. Мне всегда нравились эти турели, без лишних навесов, для них много патронов, что ещё нужно.</DropComment_HeavyAutoTurretDrop>
     <DropComment_BigLightAutoTurretDrop>Автоматическая ракетная система с самонаведением. Что ещё можно сказать - одна ракета может отменить весь рейд.</DropComment_BigLightAutoTurretDrop>
     <DropComment_BigHeavyAutoTurretDrop>Эта турель, если её можно так назвать, раньше ставилась на морские боевые корабли. Сейчас такие корабли - редкость, но турель всё так же эффективна. Но раньше она требовала ручного управления, а сейчас её добавили автоматику, вы же понимаете что это значит?</DropComment_BigHeavyAutoTurretDrop>
@@ -111,11 +110,12 @@
     <DropComment_MGDrop>Пулемёты - идеальная вещь для контроля толпы. Достаточно просто начать стрелять, и от количества пуль подавляются огнём вообще все, кроме механоидов. Но для них есть ЭМИ-патроны.</DropComment_MGDrop>
     <DropComment_MGDropPlus>Лучшие мастера и качественные материалы, и ваше оружие будет нести свет Империи во все части галактики ещё эффективнее!</DropComment_MGDropPlus>
     <DropComment_LauncherDrop>Гранатомёты и ракетницы - крайне опасные игрушки. Будьте аккуратны с ними, а то мне нравится с вами общаться.</DropComment_LauncherDrop>
+    <DropComment_LauncherDropPlus>Лучшие мастера и качественные материалы, и ваше оружие будет нести свет Империи во все части галактики ещё эффективнее!</DropComment_LauncherDropPlus>
 
     <!-- Семена -->
     <DropComment_SeedsPotatoDrop>Злаковые - лучший завтрак что на планетах ядра, что у вас! Правда у нас их не выращивают.</DropComment_SeedsPotatoDrop>
     <DropComment_SeedsPotatoDropPlus>Овощи - идеальный обед. Полезный и иногда даже сытный. Жаль что их не так много завозят...</DropComment_SeedsPotatoDropPlus>
     <DropComment_SeedsOakDrop>Деревья... Эх, хотел бы я побольше деревьев, иногда весь этот бетонно-металлический лоск очень раздражает.</DropComment_SeedsOakDrop>
     <DropComment_SeedsOakDropPlus>Фрукты нечасто можно увидеть у нас на столе, самые вкусные фрукты это целый деликатес.</DropComment_SeedsOakDropPlus>
-    
+
 </LanguageData>

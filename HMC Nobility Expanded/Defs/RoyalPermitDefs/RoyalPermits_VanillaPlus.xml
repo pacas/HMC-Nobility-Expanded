@@ -34,7 +34,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>BlocksDrop</defName>
         <label>Blocks</label>
-        <description>Request a drop of 200 random blocks (bricks included).</description>
+        <description>Request a drop of 200 random blocks.</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>14</cooldownDays>
         <royalAid>
