@@ -72,7 +72,7 @@ namespace RimWorld
             if (stuffDefOrdered != null)
             {
                 RoyaltyCoordsTableDef categoryTable = DefDatabase<RoyaltyCoordsTableDef>.GetNamedSilentFail(
-                    "CoordsTable" + PermitsCardCustomUtility.utility.curTab + "_" + stuffDefOrdered.column);
+                    "CoordsTable" + PermitsCardCustomUtility.UtilityClass.curTab + "_" + stuffDefOrdered.column);
                 if (categoryTable == null)
                     categoryTable = DefDatabase<RoyaltyCoordsTableDef>.GetNamed("CoordsTableColumn_" + stuffDefOrdered.column);
                 
@@ -82,7 +82,7 @@ namespace RimWorld
             else
             {
                 RoyaltyCoordsTableDef categoryTable =
-                    DefDatabase<RoyaltyCoordsTableDef>.GetNamedSilentFail("CoordsTable" + PermitsCardCustomUtility.utility.curTab + "_0");
+                    DefDatabase<RoyaltyCoordsTableDef>.GetNamedSilentFail("CoordsTable" + PermitsCardCustomUtility.UtilityClass.curTab + "_0");
                 if (permit.permitPointCost == 99) {
                     index = categoryTable.loadOrder.IndexOf(permit);
                     newCoords = new Vector2(60f, index * 50f + 5f);
