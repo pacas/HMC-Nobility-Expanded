@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using Verse;
 using Verse.Sound;
@@ -12,7 +13,7 @@ namespace RimWorld
         private static Vector2 rightScrollPosition;
         public static RoyalTitlePermitDef selectedPermit;
         public static Faction selectedFaction;
-        public static NobilitySupportUtility utility = new NobilitySupportUtility();
+        public static readonly NobilitySupportUtility UtilityClass = new NobilitySupportUtility();
         private static readonly Vector2 PermitOptionSpacing = new Vector2(0.25f, 0.35f);
         private static readonly Texture2D SwitchFactionIcon = ContentFinder<Texture2D>.Get("UI/Icons/SwitchFaction");
         
@@ -22,24 +23,22 @@ namespace RimWorld
                 var num = 0;
                 foreach (var faction in Find.FactionManager.AllFactionsVisible)
                     if (!faction.IsPlayer && !faction.def.permanentEnemy && !faction.temporary)
-                        foreach (var allDef in DefDatabase<RoyalTitlePermitDef>.AllDefs)
-                            if (allDef.faction == faction.def) {
-                                ++num;
-                                break;
-                            }
+                        if (DefDatabase<RoyalTitlePermitDef>.AllDefs.Any(allDef => allDef.faction == faction.def)) {
+                            ++num;
+                        }
                 return num > 1;
             }
         }
 
         private static int TotalReturnPermitsCost(Pawn pawn)
         {
-            var num = 8;
+            var returnCost = 8;
             var allFactionPermits = pawn.royalty.AllFactionPermits;
-            for (var index = 0; index < allFactionPermits.Count; ++index)
-                if (allFactionPermits[index].OnCooldown && allFactionPermits[index].Permit.royalAid != null)
-                    num += allFactionPermits[index].Permit.royalAid.favorCost;
+            foreach (var t in allFactionPermits)
+                if (t.OnCooldown && t.Permit.royalAid != null)
+                    returnCost += t.Permit.royalAid.favorCost;
 
-            return num;
+            return returnCost;
         }
 
         public static void DrawRecordsCard(Rect rect, Pawn pawn)
@@ -48,8 +47,8 @@ namespace RimWorld
                 return;
             rect.yMax -= 4f;
             if (ShowSwitchFactionButton) {
-                var rect1 = new Rect(rect.x, rect.y, 32f, 32f);
-                if (Widgets.ButtonImage(rect1, SwitchFactionIcon))
+                var switchButton = new Rect(rect.x, rect.y, 32f, 32f);
+                if (Widgets.ButtonImage(switchButton, SwitchFactionIcon))
                 {
                     var options = new List<FloatMenuOption>();
                     foreach (var faction in Find.FactionManager.AllFactionsVisibleInViewOrder)
@@ -64,23 +63,23 @@ namespace RimWorld
                         }
                     Find.WindowStack.Add(new FloatMenu(options));
                 }
-                TooltipHandler.TipRegion(rect1, "SwitchFaction_Desc".Translate());
+                TooltipHandler.TipRegion(switchButton, "SwitchFaction_Desc".Translate());
             }
             if (selectedFaction.def.HasRoyalTitles)
             {
-                var rect2 = new Rect(rect.xMax - 180f, rect.y - 4f, 180f, 30f);
-                var num = TotalReturnPermitsCost(pawn);
-                if (Widgets.ButtonText(rect2, "ReturnAllPermits".Translate()))
+                var returnPointsButton = new Rect(rect.xMax - 180f, rect.y - 4f, 180f, 30f);
+                var returnCost = TotalReturnPermitsCost(pawn);
+                if (Widgets.ButtonText(returnPointsButton, "ReturnAllPermits".Translate()))
                 {
                     if (!pawn.royalty.PermitsFromFaction(selectedFaction).Any())
                     {
                         Messages.Message("NoPermitsToReturn".Translate(pawn.Named("PAWN")),
                             new LookTargets(pawn), MessageTypeDefOf.RejectInput, false);
                     }
-                    else if (pawn.royalty.GetFavor(selectedFaction) < num)
+                    else if (pawn.royalty.GetFavor(selectedFaction) < returnCost)
                     {
                         Messages.Message(
-                            "NotEnoughFavor".Translate(num.ToString().Named("FAVORCOST"),
+                            "NotEnoughFavor".Translate(returnCost.ToString().Named("FAVORCOST"),
                                 selectedFaction.def.royalFavorLabel.Named("FAVOR"), pawn.Named("PAWN"),
                                 pawn.royalty.GetFavor(selectedFaction).ToString().Named("CURFAVOR")),
                             MessageTypeDefOf.RejectInput);
@@ -90,78 +89,78 @@ namespace RimWorld
                         Find.WindowStack.Add(Dialog_MessageBox.CreateConfirmation(
                             (TaggedString)(string)"ReturnAllPermits_Confirm".Translate(
                                 8.ToString().Named("BASEFAVORCOST"),
-                                num.ToString().Named("FAVORCOST"), selectedFaction.def.royalFavorLabel.Named("FAVOR"),
+                                returnCost.ToString().Named("FAVORCOST"), selectedFaction.def.royalFavorLabel.Named("FAVOR"),
                                 selectedFaction.Named("FACTION")),
                             () => pawn.royalty.RefundPermits(8, selectedFaction), true));
                     }
                 }
-                TooltipHandler.TipRegion(rect2,
-                    "ReturnAllPermits_Desc".Translate(8.ToString().Named("BASEFAVORCOST"), num.ToString().Named("FAVORCOST"),
+                TooltipHandler.TipRegion(returnPointsButton,
+                    "ReturnAllPermits_Desc".Translate(8.ToString().Named("BASEFAVORCOST"), returnCost.ToString().Named("FAVORCOST"),
                         selectedFaction.def.royalFavorLabel.Named("FAVOR")));
             }
             Text.Font = GameFont.Medium;
             var currentTitle = pawn.royalty.GetCurrentTitle(selectedFaction);
-            var rect3 = new Rect((float)(rect.xMin + 200.0), rect.y - 4f, rect.xMax - 320f, 30f);
-            var label1 = "CurrentTitle".Translate() + ": " +
+            var statusLabelRect = new Rect(rect.xMin + 200f, rect.y - 2f, rect.xMax - 320f, 30f);
+            var statusLabelText = "CurrentTitle".Translate() + ": " +
                 (currentTitle != null
                     ? currentTitle.GetLabelFor(pawn).CapitalizeFirst()
                     : (string)"None".Translate()) + "            " + "UnusedPermits".Translate() + ": " +
                 pawn.royalty.GetPermitPoints(selectedFaction).ToString();
             if (!selectedFaction.def.royalFavorLabel.NullOrEmpty())
-                label1 = label1 + "            " + selectedFaction.def.royalFavorLabel.CapitalizeFirst() + ": " +
-                         pawn.royalty.GetFavor(selectedFaction).ToString();
-            Widgets.Label(rect3, label1);
+                statusLabelText +=  "            " + selectedFaction.def.royalFavorLabel.CapitalizeFirst() + ": " +
+                                  pawn.royalty.GetFavor(selectedFaction).ToString();
+            Widgets.Label(statusLabelRect, statusLabelText);
             
             var chooseCategoryRect = new Rect(rect.xMin, rect.y - 4f, 180f, 30f);
             Text.Font = GameFont.Small;
-            rect.yMin += 35f;
-            var leftRect = new Rect(rect);
-            leftRect.xMin = 10f;
-            leftRect.xMax = 230f;
-            /*leftRect.width = 230f;*/
-            var middleRect = new Rect(rect);
-            middleRect.xMin = 240f;
-            middleRect.xMax = 790f;
-            /*middleRect.width = 570f;*/
-            var rightRect = new Rect(rect);
-            rightRect.xMin = 810f;
-            rightRect.xMax = 1050f;
-            /*rightRect.width = 240f;*/
+            rect.yMin += 45f;
+            var leftRect = new Rect(rect) {
+                xMin = 15f,
+                xMax = 260f
+            };
+            var middleRect = new Rect(rect) {
+                xMin = 270f,
+                xMax = 770f
+            };
+            var rightRect = new Rect(rect) {
+                xMin = 790f,
+                xMax = 1030f
+            };
             DoLeftRect(leftRect, pawn);
             DoMiddleRect(middleRect, pawn);
             DoRightRect(rightRect, pawn);
-            if (Widgets.ButtonText(chooseCategoryRect, "ChoosePermitCategory".Translate()))
-            {
+            if (Widgets.ButtonText(chooseCategoryRect, "ChoosePermitCategory".Translate())) {
                 var tabOptions = SetCategoryButton();
                 Find.WindowStack.Add(new FloatMenu(tabOptions));
             }
-                
         }
 
         
         private static void DoLeftRect(Rect rect, Pawn pawn)
         {
-            var rect1 = new Rect(rect);
-            Widgets.BeginGroup(rect1);
+            var leftPanel = new Rect(rect);
+            Widgets.BeginGroup(leftPanel);
             if (selectedPermit != null)
             {
                 Text.Font = GameFont.Medium;
-                var rect2 = new Rect(0.0f, 0.0f, rect1.width, 0.0f);
-                Widgets.LabelCacheHeight(ref rect2, selectedPermit.LabelCap);
+                var titleRect = new Rect(0.0f, 0.0f, leftPanel.width, 0.0f);
+                Widgets.LabelCacheHeight(ref titleRect, selectedPermit.LabelCap);
                 Text.Font = GameFont.Small;
-                var y = rect2.height;
+                var yPos = titleRect.height;
                 if (!selectedPermit.description.NullOrEmpty()) {
-                    var rect3 = new Rect(0.0f, y, rect1.width, 0.0f);
-                    Widgets.LabelCacheHeight(ref rect3, selectedPermit.description);
-                    y += rect3.height + 16f;
+                    var descRect = new Rect(0.0f, yPos + 10f, leftPanel.width, 0.0f);
+                    Widgets.LabelCacheHeight(ref descRect, selectedPermit.description);
+                    yPos += descRect.height + 26f;
                 }
-                var rect4 = new Rect(0.0f, y, rect1.width, 0.0f);
-                string label = "DropComment_" + selectedPermit.defName;
-
-                Widgets.LabelCacheHeight(ref rect4, label.Translate());
-                var rect5 = new Rect(0.0f, rect1.height - 50f, rect1.width, 50f);
+                if (selectedPermit.permitPointCost < 90) {
+                    var commentRect = new Rect(0.0f, yPos, leftPanel.width, 0.0f);
+                    var dropComment = "DropComment_" + selectedPermit.defName;
+                    string label = "\n" + "DropComment".Translate() + "\n\n" + dropComment.Translate();
+                    Widgets.LabelCacheHeight(ref commentRect, label);
+                }
+                var acceptRect = new Rect(0.0f, leftPanel.height - 50f, leftPanel.width, 50f);
                 if (selectedPermit.AvailableForPawn(pawn, selectedFaction) && !PermitUnlocked(selectedPermit, pawn) &&
-                    Widgets.ButtonText(rect5, "AcceptPermit".Translate()))
+                    Widgets.ButtonText(acceptRect, "AcceptPermit".Translate()))
                 {
                     SoundDefOf.Quest_Accepted.PlayOneShotOnCamera();
                     pawn.royalty.AddPermit(selectedPermit, selectedFaction);
@@ -178,26 +177,20 @@ namespace RimWorld
                 return;
             var defsListForReading = DefDatabase<RoyalTitlePermitDef>.AllDefsListForReading;
             var outRect = rect.ContractedBy(10f);
-            var rect1 = new Rect();
-            for (var index = 0; index < defsListForReading.Count; ++index)
+            var middlePanel = new Rect();
+            foreach (var permit in defsListForReading.Where(CanDrawPermit))
             {
-                var permit = defsListForReading[index];
-                if (CanDrawPermit(permit))
-                {
-                    if (permit.permitPointCost == 98)
-                        rect1.width = Mathf.Max(rect1.width, (float)(DrawPosition(permit).x + 150.0 + 26.0));
-                    else
-                        rect1.width = Mathf.Max(rect1.width, (float)(DrawPosition(permit).x + 200.0 + 26.0));
-                    rect1.height = Mathf.Max(rect1.height, (float)(DrawPosition(permit).y + 50.0 + 26.0));
-                }
+                middlePanel.width = permit.permitPointCost == 98 ? 
+                    Mathf.Max(middlePanel.width, (float)(DrawPosition(permit).x + 150.0 + 26.0)) : 
+                    Mathf.Max(middlePanel.width, (float)(DrawPosition(permit).x + 200.0 + 26.0));
+                middlePanel.height = Mathf.Max(middlePanel.height, (float)(DrawPosition(permit).y + 50.0 + 26.0));
             }
 
-            Widgets.BeginScrollView(outRect, ref rightScrollPosition, rect1);
-            Widgets.BeginGroup(rect1.ContractedBy(10f));
+            Widgets.BeginScrollView(outRect, ref rightScrollPosition, middlePanel);
+            Widgets.BeginGroup(middlePanel.ContractedBy(10f));
             DrawLines();
-            for (var index = 0; index < defsListForReading.Count; ++index)
+            foreach (var permit in defsListForReading)
             {
-                var permit = defsListForReading[index];
                 if (CanDrawPermit(permit) && permit.permitPointCost != 90)
                 {
                     var vector2 = DrawPosition(permit);
@@ -207,14 +200,12 @@ namespace RimWorld
                         : TexUI.AvailResearchColor;
                     Color borderResearchColor;
                     var permitRect = new Rect(vector2.x, vector2.y, 200f, 50f);
-                    if (permit.permitPointCost == 99)
-                    {
+                    if (permit.permitPointCost == 99) {
                         textColor = new Color(1f, 0.5f, 0.0f, 1.0f);
                         bgColor = new Color(0.06f, 0.06f, 0.06f, 1);
                         permitRect = new Rect(vector2.x, vector2.y, 300f, 50f);
                     }
-                    else if (permit.permitPointCost == 98)
-                    {
+                    else if (permit.permitPointCost == 98) {
                         textColor = new Color(1f, 0.8f, 0.2f, 1.0f);
                         bgColor = new Color(0.06f, 0.06f, 0.06f, 1);
                         permitRect = new Rect(vector2.x, vector2.y, 150f, 50f);
@@ -222,17 +213,14 @@ namespace RimWorld
                     else if (!permit.AvailableForPawn(pawn, selectedFaction) && !PermitUnlocked(permit, pawn)) {
                         textColor = Color.red;
                     }
-                    if (selectedPermit == permit)
-                    {
+                    if (selectedPermit == permit) {
                         borderResearchColor = TexUI.HighlightBorderResearchColor;
                         bgColor += TexUI.HighlightBgResearchColor;
                     }
-                    else
-                    {
+                    else {
                         borderResearchColor = TexUI.DefaultBorderResearchColor;
                     }
-                    if (Widgets.CustomButtonText(ref permitRect, string.Empty, bgColor, textColor, borderResearchColor))
-                    {
+                    if (Widgets.CustomButtonText(ref permitRect, string.Empty, bgColor, textColor, borderResearchColor)) {
                         SoundDefOf.Click.PlayOneShotOnCamera();
                         selectedPermit = permit;
                     }
@@ -257,10 +245,8 @@ namespace RimWorld
             Widgets.BeginGroup(rect1);
             if (selectedPermit != null)
             {
-                TaggedString taggedString;
-                string tagged;
                 var rect4 = new Rect(0.0f, 0.0f, rect1.width, 0.0f);
-                string label = "";
+                var label = "";
 
                 if (selectedPermit.permitPointCost < 90)
                 {
@@ -274,6 +260,8 @@ namespace RimWorld
                             .Translate(selectedFaction.def.royalFavorLabel.Named("HONOR"))
                             .CapitalizeFirst() + ": ") + selectedPermit.royalAid.favorCost.ToString();
 
+                    TaggedString taggedString;
+                    string tagged;
                     if (selectedPermit.minTitle != null)
                     {
                         taggedString =
@@ -294,22 +282,21 @@ namespace RimWorld
                         label += "\n" + tagged;
                     }
 
-                    OrderedStuffDef stuffDefOrdered =
+                    var stuffDefOrdered =
                         DefDatabase<OrderedStuffDef>.GetNamedSilentFail(selectedPermit.defName + "Stuff");
                     label += "\n\n";
-                    bool isThingsExists = stuffDefOrdered.thingsToChoose != null;
-                    bool isPawnsExists = stuffDefOrdered.pawnToChoose != null;
-                    bool isStuffExists = stuffDefOrdered.stuffList != null;
-                    bool isRoyalAidExists = selectedPermit.royalAid != null;
+                    var isThingsExists = stuffDefOrdered.thingsToChoose != null;
+                    var isPawnsExists = stuffDefOrdered.pawnToChoose != null;
+                    var isStuffExists = stuffDefOrdered.stuffList != null;
+                    var isRoyalAidExists = selectedPermit.royalAid != null;
 
                     if (isThingsExists && stuffDefOrdered.thingsToChoose.Count > 1)
                     {
                         if (!isStuffExists || stuffDefOrdered.stuffList.Count != stuffDefOrdered.thingsToChoose.Count)
                         {
                             label += "ItemIncludedInPermit".Translate() + "\n";
-                            for (var index = 0; index < stuffDefOrdered.thingsToChoose.Count; ++index)
-                            {
-                                label += "  - " + stuffDefOrdered.thingsToChoose[index].LabelCap + "\n";
+                            foreach (var t in stuffDefOrdered.thingsToChoose) {
+                                label += "  - " + t.LabelCap + "\n";
                             }
                         }
                         else
@@ -325,9 +312,9 @@ namespace RimWorld
                     else if (isPawnsExists && stuffDefOrdered.pawnToChoose.Count > 1)
                     {
                         label += "ItemIncludedInPermit".Translate() + "\n";
-                        for (var index = 0; index < stuffDefOrdered.pawnToChoose.Count; ++index)
+                        foreach (var t in stuffDefOrdered.pawnToChoose)
                         {
-                            label += "  - " + stuffDefOrdered.pawnToChoose[index].LabelCap + "\n";
+                            label += "  - " + t.LabelCap + "\n";
                         }
                     }
                     else if (isRoyalAidExists &&
@@ -371,12 +358,10 @@ namespace RimWorld
             var start = new Vector2();
             var end = new Vector2();
             var defsListForReading = DefDatabase<RoyalTitlePermitDef>.AllDefsListForReading;
-            for (var index1 = 0; index1 < 2; ++index1)
-            for (var index2 = 0; index2 < defsListForReading.Count; ++index2)
-            {
-                var permit = defsListForReading[index2];
-                if (CanDrawPermit(permit))
+            for (var columnIndex = 0; columnIndex < 2; ++columnIndex)
+                foreach (var permit in defsListForReading)
                 {
+                    if (!CanDrawPermit(permit)) continue;
                     var vector1 = DrawPosition(permit);
                     start.x = vector1.x;
                     start.y = vector1.y + 25f;
@@ -386,13 +371,12 @@ namespace RimWorld
                         var vector2 = DrawPosition(prerequisite);
                         end.x = vector2.x + 200f;
                         end.y = vector2.y + 25f;
-                        if ((index1 == 1 && selectedPermit == permit) || selectedPermit == prerequisite)
+                        if ((columnIndex == 1 && selectedPermit == permit) || selectedPermit == prerequisite)
                             Widgets.DrawLine(start, end, TexUI.HighlightLineResearchColor, 4f);
-                        else if (index1 == 0)
+                        else if (columnIndex == 0)
                             Widgets.DrawLine(start, end, TexUI.DefaultLineResearchColor, 2f);
                     }
                 }
-            }
         }
 
         
@@ -424,7 +408,8 @@ namespace RimWorld
         
         private static Vector2 DrawPosition(RoyalTitlePermitDef permit)
         {return PermitOptionSpacing;}
-        /* Fake static method, replaced in runtime with real */
+        /* Fake static method, replaced in runtime with real. */
+        /* Why? I dunno, this is working that way, I will try to fix it later. */
 
         
         private static bool CanDrawPermit(RoyalTitlePermitDef permit)
@@ -441,19 +426,19 @@ namespace RimWorld
             var seeds = DefDatabase<RoyalTitlePermitDef>.GetNamedSilentFail("SeedsPermitTitle");
             var dict = new Dictionary<string, Action>
             {
-                { "PermitCategory_Resources", () => utility.curTab = "Resources" },
-                { "PermitCategory_Pawns", () => utility.curTab = "Pawns" },
-                { "PermitCategory_Airstrike", () => utility.curTab = "Airstrike" },
-                { "PermitCategory_Tools", () => utility.curTab = "Tools" },
-                { "PermitCategory_Armor", () => utility.curTab = "Armor" },
-                { "PermitCategory_Apparel", () => utility.curTab = "Apparel" },
-                { "PermitCategory_Melee", () => utility.curTab = "Melee" },
-                { "PermitCategory_Ranged", () => utility.curTab = "Ranged" },
-                { "PermitCategory_Turrets", () => utility.curTab = "Turrets" },
-                { "PermitCategory_Animals", () => utility.curTab = "Animals" }
+                { "PermitCategory_Resources", () => UtilityClass.curTab = "Resources" },
+                { "PermitCategory_Pawns", () => UtilityClass.curTab = "Pawns" },
+                { "PermitCategory_Airstrike", () => UtilityClass.curTab = "Airstrike" },
+                { "PermitCategory_Tools", () => UtilityClass.curTab = "Tools" },
+                { "PermitCategory_Armor", () => UtilityClass.curTab = "Armor" },
+                { "PermitCategory_Apparel", () => UtilityClass.curTab = "Apparel" },
+                { "PermitCategory_Melee", () => UtilityClass.curTab = "Melee" },
+                { "PermitCategory_Ranged", () => UtilityClass.curTab = "Ranged" },
+                { "PermitCategory_Turrets", () => UtilityClass.curTab = "Turrets" },
+                { "PermitCategory_Animals", () => UtilityClass.curTab = "Animals" }
             };
             if (seeds != null)
-                dict.Add("Seeds", () => utility.curTab = "Seeds");
+                dict.Add("Seeds", () => UtilityClass.curTab = "Seeds");
             foreach (var table in dict)
             {
                 tabOptions.Add(new FloatMenuOption(table.Key.Translate(), table.Value));

@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    
+    <DropComment>Комментарий от имперского провизора:</DropComment>
+    
+    <!-- Ресурсы -->
+    <DropComment_SteelDrop>Железо, кровь нации... Пока у вас есть железо для создания стали, жизнь не так уж и плоха.</DropComment_SteelDrop>
+    <DropComment_SilverDrop>Деньги нужны всем, и неважно сколько. Хотя почему-то некоторые плавят их обратно в слитки серебра...</DropComment_SilverDrop>
+    <DropComment_FoodDrop>Еда нужна каждому. Ну почти каждому, меня до сих пор бросает в дрожь от этих гуманоидных роботов. А, и да, не забудьте сразу убрать еду подальше от ваших питомцев.</DropComment_FoodDrop>
+    <DropComment_GlitterMedDrop>Что-то случилось? У нас есть обширный запас медицинского оборудования, и я только рад бы поделится, но знаете сколько вас таких? Если каждый потребует себе аптечку, даже промышленность Империи ужаснётся.</DropComment_GlitterMedDrop>
+    <DropComment_BlocksDrop>Что? Эти булыжники? Зачем они вам, для мощения улиц что ли? У нас на Фортуне такое только на вских старых площадях встретить можно. В любом случае, дело ваше.</DropComment_BlocksDrop>
+    <DropComment_CallTransportShuttle>Нужно что-то перевести? Это всегда пожалуйста, вышлю вам птичку.</DropComment_CallTransportShuttle>
+
+    <!-- Люди -->
+    <DropComment_CallLaborerTeam>Не хватает рук? У нас есть отборный низкоквалифицированный персонал с нижних уровней планеты специально для вас!</DropComment_CallLaborerTeam>
+    <DropComment_CallLaborerGang>Вам не хватает той пачки рабочих, что мы готовы прислать? Ну, мы можем предложить побольше таких работяг разве что, не отправлять же вам наших специалистов.</DropComment_CallLaborerGang>
+    <DropComment_CallMilitaryAidSmall>На вас напают местные племена? К счастью, у нас тут такого нет. Для решения данной проблемы готов предоставить вам отборных солдат имперской гвардии, только что из училища без какой-либо квалификации!</DropComment_CallMilitaryAidSmall>
+    <DropComment_CallMilitaryAidSmallPlus>Рейдеров настолько много, что вам не хватает солдат? Так держите больше солдат, это всегда решает проблему!</DropComment_CallMilitaryAidSmallPlus>
+    <DropComment_CallMilitaryAidLarge>Против пиратов юнцы из гвардии не справляются? У нас есть местные элитные наёмные подразделения, за звонкую монету они готовы уничтожить любую цель!</DropComment_CallMilitaryAidLarge>
+    <DropComment_CallMilitaryAidGrand>Всё настолько плохо? Если вам готовы предоставить такие привилегии, то нет проблемы с которой не справятся элитные части императорской гвардии. Главное не пускайте их в свою тюрьму, просто не стоит.</DropComment_CallMilitaryAidGrand>
+
+    <!-- Артобстрел -->
+    <DropComment_CallOrbitalStrike></DropComment_CallOrbitalStrike>
+    <DropComment_CallOrbitalSalvo></DropComment_CallOrbitalSalvo>
+
+    <!-- Животные -->
+    <DropComment_FarmAnimalDrop></DropComment_FarmAnimalDrop>
+    <DropComment_CaravanAnimalDrop></DropComment_CaravanAnimalDrop>
+    <DropComment_BattleAnimalDrop></DropComment_BattleAnimalDrop>
+    <DropComment_PetAnimalDrop></DropComment_PetAnimalDrop>
+    <DropComment_ExoticAnimalDrop></DropComment_ExoticAnimalDrop>
+    <DropComment_MountsAnimalDrop></DropComment_MountsAnimalDrop>
+    <DropComment_SpiderAnimalDrop></DropComment_SpiderAnimalDrop>
+
+    <!-- Одежда -->
+    <DropComment_SoldierAccessoriesDrop></DropComment_SoldierAccessoriesDrop>
+    <DropComment_SoldierAccessoriesAltDrop></DropComment_SoldierAccessoriesAltDrop>
+    <DropComment_SmithOutfitDrop></DropComment_SmithOutfitDrop>
+    <DropComment_FarmerOutfitDrop></DropComment_FarmerOutfitDrop>
+    <DropComment_ChefOutfitDrop></DropComment_ChefOutfitDrop>
+    <DropComment_MedicOutfitDrop></DropComment_MedicOutfitDrop>
+    <DropComment_MinerOutfitDrop></DropComment_MinerOutfitDrop>
+    <DropComment_ConstructorOutfitDrop></DropComment_ConstructorOutfitDrop>
+    <DropComment_SlaveOutfitDrop></DropComment_SlaveOutfitDrop>
+    <DropComment_HazmatOutfitDrop></DropComment_HazmatOutfitDrop>
+    <DropComment_RoyalOutfitDrop></DropComment_RoyalOutfitDrop>
+    <DropComment_PsychicOutfitDrop></DropComment_PsychicOutfitDrop>
+
+    <!-- Броня -->
+    <DropComment_ArmorDrop></DropComment_ArmorDrop>
+    <DropComment_ArmorDropPlus></DropComment_ArmorDropPlus>
+    <DropComment_IndustrialArmorDrop></DropComment_IndustrialArmorDrop>
+    <DropComment_IndustrialArmorDropPlus></DropComment_IndustrialArmorDropPlus>
+    <DropComment_SpacerArmorDrop></DropComment_SpacerArmorDrop>
+    <DropComment_SpacerArmorDropPlus></DropComment_SpacerArmorDropPlus>
+    <DropComment_UltraArmorDrop></DropComment_UltraArmorDrop>
+    <DropComment_UltraArmorDropPlus></DropComment_UltraArmorDropPlus>
+
+
+    <!-- Инструменты -->
+    <DropComment_ToolDrop>Немного инструментов? Ну, это никогда лишним не будет, особенно если выдать их рабам на плантациях.</DropComment_ToolDrop>
+    <DropComment_ToolDropPlus></DropComment_ToolDropPlus>
+    <DropComment_AdvToolDrop></DropComment_AdvToolDrop>
+    <DropComment_AdvToolDropPlus></DropComment_AdvToolDropPlus>
+
+    <!-- Турели -->
+    <DropComment_BallistaDrop></DropComment_BallistaDrop>
+    <DropComment_CatapultDrop></DropComment_CatapultDrop>
+    <DropComment_MG1LightTurretDrop></DropComment_MG1LightTurretDrop>
+    <DropComment_MG1HeavyTurretDrop></DropComment_MG1HeavyTurretDrop>
+    <DropComment_MG2LightTurretDrop></DropComment_MG2LightTurretDrop>
+    <DropComment_MG2HeavyTurretDrop></DropComment_MG2HeavyTurretDrop>
+    <DropComment_AGS17TurretDrop></DropComment_AGS17TurretDrop>
+    <DropComment_AGS30TurretDrop></DropComment_AGS30TurretDrop>
+    <DropComment_A81MortarDrop></DropComment_A81MortarDrop>
+    <DropComment_A90MortarDrop></DropComment_A90MortarDrop>
+    <DropComment_A120MortarDrop></DropComment_A120MortarDrop>
+    <DropComment_A155MortarDrop></DropComment_A155MortarDrop>
+    <DropComment_JavelinTurretDrop></DropComment_JavelinTurretDrop>
+    <DropComment_TOWTurretDrop></DropComment_TOWTurretDrop>
+    <DropComment_MediumRKDrop></DropComment_MediumRKDrop>
+    <DropComment_HeavyRKDrop></DropComment_HeavyRKDrop>
+    <DropComment_LightAutoTurretDrop></DropComment_LightAutoTurretDrop>
+    <DropComment_HeavyAutoTurretDrop></DropComment_HeavyAutoTurretDrop>
+    <DropComment_BigLightAutoTurretDrop></DropComment_BigLightAutoTurretDrop>
+    <DropComment_BigHeavyAutoTurretDrop></DropComment_BigHeavyAutoTurretDrop>
+    <DropComment_HighTechLightAutoTurretDrop></DropComment_HighTechLightAutoTurretDrop>
+    <DropComment_HighTechHeavyAutoTurretDrop></DropComment_HighTechHeavyAutoTurretDrop>
+
+    <!-- Ближний бой -->
+    <DropComment_AgileMeleeDrop></DropComment_AgileMeleeDrop>
+    <DropComment_AgileMeleeDropPlus></DropComment_AgileMeleeDropPlus>
+    <DropComment_SharpMeleeDrop></DropComment_SharpMeleeDrop>
+    <DropComment_SharpMeleeDropPlus></DropComment_SharpMeleeDropPlus>
+    <DropComment_BluntMeleeDrop></DropComment_BluntMeleeDrop>
+    <DropComment_BluntMeleeDropPlus></DropComment_BluntMeleeDropPlus>
+    <DropComment_HeavyMeleeDrop></DropComment_HeavyMeleeDrop>
+    <DropComment_HeavyMeleeDropPlus></DropComment_HeavyMeleeDropPlus>
+
+    <!-- Дальний бой -->
+    <DropComment_PistolDrop></DropComment_PistolDrop>
+    <DropComment_PistolDropPlus></DropComment_PistolDropPlus>
+    <DropComment_SMGDrop></DropComment_SMGDrop>
+    <DropComment_SMGDropPlus></DropComment_SMGDropPlus>
+    <DropComment_ShotgunDrop></DropComment_ShotgunDrop>
+    <DropComment_ShotgunDropPlus></DropComment_ShotgunDropPlus>
+    <DropComment_RifleDrop></DropComment_RifleDrop>
+    <DropComment_RifleDropPlus></DropComment_RifleDropPlus>
+    <DropComment_SniperRifleDrop></DropComment_SniperRifleDrop>
+    <DropComment_SniperRifleDropPlus></DropComment_SniperRifleDropPlus>
+    <DropComment_MGDrop></DropComment_MGDrop>
+    <DropComment_MGDropPlus></DropComment_MGDropPlus>
+    <DropComment_LauncherDrop></DropComment_LauncherDrop>
+    <DropComment_LauncherDropPlus></DropComment_LauncherDropPlus>
+
+</LanguageData>
