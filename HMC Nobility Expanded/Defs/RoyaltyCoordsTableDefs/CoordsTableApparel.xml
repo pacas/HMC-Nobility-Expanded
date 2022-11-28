@@ -9,7 +9,7 @@
             <li>SmithOutfitDrop</li>
             <li>SlaveOutfitDrop</li>
             <li>MinerOutfitDrop</li>
-            <li>ChefOutfitDrop</li>
+            <li>MedicOutfitDrop</li>
             <li>SpecialPermitSmallTitle</li>
             <li>SoldierAccessoriesDrop</li>
             <li>RoyalOutfitDrop</li>
@@ -24,7 +24,7 @@
             <li>WorkerPermitSmallTitle</li>
             <li>FarmerOutfitDrop</li>
             <li>ConstructorOutfitDrop</li>
-            <li>MedicOutfitDrop</li>
+            <li>ChefOutfitDrop</li>
             <li>HazmatOutfitDrop</li>
             <li>SpecialPermitSmallTitle</li>
             <li>SoldierAccessoriesAltDrop</li>

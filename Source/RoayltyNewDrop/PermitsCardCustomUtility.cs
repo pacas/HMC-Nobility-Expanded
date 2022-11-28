@@ -120,10 +120,10 @@ namespace RimWorld
             };
             var middleRect = new Rect(rect) {
                 xMin = 270f,
-                xMax = 770f
+                xMax = 790f
             };
             var rightRect = new Rect(rect) {
-                xMin = 790f,
+                xMin = 810f,
                 xMax = 1030f
             };
             DoLeftRect(leftRect, pawn);
@@ -438,7 +438,7 @@ namespace RimWorld
                 { "PermitCategory_Animals", () => UtilityClass.curTab = "Animals" }
             };
             if (seeds != null)
-                dict.Add("Seeds", () => UtilityClass.curTab = "Seeds");
+                dict.Add("PermitCategory_Seeds", () => UtilityClass.curTab = "Seeds");
             foreach (var table in dict)
             {
                 tabOptions.Add(new FloatMenuOption(table.Key.Translate(), table.Value));
