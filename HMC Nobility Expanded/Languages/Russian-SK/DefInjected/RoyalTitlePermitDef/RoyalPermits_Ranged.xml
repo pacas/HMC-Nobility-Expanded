@@ -45,6 +45,16 @@
     <LauncherDrop.label>гранатомёт</LauncherDrop.label>
     <LauncherDrop.description>Запрос доставки случайного гранатомёта, ракетницы или огнемёта и патронов к ним. Только базовые. Одноразовые не включены.</LauncherDrop.description>
     <LauncherDropPlus.label>гранатомёт +</LauncherDropPlus.label>
-    <LauncherDropPlus.description>Запрос доставки случайного гранатомёта, ракетницы или огнемёта и патронов к ним. Более качественные гранатомёта в выборке, в том числе продвинутые. Одноразовые не включены.</LauncherDropPlus.description>
+    <LauncherDropPlus.description>Запрос доставки случайного гранатомёта, ракетницы или огнемёта и патронов к ним. Более качественные гранатомёты в выборке, в том числе продвинутые. Одноразовые не включены.</LauncherDropPlus.description>
+
+    <!-- энергетическое -->
+    <BlasterDrop.label>бластеры</BlasterDrop.label>
+    <BlasterDrop.description>Запрос доставки случайного бластера и патронов к нему.</BlasterDrop.description>
+    <LasersDrop.label>пульсеры</LasersDrop.label>
+    <LasersDrop.description>Запрос доставки случайного пульсера и патронов к нему.</LasersDrop.description>
+    <PlasmerDrop.label>плазмеры</PlasmerDrop.label>
+    <PlasmerDrop.description>Запрос доставки случайного плазмера и патронов к нему.</PlasmerDrop.description>
+    <ChargeRailDrop.label>энерговинтовки</ChargeRailDrop.label>
+    <ChargeRailDrop.description>Запрос доставки случайной энерговинтовки и патронов к ней.</ChargeRailDrop.description>
 
 </LanguageData>
