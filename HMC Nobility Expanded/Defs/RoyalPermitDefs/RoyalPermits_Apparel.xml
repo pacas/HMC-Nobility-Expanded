@@ -156,6 +156,7 @@
     <OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>ChefOutfitDropStuff</defName>
         <quality>Good</quality>
+        <column>1</column>
         <stuffList>
             <li>Flaxcloth</li>
             <li>Synthread</li>
@@ -182,7 +183,6 @@
     <OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>MedicOutfitDropStuff</defName>
         <quality>Good</quality>
-        <column>1</column>
         <stuffList>
             <li>Flaxcloth</li>
             <li>Synthread</li>
