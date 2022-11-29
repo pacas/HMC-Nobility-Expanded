@@ -24,6 +24,7 @@
 
     <!-- ===== Material ===== -->
     <StuffDescription>{0} {1}</StuffDescription>
+    <StuffDescriptionSingle>Material: {0}</StuffDescriptionSingle>
 
     <!-- ===== Category ===== -->
     <PermitCategory_Resources>Basic Resources</PermitCategory_Resources>
