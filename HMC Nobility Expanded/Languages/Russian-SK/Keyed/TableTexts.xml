@@ -24,6 +24,7 @@
     
     <!-- ===== Материал ===== -->
     <StuffDescription>{1} из {0}</StuffDescription>
+    <StuffDescriptionSingle>Материал: {0}</StuffDescriptionSingle>
 
     <!-- ===== Категория ===== -->
     <PermitCategory_Resources>Базовые ресурсы</PermitCategory_Resources>

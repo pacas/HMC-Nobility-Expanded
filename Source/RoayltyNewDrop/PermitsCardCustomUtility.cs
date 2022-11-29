@@ -336,9 +336,16 @@ namespace RimWorld
                         selectedPermit.royalAid.itemsToDrop != null &&
                         selectedPermit.royalAid.itemsToDrop[0].thingDef.defName == "Steel")
                     {
-                        label += "  - " + "StuffDescription".Translate(
+                        if (stuffDefOrdered.thingsToChoose.Count != 1) {
+                            label += "StuffDescriptionSingle".Translate(
+                                stuffDefOrdered.stuffList[0].LabelCap) + "\n";
+                        }
+                        else
+                        {
+                            label += "  - " + "StuffDescription".Translate(
                             stuffDefOrdered.stuffList[0].stuffProps.stuffAdjective,
                             stuffDefOrdered.thingsToChoose[0].label) + "\n";
+                        }
                     }
 
                     if (stuffDefOrdered.typeOfQuality != null)
