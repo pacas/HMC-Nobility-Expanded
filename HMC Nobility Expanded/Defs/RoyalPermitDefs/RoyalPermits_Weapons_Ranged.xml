@@ -54,7 +54,7 @@
             <itemsToDrop>
                 <Steel>1</Steel>
             </itemsToDrop>
-            <favorCost>10</favorCost>
+            <favorCost>7</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
     <OrderedStuffDef ParentName="OrderedGunBase">
@@ -89,7 +89,7 @@
             <itemsToDrop>
                 <Steel>1</Steel>
             </itemsToDrop>
-            <favorCost>4</favorCost>
+            <favorCost>6</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
     <OrderedStuffDef ParentName="OrderedGunBase">
@@ -167,7 +167,7 @@
             <itemsToDrop>
                 <Steel>1</Steel>
             </itemsToDrop>
-            <favorCost>6</favorCost>
+            <favorCost>8</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
     <OrderedStuffDef ParentName="OrderedGunBase">
@@ -198,7 +198,7 @@
             <itemsToDrop>
                 <Steel>1</Steel>
             </itemsToDrop>
-            <favorCost>14</favorCost>
+            <favorCost>15</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
     <OrderedStuffDef ParentName="OrderedGunBase">
@@ -233,7 +233,7 @@
             <itemsToDrop>
                 <Steel>1</Steel>
             </itemsToDrop>
-            <favorCost>8</favorCost>
+            <favorCost>10</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
     <OrderedStuffDef ParentName="OrderedGunBase">
@@ -319,7 +319,7 @@
             <itemsToDrop>
                 <Steel>1</Steel>
             </itemsToDrop>
-            <favorCost>10</favorCost>
+            <favorCost>11</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
     <OrderedStuffDef ParentName="OrderedGunBase">
@@ -348,7 +348,7 @@
             <itemsToDrop>
                 <Steel>1</Steel>
             </itemsToDrop>
-            <favorCost>25</favorCost>
+            <favorCost>22</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
     <OrderedStuffDef ParentName="OrderedGunBase">
@@ -391,7 +391,7 @@
             <itemsToDrop>
                 <Steel>1</Steel>
             </itemsToDrop>
-            <favorCost>9</favorCost>
+            <favorCost>11</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
     <OrderedStuffDef ParentName="OrderedGunBase">
@@ -494,7 +494,7 @@
             <itemsToDrop>
                 <Steel>1</Steel>
             </itemsToDrop>
-            <favorCost>30</favorCost>
+            <favorCost>22</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
     <OrderedStuffDef ParentName="OrderedGunBase">
@@ -515,6 +515,146 @@
             <li>20</li>
             <li>7</li>
             <li>7</li>
+        </ammunition>
+    </OrderedStuffDef>
+
+    <!-- Energy -->
+
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>BlasterDrop</defName>
+        <label>blasters</label>
+        <description>Request a drop of random blaster weapon with ammo.</description>
+        <minTitle>Count</minTitle>
+        <cooldownDays>120</cooldownDays>
+        <permitPointCost>6</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>22</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>BlasterDropStuff</defName>
+        <typeOfQuality>Range</typeOfQuality>
+        <quality>Good</quality>
+        <thingsToChoose>
+            <li>Gun_Phalanx</li>
+            <li>Gun_BlackWidow</li>
+            <li>Gun_Harrier</li>
+            <li>Gun_Predator</li>
+            <li>Gun_Hurricane</li>
+            <li>Gun_AvengerA</li>
+        </thingsToChoose>
+        <ammunition>
+            <li>80</li>
+            <li>60</li>
+            <li>90</li>
+            <li>32</li>
+            <li>36</li>
+            <li>100</li>
+        </ammunition>
+    </OrderedStuffDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>LasersDrop</defName>
+        <label>laser rifles</label>
+        <description>Request a drop of random laser rifle with ammo.</description>
+        <minTitle>Count</minTitle>
+        <cooldownDays>120</cooldownDays>
+        <permitPointCost>6</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>22</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>LasersDropStuff</defName>
+        <typeOfQuality>Range</typeOfQuality>
+        <quality>Good</quality>
+        <column>1</column>
+        <thingsToChoose>
+            <li>Gun_Mantis</li>
+            <li>LaserRifle</li>
+            <li>HeavyLasergun</li>
+            <li>BurstLasergun</li>
+            <li>Gun_ChargeRifle</li>
+            <li>Gun_Splitter</li>
+        </thingsToChoose>
+        <ammunition>
+            <li>20</li>
+            <li>60</li>
+            <li>75</li>
+            <li>90</li>
+            <li>90</li>
+            <li>120</li>
+        </ammunition>
+    </OrderedStuffDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>PlasmerDrop</defName>
+        <label>plasmers</label>
+        <description>Request a drop of random plasmer with ammo.</description>
+        <minTitle>Count</minTitle>
+        <cooldownDays>120</cooldownDays>
+        <permitPointCost>6</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>22</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>PlasmerDropStuff</defName>
+        <typeOfQuality>Range</typeOfQuality>
+        <quality>Good</quality>
+        <thingsToChoose>
+            <li>Gun_PlasmaPistol</li>
+            <li>Gun_PlasmaPrecision</li>
+            <li>Gun_PlasmaCarbine</li>
+            <li>Gun_PlasmaShotgun</li>
+            <li>Gun_PlasmaRifle</li>
+        </thingsToChoose>
+        <ammunition>
+            <li>30</li>
+            <li>20</li>
+            <li>60</li>
+            <li>24</li>
+            <li>70</li>
+        </ammunition>
+    </OrderedStuffDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>ChargeRailDrop</defName>
+        <label>charge rifles</label>
+        <description>Request a drop of random charge rifle with ammo.</description>
+        <minTitle>Count</minTitle>
+        <cooldownDays>140</cooldownDays>
+        <permitPointCost>7</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>22</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>ChargeRailDropStuff</defName>
+        <typeOfQuality>Range</typeOfQuality>
+        <quality>Good</quality>
+        <column>1</column>
+        <thingsToChoose>
+            <li>Gun_RailgunMKI</li>
+            <li>Gun_ChargeRifle</li>
+            <li>Gun_Splitter</li>
+        </thingsToChoose>
+        <ammunition>
+            <li>12</li>
+            <li>90</li>
+            <li>120</li>
         </ammunition>
     </OrderedStuffDef>
 </Defs>

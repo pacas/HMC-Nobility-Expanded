@@ -12,6 +12,8 @@
             <li>SniperRifleDrop</li>
             <li>MGDrop</li>
             <li>LauncherDrop</li>
+            <li>BlasterDrop</li>
+            <li>PlasmerDrop</li>
         </loadOrder>
     </RoyaltyCoordsTableDef>
 
@@ -27,6 +29,8 @@
             <li>SniperRifleDropPlus</li>
             <li>MGDropPlus</li>
             <li>LauncherDropPlus</li>
+            <li>LasersDrop</li>
+            <li>ChargeRailDrop</li>
         </loadOrder>
     </RoyaltyCoordsTableDef>
 </Defs>

@@ -42,9 +42,9 @@
     <DropComment_MinerOutfitDrop>Clothes for the miner? I don't have the slightest idea what's supposed to be there, so I clarify... Oh, I see, it's easy to arrange.</DropComment_MinerOutfitDrop>
     <DropComment_ConstructorOutfitDrop>Clothes for the constructor? I don't have the slightest idea what's supposed to be there, so I clarify... Oh, I see, it's easy to arrange.</DropComment_ConstructorOutfitDrop>
     <DropComment_SlaveOutfitDrop>Clothes for a slave? Do they need specific clothes at all? Well, we'll send you something appropriate.</DropComment_SlaveOutfitDrop>
-    <DropComment_HazmatOutfitDrop>Химзащита? Вы что там такое делаете, что вам нужна химзащита? Вам лучше бы не нарушать галактический кодекс, раз вы стали частью Империи. Но если что, я ничего не видел.</DropComment_HazmatOutfitDrop>
-    <DropComment_RoyalOutfitDrop>Одежда для знати. У нас на Фортуне есть свой определённый стиль одежды, если хотите, я запрошу полный набор. Качество гарантируется.</DropComment_RoyalOutfitDrop>
-    <DropComment_PsychicOutfitDrop>Одежда для псайкеров? Люди, они, конечно, уважаемые, но их многие боятся, потому даже известные псайкеры предпочитают не афишировать свои способности. Однако право ваше, мы готовы предоставить вам комплект.</DropComment_PsychicOutfitDrop>
+    <DropComment_HazmatOutfitDrop>Chemical protection? What are you doing out there that needs chemical protection? You'd better not violate the galactic code now that you're part of the Empire. But if anything, I didn't see anything.</DropComment_HazmatOutfitDrop>
+    <DropComment_RoyalOutfitDrop>Clothes for the nobility. We have our own particular style of clothing on Fortuna, if you want, I'll request a full set. Quality is guaranteed.</DropComment_RoyalOutfitDrop>
+    <DropComment_PsychicOutfitDrop>Clothes for psykers? They' re respectable people, of course, but a lot of people are afraid of them, so even famous psykers prefer not to advertise their abilities. However, it is your right, we are ready to provide you with a set.</DropComment_PsychicOutfitDrop>
 
     <!-- Броня -->
     <DropComment_ArmorDrop>What is bacinet? Never mind, just redirecting the request.</DropComment_ArmorDrop>
@@ -60,62 +60,66 @@
     <DropComment_ToolDrop>A set of tools? Well, that's never too much to ask, especially if you give them out to the slaves on the plantations.</DropComment_ToolDrop>
     <DropComment_ToolDropPlus>Do you want durable tools? Well, that's not hard to arrange. It's not a bad thing to work with such a tool yourself.</DropComment_ToolDropPlus>
     <DropComment_AdvToolDrop>The Multitool is a tool of the workers of the Empire's core. They do not appear often outside of it, but you can request one.</DropComment_AdvToolDrop>
-    <DropComment_AdvToolDropPlus>Мультитул от AdvancedMachines™ - лучший доступный для покупки мультитул. Империя закупает их целыми партиями, так что и вам найдётся.</DropComment_AdvToolDropPlus>
+    <DropComment_AdvToolDropPlus>The Multitool from AdvancedMachines™ is the best multitool available for purchase. The Empire buys them in whole lots, so you can get one, too.</DropComment_AdvToolDropPlus>
 
     <!-- Турели -->
-    <DropComment_BallistaDrop>Баллисты? Зачем они вам, просто возьмите что-то получше.</DropComment_BallistaDrop>
-    <DropComment_CatapultDrop>Катапульты... Мы же уже давно прошли это. Но если вы хотите, я оставлю запрос, наши мастера могут собрать что угодно.</DropComment_CatapultDrop>
-    <DropComment_MG1LightTurretDrop>Стационарные пулемёты хороши, но разве они уже не устарели? Сейчас всё поставляются с системой автострельбы и настройкой свой-чужой, так зачем вам обычные пулемёты?</DropComment_MG1LightTurretDrop>
-    <DropComment_MG1HeavyTurretDrop>Стационарные пулемёты хороши, но разве они уже не устарели? Сейчас всё поставляются с системой автострельбы и настройкой свой-чужой, так зачем вам обычные пулемёты?</DropComment_MG1HeavyTurretDrop>
-    <DropComment_MG2LightTurretDrop>Стационарные пулемёты хороши, но разве они уже не устарели? Сейчас всё поставляются с системой автострельбы и настройкой свой-чужой, так зачем вам такие пулемёты, даже если они весьма неплохие?</DropComment_MG2LightTurretDrop>
-    <DropComment_MG2HeavyTurretDrop>Стационарные пулемёты хороши, но разве они уже не устарели? Сейчас всё поставляются с системой автострельбы и настройкой свой-чужой, так зачем вам такие пулемёты, даже если они весьма неплохие?</DropComment_MG2HeavyTurretDrop>
-    <DropComment_AGS17TurretDrop>Стационарные гранатомёты? Забавно, никогда не слышал о таких. Если будете заказывать, пришлите видео стрельбы!</DropComment_AGS17TurretDrop>
-    <DropComment_AGS30TurretDrop>Ещё один гранатомёт, только больше и лучше. Интересно, насколько страшно идти на него...</DropComment_AGS30TurretDrop>
-    <DropComment_A81MortarDrop>Мортиры - классная вещь. Избавляться от врагов до встречи с ними в принципе. Жаль только точность страдает.</DropComment_A81MortarDrop>
-    <DropComment_A90MortarDrop>Чем больше мортира, тем больше взрыв!</DropComment_A90MortarDrop>
-    <DropComment_A120MortarDrop>А это ещё мортира или уже артиллерия?</DropComment_A120MortarDrop>
-    <DropComment_A155MortarDrop>Красивая вещь, последняя используемая Империей артиллерия до перехода на баллистические ракеты.</DropComment_A155MortarDrop>
-    <DropComment_JavelinTurretDrop>Ракетная система ближнего действия. Ни один обычный рейдер не пройдёт мимо такой.</DropComment_JavelinTurretDrop>
-    <DropComment_TOWTurretDrop>Ракетная система ближнего действия. Ни один обычный рейдер не пройдёт мимо такой.</DropComment_TOWTurretDrop>
-    <DropComment_MediumRKDrop>Продвинутая ракетная система, уничтожающая целые отряды врага. Классная вещь, жаль я ни разу не видел её в действии.</DropComment_MediumRKDrop>
-    <DropComment_HeavyRKDrop>Самая большая ракетная система из доступных для передачи Империей. Я настоятельно рекомендую затарится боеприпасами.</DropComment_HeavyRKDrop>
-    <DropComment_LightAutoTurretDrop>Миниатюрная автотурель. Уже неплохо, но малый калибр мешает ей раскрыть свой потенциал.</DropComment_LightAutoTurretDrop>
-    <DropComment_HeavyAutoTurretDrop>Полноценная автотурель. Мне всегда нравились эти турели, без лишних навесов, для них много патронов, что ещё нужно.</DropComment_HeavyAutoTurretDrop>
-    <DropComment_BigLightAutoTurretDrop>Автоматическая ракетная система с самонаведением. Что ещё можно сказать - одна ракета может отменить весь рейд.</DropComment_BigLightAutoTurretDrop>
-    <DropComment_BigHeavyAutoTurretDrop>Эта турель, если её можно так назвать, раньше ставилась на морские боевые корабли. Сейчас такие корабли - редкость, но турель всё так же эффективна. Но раньше она требовала ручного управления, а сейчас её добавили автоматику, вы же понимаете что это значит?</DropComment_BigHeavyAutoTurretDrop>
-    <DropComment_HighTechLightAutoTurretDrop>Последние новинки в автотурельном деле! Эта плазменная турель избавляет вас от врагов не только в переносном, но и самом прямом смысле!</DropComment_HighTechLightAutoTurretDrop>
-    <DropComment_HighTechHeavyAutoTurretDrop>Последние новинки в автотурельном деле! Эта лазерная турель крайне точна и дальнобойна, что позволяет ей отстреливать даже снайперов.</DropComment_HighTechHeavyAutoTurretDrop>
+    <DropComment_BallistaDrop>Ballistas? Why do you need them, just get something better.</DropComment_BallistaDrop>
+    <DropComment_CatapultDrop>Catapults... We're way past that, aren't we? But if you want, I'll leave a request, our craftsmen can build anything.</DropComment_CatapultDrop>
+    <DropComment_MG1LightTurretDrop>Stationary machine guns are nice, but aren't they obsolete? Everything comes with auto-fire and a friend-or-foe system now, so why do you need a conventional machine gun?</DropComment_MG1LightTurretDrop>
+    <DropComment_MG1HeavyTurretDrop>Stationary machine guns are nice, but aren't they obsolete? Everything comes with auto-fire and a friend-or-foe system now, so why do you need a conventional machine gun?</DropComment_MG1HeavyTurretDrop>
+    <DropComment_MG2LightTurretDrop>Stationary machine guns are nice, but aren't they obsolete? Everything comes with auto-fire and a friend-or-foe system now, so why do you need a conventional machine gun, even if it's a pretty good one?</DropComment_MG2LightTurretDrop>
+    <DropComment_MG2HeavyTurretDrop>Stationary machine guns are nice, but aren't they obsolete? Everything comes with auto-fire and a friend-or-foe system now, so why do you need a conventional machine gun, even if it's a pretty good one?</DropComment_MG2HeavyTurretDrop>
+    <DropComment_AGS17TurretDrop>Stationary grenade launchers? That's interesting, I've never heard of them. If you order one, send me a video from the firing range!</DropComment_AGS17TurretDrop>
+    <DropComment_AGS30TurretDrop>Another stationary grenade launcher, only bigger and better. I wonder how scary it is to go up against it...</DropComment_AGS30TurretDrop>
+    <DropComment_A81MortarDrop>Mortars are a cool thing. Getting rid of enemies before encountering them. Too bad accuracy suffers.</DropComment_A81MortarDrop>
+    <DropComment_A90MortarDrop>The bigger the mortar, the bigger the explosion!</DropComment_A90MortarDrop>
+    <DropComment_A120MortarDrop>Is it still a mortar or is it artillery?</DropComment_A120MortarDrop>
+    <DropComment_A155MortarDrop>Beautiful thing, the last artillery used by the Empire before switching to ballistic missiles.</DropComment_A155MortarDrop>
+    <DropComment_JavelinTurretDrop>A short-range missile system. No average raider would be able to get past one of these.</DropComment_JavelinTurretDrop>
+    <DropComment_TOWTurretDrop>A short-range missile system. No average raider would be able to get past one of these.</DropComment_TOWTurretDrop>
+    <DropComment_MediumRKDrop>An advanced missile system that destroys entire enemy squads. Cool stuff, I wish I'd have seen it in action.</DropComment_MediumRKDrop>
+    <DropComment_HeavyRKDrop>The largest missile system available for delivery by the Empire. I highly recommend stocking up on ammunition.</DropComment_HeavyRKDrop>
+    <DropComment_LightAutoTurretDrop>A miniature auto-turret. Already not bad, but the small caliber prevents it from reaching its potential.</DropComment_LightAutoTurretDrop>
+    <DropComment_HeavyAutoTurretDrop>A full-fledged auto-turret. I always liked these turrets, no unnecessary overhangs, plenty of ammo for them, what more do you need.</DropComment_HeavyAutoTurretDrop>
+    <DropComment_BigLightAutoTurretDrop>An automatic homing missile system. What else can I say - one missile can cancel the whole raid.</DropComment_BigLightAutoTurretDrop>
+    <DropComment_BigHeavyAutoTurretDrop>This turret, if you can call it that, used to be installed on naval warships. Nowadays such ships are rare, but the turret is still effective. But it used to require manual operation, and now they've added automation, you know what that means, don't you?</DropComment_BigHeavyAutoTurretDrop>
+    <DropComment_HighTechLightAutoTurretDrop>The latest innovations in autoturret production! This plasma turret gets rid of your enemies not only figuratively, but literally as well!</DropComment_HighTechLightAutoTurretDrop>
+    <DropComment_HighTechHeavyAutoTurretDrop>The latest innovations in autoturret production! This laser turret is extremely accurate and long-range, which allows it to shoot even snipers.</DropComment_HighTechHeavyAutoTurretDrop>
 
     <!-- Ближний бой -->
-    <DropComment_AgileMeleeDrop>Любите оружие полегче? Не понимаю зачем оно вам, но обеспечить - обеспечим.</DropComment_AgileMeleeDrop>
-    <DropComment_AgileMeleeDropPlus>Лучшие мастера и качественные материалы, и ваше оружие будет нести свет Империи во все части галактики ещё эффективнее!</DropComment_AgileMeleeDropPlus>
-    <DropComment_SharpMeleeDrop>Резать врагов всегда приятнее острым оружием. Главное успеть подобраться с ним к врагу.</DropComment_SharpMeleeDrop>
-    <DropComment_SharpMeleeDropPlus>Лучшие мастера и качественные материалы, и ваше оружие будет нести свет Империи во все части галактики ещё эффективнее!</DropComment_SharpMeleeDropPlus>
-    <DropComment_BluntMeleeDrop>Ударить да посильнее... Как-то это по-варварски. Такое разве что с механоидами пойдёт, но с ними кроме как ЭМИ-патронами, лазерами да плазмой никто в Империи не воюет.</DropComment_BluntMeleeDrop>
-    <DropComment_BluntMeleeDropPlus>Лучшие мастера и качественные материалы, и ваше оружие будет нести свет Империи во все части галактики ещё эффективнее!</DropComment_BluntMeleeDropPlus>
-    <DropComment_HeavyMeleeDrop>Тяжелое оружие - всегда весомый аргумент. Мне знакомый рассказывал как он бунт на Авроре подавлял, имперские рыцари одним видом своего оружия подавляли всех.</DropComment_HeavyMeleeDrop>
-    <DropComment_HeavyMeleeDropPlus>Лучшие мастера и качественные материалы, и ваше оружие будет нести свет Империи во все части галактики ещё эффективнее!</DropComment_HeavyMeleeDropPlus>
+    <DropComment_AgileMeleeDrop>Do you like lighter weapons? I don't know why you need them, but we'll provide them.</DropComment_AgileMeleeDrop>
+    <DropComment_AgileMeleeDropPlus>The best craftsmen and quality materials, and your weapons will carry the light of the Emperor to all parts of the galaxy even more effectively!</DropComment_AgileMeleeDropPlus>
+    <DropComment_SharpMeleeDrop>Cutting enemies is always more pleasant with a sharp weapon. The main thing is to get close to the enemy with it.</DropComment_SharpMeleeDrop>
+    <DropComment_SharpMeleeDropPlus>The best craftsmen and quality materials, and your weapons will carry the light of the Emperor to all parts of the galaxy even more effectively!</DropComment_SharpMeleeDropPlus>
+    <DropComment_BluntMeleeDrop>Hit hard... That's kind of barbaric. The only way that would work is with mechanoids, but no one in the Empire fights with them without EMP rounds, lasers, or plasma.</DropComment_BluntMeleeDrop>
+    <DropComment_BluntMeleeDropPlus>The best craftsmen and quality materials, and your weapons will carry the light of the Emperor to all parts of the galaxy even more effectively!</DropComment_BluntMeleeDropPlus>
+    <DropComment_HeavyMeleeDrop>Heavy weapons are always a powerful argument. An acquaintance of mine told me how he suppressed a riot on the Aurora, the imperial knights were suppressing everyone with one sight of their weapons.</DropComment_HeavyMeleeDrop>
+    <DropComment_HeavyMeleeDropPlus>The best craftsmen and quality materials, and your weapons will carry the light of the Emperor to all parts of the galaxy even more effectively!</DropComment_HeavyMeleeDropPlus>
 
     <!-- Дальний бой -->
-    <DropComment_PistolDrop>Пистолеты - недооцененное оружие. Достать пистолет всегда быстрее, чем перезарядить оружие.</DropComment_PistolDrop>
-    <DropComment_PistolDropPlus>Лучшие мастера и качественные материалы, и ваше оружие будет нести свет Империи во все части галактики ещё эффективнее!</DropComment_PistolDropPlus>
-    <DropComment_SMGDrop>Пистолеты-пулемёты - компактные коробочки смерти, которые почему-то достаточно редко запрашиваются у нас. Даже немного обидно.</DropComment_SMGDrop>
-    <DropComment_SMGDropPlus>Лучшие мастера и качественные материалы, и ваше оружие будет нести свет Империи во все части галактики ещё эффективнее!</DropComment_SMGDropPlus>
-    <DropComment_ShotgunDrop>Дробовики - классная вещь! Но почему-то их вообще не берут и говорят что-то про стрельбу в упор. В плане в упор, они что, не знают о дальности стрельбы с дробовика?</DropComment_ShotgunDrop>
-    <DropComment_ShotgunDropPlus>Лучшие мастера и качественные материалы, и ваше оружие будет нести свет Империи во все части галактики ещё эффективнее!</DropComment_ShotgunDropPlus>
-    <DropComment_RifleDrop>Штурмовые и боевые винтовки - классика боя вот уже тысячи лет. Правда Империя не так давно перешла на энергооружие, так что не удивляйтесь если ваше оружие не заводского качества, а уже побывало в бою.</DropComment_RifleDrop>
-    <DropComment_RifleDropPlus>Лучшие мастера и качественные материалы, и ваше оружие будет нести свет Империи во все части галактики ещё эффективнее!</DropComment_RifleDropPlus>
-    <DropComment_SniperRifleDrop>Снайперские винтовки - произведения искусства среди оружия. Смертоносные и не прощающие ошибки, они представляют из себя апофеоз огнестрельного оружия, хоть и не все согласны с этим.</DropComment_SniperRifleDrop>
-    <DropComment_SniperRifleDropPlus>Лучшие мастера и качественные материалы, и ваше оружие будет нести свет Империи во все части галактики ещё эффективнее!</DropComment_SniperRifleDropPlus>
-    <DropComment_MGDrop>Пулемёты - идеальная вещь для контроля толпы. Достаточно просто начать стрелять, и от количества пуль подавляются огнём вообще все, кроме механоидов. Но для них есть ЭМИ-патроны.</DropComment_MGDrop>
-    <DropComment_MGDropPlus>Лучшие мастера и качественные материалы, и ваше оружие будет нести свет Империи во все части галактики ещё эффективнее!</DropComment_MGDropPlus>
-    <DropComment_LauncherDrop>Гранатомёты и ракетницы - крайне опасные игрушки. Будьте аккуратны с ними, а то мне нравится с вами общаться.</DropComment_LauncherDrop>
-    <DropComment_LauncherDropPlus>Лучшие мастера и качественные материалы, и ваше оружие будет нести свет Империи во все части галактики ещё эффективнее!</DropComment_LauncherDropPlus>
+    <DropComment_PistolDrop>Pistols are an underrated weapon. It is always faster to draw a sidearm than to reload a weapon.</DropComment_PistolDrop>
+    <DropComment_PistolDropPlus>The best craftsmen and quality materials, and your weapons will carry the light of the Emperor to all parts of the galaxy even more effectively!</DropComment_PistolDropPlus>
+    <DropComment_SMGDrop>Submachine guns are compact boxes of death, which for some reason are rather rarely requested from us. It's even a bit of a shame.</DropComment_SMGDrop>
+    <DropComment_SMGDropPlus>The best craftsmen and quality materials, and your weapons will carry the light of the Emperor to all parts of the galaxy even more effectively!</DropComment_SMGDropPlus>
+    <DropComment_ShotgunDrop>Shotguns are a great thing! But for some reason nobody takes them at all, and they say something about shooting at point-blank range. Do they not know about the range of the shotgun?</DropComment_ShotgunDrop>
+    <DropComment_ShotgunDropPlus>The best craftsmen and quality materials, and your weapons will carry the light of the Emperor to all parts of the galaxy even more effectively!</DropComment_ShotgunDropPlus>
+    <DropComment_RifleDrop>Assault and combat rifles have been combat classics for thousands of years. It's true that the Empire switched to energy weapons not so long ago, so don't be surprised if your weapons are not factory-quality but have already been in combat.</DropComment_RifleDrop>
+    <DropComment_RifleDropPlus>The best craftsmen and quality materials, and your weapons will carry the light of the Emperor to all parts of the galaxy even more effectively!</DropComment_RifleDropPlus>
+    <DropComment_SniperRifleDrop>Sniper rifles are works of art among weapons. Deadly and unforgiving of mistakes, they are the apotheosis of firearms, though not everyone agrees on this.</DropComment_SniperRifleDrop>
+    <DropComment_SniperRifleDropPlus>The best craftsmen and quality materials, and your weapons will carry the light of the Emperor to all parts of the galaxy even more effectively!</DropComment_SniperRifleDropPlus>
+    <DropComment_MGDrop>Machine guns are the perfect thing for crowd control. It's enough just to start firing, and the number of bullets suppresses everyone except the mechanoids. But there are EMP rounds for them.</DropComment_MGDrop>
+    <DropComment_MGDropPlus>The best craftsmen and quality materials, and your weapons will carry the light of the Emperor to all parts of the galaxy even more effectively!</DropComment_MGDropPlus>
+    <DropComment_LauncherDrop>Grenade launchers and rocket launchers are extremely dangerous toys. Be careful with them, I like talking to you.</DropComment_LauncherDrop>
+    <DropComment_LauncherDropPlus>The best craftsmen and quality materials, and your weapons will carry the light of the Emperor to all parts of the galaxy even more effectively!</DropComment_LauncherDropPlus>
+    <DropComment_BlasterDrop>Blasters are cool. Accuracy is worse than lasers, but if you start spraying the entire battlefield, it doesn't matter who the enemy is - it melts them all!</DropComment_BlasterDrop>
+    <DropComment_LasersDrop>Lasers are an extremely delicate matter. On the one hand in the hands of a professional they are more effective than blasters, on the other hand in major battles they are not as good in average - they lack the intimidating effect of plasmers and blasters.</DropComment_LasersDrop>
+    <DropComment_PlasmerDrop>Plasmers are the best category of weapon in my opinion. Although there is a fairly even distribution of energy weapons in the Empire, I personally asked to be issued with a service plasmer.</DropComment_PlasmerDrop>
+    <DropComment_ChargeRailDrop>Energy rifles are rare even among special units, because they require much more skill than any other weapon. Not everyone can handle them, and Railgun recoil is sometimes used as a test for some prospective soldiers on what type of weapon is suits for them.</DropComment_ChargeRailDrop>
 
     <!-- Семена -->
-    <DropComment_SeedsPotatoDrop>Злаковые - лучший завтрак что на планетах ядра, что у вас! Правда у нас их не выращивают.</DropComment_SeedsPotatoDrop>
-    <DropComment_SeedsPotatoDropPlus>Овощи - идеальный обед. Полезный и иногда даже сытный. Жаль что их не так много завозят...</DropComment_SeedsPotatoDropPlus>
-    <DropComment_SeedsOakDrop>Деревья... Эх, хотел бы я побольше деревьев, иногда весь этот бетонно-металлический лоск очень раздражает.</DropComment_SeedsOakDrop>
-    <DropComment_SeedsOakDropPlus>Фрукты нечасто можно увидеть у нас на столе, самые вкусные фрукты это целый деликатес.</DropComment_SeedsOakDropPlus>
+    <DropComment_SeedsPotatoDrop>Grains in any kind are the best breakfast both on the core planets and on the Rim! But we don't have them much here.</DropComment_SeedsPotatoDrop>
+    <DropComment_SeedsPotatoDropPlus>Vegetables are the perfect lunch. Healthy and sometimes even nourishing. It's a pity there are not so many of them on Fortuna...</DropComment_SeedsPotatoDropPlus>
+    <DropComment_SeedsOakDrop>Trees... Eh, I wish there were more trees, sometimes all this concrete and metal luster is very annoying.</DropComment_SeedsOakDrop>
+    <DropComment_SeedsOakDropPlus>Fruit is not often seen on our table, the most delicious fruits are a whole delicacy.</DropComment_SeedsOakDropPlus>
 
 </LanguageData>
