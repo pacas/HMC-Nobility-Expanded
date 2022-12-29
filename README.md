@@ -1,4 +1,4 @@
-# Empire Rework
+# HMC Nobility Expanded
 
 
 <img src="https://i.imgur.com/svEwA2k.png">
