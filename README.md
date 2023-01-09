@@ -42,4 +42,3 @@ A: Репортить в соответствующую ветку в дисе �
 <img src="https://i.imgur.com/fdngbbh.png">
 
 Rimworld is owned by Tynan Sylvester.<br>
-This mod is used under the [Creative Commons 4.0 License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
