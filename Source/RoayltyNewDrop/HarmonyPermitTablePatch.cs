@@ -44,6 +44,7 @@ namespace RimWorld
             ScrollPositioner ___scrollPositioner,
             StatDrawEntry ___mousedOverEntry,
             List<StatDrawEntry> ___cachedDrawEntries,
+            List<string> ___cachedEntryValues,
             QuickSearchWidget ___quickSearchWidget
         )
         {
@@ -53,6 +54,7 @@ namespace RimWorld
             ___scrollPositioner.Arm(false);
             ___mousedOverEntry = null;
             ___cachedDrawEntries.Clear();
+            ___cachedEntryValues.Clear();
             ___quickSearchWidget.Reset();
             PermitsCardCustomUtility.selectedPermit = null;
             PermitsCardCustomUtility.selectedFaction = ModLister.RoyaltyInstalled ? Faction.OfEmpire : null;
@@ -110,6 +112,7 @@ namespace RimWorld
             Dialog_InfoCard __instance, 
             ref Dialog_InfoCard.InfoCardTab ___tab,
             ref Thing ___thing,
+            ref Hediff ___hediff,
             ref RoyalTitleDef ___titleDef,
             ref Faction ___faction,
             ref WorldObject ___worldObject,
@@ -131,6 +134,8 @@ namespace RimWorld
                 }
                 else if (___titleDef != null)
                     StatsReportUtility.DrawStatsReport(cardRect, ___titleDef, ___faction, ___pawn);
+                else if (___hediff != null)
+                    StatsReportUtility.DrawStatsReport(cardRect, ___hediff);
                 else if (___faction != null)
                     StatsReportUtility.DrawStatsReport(cardRect, ___faction);
                 else if (___worldObject != null)
