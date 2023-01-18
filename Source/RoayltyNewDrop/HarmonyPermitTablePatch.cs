@@ -57,8 +57,8 @@ namespace RimWorld
             ___cachedEntryValues.Clear();
             ___quickSearchWidget.Reset();
             PermitsCardCustomUtility.selectedPermit = null;
-            PermitsCardCustomUtility.selectedFaction = ModLister.RoyaltyInstalled ? Faction.OfEmpire : null;
-            PermitsCardUtility.selectedFaction = ModLister.RoyaltyInstalled ? Faction.OfEmpire : null;
+            PermitsCardCustomUtility.selectedFaction = !ModLister.RoyaltyInstalled || Current.ProgramState != ProgramState.Playing ? null : Faction.OfEmpire;
+            PermitsCardUtility.selectedFaction = !ModLister.RoyaltyInstalled || Current.ProgramState != ProgramState.Playing ? null : Faction.OfEmpire;
             return false;
         }
     }
