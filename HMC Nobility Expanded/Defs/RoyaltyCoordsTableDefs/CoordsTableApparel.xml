@@ -13,6 +13,7 @@
             <li>SpecialPermitSmallTitle</li>
             <li>SoldierAccessoriesDrop</li>
             <li>RoyalOutfitDrop</li>
+            <li MayRequire="Ludeon.Rimworld.Biotech">BabyClothesDrop</li>
         </loadOrder>
     </RoyaltyCoordsTableDef>
 

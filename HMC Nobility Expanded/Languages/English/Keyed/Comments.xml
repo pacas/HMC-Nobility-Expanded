@@ -122,4 +122,9 @@
     <DropComment_SeedsOakDrop>Trees... Eh, I wish there were more trees, sometimes all this concrete and metal luster is very annoying.</DropComment_SeedsOakDrop>
     <DropComment_SeedsOakDropPlus>Fruit is not often seen on our table, the most delicious fruits are a whole delicacy.</DropComment_SeedsOakDropPlus>
 
+    <!-- Biotech -->
+    <DropComment_BabyFoodDrop>Do you have children there? In that case, I'll even give you a little more food for the kids.</DropComment_BabyFoodDrop>
+    <DropComment_VampiresFoodDrop>I hope it's just someone needs a blood transfusion. We don't usually receive such requests, be careful with such things.</DropComment_VampiresFoodDrop>
+    <DropComment_BabyClothesDrop>Shirt? Check. Pants. Check. Helmet and backpack... Why do you need a kid-sized helmet?</DropComment_BabyClothesDrop>
+
 </LanguageData>

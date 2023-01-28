@@ -50,4 +50,12 @@
     <CallOrbitalStrike.label>воздушный удар</CallOrbitalStrike.label>
     <CallOrbitalStrike.description>Запрос одиночного воздушного удара по указанным координатам с беспилотника.</CallOrbitalStrike.description>
 
+    <!-- biotech -->
+    <BabyFoodDrop.label>детское питание</BabyFoodDrop.label>
+    <BabyFoodDrop.description>Запрос доставки 30 детских овощных пюрешек.</BabyFoodDrop.description>
+    <VampiresFoodDrop.label>гемоген-пакет</VampiresFoodDrop.label>
+    <VampiresFoodDrop.description>Запрос 5 гемоген-пакетов.</VampiresFoodDrop.description>
+    <BabyClothesDrop.label>детская одежда</BabyClothesDrop.label>
+    <BabyClothesDrop.description>Запрос доставки набора детской одежды.</BabyClothesDrop.description>
+
 </LanguageData>

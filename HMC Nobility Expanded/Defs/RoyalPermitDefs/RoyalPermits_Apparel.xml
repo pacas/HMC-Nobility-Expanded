@@ -262,7 +262,7 @@
                 <Apparel_Backpack>1</Apparel_Backpack>
                 <Apparel_Collar>1</Apparel_Collar>
             </itemsToDrop>
-            <favorCost>2</favorCost>
+            <favorCost>3</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
     <OrderedStuffDef ParentName="OrderedStuffBase">

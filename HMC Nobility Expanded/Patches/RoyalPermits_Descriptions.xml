@@ -12,7 +12,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/RoyalTitlePermitDef[defName="SteelDrop"]/description</xpath>
                 <value>
-                    <description>Call for a drop of 100 iron ore.\n\nPermit points cost - 1 point.</description>
+                    <description>Call for a drop of 100 iron ore.</description>
                 </value>
             </li>
 
@@ -26,7 +26,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/RoyalTitlePermitDef[defName="SilverDrop"]/description</xpath>
                 <value>
-                    <description>Call for a drop of 1000 silver.\n\nPermit points cost - 2 point.</description>
+                    <description>Call for a drop of 1000 silver.</description>
                 </value>
             </li>
 
@@ -40,7 +40,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/RoyalTitlePermitDef[defName="FoodDrop"]/description</xpath>
                 <value>
-                    <description>Call for a drop of 30 packaged survival meals.\n\nPermit points cost - 1 point.</description>
+                    <description>Call for a drop of 30 packaged survival meals.</description>
                 </value>
             </li>
 
@@ -54,7 +54,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/RoyalTitlePermitDef[defName="GlitterMedDrop"]/description</xpath>
                 <value>
-                    <description>Call for a drop of 5 glitterworld medicine.\n\nPermit points cost - 2 points.</description>
+                    <description>Call for a drop of 5 glitterworld medicine.</description>
                 </value>
             </li>
 
@@ -68,7 +68,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/RoyalTitlePermitDef[defName="CallTransportShuttle"]/description</xpath>
                 <value>
-                    <description>Call a shuttle for your own use. It will transport colonists, items, and animals anywhere you like within 70 world tiles.\n\nPermit points cost - 2 points.</description>
+                    <description>Call a shuttle for your own use. It will transport colonists, items, and animals anywhere you like within 70 world tiles.</description>
                 </value>
             </li>
             
@@ -82,7 +82,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/RoyalTitlePermitDef[defName="CallLaborerGang"]/description</xpath>
                 <value>
-                    <description>Call a group of 8 laborers to assist you for 4 days. These workers can only do general labor tasks. You can control them as though they were your own colonists. You are required to keep them safe.\n\nPermit points cost - 3 points.</description>
+                    <description>Call a group of 8 laborers to assist you for 4 days. These workers can only do general labor tasks. You can control them as though they were your own colonists. You are required to keep them safe.</description>
                 </value>
             </li>
             
@@ -96,7 +96,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/RoyalTitlePermitDef[defName="CallLaborerTeam"]/description</xpath>
                 <value>
-                    <description>Call a group of 4 laborers to assist you for 4 days. These workers can only do general labor tasks. You can control them as though they were your own colonists. You are required to keep them safe.\n\nPermit points cost - 2 points.</description>
+                    <description>Call a group of 4 laborers to assist you for 4 days. These workers can only do general labor tasks. You can control them as though they were your own colonists. You are required to keep them safe.</description>
                 </value>
             </li>
 
@@ -110,7 +110,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/RoyalTitlePermitDef[defName="CallMilitaryAidSmall"]/description</xpath>
                 <value>
-                    <description>Call a group of 2 light troopers to aid you in battle.\n\nPermit points cost - 2 points.</description>
+                    <description>Call a group of 2 light troopers to aid you in battle.</description>
                 </value>
             </li>
 
@@ -124,7 +124,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/RoyalTitlePermitDef[defName="CallMilitaryAidLarge"]/description</xpath>
                 <value>
-                    <description>Call a group of 4 professional janissaries to aid you in battle.\n\nPermit points cost - 3 points.</description>
+                    <description>Call a group of 4 professional janissaries to aid you in battle.</description>
                 </value>
             </li>
 
@@ -137,7 +137,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/RoyalTitlePermitDef[defName="CallMilitaryAidGrand"]/description</xpath>
                 <value>
-                    <description>Call a group of 4 heavy cataphracts to aid you in battle.\n\nPermit points cost - 4 points.</description>
+                    <description>Call a group of 4 heavy cataphracts to aid you in battle.</description>
                 </value>
             </li>
 
@@ -151,7 +151,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/RoyalTitlePermitDef[defName="CallOrbitalStrike"]/description</xpath>
                 <value>
-                    <description>Call a single-impact aerodrone strike at a target position.\n\nPermit points cost - 2 points.</description>
+                    <description>Call a single-impact aerodrone strike at a target position.</description>
                 </value>
             </li>
 
@@ -165,7 +165,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/RoyalTitlePermitDef[defName="CallOrbitalSalvo"]/description</xpath>
                 <value>
-                    <description>Call a salvo of aerodrone strikes around a target position.\n\nPermit points cost - 3 points.</description>
+                    <description>Call a salvo of aerodrone strikes around a target position.</description>
                 </value>
             </li>
             

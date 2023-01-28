@@ -122,5 +122,10 @@
     <DropComment_SeedsPotatoDropPlus>Овощи - идеальный обед. Полезный и иногда даже сытный. Жаль что их не так много завозят...</DropComment_SeedsPotatoDropPlus>
     <DropComment_SeedsOakDrop>Деревья... Эх, хотел бы я побольше деревьев, иногда весь этот бетонно-металлический лоск очень раздражает.</DropComment_SeedsOakDrop>
     <DropComment_SeedsOakDropPlus>Фрукты нечасто можно увидеть у нас на столе, самые вкусные фрукты это целый деликатес.</DropComment_SeedsOakDropPlus>
+
+    <!-- Biotech -->
+    <DropComment_BabyFoodDrop>У вас там дети есть? В таком случае я вам немного побольше даже положу еды детишкам.</DropComment_BabyFoodDrop>
+    <DropComment_VampiresFoodDrop>Надеюсь, всего-то кому-то требуется переливание крови? У нас обычно таких запросов не делают, аккуратнее с таким.</DropComment_VampiresFoodDrop>
+    <DropComment_BabyClothesDrop>Рубашка? Есть. Штаны. Есть. Шлем и рюкзак... А зачем это вам нужен шлем детского размера?</DropComment_BabyClothesDrop>
     
 </LanguageData>

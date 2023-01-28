@@ -30,7 +30,9 @@
             <li>RF_Gun_AT2K</li>
             <li>RF_Gun_93R</li>
             <li>RF_Gun_VektorCP</li>
-            <li>Gun_Autopistol</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_SR</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_C96M</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_TT33_HMC</li>
         </thingsToChoose>
         <ammunition>
             <li>60</li>
@@ -38,7 +40,9 @@
             <li>60</li>
             <li>100</li>
             <li>60</li>
-            <li>60</li>
+            <li MayRequire="XxNelsonxX.Parabellum">48</li>
+            <li MayRequire="XxNelsonxX.Parabellum">60</li>
+            <li MayRequire="arpomo6.hmc.project">64</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -67,12 +71,20 @@
             <li>RF_Gun_93R</li>
             <li>RF_Gun_VektorCP</li>
             <li>Gun_Autopistol</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_M712S</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_SW50B</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_GreaterDesertEagle</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_RSH12s</li>
         </thingsToChoose>
         <ammunition>
             <li>60</li>
             <li>90</li>
             <li>60</li>
             <li>60</li>
+            <li MayRequire="XxNelsonxX.Parabellum">80</li>
+            <li MayRequire="XxNelsonxX.Parabellum">20</li>
+            <li MayRequire="arpomo6.hmc.project">36</li>
+            <li MayRequire="arpomo6.hmc.project">35</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -104,6 +116,10 @@
             <li>Gun_MP5Gun</li>
             <li>Gun_UMP45Gun</li>
             <li>Gun_HeavySMG</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_Suomi</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_MP18B</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_Ppsh41_HMC</li>
+            <li MayRequire="arpomo6.hmc.project">RK_Gun_PP19Bizon</li>
         </thingsToChoose>
         <ammunition>
             <li>300</li>
@@ -115,6 +131,10 @@
             <li>300</li>
             <li>300</li>
             <li>300</li>
+            <li MayRequire="XxNelsonxX.Parabellum">355</li>
+            <li MayRequire="XxNelsonxX.Parabellum">224</li>
+            <li MayRequire="arpomo6.hmc.project">355</li>
+            <li MayRequire="arpomo6.hmc.project">288</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -144,6 +164,8 @@
             <li>Gun_MP5Gun</li>
             <li>Gun_UMP45Gun</li>
             <li>Gun_HeavySMG</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_Tommy</li>
+            <li MayRequire="arpomo6.hmc.project">HMC_Gun_Petuch</li>
         </thingsToChoose>
         <ammunition>
             <li>300</li>
@@ -151,6 +173,8 @@
             <li>300</li>
             <li>300</li>
             <li>300</li>
+            <li MayRequire="XxNelsonxX.Parabellum">250</li>
+            <li MayRequire="arpomo6.hmc.project">288</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -177,12 +201,22 @@
             <li>Gun_PumpShotgun</li>
             <li>Gun_ChainShotgun</li>
             <li>Gun_TacticalShotgun</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_DP</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_W1887L</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_W1897T</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_BA5L</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_Dvustvolka</li>
         </thingsToChoose>
         <ammunition>
             <li>60</li>
             <li>60</li>
             <li>60</li>
             <li>60</li>
+            <li MayRequire="XxNelsonxX.Parabellum">64</li>
+            <li MayRequire="XxNelsonxX.Parabellum">70</li>
+            <li MayRequire="XxNelsonxX.Parabellum">60</li>
+            <li MayRequire="XxNelsonxX.Parabellum">50</li>
+            <li MayRequire="arpomo6.hmc.project">30</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -211,12 +245,18 @@
             <li>Gun_TacticalShotgun</li>
             <li>Gun_AssaultShotgun</li>
             <li>Gun_TacticalAutoShotgun</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_CAWS</li>
+            <li MayRequire="arpomo6.hmc.project">Spas12_HMC</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_Saiga12k</li>
         </thingsToChoose>
         <ammunition>
-            <li>75</li>
             <li>60</li>
-            <li>100</li>
-            <li>100</li>
+            <li>45</li>
+            <li>60</li>
+            <li>60</li>
+            <li MayRequire="XxNelsonxX.Parabellum">64</li>
+            <li MayRequire="arpomo6.hmc.project">48</li>
+            <li MayRequire="arpomo6.hmc.project">48</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -247,6 +287,15 @@
             <li>RF_Gun_XMeight</li>
             <li>Gun_FAMAS</li>
             <li>Gun_AK47Gun</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_Calico</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_K98k</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_G43K</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_VG</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_Huot</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_StG44AR</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_SKS</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_AKS74U</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_VTC9_HMC</li>
         </thingsToChoose>
         <ammunition>
             <li>80</li>
@@ -257,6 +306,14 @@
             <li>210</li>
             <li>210</li>
             <li>210</li>
+            <li MayRequire="XxNelsonxX.Parabellum">200</li>
+            <li MayRequire="XxNelsonxX.Parabellum">60</li>
+            <li MayRequire="XxNelsonxX.Parabellum">120</li>
+            <li MayRequire="XxNelsonxX.Parabellum">210</li>
+            <li MayRequire="XxNelsonxX.Parabellum">125</li>
+            <li MayRequire="XxNelsonxX.Parabellum">180</li>
+            <li MayRequire="arpomo6.hmc.project">100</li>
+            <li MayRequire="arpomo6.hmc.project">210</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -291,6 +348,21 @@
             <li>Gun_SG553Gun</li>
             <li>Gun_AUG</li>
             <li>Gun_SCAR_H</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_M4Beowulf</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_FG42F</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_Mk14M</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_SKS</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_AKS74U</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_CK901_HMC</li>
+            <li MayRequire="arpomo6.hmc.project">OZ14G</li>
+            <li MayRequire="arpomo6.hmc.project">SHAK12ASH</li>
+            <li MayRequire="arpomo6.hmc.project">G11GFLver</li>
+            <li MayRequire="arpomo6.hmc.project">L85A2rifle</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_AN94A</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_AK312R</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_AEK971R</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_AK74M_HMC</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_SA58_HMC</li>
         </thingsToChoose>
         <ammunition>
             <li>210</li>
@@ -303,6 +375,21 @@
             <li>210</li>
             <li>210</li>
             <li>210</li>
+            <li MayRequire="XxNelsonxX.Parabellum">120</li>
+            <li MayRequire="XxNelsonxX.Parabellum">160</li>
+            <li MayRequire="XxNelsonxX.Parabellum">180</li>
+            <li MayRequire="arpomo6.hmc.project">100</li>
+            <li MayRequire="arpomo6.hmc.project">210</li>
+            <li MayRequire="arpomo6.hmc.project">210</li>
+            <li MayRequire="arpomo6.hmc.project">210</li>
+            <li MayRequire="arpomo6.hmc.project">120</li>
+            <li MayRequire="arpomo6.hmc.project">192</li>
+            <li MayRequire="arpomo6.hmc.project">200</li>
+            <li MayRequire="arpomo6.hmc.project">210</li>
+            <li MayRequire="arpomo6.hmc.project">200</li>
+            <li MayRequire="arpomo6.hmc.project">210</li>
+            <li MayRequire="arpomo6.hmc.project">210</li>
+            <li MayRequire="arpomo6.hmc.project">200</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -328,11 +415,21 @@
             <li>Gun_SniperRifle</li>
             <li>Gun_M42A_USCM</li>
             <li>RF_Gun_WA2K</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_Mk12SPR</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_K98S</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_Vintorez</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_M24SR</li>
+            <li MayRequire="arpomo6.hmc.project">RK_Gun_SVD</li>
         </thingsToChoose>
         <ammunition>
             <li>40</li>
             <li>40</li>
             <li>60</li>
+            <li MayRequire="XxNelsonxX.Parabellum">60</li>
+            <li MayRequire="XxNelsonxX.Parabellum">40</li>
+            <li MayRequire="arpomo6.hmc.project">120</li>
+            <li MayRequire="arpomo6.hmc.project">40</li>
+            <li MayRequire="arpomo6.hmc.project">60</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -365,6 +462,19 @@
             <li>Gun_ATR</li>
             <li>Gun_TAMSR</li>
             <li>Gun_M82Gun</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_XM109AMPR</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_Mk12SPR</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_K98S</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_M24SR</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_SV98SR</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_SVLK14C_HMC</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_M200_HMC</li>
+            <li MayRequire="arpomo6.hmc.project">RK_Gun_SVCH</li>
+            <li MayRequire="arpomo6.hmc.project">RK_Gun_SVD</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_PTR127_HMC</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_OSV96_HMC</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_RT20_HMC</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_R2Lance_HMC</li>
         </thingsToChoose>
         <ammunition>
             <li>40</li>
@@ -375,6 +485,19 @@
             <li>40</li>
             <li>40</li>
             <li>40</li>
+            <li MayRequire="XxNelsonxX.Parabellum">25</li>
+            <li MayRequire="XxNelsonxX.Parabellum">60</li>
+            <li MayRequire="XxNelsonxX.Parabellum">40</li>
+            <li MayRequire="arpomo6.hmc.project">40</li>
+            <li MayRequire="arpomo6.hmc.project">40</li>
+            <li MayRequire="arpomo6.hmc.project">30</li>
+            <li MayRequire="arpomo6.hmc.project">30</li>
+            <li MayRequire="arpomo6.hmc.project">40</li>
+            <li MayRequire="arpomo6.hmc.project">60</li>
+            <li MayRequire="arpomo6.hmc.project">30</li>
+            <li MayRequire="arpomo6.hmc.project">30</li>
+            <li MayRequire="arpomo6.hmc.project">20</li>
+            <li MayRequire="arpomo6.hmc.project">30</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -401,12 +524,26 @@
             <li>Gun_LMG</li>
             <li>Gun_HeavyCombatRifle</li>
             <li>Gun_HHMG</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_Lewis</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_MG0815L</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_Madsen</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_MG34L</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_RPK74M_HMC</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_RPD_HMC</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_HMC_PKP</li>
         </thingsToChoose>
         <ammunition>
             <li>300</li>
             <li>300</li>
             <li>300</li>
             <li>300</li>
+            <li MayRequire="XxNelsonxX.Parabellum">235</li>
+            <li MayRequire="XxNelsonxX.Parabellum">250</li>
+            <li MayRequire="XxNelsonxX.Parabellum">250</li>
+            <li MayRequire="XxNelsonxX.Parabellum">250</li>
+            <li MayRequire="arpomo6.hmc.project">300</li>
+            <li MayRequire="arpomo6.hmc.project">300</li>
+            <li MayRequire="arpomo6.hmc.project">300</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -435,12 +572,20 @@
             <li>Gun_HHMG</li>
             <li>Gun_M56_USCM</li>
             <li>Gun_M60GPMG</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_MG42L</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_MG45H</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_6P62_HMC</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_LWMMG_HMC</li>
         </thingsToChoose>
         <ammunition>
             <li>300</li>
             <li>300</li>
             <li>60</li>
             <li>300</li>
+            <li MayRequire="XxNelsonxX.Parabellum">300</li>
+            <li MayRequire="XxNelsonxX.Parabellum">240</li>
+            <li MayRequire="arpomo6.hmc.project">112</li>
+            <li MayRequire="arpomo6.hmc.project">300</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -470,6 +615,9 @@
             <li>Gun_RPG</li>
             <li>Gun_M5_USCM</li>
             <li>Gun_LAW</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_Hawk</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_RGS</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_RPzB</li>
         </thingsToChoose>
         <ammunition>
             <li>20</li>
@@ -479,6 +627,9 @@
             <li>7</li>
             <li>7</li>
             <li>7</li>
+            <li MayRequire="XxNelsonxX.Parabellum">24</li>
+            <li MayRequire="XxNelsonxX.Parabellum">18</li>
+            <li MayRequire="XxNelsonxX.Parabellum">10</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -508,6 +659,8 @@
             <li>Gun_MilkorMGL</li>
             <li>Gun_RPG</li>
             <li>Gun_M5_USCM</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_FLASH</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_XM25_HMC</li>
         </thingsToChoose>
         <ammunition>
             <li>20</li>
@@ -515,6 +668,8 @@
             <li>20</li>
             <li>7</li>
             <li>7</li>
+            <li MayRequire="XxNelsonxX.Parabellum">8</li>
+            <li MayRequire="arpomo6.hmc.project">18</li>
         </ammunition>
     </OrderedStuffDef>
 
@@ -580,16 +735,18 @@
             <li>LaserRifle</li>
             <li>HeavyLasergun</li>
             <li>BurstLasergun</li>
-            <li>Gun_ChargeRifle</li>
-            <li>Gun_Splitter</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_AK2077_HMC</li>
+            <li MayRequire="arpomo6.hmc.project">HMC_Gun_LaserRifle</li>
+            <li MayRequire="arpomo6.hmc.project">HMC_Gun_ScatterLaser</li>
         </thingsToChoose>
         <ammunition>
             <li>20</li>
             <li>60</li>
             <li>75</li>
             <li>90</li>
-            <li>90</li>
-            <li>120</li>
+            <li MayRequire="arpomo6.hmc.project">120</li>
+            <li MayRequire="arpomo6.hmc.project">45</li>
+            <li MayRequire="arpomo6.hmc.project">30</li>
         </ammunition>
     </OrderedStuffDef>
 
@@ -617,6 +774,9 @@
             <li>Gun_PlasmaCarbine</li>
             <li>Gun_PlasmaShotgun</li>
             <li>Gun_PlasmaRifle</li>
+            <li MayRequire="arpomo6.hmc.project">HMC_PlasmaSMG</li>
+            <li MayRequire="arpomo6.hmc.project">Mag_Rifle_HMC</li>
+            <li MayRequire="arpomo6.hmc.project">Mag_MG_HMC</li>
         </thingsToChoose>
         <ammunition>
             <li>30</li>
@@ -624,6 +784,9 @@
             <li>60</li>
             <li>24</li>
             <li>70</li>
+            <li MayRequire="arpomo6.hmc.project">160</li>
+            <li MayRequire="arpomo6.hmc.project">60</li>
+            <li MayRequire="arpomo6.hmc.project">60</li>
         </ammunition>
     </OrderedStuffDef>
 
