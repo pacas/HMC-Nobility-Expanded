@@ -45,6 +45,8 @@
     <DropComment_HazmatOutfitDrop>Chemical protection? What are you doing out there that needs chemical protection? You'd better not violate the galactic code now that you're part of the Empire. But if anything, I didn't see anything.</DropComment_HazmatOutfitDrop>
     <DropComment_RoyalOutfitDrop>Clothes for the nobility. We have our own particular style of clothing on Fortuna, if you want, I'll request a full set. Quality is guaranteed.</DropComment_RoyalOutfitDrop>
     <DropComment_PsychicOutfitDrop>Clothes for psykers? They' re respectable people, of course, but a lot of people are afraid of them, so even famous psykers prefer not to advertise their abilities. However, it is your right, we are ready to provide you with a set.</DropComment_PsychicOutfitDrop>
+    <DropComment_ShieldBeltDrop>Shield belt, useful thing, saved a lot of people, so we always have a reserve. Shall I prepare it for shipment?</DropComment_ShieldBeltDrop>
+    <DropComment_SimpleOutfitDrop>Simple clothes for simple folks. We have plenty of those.</DropComment_SimpleOutfitDrop>
 
     <!-- Броня -->
     <DropComment_ArmorDrop>What is bacinet? Never mind, just redirecting the request.</DropComment_ArmorDrop>

@@ -30,6 +30,7 @@
             <li>RF_Gun_AT2K</li>
             <li>RF_Gun_93R</li>
             <li>RF_Gun_VektorCP</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_CombatHandgun</li>
             <li MayRequire="XxNelsonxX.Parabellum">Pa_SR</li>
             <li MayRequire="XxNelsonxX.Parabellum">Pa_C96M</li>
             <li MayRequire="arpomo6.hmc.project">Gun_TT33_HMC</li>
@@ -40,8 +41,10 @@
             <li>60</li>
             <li>100</li>
             <li>60</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">63</li>
             <li MayRequire="XxNelsonxX.Parabellum">48</li>
             <li MayRequire="XxNelsonxX.Parabellum">60</li>
+            <li MayRequire="arpomo6.hmc.project">64</li>
             <li MayRequire="arpomo6.hmc.project">64</li>
         </ammunition>
     </OrderedStuffDef>
@@ -71,20 +74,28 @@
             <li>RF_Gun_93R</li>
             <li>RF_Gun_VektorCP</li>
             <li>Gun_Autopistol</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_CombatHandgun</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_HandCannon</li>
             <li MayRequire="XxNelsonxX.Parabellum">Pa_M712S</li>
             <li MayRequire="XxNelsonxX.Parabellum">Pa_SW50B</li>
             <li MayRequire="arpomo6.hmc.project">Gun_GreaterDesertEagle</li>
             <li MayRequire="arpomo6.hmc.project">Gun_RSH12s</li>
+            <li MayRequire="Seventh.Seraph.Weapons.SK">HC_SeventhSeraphOfficerRevolver</li>
+            <li MayRequire="Seventh.Seraph.Weapons.SK">SI_SeventhSeraphSI</li>
         </thingsToChoose>
         <ammunition>
             <li>60</li>
             <li>90</li>
             <li>60</li>
             <li>60</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">63</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">45</li>
             <li MayRequire="XxNelsonxX.Parabellum">80</li>
             <li MayRequire="XxNelsonxX.Parabellum">20</li>
             <li MayRequire="arpomo6.hmc.project">36</li>
             <li MayRequire="arpomo6.hmc.project">35</li>
+            <li MayRequire="Seventh.Seraph.Weapons.SK">56</li>
+            <li MayRequire="Seventh.Seraph.Weapons.SK">90</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -120,6 +131,8 @@
             <li MayRequire="XxNelsonxX.Parabellum">Pa_MP18B</li>
             <li MayRequire="arpomo6.hmc.project">Gun_Ppsh41_HMC</li>
             <li MayRequire="arpomo6.hmc.project">RK_Gun_PP19Bizon</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_LightSMG</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_ChargeSMG</li>
         </thingsToChoose>
         <ammunition>
             <li>300</li>
@@ -135,6 +148,8 @@
             <li MayRequire="XxNelsonxX.Parabellum">224</li>
             <li MayRequire="arpomo6.hmc.project">355</li>
             <li MayRequire="arpomo6.hmc.project">288</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">270</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">180</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -166,6 +181,8 @@
             <li>Gun_HeavySMG</li>
             <li MayRequire="XxNelsonxX.Parabellum">Pa_Tommy</li>
             <li MayRequire="arpomo6.hmc.project">HMC_Gun_Petuch</li>
+            <li MayRequire="Seventh.Seraph.Weapons.SK">SMG_SeventhSeraphVY</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_CompactSMG</li>
         </thingsToChoose>
         <ammunition>
             <li>300</li>
@@ -175,6 +192,8 @@
             <li>300</li>
             <li MayRequire="XxNelsonxX.Parabellum">250</li>
             <li MayRequire="arpomo6.hmc.project">288</li>
+            <li MayRequire="Seventh.Seraph.Weapons.SK">300</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">280</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -206,6 +225,8 @@
             <li MayRequire="XxNelsonxX.Parabellum">Pa_W1897T</li>
             <li MayRequire="XxNelsonxX.Parabellum">Pa_BA5L</li>
             <li MayRequire="arpomo6.hmc.project">Gun_Dvustvolka</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_ShotgunHandgun</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_LeverActionShotgun</li>
         </thingsToChoose>
         <ammunition>
             <li>60</li>
@@ -217,6 +238,8 @@
             <li MayRequire="XxNelsonxX.Parabellum">60</li>
             <li MayRequire="XxNelsonxX.Parabellum">50</li>
             <li MayRequire="arpomo6.hmc.project">30</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">60</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">60</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -248,6 +271,9 @@
             <li MayRequire="XxNelsonxX.Parabellum">Pa_CAWS</li>
             <li MayRequire="arpomo6.hmc.project">Spas12_HMC</li>
             <li MayRequire="arpomo6.hmc.project">Gun_Saiga12k</li>
+            <li MayRequire="Seventh.Seraph.Weapons.SK">SG_SeventhSeraphCQC</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_SemiAutomaticShotgun</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_ChargeShotgun</li>
         </thingsToChoose>
         <ammunition>
             <li>60</li>
@@ -257,6 +283,9 @@
             <li MayRequire="XxNelsonxX.Parabellum">64</li>
             <li MayRequire="arpomo6.hmc.project">48</li>
             <li MayRequire="arpomo6.hmc.project">48</li>
+            <li MayRequire="Seventh.Seraph.Weapons.SK">40</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">64</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">60</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -296,6 +325,7 @@
             <li MayRequire="arpomo6.hmc.project">Gun_SKS</li>
             <li MayRequire="arpomo6.hmc.project">Gun_AKS74U</li>
             <li MayRequire="arpomo6.hmc.project">Gun_VTC9_HMC</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_AssaultCarbine</li>
         </thingsToChoose>
         <ammunition>
             <li>80</li>
@@ -314,6 +344,7 @@
             <li MayRequire="XxNelsonxX.Parabellum">180</li>
             <li MayRequire="arpomo6.hmc.project">100</li>
             <li MayRequire="arpomo6.hmc.project">210</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">210</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -363,6 +394,10 @@
             <li MayRequire="arpomo6.hmc.project">Gun_AEK971R</li>
             <li MayRequire="arpomo6.hmc.project">Gun_AK74M_HMC</li>
             <li MayRequire="arpomo6.hmc.project">Gun_SA58_HMC</li>
+            <li MayRequire="Seventh.Seraph.Weapons.SK">AR_seventhseraphcarbine</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_AssaultCarbine</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_BullpupRifle</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_BattleRifle</li>
         </thingsToChoose>
         <ammunition>
             <li>210</li>
@@ -390,6 +425,10 @@
             <li MayRequire="arpomo6.hmc.project">210</li>
             <li MayRequire="arpomo6.hmc.project">210</li>
             <li MayRequire="arpomo6.hmc.project">200</li>
+            <li MayRequire="Seventh.Seraph.Weapons.SK">204</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">210</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">210</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">210</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -420,6 +459,7 @@
             <li MayRequire="arpomo6.hmc.project">Gun_Vintorez</li>
             <li MayRequire="arpomo6.hmc.project">Gun_M24SR</li>
             <li MayRequire="arpomo6.hmc.project">RK_Gun_SVD</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_SemiautomaticRifle</li>
         </thingsToChoose>
         <ammunition>
             <li>40</li>
@@ -430,6 +470,7 @@
             <li MayRequire="arpomo6.hmc.project">120</li>
             <li MayRequire="arpomo6.hmc.project">40</li>
             <li MayRequire="arpomo6.hmc.project">60</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">80</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -475,6 +516,9 @@
             <li MayRequire="arpomo6.hmc.project">Gun_OSV96_HMC</li>
             <li MayRequire="arpomo6.hmc.project">Gun_RT20_HMC</li>
             <li MayRequire="arpomo6.hmc.project">Gun_R2Lance_HMC</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_SemiautomaticRifle</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_ChargeSniperRifle</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_MarksmanRifle</li>
         </thingsToChoose>
         <ammunition>
             <li>40</li>
@@ -498,6 +542,9 @@
             <li MayRequire="arpomo6.hmc.project">30</li>
             <li MayRequire="arpomo6.hmc.project">20</li>
             <li MayRequire="arpomo6.hmc.project">30</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">80</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">45</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">40</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -531,6 +578,7 @@
             <li MayRequire="arpomo6.hmc.project">Gun_RPK74M_HMC</li>
             <li MayRequire="arpomo6.hmc.project">Gun_RPD_HMC</li>
             <li MayRequire="arpomo6.hmc.project">Gun_HMC_PKP</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_HMG</li>
         </thingsToChoose>
         <ammunition>
             <li>300</li>
@@ -544,6 +592,7 @@
             <li MayRequire="arpomo6.hmc.project">300</li>
             <li MayRequire="arpomo6.hmc.project">300</li>
             <li MayRequire="arpomo6.hmc.project">300</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">300</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -576,6 +625,8 @@
             <li MayRequire="XxNelsonxX.Parabellum">Pa_MG45H</li>
             <li MayRequire="arpomo6.hmc.project">Gun_6P62_HMC</li>
             <li MayRequire="arpomo6.hmc.project">Gun_LWMMG_HMC</li>
+            <li MayRequire="Seventh.Seraph.Weapons.SK">MG_SevethSeraphSAW</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_HMG</li>
         </thingsToChoose>
         <ammunition>
             <li>300</li>
@@ -586,6 +637,8 @@
             <li MayRequire="XxNelsonxX.Parabellum">240</li>
             <li MayRequire="arpomo6.hmc.project">112</li>
             <li MayRequire="arpomo6.hmc.project">300</li>
+            <li MayRequire="Seventh.Seraph.Weapons.SK">300</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">300</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -777,6 +830,8 @@
             <li MayRequire="arpomo6.hmc.project">HMC_PlasmaSMG</li>
             <li MayRequire="arpomo6.hmc.project">Mag_Rifle_HMC</li>
             <li MayRequire="arpomo6.hmc.project">Mag_MG_HMC</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_ChargePistol</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_ChargeLMG</li>
         </thingsToChoose>
         <ammunition>
             <li>30</li>
@@ -787,6 +842,8 @@
             <li MayRequire="arpomo6.hmc.project">160</li>
             <li MayRequire="arpomo6.hmc.project">60</li>
             <li MayRequire="arpomo6.hmc.project">60</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">72</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">96</li>
         </ammunition>
     </OrderedStuffDef>
 

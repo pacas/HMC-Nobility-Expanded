@@ -6,16 +6,12 @@
     <ApparelPermitTitle.description>Запрос доставки различной одежды и аксесссуаров.</ApparelPermitTitle.description>
     <WorkerPermitSmallTitle.label>одежда для рабочих</WorkerPermitSmallTitle.label>
     <WorkerPermitSmallTitle.description>Запрос доставки различной одежды для рабочих.</WorkerPermitSmallTitle.description>
-    <SpecialPermitSmallTitle.label>спецодежда</SpecialPermitSmallTitle.label>
-    <SpecialPermitSmallTitle.description>Запрос доставки различной одежды для солдат и дворянства.</SpecialPermitSmallTitle.description>
-    
-    <!-- солдатское -->
-    <SoldierAccessoriesDrop.label>набор штурмовика</SoldierAccessoriesDrop.label>
-    <SoldierAccessoriesDrop.description>Запрос доставки набора аксесссуаров для штурмовика. Полная броня не входит в комплект.</SoldierAccessoriesDrop.description>
-    <SoldierAccessoriesAltDrop.label>набор разведчика</SoldierAccessoriesAltDrop.label>
-    <SoldierAccessoriesAltDrop.description>Запрос доставки набора аксесссуаров для разведчика. Полная броня не входит в комплект.</SoldierAccessoriesAltDrop.description>
+    <SpecialApparelPermitSmallTitle.label>спецодежда</SpecialApparelPermitSmallTitle.label>
+    <SpecialApparelPermitSmallTitle.description>Запрос доставки различной одежды для солдат и дворянства.</SpecialApparelPermitSmallTitle.description>
+    <SimpleApparelPermitSmallTitle.label>простая одежда</SimpleApparelPermitSmallTitle.label>
+    <SimpleApparelPermitSmallTitle.description>Запрос доставки различной простой одежды для повседневных задач.</SimpleApparelPermitSmallTitle.description>
 
-    <!-- обычное -->
+    <!-- рабочая -->
     <SmithOutfitDrop.label>одежда кузнеца</SmithOutfitDrop.label>
     <SmithOutfitDrop.description>Запрос доставки набора одежды кузнеца.</SmithOutfitDrop.description>
     <FarmerOutfitDrop.label>одежда фермера</FarmerOutfitDrop.label>
@@ -31,14 +27,29 @@
     <ConstructorOutfitDrop.label>одежда строителя</ConstructorOutfitDrop.label>
     <ConstructorOutfitDrop.description>Запрос доставки набора одежды строителя.</ConstructorOutfitDrop.description>
 
-    <SlaveOutfitDrop.label>одежда раба</SlaveOutfitDrop.label>
-    <SlaveOutfitDrop.description>Запрос доставки набора одежды раба.</SlaveOutfitDrop.description>
+    <!-- специальная -->
+    <SoldierAccessoriesDrop.label>набор штурмовика</SoldierAccessoriesDrop.label>
+    <SoldierAccessoriesDrop.description>Запрос доставки набора аксесссуаров для штурмовика. Полная броня не входит в комплект.</SoldierAccessoriesDrop.description>
+    <SoldierAccessoriesAltDrop.label>набор разведчика</SoldierAccessoriesAltDrop.label>
+    <SoldierAccessoriesAltDrop.description>Запрос доставки набора аксесссуаров для разведчика. Полная броня не входит в комплект.</SoldierAccessoriesAltDrop.description>
+    
     <HazmatOutfitDrop.label>набор химзащиты</HazmatOutfitDrop.label>
     <HazmatOutfitDrop.description>Запрос доставки набора химзащиты.</HazmatOutfitDrop.description>
+    <ShieldBeltDrop.label>пояс-щит</ShieldBeltDrop.label>
+    <ShieldBeltDrop.description>Запрос доставки одного пояса-щита.</ShieldBeltDrop.description>
 
     <RoyalOutfitDrop.label>одеяния знати</RoyalOutfitDrop.label>
     <RoyalOutfitDrop.description>Запрос доставки набора одеяния знати.</RoyalOutfitDrop.description>
     <PsychicOutfitDrop.label>одежда из элтекса</PsychicOutfitDrop.label>
     <PsychicOutfitDrop.description>Запрос доставки набора одежды из элтекса.</PsychicOutfitDrop.description>
+
+    <!-- простая -->
+
+    <SimpleOutfitDrop.label>обычная одежда</SimpleOutfitDrop.label>
+    <SimpleOutfitDrop.description>Запрос доставки набора простой одежды.</SimpleOutfitDrop.description>
+    <SlaveOutfitDrop.label>одежда раба</SlaveOutfitDrop.label>
+    <SlaveOutfitDrop.description>Запрос доставки набора одежды для раба.</SlaveOutfitDrop.description>
+    <BabyClothesDrop.label>детская одежда</BabyClothesDrop.label>
+    <BabyClothesDrop.description>Запрос доставки набора детской одежды.</BabyClothesDrop.description>
 
 </LanguageData>

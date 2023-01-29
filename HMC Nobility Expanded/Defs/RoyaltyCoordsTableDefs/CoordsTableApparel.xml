@@ -7,12 +7,14 @@
             <li>ApparelPermitTitle</li>
             <li>WorkerPermitSmallTitle</li>
             <li>SmithOutfitDrop</li>
-            <li>SlaveOutfitDrop</li>
             <li>MinerOutfitDrop</li>
             <li>MedicOutfitDrop</li>
-            <li>SpecialPermitSmallTitle</li>
+            <li>SpecialApparelPermitSmallTitle</li>
             <li>SoldierAccessoriesDrop</li>
+            <li>HazmatOutfitDrop</li>
             <li>RoyalOutfitDrop</li>
+            <li>SimpleApparelPermitSmallTitle</li>
+            <li>SimpleOutfitDrop</li>
             <li MayRequire="Ludeon.Rimworld.Biotech">BabyClothesDrop</li>
         </loadOrder>
     </RoyaltyCoordsTableDef>
@@ -26,10 +28,12 @@
             <li>FarmerOutfitDrop</li>
             <li>ConstructorOutfitDrop</li>
             <li>ChefOutfitDrop</li>
-            <li>HazmatOutfitDrop</li>
-            <li>SpecialPermitSmallTitle</li>
+            <li>SpecialApparelPermitSmallTitle</li>
             <li>SoldierAccessoriesAltDrop</li>
+            <li>ShieldBeltDrop</li>
             <li>PsychicOutfitDrop</li>
+            <li>SimpleApparelPermitSmallTitle</li>
+            <li>SlaveOutfitDrop</li>
         </loadOrder>
     </RoyaltyCoordsTableDef>
 </Defs>

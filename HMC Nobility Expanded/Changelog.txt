@@ -2,13 +2,15 @@
 
 - Changelog "HMC Empire Rewards" v0.11 (1.4):
 
-1) Compatibility with HSK More Content and Parabellum.
+1) Compatibility with HSK More Content, Parabellum, Apex Rimworld Legends and Seventh Seraph Weapons.
 2) First iteration of the Biotech integration.
 3) Fixed English localization for the base permits.
+4) The clothing permits table has been expanded and slightly changed.
 
-1) Совместимость с HSK More Content и Parabellum.
+1) Совместимость с HSK More Content, Parabellum, Apex Rimworld Legends и Seventh Seraph Weapons.
 2) Первая итерация интеграции Biotech.
 3) Исправлена английская локализация для базовых запросов.
+4) Расширена и немного изменена таблица запросов одежды.
 
 ----------------------------------------------------------------------
 
