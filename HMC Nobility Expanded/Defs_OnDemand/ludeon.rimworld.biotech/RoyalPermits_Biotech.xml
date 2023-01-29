@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>BabyFoodDrop</defName>
+        <label>baby food</label>
+        <description>Request a drop of 30 vegetarian mash for babies.</description>
+        <permitPointCost>1</permitPointCost>
+        <minTitle>Acolyte</minTitle>
+        <cooldownDays>14</cooldownDays>
+        <royalAid>
+            <itemsToDrop>
+                <BabyFood>30</BabyFood>
+            </itemsToDrop>
+            <favorCost>2</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedThingsSpecificBase">
+        <defName>BabyFoodDropStuff</defName>
+    </OrderedStuffDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>VampiresFoodDrop</defName>
+        <label>hemogen pack</label>
+        <description>Request a drop of 5 hemogen packs.</description>
+        <permitPointCost>1</permitPointCost>
+        <minTitle>Acolyte</minTitle>
+        <cooldownDays>21</cooldownDays>
+        <royalAid>
+            <itemsToDrop>
+                <HemogenPack>5</HemogenPack>
+            </itemsToDrop>
+            <favorCost>6</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedThingsSpecificBase">
+        <defName>VampiresFoodDropStuff</defName>
+        <column>1</column>
+    </OrderedStuffDef>
+
+    <RoyalTitlePermitDef ParentName="DropOutfitTitle">
+        <defName>BabyClothesDrop</defName>
+        <label>baby clothes</label>
+        <description>Request a drop of clothes for babies.</description>
+        <minTitle>Acolyte</minTitle>
+        <permitPointCost>1</permitPointCost>
+        <cooldownDays>21</cooldownDays>
+        <royalAid>
+            <itemsToDrop>
+                <Apparel_KidShirt>1</Apparel_KidShirt>
+                <Apparel_KidPants>1</Apparel_KidPants>
+                <Apparel_KidHelmet>1</Apparel_KidHelmet>
+                <CE_Apparel_KidBackpack>1</CE_Apparel_KidBackpack>
+            </itemsToDrop>
+            <favorCost>4</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedStuffBase">
+        <defName>BabyClothesDropStuff</defName>
+        <quality>Good</quality>
+        <stuffList>
+            <li>Flaxcloth</li>
+            <li>Flaxcloth</li>
+            <li>Plasteel</li>
+            <li>Flaxcloth</li>
+        </stuffList>
+    </OrderedStuffDef>
+    
+</Defs>

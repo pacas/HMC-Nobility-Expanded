@@ -45,6 +45,8 @@
     <DropComment_HazmatOutfitDrop>Химзащита? Вы что там такое делаете, что вам нужна химзащита? Вам лучше бы не нарушать галактический кодекс, раз вы стали частью Империи. Но если что, я ничего не видел.</DropComment_HazmatOutfitDrop>
     <DropComment_RoyalOutfitDrop>Одежда для знати. У нас на Фортуне есть свой определённый стиль одежды, если хотите, я запрошу полный набор. Качество гарантируется.</DropComment_RoyalOutfitDrop>
     <DropComment_PsychicOutfitDrop>Одежда для псайкеров? Люди, они, конечно, уважаемые, но их многие боятся, потому даже известные псайкеры предпочитают не афишировать свои способности. Однако право ваше, мы готовы предоставить вам комплект.</DropComment_PsychicOutfitDrop>
+    <DropComment_ShieldBeltDrop>Пояс-щит, полезная штука, много кого спасти успела, потому у нас всегда запас есть. Подготовить к отправке?</DropComment_ShieldBeltDrop>
+    <DropComment_SimpleOutfitDrop>Простая одежда для простых людей. Такого у нас навалом.</DropComment_SimpleOutfitDrop>
 
     <!-- Броня -->
     <DropComment_ArmorDrop>Что такое бацинет? Неважно, просто перенаправляю запрос.</DropComment_ArmorDrop>
@@ -122,5 +124,10 @@
     <DropComment_SeedsPotatoDropPlus>Овощи - идеальный обед. Полезный и иногда даже сытный. Жаль что их не так много завозят...</DropComment_SeedsPotatoDropPlus>
     <DropComment_SeedsOakDrop>Деревья... Эх, хотел бы я побольше деревьев, иногда весь этот бетонно-металлический лоск очень раздражает.</DropComment_SeedsOakDrop>
     <DropComment_SeedsOakDropPlus>Фрукты нечасто можно увидеть у нас на столе, самые вкусные фрукты это целый деликатес.</DropComment_SeedsOakDropPlus>
+
+    <!-- Biotech -->
+    <DropComment_BabyFoodDrop>У вас там дети есть? В таком случае я вам немного побольше даже положу еды детишкам.</DropComment_BabyFoodDrop>
+    <DropComment_VampiresFoodDrop>Надеюсь, всего-то кому-то требуется переливание крови? У нас обычно таких запросов не делают, аккуратнее с таким.</DropComment_VampiresFoodDrop>
+    <DropComment_BabyClothesDrop>Рубашка? Есть. Штаны. Есть. Шлем и рюкзак... А зачем это вам нужен шлем детского размера?</DropComment_BabyClothesDrop>
     
 </LanguageData>

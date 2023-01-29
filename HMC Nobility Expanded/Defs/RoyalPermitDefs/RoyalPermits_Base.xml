@@ -87,12 +87,17 @@
         <typeOfDrop>Pure</typeOfDrop>
         <typeOfItem>Random</typeOfItem>
     </OrderedStuffDef>
+
+    <OrderedStuffDef ParentName="OrderedBase" Name="OrderedThingsSpecificBase" Abstract="True">
+        <typeOfDrop>Pure</typeOfDrop>
+        <typeOfItem>Specific</typeOfItem>
+    </OrderedStuffDef>
     
     <!-- todo -->
     <!-- здания? -->
-    <!-- детское питание -->
-    <!-- детская одежда -->
     <!-- квест присмотра за ребенком? -->
+    <!-- гранаты -->
+    <!-- рабы -->
     <!-- 1) Current royalty crash quest minus defence plus care for a couple of days? -->
     <!-- 2) Rescue quest with baby pawn and shuttle ending? -->
     <!-- кровь -->

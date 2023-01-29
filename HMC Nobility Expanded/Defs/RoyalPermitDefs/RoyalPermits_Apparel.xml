@@ -15,69 +15,16 @@
     </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
-        <defName>SpecialPermitSmallTitle</defName>
+        <defName>SpecialApparelPermitSmallTitle</defName>
         <label>Special Apparel</label>
         <description>Request a drop of different apparel for soldiers and nobility.</description>
     </RoyalTitlePermitDef>
-    
-    <!-- Soldier -->
 
-    <RoyalTitlePermitDef ParentName="DropOutfitTitle">
-        <defName>SoldierAccessoriesDrop</defName>
-        <label>heavy soldier accessories</label>
-        <description>Request a drop of classic heavy soldier accessories. Full armor is not included.</description>
-        <permitPointCost>4</permitPointCost>
-        <cooldownDays>45</cooldownDays>
-        <minTitle>Praetor</minTitle>
-        <royalAid>
-            <itemsToDrop>
-                <Apparel_Backpack>1</Apparel_Backpack>
-                <Apparel_TacVest>1</Apparel_TacVest>
-                <Marine_BattleMask>1</Marine_BattleMask>
-                <Rimarsenal_VestPlate>1</Rimarsenal_VestPlate>
-            </itemsToDrop>
-            <favorCost>17</favorCost>
-        </royalAid>
+    <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
+        <defName>SimpleApparelPermitSmallTitle</defName>
+        <label>Simple Apparel</label>
+        <description>Request a drop of simple apparel outfits for everyday duties.</description>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedStuffBase">
-        <defName>SoldierAccessoriesDropStuff</defName>
-        <quality>Good</quality>
-        <stuffList>
-            <li>Synthread</li>
-            <li>Synthread</li>
-            <li>TitaniumBar</li>
-            <li>TitaniumBar</li>
-        </stuffList>
-    </OrderedStuffDef>
-    
-    <RoyalTitlePermitDef ParentName="DropOutfitTitle">
-        <defName>SoldierAccessoriesAltDrop</defName>
-        <label>recon soldier accessories</label>
-        <description>Request a drop of classic recon soldier accessories. Full armor is not included.</description>
-        <permitPointCost>3</permitPointCost>
-        <minTitle>Praetor</minTitle>
-        <cooldownDays>40</cooldownDays>
-        <royalAid>
-            <itemsToDrop>
-                <Apparel_Backpack>1</Apparel_Backpack>
-                <Apparello_Ammobelt>1</Apparello_Ammobelt>
-                <Apparello_Visoor>1</Apparello_Visoor>
-                <Apparel_FlakVest>1</Apparel_FlakVest>
-            </itemsToDrop>
-            <favorCost>11</favorCost>
-        </royalAid>
-    </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedStuffBase">
-        <defName>SoldierAccessoriesAltDropStuff</defName>
-        <quality>Good</quality>
-        <column>1</column>
-        <stuffList>
-            <li>Synthread</li>
-            <li>Leather_Light</li>
-            <li>Titanium</li>
-            <li>Synthread</li>
-        </stuffList>
-    </OrderedStuffDef>
     
     <!-- Worker -->
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
@@ -246,37 +193,68 @@
             <li>Flaxcloth</li>
         </stuffList>
     </OrderedStuffDef>
+
+    <!-- Special -->
     
-    
+    <!-- Soldier -->
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
-        <defName>SlaveOutfitDrop</defName>
-        <label>slave outfit</label>
-        <description>Request a drop of slave outfit.</description>
-        <permitPointCost>1</permitPointCost>
-        <cooldownDays>10</cooldownDays>
+        <defName>SoldierAccessoriesDrop</defName>
+        <label>heavy soldier accessories</label>
+        <description>Request a drop of classic heavy soldier accessories. Full armor is not included.</description>
+        <permitPointCost>4</permitPointCost>
+        <cooldownDays>45</cooldownDays>
+        <minTitle>Praetor</minTitle>
         <royalAid>
             <itemsToDrop>
-                <Apparel_Bonnet>1</Apparel_Bonnet>
-                <Apparel_BodyStrap>1</Apparel_BodyStrap>
-                <Apparello_Shoes>1</Apparello_Shoes>
                 <Apparel_Backpack>1</Apparel_Backpack>
-                <Apparel_Collar>1</Apparel_Collar>
+                <Apparel_TacVest>1</Apparel_TacVest>
+                <Marine_BattleMask>1</Marine_BattleMask>
+                <Rimarsenal_VestPlate>1</Rimarsenal_VestPlate>
             </itemsToDrop>
-            <favorCost>2</favorCost>
+            <favorCost>17</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
     <OrderedStuffDef ParentName="OrderedStuffBase">
-        <defName>SlaveOutfitDropStuff</defName>
+        <defName>SoldierAccessoriesDropStuff</defName>
         <quality>Good</quality>
         <stuffList>
-            <li>Flaxcloth</li>
-            <li>Flaxcloth</li>
-            <li>Leather_Light</li>
-            <li>Flaxcloth</li>
-            <li>Leather_Light</li>
+            <li>Synthread</li>
+            <li>Synthread</li>
+            <li>TitaniumBar</li>
+            <li>TitaniumBar</li>
         </stuffList>
     </OrderedStuffDef>
 
+    <RoyalTitlePermitDef ParentName="DropOutfitTitle">
+        <defName>SoldierAccessoriesAltDrop</defName>
+        <label>recon soldier accessories</label>
+        <description>Request a drop of classic recon soldier accessories. Full armor is not included.</description>
+        <permitPointCost>3</permitPointCost>
+        <minTitle>Praetor</minTitle>
+        <cooldownDays>40</cooldownDays>
+        <royalAid>
+            <itemsToDrop>
+                <Apparel_Backpack>1</Apparel_Backpack>
+                <Apparello_Ammobelt>1</Apparello_Ammobelt>
+                <Apparello_Visoor>1</Apparello_Visoor>
+                <Apparel_FlakVest>1</Apparel_FlakVest>
+            </itemsToDrop>
+            <favorCost>11</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedStuffBase">
+        <defName>SoldierAccessoriesAltDropStuff</defName>
+        <quality>Good</quality>
+        <column>1</column>
+        <stuffList>
+            <li>Synthread</li>
+            <li>Leather_Light</li>
+            <li>Titanium</li>
+            <li>Synthread</li>
+        </stuffList>
+    </OrderedStuffDef>
+
+    <!-- Specialized -->
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
         <defName>HazmatOutfitDrop</defName>
         <label>hazmat outfit</label>
@@ -293,13 +271,32 @@
     <OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>HazmatOutfitDropStuff</defName>
         <quality>Good</quality>
-        <column>1</column>
         <stuffList>
             <li>Synthread</li>
             <li>Synthread</li>
         </stuffList>
     </OrderedStuffDef>
 
+    <RoyalTitlePermitDef ParentName="DropOutfitTitle">
+        <defName>ShieldBeltDrop</defName>
+        <label>shield belt</label>
+        <description>Request a drop of one shield belt.</description>
+        <cooldownDays>50</cooldownDays>
+        <royalAid>
+            <itemsToDrop>
+                <Apparel_ShieldBelt>1</Apparel_ShieldBelt>
+            </itemsToDrop>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedStuffBase">
+        <defName>ShieldBeltDropStuff</defName>
+        <typeOfQuality>Range</typeOfQuality>
+        <quality>Good</quality>
+        <column>1</column>
+        <stuffList>
+            <li>TitaniumBar</li>
+        </stuffList>
+    </OrderedStuffDef>
 
     <!-- Royal -->
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
@@ -358,4 +355,66 @@
         <column>1</column>
     </OrderedStuffDef>
 
+    <!-- Simple -->
+
+    <RoyalTitlePermitDef ParentName="DropOutfitTitle">
+        <defName>SimpleOutfitDrop</defName>
+        <label>simple outfit</label>
+        <description>Request a drop of simple outfit for everyday duties.</description>
+        <permitPointCost>1</permitPointCost>
+        <cooldownDays>18</cooldownDays>
+        <royalAid>
+            <itemsToDrop>
+                <Apparello_Bandal>1</Apparello_Bandal>
+                <Apparel_Pants>1</Apparel_Pants>
+                <Apparel_BasicShirt>1</Apparel_BasicShirt>
+                <Apparello_Shoes>1</Apparello_Shoes>
+                <Apparel_Backpack>1</Apparel_Backpack>
+                <Apparello_Workglove>1</Apparello_Workglove>
+            </itemsToDrop>
+            <favorCost>3</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedStuffBase">
+        <defName>SimpleOutfitDropStuff</defName>
+        <quality>Good</quality>
+        <stuffList>
+            <li>Flaxcloth</li>
+            <li>Flaxcloth</li>
+            <li>Flaxcloth</li>
+            <li>Leather_Light</li>
+            <li>Flaxcloth</li>
+            <li>Leather_Light</li>
+        </stuffList>
+    </OrderedStuffDef>
+
+    <RoyalTitlePermitDef ParentName="DropOutfitTitle">
+        <defName>SlaveOutfitDrop</defName>
+        <label>slave outfit</label>
+        <description>Request a drop of slave outfit.</description>
+        <permitPointCost>1</permitPointCost>
+        <cooldownDays>10</cooldownDays>
+        <royalAid>
+            <itemsToDrop>
+                <Apparel_Bonnet>1</Apparel_Bonnet>
+                <Apparel_BodyStrap>1</Apparel_BodyStrap>
+                <Apparello_Shoes>1</Apparello_Shoes>
+                <Apparel_Backpack>1</Apparel_Backpack>
+                <Apparel_Collar>1</Apparel_Collar>
+            </itemsToDrop>
+            <favorCost>3</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedStuffBase">
+        <defName>SlaveOutfitDropStuff</defName>
+        <quality>Good</quality>
+        <column>1</column>
+        <stuffList>
+            <li>Flaxcloth</li>
+            <li>Flaxcloth</li>
+            <li>Leather_Light</li>
+            <li>Flaxcloth</li>
+            <li>Leather_Light</li>
+        </stuffList>
+    </OrderedStuffDef>
 </Defs>

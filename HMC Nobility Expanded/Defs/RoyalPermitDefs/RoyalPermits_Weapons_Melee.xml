@@ -31,7 +31,7 @@
         <thingsToChoose>
             <li>NorbalMeleeWeapon_ShortSwordtwo</li>
             <li>MeleeWeapon_Knife</li>
-            <li>MeleeWeapon_Tanto</li>
+            <li>MeleeWeapon_Dagger</li>
         </thingsToChoose>
     </OrderedStuffDef>
     
@@ -64,6 +64,7 @@
             <li>NorbalMeleeWeapon_ShortSwordtwo</li>
             <li>MeleeWeapon_Tanto</li>
             <li>MeleeWeapon_Dagger</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_S8498III</li>
         </thingsToChoose>
     </OrderedStuffDef>
     
