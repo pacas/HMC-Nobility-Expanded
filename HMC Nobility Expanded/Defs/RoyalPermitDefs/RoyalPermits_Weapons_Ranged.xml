@@ -317,8 +317,6 @@
             <li>Gun_FAMAS</li>
             <li>Gun_AK47Gun</li>
             <li MayRequire="XxNelsonxX.Parabellum">Pa_Calico</li>
-            <li MayRequire="XxNelsonxX.Parabellum">Pa_K98k</li>
-            <li MayRequire="XxNelsonxX.Parabellum">Pa_G43K</li>
             <li MayRequire="XxNelsonxX.Parabellum">Pa_VG</li>
             <li MayRequire="XxNelsonxX.Parabellum">Pa_Huot</li>
             <li MayRequire="XxNelsonxX.Parabellum">Pa_StG44AR</li>
@@ -455,7 +453,6 @@
             <li>Gun_M42A_USCM</li>
             <li>RF_Gun_WA2K</li>
             <li MayRequire="XxNelsonxX.Parabellum">Pa_Mk12SPR</li>
-            <li MayRequire="XxNelsonxX.Parabellum">Pa_K98S</li>
             <li MayRequire="arpomo6.hmc.project">Gun_Vintorez</li>
             <li MayRequire="arpomo6.hmc.project">Gun_M24SR</li>
             <li MayRequire="arpomo6.hmc.project">RK_Gun_SVD</li>
@@ -505,7 +502,6 @@
             <li>Gun_M82Gun</li>
             <li MayRequire="XxNelsonxX.Parabellum">Pa_XM109AMPR</li>
             <li MayRequire="XxNelsonxX.Parabellum">Pa_Mk12SPR</li>
-            <li MayRequire="XxNelsonxX.Parabellum">Pa_K98S</li>
             <li MayRequire="arpomo6.hmc.project">Gun_M24SR</li>
             <li MayRequire="arpomo6.hmc.project">Gun_SV98SR</li>
             <li MayRequire="arpomo6.hmc.project">Gun_SVLK14C_HMC</li>
