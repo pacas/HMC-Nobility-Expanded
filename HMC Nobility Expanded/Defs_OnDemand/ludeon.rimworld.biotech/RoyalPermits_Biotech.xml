@@ -22,13 +22,13 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>VampiresFoodDrop</defName>
         <label>hemogen pack</label>
-        <description>Request a drop of 5 hemogen packs.</description>
+        <description>Request a drop of 15 hemogen packs.</description>
         <permitPointCost>1</permitPointCost>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>21</cooldownDays>
         <royalAid>
             <itemsToDrop>
-                <HemogenPack>5</HemogenPack>
+                <HemogenPack>15</HemogenPack>
             </itemsToDrop>
             <favorCost>6</favorCost>
         </royalAid>
