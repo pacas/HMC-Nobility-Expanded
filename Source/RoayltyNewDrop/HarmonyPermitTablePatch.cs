@@ -33,8 +33,6 @@ namespace RimWorld
         }
     }
 
-
-    [HarmonyPatch(typeof(StatsReportUtility), "Reset")]
     public class StatsResetPatch
     {
         public static bool Prefix(
@@ -63,7 +61,6 @@ namespace RimWorld
         }
     }
     
-    [HarmonyPatch(typeof(PermitsCardCustomUtility), "DrawPosition")]
     public class CoordsAutopatch
     {
         public static bool Prefix(ref RoyalTitlePermitDef permit, ref Vector2 __result)
@@ -105,7 +102,6 @@ namespace RimWorld
         }
     }
     
-    [HarmonyPatch(typeof(Dialog_InfoCard), "FillCard")]
     public class FillCardPatch
     {
         public static bool Prefix(
@@ -164,7 +160,6 @@ namespace RimWorld
         }
     }
 
-    [HarmonyPatch(typeof(Dialog_InfoCard), "get_InitialSize")]
     public class WindowSizePatch
     {
         public static bool Prefix(ref Vector2 __result) {

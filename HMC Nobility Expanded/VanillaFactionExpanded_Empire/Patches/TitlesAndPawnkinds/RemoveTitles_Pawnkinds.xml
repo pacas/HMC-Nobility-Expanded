@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/PawnKindDef[defName="VFEE_Empire_Royal_Archcount" or
+                    defName="VFEE_Empire_Royal_Marquess" or
+                    defName="VFEE_Empire_Royal_Archduke" or
+                    defName="VFEE_Empire_Royal_Magister" or
+                    defName="VFEE_Empire_Royal_Despot" or
+                    defName="VFEE_Empire_Royal_HighStellarch"]</xpath>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/RoyalTitleDef[defName="VFEE_Archcount" or
+                    defName="VFEE_Marquess" or
+                    defName="VFEE_Archduke" or
+                    defName="VFEE_Magister" or
+                    defName="VFEE_Despot"]</xpath>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/VFEEmpire.RoyaltyTabDef[defName="VFEE_Permits"]</xpath>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

@@ -211,7 +211,7 @@ namespace RimWorld
                         permitRect = new Rect(vector2.x, vector2.y, 150f, 50f);
                     }
                     else if (!permit.AvailableForPawn(pawn, selectedFaction) && !PermitUnlocked(permit, pawn)) {
-                        textColor = Color.red;
+                        textColor = new Color(0.6f, 0.1f, 0.1f, 1.0f);
                     }
                     if (selectedPermit == permit) {
                         borderResearchColor = TexUI.HighlightBorderResearchColor;

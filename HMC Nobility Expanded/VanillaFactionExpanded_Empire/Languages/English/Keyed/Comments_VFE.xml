@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    
+    <!-- Ресурсы -->
+    <DropComment_VFEI_ClothDrop>Will you be sewing or needing new beds and chairs? In the first case, you'd better ask for your clothes at once; we have some of the best tailors in the Empire who make clothes on demand.</DropComment_VFEI_ClothDrop>
+    <DropComment_VFEI_ChemfuelDrop>Who has oil has Empire! But why do you need oil, order chemfuel, without all these intermediate stages!</DropComment_VFEI_ChemfuelDrop>
+    <DropComment_VFEI_ComponentDrop>I don't know what's in those boxes, but I think you know why you need it.</DropComment_VFEI_ComponentDrop>
+    <DropComment_VFEI_WoodDrop>Wood? For the sake of this we will have to organize the supply from the other worlds of the Rim, on the central worlds wood in its pure form is almost never found.</DropComment_VFEI_WoodDrop>
+    <DropComment_VFEI_JadeDrop>Jade is beautiful, but not practical. What do you need it for?</DropComment_VFEI_JadeDrop>
+    <DropComment_VFEI_ComponentSpacerDrop>Again boxes with incomprehensible descriptions and contents. Only these packs are packed better and look smaller, clearly more valuable than the previous ones.</DropComment_VFEI_ComponentSpacerDrop>
+
+    <!-- Люди -->
+    <DropComment_VFEI_CallTechfriar>Research? Can you just buy the technology? Why not? All right, I'll send you the right person.</DropComment_VFEI_CallTechfriar>
+    <DropComment_VFEI_CallAbsolver>I'm not allowed to talk about it.</DropComment_VFEI_CallAbsolver>
+    
+    <!-- Военная помощь -->
+    <DropComment_VFEI_StrikerTurretDrop>Three big guns will quell any riot. Only probably with a fatal outcome.</DropComment_VFEI_StrikerTurretDrop>
+    <DropComment_VFEI_BurnoutShieldDrop>Need emergency protection? This shield will protect you from everything, as long as you get it in 30 seconds.</DropComment_VFEI_BurnoutShieldDrop>
+    <DropComment_VFEI_CallOrbitalSlicingBeam>Weapon of mass destruction. Use only as a last resort. I warned you.</DropComment_VFEI_CallOrbitalSlicingBeam>
+    <DropComment_VFEI_CallEvacShuttle>Have you heard of Trauma Team? Well, they only work on central worlds, so we can only send a rescue shuttle.</DropComment_VFEI_CallEvacShuttle>
+
+    
+</LanguageData>

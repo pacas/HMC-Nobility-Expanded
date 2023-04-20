@@ -7,6 +7,7 @@
     <v1.4>
 		<li>/</li>
 		<li>1.4</li>
+        <li IfModActive="OskarPotocki.VFE.Empire">VanillaFactionExpanded_Empire</li>
 	</v1.4>
 </loadFolders>
 

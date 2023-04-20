@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Psycasts Expanded</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/PawnKindDef[
+                    defName="VFEE_Deserter_Conflagator" or
+                    defName="VFEE_Deserter_Warlord" or
+                    defName="VFEE_Deserter_Nightstalker" or
+                    defName="VFEE_Deserter_Protector" or
+                    defName="VFEE_Deserter_Harmonist"]</xpath>
+                    <value>
+                        <combatPower>380</combatPower>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

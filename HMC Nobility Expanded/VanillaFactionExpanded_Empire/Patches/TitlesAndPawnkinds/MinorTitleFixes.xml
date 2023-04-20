@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/RoyalTitleDef[defName="Legatus" or defName="Viscount"]/throneRoomRequirements/li[@Class="RoomRequirement_HasAssignedThroneAnyOf"]/things</xpath>
+                <value>
+                    <li>VFEE_StellicThrone</li>
+                </value>
+            </li>
+            <li Class="PatchOperationAddModExtension">
+                <xpath>Defs/RoyalTitleDef[defName="Legatus"]</xpath>
+                <value>
+                    <li Class="VFEEmpire.RoyalTitleDefExtension">
+                        <iconPath>UI/NobleRanks/RoyalTitleIcon_Legatus</iconPath>
+                        <greyIconPath>UI/GreyTitleIcons/RoyalTitleIcon_Legatus</greyIconPath>
+                        <kindForHierarchy>Empire_Royal_Legatus</kindForHierarchy>
+                    </li>
+                </value>
+            </li>
+            <li Class="PatchOperationAddModExtension">
+                <xpath>Defs/RoyalTitleDef[defName="Viscount"]</xpath>
+                <value>
+                    <li Class="VFEEmpire.RoyalTitleDefExtension">
+                        <iconPath>UI/NobleRanks/RoyalTitleIcon_Viscount</iconPath>
+                        <greyIconPath>UI/GreyTitleIcons/RoyalTitleIcon_Viscount</greyIconPath>
+                        <kindForHierarchy>Empire_Royal_Viscount</kindForHierarchy>
+                    </li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

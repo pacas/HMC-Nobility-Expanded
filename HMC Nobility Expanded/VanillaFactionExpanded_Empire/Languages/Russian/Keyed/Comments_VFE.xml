@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    
+    <!-- Ресурсы -->
+    <DropComment_VFEI_ClothDrop>Шитьем займетесь или нужны новые кровати да кресла? В первом случае лучше бы запросили себе одежду сразу, у нас одни из лучших портных Империи готовят одежду по запросам.</DropComment_VFEI_ClothDrop>
+    <DropComment_VFEI_ChemfuelDrop>Нефть — это кровь, пульсирующая по артериям войны. Но зачем вам нефть, закажите сразу топливо, без всех этих промежуточных этапов!</DropComment_VFEI_ChemfuelDrop>
+    <DropComment_VFEI_ComponentDrop>Я не знаю что там в этих коробках, но я думаю вы знаете зачем это вам.</DropComment_VFEI_ComponentDrop>
+    <DropComment_VFEI_WoodDrop>Древесина? Ради такого придётся организовать поставки с другого мира Окраины, на центральных мирах древесина в чистом виде почти не встречается.</DropComment_VFEI_WoodDrop>
+    <DropComment_VFEI_JadeDrop>Нефрит красивый, но не практичный. Зачем он вам?</DropComment_VFEI_JadeDrop>
+    <DropComment_VFEI_ComponentSpacerDrop>Опять коробки с непонятными описаниями и содержимым. Только эти запаковы получше и выглядят поменьше, явно ценнее прошлых.</DropComment_VFEI_ComponentSpacerDrop>
+
+    <!-- Люди -->
+    <DropComment_VFEI_CallTechfriar>Исследования? А вы можете просто купить технологию? Почему нет? Ну ладно, сейчас отправлю вам нужного человека.</DropComment_VFEI_CallTechfriar>
+    <DropComment_VFEI_CallAbsolver>Мне нельзя говорить об этом.</DropComment_VFEI_CallAbsolver>
+    
+    <!-- Военная помощь -->
+    <DropComment_VFEI_StrikerTurretDrop>Три большие пушки усмирят любой бунт. Только вероятно с летальным исходом.</DropComment_VFEI_StrikerTurretDrop>
+    <DropComment_VFEI_BurnoutShieldDrop>Нужна экстренная защита? Это щит защитит от всего, главное успейте за 30 секунд.</DropComment_VFEI_BurnoutShieldDrop>
+    <DropComment_VFEI_CallOrbitalSlicingBeam>Оружие массового уничтожения. Применять только в крайнем случае. Я предупредил.</DropComment_VFEI_CallOrbitalSlicingBeam>
+    <DropComment_VFEI_CallEvacShuttle>Слышали о компании Trauma Team? Так вот, работают только на центральных мирах, потому можем только спасательный челнок отправить.</DropComment_VFEI_CallEvacShuttle>
+
+    
+</LanguageData>

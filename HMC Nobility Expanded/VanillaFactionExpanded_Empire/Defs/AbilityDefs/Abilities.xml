@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <AbilityDef ParentName="VFEEBestowBase">
+        <defName>VFEE_BestowLegatus</defName>
+        <label>bestow: Legate</label>
+        <iconPath>UI/BestowLegatus</iconPath>
+        <description>Bestows the Legate title on a selected pawn. That pawn now has 46 honor. Can’t be cast on a pawn that’s already a Legate or higher. Has a 3 day cooldown.</description>
+        <comps>
+            <li Class="VFEEmpire.CompProperties_AbilityStartBestower">
+                <titleDef>Legatus</titleDef>
+                <ritualDef>VFEE_BestowTitle</ritualDef>
+                <targetRoleId>recipient</targetRoleId>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <AbilityDef ParentName="VFEEBestowBase">
+        <defName>VFEE_BestowViscount</defName>
+        <label>bestow: Viscount</label>
+        <iconPath>UI/BestowViscount</iconPath>
+        <description>Bestows the Viscount title on a selected pawn. That pawn now has 76 honor. Can’t be cast on a pawn that’s already a Viscount or higher. Has a 3 day cooldown.</description>
+        <comps>
+            <li Class="VFEEmpire.CompProperties_AbilityStartBestower">
+                <titleDef>Viscount</titleDef>
+                <ritualDef>VFEE_BestowTitle</ritualDef>
+                <targetRoleId>recipient</targetRoleId>
+            </li>
+        </comps>
+    </AbilityDef>
+</Defs>

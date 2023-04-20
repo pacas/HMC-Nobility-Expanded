@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesTitle">
+        <defName>RangedPermitTitle</defName>
+        <label>Ranged Weapons</label>
+        <description>Request a drop of random ranged weapons.</description>
+    </RoyalTitlePermitDef>
+    
+    <!-- Pistol -->
+  
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>PistolDrop</defName>
+        <label>pistol</label>
+        <description>Request a drop of random pistol with ammo.</description>
+        <minTitle>Acolyte</minTitle>
+        <cooldownDays>15</cooldownDays>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>4</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>PistolDropStuff</defName>
+        <thingsToChoose>
+            <li>Gun_Revolver</li>
+            <li>RF_Gun_Deringer</li>
+            <li>RF_Gun_AT2K</li>
+            <li>RF_Gun_93R</li>
+            <li>RF_Gun_VektorCP</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_CombatHandgun</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_SR</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_C96M</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_TT33_HMC</li>
+        </thingsToChoose>
+        <ammunition>
+            <li>60</li>
+            <li>60</li>
+            <li>60</li>
+            <li>100</li>
+            <li>60</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">63</li>
+            <li MayRequire="XxNelsonxX.Parabellum">48</li>
+            <li MayRequire="XxNelsonxX.Parabellum">60</li>
+            <li MayRequire="arpomo6.hmc.project">64</li>
+            <li MayRequire="arpomo6.hmc.project">64</li>
+        </ammunition>
+    </OrderedStuffDef>
+    
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>PistolDropPlus</defName>
+        <label>pistol +</label>
+        <description>Request a drop of random pistol with ammo. Better guns in the selection.</description>
+        <minTitle>Knight</minTitle>
+        <cooldownDays>40</cooldownDays>
+        <prerequisite>PistolDrop</prerequisite>
+        <permitPointCost>2</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>7</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>PistolDropPlusStuff</defName>
+        <typeOfQuality>Range</typeOfQuality>
+        <quality>Excellent</quality>
+        <column>1</column>
+        <thingsToChoose>
+            <li>RF_Gun_AT2K</li>
+            <li>RF_Gun_93R</li>
+            <li>RF_Gun_VektorCP</li>
+            <li>Gun_Autopistol</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_CombatHandgun</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_HandCannon</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_M712S</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_SW50B</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_GreaterDesertEagle</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_RSH12s</li>
+            <li MayRequire="Seventh.Seraph.Weapons.SK">HC_SeventhSeraphOfficerRevolver</li>
+            <li MayRequire="Seventh.Seraph.Weapons.SK">SI_SeventhSeraphSI</li>
+        </thingsToChoose>
+        <ammunition>
+            <li>60</li>
+            <li>90</li>
+            <li>60</li>
+            <li>60</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">63</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">45</li>
+            <li MayRequire="XxNelsonxX.Parabellum">80</li>
+            <li MayRequire="XxNelsonxX.Parabellum">20</li>
+            <li MayRequire="arpomo6.hmc.project">36</li>
+            <li MayRequire="arpomo6.hmc.project">35</li>
+            <li MayRequire="Seventh.Seraph.Weapons.SK">56</li>
+            <li MayRequire="Seventh.Seraph.Weapons.SK">90</li>
+        </ammunition>
+    </OrderedStuffDef>
+    
+    <!-- SMG -->
+  
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>SMGDrop</defName>
+        <label>SMG</label>
+        <description>Request a drop of random SMG with ammo.</description>
+        <minTitle>Knight</minTitle>
+        <cooldownDays>22</cooldownDays>
+        <permitPointCost>2</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>6</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>SMGDropStuff</defName>
+        <thingsToChoose>
+            <li>RF_Gun_Tecnine</li>
+            <li>RF_Gun_GreaseGun</li>
+            <li>Gun_MachinePistol</li>
+            <li>RF_Gun_TMP</li>
+            <li>RF_Gun_Skorpion</li>
+            <li>RF_Gun_Vector</li>
+            <li>Gun_MP5Gun</li>
+            <li>Gun_UMP45Gun</li>
+            <li>Gun_HeavySMG</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_Suomi</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_MP18B</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_Ppsh41_HMC</li>
+            <li MayRequire="arpomo6.hmc.project">RK_Gun_PP19Bizon</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_LightSMG</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_ChargeSMG</li>
+        </thingsToChoose>
+        <ammunition>
+            <li>300</li>
+            <li>300</li>
+            <li>300</li>
+            <li>300</li>
+            <li>300</li>
+            <li>300</li>
+            <li>300</li>
+            <li>300</li>
+            <li>300</li>
+            <li MayRequire="XxNelsonxX.Parabellum">355</li>
+            <li MayRequire="XxNelsonxX.Parabellum">224</li>
+            <li MayRequire="arpomo6.hmc.project">355</li>
+            <li MayRequire="arpomo6.hmc.project">288</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">270</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">180</li>
+        </ammunition>
+    </OrderedStuffDef>
+    
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>SMGDropPlus</defName>
+        <label>SMG +</label>
+        <description>Request a drop of random SMG with ammo. Better guns in the selection.</description>
+        <minTitle>Legatus</minTitle>
+        <cooldownDays>40</cooldownDays>
+        <prerequisite>SMGDrop</prerequisite>
+        <permitPointCost>3</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>12</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>SMGDropPlusStuff</defName>
+        <typeOfQuality>Range</typeOfQuality>
+        <quality>Excellent</quality>
+        <column>1</column>
+        <thingsToChoose>
+            <li>RF_Gun_Skorpion</li>
+            <li>RF_Gun_Vector</li>
+            <li>Gun_MP5Gun</li>
+            <li>Gun_UMP45Gun</li>
+            <li>Gun_HeavySMG</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_Tommy</li>
+            <li MayRequire="arpomo6.hmc.project">HMC_Gun_Petuch</li>
+            <li MayRequire="Seventh.Seraph.Weapons.SK">SMG_SeventhSeraphVY</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_CompactSMG</li>
+        </thingsToChoose>
+        <ammunition>
+            <li>300</li>
+            <li>300</li>
+            <li>300</li>
+            <li>300</li>
+            <li>300</li>
+            <li MayRequire="XxNelsonxX.Parabellum">250</li>
+            <li MayRequire="arpomo6.hmc.project">288</li>
+            <li MayRequire="Seventh.Seraph.Weapons.SK">300</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">280</li>
+        </ammunition>
+    </OrderedStuffDef>
+    
+    <!-- Shotgun -->
+  
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>ShotgunDrop</defName>
+        <label>shotgun</label>
+        <description>Request a drop of random shotgun with ammo. Only basic ones.</description>
+        <minTitle>Knight</minTitle>
+        <cooldownDays>25</cooldownDays>
+        <permitPointCost>2</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>8</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>ShotgunDropStuff</defName>
+        <thingsToChoose>
+            <li>Gun_M37A2_USCM</li>
+            <li>Gun_PumpShotgun</li>
+            <li>Gun_ChainShotgun</li>
+            <li>Gun_TacticalShotgun</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_DP</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_W1887L</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_W1897T</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_BA5L</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_Dvustvolka</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_ShotgunHandgun</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_LeverActionShotgun</li>
+        </thingsToChoose>
+        <ammunition>
+            <li>60</li>
+            <li>60</li>
+            <li>60</li>
+            <li>60</li>
+            <li MayRequire="XxNelsonxX.Parabellum">64</li>
+            <li MayRequire="XxNelsonxX.Parabellum">70</li>
+            <li MayRequire="XxNelsonxX.Parabellum">60</li>
+            <li MayRequire="XxNelsonxX.Parabellum">50</li>
+            <li MayRequire="arpomo6.hmc.project">30</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">60</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">60</li>
+        </ammunition>
+    </OrderedStuffDef>
+    
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>ShotgunDropPlus</defName>
+        <label>shotgun +</label>
+        <description>Request a drop of random shotgun with ammo. Better guns in the selection.</description>
+        <minTitle>Legatus</minTitle>
+        <cooldownDays>50</cooldownDays>
+        <prerequisite>ShotgunDrop</prerequisite>
+        <permitPointCost>3</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>15</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>ShotgunDropPlusStuff</defName>
+        <typeOfQuality>Range</typeOfQuality>
+        <quality>Excellent</quality>
+        <column>1</column>
+        <thingsToChoose>
+            <li>Gun_ChainShotgun</li>
+            <li>Gun_TacticalShotgun</li>
+            <li>Gun_AssaultShotgun</li>
+            <li>Gun_TacticalAutoShotgun</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_CAWS</li>
+            <li MayRequire="arpomo6.hmc.project">Spas12_HMC</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_Saiga12k</li>
+            <li MayRequire="Seventh.Seraph.Weapons.SK">SG_SeventhSeraphCQC</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_SemiAutomaticShotgun</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_ChargeShotgun</li>
+        </thingsToChoose>
+        <ammunition>
+            <li>60</li>
+            <li>45</li>
+            <li>60</li>
+            <li>60</li>
+            <li MayRequire="XxNelsonxX.Parabellum">64</li>
+            <li MayRequire="arpomo6.hmc.project">48</li>
+            <li MayRequire="arpomo6.hmc.project">48</li>
+            <li MayRequire="Seventh.Seraph.Weapons.SK">40</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">64</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">60</li>
+        </ammunition>
+    </OrderedStuffDef>
+    
+    <!-- Rifle -->
+  
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>RifleDrop</defName>
+        <label>rifle</label>
+        <description>Request a drop of random rifle with ammo. Only basic ones.</description>
+        <minTitle>Praetor</minTitle>
+        <cooldownDays>40</cooldownDays>
+        <permitPointCost>3</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>10</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>RifleDropStuff</defName>
+        <thingsToChoose>
+            <li>Gun_BoltActionRifle</li>
+            <li>RF_Gun_CXfour</li>
+            <li>RF_Gun_USC</li>
+            <li>Gun_M4A1Gun</li>
+            <li>Gun_AssaultRifle</li>
+            <li>RF_Gun_XMeight</li>
+            <li>Gun_FAMAS</li>
+            <li>Gun_AK47Gun</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_Calico</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_VG</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_Huot</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_StG44AR</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_SKS</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_AKS74U</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_VTC9_HMC</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_AssaultCarbine</li>
+        </thingsToChoose>
+        <ammunition>
+            <li>80</li>
+            <li>210</li>
+            <li>210</li>
+            <li>210</li>
+            <li>210</li>
+            <li>210</li>
+            <li>210</li>
+            <li>210</li>
+            <li MayRequire="XxNelsonxX.Parabellum">200</li>
+            <li MayRequire="XxNelsonxX.Parabellum">60</li>
+            <li MayRequire="XxNelsonxX.Parabellum">120</li>
+            <li MayRequire="XxNelsonxX.Parabellum">210</li>
+            <li MayRequire="XxNelsonxX.Parabellum">125</li>
+            <li MayRequire="XxNelsonxX.Parabellum">180</li>
+            <li MayRequire="arpomo6.hmc.project">100</li>
+            <li MayRequire="arpomo6.hmc.project">210</li>
+            <li MayRequire="arpomo6.hmc.project">210</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">210</li>
+        </ammunition>
+    </OrderedStuffDef>
+    
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>RifleDropPlus</defName>
+        <label>rifle +</label>
+        <description>Request a drop of random rifle with ammo. Better guns in the selection, advanced rifles included.</description>
+        <minTitle>Baron</minTitle>
+        <cooldownDays>90</cooldownDays>
+        <prerequisite>RifleDrop</prerequisite>
+        <permitPointCost>3</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>19</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>RifleDropPlusStuff</defName>
+        <typeOfQuality>Range</typeOfQuality>
+        <quality>Excellent</quality>
+        <column>1</column>
+        <thingsToChoose>
+            <li>Gun_M4A1Gun</li>
+            <li>Gun_AssaultRifle</li>
+            <li>RF_Gun_XMeight</li>
+            <li>Gun_FAMAS</li>
+            <li>Gun_AK47Gun</li>
+            <li>Gun_MarineSturmRifle</li>
+            <li>Gun_TacticalCombatRifle</li>
+            <li>Gun_SG553Gun</li>
+            <li>Gun_AUG</li>
+            <li>Gun_SCAR_H</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_M4Beowulf</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_FG42F</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_Mk14M</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_SKS</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_AKS74U</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_CK901_HMC</li>
+            <li MayRequire="arpomo6.hmc.project">OZ14G</li>
+            <li MayRequire="arpomo6.hmc.project">SHAK12ASH</li>
+            <li MayRequire="arpomo6.hmc.project">G11GFLver</li>
+            <li MayRequire="arpomo6.hmc.project">L85A2rifle</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_AN94A</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_AK312R</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_AEK971R</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_AK74M_HMC</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_SA58_HMC</li>
+            <li MayRequire="Seventh.Seraph.Weapons.SK">AR_seventhseraphcarbine</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_AssaultCarbine</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_BullpupRifle</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_BattleRifle</li>
+        </thingsToChoose>
+        <ammunition>
+            <li>210</li>
+            <li>210</li>
+            <li>210</li>
+            <li>210</li>
+            <li>210</li>
+            <li>210</li>
+            <li>210</li>
+            <li>210</li>
+            <li>210</li>
+            <li>210</li>
+            <li MayRequire="XxNelsonxX.Parabellum">120</li>
+            <li MayRequire="XxNelsonxX.Parabellum">160</li>
+            <li MayRequire="XxNelsonxX.Parabellum">180</li>
+            <li MayRequire="arpomo6.hmc.project">100</li>
+            <li MayRequire="arpomo6.hmc.project">210</li>
+            <li MayRequire="arpomo6.hmc.project">210</li>
+            <li MayRequire="arpomo6.hmc.project">210</li>
+            <li MayRequire="arpomo6.hmc.project">120</li>
+            <li MayRequire="arpomo6.hmc.project">192</li>
+            <li MayRequire="arpomo6.hmc.project">200</li>
+            <li MayRequire="arpomo6.hmc.project">210</li>
+            <li MayRequire="arpomo6.hmc.project">200</li>
+            <li MayRequire="arpomo6.hmc.project">210</li>
+            <li MayRequire="arpomo6.hmc.project">210</li>
+            <li MayRequire="arpomo6.hmc.project">200</li>
+            <li MayRequire="Seventh.Seraph.Weapons.SK">204</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">210</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">210</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">210</li>
+        </ammunition>
+    </OrderedStuffDef>
+    
+    <!-- Sniper -->
+  
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>SniperRifleDrop</defName>
+        <label>sniper rifle</label>
+        <description>Request a drop of random sniper rifle with ammo. Only basic ones.</description>
+        <minTitle>Baron</minTitle>
+        <cooldownDays>60</cooldownDays>
+        <permitPointCost>3</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>11</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>SniperRifleDropStuff</defName>
+        <thingsToChoose>
+            <li>Gun_SniperRifle</li>
+            <li>Gun_M42A_USCM</li>
+            <li>RF_Gun_WA2K</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_Mk12SPR</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_Vintorez</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_M24SR</li>
+            <li MayRequire="arpomo6.hmc.project">RK_Gun_SVD</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_SemiautomaticRifle</li>
+        </thingsToChoose>
+        <ammunition>
+            <li>40</li>
+            <li>40</li>
+            <li>60</li>
+            <li MayRequire="XxNelsonxX.Parabellum">60</li>
+            <li MayRequire="XxNelsonxX.Parabellum">40</li>
+            <li MayRequire="arpomo6.hmc.project">120</li>
+            <li MayRequire="arpomo6.hmc.project">40</li>
+            <li MayRequire="arpomo6.hmc.project">60</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">80</li>
+        </ammunition>
+    </OrderedStuffDef>
+    
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>SniperRifleDropPlus</defName>
+        <label>sniper rifle +</label>
+        <description>Request a drop of random sniper rifle with ammo. Advanced rifles included.</description>
+        <minTitle>Count</minTitle>
+        <cooldownDays>120</cooldownDays>
+        <prerequisite>SniperRifleDrop</prerequisite>
+        <permitPointCost>5</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>22</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>SniperRifleDropPlusStuff</defName>
+        <typeOfQuality>Range</typeOfQuality>
+        <quality>Excellent</quality>
+        <column>1</column>
+        <thingsToChoose>
+            <li>Gun_SniperRifle</li>
+            <li>Gun_M42A_USCM</li>
+            <li>RF_Gun_WA2K</li>
+            <li>RF_Gun_ARFifty</li>
+            <li>RF_Gun_HecateII</li>
+            <li>Gun_ATR</li>
+            <li>Gun_TAMSR</li>
+            <li>Gun_M82Gun</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_XM109AMPR</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_Mk12SPR</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_M24SR</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_SV98SR</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_SVLK14C_HMC</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_M200_HMC</li>
+            <li MayRequire="arpomo6.hmc.project">RK_Gun_SVCH</li>
+            <li MayRequire="arpomo6.hmc.project">RK_Gun_SVD</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_PTR127_HMC</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_OSV96_HMC</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_RT20_HMC</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_R2Lance_HMC</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_SemiautomaticRifle</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_ChargeSniperRifle</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_MarksmanRifle</li>
+        </thingsToChoose>
+        <ammunition>
+            <li>40</li>
+            <li>40</li>
+            <li>60</li>
+            <li>40</li>
+            <li>40</li>
+            <li>40</li>
+            <li>40</li>
+            <li>40</li>
+            <li MayRequire="XxNelsonxX.Parabellum">25</li>
+            <li MayRequire="XxNelsonxX.Parabellum">60</li>
+            <li MayRequire="XxNelsonxX.Parabellum">40</li>
+            <li MayRequire="arpomo6.hmc.project">40</li>
+            <li MayRequire="arpomo6.hmc.project">40</li>
+            <li MayRequire="arpomo6.hmc.project">30</li>
+            <li MayRequire="arpomo6.hmc.project">30</li>
+            <li MayRequire="arpomo6.hmc.project">40</li>
+            <li MayRequire="arpomo6.hmc.project">60</li>
+            <li MayRequire="arpomo6.hmc.project">30</li>
+            <li MayRequire="arpomo6.hmc.project">30</li>
+            <li MayRequire="arpomo6.hmc.project">20</li>
+            <li MayRequire="arpomo6.hmc.project">30</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">80</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">45</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">40</li>
+        </ammunition>
+    </OrderedStuffDef>
+    
+    <!-- Machine Guns -->
+  
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>MGDrop</defName>
+        <label>machine gun</label>
+        <description>Request a drop of random machine gun with ammo. Only basic ones.</description>
+        <minTitle>Baron</minTitle>
+        <cooldownDays>55</cooldownDays>
+        <permitPointCost>3</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>11</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>MGDropStuff</defName>
+        <thingsToChoose>
+            <li>RF_Gun_Galil</li>
+            <li>Gun_LMG</li>
+            <li>Gun_HeavyCombatRifle</li>
+            <li>Gun_HHMG</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_Lewis</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_MG0815L</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_Madsen</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_MG34L</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_RPK74M_HMC</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_RPD_HMC</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_HMC_PKP</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_HMG</li>
+        </thingsToChoose>
+        <ammunition>
+            <li>300</li>
+            <li>300</li>
+            <li>300</li>
+            <li>300</li>
+            <li MayRequire="XxNelsonxX.Parabellum">235</li>
+            <li MayRequire="XxNelsonxX.Parabellum">250</li>
+            <li MayRequire="XxNelsonxX.Parabellum">250</li>
+            <li MayRequire="XxNelsonxX.Parabellum">250</li>
+            <li MayRequire="arpomo6.hmc.project">300</li>
+            <li MayRequire="arpomo6.hmc.project">300</li>
+            <li MayRequire="arpomo6.hmc.project">300</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">300</li>
+        </ammunition>
+    </OrderedStuffDef>
+    
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>MGDropPlus</defName>
+        <label>machine gun +</label>
+        <description>Request a drop of random machine gun with ammo. Better guns in the selection, advanced machine guns included.</description>
+        <minTitle>Count</minTitle>
+        <cooldownDays>105</cooldownDays>
+        <prerequisite>MGDrop</prerequisite>
+        <permitPointCost>5</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>22</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>MGDropPlusStuff</defName>
+        <typeOfQuality>Range</typeOfQuality>
+        <quality>Excellent</quality>
+        <column>1</column>
+        <thingsToChoose>
+            <li>Gun_HeavyCombatRifle</li>
+            <li>Gun_HHMG</li>
+            <li>Gun_M56_USCM</li>
+            <li>Gun_M60GPMG</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_MG42L</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_MG45H</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_6P62_HMC</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_LWMMG_HMC</li>
+            <li MayRequire="Seventh.Seraph.Weapons.SK">MG_SevethSeraphSAW</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_HMG</li>
+        </thingsToChoose>
+        <ammunition>
+            <li>300</li>
+            <li>300</li>
+            <li>60</li>
+            <li>300</li>
+            <li MayRequire="XxNelsonxX.Parabellum">300</li>
+            <li MayRequire="XxNelsonxX.Parabellum">240</li>
+            <li MayRequire="arpomo6.hmc.project">112</li>
+            <li MayRequire="arpomo6.hmc.project">300</li>
+            <li MayRequire="Seventh.Seraph.Weapons.SK">300</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">300</li>
+        </ammunition>
+    </OrderedStuffDef>
+    
+    <!-- Launchers -->
+  
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>LauncherDrop</defName>
+        <label>grenade launcher</label>
+        <description>Request a drop of random grenade launcher, rocket launcher or flamethrower with ammo. Only basic ones. Single-use excluded.</description>
+        <minTitle>Viscount</minTitle>
+        <cooldownDays>65</cooldownDays>
+        <permitPointCost>3</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>14</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>LauncherDropStuff</defName>
+        <thingsToChoose>
+            <li>Gun_IncendiaryLauncher</li>
+            <li>FlamethrowerRM</li>
+            <li>Gun_M79GL</li>
+            <li>Gun_MilkorMGL</li>
+            <li>Gun_RPG</li>
+            <li>Gun_M5_USCM</li>
+            <li>Gun_LAW</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_Hawk</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_RGS</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_RPzB</li>
+        </thingsToChoose>
+        <ammunition>
+            <li>20</li>
+            <li>160</li>
+            <li>20</li>
+            <li>20</li>
+            <li>7</li>
+            <li>7</li>
+            <li>7</li>
+            <li MayRequire="XxNelsonxX.Parabellum">24</li>
+            <li MayRequire="XxNelsonxX.Parabellum">18</li>
+            <li MayRequire="XxNelsonxX.Parabellum">10</li>
+        </ammunition>
+    </OrderedStuffDef>
+    
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>LauncherDropPlus</defName>
+        <label>grenade launcher +</label>
+        <description>Request a drop of random grenade launcher, rocket launcher or flamethrower with ammo. Better guns in the selection, advanced machine guns included. Single-use excluded.</description>
+        <minTitle>Count</minTitle>
+        <cooldownDays>130</cooldownDays>
+        <prerequisite>LauncherDrop</prerequisite>
+        <permitPointCost>5</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>22</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>LauncherDropPlusStuff</defName>
+        <typeOfQuality>Range</typeOfQuality>
+        <quality>Excellent</quality>
+        <column>1</column>
+        <thingsToChoose>
+            <li>Gun_IncendiaryLauncher</li>
+            <li>FlamethrowerRM</li>
+            <li>Gun_MilkorMGL</li>
+            <li>Gun_RPG</li>
+            <li>Gun_M5_USCM</li>
+            <li MayRequire="XxNelsonxX.Parabellum">Pa_FLASH</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_XM25_HMC</li>
+        </thingsToChoose>
+        <ammunition>
+            <li>20</li>
+            <li>150</li>
+            <li>20</li>
+            <li>7</li>
+            <li>7</li>
+            <li MayRequire="XxNelsonxX.Parabellum">8</li>
+            <li MayRequire="arpomo6.hmc.project">18</li>
+        </ammunition>
+    </OrderedStuffDef>
+
+    <!-- Energy -->
+
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>BlasterDrop</defName>
+        <label>blasters</label>
+        <description>Request a drop of random blaster weapon with ammo.</description>
+        <minTitle>Count</minTitle>
+        <cooldownDays>120</cooldownDays>
+        <permitPointCost>6</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>22</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>BlasterDropStuff</defName>
+        <typeOfQuality>Range</typeOfQuality>
+        <quality>Good</quality>
+        <thingsToChoose>
+            <li>Gun_Phalanx</li>
+            <li>Gun_BlackWidow</li>
+            <li>Gun_Harrier</li>
+            <li>Gun_Predator</li>
+            <li>Gun_Hurricane</li>
+            <li>Gun_AvengerA</li>
+        </thingsToChoose>
+        <ammunition>
+            <li>80</li>
+            <li>60</li>
+            <li>90</li>
+            <li>32</li>
+            <li>36</li>
+            <li>100</li>
+        </ammunition>
+    </OrderedStuffDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>LasersDrop</defName>
+        <label>laser rifles</label>
+        <description>Request a drop of random laser rifle with ammo.</description>
+        <minTitle>Count</minTitle>
+        <cooldownDays>120</cooldownDays>
+        <permitPointCost>6</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>22</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>LasersDropStuff</defName>
+        <typeOfQuality>Range</typeOfQuality>
+        <quality>Good</quality>
+        <column>1</column>
+        <thingsToChoose>
+            <li>Gun_Mantis</li>
+            <li>LaserRifle</li>
+            <li>HeavyLasergun</li>
+            <li>BurstLasergun</li>
+            <li MayRequire="arpomo6.hmc.project">Gun_AK2077_HMC</li>
+            <li MayRequire="arpomo6.hmc.project">HMC_Gun_LaserRifle</li>
+            <li MayRequire="arpomo6.hmc.project">HMC_Gun_ScatterLaser</li>
+        </thingsToChoose>
+        <ammunition>
+            <li>20</li>
+            <li>60</li>
+            <li>75</li>
+            <li>90</li>
+            <li MayRequire="arpomo6.hmc.project">120</li>
+            <li MayRequire="arpomo6.hmc.project">45</li>
+            <li MayRequire="arpomo6.hmc.project">30</li>
+        </ammunition>
+    </OrderedStuffDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>PlasmerDrop</defName>
+        <label>plasmers</label>
+        <description>Request a drop of random plasmer with ammo.</description>
+        <minTitle>Count</minTitle>
+        <cooldownDays>120</cooldownDays>
+        <permitPointCost>6</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>22</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>PlasmerDropStuff</defName>
+        <typeOfQuality>Range</typeOfQuality>
+        <quality>Good</quality>
+        <thingsToChoose>
+            <li>Gun_PlasmaPistol</li>
+            <li>Gun_PlasmaPrecision</li>
+            <li>Gun_PlasmaCarbine</li>
+            <li>Gun_PlasmaShotgun</li>
+            <li>Gun_PlasmaRifle</li>
+            <li MayRequire="arpomo6.hmc.project">HMC_PlasmaSMG</li>
+            <li MayRequire="arpomo6.hmc.project">Mag_Rifle_HMC</li>
+            <li MayRequire="arpomo6.hmc.project">Mag_MG_HMC</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_ChargePistol</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_ChargeLMG</li>
+        </thingsToChoose>
+        <ammunition>
+            <li>30</li>
+            <li>20</li>
+            <li>60</li>
+            <li>24</li>
+            <li>70</li>
+            <li MayRequire="arpomo6.hmc.project">160</li>
+            <li MayRequire="arpomo6.hmc.project">60</li>
+            <li MayRequire="arpomo6.hmc.project">60</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">72</li>
+            <li MayRequire="Mlie.ApexRimworldLegends.SK">96</li>
+        </ammunition>
+    </OrderedStuffDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>ChargeRailDrop</defName>
+        <label>charge rifles</label>
+        <description>Request a drop of random charge rifle with ammo.</description>
+        <minTitle>Count</minTitle>
+        <cooldownDays>140</cooldownDays>
+        <permitPointCost>7</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>22</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>ChargeRailDropStuff</defName>
+        <typeOfQuality>Range</typeOfQuality>
+        <quality>Good</quality>
+        <column>1</column>
+        <thingsToChoose>
+            <li>Gun_RailgunMKI</li>
+            <li>Gun_ChargeRifle</li>
+            <li>Gun_Splitter</li>
+        </thingsToChoose>
+        <ammunition>
+            <li>12</li>
+            <li>90</li>
+            <li>120</li>
+        </ammunition>
+    </OrderedStuffDef>
+</Defs>

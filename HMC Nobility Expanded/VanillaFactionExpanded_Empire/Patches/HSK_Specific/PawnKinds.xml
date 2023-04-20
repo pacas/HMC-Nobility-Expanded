@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/PawnKindDef[@Name="VFEE_DeserterBase"]/itemQuality</xpath>
+                <value>
+                    <itemQuality>Poor</itemQuality>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/PawnKindDef[@Name="VFEE_DeserterBase"]/weaponMoney</xpath>
+                <value>
+                    <weaponMoney>2800~3600</weaponMoney>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/PawnKindDef[@Name="VFEE_DeserterBase"]/apparelMoney</xpath>
+                <value>
+                    <apparelMoney>4500~7000</apparelMoney>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/PawnKindDef[@Name="VFEE_DeserterBase"]/apparelTags</xpath>
+                <value>
+                    <apparelTags>
+                        <li>IndustrialAdvanced</li>
+                        <li>IndustrialMilitaryBasic</li>
+                        <li>IndustrialMilitaryAdvanced</li>
+                        <li>OrionMedium</li>
+                        <li>OrionScout</li>
+                        <li>SyndicateLight</li>
+                        <li>SyndicateMedium</li>
+                        <li>SyndicateScout</li>
+                    </apparelTags>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/PawnKindDef[@Name="VFEE_DeserterBase"]/techHediffsMoney</xpath>
+                <value>
+                    <techHediffsMoney>2500~3500</techHediffsMoney>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/PawnKindDef[@Name="VFEE_DeserterBase"]</xpath>
+                <value>
+                    <combatPower>320</combatPower>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/PawnKindDef[@Name="JanissaryBase"]/apparelRequired</xpath>
+                <value>
+                    <apparelRequired>
+                        <li>VFEE_Apparel_JanissaryHelmet</li>
+                        <li>VFEE_Apparel_JanissaryCuirass</li>
+                    </apparelRequired>
+                </value>
+            </li>
+            <li Class="PatchOperationAttributeSet">
+                <xpath>Defs/PawnKindDef[defName="VFEE_Empire_Fighter_Absolver"]/apparelRequired</xpath>
+                <attribute>Inherit</attribute>
+                <value>False</value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

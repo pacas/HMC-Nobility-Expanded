@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <RoyalTitleDef Name="DukeBase" Abstract="True">
+    </RoyalTitleDef>
+    <RoyalTitleDef Name="ConsulBase" Abstract="True">
+    </RoyalTitleDef>
+    <RoyalTitleDef Name="StellarchBase" Abstract="True">
+    </RoyalTitleDef>
+
+</Defs>

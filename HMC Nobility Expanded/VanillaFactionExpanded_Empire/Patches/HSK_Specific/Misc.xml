@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/StorytellerDef[defName = "VFEE_AriadneArchduchess"]/comps/li[@Class="VFEEmpire.StorytellerCompProperties_WealthSteps"]/wealthIncrease</xpath>
+                <value>
+                    <wealthIncrease>10000</wealthIncrease>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

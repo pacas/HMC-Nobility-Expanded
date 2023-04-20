@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <OrderedStuffDef ParentName="OrderedThingsBase">
+        <defName>VFEI_ClothDropStuff</defName>
+    </OrderedStuffDef>
+
+    <OrderedStuffDef ParentName="OrderedThingsBase">
+        <defName>VFEI_WoodDropStuff</defName>
+        <column>1</column>
+    </OrderedStuffDef>
+
+    <OrderedStuffDef ParentName="OrderedThingsBase">
+        <defName>VFEI_ChemfuelDropStuff</defName>
+    </OrderedStuffDef>
+
+    <OrderedStuffDef ParentName="OrderedThingsBase">
+        <defName>VFEI_JadeDropStuff</defName>
+        <column>1</column>
+    </OrderedStuffDef>
+
+    <OrderedStuffDef ParentName="OrderedThingsBase">
+        <defName>VFEI_ComponentDropStuff</defName>
+    </OrderedStuffDef>
+
+    <OrderedStuffDef ParentName="OrderedThingsBase">
+        <defName>VFEI_ComponentSpacerDropStuff</defName>
+        <column>1</column>
+    </OrderedStuffDef>
+
+    <OrderedStuffDef ParentName="OrderedThingsBase">
+        <defName>VFEI_CallTechfriarStuff</defName>
+    </OrderedStuffDef>
+
+    <OrderedStuffDef ParentName="OrderedThingsBase">
+        <defName>VFEI_CallAbsolverStuff</defName>
+        <column>1</column>
+    </OrderedStuffDef>
+
+
+    <OrderedStuffDef ParentName="OrderedThingsBase">
+        <defName>VFEI_StrikerTurretDropStuff</defName>
+    </OrderedStuffDef>
+
+    <OrderedStuffDef ParentName="OrderedThingsBase">
+        <defName>VFEI_BurnoutShieldDropStuff</defName>
+        <column>1</column>
+    </OrderedStuffDef>
+
+    <OrderedStuffDef ParentName="OrderedThingsBase">
+        <defName>VFEI_CallEvacShuttleStuff</defName>
+    </OrderedStuffDef>
+    
+    <OrderedStuffDef ParentName="OrderedThingsBase">
+        <defName>VFEI_CallOrbitalSlicingBeamStuff</defName>
+        <column>1</column>
+    </OrderedStuffDef>
+
+</Defs>

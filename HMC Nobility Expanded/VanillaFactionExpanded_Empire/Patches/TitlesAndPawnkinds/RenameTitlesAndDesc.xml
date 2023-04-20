@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ExpectationDef[defName="VFEE_Stellar"]/label</xpath>
+                <value>
+                    <label>galaxy elite</label>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/IncidentDef[defName="VFEE_GiveQuest_EndGame_Stellarch"]/label</xpath>
+                <value>
+                    <label>elite ascent</label>
+                </value>
+            </li>
+            
+            
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/AbilityDef[defName="VFEE_BestowFreeholder"]/label</xpath>
+                <value>
+                    <label>bestow: Quirite</label>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/AbilityDef[defName="VFEE_BestowFreeholder"]/description</xpath>
+                <value>
+                    <description>Bestows the Quirite title on a selected pawn. That pawn receives 1 Honor. Can’t be cast on a pawn that’s already a Quirite or higher. Has a 3 day cooldown.</description>
+                </value>
+            </li>
+            
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/AbilityDef[defName="VFEE_BestowYeoman"]/label</xpath>
+                <value>
+                    <label>bestow: Immune</label>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/AbilityDef[defName="VFEE_BestowYeoman"]/description</xpath>
+                <value>
+                    <description>Bestows the Immune title on a selected pawn. That pawn receives 7 Honor. Can’t be cast on a pawn that’s already a Immune or higher. Has a 3 day cooldown.</description>
+                </value>
+            </li>
+            
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/AbilityDef[defName="VFEE_BestowAcolyte"]/label</xpath>
+                <value>
+                    <label>bestow: Dean</label>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/AbilityDef[defName="VFEE_BestowAcolyte"]/description</xpath>
+                <value>
+                    <description>Bestows the Dean title on a selected pawn. That pawn now has 14 honor. Can’t be cast on a pawn that’s already a Dean or higher. Has a 3 day cooldown.</description>
+                </value>
+            </li>
+            
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/AbilityDef[defName="VFEE_BestowKnight"]/label</xpath>
+                <value>
+                    <label>bestow: Centurion</label>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/AbilityDef[defName="VFEE_BestowKnight"]/description</xpath>
+                <value>
+                    <description>Bestows the Centurion title on a selected pawn. That pawn now has 23 honor. Can’t be cast on a pawn that’s already a Centurion or higher. Has a 3 day cooldown.</description>
+                </value>
+            </li>
+            
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/AbilityDef[defName="VFEE_BestowPraetor"]/label</xpath>
+                <value>
+                    <label>bestow: Tribune</label>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/AbilityDef[defName="VFEE_BestowPraetor"]/description</xpath>
+                <value>
+                    <description>Bestows the Tribune title on a selected pawn. That pawn now has 34 honor. Can’t be cast on a pawn that’s already a Tribune or higher. Has a 3 day cooldown.</description>
+                </value>
+            </li>
+            
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/AbilityDef[defName="VFEE_BestowBaron"]/label</xpath>
+                <value>
+                    <label>bestow: Lord</label>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/AbilityDef[defName="VFEE_BestowBaron"]/description</xpath>
+                <value>
+                    <description>Bestows the Lord/Lady title on a selected pawn. That pawn now has 60 honor. Can’t be cast on a pawn that’s already a Lord/Lady or higher. Has a 3 day cooldown.</description>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/AbilityDef[defName="VFEE_BestowCount"]/description</xpath>
+                <value>
+                    <description>Bestows the Count/Countess title on a selected pawn. That pawn now has 94 honor. Can’t be cast on a pawn that’s already a Count/Countess or higher. Has a 3 day cooldown.</description>
+                </value>
+            </li>
+            
+            
+            
+            
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/RoyalTitleDef[defName="Margrave"]/description</xpath>
+                <value>
+                    <description>The margrave is practically the highest rung of the middle-ranking imperial nobility.\n\nIn the Empire, the margrave has the same powers as the duke, but in time of war he must fight under the duke's banner.\n\nPermit points given - 6 points.</description>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/RoyalTitleDef[defName="Duke"]/description</xpath>
+                <value>
+                    <description>The Imperial title of duke is the highest of the middle nobility.\n\nIn the Empire, dukes control provinces, mega-cities, or moons. At war, a duke can field a division-level force, or a fleet with capital ships and dozens of support craft.\n\nPermit points given - 6 points.</description>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/RoyalTitleDef[defName="Consul"]/description</xpath>
+                <value>
+                    <description>The title of Archduke is the lowest level of the Imperial highest nobility.\n\nIn the Empire, Archduchess command entire regions of planets, controlling the lands entrusted to them by the head of the House. In wartime, the Archduke can lead an entire army consisting of several divisions, supported by several space fleets. Some command from a super-capital ship or control space-based megastructures.\n\nPermit points given - 7 points.</description>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/RoyalTitleDef[defName="MinorHead"]/description</xpath>
+                <value>
+                    <description>The title of head of a Minor House is practically a dream for any imperial nobleman.\n\nThe heads of a Minor House rule parts of planets or important organizations throughout the Empire. Their power is limited only to the Great Houses and the Padishah-Emperor himself. Despite the seemingly enormous possibilities, such a title is extremely dangerous - many heads of Houses do not die of natural causes.\n\nPermit points given - 8 points.</description>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/RoyalTitleDef[defName="Stellarch"]/description</xpath>
+                <value>
+                    <description>In the Empire, due to navigational problems and the cost of interstellar travel, the heads of the Great Houses rule their systems with a high degree of independence. Each swears allegiance to the Padishah-Emperor, but because the Emperor can be many light years away, the heads of the Great Houses often do not contact him directly for years.\n\nPermit points given - 12 points.</description>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

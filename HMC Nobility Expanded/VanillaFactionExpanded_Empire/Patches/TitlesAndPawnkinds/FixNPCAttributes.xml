@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationAttributeRemove">
+                <xpath>Defs/RoyalTitleDef[defName="Duke" or defName="Consul" or defName="Stellarch"]</xpath>
+                <attribute>Name</attribute>
+            </li>
+            <li Class="PatchOperationAttributeRemove">
+                <xpath>Defs/RoyalTitleDef[defName="Duke" or defName="Consul" or defName="Stellarch"]</xpath>
+                <attribute>Abstract</attribute>
+            </li>
+            
+            <li Class="PatchOperationAttributeSet">
+                <xpath>Defs/RoyalTitleDef[defName="Duke" or defName="Consul" or defName="Stellarch" or defName="Margrave" or defName="MinorHead"]</xpath>
+                <attribute>ParentName</attribute>
+                <value>BaseEmpireTitle</value>
+            </li>
+            
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/RoyalTitleDef[@ParentName="DukeBase" or @ParentName="ConsulBase" or @ParentName="StellarchBase"]</xpath>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

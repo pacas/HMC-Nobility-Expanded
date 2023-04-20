@@ -26,6 +26,8 @@
 		<li>Ludeon.RimWorld.Ideology</li>
         <li>skyarkhangel.HSK</li>
         <li>skyarkhangel.royaltytranslation</li>
+        <li>oskarpotocki.vfe.empire</li>
+        <li>vanillaexpanded.vpsycastse</li>
     </loadAfter>
     <description>Full rework of the empire system. New titles, new privileges, new mechanics and surely better gameplay!</description>
 </ModMetaData>

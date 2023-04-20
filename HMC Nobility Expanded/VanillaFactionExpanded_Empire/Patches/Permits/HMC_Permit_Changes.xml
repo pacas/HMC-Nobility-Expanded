@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+             <li Class="PatchOperationReplace">
+                <xpath>/Defs/RoyalTitlePermitDef[defName="IndustrialArmorDrop"]/minTitle</xpath>
+                <value>
+                    <minTitle>Praetor</minTitle>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/RoyalTitlePermitDef[defName="SpacerArmorDropPlus"]/minTitle</xpath>
+                <value>
+                    <minTitle>Count</minTitle>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/RoyalTitlePermitDef[defName="UltraArmorDrop"]/minTitle</xpath>
+                <value>
+                    <minTitle>Margrave</minTitle>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/RoyalTitlePermitDef[defName="UltraArmorDropPlus"]/minTitle</xpath>
+                <value>
+                    <minTitle>Consul</minTitle>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/RoyalTitlePermitDef[defName="ShotgunDropPlus"]/minTitle</xpath>
+                <value>
+                    <minTitle>Baron</minTitle>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/RoyalTitlePermitDef[defName="RifleDropPlus"]/minTitle</xpath>
+                <value>
+                    <minTitle>Viscount</minTitle>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/RoyalTitlePermitDef[
+                defName="SniperRifleDropPlus" or
+                defName="LauncherDropPlus" or
+                defName="BlasterDrop" or
+                defName="LasersDrop" or
+                defName="PlasmerDrop" or
+                defName="ChargeRailDrop"
+                ]/minTitle</xpath>
+                <value>
+                    <minTitle>Margrave</minTitle>
+                </value>
+            </li>
+            
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/RoyalTitlePermitDef[
+                defName="HighTechLightAutoTurretDrop" or
+                defName="HighTechHeavyAutoTurretDrop"
+                ]/minTitle</xpath>
+                <value>
+                    <minTitle>Margrave</minTitle>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

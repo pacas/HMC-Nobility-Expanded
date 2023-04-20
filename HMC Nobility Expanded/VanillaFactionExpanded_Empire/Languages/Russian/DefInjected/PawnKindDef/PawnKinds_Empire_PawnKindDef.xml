@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  
+  <!-- EN: emperor -->
+  <VFEE_Empire_Royal_Emperor.label>император</VFEE_Empire_Royal_Emperor.label>
+  <!-- EN: Plural emperor -->
+  <VFEE_Empire_Royal_Emperor.labelPlural>императоры</VFEE_Empire_Royal_Emperor.labelPlural>
+  <!-- EN: Male emperor -->
+  <VFEE_Empire_Royal_Emperor.labelMale>император</VFEE_Empire_Royal_Emperor.labelMale>
+  <!-- EN: Male Plural emperor -->
+  <VFEE_Empire_Royal_Emperor.labelMalePlural>императоры</VFEE_Empire_Royal_Emperor.labelMalePlural>
+  <!-- EN: Female emperor -->
+  <VFEE_Empire_Royal_Emperor.labelFemale>императрица</VFEE_Empire_Royal_Emperor.labelFemale>
+  <!-- EN: Female Plural emperor -->
+  <VFEE_Empire_Royal_Emperor.labelFemalePlural>императрицы</VFEE_Empire_Royal_Emperor.labelFemalePlural>
+  
+  <!-- EN: absolver -->
+  <VFEE_Empire_Fighter_Absolver.label>избавитель</VFEE_Empire_Fighter_Absolver.label>
+  <!-- EN: Plural absolver -->
+  <VFEE_Empire_Fighter_Absolver.labelPlural>избавители</VFEE_Empire_Fighter_Absolver.labelPlural>
+  <!-- EN: Male absolver -->
+  <VFEE_Empire_Fighter_Absolver.labelMale>избавитель</VFEE_Empire_Fighter_Absolver.labelMale>
+  <!-- EN: Male Plural absolver -->
+  <VFEE_Empire_Fighter_Absolver.labelMalePlural>избавители</VFEE_Empire_Fighter_Absolver.labelMalePlural>
+  <!-- EN: Female absolver -->
+  <VFEE_Empire_Fighter_Absolver.labelFemale>избавитель</VFEE_Empire_Fighter_Absolver.labelFemale>
+  <!-- EN: Female Plural absolver -->
+  <VFEE_Empire_Fighter_Absolver.labelFemalePlural>избавители</VFEE_Empire_Fighter_Absolver.labelFemalePlural>
+  
+  <!-- EN: techfriar -->
+  <VFEE_Empire_Royal_Techfriar.label>техномонах</VFEE_Empire_Royal_Techfriar.label>
+  <!-- EN: Plural techfriar -->
+  <VFEE_Empire_Royal_Techfriar.labelPlural>техномонахи</VFEE_Empire_Royal_Techfriar.labelPlural>
+  <!-- EN: Male techfriar -->
+  <VFEE_Empire_Royal_Techfriar.labelMale>техномонах</VFEE_Empire_Royal_Techfriar.labelMale>
+  <!-- EN: Male Plural techfriar -->
+  <VFEE_Empire_Royal_Techfriar.labelMalePlural>техномонахи</VFEE_Empire_Royal_Techfriar.labelMalePlural>
+  <!-- EN: Female techfriar -->
+  <VFEE_Empire_Royal_Techfriar.labelFemale>техномонахиня</VFEE_Empire_Royal_Techfriar.labelFemale>
+  <!-- EN: Female Plural techfriar -->
+  <VFEE_Empire_Royal_Techfriar.labelFemalePlural>техномонахини</VFEE_Empire_Royal_Techfriar.labelFemalePlural>
+</LanguageData>
