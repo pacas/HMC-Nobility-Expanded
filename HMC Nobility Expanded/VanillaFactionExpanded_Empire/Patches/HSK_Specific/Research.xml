@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationAttributeSet">
+                <xpath>Defs/ResearchProjectDef[defName="VFEE_PipeOrgans" or defName="VFEE_StellicThrone"]</xpath>
+                <attribute>ParentName</attribute>
+                <value>IndustrialBase</value>
+            </li>
+            <li Class="PatchOperationAttributeSet">
+                <xpath>Defs/ResearchProjectDef[defName="VFEE_NobleDecorations"]</xpath>
+                <attribute>ParentName</attribute>
+                <value>MedievalBase</value>
+            </li>
+            <li Class="PatchOperationAttributeSet">
+                <xpath>Defs/ResearchProjectDef[defName="VFEE_JanissaryGear"]</xpath>
+                <attribute>ParentName</attribute>
+                <value>HitechBase</value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="VFEE_PipeOrgans"]/baseCost</xpath>
+                <value>
+                    <baseCost>700</baseCost>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="VFEE_PipeOrgans"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>7.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="VFEE_PipeOrgans"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>6.00</researchViewY>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="VFEE_PipeOrgans"]</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+            
+            
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="VFEE_NobleDecorations"]/prerequisites</xpath>
+                <value>
+                    <prerequisites>
+                        <li>Tables_B2</li>
+                    </prerequisites>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="VFEE_NobleDecorations"]/baseCost</xpath>
+                <value>
+                    <baseCost>600</baseCost>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="VFEE_NobleDecorations"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>5.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="VFEE_NobleDecorations"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>7.00</researchViewY>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="VFEE_NobleDecorations"]</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="VFEE_StellicThrone"]/baseCost</xpath>
+                <value>
+                    <baseCost>700</baseCost>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="VFEE_StellicThrone"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>6.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="VFEE_StellicThrone"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>7.00</researchViewY>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="VFEE_StellicThrone"]</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="VFEE_JanissaryGear"]/prerequisites</xpath>
+                <value>
+                    <prerequisites>
+                        <li>Apparel_D1</li>
+                    </prerequisites>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="VFEE_JanissaryGear"]/baseCost</xpath>
+                <value>
+                    <baseCost>700</baseCost>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="VFEE_JanissaryGear"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>20.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="VFEE_JanissaryGear"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>40.00</researchViewY>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="VFEE_JanissaryGear"]</xpath>
+                <value>
+                    <tab>Apparel_SK</tab>
+                </value>
+            </li>
+            <li Class="PatchOperationAddModExtension">
+                <xpath>Defs/ResearchProjectDef[
+                defName="VFEE_PipeOrgans" or
+                defName="VFEE_JanissaryGear" or
+                defName="VFEE_NobleDecorations" or
+                defName="VFEE_StellicThrone"]</xpath>
+                <value>
+                    <li Class="ResearchTreeSK.ResearchTreeSKModExtension"/>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

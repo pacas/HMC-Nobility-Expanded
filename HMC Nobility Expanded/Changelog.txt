@@ -1,5 +1,31 @@
 ----------------------------------------------------------------------
 
+- Changelog "HMC Empire Rewards" v0.12.1 (1.4):
+
+1) Research is now corrected and displayed correctly.
+2) Fixed the problem with the ability to invite the heads of the great houses to visit.
+
+1) Исследования теперь исправлены и отображаются правильно.
+2) Убрана проблема с возможностью пригласить глав великих домов в гости.
+
+----------------------------------------------------------------------
+
+- Changelog "HMC Empire Rewards" v0.12 (1.4):
+
+1) Compatibility with Vanilla Factions Expanded - Empire plus full rebalance with active mod.
+2) On top of that, added translation for VFEE - thanks to Mewn Goddess.
+https://steamcommunity.com/sharedfiles/filedetails/?id=2942002763
+3) Fixed localization errors.
+4) Sligtly adjusted balance on non-VFEE version.
+
+1) Совместимость с Vanilla Factions Expanded - Empire плюс полный ребаланс с активным модом.
+2) Кроме того, добавлен перевод для VFEE - спасибо Mewn Goddess.
+https://steamcommunity.com/sharedfiles/filedetails/?id=2942002763
+3) Исправлены ошибки локализации.
+4) Немного подправлен баланс в версии без VFEE.
+
+----------------------------------------------------------------------
+
 - Changelog "HMC Empire Rewards" v0.11 (1.4):
 
 1) Compatibility with HSK More Content, Parabellum, Apex Rimworld Legends and Seventh Seraph Weapons.
