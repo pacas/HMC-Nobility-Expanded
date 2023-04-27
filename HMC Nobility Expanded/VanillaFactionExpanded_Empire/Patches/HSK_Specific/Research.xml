@@ -15,7 +15,7 @@
             <li Class="PatchOperationAttributeSet">
                 <xpath>Defs/ResearchProjectDef[defName="VFEE_JanissaryGear"]</xpath>
                 <attribute>ParentName</attribute>
-                <value>HitechBase</value>
+                <value>HitechMultiBase</value>
             </li>
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="VFEE_PipeOrgans"]/baseCost</xpath>
