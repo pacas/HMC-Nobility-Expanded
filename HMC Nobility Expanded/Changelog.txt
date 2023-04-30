@@ -1,5 +1,17 @@
 ----------------------------------------------------------------------
 
+- Changelog "HMC Empire Rewards" v0.12.2 (1.4):
+
+1) Fixed recipes for new weapons ammo and added recipes for the guns itself.
+2) Fixed the problem with Charge Thumper stuff - now gun has no stuff and behave like others.
+3) Translated untranslated strings about recipes and guns.
+
+1) Исправлены рецепты боеприпасов для нового оружия и добавлены рецепты для самого оружия.
+2) Исправлена проблема со материалами для ударного энергодробовика - теперь оружие не имеет материалов и ведет себя как все остальные.
+3) Переведены непереведенные строки о рецептах и оружии.
+
+----------------------------------------------------------------------
+
 - Changelog "HMC Empire Rewards" v0.12.1 (1.4):
 
 1) Research is now corrected and displayed correctly.

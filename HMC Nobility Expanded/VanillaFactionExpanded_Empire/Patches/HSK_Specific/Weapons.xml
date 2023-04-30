@@ -2,106 +2,63 @@
 <Patch>
     <Operation Class="PatchOperationSequence">
         <operations>
-
-            <li Class="PatchOperationConditional">
-                <xpath>Defs/ThingDef[defName="VFEE_Gun_ChargeThumper"]/recipeMaker/researchPrerequisite</xpath>
-                <match Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="VFEE_Gun_ChargeThumper"]/recipeMaker/researchPrerequisite</xpath>
-                    <value>
-                        <researchPrerequisite>Plasma_weapons_D</researchPrerequisite>
-                    </value>
-                </match>
-                <nomatch Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="VFEE_Gun_ChargeThumper"]/recipeMaker</xpath>
-                    <value>
-                        <researchPrerequisite>Plasma_weapons_D</researchPrerequisite>
-                    </value>
-                </nomatch>
-            </li>
-
             <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[defName="VFEE_Gun_ChargeThumper"]/recipeMaker/recipeUsers</xpath>
+                <xpath>Defs/ThingDef[defName="VFEE_Gun_ChargeThumper"]/weaponClasses</xpath>
                 <value>
-                    <recipeUsers Inherit="False">
-                        <li>MechWeaponCraftingWorkTable</li>
-                    </recipeUsers>
+                    <weaponClasses>
+                        <li>Ultratech</li>
+                    </weaponClasses>
                 </value>
             </li>
-            
             <li Class="PatchOperationRemove">
                 <xpath>Defs/ThingDef[defName="VFEE_Gun_ChargeThumper"]/costList | 
                     Defs/ThingDef[defName="VFEE_Gun_ChargeThumper"]/stuffCategories |
                     Defs/ThingDef[defName="VFEE_Gun_ChargeThumper"]/costStuffCount |
+                    Defs/ThingDef[defName="VFEE_Gun_ChargeThumper"]/recipeMaker |
                     Defs/ThingDef[defName="VFEE_Gun_ChargeThumper"]/smeltProducts
                 </xpath>
             </li>
-
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="VFEE_Gun_ChargeThumper"]</xpath>
                 <value>
-                    <stuffCategories>
-                        <li>StrongMetallic</li>
-                    </stuffCategories>
-                    <costStuffCount>40</costStuffCount>
-                    <costList>
-                        <AdvSniper_Component>2</AdvSniper_Component>
-                        <Plasma_Component>5</Plasma_Component>
-                        <Weapon_Parts>14</Weapon_Parts>
-                        <ComponentSpacer>18</ComponentSpacer>
-                        <Plastic>70</Plastic>
-                    </costList>
+                    <thingCategories Inherit="False">
+                        <li>Futuristic</li>
+                    </thingCategories>
                     <smeltProducts>
                         <Plasma_Component>1</Plasma_Component>
+                        <AdvSniper_Component>1</AdvSniper_Component>
                         <Weapon_Parts>7</Weapon_Parts>
                     </smeltProducts>
                 </value>
             </li>
-
             <li Class="PatchOperationRemove">
                 <xpath>Defs/ThingDef[defName="VEE_Gun_Fletcher"]/costList</xpath>
             </li>
-
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VEE_Gun_Fletcher"]/weaponClasses</xpath>
+                <value>
+                    <weaponClasses>
+                        <li>Ultratech</li>
+                    </weaponClasses>
+                </value>
+            </li>
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="VEE_Gun_Fletcher"]</xpath>
                 <value>
-                    <recipeMaker>
-                        <workAmount>70000</workAmount>
-                        <researchPrerequisite>Plasma_weapons_D</researchPrerequisite>
-                        <workSpeedStat>SmithingSpeed</workSpeedStat>
-                        <effectWorking>Smith</effectWorking>
-                        <soundWorking>Interact_Repair</soundWorking>
-                        <workSkill>Crafting</workSkill>
-                        <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
-                        <skillRequirements>
-                            <Crafting>15</Crafting>
-                        </skillRequirements>
-                        <recipeUsers Inherit="False">
-                            <li>MechWeaponCraftingWorkTable</li>
-                        </recipeUsers>
-                        <defaultIngredientFilter>
-                            <stuffCategoriesToAllow>
-                                <li>StrongMetallic</li>
-                            </stuffCategoriesToAllow>
-                        </defaultIngredientFilter>
-                    </recipeMaker>
-                    <stuffCategories>
-                        <li>StrongMetallic</li>
-                    </stuffCategories>
-                    <costStuffCount>40</costStuffCount>
-                    <costList>
-                        <AdvSniper_Component>2</AdvSniper_Component>
-                        <Laser_Component>5</Laser_Component>
-                        <Weapon_Parts>14</Weapon_Parts>
-                        <ComponentSpacer>18</ComponentSpacer>
-                        <Plastic>70</Plastic>
-                    </costList>
+                    <thingCategories Inherit="False">
+                        <li>Futuristic</li>
+                    </thingCategories>
                     <smeltProducts>
                         <Weapon_Parts>7</Weapon_Parts>
-                        <Laser_Component>1</Laser_Component>
+                        <AdvSniper_Component>1</AdvSniper_Component>
                     </smeltProducts>
                 </value>
             </li>
+            <li Class="PatchOperationAttributeSet">
+                <xpath>Defs/ThingDef[defName="VEE_Gun_Fletcher" or defName="VFEE_Gun_ChargeThumper"]</xpath>
+                <attribute>ParentName</attribute>
+                <value>BaseGun_LongBarreled</value>
+            </li>
         </operations>
-
     </Operation>
 </Patch>

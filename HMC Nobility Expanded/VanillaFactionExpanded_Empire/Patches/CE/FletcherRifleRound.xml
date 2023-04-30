@@ -7,14 +7,14 @@
                 <value>
                     <ThingCategoryDef>
                         <defName>AmmoFletcherDart</defName>
-                        <label>Fletcher Dart</label>
+                        <label>Flechette Dart</label>
                         <parent>AmmoAdvanced</parent>
                         <iconPath>UI/Icons/ThingCategories/CaliberCharge</iconPath>
                     </ThingCategoryDef>
 
                     <CombatExtended.AmmoSetDef>
                         <defName>AmmoSet_FletcherDart</defName>
-                        <label>Fletcher Dart</label>
+                        <label>Flechette Dart</label>
                         <ammoTypes>
                             <Ammo_FletcherDart>Bullet_FletcherDart</Ammo_FletcherDart>
                         </ammoTypes>
@@ -22,7 +22,8 @@
 
                     <ThingDef Class="CombatExtended.AmmoDef" ParentName="12x64mmChargedBase">
                         <defName>Ammo_FletcherDart</defName>
-                        <label>fletcher cartridge</label>
+                        <label>Flechette cartridge</label>
+                        <description>Injection darts with a mixture of different acids allow you to dissolve enemies on impact. Death is not guaranteed, but very likely.</description>
                         <thingCategories>
                             <li>AmmoFletcherDart</li>
                         </thingCategories>
@@ -38,7 +39,7 @@
 
                     <ThingDef ParentName="SK_BaseBullet">
                         <defName>Bullet_FletcherDart</defName>
-                        <label>fletcher dart</label>
+                        <label>Flechette dart</label>
                         <graphicData>
                             <texPath>Projectile/Bullet_Fletcher</texPath>
                             <graphicClass>Graphic_Single</graphicClass>
@@ -54,11 +55,11 @@
                         </projectile>
                     </ThingDef>
 
-                    <RecipeDef ParentName="ChargeAmmoRecipeBase">
+                    <RecipeDef ParentName="AmmoRecipeBase">
                         <defName>MakeAmmo_FletcherDart</defName>
-                        <label>make fletcher dart cartridge x50</label>
-                        <description>Craft 50 fletcher dart cartridges.</description>
-                        <jobString>Making fletcher dart cartridges.</jobString>
+                        <label>make flechette dart cartridge x50</label>
+                        <description>Craft 50 flechette dart cartridges.</description>
+                        <jobString>Making flechette dart cartridges.</jobString>
                         <ingredients>
                             <li>
                                 <filter>
@@ -87,7 +88,23 @@
                             <li>
                                 <filter>
                                     <thingDefs>
+                                        <li>PoisonGland</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                            <li>
+                                <filter>
+                                    <thingDefs>
                                         <li>BiosyntheticMaterial</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>2</count>
+                            </li>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>MedicineHerbal</li>
                                     </thingDefs>
                                 </filter>
                                 <count>2</count>
@@ -101,6 +118,8 @@
                             <thingDefs>
                                 <li>BiosyntheticMaterial</li>
                                 <li>MagneticMaterial</li>
+                                <li>PoisonGland</li>
+                                <li>MedicineHerbal</li>
                             </thingDefs>
                         </fixedIngredientFilter>
                         <products>

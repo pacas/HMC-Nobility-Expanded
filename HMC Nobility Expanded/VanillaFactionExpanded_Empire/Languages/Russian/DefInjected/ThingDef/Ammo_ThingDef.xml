@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <Ammo_40x68mmDemo_Thump.label>40x68mm энергоячейка для сноса</Ammo_40x68mmDemo_Thump.label>
+    <Bullet_40x68mmDemo_Thump.label>40x68mm энергоячейка для сноса</Bullet_40x68mmDemo_Thump.label>
+	<Ammo_40x68mmDemo_Thump.description>Энергоячейки повышенной мощности, которые позволяют сносить постройки. При применении против людей смерть небронированной цели гарантирована.</Ammo_40x68mmDemo_Thump.description>
+
+	<Ammo_FletcherDart.label>Растворяющая флешетта</Ammo_FletcherDart.label>
+	<Bullet_FletcherDart.label>Растворяющая флешетта</Bullet_FletcherDart.label>
+	<Ammo_FletcherDart.description>Оперённые инъекционные дротики со смесью различных кислот позволяют растворять противников при попадании. Смерть не гарантирована, но весьма вероятна.</Ammo_FletcherDart.description>
+</LanguageData>

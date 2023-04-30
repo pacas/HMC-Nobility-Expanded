@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildVEEChargeThumper</defName>
+		<label>Build Charge Thumper</label>
+		<description>A modified charged-shot assault shotgun that incorporates mechanoid technology.</description>
+		<jobString>Building Charge Thumper.</jobString>
+		<workAmount>30000</workAmount>
+		<skillRequirements>
+			<Crafting>14</Crafting>
+		</skillRequirements>
+		<ingredients>
+            <li>
+				<filter>
+					<thingDefs>
+						<li>Plasma_Component</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>14</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentSpacer</li>
+					</thingDefs>
+				</filter>
+				<count>18</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>40</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plastic</li>
+					</thingDefs>
+				</filter>
+				<count>70</count>
+			</li>
+		</ingredients>
+		<products>
+			<VFEE_Gun_ChargeThumper>1</VFEE_Gun_ChargeThumper>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasma_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentSpacer</li>
+				<li>Plastic</li>
+			</thingDefs>
+			<categories>
+				<li>USLDBar</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>MechWeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>Plasma_weapons_D</researchPrerequisite>
+	</RecipeDef>
+    
+    <RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildVEEFletcher</defName>
+		<label>Build Fletcher gun</label>
+		<description>An ultra-long range sniper rifle which fires fin-stabilized flechettes with acidifier injectors.</description>
+		<jobString>Building Fletcher gun.</jobString>
+		<workAmount>19000</workAmount>
+		<skillRequirements>
+			<Crafting>11</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvSniper_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>11</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentSpacer</li>
+					</thingDefs>
+				</filter>
+				<count>14</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>35</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plastic</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<products>
+			<VEE_Gun_Fletcher>1</VEE_Gun_Fletcher>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdvSniper_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentSpacer</li>
+				<li>Plastic</li>
+			</thingDefs>
+			<categories>
+				<li>USLDBar</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>MechWeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+	</RecipeDef>
+
+
+</Defs>

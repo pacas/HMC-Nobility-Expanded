@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <MakeAmmo_FletcherDart.label>Сделать растворяющие флешетты x50</MakeAmmo_FletcherDart.label>
+    <MakeAmmo_FletcherDart.description>Сделать растворяющие флешетты x50.</MakeAmmo_FletcherDart.description>
+    <MakeAmmo_FletcherDart.jobString>Делает растворяющие флешетты</MakeAmmo_FletcherDart.jobString>
+  
+    <MakeAmmo_40x68mmDemo_Thump.label>Сделать 40x68mm энергоячейки для сноса x25</MakeAmmo_40x68mmDemo_Thump.label>
+    <MakeAmmo_40x68mmDemo_Thump.description>Сделать 40x68mm энергоячейки для сноса x25.</MakeAmmo_40x68mmDemo_Thump.description>
+    <MakeAmmo_40x68mmDemo_Thump.jobString>Делает 40x68mm энергоячейки для сноса</MakeAmmo_40x68mmDemo_Thump.jobString>
+  
+    <BuildVEEChargeThumper.label>Собрать ударный энергодробовик</BuildVEEChargeThumper.label>
+    <BuildVEEChargeThumper.description>Модифицированный штурмовой энергетический дробовик, созданный на основе технологий механоидов. Ударное орудие термита было восстановлено и переработано для создания портативного оружия дальнего боя, способного стрелять тяжёлыми снарядами. Довольно мощное оружие, особо эффективное против строений и тяжелобронированных целей, но не очень дальнобойное.</BuildVEEChargeThumper.description>
+    <BuildVEEChargeThumper.jobString>Собирает ударный энергодробовик</BuildVEEChargeThumper.jobString>
+  
+    <BuildVEEFletcher.label>Собрать кислотный инъектор</BuildVEEFletcher.label>
+    <BuildVEEFletcher.description>Снайперское оружие сверхдальнего действия, стреляющее оперёнными инъекционными дротиками со смесью кислот. Из-за их сверхэффективности и опасности при попадании в руки врагов, это оружие всегда биокодируется и обладает системой самоуничтожения на случай смерти или обезоруживания владельца. Смертельно для всей органики и почти бесполезно против неорганических целей, например механоидов.\n\nЦели, поражённые этим оружием, попадут под эффект нестабильного варианта химикатов, используемых в посмертных растворителях, предназначенных для разрушения организма изнутри, а не уничтожения носимого оборудования. Попадая в организм цели, кислота поражает внутренние органы и ткани, нанося тяжёлые химические ожоги, однако смерть от единственного попадания не гарантирована.</BuildVEEFletcher.description>
+    <BuildVEEFletcher.jobString>Собирает кислотный инъектор</BuildVEEFletcher.jobString>
+</LanguageData>
