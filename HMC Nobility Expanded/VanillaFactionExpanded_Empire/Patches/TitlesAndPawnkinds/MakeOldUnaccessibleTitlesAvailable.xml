@@ -263,7 +263,7 @@
                     <suppressIdleAlert>true</suppressIdleAlert>
                     <decreeMtbDays>-1</decreeMtbDays><!-- disabled -->
                     <decreeMentalBreakCommonality>12</decreeMentalBreakCommonality>
-                    <permitPointsAwarded>6</permitPointsAwarded>
+                    <permitPointsAwarded>7</permitPointsAwarded>
                     <decreeTags>
                         <li>All</li>
                     </decreeTags>

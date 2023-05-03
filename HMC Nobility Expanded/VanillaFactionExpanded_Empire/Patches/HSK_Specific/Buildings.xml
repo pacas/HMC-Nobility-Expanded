@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_RoyaltyStuff"]/defNames/li[text()="Drape"]</xpath>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_RoyaltyStuff"]/defNames</xpath>
+                <value>
+                    <li>VFEE_StellicThrone</li>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_RoyaltyStuff"]/label</xpath>
+                <value>
+                    <label>royal thrones</label>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_RoyaltyStuff"]/description</xpath>
+                <value>
+                    <description>All kinds of thrones for royal persons and psycasters.</description>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VFEE_ImperialBanner"]/designationCategory</xpath>
+                <value>
+                    <designationCategory>Furniture</designationCategory>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VFEE_ImperialBanner"]/stuffCategories</xpath>
+                <value>
+                    <stuffCategories>
+                        <li>Fabric</li>
+                        <li>HF</li>
+                    </stuffCategories>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="VFEE_GrandTable"]</xpath>
+                <value>
+                    <stuffCategories>
+                        <li>Metallic</li>
+                        <li>Plastic</li>
+                        <li>Precious</li>
+                    </stuffCategories>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VFEE_GrandTable"]/costList</xpath>
+                <value>
+                    <costList>
+                        <GoldBar>25</GoldBar>
+                        <WoodPlank>25</WoodPlank>
+                        <ComponentMedieval>12</ComponentMedieval>
+                        <ComponentIndustrial>3</ComponentIndustrial>
+                    </costList>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VFEE_GrandChair"]/stuffCategories</xpath>
+                <value>
+                    <stuffCategories>
+                        <li>Metallic</li>
+                        <li>Plastic</li>
+                        <li>Precious</li>
+                    </stuffCategories>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VFEE_GrandChair"]/costStuffCount</xpath>
+                <value>
+                    <costStuffCount>70</costStuffCount>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="VFEE_GrandChair"]</xpath>
+                <value>
+                    <costList>
+                        <ComponentMedieval>4</ComponentMedieval>
+                    </costList>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VFEE_RoyalStool"]/stuffCategories</xpath>
+                <value>
+                    <stuffCategories>
+                        <li>Fabric</li>
+                        <li>HF</li>
+                    </stuffCategories>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VFEE_RoyalStool"]/costList</xpath>
+                <value>
+                    <costList>
+                        <GoldBar>10</GoldBar>
+                        <WoodPlank>5</WoodPlank>
+                        <ComponentMedieval>3</ComponentMedieval>
+                    </costList>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VFEE_StellicThrone"]/stuffCategories</xpath>
+                <value>
+                    <stuffCategories>
+						<li>RuggedMetallic</li>
+						<li>Stony</li>
+					</stuffCategories>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VFEE_StellicThrone"]/costList</xpath>
+                <value>
+                    <costList>
+                        <GoldBar>180</GoldBar>
+						<ComponentMedieval>45</ComponentMedieval>
+						<ComponentIndustrial>15</ComponentIndustrial>
+                    </costList>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VFEE_Candelabra"]/stuffCategories</xpath>
+                <value>
+                    <stuffCategories>
+						<li>RuggedMetallic</li>
+					</stuffCategories>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VFEE_Candelabra"]/costList</xpath>
+                <value>
+                    <costList>
+                        <ComponentIndustrial>3</ComponentIndustrial>
+                        <ElectronicComponents>1</ElectronicComponents>
+                    </costList>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VFEE_Candelabra"]/designationCategory</xpath>
+                <value>
+                    <designationCategory>Accessories</designationCategory>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VFEE_RoyalMirror"]/stuffCategories</xpath>
+                <value>
+                    <stuffCategories>
+                        <li>Metallic</li>
+                        <li>Plastic</li>
+                        <li>Precious</li>
+                    </stuffCategories>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

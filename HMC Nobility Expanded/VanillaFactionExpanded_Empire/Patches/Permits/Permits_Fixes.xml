@@ -158,6 +158,13 @@
                     <permitPointCost>8</permitPointCost>
                 </value>
             </li>
+            
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/RoyalTitlePermitDef[defName="VFEI_CallOrbitalSlicingBeam"]/minTitle</xpath>
+                <value>
+                    <minTitle>Consul</minTitle>
+                </value>
+            </li>
         </operations>
     </Operation>
 </Patch>

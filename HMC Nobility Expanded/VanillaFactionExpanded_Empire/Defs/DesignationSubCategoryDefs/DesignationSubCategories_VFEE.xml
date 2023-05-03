@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ArchitectSense.DesignationSubCategoryDef MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>SubCategory_RoyaltyStuffMisc</defName>
+		<label>royal furniture</label>
+		<description>Best furniture for royal persons.</description>
+		<defNames>
+			<li>VFEE_GrandTable</li>
+			<li>VFEE_GrandChair</li>
+			<li>VFEE_RoyalStool</li>
+			<li>Drape</li>
+			<li>VFEE_ImperialBanner</li>
+			<li>VFEE_RoyalMirror</li>
+		</defNames>
+		<designationCategory>Furniture</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+</Defs>

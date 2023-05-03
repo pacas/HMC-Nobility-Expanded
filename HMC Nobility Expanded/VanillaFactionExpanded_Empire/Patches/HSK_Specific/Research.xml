@@ -3,14 +3,9 @@
     <Operation Class="PatchOperationSequence">
         <operations>
             <li Class="PatchOperationAttributeSet">
-                <xpath>Defs/ResearchProjectDef[defName="VFEE_PipeOrgans" or defName="VFEE_StellicThrone"]</xpath>
+                <xpath>Defs/ResearchProjectDef[defName="VFEE_PipeOrgans" or defName="VFEE_StellicThrone" or defName="VFEE_NobleDecorations"]</xpath>
                 <attribute>ParentName</attribute>
                 <value>IndustrialBase</value>
-            </li>
-            <li Class="PatchOperationAttributeSet">
-                <xpath>Defs/ResearchProjectDef[defName="VFEE_NobleDecorations"]</xpath>
-                <attribute>ParentName</attribute>
-                <value>MedievalBase</value>
             </li>
             <li Class="PatchOperationAttributeSet">
                 <xpath>Defs/ResearchProjectDef[defName="VFEE_JanissaryGear"]</xpath>
@@ -60,7 +55,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="VFEE_NobleDecorations"]/researchViewX</xpath>
                 <value>
-                    <researchViewX>5.00</researchViewX>
+                    <researchViewX>9.00</researchViewX>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
@@ -75,6 +70,15 @@
                     <tab>Buildings_SK</tab>
                 </value>
             </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="VFEE_NobleDecorations"]/prerequisites</xpath>
+                <value>
+                    <prerequisites>
+                        <li>ComplexFurniture</li>
+                        <li>Light_C1</li>
+                    </prerequisites>
+                </value>
+            </li>
 
 
             <li Class="PatchOperationReplace">
@@ -86,7 +90,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="VFEE_StellicThrone"]/researchViewX</xpath>
                 <value>
-                    <researchViewX>6.00</researchViewX>
+                    <researchViewX>10.00</researchViewX>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
