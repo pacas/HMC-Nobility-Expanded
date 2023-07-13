@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <Permit_Title>Очки привилегий</Permit_Title>
+    <Cooldown_Title>Время перезарядки</Cooldown_Title>
+    <Reset_Title>Сброс настроек</Reset_Title>
+    <Reset_Button>Сбросить настройки для этой категории</Reset_Button>
+    
+    
+    <Resources_MainTitle>Nobility Expanded - Ресурсы</Resources_MainTitle>
+    <Resources_Title>Ресурсы</Resources_Title>
+    <Steel_Cost>Железо</Steel_Cost>
+    <Silver_Cost>Серебро</Silver_Cost>
+    <Food_Cost>Сухие пайки</Food_Cost>
+    <GlitterMed_Cost>Продвинутые медикаменты</GlitterMed_Cost>
+    <Blocks_Cost>Каменные блоки</Blocks_Cost>
+    <Shuttle_Cost>Транспортный шаттл</Shuttle_Cost>
+    <BabyFood_Cost>Детская еда</BabyFood_Cost>
+    <BabyClothes_Cost>Детская одежда</BabyClothes_Cost>
+    <VampiresFood_Cost>Гемоген-пакеты</VampiresFood_Cost>
+
+    
+    <Allies_MainTitle>Nobility Expanded - Союзники</Allies_MainTitle>
+    <Allies_Title>Союзники</Allies_Title>
+
+</LanguageData>

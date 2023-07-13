@@ -63,6 +63,12 @@
                     </itemsToDrop>
                 </value>
             </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/RoyalTitlePermitDef[defName="SilverDrop"]</xpath>
+                <value>
+                    <cooldownDays>30</cooldownDays>
+                </value>
+            </li>
             
             <!-- Food -->
             
@@ -70,8 +76,14 @@
                 <xpath>Defs/RoyalTitlePermitDef[defName="FoodDrop"]/royalAid/itemsToDrop</xpath>
                 <value>
                     <itemsToDrop>
-                       <MealSurvivalPack>30</MealSurvivalPack>
+                       <MealSurvivalPack>28</MealSurvivalPack>
                     </itemsToDrop>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/RoyalTitlePermitDef[defName="FoodDrop"]</xpath>
+                <value>
+                    <cooldownDays>14</cooldownDays>
                 </value>
             </li>
             
