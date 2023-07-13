@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <XmlExtensions.SettingsMenuDef>
+        <defName>HMC_NE_Allies</defName>
+        <modId>HMCNE.Pacas.Allies</modId>
+        <tKey>Allies_MainTitle</tKey>
+        <label>Nobility Expanded - Allies</label>
+        <settings>
+            <li Class="XmlExtensions.Setting.TabView">
+                <tabs>
+                    <li>
+                        <label>Permit Points</label>
+                        <tKey>Permit_Title</tKey>
+                        <settings>
+                            <li Class="XmlExtensions.Setting.Group">
+                                <settings>
+                                    <li Class="XmlExtensions.Setting.Gap"/>
+                                    <li Class="XmlExtensions.Setting.Text">
+                                        <text>Resources</text>
+                                        <tKey>Resources_Title</tKey>
+                                        <font>Medium</font>
+                                        <anchor>Middle</anchor>
+                                    </li>
+                                </settings>
+                            </li>
+                        </settings>
+                    </li>
+                    <li>
+                        <label>Cooldown Time</label>
+                        <tKey>Cooldown_Title</tKey>
+                        <settings>
+                            <li Class="XmlExtensions.Setting.Group">
+                                <settings>
+                                    <li Class="XmlExtensions.Setting.Gap"/>
+                                    <li Class="XmlExtensions.Setting.Text">
+                                        <text>Resources</text>
+                                        <tKey>Resources_Title</tKey>
+                                        <font>Medium</font>
+                                        <anchor>Middle</anchor>
+                                    </li>
+                                </settings>
+                            </li>
+                        </settings>
+                    </li>
+                    <li>
+                        <label>Reset settings</label>
+                        <tKey>Reset_Title</tKey>
+                        <settings>
+                            <li Class="XmlExtensions.Setting.Group">
+                                <settings>
+                                    <li Class="XmlExtensions.Setting.Gap"/>
+                                    <li Class="XmlExtensions.Setting.Text">
+                                        <text>Reset all settings in this category</text>
+                                        <tKey>Reset_Button</tKey>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.ResetSettings"/>
+                                </settings>
+                            </li>
+                        </settings>
+                    </li>
+                </tabs>
+            </li>            
+        </settings>
+    </XmlExtensions.SettingsMenuDef>
+</Defs>

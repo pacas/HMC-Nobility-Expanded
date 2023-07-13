@@ -9,7 +9,7 @@ using Verse;
 namespace RimWorld
 {
     [StaticConstructorOnStartup]
-    public static partial class HarmonyPatches
+    public static class HarmonyPatches
     {
         static HarmonyPatches()
         {

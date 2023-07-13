@@ -15,6 +15,12 @@
 			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
 			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
 		</li>
+        <li>
+            <packageId>Imranfish.XMLExtensions</packageId>
+            <displayName>XML Extensions</displayName>
+            <downloadUrl>https://github.com/15adhami/XmlExtensions/releases</downloadUrl>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/2574315206</steamWorkshopUrl>
+        </li>
 	</modDependencies>
     <loadBefore>
         <li>TheLoneTec.TSAP</li>
@@ -24,6 +30,7 @@
         <li>Ludeon.RimWorld</li>
 		<li>Ludeon.RimWorld.Royalty</li>
 		<li>Ludeon.RimWorld.Ideology</li>
+        <li>Imranfish.XMLExtensions</li>
         <li>skyarkhangel.HSK</li>
         <li>skyarkhangel.royaltytranslation</li>
         <li>oskarpotocki.vfe.empire</li>

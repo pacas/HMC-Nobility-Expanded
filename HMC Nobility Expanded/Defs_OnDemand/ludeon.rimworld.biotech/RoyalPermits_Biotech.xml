@@ -21,7 +21,7 @@
 
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>VampiresFoodDrop</defName>
-        <label>hemogen pack</label>
+        <label>hemogen packs</label>
         <description>Request a drop of 15 hemogen packs.</description>
         <permitPointCost>1</permitPointCost>
         <minTitle>Acolyte</minTitle>
@@ -35,7 +35,6 @@
     </RoyalTitlePermitDef>
     <OrderedStuffDef ParentName="OrderedThingsSpecificBase">
         <defName>VampiresFoodDropStuff</defName>
-        <column>1</column>
     </OrderedStuffDef>
 
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
@@ -58,6 +57,7 @@
     <OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>BabyClothesDropStuff</defName>
         <quality>Good</quality>
+        <column>1</column>
         <stuffList>
             <li>Flaxcloth</li>
             <li>Flaxcloth</li>
