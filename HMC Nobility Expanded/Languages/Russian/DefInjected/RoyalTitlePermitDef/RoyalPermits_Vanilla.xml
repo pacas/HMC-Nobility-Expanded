@@ -22,7 +22,7 @@
     <SteelDrop.label>Железная руда</SteelDrop.label>
     <SteelDrop.description>Запрос доставки 100 единиц железной руды.</SteelDrop.description>
     <FoodDrop.label>Сухпайки</FoodDrop.label>
-    <FoodDrop.description>Запрос доставки 30 сухих пайков.</FoodDrop.description>
+    <FoodDrop.description>Запрос доставки 50 сухих пайков.</FoodDrop.description>
     <GlitterMedDrop.label>Передовые медикаменты</GlitterMedDrop.label>
     <GlitterMedDrop.description>Запрос доставки 5 передовых медикаментов.</GlitterMedDrop.description>
     <SilverDrop.label>Серебро</SilverDrop.label>

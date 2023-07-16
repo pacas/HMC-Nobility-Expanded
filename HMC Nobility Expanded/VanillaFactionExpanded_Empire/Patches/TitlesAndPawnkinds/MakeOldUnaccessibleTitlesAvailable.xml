@@ -2,6 +2,9 @@
 <Patch>
     <Operation Class="PatchOperationSequence">
         <operations>
+            <li Class="PatchOperationRemove">
+            <xpath>Defs/RoyalTitleDef[defName="Duke" or defName="Consul" or defName="Stellarch"]/requiredApparel</xpath>
+            </li>
             <li Class="PatchOperationAdd">
                 <xpath>Defs/RoyalTitleDef[defName="Margrave"]</xpath>
                 <value>
@@ -44,6 +47,7 @@
                                 <li>Cape</li>
                                 <li>PrestigeCombatGear</li>
                                 <li>Psychic</li>
+                                <li>Mechlord</li>
                             </allowedTags>
                         </li>
                         <li>
@@ -57,6 +61,7 @@
                                 <li>Cape</li>
                                 <li>PrestigeCombatGear</li>
                                 <li>Psychic</li>
+                                <li>Mechlord</li>
                             </allowedTags>
                         </li>
                         <li>
@@ -70,6 +75,7 @@
                                 <li>Cape</li>
                                 <li>PrestigeCombatGear</li>
                                 <li>Psychic</li>
+                                <li>Mechlord</li>
                             </allowedTags>
                         </li>
                         <li>
@@ -83,6 +89,7 @@
                             <allowedTags>
                                 <li>PrestigeCombatGear</li>
                                 <li>Psychic</li>
+                                <li>Mechlord</li>
                             </allowedTags>
                         </li>
                     </requiredApparel>
@@ -294,6 +301,7 @@
                                 <li>Cape</li>
                                 <li>PrestigeCombatGear</li>
                                 <li>Psychic</li>
+                                <li>Mechlord</li>
                             </allowedTags>
                         </li>
                         <li>
@@ -307,6 +315,7 @@
                                 <li>Cape</li>
                                 <li>PrestigeCombatGear</li>
                                 <li>Psychic</li>
+                                <li>Mechlord</li>
                             </allowedTags>
                         </li>
                         <li>
@@ -320,6 +329,7 @@
                                 <li>Cape</li>
                                 <li>PrestigeCombatGear</li>
                                 <li>Psychic</li>
+                                <li>Mechlord</li>
                             </allowedTags>
                         </li>
                     </requiredApparel>
@@ -549,6 +559,7 @@
                                 <li>Cape</li>
                                 <li>PrestigeCombatGear</li>
                                 <li>Psychic</li>
+                                <li>Mechlord</li>
                             </allowedTags>
                         </li>
                         <li>

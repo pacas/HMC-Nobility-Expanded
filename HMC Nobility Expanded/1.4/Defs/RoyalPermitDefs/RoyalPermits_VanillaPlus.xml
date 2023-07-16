@@ -53,7 +53,7 @@
         <minTitle>Praetor</minTitle>
         <faction>Empire</faction>
         <prerequisite>CallMilitaryAidSmall</prerequisite>
-        <permitPointCost>4</permitPointCost>
+        <permitPointCost>3</permitPointCost>
         <royalAid>
             <favorCost>6</favorCost>
             <pawnKindDef>Empire_Fighter_Trooper</pawnKindDef>

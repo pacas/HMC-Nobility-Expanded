@@ -435,7 +435,7 @@ namespace RimWorld
             {
                 { "PermitCategory_Resources", () => UtilityClass.curTab = "Resources" },
                 { "PermitCategory_Pawns", () => UtilityClass.curTab = "Pawns" },
-                { "PermitCategory_Airstrike", () => UtilityClass.curTab = "Airstrike" },
+                { "PermitCategory_Airstrike", () => UtilityClass.curTab = "Military Aid" },
                 { "PermitCategory_Tools", () => UtilityClass.curTab = "Tools" },
                 { "PermitCategory_Armor", () => UtilityClass.curTab = "Armor" },
                 { "PermitCategory_Apparel", () => UtilityClass.curTab = "Apparel" },

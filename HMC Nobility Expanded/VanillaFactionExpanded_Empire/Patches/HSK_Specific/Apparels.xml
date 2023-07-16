@@ -110,8 +110,8 @@
                     </recipeMaker>
                 </value>
             </li>
-            <li Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="Apparel_CrownStellic"]</xpath>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="Apparel_CrownStellic"]/smeltable</xpath>
                 <value>
                     <smeltable>false</smeltable>
                 </value>

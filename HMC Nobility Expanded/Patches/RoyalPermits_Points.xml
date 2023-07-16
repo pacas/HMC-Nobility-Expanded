@@ -76,7 +76,7 @@
                 <xpath>Defs/RoyalTitlePermitDef[defName="FoodDrop"]/royalAid/itemsToDrop</xpath>
                 <value>
                     <itemsToDrop>
-                       <MealSurvivalPack>28</MealSurvivalPack>
+                       <MealSurvivalPack>50</MealSurvivalPack>
                     </itemsToDrop>
                 </value>
             </li>
@@ -96,7 +96,21 @@
                 </value>
             </li>
             
-            <!-- Fighters -->
+            <!-- Pawns -->
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/RoyalTitlePermitDef[defName="CallLaborerTeam"]/cooldownDays</xpath>
+                <value>
+                    <cooldownDays>30</cooldownDays>
+                </value>
+            </li>
+            
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/RoyalTitlePermitDef[defName="CallLaborerGang"]/cooldownDays</xpath>
+                <value>
+                    <cooldownDays>45</cooldownDays>
+                </value>
+            </li>
             
             <li Class="PatchOperationReplace">
                 <xpath>Defs/RoyalTitlePermitDef[defName="CallMilitaryAidSmall"]/royalAid/pawnCount</xpath>
