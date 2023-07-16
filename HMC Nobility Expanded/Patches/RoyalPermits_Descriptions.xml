@@ -40,7 +40,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/RoyalTitlePermitDef[defName="FoodDrop"]/description</xpath>
                 <value>
-                    <description>Call for a drop of 30 packaged survival meals.</description>
+                    <description>Call for a drop of 50 packaged survival meals.</description>
                 </value>
             </li>
 

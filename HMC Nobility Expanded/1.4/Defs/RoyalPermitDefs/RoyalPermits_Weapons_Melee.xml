@@ -233,7 +233,6 @@
             <li>MeleeWeapon_Partisan</li>
             <li>MeleeWeapon_Tsurugi</li>
             <li>MeleeWeapon_Sledgehammer</li>
-            <li>MeleeWeapon_Tsurugi</li>
         </thingsToChoose>
     </OrderedStuffDef>
     
@@ -267,7 +266,6 @@
             <li>MeleeWeapon_Partisan</li>
             <li>MeleeWeapon_Tsurugi</li>
             <li>MeleeWeapon_Sledgehammer</li>
-            <li>MeleeWeapon_Tsurugi</li>
         </thingsToChoose>
     </OrderedStuffDef>
 </Defs>
