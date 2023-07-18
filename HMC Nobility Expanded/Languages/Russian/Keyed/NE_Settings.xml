@@ -28,10 +28,10 @@
     <Trooper3_Cost>Отряд янычар</Trooper3_Cost>
     <Trooper4_Cost>Отряд катафрактариев</Trooper4_Cost>
     <!-- Military Aid -->
-    <Allies_MainTitle>Nobility Expanded - Военная помощь</Allies_MainTitle>
-    <Allies_Title>Военная помощь</Allies_Title>
-    <Laborer1_Cost>Воздушная бомбардировка</Laborer1_Cost>
-    <Laborer2_Cost>Воздушный удар</Laborer2_Cost>
+    <MilAid_MainTitle>Nobility Expanded - Военная помощь</MilAid_MainTitle>
+    <MilAid_MainTitle>Военная помощь</MilAid_MainTitle>
+    <Airstrike1_Cost>Воздушная бомбардировка</Airstrike1_Cost>
+    <Airstrike2_Cost>Воздушный удар</Airstrike2_Cost>
     <!-- Tools -->
     <Tools_MainTitle>Nobility Expanded - Инструменты</Tools_MainTitle>
     <Tools_Title>Инструменты</Tools_Title>

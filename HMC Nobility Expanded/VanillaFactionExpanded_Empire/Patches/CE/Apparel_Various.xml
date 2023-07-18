@@ -49,16 +49,6 @@
             </li>
 
             <li Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="VFEE_Apparel_ArmorDeserter"]/equippedStatOffsets</xpath>
-                <value>
-                    <CarryWeight>80</CarryWeight>
-                    <CarryBulk>10</CarryBulk>
-                    <ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
-                    <ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
-                </value>
-            </li>
-
-            <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="VFEE_Apparel_ArmorDeserter"]/apparel/bodyPartGroups</xpath>
                 <value>
                     <li>Hands</li>

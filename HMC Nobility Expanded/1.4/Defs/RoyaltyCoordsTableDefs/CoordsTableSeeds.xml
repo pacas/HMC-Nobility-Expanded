@@ -6,6 +6,9 @@
         <loadOrder>
             <li MayRequire="notfood.seedsplease">SeedsPermitTitle</li>
             <li MayRequire="notfood.seedsplease">SeedsPotatoDrop</li>
+            <li MayRequire="notfood.seedsplease">SeedsShroomsDrop</li>
+            <li MayRequire="notfood.seedsplease">SeedsAddictiveDrop</li>
+            <li MayRequire="notfood.seedsplease">SeedsHealDrop</li>
             <li MayRequire="notfood.seedsplease">SeedsOakDrop</li>
             <li MayRequire="notfood.seedsplease">EmptyTableSpace</li>
         </loadOrder>
@@ -17,6 +20,9 @@
         <loadOrder>
             <li MayRequire="notfood.seedsplease">SeedsPermitTitle</li>
             <li MayRequire="notfood.seedsplease">SeedsPotatoDropPlus</li>
+            <li MayRequire="notfood.seedsplease">SeedsLuxDrop</li>
+            <li MayRequire="notfood.seedsplease">SeedsClothDrop</li>
+            <li MayRequire="notfood.seedsplease">SeedsUtilDrop</li>
             <li MayRequire="notfood.seedsplease">SeedsOakDropPlus</li>
             <li MayRequire="notfood.seedsplease">EmptyTableSpace</li>
         </loadOrder>

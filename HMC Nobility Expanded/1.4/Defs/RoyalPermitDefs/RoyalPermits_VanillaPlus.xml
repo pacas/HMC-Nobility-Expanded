@@ -34,12 +34,12 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>BlocksDrop</defName>
         <label>Blocks</label>
-        <description>Request a drop of 200 random blocks.</description>
+        <description>Request a drop of 300 random blocks.</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>14</cooldownDays>
         <royalAid>
             <itemsToDrop>
-                <Steel>200</Steel>
+                <Steel>300</Steel>
             </itemsToDrop>
             <favorCost>2</favorCost>
         </royalAid>

@@ -15,7 +15,7 @@
         <label>medieval armor</label>
         <description>Request a drop of medieval armor pack.</description>
         <minTitle>Acolyte</minTitle>
-        <cooldownDays>25</cooldownDays>
+        <cooldownDays>18</cooldownDays>
         <royalAid>
             <itemsToDrop>
                 <MedievalTimes_Helmet_Bascinet>1</MedievalTimes_Helmet_Bascinet>
@@ -41,7 +41,7 @@
         <label>medieval armor +</label>
         <description>Request a drop of medieval armor pack.</description>
         <minTitle>Knight</minTitle>
-        <cooldownDays>45</cooldownDays>
+        <cooldownDays>30</cooldownDays>
         <prerequisite>ArmorDrop</prerequisite>
         <permitPointCost>2</permitPointCost>
         <royalAid>
@@ -73,7 +73,7 @@
         <label>industrial armor</label>
         <description>Request a drop of industrial armor pack.</description>
         <minTitle>Knight</minTitle>
-        <cooldownDays>35</cooldownDays>
+        <cooldownDays>23</cooldownDays>
         <royalAid>
             <itemsToDrop>
                 <Tactical_Helmet>1</Tactical_Helmet>
@@ -100,7 +100,7 @@
         <label>industrial armor +</label>
         <description>Request a drop of industrial armor pack.</description>
         <minTitle>Legatus</minTitle>
-        <cooldownDays>55</cooldownDays>
+        <cooldownDays>40</cooldownDays>
         <prerequisite>IndustrialArmorDrop</prerequisite>
         <permitPointCost>2</permitPointCost>
         <royalAid>
@@ -132,7 +132,7 @@
         <label>spacer armor</label>
         <description>Request a drop of spacer armor pack.</description>
         <minTitle>Baron</minTitle>
-        <cooldownDays>50</cooldownDays>
+        <cooldownDays>45</cooldownDays>
         <permitPointCost>3</permitPointCost>
         <royalAid>
             <itemsToDrop>
@@ -161,7 +161,7 @@
         <description>Request a drop of spacer armor pack.</description>
         <minTitle>Viscount</minTitle>
         <prerequisite>SpacerArmorDrop</prerequisite>
-        <cooldownDays>70</cooldownDays>
+        <cooldownDays>62</cooldownDays>
         <permitPointCost>4</permitPointCost>
         <royalAid>
             <itemsToDrop>
@@ -192,7 +192,7 @@
         <label>ultra armor</label>
         <description>Request a drop of ultra armor pack.</description>
         <minTitle>Viscount</minTitle>
-        <cooldownDays>90</cooldownDays>
+        <cooldownDays>70</cooldownDays>
         <permitPointCost>6</permitPointCost>
         <royalAid>
             <itemsToDrop>
@@ -221,7 +221,7 @@
         <label>ultra armor +</label>
         <description>Request a drop of ultra armor pack.</description>
         <minTitle>Count</minTitle>
-        <cooldownDays>180</cooldownDays>
+        <cooldownDays>135</cooldownDays>
         <prerequisite>UltraArmorDrop</prerequisite>
         <permitPointCost>8</permitPointCost>
         <royalAid>
