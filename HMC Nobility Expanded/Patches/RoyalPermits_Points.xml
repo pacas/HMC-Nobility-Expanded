@@ -41,7 +41,7 @@
                 <xpath>Defs/RoyalTitlePermitDef[defName="SteelDrop"]/royalAid/itemsToDrop</xpath>
                 <value>
                     <itemsToDrop>
-                        <Steel>100</Steel>
+                        <Steel>250</Steel>
                     </itemsToDrop>
                 </value>
             </li>

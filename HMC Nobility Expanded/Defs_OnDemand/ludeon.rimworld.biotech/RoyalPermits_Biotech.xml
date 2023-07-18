@@ -4,13 +4,13 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>BabyFoodDrop</defName>
         <label>baby food</label>
-        <description>Request a drop of 30 vegetarian mash for babies.</description>
+        <description>Request a drop of 75 vegetarian mash for babies.</description>
         <permitPointCost>1</permitPointCost>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>14</cooldownDays>
         <royalAid>
             <itemsToDrop>
-                <BabyFood>30</BabyFood>
+                <BabyFood>75</BabyFood>
             </itemsToDrop>
             <favorCost>2</favorCost>
         </royalAid>

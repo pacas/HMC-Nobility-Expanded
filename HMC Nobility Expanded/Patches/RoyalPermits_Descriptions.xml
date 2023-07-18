@@ -12,7 +12,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/RoyalTitlePermitDef[defName="SteelDrop"]/description</xpath>
                 <value>
-                    <description>Call for a drop of 100 iron ore.</description>
+                    <description>Call for a drop of 250 iron ore.</description>
                 </value>
             </li>
 
