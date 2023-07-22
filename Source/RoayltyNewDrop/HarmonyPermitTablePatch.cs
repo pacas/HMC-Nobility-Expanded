@@ -65,15 +65,21 @@ namespace RimWorld
     {
         public static bool Prefix(ref RoyalTitlePermitDef permit, ref Vector2 __result)
         {
-            OrderedStuffDef stuffDefOrdered = DefDatabase<OrderedStuffDef>.GetNamedSilentFail(permit.defName + "Stuff");
+            OrderedStuffDef stuffDefOrdered = DefDatabase<OrderedStuffDef>.GetNamedSilentFail(
+                permit.defName + PermitsCardCustomUtility.UtilityClass.stuffPostfix
+                );
             int index;
             Vector2 newCoords;
             if (stuffDefOrdered != null)
             {
                 RoyaltyCoordsTableDef categoryTable = DefDatabase<RoyaltyCoordsTableDef>.GetNamedSilentFail(
-                    "CoordsTable" + PermitsCardCustomUtility.UtilityClass.curTab + "_" + stuffDefOrdered.column);
+                    PermitsCardCustomUtility.UtilityClass.coordsTable + 
+                    PermitsCardCustomUtility.UtilityClass.curTab + "_" + stuffDefOrdered.column
+                    );
                 if (categoryTable == null)
-                    categoryTable = DefDatabase<RoyaltyCoordsTableDef>.GetNamed("CoordsTableColumn_" + stuffDefOrdered.column);
+                    categoryTable = DefDatabase<RoyaltyCoordsTableDef>.GetNamed(
+                        PermitsCardCustomUtility.UtilityClass.coordsTableColumn + stuffDefOrdered.column
+                        );
                 
                 index = categoryTable.loadOrder.IndexOf(permit);
                 newCoords = new Vector2(categoryTable.coordX * 200f, index * 50f);
@@ -81,7 +87,9 @@ namespace RimWorld
             else
             {
                 RoyaltyCoordsTableDef categoryTable =
-                    DefDatabase<RoyaltyCoordsTableDef>.GetNamedSilentFail("CoordsTable" + PermitsCardCustomUtility.UtilityClass.curTab + "_0");
+                    DefDatabase<RoyaltyCoordsTableDef>.GetNamedSilentFail(
+                        PermitsCardCustomUtility.UtilityClass.coordsTable + PermitsCardCustomUtility.UtilityClass.curTab + "_0"
+                        );
                 if (permit.permitPointCost == 99) {
                     index = categoryTable.loadOrder.IndexOf(permit);
                     newCoords = new Vector2(60f, index * 50f + 5f);

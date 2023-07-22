@@ -5,9 +5,14 @@ namespace RimWorld
 {
     public class NobilitySupportUtility
     {
+        public const string permitCategory = "PermitCategory_";
+        public readonly string coordsTable = "CoordsTable";
+        public readonly string stuffPostfix = "Stuff";
+        public readonly string coordsTableColumn = "CoordsTableColumn_";
+
         private static Random random = new Random();
         public string curTab = "Resources";
-
+        
         public static QualityCategory GenerateFromString(string quality)
         {
             switch (quality)

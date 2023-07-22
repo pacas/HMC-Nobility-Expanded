@@ -430,22 +430,13 @@ namespace RimWorld
         private static List<FloatMenuOption> SetCategoryButton()
         {
             var tabOptions = new List<FloatMenuOption>();
-            var seeds = DefDatabase<RoyalTitlePermitDef>.GetNamedSilentFail("SeedsPermitTitle");
-            var dict = new Dictionary<string, Action>
+            var catTable = DefDatabase<RoyaltyPermitCategoryTableDef>.GetNamedSilentFail("PermitCategoryTable");
+            var dict = new Dictionary<string, Action> {};
+            for (var index = 0; index < catTable.defTags.Count; ++index)
             {
-                { "PermitCategory_Resources", () => UtilityClass.curTab = "Resources" },
-                { "PermitCategory_Pawns", () => UtilityClass.curTab = "Pawns" },
-                { "PermitCategory_Airstrike", () => UtilityClass.curTab = "Military Aid" },
-                { "PermitCategory_Tools", () => UtilityClass.curTab = "Tools" },
-                { "PermitCategory_Armor", () => UtilityClass.curTab = "Armor" },
-                { "PermitCategory_Apparel", () => UtilityClass.curTab = "Apparel" },
-                { "PermitCategory_Melee", () => UtilityClass.curTab = "Melee" },
-                { "PermitCategory_Ranged", () => UtilityClass.curTab = "Ranged" },
-                { "PermitCategory_Turrets", () => UtilityClass.curTab = "Turrets" },
-                { "PermitCategory_Animals", () => UtilityClass.curTab = "Animals" }
-            };
-            if (seeds != null)
-                dict.Add("PermitCategory_Seeds", () => UtilityClass.curTab = "Seeds");
+                dict.Add(NobilitySupportUtility.permitCategory + catTable.defTags[index], 
+                    () => UtilityClass.curTab = catTable.translatedTags[index]);
+            }     
             foreach (var table in dict)
             {
                 tabOptions.Add(new FloatMenuOption(table.Key.Translate(), table.Value));
