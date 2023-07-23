@@ -12,23 +12,23 @@
         </royalAid>
     </RoyalTitlePermitDef>
 
-    <OrderedStuffDef Name="OrderedBase" Abstract="True">
+    <NobilityExpanded.OrderedStuffDef Name="OrderedBase" Abstract="True">
         <column>0</column>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     
     <!-- Main bases -->
     
     <RoyalTitlePermitDef ParentName="MainDropBase" Name="DropResourcesPlus" Abstract="True">
-        <workerClass>RoyalTitlePermitWorker_DropResourcesPlus</workerClass>
+        <workerClass>NobilityExpanded.RoyalTitlePermitWorker_DropResourcesPlus</workerClass>
     </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="MainDropBase" Name="DropBuildings" Abstract="True">
-        <workerClass>RoyalTitlePermitWorker_DropBuildings</workerClass>
+        <workerClass>NobilityExpanded.RoyalTitlePermitWorker_DropBuildings</workerClass>
     </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="MainDropBase" Name="SendPawns" Abstract="True">
-        <workerClass>RoyalTitlePermitWorker_CallPawns</workerClass>
+        <workerClass>NobilityExpanded.RoyalTitlePermitWorker_CallPawns</workerClass>
         <usableOnWorldMap>false</usableOnWorldMap>
     </RoyalTitlePermitDef>
     
@@ -61,37 +61,37 @@
     
     <!-- Stuff bases -->
     
-    <OrderedStuffDef ParentName="OrderedBase" Name="OrderedStuffBase" Abstract="True">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedBase" Name="OrderedStuffBase" Abstract="True">
         <typeOfDrop>StuffQuality</typeOfDrop>
         <typeOfQuality>Specific</typeOfQuality>
         <typeOfItem>Specific</typeOfItem>
         <ammoUsage>False</ammoUsage>
         <quality>Normal</quality>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
     
-    <OrderedStuffDef ParentName="OrderedBase" Name="OrderedGunBase" Abstract="True">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedBase" Name="OrderedGunBase" Abstract="True">
         <typeOfDrop>Quality</typeOfDrop>
         <typeOfItem>Random</typeOfItem>
         <typeOfQuality>Specific</typeOfQuality>
         <ammoUsage>Gun</ammoUsage>
         <quality>Normal</quality>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
-    <OrderedStuffDef ParentName="OrderedBase" Name="OrderedTurretBase" Abstract="True">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedBase" Name="OrderedTurretBase" Abstract="True">
         <typeOfDrop>Stuff</typeOfDrop>
         <typeOfItem>Random</typeOfItem>
         <ammoUsage>Turret</ammoUsage>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
     
-    <OrderedStuffDef ParentName="OrderedBase" Name="OrderedThingsBase" Abstract="True">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedBase" Name="OrderedThingsBase" Abstract="True">
         <typeOfDrop>Pure</typeOfDrop>
         <typeOfItem>Random</typeOfItem>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
-    <OrderedStuffDef ParentName="OrderedBase" Name="OrderedThingsSpecificBase" Abstract="True">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedBase" Name="OrderedThingsSpecificBase" Abstract="True">
         <typeOfDrop>Pure</typeOfDrop>
         <typeOfItem>Specific</typeOfItem>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
     
     <!-- todo -->
     <!-- здания? -->

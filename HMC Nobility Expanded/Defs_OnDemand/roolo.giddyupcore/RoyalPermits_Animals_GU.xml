@@ -14,7 +14,7 @@
             <targetingRange>39.9</targetingRange>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedThingsBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsBase">
         <defName>MountsAnimalDropStuff</defName>
         <pawnToChoose>
             <li>Ostrich</li>
@@ -30,5 +30,5 @@
             <li MayRequire="sarg.alphaanimals">AA_NightAve</li>
             <li MayRequire="sarg.alphaanimals">AA_RoyalAve</li>
         </pawnToChoose>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 </Defs>

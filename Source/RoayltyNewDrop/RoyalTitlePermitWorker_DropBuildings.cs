@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using CombatExtended;
+using RimWorld;
 using RimWorld.Planet;
 using UnityEngine;
 using Verse;
 
-namespace RimWorld
+namespace NobilityExpanded
 {
     [StaticConstructorOnStartup]
     public class RoyalTitlePermitWorker_DropBuildings : RoyalTitlePermitWorker_Targeted

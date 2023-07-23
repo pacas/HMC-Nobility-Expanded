@@ -26,7 +26,7 @@
             <favorCost>3</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedStuffBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>ArmorDropStuff</defName>
         <stuffList>
             <li>Plasteel</li>
@@ -34,7 +34,7 @@
             <li>Plasteel</li>
             <li>Plasteel</li>
         </stuffList>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>ArmorDropPlus</defName>
@@ -54,7 +54,7 @@
             <favorCost>7</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedStuffBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>ArmorDropPlusStuff</defName>
         <quality>Excellent</quality>
         <column>1</column>
@@ -64,7 +64,7 @@
             <li>TitaniumBar</li>
             <li>TitaniumBar</li>
         </stuffList>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
     
     <!-- Tier 2 -->
 
@@ -84,7 +84,7 @@
             <favorCost>5</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedStuffBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>IndustrialArmorDropStuff</defName>
         <stuffList>
             <li>Plasteel</li>
@@ -92,7 +92,7 @@
             <li>Plasteel</li>
             <li>Plasteel</li>
         </stuffList>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
     
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
@@ -113,7 +113,7 @@
             <favorCost>9</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedStuffBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>IndustrialArmorDropPlusStuff</defName>
         <quality>Excellent</quality>
         <column>1</column>
@@ -123,7 +123,7 @@
             <li>TitaniumBar</li>
             <li>TitaniumBar</li>
         </stuffList>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <!-- Tier 3 -->
 
@@ -144,7 +144,7 @@
             <favorCost>12</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedStuffBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>SpacerArmorDropStuff</defName>
         <stuffList>
             <li>AlnicoAlloy</li>
@@ -152,7 +152,7 @@
             <li>AlnicoAlloy</li>
             <li>AlnicoAlloy</li>
         </stuffList>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
     
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
@@ -173,7 +173,7 @@
             <favorCost>16</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedStuffBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>SpacerArmorDropPlusStuff</defName>
         <quality>Excellent</quality>
         <column>1</column>
@@ -183,7 +183,7 @@
             <li>PobediteAlloy</li>
             <li>PobediteAlloy</li>
         </stuffList>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <!-- Tier 4 -->
     
@@ -204,7 +204,7 @@
             <favorCost>16</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedStuffBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>UltraArmorDropStuff</defName>
         <quality>Normal</quality>
         <stuffList>
@@ -213,7 +213,7 @@
             <li>TitaniumBar</li>
             <li>TitaniumBar</li>
         </stuffList>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
     
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
@@ -234,7 +234,7 @@
             <favorCost>28</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedStuffBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>UltraArmorDropPlusStuff</defName>
         <quality>Excellent</quality>
         <column>1</column>
@@ -244,5 +244,5 @@
             <li>AlphaPoly</li>
             <li>AlphaPoly</li>
         </stuffList>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 </Defs>

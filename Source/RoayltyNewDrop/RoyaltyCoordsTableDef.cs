@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
+using RimWorld;
 using Verse;
 
-namespace RimWorld
+namespace NobilityExpanded
 {
     public class RoyaltyCoordsTableDef : Def
     {

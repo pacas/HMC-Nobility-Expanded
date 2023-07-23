@@ -44,7 +44,7 @@
             <favorCost>5</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedStuffBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>SmithOutfitDropStuff</defName>
         <quality>Good</quality>
         <stuffList>
@@ -54,7 +54,7 @@
             <li>Flaxcloth</li>
             <li>Flaxcloth</li>
         </stuffList>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
         <defName>FarmerOutfitDrop</defName>
@@ -73,7 +73,7 @@
             <favorCost>5</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedStuffBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>FarmerOutfitDropStuff</defName>
         <quality>Good</quality>
         <column>1</column>
@@ -84,7 +84,7 @@
             <li>Flaxcloth</li>
             <li>Flaxcloth</li>
         </stuffList>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
     
     
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
@@ -100,7 +100,7 @@
             </itemsToDrop>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedStuffBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>ChefOutfitDropStuff</defName>
         <quality>Good</quality>
         <column>1</column>
@@ -110,7 +110,7 @@
             <li>Synthread</li>
             <li>Flaxcloth</li>
         </stuffList>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
     
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
         <defName>MedicOutfitDrop</defName>
@@ -127,7 +127,7 @@
             <favorCost>9</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedStuffBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>MedicOutfitDropStuff</defName>
         <quality>Good</quality>
         <stuffList>
@@ -136,7 +136,7 @@
             <li>Synthread</li>
             <li>Flaxcloth</li>
         </stuffList>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
@@ -153,7 +153,7 @@
             </itemsToDrop>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedStuffBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>MinerOutfitDropStuff</defName>
         <quality>Good</quality>
         <stuffList>
@@ -163,7 +163,7 @@
             <li>Synthread</li>
             <li>Flaxcloth</li>
         </stuffList>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
     
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
         <defName>ConstructorOutfitDrop</defName>
@@ -181,7 +181,7 @@
             <favorCost>5</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedStuffBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>ConstructorOutfitDropStuff</defName>
         <quality>Good</quality>
         <column>1</column>
@@ -192,7 +192,7 @@
             <li>Flaxcloth</li>
             <li>Flaxcloth</li>
         </stuffList>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <!-- Special -->
     
@@ -214,7 +214,7 @@
             <favorCost>17</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedStuffBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>SoldierAccessoriesDropStuff</defName>
         <quality>Good</quality>
         <stuffList>
@@ -223,7 +223,7 @@
             <li>TitaniumBar</li>
             <li>TitaniumBar</li>
         </stuffList>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
         <defName>SoldierAccessoriesAltDrop</defName>
@@ -242,7 +242,7 @@
             <favorCost>11</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedStuffBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>SoldierAccessoriesAltDropStuff</defName>
         <quality>Good</quality>
         <column>1</column>
@@ -252,7 +252,7 @@
             <li>Titanium</li>
             <li>Synthread</li>
         </stuffList>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <!-- Specialized -->
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
@@ -268,14 +268,14 @@
             <favorCost>8</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedStuffBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>HazmatOutfitDropStuff</defName>
         <quality>Good</quality>
         <stuffList>
             <li>Synthread</li>
             <li>Synthread</li>
         </stuffList>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
         <defName>ShieldBeltDrop</defName>
@@ -288,7 +288,7 @@
             </itemsToDrop>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedStuffBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>ShieldBeltDropStuff</defName>
         <typeOfQuality>Range</typeOfQuality>
         <quality>Good</quality>
@@ -296,7 +296,7 @@
         <stuffList>
             <li>TitaniumBar</li>
         </stuffList>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <!-- Royal -->
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
@@ -317,7 +317,7 @@
             <favorCost>22</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedStuffBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>RoyalOutfitDropStuff</defName>
         <typeOfQuality>Range</typeOfQuality>
         <quality>Excellent</quality>
@@ -328,7 +328,7 @@
             <li>Velour</li>
             <li>GoldBar</li>
         </stuffList>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
         <defName>PsychicOutfitDrop</defName>
@@ -347,13 +347,13 @@
             <favorCost>22</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedStuffBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>PsychicOutfitDropStuff</defName>
         <typeOfDrop>Quality</typeOfDrop>
         <typeOfQuality>Range</typeOfQuality>
         <quality>Excellent</quality>
         <column>1</column>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <!-- Simple -->
 
@@ -375,7 +375,7 @@
             <favorCost>3</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedStuffBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>SimpleOutfitDropStuff</defName>
         <quality>Good</quality>
         <stuffList>
@@ -386,7 +386,7 @@
             <li>Flaxcloth</li>
             <li>Leather_Light</li>
         </stuffList>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
         <defName>SlaveOutfitDrop</defName>
@@ -405,7 +405,7 @@
             <favorCost>3</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedStuffBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>SlaveOutfitDropStuff</defName>
         <quality>Good</quality>
         <column>1</column>
@@ -416,5 +416,5 @@
             <li>Flaxcloth</li>
             <li>Leather_Light</li>
         </stuffList>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 </Defs>

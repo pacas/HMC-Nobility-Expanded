@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <RoyaltyCoordsTableDef>
+    <NobilityExpanded.RoyaltyCoordsTableDef>
         <defName>CoordsTableMelee_0</defName>
         <coordX>0</coordX>
         <loadOrder>
@@ -10,9 +10,9 @@
             <li>BluntMeleeDrop</li>
             <li>HeavyMeleeDrop</li>
         </loadOrder>
-    </RoyaltyCoordsTableDef>
+    </NobilityExpanded.RoyaltyCoordsTableDef>
 
-    <RoyaltyCoordsTableDef>
+    <NobilityExpanded.RoyaltyCoordsTableDef>
         <defName>CoordsTableMelee_1</defName>
         <coordX>1</coordX>
         <loadOrder>
@@ -22,5 +22,5 @@
             <li>BluntMeleeDropPlus</li>
             <li>HeavyMeleeDropPlus</li>
         </loadOrder>
-    </RoyaltyCoordsTableDef>
+    </NobilityExpanded.RoyaltyCoordsTableDef>
 </Defs>

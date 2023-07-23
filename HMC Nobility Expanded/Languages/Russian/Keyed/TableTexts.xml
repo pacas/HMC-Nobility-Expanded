@@ -28,7 +28,7 @@
 
     <!-- ===== Категория ===== -->
     <PermitCategory_Resources>Базовые ресурсы</PermitCategory_Resources>
-    <PermitCategory_Pawns>Рабочие и солдаты</PermitCategory_Pawns>
+    <PermitCategory_Pawns>Союзники</PermitCategory_Pawns>
     <PermitCategory_Airstrike>Военная поддержка</PermitCategory_Airstrike>
     <PermitCategory_Tools>Инструменты</PermitCategory_Tools>
     <PermitCategory_Armor>Броня</PermitCategory_Armor>

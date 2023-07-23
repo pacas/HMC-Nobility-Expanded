@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <RoyaltyCoordsTableDef>
+    <NobilityExpanded.RoyaltyCoordsTableDef>
         <defName>CoordsTablePawns_0</defName>
         <coordX>0</coordX>
         <loadOrder>
@@ -11,9 +11,9 @@
             <li>CallMilitaryAidSmall</li>
             <li>CallMilitaryAidLarge</li>
         </loadOrder>
-    </RoyaltyCoordsTableDef>
+    </NobilityExpanded.RoyaltyCoordsTableDef>
 
-    <RoyaltyCoordsTableDef>
+    <NobilityExpanded.RoyaltyCoordsTableDef>
         <defName>CoordsTablePawns_1</defName>
         <coordX>1</coordX>
         <loadOrder>
@@ -24,5 +24,5 @@
             <li>CallMilitaryAidSmallPlus</li>
             <li>CallMilitaryAidGrand</li>
         </loadOrder>
-    </RoyaltyCoordsTableDef>
+    </NobilityExpanded.RoyaltyCoordsTableDef>
 </Defs>

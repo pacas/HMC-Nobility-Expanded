@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <RoyaltyCoordsTableDef>
+    <NobilityExpanded.RoyaltyCoordsTableDef>
         <defName>CoordsTableArmor_0</defName>
         <coordX>0</coordX>
         <loadOrder>
@@ -10,9 +10,9 @@
             <li>SpacerArmorDrop</li>
             <li>UltraArmorDrop</li>
         </loadOrder>
-    </RoyaltyCoordsTableDef>
+    </NobilityExpanded.RoyaltyCoordsTableDef>
 
-    <RoyaltyCoordsTableDef>
+    <NobilityExpanded.RoyaltyCoordsTableDef>
         <defName>CoordsTableArmor_1</defName>
         <coordX>1</coordX>
         <loadOrder>
@@ -22,5 +22,5 @@
             <li>SpacerArmorDropPlus</li>
             <li>UltraArmorDropPlus</li>
         </loadOrder>
-    </RoyaltyCoordsTableDef>
+    </NobilityExpanded.RoyaltyCoordsTableDef>
 </Defs>

@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.Reflection;
 using HarmonyLib;
+using RimWorld;
 using RimWorld.Planet;
 using UnityEngine;
 using Verse;
 
-namespace RimWorld
+namespace NobilityExpanded
 {
     [StaticConstructorOnStartup]
     public static class HarmonyPatches

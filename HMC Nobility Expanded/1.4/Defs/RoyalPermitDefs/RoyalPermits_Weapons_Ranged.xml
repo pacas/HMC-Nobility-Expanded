@@ -22,7 +22,7 @@
             <favorCost>4</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedGunBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedGunBase">
         <defName>PistolDropStuff</defName>
         <thingsToChoose>
             <li>Gun_Revolver</li>
@@ -47,7 +47,7 @@
             <li MayRequire="arpomo6.hmc.project">64</li>
             <li MayRequire="arpomo6.hmc.project">64</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>PistolDropPlus</defName>
@@ -64,7 +64,7 @@
             <favorCost>7</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedGunBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedGunBase">
         <defName>PistolDropPlusStuff</defName>
         <typeOfQuality>Range</typeOfQuality>
         <quality>Excellent</quality>
@@ -97,7 +97,7 @@
             <li MayRequire="Seventh.Seraph.Weapons.SK">56</li>
             <li MayRequire="Seventh.Seraph.Weapons.SK">90</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
     
     <!-- SMG -->
   
@@ -115,7 +115,7 @@
             <favorCost>6</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedGunBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedGunBase">
         <defName>SMGDropStuff</defName>
         <thingsToChoose>
             <li>RF_Gun_Tecnine</li>
@@ -151,7 +151,7 @@
             <li MayRequire="Mlie.ApexRimworldLegends.SK">270</li>
             <li MayRequire="Mlie.ApexRimworldLegends.SK">180</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>SMGDropPlus</defName>
@@ -168,7 +168,7 @@
             <favorCost>12</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedGunBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedGunBase">
         <defName>SMGDropPlusStuff</defName>
         <typeOfQuality>Range</typeOfQuality>
         <quality>Excellent</quality>
@@ -195,7 +195,7 @@
             <li MayRequire="Seventh.Seraph.Weapons.SK">300</li>
             <li MayRequire="Mlie.ApexRimworldLegends.SK">280</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
     
     <!-- Shotgun -->
   
@@ -213,7 +213,7 @@
             <favorCost>8</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedGunBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedGunBase">
         <defName>ShotgunDropStuff</defName>
         <thingsToChoose>
             <li>Gun_M37A2_USCM</li>
@@ -241,7 +241,7 @@
             <li MayRequire="Mlie.ApexRimworldLegends.SK">60</li>
             <li MayRequire="Mlie.ApexRimworldLegends.SK">60</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>ShotgunDropPlus</defName>
@@ -258,7 +258,7 @@
             <favorCost>15</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedGunBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedGunBase">
         <defName>ShotgunDropPlusStuff</defName>
         <typeOfQuality>Range</typeOfQuality>
         <quality>Excellent</quality>
@@ -287,7 +287,7 @@
             <li MayRequire="Mlie.ApexRimworldLegends.SK">64</li>
             <li MayRequire="Mlie.ApexRimworldLegends.SK">60</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
     
     <!-- Rifle -->
   
@@ -305,7 +305,7 @@
             <favorCost>10</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedGunBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedGunBase">
         <defName>RifleDropStuff</defName>
         <thingsToChoose>
             <li>Gun_BoltActionRifle</li>
@@ -345,7 +345,7 @@
             <li MayRequire="arpomo6.hmc.project">210</li>
             <li MayRequire="Mlie.ApexRimworldLegends.SK">210</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>RifleDropPlus</defName>
@@ -362,7 +362,7 @@
             <favorCost>19</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedGunBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedGunBase">
         <defName>RifleDropPlusStuff</defName>
         <typeOfQuality>Range</typeOfQuality>
         <quality>Excellent</quality>
@@ -429,7 +429,7 @@
             <li MayRequire="Mlie.ApexRimworldLegends.SK">210</li>
             <li MayRequire="Mlie.ApexRimworldLegends.SK">210</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
     
     <!-- Sniper -->
   
@@ -447,7 +447,7 @@
             <favorCost>11</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedGunBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedGunBase">
         <defName>SniperRifleDropStuff</defName>
         <thingsToChoose>
             <li>Gun_SniperRifle</li>
@@ -470,7 +470,7 @@
             <li MayRequire="arpomo6.hmc.project">60</li>
             <li MayRequire="Mlie.ApexRimworldLegends.SK">80</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>SniperRifleDropPlus</defName>
@@ -487,7 +487,7 @@
             <favorCost>22</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedGunBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedGunBase">
         <defName>SniperRifleDropPlusStuff</defName>
         <typeOfQuality>Range</typeOfQuality>
         <quality>Excellent</quality>
@@ -543,7 +543,7 @@
             <li MayRequire="Mlie.ApexRimworldLegends.SK">45</li>
             <li MayRequire="Mlie.ApexRimworldLegends.SK">40</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
     
     <!-- Machine Guns -->
   
@@ -561,7 +561,7 @@
             <favorCost>11</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedGunBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedGunBase">
         <defName>MGDropStuff</defName>
         <thingsToChoose>
             <li>RF_Gun_Galil</li>
@@ -591,7 +591,7 @@
             <li MayRequire="arpomo6.hmc.project">300</li>
             <li MayRequire="Mlie.ApexRimworldLegends.SK">300</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>MGDropPlus</defName>
@@ -608,7 +608,7 @@
             <favorCost>22</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedGunBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedGunBase">
         <defName>MGDropPlusStuff</defName>
         <typeOfQuality>Range</typeOfQuality>
         <quality>Excellent</quality>
@@ -637,7 +637,7 @@
             <li MayRequire="Seventh.Seraph.Weapons.SK">300</li>
             <li MayRequire="Mlie.ApexRimworldLegends.SK">300</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
     
     <!-- Launchers -->
   
@@ -655,7 +655,7 @@
             <favorCost>14</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedGunBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedGunBase">
         <defName>LauncherDropStuff</defName>
         <thingsToChoose>
             <li>Gun_IncendiaryLauncher</li>
@@ -681,7 +681,7 @@
             <li MayRequire="XxNelsonxX.Parabellum">18</li>
             <li MayRequire="XxNelsonxX.Parabellum">10</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>LauncherDropPlus</defName>
@@ -698,7 +698,7 @@
             <favorCost>22</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedGunBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedGunBase">
         <defName>LauncherDropPlusStuff</defName>
         <typeOfQuality>Range</typeOfQuality>
         <quality>Excellent</quality>
@@ -721,7 +721,7 @@
             <li MayRequire="XxNelsonxX.Parabellum">8</li>
             <li MayRequire="arpomo6.hmc.project">18</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <!-- Energy -->
 
@@ -739,7 +739,7 @@
             <favorCost>22</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedGunBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedGunBase">
         <defName>BlasterDropStuff</defName>
         <typeOfQuality>Range</typeOfQuality>
         <quality>Good</quality>
@@ -759,7 +759,7 @@
             <li>36</li>
             <li>100</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>LasersDrop</defName>
@@ -775,7 +775,7 @@
             <favorCost>22</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedGunBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedGunBase">
         <defName>LasersDropStuff</defName>
         <typeOfQuality>Range</typeOfQuality>
         <quality>Good</quality>
@@ -798,7 +798,7 @@
             <li MayRequire="arpomo6.hmc.project">45</li>
             <li MayRequire="arpomo6.hmc.project">30</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>PlasmerDrop</defName>
@@ -814,7 +814,7 @@
             <favorCost>22</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedGunBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedGunBase">
         <defName>PlasmerDropStuff</defName>
         <typeOfQuality>Range</typeOfQuality>
         <quality>Good</quality>
@@ -842,7 +842,7 @@
             <li MayRequire="Mlie.ApexRimworldLegends.SK">72</li>
             <li MayRequire="Mlie.ApexRimworldLegends.SK">96</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>ChargeRailDrop</defName>
@@ -858,7 +858,7 @@
             <favorCost>22</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedGunBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedGunBase">
         <defName>ChargeRailDropStuff</defName>
         <typeOfQuality>Range</typeOfQuality>
         <quality>Good</quality>
@@ -873,5 +873,5 @@
             <li>90</li>
             <li>120</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 </Defs>
