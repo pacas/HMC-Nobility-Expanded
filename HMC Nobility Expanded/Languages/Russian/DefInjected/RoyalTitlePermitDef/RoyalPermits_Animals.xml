@@ -6,17 +6,29 @@
     <AnimalsPermitTitle.description>Запрос доставки различных животных.</AnimalsPermitTitle.description>
 
     <!-- ==== -->
-    <FarmAnimalDrop.label>фермерские</FarmAnimalDrop.label>
-    <FarmAnimalDrop.description>Запрос доставки двух случайных фермерских животных одного вида.</FarmAnimalDrop.description>
+    <MilkAnimalDrop.label>молокопроизводящие</MilkAnimalDrop.label>
+    <MilkAnimalDrop.description>Запрос доставки двух случайных молокопроизводящих животных одного вида разных полов.</MilkAnimalDrop.description>
+
+    <WoolAnimalDrop.label>шерстистые</WoolAnimalDrop.label>
+    <WoolAnimalDrop.description>Запрос доставки двух случайных шерстистых животных одного вида разных полов.</WoolAnimalDrop.description>
+
+    <EggAnimalDrop.label>яйцекладущие</EggAnimalDrop.label>
+    <EggAnimalDrop.description>Запрос доставки двух случайных яйцекладущих животных одного вида разных полов.</EggAnimalDrop.description>
+
+    <MeatAnimalDrop.label>мясозаготавливаемые</MeatAnimalDrop.label>
+    <MeatAnimalDrop.description>Запрос доставки двух случайных мясозаготавливаемых животных одного вида разных полов.</MeatAnimalDrop.description>
     
     <CaravanAnimalDrop.label>караванные</CaravanAnimalDrop.label>
-    <CaravanAnimalDrop.description>Запрос доставки двух случайных караванных животных одного вида.</CaravanAnimalDrop.description>
+    <CaravanAnimalDrop.description>Запрос доставки двух случайных караванных животных одного вида разных полов.</CaravanAnimalDrop.description>
 
     <BattleAnimalDrop.label>боевые</BattleAnimalDrop.label>
-    <BattleAnimalDrop.description>Запрос доставки двух случайных боевых животных одного вида. Или гуся.</BattleAnimalDrop.description>
+    <BattleAnimalDrop.description>Запрос доставки двух случайных боевых животных одного вида разных полов. Или гусей.</BattleAnimalDrop.description>
 
     <ExoticAnimalDrop.label>экзотические</ExoticAnimalDrop.label>
-    <ExoticAnimalDrop.description>Запрос доставки одного случайного экхотического зверя. Или кота.</ExoticAnimalDrop.description>
+    <ExoticAnimalDrop.description>Запрос доставки одного случайного экзотического зверя.</ExoticAnimalDrop.description>
+    
+    <MythicalAnimalDrop.label>мифические</MythicalAnimalDrop.label>
+    <MythicalAnimalDrop.description>Запрос доставки одного случайного мифического зверя. Или кота.</MythicalAnimalDrop.description>
 
     <PetAnimalDrop.label>питомцы</PetAnimalDrop.label>
     <PetAnimalDrop.description>Запрос доставки одного случайного питомца. </PetAnimalDrop.description>

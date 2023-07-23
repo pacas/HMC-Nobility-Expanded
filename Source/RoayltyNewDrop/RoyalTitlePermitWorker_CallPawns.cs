@@ -71,7 +71,11 @@ namespace NobilityExpanded
 
             for (var index = 0; index < def.royalAid.pawnCount; ++index)
             {
-                Pawn pawn = PawnGenerator.GeneratePawn(stuff.pawnToChoose[randomIndex], Faction.OfPlayer);
+                PawnGenerationRequest request = new PawnGenerationRequest(
+                    stuff.pawnToChoose[randomIndex],
+                    Faction.OfPlayer, 
+                    fixedGender: stuff.genders?[index]);
+                Pawn pawn = PawnGenerator.GeneratePawn(request);
                 TradeUtility.SpawnDropPod(spawnPos + new IntVec3(index, 0, 0), map, pawn);
             }
             if (!free)

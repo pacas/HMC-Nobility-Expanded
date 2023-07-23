@@ -6,6 +6,86 @@
         <label>Ranged Weapons</label>
         <description>Request a drop of random ranged weapons.</description>
     </RoyalTitlePermitDef>
+
+    <!-- Bows and crossbows -->
+    
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>BowDrop</defName>
+        <label>Bow/Crossbow</label>
+        <description>Request a drop of random bow/crossbow with ammo.</description>
+        <minTitle>Acolyte</minTitle>
+        <cooldownDays>5</cooldownDays>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>2</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>BowDropStuff</defName>
+        <thingsToChoose>
+            <li>Bow_Short</li>
+            <li>Bow_Great</li>
+            <li>Crossbow</li>
+            <li>Norbal_Scorpion</li>
+        </thingsToChoose>
+        <ammunition>
+            <li>75</li>
+            <li>75</li>
+            <li>75</li>
+            <li>75</li>
+            <li>75</li>
+            <li>75</li>
+        </ammunition>
+        <stuffList>
+            <li>WoodLog</li>
+            <li>WoodLog</li>
+            <li>WoodLog</li>
+            <li>WoodLog</li>
+        </stuffList>
+    </NobilityExpanded.OrderedStuffDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>BowDropPlus</defName>
+        <label>Bow/Crossbow +</label>
+        <description>Request a drop of random bow/crossbow with ammo. Better weapons in the selection.</description>
+        <minTitle>Knight</minTitle>
+        <cooldownDays>15</cooldownDays>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>3</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedBase">
+        <defName>BowDropPlusStuff</defName>
+        <column>1</column>
+        <thingsToChoose>
+            <li>NorbalBow_Grape</li>
+            <li>Bow_Recurve</li>
+            <li>Norbal_Scorpion</li>
+            <li>Arbalest</li>
+        </thingsToChoose>
+        <ammunition>
+            <li>75</li>
+            <li>75</li>
+            <li>75</li>
+            <li>75</li>
+        </ammunition>
+        <stuffList>
+            <li>RedWoodLog</li>
+            <li>RedWoodLog</li>
+            <li>RedWoodLog</li>
+            <li>RedWoodLog</li>
+        </stuffList>
+        <typeOfDrop>StuffQuality</typeOfDrop>
+        <typeOfItem>Random</typeOfItem>
+        <typeOfQuality>Range</typeOfQuality>
+        <quality>Excellent</quality>
+        <ammoUsage>Gun</ammoUsage>
+    </NobilityExpanded.OrderedStuffDef>
     
     <!-- Pistol -->
   
