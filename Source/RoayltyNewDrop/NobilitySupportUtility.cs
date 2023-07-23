@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using RimWorld;
 
-namespace RimWorld
+namespace NobilityExpanded
 {
     public class NobilitySupportUtility
     {

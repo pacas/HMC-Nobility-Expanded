@@ -27,7 +27,7 @@
             <favorCost>2</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedStuffBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>ToolDropStuff</defName>
         <stuffList>
             <li>Plasteel</li>
@@ -38,7 +38,7 @@
             <li>Plasteel</li>
             <li>WoodPlank</li>
         </stuffList>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
     
     <!-- xxxxx -->
     
@@ -63,7 +63,7 @@
             <favorCost>4</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedStuffBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>ToolDropPlusStuff</defName>
         <quality>Excellent</quality>
         <column>1</column>
@@ -76,7 +76,7 @@
             <li>Titanium</li>
             <li>AluminiumBar</li>
         </stuffList>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <!-- xxxxx -->
 
@@ -93,12 +93,12 @@
             <favorCost>6</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedStuffBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>AdvToolDropStuff</defName>
         <stuffList>
             <li>AlnicoAlloy</li>
         </stuffList>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
     
     <!-- xxxxx -->
     
@@ -117,12 +117,12 @@
             <favorCost>8</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedStuffBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>AdvToolDropPlusStuff</defName>
         <quality>Excellent</quality>
         <column>1</column>
         <stuffList>
             <li>Titanium</li>
         </stuffList>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 </Defs>

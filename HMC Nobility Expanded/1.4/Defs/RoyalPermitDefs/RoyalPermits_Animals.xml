@@ -21,7 +21,7 @@
             <targetingRange>39.9</targetingRange>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedThingsBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsBase">
         <defName>FarmAnimalDropStuff</defName>
         <pawnToChoose>
             <li>Pig</li>
@@ -57,7 +57,7 @@
             <li MayRequire="sarg.alphaanimals">AA_WaywardMobileAssembler</li>
             <li MayRequire="sarg.alphaanimals">AA_Groundrunner</li>
         </pawnToChoose>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <!-- Caravan -->
     <RoyalTitlePermitDef ParentName="SendPawns">
@@ -73,7 +73,7 @@
             <targetingRange>39.9</targetingRange>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedThingsBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsBase">
         <defName>CaravanAnimalDropStuff</defName>
         <column>1</column>
         <pawnToChoose>
@@ -96,7 +96,7 @@
             <li MayRequire="sarg.alphaanimals">AA_SpinedGow</li>
             <li MayRequire="sarg.alphaanimals">AA_ShockGoat</li>
         </pawnToChoose>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <!-- Battle -->
     <RoyalTitlePermitDef ParentName="SendPawns">
@@ -112,7 +112,7 @@
             <targetingRange>39.9</targetingRange>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedThingsBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsBase">
         <defName>BattleAnimalDropStuff</defName>
         <pawnToChoose>
             <li>Bear_Grizzly</li>
@@ -141,7 +141,7 @@
             <li MayRequire="sarg.alphaanimals">AA_Thunderbeast</li>
             <li MayRequire="sarg.alphaanimals">AA_WindBeast</li>
         </pawnToChoose>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
     
     <!-- Pet -->
     <RoyalTitlePermitDef ParentName="SendPawns">
@@ -157,7 +157,7 @@
             <targetingRange>39.9</targetingRange>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedThingsBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsBase">
         <defName>PetAnimalDropStuff</defName>
         <column>1</column>
         <pawnToChoose>
@@ -180,7 +180,7 @@
             <li MayRequire="sarg.alphaanimals">AA_Skiphound</li>
             <li MayRequire="sarg.alphaanimals">AA_CrescendoAnole</li>
         </pawnToChoose>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <!-- Exotic -->
     <RoyalTitlePermitDef ParentName="SendPawns">
@@ -196,7 +196,7 @@
             <targetingRange>39.9</targetingRange>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedThingsBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsBase">
         <defName>ExoticAnimalDropStuff</defName>
         <pawnToChoose>
             <li>Feenix</li>
@@ -212,6 +212,6 @@
             <li>Nightling</li>
             <li MayRequire="sarg.alphaanimals">AA_AuroraSylph</li>
         </pawnToChoose>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
     
 </Defs>

@@ -20,7 +20,7 @@
             <favorCost>2</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedThingsBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsBase">
         <defName>SeedsPotatoDropStuff</defName>
         <thingsToChoose>
             <li>Seed_Rice</li>
@@ -29,7 +29,7 @@
             <li>Seedbean</li>
             <li MayRequire="arpomo6.hmc.biomes">SeedBuckwheat</li>
         </thingsToChoose>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <!-- xxxxx -->
 
@@ -46,7 +46,7 @@
             <favorCost>2</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedThingsBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsBase">
         <defName>SeedsPotatoDropPlusStuff</defName>
         <column>1</column>
         <thingsToChoose>
@@ -54,7 +54,7 @@
             <li>SeedCarrot</li>
             <li>SeedTomato</li>
         </thingsToChoose>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <!-- xxxxx -->
     
@@ -71,7 +71,7 @@
             <favorCost>2</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedThingsBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsBase">
         <defName>SeedsShroomsDropStuff</defName>
         <thingsToChoose>
             <li>Seedmushroom</li>
@@ -80,7 +80,7 @@
             <li>Seed_shimmershroom</li>
             <li MayRequire="ludeon.rimworld.ideology">Seed_Nutrifungus</li>
         </thingsToChoose>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <!-- xxxxx -->
 
@@ -97,7 +97,7 @@
             <favorCost>3</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedThingsBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsBase">
         <defName>SeedsLuxDropStuff</defName>
         <column>1</column>
         <thingsToChoose>
@@ -110,7 +110,7 @@
             <li>SeedWildRose</li>
             <li>SeedHypericum</li>
         </thingsToChoose>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <!-- xxxxx -->
 
@@ -127,7 +127,7 @@
             <favorCost>4</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedThingsBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsBase">
         <defName>SeedsAddictiveDropStuff</defName>
         <thingsToChoose>
             <li>SeedTobacco</li>
@@ -137,7 +137,7 @@
             <li>Seed_Smokeleaf</li>
             <li>Seed_Psychoid</li>
         </thingsToChoose>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <!-- xxxxx -->
 
@@ -154,7 +154,7 @@
             <favorCost>2</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedThingsBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsBase">
         <defName>SeedsClothDropStuff</defName>
         <column>1</column>
         <thingsToChoose>
@@ -162,7 +162,7 @@
             <li>SeedFlax</li>
             <li>Seed_Devilstrand</li>
         </thingsToChoose>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <!-- xxxxx -->
 
@@ -179,13 +179,13 @@
             <favorCost>2</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedThingsBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsBase">
         <defName>SeedsHealDropStuff</defName>
         <thingsToChoose>
             <li>SeedAloe</li>
             <li>Seed_Healroot</li>
         </thingsToChoose>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <!-- xxxxx -->
 
@@ -202,14 +202,14 @@
             <favorCost>4</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedThingsBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsBase">
         <defName>SeedsUtilDropStuff</defName>
         <column>1</column>
         <thingsToChoose>
             <li>SeedNeutroFlower</li>
             <li>Seed_CEBlazebulb</li>
         </thingsToChoose>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <!-- xxxxx -->
 
@@ -226,7 +226,7 @@
             <favorCost>3</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedThingsBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsBase">
         <defName>SeedsOakDropStuff</defName>
         <thingsToChoose>
             <li>Seed_TreeDrago</li>
@@ -245,7 +245,7 @@
             <li>Seed_Redwood</li>
             <li MayRequire="arpomo6.hmc.biomes">SeedIronPine</li>
         </thingsToChoose>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <!-- xxxxx -->
 
@@ -263,7 +263,7 @@
             <favorCost>3</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedThingsBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsBase">
         <defName>SeedsOakDropPlusStuff</defName>
         <column>1</column>
         <thingsToChoose>
@@ -272,5 +272,5 @@
             <li>SeedorangeTree</li>
             <li>SeedPeachTree</li>
         </thingsToChoose>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 </Defs>

@@ -15,7 +15,7 @@
             <targetingRange>39.9</targetingRange>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedThingsBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsBase">
         <defName>SpiderAnimalDropStuff</defName>
         <column>1</column>
         <pawnToChoose>
@@ -25,5 +25,5 @@
             <li MayRequire="sarg.alphaanimals">AA_Feralisk</li>
             <li MayRequire="sarg.alphaanimals">AA_Junglelisk</li>
         </pawnToChoose>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 </Defs>

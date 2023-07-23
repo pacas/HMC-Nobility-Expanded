@@ -15,9 +15,9 @@
             <favorCost>2</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedThingsSpecificBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsSpecificBase">
         <defName>BabyFoodDropStuff</defName>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>VampiresFoodDrop</defName>
@@ -33,9 +33,9 @@
             <favorCost>6</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedThingsSpecificBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsSpecificBase">
         <defName>VampiresFoodDropStuff</defName>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
         <defName>BabyClothesDrop</defName>
@@ -54,7 +54,7 @@
             <favorCost>4</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedStuffBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>BabyClothesDropStuff</defName>
         <quality>Good</quality>
         <column>1</column>
@@ -64,6 +64,6 @@
             <li>Plasteel</li>
             <li>Flaxcloth</li>
         </stuffList>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
     
 </Defs>

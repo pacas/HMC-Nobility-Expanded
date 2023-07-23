@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using RimWorld;
 using UnityEngine;
 using Verse;
 using Verse.Sound;
 
-namespace RimWorld
+namespace NobilityExpanded
 {
     [StaticConstructorOnStartup]
     public static class PermitsCardCustomUtility
@@ -208,7 +209,7 @@ namespace RimWorld
                     else if (permit.permitPointCost == 98) {
                         textColor = new Color(1f, 0.8f, 0.2f, 1.0f);
                         bgColor = new Color(0.06f, 0.06f, 0.06f, 1);
-                        permitRect = new Rect(vector2.x, vector2.y, 150f, 50f);
+                        permitRect = new Rect(vector2.x - 25f, vector2.y, 200f, 50f);
                     }
                     else if (!permit.AvailableForPawn(pawn, selectedFaction) && !PermitUnlocked(permit, pawn)) {
                         textColor = new Color(0.6f, 0.1f, 0.1f, 1.0f);
@@ -432,10 +433,9 @@ namespace RimWorld
             var tabOptions = new List<FloatMenuOption>();
             var catTable = DefDatabase<RoyaltyPermitCategoryTableDef>.GetNamedSilentFail("PermitCategoryTable");
             var dict = new Dictionary<string, Action> {};
-            for (var index = 0; index < catTable.defTags.Count; ++index)
+            foreach (var category in catTable.categories)
             {
-                dict.Add(NobilitySupportUtility.permitCategory + catTable.defTags[index], 
-                    () => UtilityClass.curTab = catTable.translatedTags[index]);
+                dict.Add(NobilitySupportUtility.permitCategory + category, () => UtilityClass.curTab = category);
             }     
             foreach (var table in dict)
             {

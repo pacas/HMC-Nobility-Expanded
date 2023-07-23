@@ -54,7 +54,7 @@
             <favorCost>10</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedTurretBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedTurretBase">
         <defName>BallistaDropStuff</defName>
         <thingsToChoose>
             <li>MedievalTimes_Ballista</li>
@@ -65,7 +65,7 @@
         <ammunition>
             <li>30</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>CatapultDrop</defName>
@@ -81,7 +81,7 @@
             <favorCost>10</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedTurretBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedTurretBase">
         <defName>CatapultDropStuff</defName>
         <column>1</column>
         <thingsToChoose>
@@ -93,7 +93,7 @@
         <ammunition>
             <li>20</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <!-- MG1 -->
     <RoyalTitlePermitDef ParentName="DropBuildings">
@@ -110,7 +110,7 @@
             <favorCost>12</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedTurretBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedTurretBase">
         <defName>MG1LightTurretDropStuff</defName>
         <thingsToChoose>
             <li>Turret_M240B</li>
@@ -121,7 +121,7 @@
         <ammunition>
             <li>400</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>MG1HeavyTurretDrop</defName>
@@ -137,7 +137,7 @@
             <favorCost>14</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedTurretBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedTurretBase">
         <defName>MG1HeavyTurretDropStuff</defName>
         <column>1</column>
         <thingsToChoose>
@@ -149,7 +149,7 @@
         <ammunition>
             <li>450</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <!-- MG2 -->
     <RoyalTitlePermitDef ParentName="DropBuildings">
@@ -166,7 +166,7 @@
             <favorCost>12</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedTurretBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedTurretBase">
         <defName>MG2LightTurretDropStuff</defName>
         <thingsToChoose>
             <li>Turret_Minigun</li>
@@ -177,7 +177,7 @@
         <ammunition>
             <li>500</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>MG2HeavyTurretDrop</defName>
@@ -193,7 +193,7 @@
             <favorCost>14</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedTurretBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedTurretBase">
         <defName>MG2HeavyTurretDropStuff</defName>
         <column>1</column>
         <thingsToChoose>
@@ -205,7 +205,7 @@
         <ammunition>
             <li>480</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <!-- Mortars -->
     <!-- AGS -->
@@ -223,7 +223,7 @@
             <favorCost>12</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedTurretBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedTurretBase">
         <defName>AGS17TurretDropStuff</defName>
         <thingsToChoose>
             <li>Turret_AGSThirty</li>
@@ -234,7 +234,7 @@
         <ammunition>
             <li>45</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>AGS30TurretDrop</defName>
@@ -251,7 +251,7 @@
             <favorCost>14</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedTurretBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedTurretBase">
         <defName>AGS30TurretDropStuff</defName>
         <column>1</column>
         <thingsToChoose>
@@ -263,7 +263,7 @@
         <ammunition>
             <li>50</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <!-- 81/90 -->
     <RoyalTitlePermitDef ParentName="DropBuildings">
@@ -280,7 +280,7 @@
             <favorCost>12</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedTurretBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedTurretBase">
         <defName>A81MortarDropStuff</defName>
         <thingsToChoose>
             <li>Turret_Mortar</li>
@@ -291,7 +291,7 @@
         <ammunition>
             <li>10</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>A90MortarDrop</defName>
@@ -307,7 +307,7 @@
             <favorCost>14</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedTurretBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedTurretBase">
         <defName>A90MortarDropStuff</defName>
         <column>1</column>
         <thingsToChoose>
@@ -319,7 +319,7 @@
         <ammunition>
             <li>10</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <!-- 120/155 -->
     <RoyalTitlePermitDef ParentName="DropBuildings">
@@ -336,7 +336,7 @@
             <favorCost>20</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedTurretBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedTurretBase">
         <defName>A120MortarDropStuff</defName>
         <thingsToChoose>
             <li>Turret_Cannon</li>
@@ -347,7 +347,7 @@
         <ammunition>
             <li>10</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>A155MortarDrop</defName>
@@ -363,7 +363,7 @@
             <favorCost>24</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedTurretBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedTurretBase">
         <defName>A155MortarDropStuff</defName>
         <column>1</column>
         <thingsToChoose>
@@ -375,7 +375,7 @@
         <ammunition>
             <li>10</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <!-- RK -->
     <!-- RK1 -->
@@ -393,7 +393,7 @@
             <favorCost>14</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedTurretBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedTurretBase">
         <defName>JavelinTurretDropStuff</defName>
         <thingsToChoose>
             <li>LightMissileSystem</li>
@@ -404,7 +404,7 @@
         <ammunition>
             <li>10</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
     
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>TOWTurretDrop</defName>
@@ -421,7 +421,7 @@
             <favorCost>14</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedTurretBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedTurretBase">
         <defName>TOWTurretDropStuff</defName>
         <column>1</column>
         <thingsToChoose>
@@ -433,7 +433,7 @@
         <ammunition>
             <li>10</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <!-- RK2 -->
     <RoyalTitlePermitDef ParentName="DropBuildings">
@@ -450,7 +450,7 @@
             <favorCost>20</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedTurretBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedTurretBase">
         <defName>MediumRKDropStuff</defName>
         <thingsToChoose>
             <li>MediumMissileSystem</li>
@@ -461,7 +461,7 @@
         <ammunition>
             <li>10</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>HeavyRKDrop</defName>
@@ -478,7 +478,7 @@
             <favorCost>24</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedTurretBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedTurretBase">
         <defName>HeavyRKDropStuff</defName>
         <column>1</column>
         <thingsToChoose>
@@ -490,7 +490,7 @@
         <ammunition>
             <li>10</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <!-- AI -->
     <!-- Sentry -->
@@ -508,7 +508,7 @@
             <favorCost>13</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedTurretBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedTurretBase">
         <defName>LightAutoTurretDropStuff</defName>
         <thingsToChoose>
             <li>Turret_MiniTurret</li>
@@ -519,7 +519,7 @@
         <ammunition>
             <li>600</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>HeavyAutoTurretDrop</defName>
@@ -536,7 +536,7 @@
             <favorCost>20</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedTurretBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedTurretBase">
         <defName>HeavyAutoTurretDropStuff</defName>
         <column>1</column>
         <thingsToChoose>
@@ -548,7 +548,7 @@
         <ammunition>
             <li>600</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <!-- Big Sentry -->
     <RoyalTitlePermitDef ParentName="DropBuildings">
@@ -565,7 +565,7 @@
             <favorCost>20</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedTurretBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedTurretBase">
         <defName>BigLightAutoTurretDropStuff</defName>
         <thingsToChoose>
             <li>Turret_SentryRocketLauncher</li>
@@ -576,7 +576,7 @@
         <ammunition>
             <li>27</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>BigHeavyAutoTurretDrop</defName>
@@ -592,7 +592,7 @@
             <favorCost>20</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedTurretBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedTurretBase">
         <defName>BigHeavyAutoTurretDropStuff</defName>
         <column>1</column>
         <thingsToChoose>
@@ -604,7 +604,7 @@
         <ammunition>
             <li>60</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <!-- HighTech Sentry -->
     <RoyalTitlePermitDef ParentName="DropBuildings">
@@ -621,7 +621,7 @@
             <favorCost>24</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedTurretBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedTurretBase">
         <defName>HighTechLightAutoTurretDropStuff</defName>
         <thingsToChoose>
             <li>Turret_Blaster</li>
@@ -632,7 +632,7 @@
         <ammunition>
             <li>300</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
 
     <RoyalTitlePermitDef ParentName="DropBuildings">
         <defName>HighTechHeavyAutoTurretDrop</defName>
@@ -648,7 +648,7 @@
             <favorCost>24</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef ParentName="OrderedTurretBase">
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedTurretBase">
         <defName>HighTechHeavyAutoTurretDropStuff</defName>
         <column>1</column>
         <thingsToChoose>
@@ -660,6 +660,6 @@
         <ammunition>
             <li>360</li>
         </ammunition>
-    </OrderedStuffDef>
+    </NobilityExpanded.OrderedStuffDef>
     
 </Defs>

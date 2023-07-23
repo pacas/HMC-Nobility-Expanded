@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <RoyaltyCoordsTableDef>
+    <NobilityExpanded.RoyaltyCoordsTableDef>
         <defName>CoordsTableSeeds_0</defName>
         <coordX>0</coordX>
         <loadOrder>
@@ -12,9 +12,9 @@
             <li MayRequire="notfood.seedsplease">SeedsOakDrop</li>
             <li MayRequire="notfood.seedsplease">EmptyTableSpace</li>
         </loadOrder>
-    </RoyaltyCoordsTableDef>
+    </NobilityExpanded.RoyaltyCoordsTableDef>
 
-    <RoyaltyCoordsTableDef>
+    <NobilityExpanded.RoyaltyCoordsTableDef>
         <defName>CoordsTableSeeds_1</defName>
         <coordX>1</coordX>
         <loadOrder>
@@ -26,5 +26,5 @@
             <li MayRequire="notfood.seedsplease">SeedsOakDropPlus</li>
             <li MayRequire="notfood.seedsplease">EmptyTableSpace</li>
         </loadOrder>
-    </RoyaltyCoordsTableDef>
+    </NobilityExpanded.RoyaltyCoordsTableDef>
 </Defs>

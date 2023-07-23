@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using Verse;
 
-namespace RimWorld
+namespace NobilityExpanded
 {
     public class RoyaltyPermitCategoryTableDef : Def
     {
-        public List<string> defTags;
-        public List<string> translatedTags;
+        public List<string> categories;
+        
     }
 }
