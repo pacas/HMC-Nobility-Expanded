@@ -5,7 +5,9 @@
         <coordX>0</coordX>
         <loadOrder>
             <li>AnimalsPermitTitle</li>
-            <li>FarmAnimalDrop</li>
+            <li>MilkAnimalDrop</li>
+            <li>EggAnimalDrop</li>
+            <li>CaravanAnimalDrop</li>
             <li>BattleAnimalDrop</li>
             <li>ExoticAnimalDrop</li>
             <li MayRequire="roolo.giddyupcore">MountsAnimalDrop</li>
@@ -17,8 +19,10 @@
         <coordX>1</coordX>
         <loadOrder>
             <li>AnimalsPermitTitle</li>
-            <li>CaravanAnimalDrop</li>
+            <li>WoolAnimalDrop</li>
+            <li>MeatAnimalDrop</li>
             <li>PetAnimalDrop</li>
+            <li>MythicalAnimalDrop</li>
             <li MayRequire="sarg.alphaanimals">SpiderAnimalDrop</li>
         </loadOrder>
     </NobilityExpanded.RoyaltyCoordsTableDef>

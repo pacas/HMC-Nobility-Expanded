@@ -24,11 +24,15 @@
     <DropComment_CallOrbitalSalvo>Lots of bombs dropped in time to a cluster of enemies solves the problems of the need to allocate soldiers to the front as a whole.</DropComment_CallOrbitalSalvo>
 
     <!-- Животные -->
-    <DropComment_FarmAnimalDrop>The Farm... We get everything on Fortuna from less developed planets. However, it is still possible to provide such animals, I will talk to the Provider from Ceres, he will arrange everything.</DropComment_FarmAnimalDrop>
+    <DropComment_MilkAnimalDrop>Everybody loves milk. I wish I had a bottle of goat's milk right now.....</DropComment_MilkAnimalDrop>
+    <DropComment_EggAnimalDrop>An egg for breakfast and go to work.</DropComment_EggAnimalDrop>
+    <DropComment_WoolAnimalDrop>Natural wool is a valuable commodity, but here we have nowhere to graze these animals.....</DropComment_WoolAnimalDrop>
+    <DropComment_MeatAnimalDrop>Natural meat is very hard to get, we have mostly plant-based everything here. I wish I could afford more of it....</DropComment_MeatAnimalDrop>
     <DropComment_CaravanAnimalDrop>Caravan animals? Well, I have to call another caterer, we don't have one here. I'll be in touch if you need me.</DropComment_CaravanAnimalDrop>
     <DropComment_BattleAnimalDrop>Fighting beasts are barely used in the Empire, so don't count on trained beasts. However, just suitable animals are available, can be arranged.</DropComment_BattleAnimalDrop>
     <DropComment_PetAnimalDrop>Do you want a pet? We have plenty of them, the best breeds! I would even give them away for free, but the clerk's office is against it.</DropComment_PetAnimalDrop>
     <DropComment_ExoticAnimalDrop>Exotic... And why is everyone with any influence interested in them? The possibility of supply is there, but I don't recommend it, you'd better look for something else.</DropComment_ExoticAnimalDrop>
+    <DropComment_MythicalAnimalDrop>Mythical beasts... Can you send me a picture later?</DropComment_MythicalAnimalDrop>
     <DropComment_MountsAnimalDrop>Do you want to become a rider? All the nobles of the Empire know how to ride, so you should learn too!</DropComment_MountsAnimalDrop>
     <DropComment_SpiderAnimalDrop>Spiders? Seriously? I wouldn't even go near them, and you want to live with them? You're insane.</DropComment_SpiderAnimalDrop>
 
@@ -99,6 +103,8 @@
     <DropComment_HeavyMeleeDropPlus>The best craftsmen and quality materials, and your weapons will carry the light of the Emperor to all parts of the galaxy even more effectively!</DropComment_HeavyMeleeDropPlus>
 
     <!-- Дальний бой -->
+    <DropComment_BowDrop>If you need it, you can have it. The only reason we can't give it away for free is because of shipping. We got a warehouse full of stuff, but they won't let us just throw it in the furnace. But we'll give you more arrows.</DropComment_BowDrop>
+    <DropComment_BowDropPlus>Among all the junk there are better models. It takes a little longer to find them in warehouses, but they are also ready to give them away for almost nothing.</DropComment_BowDropPlus>
     <DropComment_PistolDrop>Pistols are an underrated weapon. It is always faster to draw a sidearm than to reload a weapon.</DropComment_PistolDrop>
     <DropComment_PistolDropPlus>The best craftsmen and quality materials, and your weapons will carry the light of the Emperor to all parts of the galaxy even more effectively!</DropComment_PistolDropPlus>
     <DropComment_SMGDrop>Submachine guns are compact boxes of death, which for some reason are rather rarely requested from us. It's even a bit of a shame.</DropComment_SMGDrop>

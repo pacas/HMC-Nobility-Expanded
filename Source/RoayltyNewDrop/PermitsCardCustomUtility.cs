@@ -297,7 +297,7 @@ namespace NobilityExpanded
                         {
                             label += "ItemIncludedInPermit".Translate() + "\n";
                             foreach (var t in stuffDefOrdered.thingsToChoose) {
-                                label += "  - " + t.LabelCap + "\n";
+                                label += "  - " + t.label.CapitalizeFirst() + "\n";
                             }
                         }
                         else

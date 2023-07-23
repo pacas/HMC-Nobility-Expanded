@@ -24,11 +24,15 @@
     <DropComment_CallOrbitalSalvo>Множество бомб, вовремя сброшенных в скопление врагов, решают проблемы необходимости выделения на фронт солдат в целом.</DropComment_CallOrbitalSalvo>
 
     <!-- Животные -->
-    <DropComment_FarmAnimalDrop>Ферма... Нам на Фортуну всё поставляют с менее развитых планет. Однако предоставить таких животных всё же возможно, поговорю с провизором с Цереры, он всё организует.</DropComment_FarmAnimalDrop>
+    <DropComment_MilkAnimalDrop>Молоко любят все. Сейчас бы бутылочку козьего молока...</DropComment_MilkAnimalDrop>
+    <DropComment_EggAnimalDrop>Яйцо на завтрак и можно на работу.</DropComment_EggAnimalDrop>
+    <DropComment_WoolAnimalDrop>Натуральная шерсть - ценный товар, но здесь у нас пасти этих животных негде...</DropComment_WoolAnimalDrop>
+    <DropComment_MeatAnimalDrop>Натуральное мясо достать очень сложно, у нас тут в основном растительное всё. Жаль я не могу себе позволить много такого...</DropComment_MeatAnimalDrop>
     <DropComment_CaravanAnimalDrop>Караванные животные? Ну, придётся вызвать другого провизора, у нас тут таких нет. Я свяжусь если вам надо.</DropComment_CaravanAnimalDrop>
     <DropComment_BattleAnimalDrop>Боевые звери почти не используются в Империи, потому не рассчитывайте на обученных зверей. Однако просто подходящие животные есть, можно устроить.</DropComment_BattleAnimalDrop>
     <DropComment_PetAnimalDrop>Хотите домашнего питомца? У нас их много, лучшие породы! Я бы даже бесплатно выдавал, но канцелярия против.</DropComment_PetAnimalDrop>
     <DropComment_ExoticAnimalDrop>Экзотика... И почему все обладающие хоть какой-то властью интересуются ими? Возможность поставки есть, но я не рекомендую, лучше посмотрите чего ещё.</DropComment_ExoticAnimalDrop>
+    <DropComment_MythicalAnimalDrop>Мифические звери... А можете фоточку потом отправить?</DropComment_MythicalAnimalDrop>
     <DropComment_MountsAnimalDrop>Хотите стать наездником? Все знатные личности Империи умеют ездить верхом, так что вам тоже стоит научиться!</DropComment_MountsAnimalDrop>
     <DropComment_SpiderAnimalDrop>Пауки? Серьезно? Я не стал бы даже приближаться к ним, а вы хотите жить с ними? Вы безумны.</DropComment_SpiderAnimalDrop>
 
@@ -57,7 +61,6 @@
     <DropComment_SpacerArmorDropPlus>Набор высших офицеров имперской гвардии. Обычно такие наборы не достать, но многие создаваемые на Вулкане комплекты идут через Фортуну, так что я готов организовать вам такой.</DropComment_SpacerArmorDropPlus>
     <DropComment_UltraArmorDrop>За разрешением на выдачу такого комплекта мне придётся обращатся к столичной канцелярии на Юноне. Это действительно один из лучших видов брони во всей Империи, производимая только на Вулкане, и получают её только одни из самых титулованных людей в Империи.</DropComment_UltraArmorDrop>
     <DropComment_UltraArmorDropPlus>Улучшенный комплект ультра брони? Я имею права даже обращаться за ней, перенаправляю вас сразу на столичную канцелярию...</DropComment_UltraArmorDropPlus>
-
 
     <!-- Инструменты -->
     <DropComment_ToolDrop>Набор инструментов? Ну, это никогда лишним не будет, особенно если выдать их рабам на плантациях.</DropComment_ToolDrop>
@@ -100,6 +103,8 @@
     <DropComment_HeavyMeleeDropPlus>Лучшие мастера и качественные материалы, и ваше оружие будет нести свет Императора во все части галактики ещё эффективнее!</DropComment_HeavyMeleeDropPlus>
 
     <!-- Дальний бой -->
+    <DropComment_BowDrop>Нужно - забирайте. Бесплатно не можем отдать только из-за доставки. Полный склад всякого такого, но не дают нам просто выкинуть в печь. Но мы вам стрел запихнем побольше.</DropComment_BowDrop>
+    <DropComment_BowDropPlus>Среди всего хлама есть и образцы получше. Чуть подольше искать по складам, но тоже готовы отдать почти даром.</DropComment_BowDropPlus>
     <DropComment_PistolDrop>Пистолеты - недооцененное оружие. Достать пистолет всегда быстрее, чем перезарядить оружие.</DropComment_PistolDrop>
     <DropComment_PistolDropPlus>Лучшие мастера и качественные материалы, и ваше оружие будет нести свет Императора во все части галактики ещё эффективнее!</DropComment_PistolDropPlus>
     <DropComment_SMGDrop>Пистолеты-пулемёты - компактные коробочки смерти, которые почему-то достаточно редко запрашиваются у нас. Даже немного обидно.</DropComment_SMGDrop>

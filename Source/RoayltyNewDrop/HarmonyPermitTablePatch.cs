@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Reflection;
 using HarmonyLib;
 using RimWorld;
 using RimWorld.Planet;
@@ -15,25 +14,11 @@ namespace NobilityExpanded
         static HarmonyPatches()
         {
             Harmony harmonyInstance = new Harmony("hmc.pacas.empire");
-
-            MethodInfo original = AccessTools.Method(typeof(PermitsCardCustomUtility), "DrawPosition");
-            MethodInfo prefix = typeof(CoordsAutopatch).GetMethod("Prefix");
-            harmonyInstance.Patch(original, new HarmonyMethod(prefix));
-            
-            original = AccessTools.Method(typeof(Dialog_InfoCard), "FillCard");
-            prefix = typeof(FillCardPatch).GetMethod("Prefix");
-            harmonyInstance.Patch(original, new HarmonyMethod(prefix));
-            
-            original = AccessTools.Method(typeof(StatsReportUtility), "Reset");
-            prefix = typeof(StatsResetPatch).GetMethod("Prefix");
-            harmonyInstance.Patch(original, new HarmonyMethod(prefix));
-            
-            original = AccessTools.Method(typeof(Dialog_InfoCard), "get_InitialSize");
-            prefix = typeof(WindowSizePatch).GetMethod("Prefix");
-            harmonyInstance.Patch(original, new HarmonyMethod(prefix));
+            harmonyInstance.PatchAll();
         }
     }
 
+    [HarmonyPatch(typeof(StatsReportUtility), nameof(StatsReportUtility.Reset))]
     public class StatsResetPatch
     {
         public static bool Prefix(
@@ -62,6 +47,7 @@ namespace NobilityExpanded
         }
     }
     
+    [HarmonyPatch(typeof(PermitsCardCustomUtility), "DrawPosition")]
     public class CoordsAutopatch
     {
         public static bool Prefix(ref RoyalTitlePermitDef permit, ref Vector2 __result)
@@ -111,6 +97,7 @@ namespace NobilityExpanded
         }
     }
     
+    [HarmonyPatch(typeof(Dialog_InfoCard), "FillCard")]
     public class FillCardPatch
     {
         public static bool Prefix(
@@ -169,6 +156,7 @@ namespace NobilityExpanded
         }
     }
 
+    [HarmonyPatch(typeof(Dialog_InfoCard), "get_InitialSize")]
     public class WindowSizePatch
     {
         public static bool Prefix(ref Vector2 __result) {
