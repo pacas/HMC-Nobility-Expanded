@@ -4,12 +4,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("RoayltyNewDrop")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("HMC_NobilityExpanded")]
+[assembly: AssemblyDescription("Main assembly for the HMC Nobility Expanded mod")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("RoayltyNewDrop")]
-[assembly: AssemblyCopyright("Copyright ©  2022")]
+[assembly: AssemblyProduct("HMC_NobilityExpanded")]
+[assembly: AssemblyCopyright("Copyright Pacas©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

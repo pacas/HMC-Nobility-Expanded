@@ -8,8 +8,8 @@
     </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
-        <defName>SeedsPotatoDrop</defName>
-        <label>grains seeds drop</label>
+        <defName>SeedsGrainsDrop</defName>
+        <label>grains</label>
         <description>Call for a drop of 75 random grains seeds.</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>15</cooldownDays>
@@ -21,7 +21,7 @@
         </royalAid>
     </RoyalTitlePermitDef>
     <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsBase">
-        <defName>SeedsPotatoDropStuff</defName>
+        <defName>SeedsGrainsDropStuff</defName>
         <thingsToChoose>
             <li>Seed_Rice</li>
             <li>Seedwheat</li>
@@ -34,8 +34,8 @@
     <!-- xxxxx -->
 
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
-        <defName>SeedsPotatoDropPlus</defName>
-        <label>vegetables seeds drop</label>
+        <defName>SeedsVegesDrop</defName>
+        <label>vegetables</label>
         <description>Call for a drop of 75 random vegetables seeds.</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>15</cooldownDays>
@@ -47,7 +47,7 @@
         </royalAid>
     </RoyalTitlePermitDef>
     <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsBase">
-        <defName>SeedsPotatoDropPlusStuff</defName>
+        <defName>SeedsVegesDropStuff</defName>
         <column>1</column>
         <thingsToChoose>
             <li>Seed_Potato</li>
@@ -60,7 +60,7 @@
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>SeedsShroomsDrop</defName>
-        <label>mushrooms spores drop</label>
+        <label>mushrooms spores</label>
         <description>Call for a drop of 75 random mushrooms spores.</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>15</cooldownDays>
@@ -86,7 +86,7 @@
 
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>SeedsLuxDrop</defName>
-        <label>cooking ingredients seeds drop</label>
+        <label>cooking ingredients</label>
         <description>Call for a drop of 50 random cooking ingredients seeds.</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>25</cooldownDays>
@@ -116,7 +116,7 @@
 
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>SeedsAddictiveDrop</defName>
-        <label>addictive crops seeds drop</label>
+        <label>addictive crops</label>
         <description>Call for a drop of 35 addictive crops seeds.</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>25</cooldownDays>
@@ -143,7 +143,7 @@
 
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>SeedsClothDrop</defName>
-        <label>fiber crops seeds drop</label>
+        <label>fiber crops</label>
         <description>Call for a drop of 50 random fiber crops seeds.</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>25</cooldownDays>
@@ -168,7 +168,7 @@
 
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>SeedsHealDrop</defName>
-        <label>healing plants seeds drop</label>
+        <label>healing plants</label>
         <description>Call for a drop of 35 random healing plants seeds.</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>25</cooldownDays>
@@ -191,7 +191,7 @@
 
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>SeedsUtilDrop</defName>
-        <label>utility plants seeds drop</label>
+        <label>utility plants</label>
         <description>Call for a drop of 25 random cooking ingredients seeds.</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>25</cooldownDays>
@@ -214,8 +214,8 @@
     <!-- xxxxx -->
 
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
-        <defName>SeedsOakDrop</defName>
-        <label>tree seeds drop</label>
+        <defName>SeedsTreeDrop</defName>
+        <label>trees</label>
         <description>Call for a drop of 30 random tree seeds.</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>30</cooldownDays>
@@ -227,7 +227,7 @@
         </royalAid>
     </RoyalTitlePermitDef>
     <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsBase">
-        <defName>SeedsOakDropStuff</defName>
+        <defName>SeedsTreeDropStuff</defName>
         <thingsToChoose>
             <li>Seed_TreeDrago</li>
             <li>Seed_TreeOak</li>
@@ -250,21 +250,21 @@
     <!-- xxxxx -->
 
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
-        <defName>SeedsOakDropPlus</defName>
-        <label>fruit tree seeds drop</label>
-        <description>Call for a drop of 15 random fruit tree seeds.</description>
+        <defName>SeedsFruitDrop</defName>
+        <label>fruit trees</label>
+        <description>Call for a drop of 20 random fruit tree seeds.</description>
         <minTitle>Knight</minTitle>
         <cooldownDays>30</cooldownDays>
         <permitPointCost>2</permitPointCost>
         <royalAid>
             <itemsToDrop>
-                <SeedAppletree>15</SeedAppletree>
+                <SeedAppletree>20</SeedAppletree>
             </itemsToDrop>
             <favorCost>3</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
     <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsBase">
-        <defName>SeedsOakDropPlusStuff</defName>
+        <defName>SeedsFruitDropStuff</defName>
         <column>1</column>
         <thingsToChoose>
             <li>SeedAppletree</li>

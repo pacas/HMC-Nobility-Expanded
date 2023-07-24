@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoayltyNewDrop", "RoayltyNewDrop\RoayltyNewDrop.csproj", "{A47483CF-0647-424B-8A25-00F152BE7C9B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HMC_NobilityExpanded", "HMC_NobilityExpanded\HMC_NobilityExpanded.csproj", "{A47483CF-0647-424B-8A25-00F152BE7C9B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

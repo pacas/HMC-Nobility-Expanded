@@ -435,7 +435,7 @@ namespace NobilityExpanded
             var dict = new Dictionary<string, Action> {};
             foreach (var category in catTable.categories)
             {
-                dict.Add(NobilitySupportUtility.permitCategory + category, () => UtilityClass.curTab = category);
+                dict.Add(NobilitySupportUtility.PermitCategory + category, () => UtilityClass.curTab = category);
             }     
             foreach (var table in dict)
             {

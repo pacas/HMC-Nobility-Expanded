@@ -5,6 +5,7 @@
         <coordX>0</coordX>
         <loadOrder>
             <li>RangedPermitTitle</li>
+            <li>BowDrop</li>
             <li>PistolDrop</li>
             <li>SMGDrop</li>
             <li>ShotgunDrop</li>
@@ -22,6 +23,7 @@
         <coordX>1</coordX>
         <loadOrder>
             <li>RangedPermitTitle</li>
+            <li>BowDropPlus</li>
             <li>PistolDropPlus</li>
             <li>SMGDropPlus</li>
             <li>ShotgunDropPlus</li>

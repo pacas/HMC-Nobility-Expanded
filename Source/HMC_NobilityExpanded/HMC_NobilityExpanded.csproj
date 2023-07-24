@@ -8,7 +8,7 @@
         <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
         <RootNamespace>Rimworld</RootNamespace>
-        <AssemblyName>RoayltyNewDrop</AssemblyName>
+        <AssemblyName>HMC_NobilityExpanded</AssemblyName>
         <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
     </PropertyGroup>

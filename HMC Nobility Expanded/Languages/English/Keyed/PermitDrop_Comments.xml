@@ -125,16 +125,16 @@
     <DropComment_ChargeRailDrop>Energy rifles are rare even among special units, because they require much more skill than any other weapon. Not everyone can handle them, and Railgun recoil is sometimes used as a test for some prospective soldiers on what type of weapon is suits for them.</DropComment_ChargeRailDrop>
 
     <!-- Семена -->
-    <DropComment_SeedsPotatoDrop>Grains in any kind are the best breakfast both on the core planets and on the Rim! But we don't have them much here.</DropComment_SeedsPotatoDrop>
-    <DropComment_SeedsPotatoDropPlus>Vegetables are the perfect lunch. Healthy and sometimes even nourishing. It's a pity there are not so many of them on Fortuna...</DropComment_SeedsPotatoDropPlus>
+    <DropComment_SeedsGrainsDrop>Grains in any kind are the best breakfast both on the core planets and on the Rim! But we don't have them much here.</DropComment_SeedsGrainsDrop>
+    <DropComment_SeedsVegesDrop>Vegetables are the perfect lunch. Healthy and sometimes even nourishing. It's a pity there are not so many of them on Fortuna...</DropComment_SeedsVegesDrop>
     <DropComment_SeedsShroomsDrop>Mushrooms are delicious. Too bad I have an intolerance, I would only eat them.....</DropComment_SeedsShroomsDrop>
     <DropComment_SeedsLuxDrop>It's got all these things in the kit that are for haute cuisine. I have no idea what half of this list is for.</DropComment_SeedsLuxDrop>
     <DropComment_SeedsAddictiveDrop>We can certainly provide these, but only if you sign forms 28M/13-23, 13G-14POT, and 8RTV/G#231.</DropComment_SeedsAddictiveDrop>
     <DropComment_SeedsClothDrop>Fabric made from plant fibers is expensive on this world. I suppose you have a similar situation with synthetics.....</DropComment_SeedsClothDrop>
     <DropComment_SeedsHealDrop>Plant medicine? Is that even possible?</DropComment_SeedsHealDrop>
     <DropComment_SeedsUtilDrop>I'll be honest - I have no idea what it is. Check the list for yourself.</DropComment_SeedsUtilDrop>
-    <DropComment_SeedsOakDrop>Trees... Eh, I wish there were more trees, sometimes all this concrete and metal luster is very annoying.</DropComment_SeedsOakDrop>
-    <DropComment_SeedsOakDropPlus>Fruit is not often seen on our table, the most delicious fruits are a whole delicacy.</DropComment_SeedsOakDropPlus>
+    <DropComment_SeedsTreeDrop>Trees... Eh, I wish there were more trees, sometimes all this concrete and metal luster is very annoying.</DropComment_SeedsTreeDrop>
+    <DropComment_SeedsFruitDrop>Fruit is not often seen on our table, the most delicious fruits are a whole delicacy.</DropComment_SeedsFruitDrop>
 
     <!-- Biotech -->
     <DropComment_BabyFoodDrop>Do you have children there? In that case, I'll even give you a little more food for the kids.</DropComment_BabyFoodDrop>
