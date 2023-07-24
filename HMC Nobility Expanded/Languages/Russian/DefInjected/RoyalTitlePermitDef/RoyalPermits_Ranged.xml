@@ -6,9 +6,9 @@
     <RangedPermitTitle.description>Запрос доставки случайного оружия дальнего боя и патронов к нему.</RangedPermitTitle.description>
 
     <!-- лук -->
-    <BowDrop.label>лук/арбалет</BowDrop.label>
+    <BowDrop.label>лук / арбалет</BowDrop.label>
     <BowDrop.description>Запрос доставки случайного лука/арбалета и стрел/болтов к нему.</BowDrop.description>
-    <BowDropPlus.label>лук/арбалет +</BowDropPlus.label>
+    <BowDropPlus.label>лук / арбалет +</BowDropPlus.label>
     <BowDropPlus.description>Запрос доставки случайного лука/арбалета и стрел/болтов к нему. Более качественное оружие в выборке.</BowDropPlus.description>
     
     <!-- пистолет -->

@@ -53,19 +53,19 @@ namespace NobilityExpanded
         public static bool Prefix(ref RoyalTitlePermitDef permit, ref Vector2 __result)
         {
             OrderedStuffDef stuffDefOrdered = DefDatabase<OrderedStuffDef>.GetNamedSilentFail(
-                permit.defName + PermitsCardCustomUtility.UtilityClass.stuffPostfix
+                permit.defName + NobilitySupportUtility.StuffPostfix
                 );
             int index;
             Vector2 newCoords;
             if (stuffDefOrdered != null)
             {
                 RoyaltyCoordsTableDef categoryTable = DefDatabase<RoyaltyCoordsTableDef>.GetNamedSilentFail(
-                    PermitsCardCustomUtility.UtilityClass.coordsTable + 
+                    NobilitySupportUtility.CoordsTable + 
                     PermitsCardCustomUtility.UtilityClass.curTab + "_" + stuffDefOrdered.column
                     );
                 if (categoryTable == null)
                     categoryTable = DefDatabase<RoyaltyCoordsTableDef>.GetNamed(
-                        PermitsCardCustomUtility.UtilityClass.coordsTableColumn + stuffDefOrdered.column
+                        NobilitySupportUtility.CoordsTableColumn + stuffDefOrdered.column
                         );
                 
                 index = categoryTable.loadOrder.IndexOf(permit);
@@ -75,7 +75,7 @@ namespace NobilityExpanded
             {
                 RoyaltyCoordsTableDef categoryTable =
                     DefDatabase<RoyaltyCoordsTableDef>.GetNamedSilentFail(
-                        PermitsCardCustomUtility.UtilityClass.coordsTable + PermitsCardCustomUtility.UtilityClass.curTab + "_0"
+                        NobilitySupportUtility.CoordsTable + PermitsCardCustomUtility.UtilityClass.curTab + "_0"
                         );
                 if (permit.permitPointCost == 99) {
                     index = categoryTable.loadOrder.IndexOf(permit);

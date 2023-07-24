@@ -6,12 +6,12 @@ namespace NobilityExpanded
 {
     public class NobilitySupportUtility
     {
-        public const string permitCategory = "PermitCategory_";
-        public readonly string coordsTable = "CoordsTable";
-        public readonly string stuffPostfix = "Stuff";
-        public readonly string coordsTableColumn = "CoordsTableColumn_";
+        public const string PermitCategory = "PermitCategory_";
+        public const string CoordsTable = "CoordsTable";
+        public const string StuffPostfix = "Stuff";
+        public const string CoordsTableColumn = "CoordsTableColumn_";
 
-        private static Random random = new Random();
+        private static readonly Random Random = new Random();
         public string curTab = "Resources";
         
         public static QualityCategory GenerateFromString(string quality)
@@ -49,7 +49,7 @@ namespace NobilityExpanded
                         QualityCategory.Poor,
                         QualityCategory.Normal,
                     });
-                    return list[random.Next(list.Count)];
+                    return list[Random.Next(list.Count)];
                 case "Normal":
                     list.AddRange(new List<QualityCategory>
                     {
@@ -57,7 +57,7 @@ namespace NobilityExpanded
                         QualityCategory.Poor,
                         QualityCategory.Normal,
                     });
-                    return list[random.Next(list.Count)];
+                    return list[Random.Next(list.Count)];
                 case "Good":
                     list.AddRange(new List<QualityCategory>
                     {
@@ -65,7 +65,7 @@ namespace NobilityExpanded
                         QualityCategory.Excellent,
                         QualityCategory.Normal,
                     });
-                    return list[random.Next(list.Count)];
+                    return list[Random.Next(list.Count)];
                 case "Excellent":
                     list.AddRange(new List<QualityCategory>
                     {
@@ -73,7 +73,7 @@ namespace NobilityExpanded
                         QualityCategory.Excellent,
                         QualityCategory.Masterwork,
                     });
-                    return list[random.Next(list.Count)];
+                    return list[Random.Next(list.Count)];
                 case "Masterwork":
                     list.AddRange(new List<QualityCategory>
                     {
@@ -89,7 +89,7 @@ namespace NobilityExpanded
                         QualityCategory.Poor,
                         QualityCategory.Normal,
                     });
-                    return list[random.Next(list.Count)];
+                    return list[Random.Next(list.Count)];
             }
         }
     }

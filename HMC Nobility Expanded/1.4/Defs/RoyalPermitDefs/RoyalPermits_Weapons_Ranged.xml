@@ -11,7 +11,7 @@
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>BowDrop</defName>
-        <label>Bow/Crossbow</label>
+        <label>Bow / Crossbow</label>
         <description>Request a drop of random bow/crossbow with ammo.</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>5</cooldownDays>
@@ -48,9 +48,10 @@
 
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>BowDropPlus</defName>
-        <label>Bow/Crossbow +</label>
+        <label>Bow / Crossbow +</label>
         <description>Request a drop of random bow/crossbow with ammo. Better weapons in the selection.</description>
         <minTitle>Knight</minTitle>
+        <prerequisite>BowDrop</prerequisite>
         <cooldownDays>15</cooldownDays>
         <royalAid>
             <itemsToDrop>
