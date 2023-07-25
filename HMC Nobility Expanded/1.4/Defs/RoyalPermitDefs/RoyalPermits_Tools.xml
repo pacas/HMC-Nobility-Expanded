@@ -47,7 +47,7 @@
         <label>conventional tools +</label>
         <description>Request a drop of tool box with various tools with better base materials.</description>
         <minTitle>Praetor</minTitle>
-        <cooldownDays>50</cooldownDays>
+        <cooldownDays>45</cooldownDays>
         <prerequisite>ToolDrop</prerequisite>
         <permitPointCost>2</permitPointCost>
         <royalAid>
@@ -85,6 +85,7 @@
         <label>multitool</label>
         <description>Request a drop of one multitool.</description>
         <minTitle>Baron</minTitle>
+        <cooldownDays>40</cooldownDays>
         <permitPointCost>2</permitPointCost>
         <royalAid>
             <itemsToDrop>
@@ -107,7 +108,7 @@
         <label>multitool +</label>
         <description>Request a drop of one multitool.</description>
         <minTitle>Count</minTitle>
-        <cooldownDays>80</cooldownDays>
+        <cooldownDays>65</cooldownDays>
         <prerequisite>AdvToolDrop</prerequisite>
         <permitPointCost>3</permitPointCost>
         <royalAid>

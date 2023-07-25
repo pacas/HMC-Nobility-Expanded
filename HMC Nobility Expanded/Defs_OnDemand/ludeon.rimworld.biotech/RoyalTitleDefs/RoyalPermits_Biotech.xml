@@ -43,7 +43,7 @@
         <description>Request a drop of clothes for babies.</description>
         <minTitle>Acolyte</minTitle>
         <permitPointCost>1</permitPointCost>
-        <cooldownDays>21</cooldownDays>
+        <cooldownDays>15</cooldownDays>
         <royalAid>
             <itemsToDrop>
                 <Apparel_KidShirt>1</Apparel_KidShirt>
