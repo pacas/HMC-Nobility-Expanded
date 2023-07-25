@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="XmlExtensions.FindMod">
+        <mods>
+            <li>SeedsPlease</li>
+        </mods>
+        <caseTrue>
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>HMCNE_Set_Seeds</patchName>
+                <arguments>
+                </arguments>
+            </Operation>
+        </caseTrue>
+    </Operation>
+</Patch>
