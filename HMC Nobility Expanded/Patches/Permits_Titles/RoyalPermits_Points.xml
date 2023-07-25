@@ -95,6 +95,39 @@
                     <cooldownDays>30</cooldownDays>
                 </value>
             </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/RoyalTitlePermitDef[defName="GlitterMedDrop"]/royalAid/itemsToDrop</xpath>
+                <value>
+                    <itemsToDrop>
+                        <MedicineUltratech>8</MedicineUltratech>
+                    </itemsToDrop>
+                </value>
+            </li>
+
+            <!-- Shuttle -->
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/RoyalTitlePermitDef[defName="CallTransportShuttle"]/cooldownDays</xpath>
+                <value>
+                    <cooldownDays>30</cooldownDays>
+                </value>
+            </li>
+
+            <!-- Airstrikes -->
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/RoyalTitlePermitDef[defName="CallOrbitalStrike"]/cooldownDays</xpath>
+                <value>
+                    <cooldownDays>30</cooldownDays>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/RoyalTitlePermitDef[defName="CallOrbitalSalvo"]/cooldownDays</xpath>
+                <value>
+                    <cooldownDays>45</cooldownDays>
+                </value>
+            </li>
             
             <!-- Pawns -->
 

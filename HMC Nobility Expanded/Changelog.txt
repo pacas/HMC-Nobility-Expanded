@@ -14,8 +14,7 @@
 5) VFEE patch:
     5.1) Updated deserters armor stats.
     5.2) Fixed the ability to invite heads of houses.
-6) Settings menu for all permits (without VFEE for now).
-7) Technical stuff:
+6) Technical stuff:
     7.1) Finally moved namespace of the mod to its own space.
     7.2) Now any modder can easily create permits and categories for the mod without any patch - moved everything related to the xml part.
     7.3) Optimized mod itself a bit.
@@ -33,8 +32,7 @@
 5) Патч VFEE:
     5.1) Обновлены показатели брони дезертиров.
     5.2) Исправлена возможность приглашать главы домов.
-6) Меню настроек для всех привилегий (пока без VFEE).
-7) Технические мелочи:
+6) Технические мелочи:
     7.1) Наконец-то перенесено пространство имен мода в собственное пространство.
     7.2) Теперь любой моддер может легко создавать привилегии и категории для мода без всякого патча - перенесено все в xml часть.
     7.3) Немного оптимизирован сам мод.

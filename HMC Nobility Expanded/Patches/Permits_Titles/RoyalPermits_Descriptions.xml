@@ -54,7 +54,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/RoyalTitlePermitDef[defName="GlitterMedDrop"]/description</xpath>
                 <value>
-                    <description>Call for a drop of 5 glitterworld medicine.</description>
+                    <description>Call for a drop of 8 glitterworld medicine.</description>
                 </value>
             </li>
 
