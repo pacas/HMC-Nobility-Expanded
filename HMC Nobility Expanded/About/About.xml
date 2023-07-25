@@ -9,27 +9,27 @@
     <packageId>pacas.nobility.expanded</packageId>
     <url>https://github.com/pacas/RW-Empire-Rework</url>
     <modDependencies>
-		<li>
-			<packageId>brrainz.harmony</packageId>
-			<displayName>Harmony</displayName>
-			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
-			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
-		</li>
+        <li>
+            <packageId>brrainz.harmony</packageId>
+            <displayName>Harmony</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+            <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+        </li>
         <li>
             <packageId>Imranfish.XMLExtensions</packageId>
             <displayName>XML Extensions</displayName>
             <downloadUrl>https://github.com/15adhami/XmlExtensions/releases</downloadUrl>
             <steamWorkshopUrl>steam://url/CommunityFilePage/2574315206</steamWorkshopUrl>
         </li>
-	</modDependencies>
+    </modDependencies>
     <loadBefore>
         <li>TheLoneTec.TSAP</li>
-	</loadBefore>
+    </loadBefore>
     <loadAfter>
         <li>brrainz.harmony</li>
         <li>Ludeon.RimWorld</li>
-		<li>Ludeon.RimWorld.Royalty</li>
-		<li>Ludeon.RimWorld.Ideology</li>
+        <li>Ludeon.RimWorld.Royalty</li>
+        <li>Ludeon.RimWorld.Ideology</li>
         <li>Imranfish.XMLExtensions</li>
         <li>skyarkhangel.HSK</li>
         <li>skyarkhangel.royaltytranslation</li>
