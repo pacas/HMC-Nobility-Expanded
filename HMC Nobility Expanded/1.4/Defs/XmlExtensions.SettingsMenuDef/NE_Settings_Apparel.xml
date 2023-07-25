@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <XmlExtensions.SettingsMenuDef>
-        <defName>HMC_NE_Armor</defName>
-        <modId>HMCNE.Pacas.Armor</modId>
-        <tKey>Armor_MainTitle</tKey>
-        <label>Nobility Expanded - Armor</label>
+        <defName>HMC_NE_Apparel</defName>
+        <modId>HMCNE.Pacas.Apparel</modId>
+        <tKey>Apparel_MainTitle</tKey>
+        <label>Nobility Expanded - Apparel</label>
         <settings>
             <li Class="XmlExtensions.Setting.TabView">
                 <tabs>
@@ -16,8 +16,8 @@
                                 <settings>
                                     <li Class="XmlExtensions.Setting.Gap"/>
                                     <li Class="XmlExtensions.Setting.Text">
-                                        <text>Armor</text>
-                                        <tKey>Armor_Title</tKey>
+                                        <text>Apparel</text>
+                                        <tKey>Apparel_Title</tKey>
                                         <font>Medium</font>
                                         <anchor>Middle</anchor>
                                     </li>
@@ -96,13 +96,6 @@
                         <settings>
                             <li Class="XmlExtensions.Setting.Group">
                                 <settings>
-                                    <li Class="XmlExtensions.Setting.Gap"/>
-                                    <li Class="XmlExtensions.Setting.Text">
-                                        <text>Armor</text>
-                                        <tKey>Armor_Title</tKey>
-                                        <font>Medium</font>
-                                        <anchor>Middle</anchor>
-                                    </li>
                                     <li Class="XmlExtensions.Setting.Gap"/>
                                     <li Class="XmlExtensions.Setting.Numeric">
                                         <key>Armor1_Time</key>
@@ -195,7 +188,7 @@
             <li Class="XmlExtensions.Action.ApplyOperations">
                 <apply>
                     <Operation Class="XmlExtensions.UseSettings">
-                        <modId>HMCNE.Pacas.Armor</modId>
+                        <modId>HMCNE.Pacas.Apparel</modId>
                         <keys>
                             <li>Armor1_Cost</li>
                             <li>Armor1Plus_Cost</li>

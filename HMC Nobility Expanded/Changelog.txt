@@ -1,5 +1,47 @@
 ----------------------------------------------------------------------
 
+- Changelog "HMC Empire Rewards" v0.13 (1.4):
+
+1) Seeds rework:
+    1.1) New permits for seeds by plant purpose (6 new permits).
+    1.2) Changed cooldown times to 15 days for regular plants, 25 for special and 30 for trees.
+2) Animals rework:
+    2.1) Same as for seeds - permits by animal specialization (4 new, 1 removed).
+    2.2) Removed not logical animals from permits.
+    2.3) Exotic animals splitted to exotic and mythical permits.
+3) Time/cost/amount rebalance for a bunch of permits across the mod and vanilla.
+4) New bows and crossbows permits.
+5) VFEE patch:
+    5.1) Updated deserters armor stats.
+    5.2) Fixed the ability to invite heads of houses.
+6) Settings menu for all permits (without VFEE for now).
+7) Technical stuff:
+    7.1) Finally moved namespace of the mod to its own space.
+    7.2) Now any modder can easily create permits and categories for the mod without any patch - moved everything related to the xml part.
+    7.3) Optimized mod itself a bit.
+    7.4) Minor fixes for the latest HSK update.
+
+1) Переработка семян:
+    1.1) Новые привилегии для семена на основе назначения растения (6 новых привилегий).
+    1.2) Изменен кулдаун: 15 дней для обычных растений, 25 для специальных и 30 для деревьев.
+2) Переработка животных:
+    2.1) То же, что и для семян - привилегии по специализации животных (4 новых, 1 удалено).
+    2.2) Убраны не логичные животные из привилегий.
+    2.3) Экзотические животные разделены на экзотических и мифических.
+3) Ребалансировка времени/стоимости/количества для многих привилегий в модах и ваниле.
+4) Новые привилегии на луки и арбалеты.
+5) Патч VFEE:
+    5.1) Обновлены показатели брони дезертиров.
+    5.2) Исправлена возможность приглашать главы домов.
+6) Меню настроек для всех привилегий (пока без VFEE).
+7) Технические мелочи:
+    7.1) Наконец-то перенесено пространство имен мода в собственное пространство.
+    7.2) Теперь любой моддер может легко создавать привилегии и категории для мода без всякого патча - перенесено все в xml часть.
+    7.3) Немного оптимизирован сам мод.
+    7.4) Небольшие исправления для последнего обновления HSK.
+
+----------------------------------------------------------------------
+
 - Changelog "HMC Empire Rewards" v0.12.2 (1.4):
 
 1) Fixed recipes for new weapons ammo and added recipes for the guns itself.

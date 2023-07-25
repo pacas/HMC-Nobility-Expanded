@@ -82,8 +82,8 @@
                                 <settings>
                                     <li Class="XmlExtensions.Setting.Gap"/>
                                     <li Class="XmlExtensions.Setting.Text">
-                                        <text>Resources</text>
-                                        <tKey>Resources_Title</tKey>
+                                        <text>Allies</text>
+                                        <tKey>Allies_Title</tKey>
                                         <font>Medium</font>
                                         <anchor>Middle</anchor>
                                     </li>
