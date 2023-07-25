@@ -23,7 +23,7 @@
                 <label>40x68mm charge cell (Demolition)</label>
                 <description>Сharge cells of increased power, which allow to demolish buildings. When used against humans, death of an unarmored target is guaranteed.</description>
                 <graphicData>
-                    <texPath>Things/Ammo/Mortar/Charged</texPath>
+                    <texPath>Things/Ammo/Mortar/Charged/LargeConc</texPath>
                     <graphicClass>Graphic_StackCount</graphicClass>
                     <drawSize>0.6</drawSize>
                 </graphicData>

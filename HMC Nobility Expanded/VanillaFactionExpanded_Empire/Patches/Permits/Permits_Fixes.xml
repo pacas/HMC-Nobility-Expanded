@@ -3,16 +3,16 @@
     <Operation Class="PatchOperationSequence">
         <operations>
             <li Class="PatchOperationRemove">
-                <xpath>/Defs/RoyalTitlePermitDef[
+                <xpath>Defs/RoyalTitlePermitDef[
                 defName="GlitterMedDrop" or
                 defName="VFEI_CallEvacShuttle" or
                 defName="VFEI_ChemfuelDrop" or
                 defName="VFEI_CallOrbitalSlicingBeam"
                 ]/prerequisite</xpath>
             </li>
-            <!-- too add later? gold, titan, uranium, synthread and all military-->
+            <!-- todo add later? gold, titan, uranium, synthread and all military-->
             <li Class="PatchOperationRemove">
-                <xpath>/Defs/RoyalTitlePermitDef[
+                <xpath>Defs/RoyalTitlePermitDef[
                 defName="VFEI_GoldDrop" or
                 defName="VFEI_PlasteelDrop" or
                 defName="VFEI_SynthreadDrop" or
@@ -33,7 +33,7 @@
                 </xpath>
             </li>
             <li Class="PatchOperationRemove">
-                <xpath>/Defs/RoyalTitlePermitDef[
+                <xpath>Defs/RoyalTitlePermitDef[
                 defName="VFEI_ClothDrop" or
                 defName="VFEI_ChemfuelDrop" or
                 defName="VFEI_ComponentDrop" or
@@ -92,13 +92,13 @@
             </li>
             
             <li Class="PatchOperationReplace">
-                <xpath>/Defs/RoyalTitlePermitDef[defName="VFEI_ComponentDrop"]/description</xpath>
+                <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_ComponentDrop"]/description</xpath>
                 <value>
                     <description>Call for a drop of 30 components.</description>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
-                <xpath>/Defs/RoyalTitlePermitDef[defName="VFEI_ComponentDrop"]/royalAid/itemsToDrop</xpath>
+                <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_ComponentDrop"]/royalAid/itemsToDrop</xpath>
                 <value>
                     <itemsToDrop>
                         <ComponentIndustrial>30</ComponentIndustrial>
@@ -107,13 +107,13 @@
             </li>
             
             <li Class="PatchOperationReplace">
-                <xpath>/Defs/RoyalTitlePermitDef[defName="VFEI_ComponentSpacerDrop"]/description</xpath>
+                <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_ComponentSpacerDrop"]/description</xpath>
                 <value>
                     <description>Call for a drop of 10 advanced components.</description>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
-                <xpath>/Defs/RoyalTitlePermitDef[defName="VFEI_ComponentSpacerDrop"]/royalAid/itemsToDrop</xpath>
+                <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_ComponentSpacerDrop"]/royalAid/itemsToDrop</xpath>
                 <value>
                     <itemsToDrop>
                         <ComponentSpacer>10</ComponentSpacer>
@@ -122,7 +122,7 @@
             </li>
             
             <li Class="PatchOperationReplace">
-                <xpath>/Defs/RoyalTitlePermitDef[
+                <xpath>Defs/RoyalTitlePermitDef[
                 defName="VFEI_ComponentSpacerDrop" or
                 defName="VFEI_BurnoutShieldDrop" or
                 defName="VFEI_CallEvacShuttle"
@@ -133,7 +133,7 @@
             </li>
             
             <li Class="PatchOperationReplace">
-                <xpath>/Defs/RoyalTitlePermitDef[
+                <xpath>Defs/RoyalTitlePermitDef[
                 defName="VFEI_StrikerTurretDrop" or
                 defName="VFEI_CallEvacShuttle"
                 ]/permitPointCost</xpath>
@@ -143,7 +143,7 @@
             </li>
             
             <li Class="PatchOperationReplace">
-                <xpath>/Defs/RoyalTitlePermitDef[
+                <xpath>Defs/RoyalTitlePermitDef[
                 defName="VFEI_CallTechfriar" or
                 defName="VFEI_CallAbsolver"
                 ]/permitPointCost</xpath>
@@ -153,14 +153,14 @@
             </li>
             
             <li Class="PatchOperationReplace">
-                <xpath>/Defs/RoyalTitlePermitDef[defName="VFEI_CallOrbitalSlicingBeam"]/permitPointCost</xpath>
+                <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallOrbitalSlicingBeam"]/permitPointCost</xpath>
                 <value>
                     <permitPointCost>8</permitPointCost>
                 </value>
             </li>
             
             <li Class="PatchOperationReplace">
-                <xpath>/Defs/RoyalTitlePermitDef[defName="VFEI_CallOrbitalSlicingBeam"]/minTitle</xpath>
+                <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallOrbitalSlicingBeam"]/minTitle</xpath>
                 <value>
                     <minTitle>Consul</minTitle>
                 </value>

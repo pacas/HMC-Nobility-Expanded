@@ -207,7 +207,7 @@
         <royalAid>
             <itemsToDrop>
                 <Apparel_Backpack>1</Apparel_Backpack>
-                <Apparel_TacVest>1</Apparel_TacVest>
+                <CE_Apparel_TacVest>1</CE_Apparel_TacVest>
                 <Marine_BattleMask>1</Marine_BattleMask>
                 <Rimarsenal_VestPlate>1</Rimarsenal_VestPlate>
             </itemsToDrop>
