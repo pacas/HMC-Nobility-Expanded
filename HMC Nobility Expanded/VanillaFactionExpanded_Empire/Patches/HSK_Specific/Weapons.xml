@@ -54,11 +54,6 @@
                     </smeltProducts>
                 </value>
             </li>
-            <li Class="PatchOperationAttributeSet">
-                <xpath>Defs/ThingDef[defName="VEE_Gun_Fletcher" or defName="VFEE_Gun_ChargeThumper"]</xpath>
-                <attribute>ParentName</attribute>
-                <value>BaseGun_LongBarreled</value>
-            </li>
         </operations>
     </Operation>
 </Patch>

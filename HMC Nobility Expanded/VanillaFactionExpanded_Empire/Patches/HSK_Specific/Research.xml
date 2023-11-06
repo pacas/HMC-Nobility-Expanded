@@ -2,16 +2,6 @@
 <Patch>
     <Operation Class="PatchOperationSequence">
         <operations>
-            <li Class="PatchOperationAttributeSet">
-                <xpath>Defs/ResearchProjectDef[defName="VFEE_PipeOrgans" or defName="VFEE_StellicThrone" or defName="VFEE_NobleDecorations"]</xpath>
-                <attribute>ParentName</attribute>
-                <value>IndustrialBase</value>
-            </li>
-            <li Class="PatchOperationAttributeSet">
-                <xpath>Defs/ResearchProjectDef[defName="VFEE_JanissaryGear"]</xpath>
-                <attribute>ParentName</attribute>
-                <value>HitechMultiBase</value>
-            </li>
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="VFEE_PipeOrgans"]/baseCost</xpath>
                 <value>
@@ -38,14 +28,6 @@
             </li>
             
             
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ResearchProjectDef[defName="VFEE_NobleDecorations"]/prerequisites</xpath>
-                <value>
-                    <prerequisites>
-                        <li>Tables_B2</li>
-                    </prerequisites>
-                </value>
-            </li>
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="VFEE_NobleDecorations"]/baseCost</xpath>
                 <value>
