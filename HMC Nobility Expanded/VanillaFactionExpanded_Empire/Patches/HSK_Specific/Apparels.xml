@@ -110,6 +110,49 @@
                     <smeltable>false</smeltable>
                 </value>
             </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="VFEE_Apparel_ArmorDeserter"]</xpath>
+                <value>
+                    <equippedStatOffsets>
+                        <MoveSpeed>-1.2</MoveSpeed>
+                        <CarryWeight>50</CarryWeight>
+                        <ToxicEnvironmentResistance>0.3</ToxicEnvironmentResistance>
+                        <CarryBulk>15</CarryBulk>
+                        <WorkSpeedGlobal>-0.25</WorkSpeedGlobal>
+                        <ShootingAccuracyPawn>-0.1</ShootingAccuracyPawn>
+                        <AimingDelayFactor>0.14</AimingDelayFactor>
+                        <MeleeHitChance>-0.2</MeleeHitChance>
+                        <MeleeWeapon_CooldownMultiplier>0.2</MeleeWeapon_CooldownMultiplier>
+                        <Suppressability>-0.25</Suppressability>
+                        <ArmorRating_Toxin>0.3</ArmorRating_Toxin>
+                        <Radiation>-0.2</Radiation>
+                        <GermResistance>0.04</GermResistance>
+                        <GermContainment>0.04</GermContainment>	
+                    </equippedStatOffsets>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="VFEE_Apparel_DeserterHelmet"]</xpath>
+                <value>
+                    <equippedStatOffsets>                    
+                        <PsychicSensitivity>-0.1</PsychicSensitivity>
+                        <AimingAccuracy>0.1</AimingAccuracy>
+                        <MoveSpeed>-0.16</MoveSpeed>
+                        <WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+                        <MentalBreakThreshold>-0.03</MentalBreakThreshold>
+                        <ShootingAccuracyPawn>-0.05</ShootingAccuracyPawn>
+                        <AimingDelayFactor>0.03</AimingDelayFactor>
+                        <MeleeHitChance>0.15</MeleeHitChance>
+                        <Suppressability>-0.11</Suppressability>
+                        <ArmorRating_Toxin>0.15</ArmorRating_Toxin>
+                        <ToxicEnvironmentResistance>0.3</ToxicEnvironmentResistance>
+                        <SmokeSensitivity>-0.5</SmokeSensitivity>
+                        <Radiation>-0.2</Radiation>
+                        <GermResistance>0.30</GermResistance>
+                        <GermContainment>0.40</GermContainment>
+                    </equippedStatOffsets>
+                </value>
+            </li>
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[defName="VFEE_Apparel_ArmorDeserter"]</xpath>
                 <value>
