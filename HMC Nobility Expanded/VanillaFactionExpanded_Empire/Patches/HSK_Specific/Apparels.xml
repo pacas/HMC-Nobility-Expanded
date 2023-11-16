@@ -18,7 +18,7 @@
                     </skillRequirements>
                 </value>
             </li>
-            <li Class="PatchOperationRemove">
+            <li Class="XmlExtensions.PatchOperationSafeRemove">
                 <xpath>Defs/ThingDef[defName="VFEE_Apparel_JanissaryCuirass" or defName="VFEE_Apparel_JanissaryHelmet"]/comps/li[Class="CompProperties_Biocodable"]</xpath>
             </li>
             <li Class="PatchOperationAdd">
