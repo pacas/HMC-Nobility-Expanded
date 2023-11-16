@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Factions Expanded - Empire</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs</xpath>
+                    <value>
+                        <ResearchProjectDef Name="IndustrialBase_VFE" ParentName="IndustrialBase" Abstract="True">
+                        </ResearchProjectDef>
+                        <ResearchProjectDef Name="HitechMultiBase_VFE" ParentName="HitechMultiBase" Abstract="True">
+                        </ResearchProjectDef>
+                        <ThingDef Name="ArmorSpacerBase_VFE" ParentName="ArmorSpacerBase" Abstract="True">
+                        </ThingDef>
+                        <ThingDef Name="BaseGun_LongBarreled_VFE" ParentName="BaseGun_LongBarreled" Abstract="True">
+                        </ThingDef>
+                    </value>
+                </li>
+                <li Class="PatchOperationAttributeSet">
+                    <xpath>Defs/ResearchProjectDef[defName="VFEE_PipeOrgans" or defName="VFEE_StellicThrone" or defName="VFEE_NobleDecorations"]</xpath>
+                    <attribute>ParentName</attribute>
+                    <value>IndustrialBase_VFE</value>
+                </li>
+                <li Class="PatchOperationAttributeSet">
+                    <xpath>Defs/ResearchProjectDef[defName="VFEE_JanissaryGear"]</xpath>
+                    <attribute>ParentName</attribute>
+                    <value>HitechMultiBase_VFE</value>
+                </li>
+                <li Class="PatchOperationAttributeSet">
+                    <xpath>Defs/ThingDef[defName="VFEE_Apparel_JanissaryCuirass" or defName="VFEE_Apparel_JanissaryHelmet"]</xpath>
+                    <attribute>ParentName</attribute>
+                    <value>ArmorSpacerBase_VFE</value>
+                </li>
+                <li Class="PatchOperationAttributeSet">
+                    <xpath>Defs/ThingDef[defName="VEE_Gun_Fletcher" or defName="VFEE_Gun_ChargeThumper"]</xpath>
+                    <attribute>ParentName</attribute>
+                    <value>BaseGun_LongBarreled_VFE</value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
