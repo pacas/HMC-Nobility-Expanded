@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <XmlExtensions.SettingsMenuDef>
+        <defName>HMC_NE_Apparel</defName>
+        <modId>HMCNE.Pacas.Apparel</modId>
+        <tKey>Apparel_MainTitle</tKey>
+        <label>Nobility Expanded - Apparel</label>
+        <settings>
+            <li Class="XmlExtensions.Setting.TabView">
+                <tabs>
+                    <li>
+                        <label>Permit Points</label>
+                        <tKey>Permit_Title</tKey>
+                        <settings>
+                            <li Class="XmlExtensions.Setting.Group">
+                                <settings>
+                                    <li Class="XmlExtensions.Setting.Gap"/>
+                                    <li Class="XmlExtensions.Setting.Text">
+                                        <text>Apparel</text>
+                                        <tKey>Apparel_Title</tKey>
+                                        <font>Medium</font>
+                                        <anchor>Middle</anchor>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Gap"/>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Armor1_Cost</key>
+                                        <label>Medieval armor</label>
+                                        <tKey>Armor1_Cost</tKey>
+                                        <defaultValue>1</defaultValue>
+                                        <min>1</min>
+                                        <max>20</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Armor1Plus_Cost</key>
+                                        <label>Medieval armor +</label>
+                                        <tKey>Armor1Plus_Cost</tKey>
+                                        <defaultValue>2</defaultValue>
+                                        <min>1</min>
+                                        <max>20</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Armor2_Cost</key>
+                                        <label>Industrial armor</label>
+                                        <tKey>Armor2_Cost</tKey>
+                                        <defaultValue>1</defaultValue>
+                                        <min>1</min>
+                                        <max>20</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Armor2Plus_Cost</key>
+                                        <label>Industrial armor +</label>
+                                        <tKey>Armor2Plus_Cost</tKey>
+                                        <defaultValue>2</defaultValue>
+                                        <min>1</min>
+                                        <max>20</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Armor3_Cost</key>
+                                        <label>Spacer armor</label>
+                                        <tKey>Armor3_Cost</tKey>
+                                        <defaultValue>3</defaultValue>
+                                        <min>1</min>
+                                        <max>20</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Armor3Plus_Cost</key>
+                                        <label>Spacer armor +</label>
+                                        <tKey>Armor3Plus_Cost</tKey>
+                                        <defaultValue>4</defaultValue>
+                                        <min>1</min>
+                                        <max>20</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Armor4_Cost</key>
+                                        <label>Ultra armor</label>
+                                        <tKey>Armor4_Cost</tKey>
+                                        <defaultValue>6</defaultValue>
+                                        <min>1</min>
+                                        <max>20</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Armor4Plus_Cost</key>
+                                        <label>Ultra armor +</label>
+                                        <tKey>Armor4Plus_Cost</tKey>
+                                        <defaultValue>8</defaultValue>
+                                        <min>1</min>
+                                        <max>20</max>
+                                    </li>
+                                </settings>
+                            </li>
+                        </settings>
+                    </li>
+                    <li>
+                        <label>Cooldown Time</label>
+                        <tKey>Cooldown_Title</tKey>
+                        <settings>
+                            <li Class="XmlExtensions.Setting.Group">
+                                <settings>
+                                    <li Class="XmlExtensions.Setting.Gap"/>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Armor1_Time</key>
+                                        <label>Medieval armor</label>
+                                        <tKey>Armor1_Cost</tKey>
+                                        <defaultValue>18</defaultValue>
+                                        <min>1</min>
+                                        <max>240</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Armor1Plus_Time</key>
+                                        <label>Medieval armor +</label>
+                                        <tKey>Armor1Plus_Cost</tKey>
+                                        <defaultValue>30</defaultValue>
+                                        <min>1</min>
+                                        <max>240</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Armor2_Time</key>
+                                        <label>Industrial armor</label>
+                                        <tKey>Armor2_Cost</tKey>
+                                        <defaultValue>23</defaultValue>
+                                        <min>1</min>
+                                        <max>240</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Armor2Plus_Time</key>
+                                        <label>Industrial armor +</label>
+                                        <tKey>Armor2Plus_Cost</tKey>
+                                        <defaultValue>40</defaultValue>
+                                        <min>1</min>
+                                        <max>240</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Armor3_Time</key>
+                                        <label>Spacer armor</label>
+                                        <tKey>Armor3_Cost</tKey>
+                                        <defaultValue>45</defaultValue>
+                                        <min>1</min>
+                                        <max>240</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Armor3Plus_Time</key>
+                                        <label>Spacer armor +</label>
+                                        <tKey>Armor3Plus_Cost</tKey>
+                                        <defaultValue>62</defaultValue>
+                                        <min>1</min>
+                                        <max>240</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Armor4_Time</key>
+                                        <label>Ultra armor</label>
+                                        <tKey>Armor4_Cost</tKey>
+                                        <defaultValue>70</defaultValue>
+                                        <min>1</min>
+                                        <max>240</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Armor4Plus_Time</key>
+                                        <label>Ultra armor +</label>
+                                        <tKey>Armor4Plus_Cost</tKey>
+                                        <defaultValue>135</defaultValue>
+                                        <min>1</min>
+                                        <max>240</max>
+                                    </li>
+                                </settings>
+                            </li>
+                        </settings>
+                    </li>
+                    <li>
+                        <label>Reset settings</label>
+                        <tKey>Reset_Title</tKey>
+                        <settings>
+                            <li Class="XmlExtensions.Setting.Group">
+                                <settings>
+                                    <li Class="XmlExtensions.Setting.Gap"/>
+                                    <li Class="XmlExtensions.Setting.Text">
+                                        <text>Reset all settings in this category</text>
+                                        <tKey>Reset_Button</tKey>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.ResetSettings"/>
+                                </settings>
+                            </li>
+                        </settings>
+                    </li>
+                </tabs>
+            </li>
+        </settings>
+        <postCloseActions>
+            <li Class="XmlExtensions.Action.ApplyOperations">
+                <apply>
+                    <Operation Class="XmlExtensions.UseSettings">
+                        <modId>HMCNE.Pacas.Apparel</modId>
+                        <keys>
+                            <li>Armor1_Cost</li>
+                            <li>Armor1Plus_Cost</li>
+                            <li>Armor2_Cost</li>
+                            <li>Armor2Plus_Cost</li>
+                            <li>Armor3_Cost</li>
+                            <li>Armor3Plus_Cost</li>
+                            <li>Armor4_Cost</li>
+                            <li>Armor4Plus_Cost</li>
+                            <li>Armor1_Time</li>
+                            <li>Armor1Plus_Time</li>
+                            <li>Armor2_Time</li>
+                            <li>Armor2Plus_Time</li>
+                            <li>Armor3_Time</li>
+                            <li>Armor3Plus_Time</li>
+                            <li>Armor4_Time</li>
+                            <li>Armor4Plus_Time</li>
+                        </keys>
+                        <defaultValues>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>6</li>
+                            <li>8</li>
+                            <li>18</li>
+                            <li>30</li>
+                            <li>23</li>
+                            <li>40</li>
+                            <li>45</li>
+                            <li>62</li>
+                            <li>70</li>
+                            <li>135</li>
+                        </defaultValues>
+                        <apply>
+                            <Operation Class="PatchOperationSequence">
+                                <operations>
+                                    <!-- Стоимость -->
+                                    <li Class="XmlExtensions.DefDatabaseOperationReplace">
+                                        <objPath>RoyalTitlePermitDef/[defName="ArmorDrop"]/permitPointCost</objPath>
+                                        <value>
+                                            <permitPointCost>{Armor1_Cost}</permitPointCost>
+                                        </value>
+                                    </li>
+                                    <li Class="XmlExtensions.DefDatabaseOperationReplace">
+                                        <objPath>RoyalTitlePermitDef/[defName="ArmorDropPlus"]/permitPointCost</objPath>
+                                        <value>
+                                            <permitPointCost>{Armor1Plus_Cost}</permitPointCost>
+                                        </value>
+                                    </li>
+                                    <li Class="XmlExtensions.DefDatabaseOperationReplace">
+                                        <objPath>RoyalTitlePermitDef/[defName="IndustrialArmorDrop"]/permitPointCost</objPath>
+                                        <value>
+                                            <permitPointCost>{Armor2_Cost}</permitPointCost>
+                                        </value>
+                                    </li>
+                                    <li Class="XmlExtensions.DefDatabaseOperationReplace">
+                                        <objPath>RoyalTitlePermitDef/[defName="IndustrialArmorDropPlus"]/permitPointCost</objPath>
+                                        <value>
+                                            <permitPointCost>{Armor2Plus_Cost}</permitPointCost>
+                                        </value>
+                                    </li>
+                                    <li Class="XmlExtensions.DefDatabaseOperationReplace">
+                                        <objPath>RoyalTitlePermitDef/[defName="SpacerArmorDrop"]/permitPointCost</objPath>
+                                        <value>
+                                            <permitPointCost>{Armor3_Cost}</permitPointCost>
+                                        </value>
+                                    </li>
+                                    <li Class="XmlExtensions.DefDatabaseOperationReplace">
+                                        <objPath>RoyalTitlePermitDef/[defName="SpacerArmorDropPlus"]/permitPointCost</objPath>
+                                        <value>
+                                            <permitPointCost>{Armor3Plus_Cost}</permitPointCost>
+                                        </value>
+                                    </li>
+                                    <li Class="XmlExtensions.DefDatabaseOperationReplace">
+                                        <objPath>RoyalTitlePermitDef/[defName="UltraArmorDrop"]/permitPointCost</objPath>
+                                        <value>
+                                            <permitPointCost>{Armor4_Cost}</permitPointCost>
+                                        </value>
+                                    </li>
+                                    <li Class="XmlExtensions.DefDatabaseOperationReplace">
+                                        <objPath>RoyalTitlePermitDef/[defName="UltraArmorDropPlus"]/permitPointCost</objPath>
+                                        <value>
+                                            <permitPointCost>{Armor4Plus_Cost}</permitPointCost>
+                                        </value>
+                                    </li>
+                                    <!-- Время -->
+                                    <li Class="XmlExtensions.DefDatabaseOperationReplace">
+                                        <objPath>RoyalTitlePermitDef/[defName="ArmorDrop"]/cooldownDays</objPath>
+                                        <value>
+                                            <cooldownDays>{Armor1_Time}</cooldownDays>
+                                        </value>
+                                    </li>
+                                    <li Class="XmlExtensions.DefDatabaseOperationReplace">
+                                        <objPath>RoyalTitlePermitDef/[defName="ArmorDropPlus"]/cooldownDays</objPath>
+                                        <value>
+                                            <cooldownDays>{Armor1Plus_Time}</cooldownDays>
+                                        </value>
+                                    </li>
+                                    <li Class="XmlExtensions.DefDatabaseOperationReplace">
+                                        <objPath>RoyalTitlePermitDef/[defName="IndustrialArmorDrop"]/cooldownDays</objPath>
+                                        <value>
+                                            <cooldownDays>{Armor2_Time}</cooldownDays>
+                                        </value>
+                                    </li>
+                                    <li Class="XmlExtensions.DefDatabaseOperationReplace">
+                                        <objPath>RoyalTitlePermitDef/[defName="IndustrialArmorDropPlus"]/cooldownDays</objPath>
+                                        <value>
+                                            <cooldownDays>{Armor2Plus_Time}</cooldownDays>
+                                        </value>
+                                    </li>
+                                    <li Class="XmlExtensions.DefDatabaseOperationReplace">
+                                        <objPath>RoyalTitlePermitDef/[defName="SpacerArmorDrop"]/cooldownDays</objPath>
+                                        <value>
+                                            <cooldownDays>{Armor3_Time}</cooldownDays>
+                                        </value>
+                                    </li>
+                                    <li Class="XmlExtensions.DefDatabaseOperationReplace">
+                                        <objPath>RoyalTitlePermitDef/[defName="SpacerArmorDropPlus"]/cooldownDays</objPath>
+                                        <value>
+                                            <cooldownDays>{Armor3Plus_Time}</cooldownDays>
+                                        </value>
+                                    </li>
+                                    <li Class="XmlExtensions.DefDatabaseOperationReplace">
+                                        <objPath>RoyalTitlePermitDef/[defName="UltraArmorDrop"]/cooldownDays</objPath>
+                                        <value>
+                                            <cooldownDays>{Armor4_Time}</cooldownDays>
+                                        </value>
+                                    </li>
+                                    <li Class="XmlExtensions.DefDatabaseOperationReplace">
+                                        <objPath>RoyalTitlePermitDef/[defName="UltraArmorDropPlus"]/cooldownDays</objPath>
+                                        <value>
+                                            <cooldownDays>{Armor4Plus_Time}</cooldownDays>
+                                        </value>
+                                    </li>
+                                </operations>
+                            </Operation>
+                        </apply>
+                    </Operation>
+                </apply>
+            </li>
+        </postCloseActions>
+    </XmlExtensions.SettingsMenuDef>
+</Defs>

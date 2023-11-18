@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <XmlExtensions.SettingsMenuDef>
+        <defName>HMC_NE_Allies</defName>
+        <modId>HMCNE.Pacas.Allies</modId>
+        <tKey>Allies_MainTitle</tKey>
+        <label>Nobility Expanded - Allies</label>
+        <settings>
+            <li Class="XmlExtensions.Setting.TabView">
+                <tabs>
+                    <li>
+                        <label>Permit Points</label>
+                        <tKey>Permit_Title</tKey>
+                        <settings>
+                            <li Class="XmlExtensions.Setting.Group">
+                                <settings>
+                                    <li Class="XmlExtensions.Setting.Gap"/>
+                                    <li Class="XmlExtensions.Setting.Text">
+                                        <text>Allies</text>
+                                        <tKey>Allies_Title</tKey>
+                                        <font>Medium</font>
+                                        <anchor>Middle</anchor>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Gap"/>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Laborer1_Cost</key>
+                                        <label>Laborer team</label>
+                                        <tKey>Laborer1_Cost</tKey>
+                                        <defaultValue>2</defaultValue>
+                                        <min>1</min>
+                                        <max>20</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Laborer2_Cost</key>
+                                        <label>Laborer gang</label>
+                                        <tKey>Laborer2_Cost</tKey>
+                                        <defaultValue>3</defaultValue>
+                                        <min>1</min>
+                                        <max>20</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Trooper1_Cost</key>
+                                        <label>Small trooper squad</label>
+                                        <tKey>Trooper1_Cost</tKey>
+                                        <defaultValue>2</defaultValue>
+                                        <min>1</min>
+                                        <max>20</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Trooper2_Cost</key>
+                                        <label>Big trooper squad</label>
+                                        <tKey>Trooper2_Cost</tKey>
+                                        <defaultValue>3</defaultValue>
+                                        <min>1</min>
+                                        <max>20</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Trooper3_Cost</key>
+                                        <label>Janissary squad</label>
+                                        <tKey>Trooper3_Cost</tKey>
+                                        <defaultValue>3</defaultValue>
+                                        <min>1</min>
+                                        <max>20</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Trooper4_Cost</key>
+                                        <label>Cataphract squad</label>
+                                        <tKey>Trooper4_Cost</tKey>
+                                        <defaultValue>4</defaultValue>
+                                        <min>1</min>
+                                        <max>20</max>
+                                    </li>
+                                </settings>
+                            </li>
+                        </settings>
+                    </li>
+                    <li>
+                        <label>Cooldown Time</label>
+                        <tKey>Cooldown_Title</tKey>
+                        <settings>
+                            <li Class="XmlExtensions.Setting.Group">
+                                <settings>
+                                    <li Class="XmlExtensions.Setting.Gap"/>
+                                    <li Class="XmlExtensions.Setting.Text">
+                                        <text>Allies</text>
+                                        <tKey>Allies_Title</tKey>
+                                        <font>Medium</font>
+                                        <anchor>Middle</anchor>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Gap"/>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Laborer1_Time</key>
+                                        <tKey>Laborer1_Cost</tKey>
+                                        <label>Laborer team</label>
+                                        <defaultValue>30</defaultValue>
+                                        <min>1</min>
+                                        <max>240</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Laborer2_Time</key>
+                                        <tKey>Laborer2_Cost</tKey>
+                                        <label>Laborer gang</label>
+                                        <defaultValue>45</defaultValue>
+                                        <min>1</min>
+                                        <max>240</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Trooper1_Time</key>
+                                        <tKey>Trooper1_Cost</tKey>
+                                        <label>Small trooper squad</label>
+                                        <defaultValue>20</defaultValue>
+                                        <min>1</min>
+                                        <max>240</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Trooper2_Time</key>
+                                        <tKey>Trooper2_Cost</tKey>
+                                        <label>Big trooper squad</label>
+                                        <defaultValue>40</defaultValue>
+                                        <min>1</min>
+                                        <max>240</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Trooper3_Time</key>
+                                        <tKey>Trooper3_Cost</tKey>
+                                        <label>Janissary squad</label>
+                                        <defaultValue>50</defaultValue>
+                                        <min>1</min>
+                                        <max>240</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Trooper4_Time</key>
+                                        <tKey>Trooper4_Cost</tKey>
+                                        <label>Cataphract squad</label>
+                                        <defaultValue>60</defaultValue>
+                                        <min>1</min>
+                                        <max>240</max>
+                                    </li>
+                                </settings>
+                            </li>
+                        </settings>
+                    </li>
+                    <li>
+                        <label>Reset settings</label>
+                        <tKey>Reset_Title</tKey>
+                        <settings>
+                            <li Class="XmlExtensions.Setting.Group">
+                                <settings>
+                                    <li Class="XmlExtensions.Setting.Gap"/>
+                                    <li Class="XmlExtensions.Setting.Text">
+                                        <text>Reset all settings in this category</text>
+                                        <tKey>Reset_Button</tKey>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.ResetSettings"/>
+                                </settings>
+                            </li>
+                        </settings>
+                    </li>
+                </tabs>
+            </li>
+        </settings>
+        <postCloseActions>
+            <li Class="XmlExtensions.Action.ApplyOperations">
+                <apply>
+                    <Operation Class="XmlExtensions.UseSettings">
+                        <modId>HMCNE.Pacas.Allies</modId>
+                        <keys>
+                            <li>Laborer1_Cost</li>
+                            <li>Laborer2_Cost</li>
+                            <li>Trooper1_Cost</li>
+                            <li>Trooper2_Cost</li>
+                            <li>Trooper3_Cost</li>
+                            <li>Trooper4_Cost</li>
+                            <li>Laborer1_Time</li>
+                            <li>Laborer2_Time</li>
+                            <li>Trooper1_Time</li>
+                            <li>Trooper2_Time</li>
+                            <li>Trooper3_Time</li>
+                            <li>Trooper4_Time</li>
+                        </keys>
+                        <defaultValues>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>30</li>
+                            <li>45</li>
+                            <li>20</li>
+                            <li>40</li>
+                            <li>50</li>
+                            <li>60</li>
+                        </defaultValues>
+                        <apply>
+                            <Operation Class="PatchOperationSequence">
+                                <operations>
+                                    <!-- Стоимость -->
+                                    <li Class="XmlExtensions.DefDatabaseOperationReplace">
+                                        <objPath>RoyalTitlePermitDef/[defName="CallLaborerTeam"]/permitPointCost</objPath>
+                                        <value>
+                                            <permitPointCost>{Laborer1_Cost}</permitPointCost>
+                                        </value>
+                                    </li>
+                                    <li Class="XmlExtensions.DefDatabaseOperationReplace">
+                                        <objPath>RoyalTitlePermitDef/[defName="CallLaborerGang"]/permitPointCost</objPath>
+                                        <value>
+                                            <permitPointCost>{Laborer2_Cost}</permitPointCost>
+                                        </value>
+                                    </li>
+                                    <li Class="XmlExtensions.DefDatabaseOperationReplace">
+                                        <objPath>RoyalTitlePermitDef/[defName="CallMilitaryAidSmall"]/permitPointCost</objPath>
+                                        <value>
+                                            <permitPointCost>{Trooper1_Cost}</permitPointCost>
+                                        </value>
+                                    </li>
+                                    <li Class="XmlExtensions.DefDatabaseOperationReplace">
+                                        <objPath>RoyalTitlePermitDef/[defName="CallMilitaryAidSmallPlus"]/permitPointCost</objPath>
+                                        <value>
+                                            <permitPointCost>{Trooper2_Cost}</permitPointCost>
+                                        </value>
+                                    </li>
+                                    <li Class="XmlExtensions.DefDatabaseOperationReplace">
+                                        <objPath>RoyalTitlePermitDef/[defName="CallMilitaryAidLarge"]/permitPointCost</objPath>
+                                        <value>
+                                            <permitPointCost>{Trooper3_Cost}</permitPointCost>
+                                        </value>
+                                    </li>
+                                    <li Class="XmlExtensions.DefDatabaseOperationReplace">
+                                        <objPath>RoyalTitlePermitDef/[defName="CallMilitaryAidGrand"]/permitPointCost</objPath>
+                                        <value>
+                                            <permitPointCost>{Trooper4_Cost}</permitPointCost>
+                                        </value>
+                                    </li>
+
+                                    <!-- Время -->
+                                    <li Class="XmlExtensions.DefDatabaseOperationReplace">
+                                        <objPath>RoyalTitlePermitDef/[defName="CallLaborerTeam"]/cooldownDays</objPath>
+                                        <value>
+                                            <cooldownDays>{Laborer1_Time}</cooldownDays>
+                                        </value>
+                                    </li>
+                                    <li Class="XmlExtensions.DefDatabaseOperationReplace">
+                                        <objPath>RoyalTitlePermitDef/[defName="CallLaborerGang"]/cooldownDays</objPath>
+                                        <value>
+                                            <cooldownDays>{Laborer2_Time}</cooldownDays>
+                                        </value>
+                                    </li>
+                                    <li Class="XmlExtensions.DefDatabaseOperationReplace">
+                                        <objPath>RoyalTitlePermitDef/[defName="CallMilitaryAidSmall"]/cooldownDays</objPath>
+                                        <value>
+                                            <cooldownDays>{Trooper1_Time}</cooldownDays>
+                                        </value>
+                                    </li>
+                                    <li Class="XmlExtensions.DefDatabaseOperationReplace">
+                                        <objPath>RoyalTitlePermitDef/[defName="CallMilitaryAidSmallPlus"]/cooldownDays</objPath>
+                                        <value>
+                                            <cooldownDays>{Trooper2_Time}</cooldownDays>
+                                        </value>
+                                    </li>
+                                    <li Class="XmlExtensions.DefDatabaseOperationReplace">
+                                        <objPath>RoyalTitlePermitDef/[defName="CallMilitaryAidLarge"]/cooldownDays</objPath>
+                                        <value>
+                                            <cooldownDays>{Trooper3_Time}</cooldownDays>
+                                        </value>
+                                    </li>
+                                    <li Class="XmlExtensions.DefDatabaseOperationReplace">
+                                        <objPath>RoyalTitlePermitDef/[defName="CallMilitaryAidGrand"]/cooldownDays</objPath>
+                                        <value>
+                                            <cooldownDays>{Trooper4_Time}</cooldownDays>
+                                        </value>
+                                    </li>
+                                </operations>
+                            </Operation>
+                        </apply>
+                    </Operation>
+                </apply>
+            </li>
+        </postCloseActions>
+    </XmlExtensions.SettingsMenuDef>
+</Defs>

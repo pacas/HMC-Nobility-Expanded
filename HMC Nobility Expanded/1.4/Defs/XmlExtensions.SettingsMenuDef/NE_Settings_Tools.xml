@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <XmlExtensions.SettingsMenuDef>
+        <defName>HMC_NE_Tools</defName>
+        <modId>HMCNE.Pacas.Tools</modId>
+        <tKey>Tools_MainTitle</tKey>
+        <label>Nobility Expanded - Tools</label>
+        <settings>
+            <li Class="XmlExtensions.Setting.TabView">
+                <tabs>
+                    <li>
+                        <label>Permit Points</label>
+                        <tKey>Permit_Title</tKey>
+                        <settings>
+                            <li Class="XmlExtensions.Setting.Group">
+                                <settings>
+                                    <li Class="XmlExtensions.Setting.Gap"/>
+                                    <li Class="XmlExtensions.Setting.Text">
+                                        <text>Tools</text>
+                                        <tKey>Tools_Title</tKey>
+                                        <font>Medium</font>
+                                        <anchor>Middle</anchor>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Gap"/>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Tools1_Cost</key>
+                                        <label>Conventional tools</label>
+                                        <tKey>Tools1_Cost</tKey>
+                                        <defaultValue>1</defaultValue>
+                                        <min>1</min>
+                                        <max>20</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Tools2_Cost</key>
+                                        <label>Conventional tools +</label>
+                                        <tKey>Tools2_Cost</tKey>
+                                        <defaultValue>2</defaultValue>
+                                        <min>1</min>
+                                        <max>20</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>AdvTools1_Cost</key>
+                                        <label>Multitool</label>
+                                        <tKey>AdvTools1_Cost</tKey>
+                                        <defaultValue>2</defaultValue>
+                                        <min>1</min>
+                                        <max>20</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>AdvTools2_Cost</key>
+                                        <label>Multitool +</label>
+                                        <tKey>AdvTools2_Cost</tKey>
+                                        <defaultValue>3</defaultValue>
+                                        <min>1</min>
+                                        <max>20</max>
+                                    </li>
+                                </settings>
+                            </li>
+                        </settings>
+                    </li>
+                    <li>
+                        <label>Cooldown Time</label>
+                        <tKey>Cooldown_Title</tKey>
+                        <settings>
+                            <li Class="XmlExtensions.Setting.Group">
+                                <settings>
+                                    <li Class="XmlExtensions.Setting.Gap"/>
+                                    <li Class="XmlExtensions.Setting.Text">
+                                        <text>Tools</text>
+                                        <tKey>Tools_Title</tKey>
+                                        <font>Medium</font>
+                                        <anchor>Middle</anchor>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Gap"/>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Tools1_Time</key>
+                                        <tKey>Tools1_Cost</tKey>
+                                        <label>Conventional tools</label>
+                                        <defaultValue>17</defaultValue>
+                                        <min>1</min>
+                                        <max>240</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Tools2_Time</key>
+                                        <tKey>Tools2_Cost</tKey>
+                                        <label>Conventional tools +</label>
+                                        <defaultValue>50</defaultValue>
+                                        <min>1</min>
+                                        <max>240</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>AdvTools1_Time</key>
+                                        <tKey>AdvTools1_Cost</tKey>
+                                        <label>Multitool</label>
+                                        <defaultValue>45</defaultValue>
+                                        <min>1</min>
+                                        <max>240</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>AdvTools2_Time</key>
+                                        <tKey>AdvTools2_Cost</tKey>
+                                        <label>Multitool +</label>
+                                        <defaultValue>80</defaultValue>
+                                        <min>1</min>
+                                        <max>240</max>
+                                    </li>
+                                </settings>
+                            </li>
+                        </settings>
+                    </li>
+                    <li>
+                        <label>Reset settings</label>
+                        <tKey>Reset_Title</tKey>
+                        <settings>
+                            <li Class="XmlExtensions.Setting.Group">
+                                <settings>
+                                    <li Class="XmlExtensions.Setting.Gap"/>
+                                    <li Class="XmlExtensions.Setting.Text">
+                                        <text>Reset all settings in this category</text>
+                                        <tKey>Reset_Button</tKey>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.ResetSettings"/>
+                                </settings>
+                            </li>
+                        </settings>
+                    </li>
+                </tabs>
+            </li>
+        </settings>
+        <postCloseActions>
+            <li Class="XmlExtensions.Action.ApplyOperations">
+                <apply>
+                    <Operation Class="XmlExtensions.UseSettings">
+                        <modId>HMCNE.Pacas.Tools</modId>
+                        <keys>
+                            <li>Tools1_Cost</li>
+                            <li>Tools2_Cost</li>
+                            <li>AdvTools1_Cost</li>
+                            <li>AdvTools2_Cost</li>
+                            <li>Tools1_Time</li>
+                            <li>Tools2_Time</li>
+                            <li>AdvTools1_Time</li>
+                            <li>AdvTools2_Time</li>
+                        </keys>
+                        <defaultValues>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>17</li>
+                            <li>50</li>
+                            <li>45</li>
+                            <li>80</li>
+                        </defaultValues>
+                        <apply>
+                            <Operation Class="PatchOperationSequence">
+                                <operations>
+                                    <!-- Стоимость -->
+                                    <li Class="XmlExtensions.DefDatabaseOperationReplace">
+                                        <objPath>RoyalTitlePermitDef/[defName="ToolDrop"]/permitPointCost</objPath>
+                                        <value>
+                                            <permitPointCost>{Tools1_Cost}</permitPointCost>
+                                        </value>
+                                    </li>
+                                    <li Class="XmlExtensions.DefDatabaseOperationReplace">
+                                        <objPath>RoyalTitlePermitDef/[defName="ToolDropPlus"]/permitPointCost</objPath>
+                                        <value>
+                                            <permitPointCost>{Tools2_Cost}</permitPointCost>
+                                        </value>
+                                    </li>
+                                    <li Class="XmlExtensions.DefDatabaseOperationReplace">
+                                        <objPath>RoyalTitlePermitDef/[defName="AdvToolDrop"]/permitPointCost</objPath>
+                                        <value>
+                                            <permitPointCost>{AdvTools1_Cost}</permitPointCost>
+                                        </value>
+                                    </li>
+                                    <li Class="XmlExtensions.DefDatabaseOperationReplace">
+                                        <objPath>RoyalTitlePermitDef/[defName="AdvToolDropPlus"]/permitPointCost</objPath>
+                                        <value>
+                                            <permitPointCost>{AdvTools2_Cost}</permitPointCost>
+                                        </value>
+                                    </li>
+                                    <!-- Время -->
+                                    <li Class="XmlExtensions.DefDatabaseOperationReplace">
+                                        <objPath>RoyalTitlePermitDef/[defName="ToolDrop"]/cooldownDays</objPath>
+                                        <value>
+                                            <cooldownDays>{Tools1_Time}</cooldownDays>
+                                        </value>
+                                    </li>
+                                    <li Class="XmlExtensions.DefDatabaseOperationReplace">
+                                        <objPath>RoyalTitlePermitDef/[defName="ToolDropPlus"]/cooldownDays</objPath>
+                                        <value>
+                                            <cooldownDays>{Tools2_Time}</cooldownDays>
+                                        </value>
+                                    </li>
+                                    <li Class="XmlExtensions.DefDatabaseOperationReplace">
+                                        <objPath>RoyalTitlePermitDef/[defName="AdvToolDrop"]/cooldownDays</objPath>
+                                        <value>
+                                            <cooldownDays>{AdvTools1_Time}</cooldownDays>
+                                        </value>
+                                    </li>
+                                    <li Class="XmlExtensions.DefDatabaseOperationReplace">
+                                        <objPath>RoyalTitlePermitDef/[defName="AdvToolDropPlus"]/cooldownDays</objPath>
+                                        <value>
+                                            <cooldownDays>{AdvTools2_Time}</cooldownDays>
+                                        </value>
+                                    </li>
+                                </operations>
+                            </Operation>
+                        </apply>
+                    </Operation>
+                </apply>
+            </li>
+        </postCloseActions>
+    </XmlExtensions.SettingsMenuDef>
+</Defs>

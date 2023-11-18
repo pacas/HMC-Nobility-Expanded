@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <XmlExtensions.SettingsMenuDef>
+        <defName>HMC_NE_Seeds</defName>
+        <modId>HMCNE.Pacas.Seeds</modId>
+        <tKey>Seeds_MainTitle</tKey>
+        <label>Nobility Expanded - Seeds</label>
+        <settings>
+            <li Class="XmlExtensions.Setting.TabView">
+                <tabs>
+                    <li>
+                        <label>Permit Points</label>
+                        <tKey>Permit_Title</tKey>
+                        <settings>
+                            <li Class="XmlExtensions.Setting.Group">
+                                <settings>
+                                    <li Class="XmlExtensions.Setting.Gap"/>
+                                    <li Class="XmlExtensions.Setting.Text">
+                                        <text>Seeds</text>
+                                        <tKey>Seeds_Title</tKey>
+                                        <font>Medium</font>
+                                        <anchor>Middle</anchor>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Gap"/>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Grains_Cost</key>
+                                        <label>Grains</label>
+                                        <tKey>Grains_Cost</tKey>
+                                        <defaultValue>1</defaultValue>
+                                        <min>1</min>
+                                        <max>20</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Veges_Cost</key>
+                                        <label>Vegetables</label>
+                                        <tKey>Veges_Cost</tKey>
+                                        <defaultValue>1</defaultValue>
+                                        <min>1</min>
+                                        <max>20</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Shrooms_Cost</key>
+                                        <label>Mushrooms</label>
+                                        <tKey>Shrooms_Cost</tKey>
+                                        <defaultValue>1</defaultValue>
+                                        <min>1</min>
+                                        <max>20</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Lux_Cost</key>
+                                        <label>Cooking ingredients</label>
+                                        <tKey>Lux_Cost</tKey>
+                                        <defaultValue>1</defaultValue>
+                                        <min>1</min>
+                                        <max>20</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Addictive_Cost</key>
+                                        <label>Addictive crops</label>
+                                        <tKey>Addictive_Cost</tKey>
+                                        <defaultValue>1</defaultValue>
+                                        <min>1</min>
+                                        <max>20</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Cloth_Cost</key>
+                                        <label>Fiber crops</label>
+                                        <tKey>Cloth_Cost</tKey>
+                                        <defaultValue>1</defaultValue>
+                                        <min>1</min>
+                                        <max>20</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Heal_Cost</key>
+                                        <label>Healing plants</label>
+                                        <tKey>Heal_Cost</tKey>
+                                        <defaultValue>1</defaultValue>
+                                        <min>1</min>
+                                        <max>20</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Util_Cost</key>
+                                        <label>Utility plants</label>
+                                        <tKey>Util_Cost</tKey>
+                                        <defaultValue>1</defaultValue>
+                                        <min>1</min>
+                                        <max>20</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Tree_Cost</key>
+                                        <label>Trees</label>
+                                        <tKey>Tree_Cost</tKey>
+                                        <defaultValue>1</defaultValue>
+                                        <min>1</min>
+                                        <max>20</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Fruit_Cost</key>
+                                        <label>Fruits</label>
+                                        <tKey>Fruit_Cost</tKey>
+                                        <defaultValue>1</defaultValue>
+                                        <min>1</min>
+                                        <max>20</max>
+                                    </li>
+                                </settings>
+                            </li>
+                        </settings>
+                    </li>
+                    <li>
+                        <label>Cooldown Time</label>
+                        <tKey>Cooldown_Title</tKey>
+                        <settings>
+                            <li Class="XmlExtensions.Setting.Group">
+                                <settings>
+                                    <li Class="XmlExtensions.Setting.Gap"/>
+                                    <li Class="XmlExtensions.Setting.Text">
+                                        <text>Seeds</text>
+                                        <tKey>Seeds_Title</tKey>
+                                        <font>Medium</font>
+                                        <anchor>Middle</anchor>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Gap"/>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Grains_Time</key>
+                                        <label>Grains</label>
+                                        <tKey>Grains_Cost</tKey>
+                                        <defaultValue>15</defaultValue>
+                                        <min>1</min>
+                                        <max>240</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Veges_Time</key>
+                                        <label>Vegetables</label>
+                                        <tKey>Veges_Cost</tKey>
+                                        <defaultValue>15</defaultValue>
+                                        <min>1</min>
+                                        <max>240</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Shrooms_Time</key>
+                                        <label>Mushrooms</label>
+                                        <tKey>Shrooms_Cost</tKey>
+                                        <defaultValue>15</defaultValue>
+                                        <min>1</min>
+                                        <max>240</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Lux_Time</key>
+                                        <label>Cooking ingredients</label>
+                                        <tKey>Lux_Cost</tKey>
+                                        <defaultValue>25</defaultValue>
+                                        <min>1</min>
+                                        <max>240</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Addictive_Time</key>
+                                        <label>Addictive crops</label>
+                                        <tKey>Addictive_Cost</tKey>
+                                        <defaultValue>25</defaultValue>
+                                        <min>1</min>
+                                        <max>240</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Cloth_Time</key>
+                                        <label>Fiber crops</label>
+                                        <tKey>Cloth_Cost</tKey>
+                                        <defaultValue>25</defaultValue>
+                                        <min>1</min>
+                                        <max>240</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Heal_Time</key>
+                                        <label>Healing plants</label>
+                                        <tKey>Heal_Cost</tKey>
+                                        <defaultValue>25</defaultValue>
+                                        <min>1</min>
+                                        <max>240</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Util_Time</key>
+                                        <label>Utility plants</label>
+                                        <tKey>Util_Cost</tKey>
+                                        <defaultValue>25</defaultValue>
+                                        <min>1</min>
+                                        <max>240</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Tree_Time</key>
+                                        <label>Trees</label>
+                                        <tKey>Tree_Cost</tKey>
+                                        <defaultValue>30</defaultValue>
+                                        <min>1</min>
+                                        <max>240</max>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Numeric">
+                                        <key>Fruit_Time</key>
+                                        <label>Fruits</label>
+                                        <tKey>Fruit_Cost</tKey>
+                                        <defaultValue>30</defaultValue>
+                                        <min>2</min>
+                                        <max>240</max>
+                                    </li>
+                                </settings>
+                            </li>
+                        </settings>
+                    </li>
+                    <li>
+                        <label>Reset settings</label>
+                        <tKey>Reset_Title</tKey>
+                        <settings>
+                            <li Class="XmlExtensions.Setting.Group">
+                                <settings>
+                                    <li Class="XmlExtensions.Setting.Gap"/>
+                                    <li Class="XmlExtensions.Setting.Text">
+                                        <text>Reset all settings in this category</text>
+                                        <tKey>Reset_Button</tKey>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.ResetSettings"/>
+                                </settings>
+                            </li>
+                        </settings>
+                    </li>
+                </tabs>
+            </li>            
+        </settings>
+        <postCloseActions>
+            <li Class="XmlExtensions.Action.ApplyOperations">
+                <apply>
+                    <Operation Class="XmlExtensions.ApplyPatch">
+                        <patchName>HMCNE_Set_Seeds</patchName>
+                        <arguments>
+                        </arguments>
+                    </Operation>
+                </apply>
+            </li>
+        </postCloseActions>
+    </XmlExtensions.SettingsMenuDef>
+</Defs>
