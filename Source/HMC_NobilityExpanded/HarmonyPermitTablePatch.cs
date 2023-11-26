@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection;
 using HarmonyLib;
 using RimWorld;
 using RimWorld.Planet;
@@ -19,7 +20,7 @@ namespace NobilityExpanded
     }
 
     [HarmonyPatch(typeof(StatsReportUtility), nameof(StatsReportUtility.Reset))]
-    public class StatsResetPatch
+    public static class StatsResetPatch
     {
         public static bool Prefix(
             Vector2 ___scrollPosition,
@@ -48,7 +49,7 @@ namespace NobilityExpanded
     }
     
     [HarmonyPatch(typeof(PermitsCardCustomUtility), "DrawPosition")]
-    public class CoordsAutopatch
+    public static class CoordsAutopatch
     {
         public static bool Prefix(ref RoyalTitlePermitDef permit, ref Vector2 __result)
         {
@@ -98,66 +99,25 @@ namespace NobilityExpanded
     }
     
     [HarmonyPatch(typeof(Dialog_InfoCard), "FillCard")]
-    public class FillCardPatch
+    public static class FillCardPatch
     {
-        public static bool Prefix(
-            Dialog_InfoCard __instance, 
-            ref Dialog_InfoCard.InfoCardTab ___tab,
-            ref Thing ___thing,
-            ref Hediff ___hediff,
-            ref RoyalTitleDef ___titleDef,
-            ref Faction ___faction,
-            ref WorldObject ___worldObject,
-            ref Pawn ___pawn,
-            ref Def ___def,
-            ref ThingDef ___stuff,
-            ref Action ___executeAfterFillCardOnce,
-            ref Rect cardRect
-        )
+        private static readonly MethodInfo VanillaPermit = AccessTools.Method(typeof(PermitsCardUtility), nameof(PermitsCardUtility.DrawRecordsCard));
+        private static readonly MethodInfo NobilityPermit = AccessTools.Method(typeof(PermitsCardCustomUtility), nameof(PermitsCardCustomUtility.DrawRecordsCard));
+        public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {
-            if (___tab == Dialog_InfoCard.InfoCardTab.Stats)
+            foreach(var inst in instructions)
             {
-                if (___thing != null)
+                if(inst.Calls(VanillaPermit))
                 {
-                    Thing thing1 = ___thing;
-                    if (___thing is MinifiedThing thing2)
-                        thing1 = thing2.InnerThing;
-                    StatsReportUtility.DrawStatsReport(cardRect, thing1);
+                    inst.operand = NobilityPermit;
                 }
-                else if (___titleDef != null)
-                    StatsReportUtility.DrawStatsReport(cardRect, ___titleDef, ___faction, ___pawn);
-                else if (___hediff != null)
-                    StatsReportUtility.DrawStatsReport(cardRect, ___hediff);
-                else if (___faction != null)
-                    StatsReportUtility.DrawStatsReport(cardRect, ___faction);
-                else if (___worldObject != null)
-                    StatsReportUtility.DrawStatsReport(cardRect, ___worldObject);
-                else if (___def is AbilityDef)
-                    StatsReportUtility.DrawStatsReport(cardRect, (AbilityDef) ___def);
-                else
-                    StatsReportUtility.DrawStatsReport(cardRect, ___def, ___stuff);
+                yield return inst;
             }
-            else if (___tab == Dialog_InfoCard.InfoCardTab.Character)
-                CharacterCardUtility.DrawCharacterCard(cardRect, (Pawn) ___thing);
-            else if (___tab == Dialog_InfoCard.InfoCardTab.Health)
-            {
-                cardRect.yMin += 8f;
-                HealthCardUtility.DrawPawnHealthCard(cardRect, (Pawn) ___thing, false, false, null);
-            }
-            else if (___tab == Dialog_InfoCard.InfoCardTab.Records)
-                RecordsCardUtility.DrawRecordsCard(cardRect, (Pawn) ___thing);
-            else if (___tab == Dialog_InfoCard.InfoCardTab.Permits)
-                PermitsCardCustomUtility.DrawRecordsCard(cardRect, (Pawn) ___thing);
-            if (___executeAfterFillCardOnce == null)
-                return false;
-            ___executeAfterFillCardOnce();
-            ___executeAfterFillCardOnce = null;
-            return false;
         }
     }
 
     [HarmonyPatch(typeof(Dialog_InfoCard), "get_InitialSize")]
-    public class WindowSizePatch
+    public static class WindowSizePatch
     {
         public static bool Prefix(ref Vector2 __result) {
             __result = new Vector2(1050f, 880f);
