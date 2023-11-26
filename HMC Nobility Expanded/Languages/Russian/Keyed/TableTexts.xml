@@ -4,6 +4,7 @@
     <PrivilegesPointsRequired>Требуется очков привилегий: {0}</PrivilegesPointsRequired>
     <ItemIncludedInPermit>Содержит:</ItemIncludedInPermit>
     <ChoosePermitCategory>Выбрать категорию</ChoosePermitCategory>
+    <CurrentTitleCustom>Титул: </CurrentTitleCustom>
     
     <!-- ===== Качество ===== -->
     <SpecificAwful>Качество: ужасное</SpecificAwful>

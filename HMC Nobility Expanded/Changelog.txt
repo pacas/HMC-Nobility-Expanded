@@ -1,5 +1,25 @@
 ----------------------------------------------------------------------
 
+- Changelog "HMC Empire Rewards" v0.14.1 (1.4):
+
+1) Updated permit window replacement window method with transpiler - all credits to MasakiTenchi!
+2) Fixed font sizes for different rimthemes to fit in window.
+
+1) Обновленный метод замены окна привилегий с помощью транспайлера - благодарность MasakiTenchi!
+2) Исправлены размеры шрифтов для разных rimthemes, чтобы они помещались в окне.
+
+----------------------------------------------------------------------
+
+- Changelog "HMC Empire Rewards" v0.14 (1.4):
+
+1) New settings! WIP, can be VERY broken.
+2) Technical stuff - finally fixed everything to be compatible with the latest HSK version.
+
+1) Новые настройки! WIP, могут быть ОЧЕНЬ сломаны.
+2) Технические шоколадки - наконец-то все исправлено для совместимости с последней версией HSK.
+
+----------------------------------------------------------------------
+
 - Changelog "HMC Empire Rewards" v0.13 (1.4):
 
 1) Seeds rework:

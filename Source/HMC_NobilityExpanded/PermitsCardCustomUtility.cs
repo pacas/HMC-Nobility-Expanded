@@ -17,6 +17,7 @@ namespace NobilityExpanded
         public static readonly NobilitySupportUtility UtilityClass = new NobilitySupportUtility();
         private static readonly Vector2 PermitOptionSpacing = new Vector2(0.25f, 0.35f);
         private static readonly Texture2D SwitchFactionIcon = ContentFinder<Texture2D>.Get("UI/Icons/SwitchFaction");
+        public static readonly string spacing = "           ";
         
         private static bool ShowSwitchFactionButton
         {
@@ -102,14 +103,14 @@ namespace NobilityExpanded
             Text.Font = GameFont.Medium;
             var currentTitle = pawn.royalty.GetCurrentTitle(selectedFaction);
             var statusLabelRect = new Rect(rect.xMin + 200f, rect.y - 2f, rect.xMax - 320f, 30f);
-            var statusLabelText = "CurrentTitle".Translate() + ": " +
+            var statusLabelText = "CurrentTitleCustom".Translate() +
                 (currentTitle != null
                     ? currentTitle.GetLabelFor(pawn).CapitalizeFirst()
-                    : (string)"None".Translate()) + "            " + "UnusedPermits".Translate() + ": " +
+                    : (string)"None".Translate()) + spacing + "UnusedPermits".Translate() + ": " +
                 pawn.royalty.GetPermitPoints(selectedFaction).ToString();
             if (!selectedFaction.def.royalFavorLabel.NullOrEmpty())
-                statusLabelText +=  "            " + selectedFaction.def.royalFavorLabel.CapitalizeFirst() + ": " +
-                                  pawn.royalty.GetFavor(selectedFaction).ToString();
+                statusLabelText +=  spacing + selectedFaction.def.royalFavorLabel.CapitalizeFirst() + ": " +
+                                    pawn.royalty.GetFavor(selectedFaction).ToString();
             Widgets.Label(statusLabelRect, statusLabelText);
             
             var chooseCategoryRect = new Rect(rect.xMin, rect.y - 4f, 180f, 30f);
@@ -130,10 +131,11 @@ namespace NobilityExpanded
             DoLeftRect(leftRect, pawn);
             DoMiddleRect(middleRect, pawn);
             DoRightRect(rightRect, pawn);
-            if (Widgets.ButtonText(chooseCategoryRect, "ChoosePermitCategory".Translate())) {
-                var tabOptions = SetCategoryButton();
-                Find.WindowStack.Add(new FloatMenu(tabOptions));
-            }
+            if (!Widgets.ButtonText(chooseCategoryRect, "ChoosePermitCategory".Translate())) 
+                return;
+            
+            var tabOptions = SetCategoryButton();
+            Find.WindowStack.Add(new FloatMenu(tabOptions));
         }
 
         
@@ -192,49 +194,60 @@ namespace NobilityExpanded
             DrawLines();
             foreach (var permit in defsListForReading)
             {
-                if (CanDrawPermit(permit) && permit.permitPointCost != 90)
+                if (!CanDrawPermit(permit) || permit.permitPointCost == 90) 
+                    continue;
+                
+                var vector2 = DrawPosition(permit);
+                var textColor = Widgets.NormalOptionColor;
+                var bgColor = PermitUnlocked(permit, pawn)
+                    ? TexUI.FinishedResearchColor
+                    : TexUI.AvailResearchColor;
+                Color borderResearchColor;
+                var permitRect = new Rect(vector2.x, vector2.y, 200f, 50f);
+                switch (permit.permitPointCost)
                 {
-                    var vector2 = DrawPosition(permit);
-                    var textColor = Widgets.NormalOptionColor;
-                    var bgColor = PermitUnlocked(permit, pawn)
-                        ? TexUI.FinishedResearchColor
-                        : TexUI.AvailResearchColor;
-                    Color borderResearchColor;
-                    var permitRect = new Rect(vector2.x, vector2.y, 200f, 50f);
-                    if (permit.permitPointCost == 99) {
+                    case 99:
                         textColor = new Color(1f, 0.5f, 0.0f, 1.0f);
                         bgColor = new Color(0.06f, 0.06f, 0.06f, 1);
                         permitRect = new Rect(vector2.x, vector2.y, 300f, 50f);
-                    }
-                    else if (permit.permitPointCost == 98) {
+                        break;
+                    case 98:
                         textColor = new Color(1f, 0.8f, 0.2f, 1.0f);
                         bgColor = new Color(0.06f, 0.06f, 0.06f, 1);
                         permitRect = new Rect(vector2.x - 25f, vector2.y, 200f, 50f);
-                    }
-                    else if (!permit.AvailableForPawn(pawn, selectedFaction) && !PermitUnlocked(permit, pawn)) {
-                        textColor = new Color(0.6f, 0.1f, 0.1f, 1.0f);
-                    }
-                    if (selectedPermit == permit) {
-                        borderResearchColor = TexUI.HighlightBorderResearchColor;
-                        bgColor += TexUI.HighlightBgResearchColor;
-                    }
-                    else {
-                        borderResearchColor = TexUI.DefaultBorderResearchColor;
-                    }
-                    if (Widgets.CustomButtonText(ref permitRect, string.Empty, bgColor, textColor, borderResearchColor)) {
-                        SoundDefOf.Click.PlayOneShotOnCamera();
-                        selectedPermit = permit;
-                    }
+                        break;
+                    default:
+                    {
+                        if (!permit.AvailableForPawn(pawn, selectedFaction) && !PermitUnlocked(permit, pawn)) {
+                            textColor = new Color(0.6f, 0.1f, 0.1f, 1.0f);
+                        }
 
-                    var anchor = (int)Text.Anchor;
-                    var color = GUI.color;
-                    GUI.color = textColor;
-                    Text.Anchor = TextAnchor.MiddleCenter;
-                    Widgets.Label(permitRect, permit.LabelCap);
-                    GUI.color = color;
-                    Text.Anchor = (TextAnchor)anchor;
+                        break;
+                    }
                 }
+                
+                if (selectedPermit == permit) {
+                    borderResearchColor = TexUI.HighlightBorderResearchColor;
+                    bgColor += TexUI.HighlightBgResearchColor;
+                }
+                else {
+                    borderResearchColor = TexUI.DefaultBorderResearchColor;
+                }
+                
+                if (Widgets.CustomButtonText(ref permitRect, string.Empty, bgColor, textColor, borderResearchColor)) {
+                    SoundDefOf.Click.PlayOneShotOnCamera();
+                    selectedPermit = permit;
+                }
+
+                var anchor = (int)Text.Anchor;
+                var color = GUI.color;
+                GUI.color = textColor;
+                Text.Anchor = TextAnchor.MiddleCenter;
+                Widgets.Label(permitRect, permit.LabelCap);
+                GUI.color = color;
+                Text.Anchor = (TextAnchor)anchor;
             }
+            
             Widgets.EndGroup();
             Widgets.EndScrollView();
         }
@@ -417,7 +430,7 @@ namespace NobilityExpanded
         private static Vector2 DrawPosition(RoyalTitlePermitDef permit)
         {return PermitOptionSpacing;}
         /* Fake static method, replaced in runtime with real. */
-        /* Why? I dunno, this is working that way, I will try to fix it later. */
+        /* Why? I dunno, this is working that way. */
 
         
         private static bool CanDrawPermit(RoyalTitlePermitDef permit)

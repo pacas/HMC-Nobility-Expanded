@@ -151,7 +151,7 @@
                 </value>
             </li>
             <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[defName="VFEE_Apparel_ArmorDeserter"]</xpath>
+                <xpath>Defs/ThingDef[defName="VFEE_Apparel_ArmorDeserter"]/equippedStatOffsets</xpath>
                 <value>
                     <equippedStatOffsets>
                         <MoveSpeed>-1.2</MoveSpeed>
@@ -172,7 +172,7 @@
                 </value>
             </li>
             <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[defName="VFEE_Apparel_DeserterHelmet"]</xpath>
+                <xpath>Defs/ThingDef[defName="VFEE_Apparel_DeserterHelmet"]/equippedStatOffsets</xpath>
                 <value>
                     <equippedStatOffsets>                    
                         <PsychicSensitivity>-0.1</PsychicSensitivity>
