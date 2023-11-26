@@ -4,6 +4,7 @@
     <PrivilegesPointsRequired>Permit points cost: {0}</PrivilegesPointsRequired>
     <ItemIncludedInPermit>Contains:</ItemIncludedInPermit>
     <ChoosePermitCategory>Choose category</ChoosePermitCategory>
+    <CurrentTitleCustom>Title: </CurrentTitleCustom>
 
     <!-- ===== Quality ===== -->
     <SpecificAwful>Quality: Awful</SpecificAwful>
