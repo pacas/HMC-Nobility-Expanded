@@ -107,47 +107,81 @@
                     <smeltable>false</smeltable>
                 </value>
             </li>
+            <li Class="PatchOperationAttributeSet">
+                <xpath>Defs/ThingDef[defName="VFEE_Apparel_ArmorDeserter" or defName="VFEE_Apparel_DeserterHelmet"]</xpath>
+                <attribute>ParentName</attribute>
+                <value>ArmorSpacerBase</value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VFEE_Apparel_ArmorDeserter"]/thingCategories</xpath>
+                <value>
+                    <thingCategories>
+                        <li>HeavyFullArmorCat</li>
+                    </thingCategories>
+                </value>
+            </li>
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="VFEE_Apparel_ArmorDeserter"]</xpath>
                 <value>
-                    <equippedStatOffsets>
-                        <MoveSpeed>-1.2</MoveSpeed>
-                        <CarryWeight>50</CarryWeight>
-                        <ToxicEnvironmentResistance>0.3</ToxicEnvironmentResistance>
-                        <CarryBulk>15</CarryBulk>
-                        <WorkSpeedGlobal>-0.25</WorkSpeedGlobal>
-                        <ShootingAccuracyPawn>-0.1</ShootingAccuracyPawn>
-                        <AimingDelayFactor>0.14</AimingDelayFactor>
-                        <MeleeHitChance>-0.2</MeleeHitChance>
-                        <MeleeWeapon_CooldownMultiplier>0.2</MeleeWeapon_CooldownMultiplier>
-                        <Suppressability>-0.25</Suppressability>
-                        <ArmorRating_Toxin>0.3</ArmorRating_Toxin>
-                        <Radiation>-0.2</Radiation>
-                        <GermResistance>0.04</GermResistance>
-                        <GermContainment>0.04</GermContainment>	
-                    </equippedStatOffsets>
+                    <tradeTags>
+                        <li>HiTechArmor</li>
+                    </tradeTags>
+                    <stuffCategories>
+                        <li>StrongMetallic</li>
+                    </stuffCategories>
+                    <costStuffCount>55</costStuffCount>
+                    <costList>
+                        <Carbon>25</Carbon>
+                        <Compaste>20</Compaste>
+                        <SyntheticFibers>15</SyntheticFibers>
+                        <MagneticMaterial>6</MagneticMaterial>
+                        <Hexcell>13</Hexcell>
+                    </costList>
+                    <modExtensions>
+                      <li Class="CombatExtended.PartialArmorExt">
+                          <stats>		  				  
+                              <li>
+                                <ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+                                <parts>
+                                    <li>Hand</li>
+                                </parts>
+                              </li>
+                              <li>
+                                <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+                                <parts>
+                                    <li>Hand</li>
+                                </parts>
+                              </li>
+                          </stats>
+                      </li>
+                    </modExtensions>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VFEE_Apparel_DeserterHelmet"]/thingCategories</xpath>
+                <value>
+                    <thingCategories>
+                        <li>HeavyHelmetsCat</li>
+                    </thingCategories>
                 </value>
             </li>
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="VFEE_Apparel_DeserterHelmet"]</xpath>
                 <value>
-                    <equippedStatOffsets>                    
-                        <PsychicSensitivity>-0.1</PsychicSensitivity>
-                        <AimingAccuracy>0.1</AimingAccuracy>
-                        <MoveSpeed>-0.16</MoveSpeed>
-                        <WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
-                        <MentalBreakThreshold>-0.03</MentalBreakThreshold>
-                        <ShootingAccuracyPawn>-0.05</ShootingAccuracyPawn>
-                        <AimingDelayFactor>0.03</AimingDelayFactor>
-                        <MeleeHitChance>0.15</MeleeHitChance>
-                        <Suppressability>-0.11</Suppressability>
-                        <ArmorRating_Toxin>0.15</ArmorRating_Toxin>
-                        <ToxicEnvironmentResistance>0.3</ToxicEnvironmentResistance>
-                        <SmokeSensitivity>-0.5</SmokeSensitivity>
-                        <Radiation>-0.2</Radiation>
-                        <GermResistance>0.30</GermResistance>
-                        <GermContainment>0.40</GermContainment>
-                    </equippedStatOffsets>
+                    <tradeTags>
+                        <li>HiTechArmor</li>
+                    </tradeTags>
+                    <costList>
+                        <ComponentUltra>1</ComponentUltra>
+                        <Carbon>5</Carbon>
+                        <Compaste>15</Compaste>
+                        <SyntheticFibers>5</SyntheticFibers>
+                        <MagneticMaterial>2</MagneticMaterial>
+                    </costList>
+                    <costStuffCount>40</costStuffCount>
+                    <stuffCategories>
+                        <li>StrongMetallic</li>
+                    </stuffCategories>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
