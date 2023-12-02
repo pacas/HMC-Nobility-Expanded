@@ -129,13 +129,13 @@
                     <stuffCategories>
                         <li>StrongMetallic</li>
                     </stuffCategories>
-                    <costStuffCount>55</costStuffCount>
+                    <costStuffCount>80</costStuffCount>
                     <costList>
                         <Carbon>25</Carbon>
                         <Compaste>20</Compaste>
                         <SyntheticFibers>15</SyntheticFibers>
-                        <MagneticMaterial>6</MagneticMaterial>
-                        <Hexcell>13</Hexcell>
+                        <MagneticMaterial>5</MagneticMaterial>
+                        <Hexcell>9</Hexcell>
                     </costList>
                     <modExtensions>
                       <li Class="CombatExtended.PartialArmorExt">
@@ -157,26 +157,22 @@
                     </modExtensions>
                 </value>
             </li>
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[defName="VFEE_Apparel_DeserterHelmet"]/thingCategories</xpath>
-                <value>
-                    <thingCategories>
-                        <li>HeavyHelmetsCat</li>
-                    </thingCategories>
-                </value>
-            </li>
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="VFEE_Apparel_DeserterHelmet"]</xpath>
                 <value>
                     <tradeTags>
                         <li>HiTechArmor</li>
                     </tradeTags>
+                    <thingCategories>
+                        <li>HeavyHelmetsCat</li>
+                    </thingCategories>
                     <costList>
                         <ComponentUltra>1</ComponentUltra>
                         <Carbon>5</Carbon>
                         <Compaste>15</Compaste>
                         <SyntheticFibers>5</SyntheticFibers>
-                        <MagneticMaterial>2</MagneticMaterial>
+                        <MagneticMaterial>3</MagneticMaterial>
+                        <Hexcell>4</Hexcell>
                     </costList>
                     <costStuffCount>40</costStuffCount>
                     <stuffCategories>
