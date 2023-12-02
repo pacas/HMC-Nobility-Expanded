@@ -2,22 +2,22 @@
 <Patch>
     <Operation Class="PatchOperationSequence">
         <operations>
-            <li Class="PatchOperationReplace">
+            <!--<li Class="PatchOperationReplace">
                 <xpath>Defs/PawnKindDef[@Name="VFEE_DeserterBase"]/itemQuality</xpath>
                 <value>
                     <itemQuality>Poor</itemQuality>
                 </value>
-            </li>
+            </li>-->
             <li Class="PatchOperationReplace">
                 <xpath>Defs/PawnKindDef[@Name="VFEE_DeserterBase"]/weaponMoney</xpath>
                 <value>
-                    <weaponMoney>2800~3600</weaponMoney>
+                    <weaponMoney>2400~3600</weaponMoney>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
                 <xpath>Defs/PawnKindDef[@Name="VFEE_DeserterBase"]/apparelMoney</xpath>
                 <value>
-                    <apparelMoney>4500~7000</apparelMoney>
+                    <apparelMoney>2500~6000</apparelMoney>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
@@ -60,6 +60,14 @@
                 <xpath>Defs/PawnKindDef[defName="VFEE_Empire_Fighter_Absolver"]/apparelRequired</xpath>
                 <attribute>Inherit</attribute>
                 <value>False</value>
+            </li>
+            
+            
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/PawnKindDef[defName="VFEE_Deserter"]</xpath>
+                <value>
+                    <combatPower>420</combatPower>
+                </value>
             </li>
         </operations>
     </Operation>

@@ -153,7 +153,7 @@
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="VFEE_Apparel_DeserterHelmet"]/apparel</xpath>
                 <value>
-                    <immuneToToxGasExposure>true</immuneToToxGasExposure>
+                    <immuneToToxGasExposure>false</immuneToToxGasExposure>
                 </value>
             </li>
             <li Class="PatchOperationAdd">
@@ -168,30 +168,6 @@
                 <value>
                     <li Class="CombatExtended.PartialArmorExt">
                         <stats>
-                            <li>
-                                <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
-                                <parts>
-                                    <li>Eye</li>
-                                </parts>
-                            </li>
-                            <li>
-                                <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
-                                <parts>
-                                    <li>Eye</li>
-                                </parts>
-                            </li>
-                            <li>
-                                <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
-                                <parts>
-                                    <li>Nose</li>
-                                </parts>
-                            </li>
-                            <li>
-                                <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
-                                <parts>
-                                    <li>Nose</li>
-                                </parts>
-                            </li>
                             <li>
                                 <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
                                 <parts>
