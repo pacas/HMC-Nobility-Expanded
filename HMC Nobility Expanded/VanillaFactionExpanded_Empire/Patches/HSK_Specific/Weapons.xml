@@ -2,6 +2,11 @@
 <Patch>
     <Operation Class="PatchOperationSequence">
         <operations>
+            <li Class="PatchOperationAttributeSet">
+                <xpath>Defs/ThingDef[defName="VFEE_Gun_ChargeThumper"]</xpath>
+                <attribute>ParentName</attribute>
+                <value>BaseGun_LongBarreled</value>
+            </li>
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[defName="VFEE_Gun_ChargeThumper"]/weaponClasses</xpath>
                 <value>
@@ -30,6 +35,13 @@
                         <Weapon_Parts>7</Weapon_Parts>
                     </smeltProducts>
                 </value>
+            </li>
+            
+            
+            <li Class="PatchOperationAttributeSet">
+                <xpath>Defs/ThingDef[defName="VEE_Gun_Fletcher"]</xpath>
+                <attribute>ParentName</attribute>
+                <value>BaseGun_LongBarreled</value>
             </li>
             <li Class="PatchOperationRemove">
                 <xpath>Defs/ThingDef[defName="VEE_Gun_Fletcher"]/costList</xpath>
