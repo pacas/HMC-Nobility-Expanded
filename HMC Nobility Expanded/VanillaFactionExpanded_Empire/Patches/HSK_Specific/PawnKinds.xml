@@ -64,7 +64,7 @@
             
             
             <li Class="PatchOperationReplace">
-                <xpath>Defs/PawnKindDef[defName="VFEE_Deserter"]</xpath>
+                <xpath>Defs/PawnKindDef[defName="VFEE_Deserter"]/combatPower</xpath>
                 <value>
                     <combatPower>420</combatPower>
                 </value>
