@@ -60,6 +60,14 @@
                     <costStuffCount>55</costStuffCount>
                 </value>
             </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="VFEE_Apparel_JanissaryCuirass"]</xpath>
+                <value>
+                    <thingCategories>
+                        <li>MediumHelmetsCat</li>
+                    </thingCategories>
+                </value>
+            </li>
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[defName="VFEE_Apparel_JanissaryCuirass"]/costList</xpath>
                 <value>
@@ -79,6 +87,14 @@
                         <li>StrongMetallic</li>
                     </stuffCategories>
                     <costStuffCount>110</costStuffCount>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VFEE_Apparel_JanissaryCuirass"]/thingCategories</xpath>
+                <value>
+                    <thingCategories>
+                        <li>MediumFullArmorCat</li>
+                    </thingCategories>
                 </value>
             </li>
             <li Class="PatchOperationReplace">

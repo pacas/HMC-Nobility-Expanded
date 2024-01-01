@@ -1,5 +1,33 @@
 ----------------------------------------------------------------------
 
+- Changelog "HMC Empire Rewards" v0.14.4 (1.4):
+
+1) Correction of categories for Janissary armor (VFEE)
+2) Russian localization fixes (VFEE)
+
+1) Исправление категорий для брони янычаров (VFEE)
+2) Фиксы русской локализации (VFEE)
+
+----------------------------------------------------------------------
+
+- Changelog "HMC Empire Rewards" v0.14.3 (1.4):
+
+SUPER IMPORTANT HOTFIX
+
+ОЧЕНЬ ВАЖНЫЙ ХОТФИКС
+
+----------------------------------------------------------------------
+
+- Changelog "HMC Empire Rewards" v0.14.2 (1.4):
+
+1) Deserters armor is now can be disassembled properly, has the material of manufacture and the correct storage category.
+2) Fixed deserters raids - they are not so problematic now.
+
+1) Теперь броня дезертиров нормально разбирается, имеет материал изготовления и правильную категорию хранения.
+2) Исправлены рейды дезертиров - они теперь не такие проблемные.
+
+----------------------------------------------------------------------
+
 - Changelog "HMC Empire Rewards" v0.14.1 (1.4):
 
 1) Updated permit window replacement window method with transpiler - all credits to MasakiTenchi!
