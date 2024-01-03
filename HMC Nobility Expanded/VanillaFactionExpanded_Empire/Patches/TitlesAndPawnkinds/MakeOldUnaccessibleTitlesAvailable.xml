@@ -237,6 +237,21 @@
                                 <li Class="VFEEmpire.RoomRequirement_InstrumentSpace">
                                     <labelKey>VFEE.RoomRequirementInstrumentSpace</labelKey>
                                 </li>
+                                <li Class="RoomRequirement_ForbiddenBuildings">
+                                    <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+                                    <buildingTags>
+                                        <li>Production</li>
+                                    </buildingTags>
+                                </li>
+                                <li MayRequire="Ludeon.RimWorld.Ideology" Class="RoomRequirement_ForbidAltars">
+                                    <labelKey>RoomRequirementNoAltars</labelKey>
+                                </li>
+                                <li Class="RoomRequirement_ForbiddenBuildings">
+                                    <labelKey>RoomRequirementNoBeds</labelKey>
+                                    <buildingTags>
+                                        <li>Bed</li>
+                                    </buildingTags>
+                                </li>
                             </ballroomRequirements>
                             <galleryRequirements>
                                 <li Class="RoomRequirement_Area">
@@ -250,6 +265,21 @@
                                     <tags>
                                         <li>FineFloor</li>
                                     </tags>
+                                </li>
+                                <li Class="RoomRequirement_ForbiddenBuildings">
+                                    <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+                                    <buildingTags>
+                                        <li>Production</li>
+                                    </buildingTags>
+                                </li>
+                                <li MayRequire="Ludeon.RimWorld.Ideology" Class="RoomRequirement_ForbidAltars">
+                                    <labelKey>RoomRequirementNoAltars</labelKey>
+                                </li>
+                                <li Class="RoomRequirement_ForbiddenBuildings">
+                                    <labelKey>RoomRequirementNoBeds</labelKey>
+                                    <buildingTags>
+                                        <li>Bed</li>
+                                    </buildingTags>
                                 </li>
                             </galleryRequirements>
                             <iconPath>UI/NobleRanks/RoyalTitleIcon_Archcount</iconPath>
@@ -494,6 +524,21 @@
                                 <li Class="VFEEmpire.RoomRequirement_InstrumentSpace">
                                     <labelKey>VFEE.RoomRequirementInstrumentSpace</labelKey>
                                 </li>
+                                <li Class="RoomRequirement_ForbiddenBuildings">
+                                    <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+                                    <buildingTags>
+                                        <li>Production</li>
+                                    </buildingTags>
+                                </li>
+                                <li MayRequire="Ludeon.RimWorld.Ideology" Class="RoomRequirement_ForbidAltars">
+                                    <labelKey>RoomRequirementNoAltars</labelKey>
+                                </li>
+                                <li Class="RoomRequirement_ForbiddenBuildings">
+                                    <labelKey>RoomRequirementNoBeds</labelKey>
+                                    <buildingTags>
+                                        <li>Bed</li>
+                                    </buildingTags>
+                                </li>
                             </ballroomRequirements>
                             <galleryRequirements>
                                 <li Class="RoomRequirement_Area">
@@ -507,6 +552,21 @@
                                     <tags>
                                         <li>FineFloor</li>
                                     </tags>
+                                </li>
+                                <li Class="RoomRequirement_ForbiddenBuildings">
+                                    <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+                                    <buildingTags>
+                                        <li>Production</li>
+                                    </buildingTags>
+                                </li>
+                                <li MayRequire="Ludeon.RimWorld.Ideology" Class="RoomRequirement_ForbidAltars">
+                                    <labelKey>RoomRequirementNoAltars</labelKey>
+                                </li>
+                                <li Class="RoomRequirement_ForbiddenBuildings">
+                                    <labelKey>RoomRequirementNoBeds</labelKey>
+                                    <buildingTags>
+                                        <li>Bed</li>
+                                    </buildingTags>
                                 </li>
                             </galleryRequirements>
                             <vassalagePointsAwarded>1</vassalagePointsAwarded>
@@ -771,6 +831,21 @@
                                 <li Class="VFEEmpire.RoomRequirement_InstrumentSpace">
                                     <labelKey>VFEE.RoomRequirementInstrumentSpace</labelKey>
                                 </li>
+                                <li Class="RoomRequirement_ForbiddenBuildings">
+                                    <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+                                    <buildingTags>
+                                        <li>Production</li>
+                                    </buildingTags>
+                                </li>
+                                <li MayRequire="Ludeon.RimWorld.Ideology" Class="RoomRequirement_ForbidAltars">
+                                    <labelKey>RoomRequirementNoAltars</labelKey>
+                                </li>
+                                <li Class="RoomRequirement_ForbiddenBuildings">
+                                    <labelKey>RoomRequirementNoBeds</labelKey>
+                                    <buildingTags>
+                                        <li>Bed</li>
+                                    </buildingTags>
+                                </li>
                             </ballroomRequirements>
                             <galleryRequirements>
                                 <li Class="RoomRequirement_Area">
@@ -784,6 +859,21 @@
                                     <tags>
                                         <li>FineFloor</li>
                                     </tags>
+                                </li>
+                                <li Class="RoomRequirement_ForbiddenBuildings">
+                                    <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+                                    <buildingTags>
+                                        <li>Production</li>
+                                    </buildingTags>
+                                </li>
+                                <li MayRequire="Ludeon.RimWorld.Ideology" Class="RoomRequirement_ForbidAltars">
+                                    <labelKey>RoomRequirementNoAltars</labelKey>
+                                </li>
+                                <li Class="RoomRequirement_ForbiddenBuildings">
+                                    <labelKey>RoomRequirementNoBeds</labelKey>
+                                    <buildingTags>
+                                        <li>Bed</li>
+                                    </buildingTags>
                                 </li>
                             </galleryRequirements>
                             <courtRequirments>
@@ -1089,6 +1179,21 @@
                                 <li Class="VFEEmpire.RoomRequirement_InstrumentSpace">
                                     <labelKey>VFEE.RoomRequirementInstrumentSpace</labelKey>
                                 </li>
+                                <li Class="RoomRequirement_ForbiddenBuildings">
+                                    <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+                                    <buildingTags>
+                                        <li>Production</li>
+                                    </buildingTags>
+                                </li>
+                                <li MayRequire="Ludeon.RimWorld.Ideology" Class="RoomRequirement_ForbidAltars">
+                                    <labelKey>RoomRequirementNoAltars</labelKey>
+                                </li>
+                                <li Class="RoomRequirement_ForbiddenBuildings">
+                                    <labelKey>RoomRequirementNoBeds</labelKey>
+                                    <buildingTags>
+                                        <li>Bed</li>
+                                    </buildingTags>
+                                </li>
                             </ballroomRequirements>
                             <galleryRequirements>
                                 <li Class="RoomRequirement_Area">
@@ -1102,6 +1207,21 @@
                                     <tags>
                                         <li>FineFloor</li>
                                     </tags>
+                                </li>
+                                <li Class="RoomRequirement_ForbiddenBuildings">
+                                    <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+                                    <buildingTags>
+                                        <li>Production</li>
+                                    </buildingTags>
+                                </li>
+                                <li MayRequire="Ludeon.RimWorld.Ideology" Class="RoomRequirement_ForbidAltars">
+                                    <labelKey>RoomRequirementNoAltars</labelKey>
+                                </li>
+                                <li Class="RoomRequirement_ForbiddenBuildings">
+                                    <labelKey>RoomRequirementNoBeds</labelKey>
+                                    <buildingTags>
+                                        <li>Bed</li>
+                                    </buildingTags>
                                 </li>
                             </galleryRequirements>
                             <courtRequirments>
@@ -1408,6 +1528,21 @@
                                 <li Class="VFEEmpire.RoomRequirement_InstrumentSpace">
                                     <labelKey>VFEE.RoomRequirementInstrumentSpace</labelKey>
                                 </li>
+                                <li Class="RoomRequirement_ForbiddenBuildings">
+                                    <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+                                    <buildingTags>
+                                        <li>Production</li>
+                                    </buildingTags>
+                                </li>
+                                <li MayRequire="Ludeon.RimWorld.Ideology" Class="RoomRequirement_ForbidAltars">
+                                    <labelKey>RoomRequirementNoAltars</labelKey>
+                                </li>
+                                <li Class="RoomRequirement_ForbiddenBuildings">
+                                    <labelKey>RoomRequirementNoBeds</labelKey>
+                                    <buildingTags>
+                                        <li>Bed</li>
+                                    </buildingTags>
+                                </li>
                             </ballroomRequirements>
                             <galleryRequirements>
                                 <li Class="RoomRequirement_Area">
@@ -1421,6 +1556,21 @@
                                     <tags>
                                         <li>FineFloor</li>
                                     </tags>
+                                </li>
+                                <li Class="RoomRequirement_ForbiddenBuildings">
+                                    <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+                                    <buildingTags>
+                                        <li>Production</li>
+                                    </buildingTags>
+                                </li>
+                                <li MayRequire="Ludeon.RimWorld.Ideology" Class="RoomRequirement_ForbidAltars">
+                                    <labelKey>RoomRequirementNoAltars</labelKey>
+                                </li>
+                                <li Class="RoomRequirement_ForbiddenBuildings">
+                                    <labelKey>RoomRequirementNoBeds</labelKey>
+                                    <buildingTags>
+                                        <li>Bed</li>
+                                    </buildingTags>
                                 </li>
                             </galleryRequirements>
                             <courtRequirments>
