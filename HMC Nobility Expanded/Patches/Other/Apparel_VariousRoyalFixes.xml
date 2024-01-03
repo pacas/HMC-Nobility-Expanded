@@ -2,7 +2,23 @@
 <Patch>
     <Operation Class="PatchOperationSequence">
         <operations>
-
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[
+                    @Name="ApparelArmorCataphractBase" or
+                    @Name="ApparelArmorHelmetCataphractBase" or
+                    defName="Apparel_ArmorReconPrestige" or
+                    defName="Apparel_ArmorHelmetReconPrestige" or
+                    defName="Apparel_ArmorMarinePrestige" or
+                    defName="Apparel_ArmorMarineHelmetPrestige" or
+                    defName="Apparel_ArmorMarineGrenadier"
+                    ]/recipeMaker/recipeUsers</xpath>
+                <value>
+                    <recipeUsers Inherit="False">
+                        <li>HyperTailoringBench</li>
+                    </recipeUsers>
+                </value>
+            </li>
+            
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[defName="Apparello_Pilot" or
                     defName="Apparello_Shadess" or
@@ -27,6 +43,16 @@
                 <value>
                     <bodyPartGroups>
                         <li>Eyes</li>
+                    </bodyPartGroups>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="Apparel_Cape"]/apparel/bodyPartGroups</xpath>
+                <value>
+                    <bodyPartGroups>
+                        <li>Neck</li>
+                        <li>Shoulders</li>
                     </bodyPartGroups>
                 </value>
             </li>

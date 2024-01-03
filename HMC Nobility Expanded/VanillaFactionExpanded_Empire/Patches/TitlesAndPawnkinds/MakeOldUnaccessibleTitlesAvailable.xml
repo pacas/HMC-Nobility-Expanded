@@ -1472,6 +1472,7 @@
                         <li Class="RoomRequirement_ForbiddenBuildings">
                             <labelKey>RoomRequirementNoProductionFacilities</labelKey>
                             <buildingTags>
+                                <!--TODO Add additional tags like hygiene--> 
                                 <li>Production</li>
                             </buildingTags>
                         </li>
