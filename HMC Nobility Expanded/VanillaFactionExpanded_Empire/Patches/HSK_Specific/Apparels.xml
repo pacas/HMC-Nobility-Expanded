@@ -23,6 +23,12 @@
                     </costList>
                 </value>
             </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VFEE_Apparel_JanissaryHelmet"]/statBases/MarketValue</xpath>
+                <value>
+                    <MarketValue>1800</MarketValue>
+                </value>
+            </li>
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="VFEE_Apparel_JanissaryHelmet"]</xpath>
                 <value>
@@ -44,11 +50,6 @@
                             <li>HyperTailoringBench</li>
                         </recipeUsers>
                     </recipeMaker>
-                </value>
-            </li>
-            <li Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="VFEE_Apparel_JanissaryCuirass"]</xpath>
-                <value>
                     <thingCategories>
                         <li>MediumHelmetsCat</li>
                     </thingCategories>
@@ -64,6 +65,12 @@
                         <MagneticMaterial>6</MagneticMaterial>
                         <Hexcell>13</Hexcell>
                     </costList>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VFEE_Apparel_JanissaryCuirass"]/statBases/MarketValue</xpath>
+                <value>
+                    <MarketValue>3700</MarketValue>
                 </value>
             </li>
             <li Class="PatchOperationAdd">
@@ -87,11 +94,6 @@
                             <li>HyperTailoringBench</li>
                         </recipeUsers>
                     </recipeMaker>
-                </value>
-            </li>
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[defName="VFEE_Apparel_JanissaryCuirass"]/thingCategories</xpath>
-                <value>
                     <thingCategories>
                         <li>MediumFullArmorCat</li>
                     </thingCategories>
@@ -193,6 +195,12 @@
                     </modExtensions>
                 </value>
             </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VFEE_Apparel_ArmorDeserter"]/statBases/MarketValue</xpath>
+                <value>
+                    <MarketValue>3800</MarketValue>
+                </value>
+            </li>
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="VFEE_Apparel_DeserterHelmet"]</xpath>
                 <value>
@@ -224,6 +232,12 @@
                     <stuffCategories>
                         <li>StrongMetallic</li>
                     </stuffCategories>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VFEE_Apparel_DeserterHelmet"]/statBases/MarketValue</xpath>
+                <value>
+                    <MarketValue>1300</MarketValue>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
@@ -274,10 +288,7 @@
                 <value>
                     <specificApparelRequirements>
                         <li>
-                            <bodyPartGroupsMatchAny>
-                                <li>UpperHead</li>
-                                <li>FullHead</li>
-                            </bodyPartGroupsMatchAny>
+                            <bodyPartGroup>UpperHead</bodyPartGroup>
                             <requiredTag>RoyalTier6</requiredTag>
                             <stuff>GoldBar</stuff>
                         </li>
