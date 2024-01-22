@@ -41,7 +41,7 @@
                 <xpath>Defs/RoyalTitlePermitDef[defName="SteelDrop"]/royalAid/itemsToDrop</xpath>
                 <value>
                     <itemsToDrop>
-                        <Steel>250</Steel>
+                        <Steel>300</Steel>
                     </itemsToDrop>
                 </value>
             </li>
@@ -49,7 +49,7 @@
             <li Class="PatchOperationAdd">
                 <xpath>Defs/RoyalTitlePermitDef[defName="SteelDrop"]</xpath>
                 <value>
-                    <cooldownDays>25</cooldownDays>
+                    <cooldownDays>20</cooldownDays>
                 </value>
             </li>
             

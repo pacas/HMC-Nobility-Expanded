@@ -89,7 +89,7 @@
         <label>cooking ingredients</label>
         <description>Call for a drop of 50 random cooking ingredients seeds.</description>
         <minTitle>Acolyte</minTitle>
-        <cooldownDays>25</cooldownDays>
+        <cooldownDays>24</cooldownDays>
         <royalAid>
             <itemsToDrop>
                 <Seed_Rice>50</Seed_Rice>
@@ -119,7 +119,7 @@
         <label>addictive crops</label>
         <description>Call for a drop of 35 addictive crops seeds.</description>
         <minTitle>Acolyte</minTitle>
-        <cooldownDays>25</cooldownDays>
+        <cooldownDays>24</cooldownDays>
         <royalAid>
             <itemsToDrop>
                 <Seed_Potato>35</Seed_Potato>
@@ -146,7 +146,7 @@
         <label>fiber crops</label>
         <description>Call for a drop of 50 random fiber crops seeds.</description>
         <minTitle>Acolyte</minTitle>
-        <cooldownDays>25</cooldownDays>
+        <cooldownDays>24</cooldownDays>
         <royalAid>
             <itemsToDrop>
                 <Seed_Rice>50</Seed_Rice>
@@ -171,7 +171,7 @@
         <label>healing plants</label>
         <description>Call for a drop of 35 random healing plants seeds.</description>
         <minTitle>Acolyte</minTitle>
-        <cooldownDays>25</cooldownDays>
+        <cooldownDays>24</cooldownDays>
         <royalAid>
             <itemsToDrop>
                 <Seed_Potato>35</Seed_Potato>
@@ -194,7 +194,7 @@
         <label>utility plants</label>
         <description>Call for a drop of 25 random cooking ingredients seeds.</description>
         <minTitle>Acolyte</minTitle>
-        <cooldownDays>25</cooldownDays>
+        <cooldownDays>24</cooldownDays>
         <royalAid>
             <itemsToDrop>
                 <Seed_Rice>25</Seed_Rice>
@@ -216,14 +216,14 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>SeedsTreeDrop</defName>
         <label>trees</label>
-        <description>Call for a drop of 30 random tree seeds.</description>
+        <description>Call for a drop of 25 random tree seeds.</description>
         <minTitle>Acolyte</minTitle>
-        <cooldownDays>30</cooldownDays>
+        <cooldownDays>24</cooldownDays>
         <royalAid>
             <itemsToDrop>
-                <Seed_TreeOak>30</Seed_TreeOak>
+                <Seed_TreeOak>25</Seed_TreeOak>
             </itemsToDrop>
-            <favorCost>3</favorCost>
+            <favorCost>2</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
     <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsBase">

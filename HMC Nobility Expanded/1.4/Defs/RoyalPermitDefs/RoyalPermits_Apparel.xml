@@ -362,7 +362,7 @@
         <label>simple outfit</label>
         <description>Request a drop of simple outfit for everyday duties.</description>
         <permitPointCost>1</permitPointCost>
-        <cooldownDays>18</cooldownDays>
+        <cooldownDays>12</cooldownDays>
         <royalAid>
             <itemsToDrop>
                 <Apparello_Bandal>1</Apparello_Bandal>
@@ -393,7 +393,7 @@
         <label>slave outfit</label>
         <description>Request a drop of slave outfit.</description>
         <permitPointCost>1</permitPointCost>
-        <cooldownDays>10</cooldownDays>
+        <cooldownDays>7</cooldownDays>
         <royalAid>
             <itemsToDrop>
                 <Apparel_Bonnet>1</Apparel_Bonnet>
@@ -402,7 +402,7 @@
                 <CE_Apparel_Backpack>1</CE_Apparel_Backpack>
                 <Apparel_Collar>1</Apparel_Collar>
             </itemsToDrop>
-            <favorCost>3</favorCost>
+            <favorCost>2</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
     <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">

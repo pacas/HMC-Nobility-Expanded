@@ -10,7 +10,7 @@
         <cooldownDays>14</cooldownDays>
         <royalAid>
             <itemsToDrop>
-                <BabyFood>75</BabyFood>
+                <BabyFood>250</BabyFood>
             </itemsToDrop>
             <favorCost>2</favorCost>
         </royalAid>

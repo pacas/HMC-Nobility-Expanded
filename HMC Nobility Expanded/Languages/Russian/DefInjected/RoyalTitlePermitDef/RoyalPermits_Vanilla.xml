@@ -20,7 +20,7 @@
     <!-- ванильные привилегии -->
     <!-- базовые -->
     <SteelDrop.label>Железная руда</SteelDrop.label>
-    <SteelDrop.description>Запрос доставки 250 единиц железной руды.</SteelDrop.description>
+    <SteelDrop.description>Запрос доставки 300 единиц железной руды.</SteelDrop.description>
     <FoodDrop.label>Сухпайки</FoodDrop.label>
     <FoodDrop.description>Запрос доставки 50 сухих пайков.</FoodDrop.description>
     <GlitterMedDrop.label>Передовые медикаменты</GlitterMedDrop.label>
@@ -52,7 +52,7 @@
 
     <!-- biotech -->
     <BabyFoodDrop.label>детское питание</BabyFoodDrop.label>
-    <BabyFoodDrop.description>Запрос доставки 75 детских овощных пюрешек.</BabyFoodDrop.description>
+    <BabyFoodDrop.description>Запрос доставки 250 детских овощных пюрешек.</BabyFoodDrop.description>
     <VampiresFoodDrop.label>гемоген-пакет</VampiresFoodDrop.label>
     <VampiresFoodDrop.description>Запрос 15 гемоген-пакетов.</VampiresFoodDrop.description>
 
