@@ -30,7 +30,7 @@
     <SeedsUtilDrop.description>Запрос доставки 25 семян утилитарных культур.</SeedsUtilDrop.description>
 
     <SeedsTreeDrop.label>деревья</SeedsTreeDrop.label>
-    <SeedsTreeDrop.description>Запрос доставки 30 семян деревьев.</SeedsTreeDrop.description>
+    <SeedsTreeDrop.description>Запрос доставки 25 семян деревьев.</SeedsTreeDrop.description>
 
     <SeedsFruitDrop.label>фруктовые деревья</SeedsFruitDrop.label>
     <SeedsFruitDrop.description>Запрос доставки 20 семян фруктовых деревьев.</SeedsFruitDrop.description>

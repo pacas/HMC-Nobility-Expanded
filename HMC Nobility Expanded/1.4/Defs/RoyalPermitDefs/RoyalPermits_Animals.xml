@@ -141,6 +141,7 @@
             <li>Muffalo</li>
             <li>Buffalo</li>
             <li>Sheep</li>
+            <li>Megasloth</li>
             <li MayRequire="sarg.alphaanimals">AA_AngelMoth</li>
             <li MayRequire="sarg.alphaanimals">AA_GiantCrownedSilkie</li>
             <li MayRequire="sarg.alphaanimals">AA_GreyCoatedMouflon</li>
@@ -213,6 +214,7 @@
             <li>Nightling</li>
             <li>Wolf_Timber</li>
             <li>Goose</li>
+            <li>Megabadger</li>
             <li MayRequire="sarg.alphaanimals">AA_Erin</li>
             <li MayRequire="sarg.alphaanimals">AA_Genix</li>
             <li MayRequire="sarg.alphaanimals">AA_Lockjaw</li>

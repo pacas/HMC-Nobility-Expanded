@@ -72,7 +72,7 @@
         <label>catapult</label>
         <description>Request a drop of one catapult with ammo.</description>
         <minTitle>Acolyte</minTitle>
-        <cooldownDays>45</cooldownDays>
+        <cooldownDays>40</cooldownDays>
         <permitPointCost>1</permitPointCost>
         <royalAid>
             <itemsToDrop>
