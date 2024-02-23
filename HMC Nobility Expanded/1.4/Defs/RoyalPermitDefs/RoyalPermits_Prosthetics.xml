@@ -14,16 +14,10 @@
         <description>Request a drop of different basic prosthetics.</description>
     </RoyalTitlePermitDef>
 
-    <!-- Basic
-    lifesupport
-    LifesupportLung
-    LifesupportLiver
-    LifesupportStomach
-    LifesupportKidney
-    LifesupportHeart
-     -->
+    <!-- Убрать стопы и кисти? -->
 
     <!-- Simple Prosthetic
+    lifesupport
     ArtificialNose
     SimpleProstheticHand
     SimpleProstheticFoot
@@ -36,10 +30,12 @@
 
     <!-- Battle Prosthetic
     HandTalon
-    ElbowBlade
+    ElbowBlade                                                            
     KneeSpike
     VenomFangs
     VenomTalon
+    PowerClaw
+    ProtectiveExoskeleton
      -->
 
     <!-- Battle Implants
@@ -48,6 +44,12 @@
     ArmorskinGland
     StoneskinGland
     Coagulator
+    Painstopper
+    DeathAcidifier
+    TacticalCorneaImplant
+    AuxiliaryAI_Sharpshooter
+    AuxiliaryAI_Commando
+    AuxiliaryAI_Brawler
      -->
 
     <!-- Productive Prosthetic
@@ -60,11 +62,14 @@
     AdrenalineRib
     PainkillerRib
     CoagulatorRib
+    ExoskeletonSuit
      -->
 
     <!-- Productive Implants
     OrganicOptimizingNanobots
     InstinctOptimizingNanobots
+    CochlearImplant
+    Mindscrew
     Neurocalculator
     GastroAnalyzer
     Immunoenhancer
@@ -78,22 +83,51 @@
     DruggedRib
     HeaterRib
     CoolerRib
-     -->
-
-    <!-- Special Implants
-    CochlearImplant
-    Mindscrew
-    DrillArm
-    FieldHand
-    HandTalon
-    ElbowBlade
-    KneeSpike
-    VenomFangs
-    VenomTalon
+    BrainStimulator
+    AIChip
+    Joywire
+    MuscleStimulator
+    ConstructorCore
+    FarmerCore
+    MinerCore
+    DoctorCore
+    DiplomatCore
+    AIPersonaCore
      -->
     
     <!-- Bionics
-    
+    BionicHand
+    BionicFoot
+    BionicEar
+    BionicJaw
+    BionicSpine
+    BionicEye
+    BionicArm
+    BionicTongue
+    BionicLeg
+    BionicNeck
+    BionicLung
+    BionicStomach
+    BionicLiver
+    BionicKidney
+    BionicHeart
+     -->
+
+    <!-- Cybernetic
+    GTEar
+    ArchotechEye
+    ArchotechArm
+    ArchotechLeg
+    GTHeart
+    GTLung
+    GTKidney
+    GTLiver
+    GTstomach
+    GTHand
+    GTFoot
+    GTDentures
+    GTSpine
+    GTNeck
      -->
     
 </Defs>
