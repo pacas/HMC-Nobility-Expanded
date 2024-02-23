@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- Tools -->
+
+    <RoyalTitlePermitDef ParentName="DropResourcesTitle">
+        <defName>ProstheticsPermitTitle</defName>
+        <label>Prosthetics</label>
+        <description>Request a drop of various prosthetics.</description>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
+        <defName>BasicProstheticsPermitSmallTitle</defName>
+        <label>Basic Prosthetics</label>
+        <description>Request a drop of different basic prosthetics.</description>
+    </RoyalTitlePermitDef>
+
+    <!-- Basic
+    lifesupport
+    LifesupportLung
+    LifesupportLiver
+    LifesupportStomach
+    LifesupportKidney
+    LifesupportHeart
+     -->
+
+    <!-- Simple Prosthetic
+    ArtificialNose
+    SimpleProstheticHand
+    SimpleProstheticFoot
+    SimpleProstheticLeg
+    SimpleProstheticArm
+    SimpleProstheticHeart
+    ArtificialPelvis
+    ArtificialBone
+     -->
+
+    <!-- Battle Prosthetic
+    HandTalon
+    ElbowBlade
+    KneeSpike
+    VenomFangs
+    VenomTalon
+     -->
+
+    <!-- Battle Implants
+    HealingEnhancer
+    ToughskinGland
+    ArmorskinGland
+    StoneskinGland
+    Coagulator
+     -->
+
+    <!-- Productive Prosthetic
+    DrillArm
+    FieldHand
+    AestheticNose
+    DetoxifierStomach
+    ReprocessorStomach
+    NuclearStomach
+    AdrenalineRib
+    PainkillerRib
+    CoagulatorRib
+     -->
+
+    <!-- Productive Implants
+    OrganicOptimizingNanobots
+    InstinctOptimizingNanobots
+    Neurocalculator
+    GastroAnalyzer
+    Immunoenhancer
+    LearningAssistant
+    CircadianAssistant
+    CircadianHalfCycler
+    PsychicSensitizer
+    PsychicHarmonizer
+    PsychicReader
+    MedicalRib
+    DruggedRib
+    HeaterRib
+    CoolerRib
+     -->
+
+    <!-- Special Implants
+    CochlearImplant
+    Mindscrew
+    DrillArm
+    FieldHand
+    HandTalon
+    ElbowBlade
+    KneeSpike
+    VenomFangs
+    VenomTalon
+     -->
+    
+    <!-- Bionics
+    
+     -->
+    
+</Defs>

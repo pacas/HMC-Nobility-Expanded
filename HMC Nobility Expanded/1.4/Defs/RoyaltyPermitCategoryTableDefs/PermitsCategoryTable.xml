@@ -4,16 +4,17 @@
         <defName>PermitCategoryTable</defName>
         <categories>
             <li>Resources</li>
-            <li MayRequire="notfood.seedsplease">Seeds</li>
-            <li>Animals</li>
             <li>Tools</li>
             <li>Armor</li>
             <li>Apparel</li>
             <li>Melee</li>
             <li>Ranged</li>
-            <li>Pawns</li>
-            <li>Airstrike</li>
             <li>Turrets</li>
+            <li>Airstrike</li>
+            <li>Pawns</li>
+            <li>Animals</li>
+            <li>Prosthetics</li>
+            <li MayRequire="notfood.seedsplease">Seeds</li>
         </categories>
     </NobilityExpanded.RoyaltyPermitCategoryTableDef>
 </Defs>

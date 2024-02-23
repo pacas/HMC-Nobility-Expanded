@@ -95,14 +95,13 @@
     
     <!-- todo -->
     <!-- здания? -->
+    <!-- бионика? -->
     <!-- квест присмотра за ребенком? -->
     <!-- гранаты -->
     <!-- рабы -->
     <!-- 1) Current royalty crash quest minus defence plus care for a couple of days? -->
     <!-- 2) Rescue quest with baby pawn and shuttle ending? -->
-    <!-- кровь -->
     <!-- добавить вкладку с особыми модовыми ресурсами и интеграцию ревий -->
-    <!-- вынести count в ordered def -->
 
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>EmptyTableSpace</defName>
