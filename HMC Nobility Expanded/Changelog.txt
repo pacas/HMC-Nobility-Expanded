@@ -4,9 +4,19 @@
 
 1) Correction of categories for Janissary armor (VFEE)
 2) Russian localization fixes (VFEE)
+3) Updated craft recipes and stats for the base Royalty armors + VFEE.
+4) Updated research positions (VFEE)
+5) Added satisfaction for the lower tier titles with clothing of higher tiers
+6) Rebalanced permits with feedback from the players
+7) Updated requirement tags for nobility bedrooms
 
 1) Исправление категорий для брони янычаров (VFEE)
 2) Фиксы русской локализации (VFEE)
+3) Обновлены рецепты крафта и статы для базовых доспехов Роялти + VFEE.
+4) Обновлены позиции в исследованиях (VFEE)
+5) Добавлена удовлетворение низких титулов одеждой более высоких тиров
+6) Перебалансирование привилегии с учетом пожеланий игроков
+7) Обновлены теги требований для спален знати
 
 ----------------------------------------------------------------------
 
