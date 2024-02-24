@@ -9,12 +9,13 @@ using Verse;
 namespace NobilityExpanded
 {
     [StaticConstructorOnStartup]
-    public class RoyalTitlePermitWorker_DropResourcesPlus : RoyalTitlePermitWorker_Targeted
+    public class RoyalTitlePermitWorker_DropResourcesSpecific : RoyalTitlePermitWorker_Targeted
     {
         private static readonly Texture2D CommandTex = ContentFinder<Texture2D>.Get("UI/Commands/CallAid");
         private Faction faction;
         private OrderedStuffDef stuffDefOrdered;
-        private System.Random random = new System.Random();
+        private List<ThingDef> resourceChoices;
+        public static ThingDef chosenThing;
 
         public override void OrderForceTarget(LocalTargetInfo target)
         {
@@ -142,94 +143,13 @@ namespace NobilityExpanded
 
         private List<Thing> GenerateItems(int index)
         {
-            stuffDefOrdered = DefDatabase<OrderedStuffDef>.GetNamed(def.defName + "Stuff");
+            resourceChoices = DefDatabase<OrderedStuffDef>.GetNamed(def.defName + "Stuff").stuffList;
+            Find.WindowStack.Add(new Dialog_ChooseResource(resourceChoices));
             List<Thing> things = new List<Thing>();
-            Thing thing;
-            ThingDef item;
-            var randomIndex = 0;
-            switch (stuffDefOrdered.typeOfItem)
-            {
-                case "Specific":
-                    item = def.royalAid.itemsToDrop[index].thingDef;
-                    break;
-                case "Random":
-                    randomIndex = random.Next(stuffDefOrdered.thingsToChoose.Count);
-                    item = stuffDefOrdered.thingsToChoose[randomIndex];
-                    break;
-                default:
-                    item = def.royalAid.itemsToDrop[index].thingDef;
-                    break;
-            }
-            switch (stuffDefOrdered.typeOfDrop)
-            {
-                case "Stuff":
-                    thing = GenerateThingStuff(index, item);
-                    break;
-                case "Quality":
-                    thing = GenerateThingQuality(item);
-                    break;
-                case "StuffQuality":
-                    thing = GenerateThingStuffQuality(index, item);
-                    break;
-                case "Pure":
-                    thing = ThingMaker.MakeThing(item);
-                    break;
-                default:
-                    thing = GenerateThingStuff(index, item);
-                    break;
-            }
+            Thing thing = ThingMaker.MakeThing(chosenThing);
             thing.stackCount = def.royalAid.itemsToDrop[index].count;
-            if (stuffDefOrdered.ammoUsage == "Gun")
-            {
-                AmmoSetDef ammoUser = thing.TryGetComp<CompAmmoUser>().Props.ammoSet;
-                if (!ammoUser.ammoTypes.NullOrEmpty())
-                {
-                    AmmoDef ammo = ammoUser.ammoTypes[0].ammo;
-                    Thing ammoThing = ThingMaker.MakeThing(ammo);
-                    ammoThing.stackCount = stuffDefOrdered.ammunition[randomIndex];
-                    things.Add(ammoThing);
-                }
-            }
             things.Add(thing);
             return things;
-        }
-        private Thing GenerateThingStuffQuality(int index, ThingDef item)
-        {
-            var stuff = stuffDefOrdered.stuffList[index];
-            switch (stuffDefOrdered.typeOfQuality)
-            {
-                case "Specific":
-                    return new ThingStuffPairWithQuality(item, stuff, NobilitySupportUtility.GenerateFromString(stuffDefOrdered.quality)).MakeThing();
-                case "Range":
-                    return new ThingStuffPairWithQuality(item, stuff, NobilitySupportUtility.GenerateFromStringRange(stuffDefOrdered.quality)).MakeThing();
-                default:
-                    return new ThingStuffPairWithQuality(item, stuff, NobilitySupportUtility.GenerateFromString(stuffDefOrdered.quality)).MakeThing();
-            }
-        }
-        
-        private Thing GenerateThingStuff(int index, ThingDef item)
-        {
-            var stuff = stuffDefOrdered.stuffList[index];
-            return ThingMaker.MakeThing(item, stuff);
-        }
-        
-        private Thing GenerateThingQuality(ThingDef item)
-        {
-            Thing thing = ThingMaker.MakeThing(item);
-            CompQuality comp = thing.TryGetComp<CompQuality>();
-            switch (stuffDefOrdered.typeOfQuality)
-            {
-                case "Specific":
-                    comp.SetQuality(NobilitySupportUtility.GenerateFromString(stuffDefOrdered.quality), ArtGenerationContext.Outsider);
-                    break;
-                case "Range":
-                    comp.SetQuality(NobilitySupportUtility.GenerateFromStringRange(stuffDefOrdered.quality), ArtGenerationContext.Outsider);
-                    break;
-                default:
-                    comp.SetQuality(NobilitySupportUtility.GenerateFromString(stuffDefOrdered.quality), ArtGenerationContext.Outsider);
-                    break;
-            }
-            return thing;
         }
     }
 }

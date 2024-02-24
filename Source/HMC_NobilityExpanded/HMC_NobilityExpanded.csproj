@@ -271,6 +271,7 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Dialog_ChooseResource.cs" />
         <Compile Include="HarmonyPermitTablePatch.cs" />
         <Compile Include="NobilitySupportUtility.cs" />
         <Compile Include="OrderedStuffDef.cs" />
@@ -279,6 +280,7 @@
         <Compile Include="RoyalTitlePermitWorker_DropResourcesPlus.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="RoyalTitlePermitWorker_DropBuildings.cs" />
+        <Compile Include="RoyalTitlePermitWorker_DropResourcesSpecific.cs" />
         <Compile Include="RoyaltyCoordsTableDef.cs" />
         <Compile Include="RoyaltyPermitCategoryTableDef.cs" />
     </ItemGroup>
