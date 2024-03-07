@@ -24,7 +24,7 @@
             <itemsToDrop>
                 <Steel>1</Steel>
             </itemsToDrop>
-            <favorCost>4</favorCost>
+            <favorCost>3</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
     <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsSpecificBase">
@@ -40,19 +40,40 @@
         </thingsToChoose>
     </NobilityExpanded.OrderedStuffDef>
 
-    <!-- Убрать стопы и кисти? -->
-
-    <!-- Simple Prosthetic
-    lifesupport
-    ArtificialNose
-    SimpleProstheticHand
-    SimpleProstheticFoot
-    SimpleProstheticLeg
-    SimpleProstheticArm
-    SimpleProstheticHeart
-    ArtificialPelvis
-    ArtificialBone
-     -->
+    <RoyalTitlePermitDef ParentName="DropResourcesSpecific">
+        <defName>BionicsProsthetic</defName>
+        <label>Bionic prosthetic</label>
+        <description>Request a drop of specific bionic prosthetic</description>
+        <minTitle>Legatus</minTitle>
+        <cooldownDays>38</cooldownDays>
+        <permitPointCost>3</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>7</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsSpecificBase">
+        <defName>BionicsProstheticStuff</defName>
+        <column>1</column>
+        <thingsToChoose>
+            <li>BionicHand</li>
+            <li>BionicFoot</li>
+            <li>BionicEar</li>
+            <li>BionicJaw</li>
+            <li>BionicSpine</li>
+            <li>BionicEye</li>
+            <li>BionicTongue</li>
+            <li>BionicLeg</li>
+            <li>BionicNeck</li>
+            <li>BionicLung</li>
+            <li>BionicStomach</li>
+            <li>BionicLiver</li>
+            <li>BionicKidney</li>
+            <li>BionicHeart</li>
+        </thingsToChoose>
+    </NobilityExpanded.OrderedStuffDef>
 
     <!-- Battle Prosthetic
     HandTalon
@@ -119,24 +140,6 @@
     DoctorCore
     DiplomatCore
     AIPersonaCore
-     -->
-    
-    <!-- Bionics
-    BionicHand
-    BionicFoot
-    BionicEar
-    BionicJaw
-    BionicSpine
-    BionicEye
-    BionicArm
-    BionicTongue
-    BionicLeg
-    BionicNeck
-    BionicLung
-    BionicStomach
-    BionicLiver
-    BionicKidney
-    BionicHeart
      -->
 
     <!-- Cybernetic

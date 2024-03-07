@@ -46,8 +46,7 @@ namespace NobilityExpanded
             Rect rect2 = new Rect(rect.x, rect.y, rect.width - 16f, scrollHeight);
             Widgets.BeginScrollView(rect, ref scrollPosition, rect2);
             DrawResourceChoices(rect2.width, ref num);
-            if (Event.current.type == EventType.Layout)
-            {
+            if (Event.current.type == EventType.Layout) {
                 scrollHeight = Mathf.Max(num - 24f - 15f, rect.height);
             }
 
@@ -57,13 +56,11 @@ namespace NobilityExpanded
             Widgets.Label(rect3, taggedString);
             Rect rect4 = new Rect(0f, rect3.yMax, inRect.width, CloseButSize.y);
             AcceptanceReport acceptanceReport = CanClose();
-            if (!Widgets.ButtonText(new Rect(rect4.xMax - CloseButSize.x, rect4.y, CloseButSize.x, CloseButSize.y),
-                    "OK".Translate())) {
+            if (!Widgets.ButtonText(new Rect(rect4.xMax - CloseButSize.x, rect4.y, CloseButSize.x, CloseButSize.y), "OK".Translate())) {
                 return;
             }
 
-            if (acceptanceReport.Accepted)
-            {
+            if (acceptanceReport.Accepted) {
                 GenerateItems();
                 Find.Targeter.BeginTargeting(worker);
                 Close();
@@ -78,10 +75,8 @@ namespace NobilityExpanded
             Listing_Standard listingStandard = new Listing_Standard();
             Rect rect = new Rect(0f, curY, width - 16f, 99999f);
             listingStandard.Begin(rect);
-            foreach (ThingDef thing in resourceChoices)
-            {
-                if (listingStandard.RadioButton(thing.LabelCap, chosenThing == thing, 30f, chosenThing.description))
-                {
+            foreach (ThingDef thing in resourceChoices) {
+                if (listingStandard.RadioButton(thing.LabelCap, chosenThing == thing, 30f, chosenThing.description)) {
                     chosenThing = thing;
                 }
             }
@@ -90,23 +85,19 @@ namespace NobilityExpanded
             curY += listingStandard.CurHeight + 10f + 4f;
         }
         
-        private bool SelectionsMade()
-        {
+        private bool SelectionsMade() {
             return resourceChoices.NullOrEmpty() || chosenThing != null;
         }
         
-        private AcceptanceReport CanClose()
-        {
-            if (!SelectionsMade())
-            {
+        private AcceptanceReport CanClose() {
+            if (!SelectionsMade()) {
                 return "ChooseThisDrop".Translate();
             }
             
             return AcceptanceReport.WasAccepted;
         }
 
-        public void SetData(RoyalTitlePermitWorker_DropResourcesSpecific createdWorker, Map map, Pawn caller, Faction faction, RoyalTitlePermitDef def, bool free)
-        {
+        public void SetData(RoyalTitlePermitWorker_DropResourcesSpecific createdWorker, Map map, Pawn caller, Faction faction, RoyalTitlePermitDef def, bool free) {
             resourceChoices = DefDatabase<OrderedStuffDef>.GetNamed(def.defName + "Stuff").thingsToChoose;
             chosenThing = resourceChoices.First();
             worker = createdWorker;
@@ -117,8 +108,7 @@ namespace NobilityExpanded
             isFree = free;
         }
 
-        public static void CallResources(IntVec3 cell)
-        {
+        public static void CallResources(IntVec3 cell) {
             if (!things.Any())
                 return;
             var info = new ActiveDropPodInfo();
@@ -132,13 +122,12 @@ namespace NobilityExpanded
             curPawn.royalty.TryRemoveFavor(curFaction, curDef.royalAid.favorCost);
         }
 
-        public static void CallResourcesToCaravan()
-        {
+        public static void CallResourcesToCaravan() {
             var caravan = curPawn.GetCaravan();
-            foreach (var t in things)
-            {
+            foreach (var t in things) {
                 CaravanInventoryUtility.GiveThing(caravan, t);
             }
+            
             Messages.Message(
                 "MessagePermitTransportDropCaravan".Translate(curFaction.Named("FACTION"), curPawn.Named("PAWN")),
                 (WorldObject)caravan, MessageTypeDefOf.NeutralEvent);
@@ -148,8 +137,7 @@ namespace NobilityExpanded
             curPawn.royalty.TryRemoveFavor(curFaction, curDef.royalAid.favorCost);
         }
 
-        private void GenerateItems()
-        {
+        private void GenerateItems() {
             Thing thing = ThingMaker.MakeThing(chosenThing);
             thing.stackCount = 1;
             things.Add(thing);

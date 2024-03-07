@@ -6,6 +6,7 @@
     <ChoosePermitCategory>Выбрать категорию</ChoosePermitCategory>
     <CurrentTitleCustom>Титул: </CurrentTitleCustom>
     <PickResourceForDrop>Выберите предмет для запроса: </PickResourceForDrop>
+    <ChosenResourceForDrop>Выбрано: </ChosenResourceForDrop>
     
     <!-- ===== Качество ===== -->
     <SpecificAwful>Качество: ужасное</SpecificAwful>
@@ -40,5 +41,6 @@
     <PermitCategory_Turrets>Турели и миномёты</PermitCategory_Turrets>
     <PermitCategory_Animals>Животные</PermitCategory_Animals>
     <PermitCategory_Seeds>Семена</PermitCategory_Seeds>
+    <PermitCategory_Prosthetics>Протезы и импланты</PermitCategory_Prosthetics>
 
 </LanguageData>

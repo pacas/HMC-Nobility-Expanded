@@ -5,6 +5,8 @@
     <ItemIncludedInPermit>Contains:</ItemIncludedInPermit>
     <ChoosePermitCategory>Choose category</ChoosePermitCategory>
     <CurrentTitleCustom>Title: </CurrentTitleCustom>
+    <PickResourceForDrop>Select the item to request: </PickResourceForDrop>
+    <ChosenResourceForDrop>Selected: </ChosenResourceForDrop>
 
     <!-- ===== Quality ===== -->
     <SpecificAwful>Quality: Awful</SpecificAwful>
@@ -39,5 +41,6 @@
     <PermitCategory_Turrets>Turrets and mortars</PermitCategory_Turrets>
     <PermitCategory_Animals>Animals</PermitCategory_Animals>
     <PermitCategory_Seeds>Seeds</PermitCategory_Seeds>
+    <PermitCategory_Prosthetics>Prosthetics and implants</PermitCategory_Prosthetics>
 
 </LanguageData>

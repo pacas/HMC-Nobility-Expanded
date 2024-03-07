@@ -14,8 +14,7 @@ namespace NobilityExpanded
         private Faction faction;
         public static ThingDef chosenThing = null;
 
-        public override void OrderForceTarget(LocalTargetInfo target)
-        {
+        public override void OrderForceTarget(LocalTargetInfo target) {
             CallResources(target.Cell);
         }
 
@@ -25,13 +24,10 @@ namespace NobilityExpanded
             Faction faction)
         {
             var workerDropResources = this;
-            if (faction.HostileTo(Faction.OfPlayer))
-            {
+            if (faction.HostileTo(Faction.OfPlayer)) {
                 yield return new FloatMenuOption(
                     "CommandCallRoyalAidFactionHostile".Translate(faction.Named("FACTION")), null);
-            }
-            else
-            {
+            } else {
                 Action action = null;
                 string description = workerDropResources.def.LabelCap + ": ";
                 bool free;
@@ -42,20 +38,16 @@ namespace NobilityExpanded
             }
         }
 
-        public override IEnumerable<Gizmo> GetCaravanGizmos(Pawn pawn, Faction faction)
-        {
+        public override IEnumerable<Gizmo> GetCaravanGizmos(Pawn pawn, Faction faction) {
             var workerDropResources = this;
             string description;
             bool disableNotEnoughFavor;
-            if (workerDropResources.FillCaravanAidOption(pawn, faction, out description, out workerDropResources.free,
-                    out disableNotEnoughFavor))
-            {
+            if (workerDropResources.FillCaravanAidOption(pawn, faction, out description, out workerDropResources.free, out disableNotEnoughFavor)) {
                 var commandAction = new Command_Action();
                 commandAction.defaultLabel = workerDropResources.def.LabelCap + " (" + pawn.LabelShort + ")";
                 commandAction.defaultDesc = description;
                 commandAction.icon = CommandTex;
-                commandAction.action = () =>
-                {
+                commandAction.action = () => {
                     var caravan = pawn.GetCaravan();
                     var massUsage = caravan.MassUsage;
                     var itemsToDrop = def.royalAid.itemsToDrop;
@@ -68,17 +60,18 @@ namespace NobilityExpanded
                     else
                         CallResourcesToCaravan();
                 };
+                
                 if (faction.HostileTo(Faction.OfPlayer))
                     commandAction.Disable(
                         "CommandCallRoyalAidFactionHostile".Translate(faction.Named("FACTION")));
                 if (disableNotEnoughFavor)
                     commandAction.Disable("CommandCallRoyalAidNotEnoughFavor".Translate());
+                
                 yield return commandAction;
             }
         }
 
-        private void BeginCallResources(Pawn caller, Faction faction, Map map, bool free)
-        {
+        private void BeginCallResources(Pawn caller, Faction faction, Map map, bool free) {
             targetingParameters = new TargetingParameters();
             targetingParameters.canTargetLocations = true;
             targetingParameters.canTargetBuildings = false;
@@ -95,13 +88,11 @@ namespace NobilityExpanded
             Find.WindowStack.Add(window);
         }
 
-        private void CallResources(IntVec3 cell)
-        {
+        private void CallResources(IntVec3 cell) {
             Dialog_ChooseResource.CallResources(cell);
         }
 
-        private void CallResourcesToCaravan()
-        {
+        private void CallResourcesToCaravan() {
             Dialog_ChooseResource.CallResourcesToCaravan();
         }
     }
