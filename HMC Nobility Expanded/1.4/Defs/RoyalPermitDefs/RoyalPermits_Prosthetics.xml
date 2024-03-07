@@ -14,6 +14,32 @@
         <description>Request a drop of different basic prosthetics.</description>
     </RoyalTitlePermitDef>
 
+    <RoyalTitlePermitDef ParentName="DropResourcesSpecific">
+        <defName>SimpleProsthetic</defName>
+        <label>Simple prosthetic</label>
+        <description>Request a drop of specific simple prosthetic</description>
+        <minTitle>Acolyte</minTitle>
+        <cooldownDays>21</cooldownDays>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>4</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsSpecificBase">
+        <defName>SimpleProstheticStuff</defName>
+        <thingsToChoose>
+            <li>ArtificialNose</li>
+            <li>SimpleProstheticHand</li>
+            <li>SimpleProstheticFoot</li>
+            <li>SimpleProstheticLeg</li>
+            <li>SimpleProstheticArm</li>
+            <li>SimpleProstheticHeart</li>
+            <li>ArtificialPelvis</li>
+        </thingsToChoose>
+    </NobilityExpanded.OrderedStuffDef>
+
     <!-- Убрать стопы и кисти? -->
 
     <!-- Simple Prosthetic

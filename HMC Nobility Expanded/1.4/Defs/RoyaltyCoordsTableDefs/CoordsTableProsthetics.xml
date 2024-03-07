@@ -4,12 +4,8 @@
         <defName>CoordsTableProsthetics_0</defName>
         <coordX>0</coordX>
         <loadOrder>
-            <li>BasePermitTitle</li>
-            <li>SteelDrop</li>
-            <li>FoodDrop</li>
-            <li>BlocksDrop</li>
-            <li MayRequire="Ludeon.Rimworld.Biotech">BabyFoodDrop</li>
-            <li MayRequire="Ludeon.Rimworld.Biotech">VampiresFoodDrop</li>
+            <li>ProstheticsPermitTitle</li>
+            <li>SimpleProsthetic</li>
         </loadOrder>
     </NobilityExpanded.RoyaltyCoordsTableDef>
 
@@ -17,11 +13,7 @@
         <defName>CoordsTableProsthetics_1</defName>
         <coordX>1</coordX>
         <loadOrder>
-            <li>BasePermitTitle</li>
-            <li>SilverDrop</li>
-            <li>GlitterMedDrop</li>
-            <li>CallTransportShuttle</li>
-            <li MayRequire="Ludeon.Rimworld.Biotech">BabyClothesDrop</li>
+            <li>ProstheticsPermitTitle</li>
         </loadOrder>
     </NobilityExpanded.RoyaltyCoordsTableDef>
 </Defs>

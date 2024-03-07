@@ -76,6 +76,7 @@ namespace NobilityExpanded
                     DefDatabase<RoyaltyCoordsTableDef>.GetNamedSilentFail(
                         NobilitySupportUtility.CoordsTable + PermitsCardCustomUtility.UtilityClass.curTab + "_0"
                         );
+                // todo case 
                 if (permit.permitPointCost == 99) {
                     index = categoryTable.loadOrder.IndexOf(permit);
                     newCoords = new Vector2(60f, index * 50f + 5f);

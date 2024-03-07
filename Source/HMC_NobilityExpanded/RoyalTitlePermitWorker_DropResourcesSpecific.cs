@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using CombatExtended;
 using RimWorld;
 using RimWorld.Planet;
 using UnityEngine;
@@ -13,9 +12,7 @@ namespace NobilityExpanded
     {
         private static readonly Texture2D CommandTex = ContentFinder<Texture2D>.Get("UI/Commands/CallAid");
         private Faction faction;
-        private OrderedStuffDef stuffDefOrdered;
-        private List<ThingDef> resourceChoices;
-        public static ThingDef chosenThing;
+        public static ThingDef chosenThing = null;
 
         public override void OrderForceTarget(LocalTargetInfo target)
         {
@@ -53,11 +50,11 @@ namespace NobilityExpanded
             if (workerDropResources.FillCaravanAidOption(pawn, faction, out description, out workerDropResources.free,
                     out disableNotEnoughFavor))
             {
-                var commandAction1 = new Command_Action();
-                commandAction1.defaultLabel = workerDropResources.def.LabelCap + " (" + pawn.LabelShort + ")";
-                commandAction1.defaultDesc = description;
-                commandAction1.icon = CommandTex;
-                commandAction1.action = () =>
+                var commandAction = new Command_Action();
+                commandAction.defaultLabel = workerDropResources.def.LabelCap + " (" + pawn.LabelShort + ")";
+                commandAction.defaultDesc = description;
+                commandAction.icon = CommandTex;
+                commandAction.action = () =>
                 {
                     var caravan = pawn.GetCaravan();
                     var massUsage = caravan.MassUsage;
@@ -67,17 +64,16 @@ namespace NobilityExpanded
                     if (massUsage > (double)caravan.MassCapacity)
                         Find.WindowStack.Add(Dialog_MessageBox.CreateConfirmation(
                             "DropResourcesOverweightConfirm".Translate(),
-                            () => CallResourcesToCaravan(pawn, faction, free), true));
+                            CallResourcesToCaravan, true));
                     else
-                        CallResourcesToCaravan(pawn, faction, free);
+                        CallResourcesToCaravan();
                 };
-                var commandAction2 = commandAction1;
                 if (faction.HostileTo(Faction.OfPlayer))
-                    commandAction2.Disable(
+                    commandAction.Disable(
                         "CommandCallRoyalAidFactionHostile".Translate(faction.Named("FACTION")));
                 if (disableNotEnoughFavor)
-                    commandAction2.Disable("CommandCallRoyalAidNotEnoughFavor".Translate());
-                yield return commandAction2;
+                    commandAction.Disable("CommandCallRoyalAidNotEnoughFavor".Translate());
+                yield return commandAction;
             }
         }
 
@@ -94,62 +90,19 @@ namespace NobilityExpanded
             targetingParameters.validator = target =>
                 (def.royalAid.targetingRange <= 0.0 || target.Cell.DistanceTo(caller.Position) <=
                     (double)def.royalAid.targetingRange) && target.Cell.Walkable(map) && !target.Cell.Fogged(map);
-            Find.Targeter.BeginTargeting(this);
+            var window = new Dialog_ChooseResource();
+            window.SetData(this, map, caller, faction, def, free);
+            Find.WindowStack.Add(window);
         }
 
         private void CallResources(IntVec3 cell)
         {
-            var list = new List<Thing>();
-            for (var index = 0; index < def.royalAid.itemsToDrop.Count; ++index)
-            {
-                List<Thing> things = GenerateItems(index);
-                for (var i = 0; i < things.Count; ++i)
-                {
-                    list.Add(things[i]);
-                }
-            }
-            if (!list.Any())
-                return;
-            var info = new ActiveDropPodInfo();
-            info.innerContainer.TryAddRangeOrTransfer(list);
-            DropPodUtility.MakeDropPodAt(cell, map, info);
-            Messages.Message("MessagePermitTransportDrop".Translate(faction.Named("FACTION")),
-                new LookTargets(cell, map), MessageTypeDefOf.NeutralEvent);
-            caller.royalty.GetPermit(def, faction).Notify_Used();
-            if (free)
-                return;
-            caller.royalty.TryRemoveFavor(faction, def.royalAid.favorCost);
+            Dialog_ChooseResource.CallResources(cell);
         }
 
-        private void CallResourcesToCaravan(Pawn caller, Faction faction, bool free)
+        private void CallResourcesToCaravan()
         {
-            var caravan = caller.GetCaravan();
-            for (var index = 0; index < def.royalAid.itemsToDrop.Count; ++index)
-            {
-                List<Thing> things = GenerateItems(index);
-                for (var i = 0; i < things.Count; ++i)
-                {
-                    CaravanInventoryUtility.GiveThing(caravan, things[i]);
-                }
-            }
-            Messages.Message(
-                "MessagePermitTransportDropCaravan".Translate(faction.Named("FACTION"), caller.Named("PAWN")),
-                (WorldObject)caravan, MessageTypeDefOf.NeutralEvent);
-            caller.royalty.GetPermit(def, faction).Notify_Used();
-            if (free)
-                return;
-            caller.royalty.TryRemoveFavor(faction, def.royalAid.favorCost);
-        }
-
-        private List<Thing> GenerateItems(int index)
-        {
-            resourceChoices = DefDatabase<OrderedStuffDef>.GetNamed(def.defName + "Stuff").stuffList;
-            Find.WindowStack.Add(new Dialog_ChooseResource(resourceChoices));
-            List<Thing> things = new List<Thing>();
-            Thing thing = ThingMaker.MakeThing(chosenThing);
-            thing.stackCount = def.royalAid.itemsToDrop[index].count;
-            things.Add(thing);
-            return things;
+            Dialog_ChooseResource.CallResourcesToCaravan();
         }
     }
 }

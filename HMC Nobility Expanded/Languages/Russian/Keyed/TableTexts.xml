@@ -5,6 +5,7 @@
     <ItemIncludedInPermit>Содержит:</ItemIncludedInPermit>
     <ChoosePermitCategory>Выбрать категорию</ChoosePermitCategory>
     <CurrentTitleCustom>Титул: </CurrentTitleCustom>
+    <PickResourceForDrop>Выберите предмет для запроса: </PickResourceForDrop>
     
     <!-- ===== Качество ===== -->
     <SpecificAwful>Качество: ужасное</SpecificAwful>

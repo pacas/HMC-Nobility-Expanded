@@ -22,6 +22,10 @@
     <RoyalTitlePermitDef ParentName="MainDropBase" Name="DropResourcesPlus" Abstract="True">
         <workerClass>NobilityExpanded.RoyalTitlePermitWorker_DropResourcesPlus</workerClass>
     </RoyalTitlePermitDef>
+    
+    <RoyalTitlePermitDef ParentName="MainDropBase" Name="DropResourcesSpecific" Abstract="True">
+        <workerClass>NobilityExpanded.RoyalTitlePermitWorker_DropResourcesSpecific</workerClass>
+    </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="MainDropBase" Name="DropBuildings" Abstract="True">
         <workerClass>NobilityExpanded.RoyalTitlePermitWorker_DropBuildings</workerClass>
