@@ -26,9 +26,24 @@
             </itemsToDrop>
             <favorCost>3</favorCost>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionSpecificList">
+                <thingsToChoose>
+                    <ArtificialNose>1</ArtificialNose>
+                    <SimpleProstheticHand>1</SimpleProstheticHand>
+                    <SimpleProstheticFoot>1</SimpleProstheticFoot>
+                    <SimpleProstheticLeg>1</SimpleProstheticLeg>
+                    <SimpleProstheticArm>1</SimpleProstheticArm>
+                    <SimpleProstheticHeart>1</SimpleProstheticHeart>
+                    <ArtificialPelvis>1</ArtificialPelvis>
+                </thingsToChoose>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
+    // удалить если найдено
     <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsSpecificBase">
         <defName>SimpleProstheticStuff</defName>
+        <column>0</column>
         <thingsToChoose>
             <li>ArtificialNose</li>
             <li>SimpleProstheticHand</li>
@@ -53,6 +68,27 @@
             </itemsToDrop>
             <favorCost>7</favorCost>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionSpecificList">
+                <column>1</column>
+                <thingsToChoose>
+                    <BionicHand>1</BionicHand>
+                    <BionicFoot>1</BionicFoot>
+                    <BionicEar>1</BionicEar>
+                    <BionicJaw>1</BionicJaw>
+                    <BionicSpine>1</BionicSpine>
+                    <BionicEye>1</BionicEye>
+                    <BionicTongue>1</BionicTongue>
+                    <BionicLeg>1</BionicLeg>
+                    <BionicNeck>1</BionicNeck>
+                    <BionicLung>1</BionicLung>
+                    <BionicStomach>1</BionicStomach>
+                    <BionicLiver>1</BionicLiver>
+                    <BionicKidney>1</BionicKidney>
+                    <BionicHeart>1</BionicHeart>
+                </thingsToChoose>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
     <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsSpecificBase">
         <defName>BionicsProstheticStuff</defName>

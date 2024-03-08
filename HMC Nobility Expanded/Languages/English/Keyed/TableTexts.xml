@@ -6,7 +6,7 @@
     <ChoosePermitCategory>Choose category</ChoosePermitCategory>
     <CurrentTitleCustom>Title: </CurrentTitleCustom>
     <PickResourceForDrop>Select the item to request: </PickResourceForDrop>
-    <ChosenResourceForDrop>Selected: </ChosenResourceForDrop>
+    <ChosenResourceForDropDesc>Description: </ChosenResourceForDropDesc>
 
     <!-- ===== Quality ===== -->
     <SpecificAwful>Quality: Awful</SpecificAwful>
