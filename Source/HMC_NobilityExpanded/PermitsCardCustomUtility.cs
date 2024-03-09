@@ -14,10 +14,10 @@ namespace NobilityExpanded
         private static Vector2 rightScrollPosition;
         public static RoyalTitlePermitDef selectedPermit;
         public static Faction selectedFaction;
-        public static readonly NobilitySupportUtility UtilityClass = new NobilitySupportUtility();
+        public static readonly NE_Utility UtilityClass = new NE_Utility();
         private static readonly Vector2 PermitOptionSpacing = new Vector2(0.25f, 0.35f);
         private static readonly Texture2D SwitchFactionIcon = ContentFinder<Texture2D>.Get("UI/Icons/SwitchFaction");
-        public static readonly string spacing = "           ";
+        private static readonly string spacing = "           ";
         
         private static bool ShowSwitchFactionButton
         {
@@ -137,7 +137,6 @@ namespace NobilityExpanded
             var tabOptions = SetCategoryButton();
             Find.WindowStack.Add(new FloatMenu(tabOptions));
         }
-
         
         private static void DoLeftRect(Rect rect, Pawn pawn)
         {
@@ -171,7 +170,6 @@ namespace NobilityExpanded
             }
             Widgets.EndGroup();
         }
-
         
         private static void DoMiddleRect(Rect rect, Pawn pawn)
         {
@@ -181,8 +179,7 @@ namespace NobilityExpanded
             var defsListForReading = DefDatabase<RoyalTitlePermitDef>.AllDefsListForReading;
             var outRect = rect.ContractedBy(10f);
             var middlePanel = new Rect();
-            foreach (var permit in defsListForReading.Where(CanDrawPermit))
-            {
+            foreach (var permit in defsListForReading.Where(CanDrawPermit)) {
                 middlePanel.width = permit.permitPointCost == 98 ? 
                     Mathf.Max(middlePanel.width, (float)(DrawPosition(permit).x + 150.0 + 26.0)) : 
                     Mathf.Max(middlePanel.width, (float)(DrawPosition(permit).x + 200.0 + 26.0));
@@ -194,9 +191,9 @@ namespace NobilityExpanded
             DrawLines();
             foreach (var permit in defsListForReading)
             {
-                if (!CanDrawPermit(permit) || permit.permitPointCost == 90) 
+                if (!CanDrawPermit(permit)) 
                     continue;
-                
+
                 var vector2 = DrawPosition(permit);
                 var textColor = Widgets.NormalOptionColor;
                 var bgColor = PermitUnlocked(permit, pawn)
@@ -204,8 +201,7 @@ namespace NobilityExpanded
                     : TexUI.AvailResearchColor;
                 Color borderResearchColor;
                 var permitRect = new Rect(vector2.x, vector2.y, 200f, 50f);
-                switch (permit.permitPointCost)
-                {
+                switch (permit.permitPointCost) {
                     case 99:
                         textColor = new Color(1f, 0.5f, 0.0f, 1.0f);
                         bgColor = new Color(0.06f, 0.06f, 0.06f, 1);
@@ -217,20 +213,16 @@ namespace NobilityExpanded
                         permitRect = new Rect(vector2.x - 25f, vector2.y, 200f, 50f);
                         break;
                     default:
-                    {
                         if (!permit.AvailableForPawn(pawn, selectedFaction) && !PermitUnlocked(permit, pawn)) {
                             textColor = new Color(0.6f, 0.1f, 0.1f, 1.0f);
                         }
-
                         break;
-                    }
                 }
                 
                 if (selectedPermit == permit) {
                     borderResearchColor = TexUI.HighlightBorderResearchColor;
                     bgColor += TexUI.HighlightBgResearchColor;
-                }
-                else {
+                } else {
                     borderResearchColor = TexUI.DefaultBorderResearchColor;
                 }
                 
@@ -255,83 +247,67 @@ namespace NobilityExpanded
         private static void DoRightRect(Rect rect, Pawn pawn)
         {
             var currentTitle = pawn.royalty.GetCurrentTitle(selectedFaction);
+            // todo
             var rect1 = new Rect(rect);
             Widgets.BeginGroup(rect1);
             if (selectedPermit != null)
             {
-                var rect4 = new Rect(0.0f, 0.0f, rect1.width, 0.0f);
+                var infoRect = new Rect(0.0f, 0.0f, rect1.width, 0.0f);
                 var label = "";
 
                 if (selectedPermit.permitPointCost < 90)
                 {
-                    label += "Cooldown".Translate() + ": " +
-                            "PeriodDays".Translate(selectedPermit.cooldownDays);
-                    label += "\n" + (string)("PrivilegesPointsRequired"
-                        .Translate(selectedPermit.permitPointCost));
-                    if (selectedPermit.royalAid != null && selectedPermit.royalAid.favorCost > 0 &&
-                        !selectedFaction.def.royalFavorLabel.NullOrEmpty())
+                    label += "Cooldown".Translate() + ": " + "PeriodDays".Translate(selectedPermit.cooldownDays);
+                    label += "\n" + (string)("PrivilegesPointsRequired".Translate(selectedPermit.permitPointCost));
+                    if (selectedPermit.royalAid != null && selectedPermit.royalAid.favorCost > 0 && !selectedFaction.def.royalFavorLabel.NullOrEmpty())
                         label += "\n" + (string)("CooldownUseFavorCost"
                             .Translate(selectedFaction.def.royalFavorLabel.Named("HONOR"))
                             .CapitalizeFirst() + ": ") + selectedPermit.royalAid.favorCost.ToString();
 
                     TaggedString taggedString;
                     string tagged;
-                    if (selectedPermit.minTitle != null)
-                    {
-                        taggedString =
-                            "RequiresTitle".Translate((NamedArgument)selectedPermit.minTitle.GetLabelForBothGenders());
-                        tagged = taggedString.Resolve()
-                            .Colorize(currentTitle == null || currentTitle.seniority < selectedPermit.minTitle.seniority
-                                ? ColorLibrary.RedReadable
-                                : Color.white);
+                    if (selectedPermit.minTitle != null) {
+                        taggedString = "RequiresTitle".Translate((NamedArgument)selectedPermit.minTitle.GetLabelForBothGenders());
+                        tagged = taggedString.Resolve().Colorize(currentTitle == null 
+                                || currentTitle.seniority < selectedPermit.minTitle.seniority ? ColorLibrary.RedReadable : Color.white);
                         label += "\n" + tagged;
                     }
 
-                    if (selectedPermit.prerequisite != null)
-                    {
+                    if (selectedPermit.prerequisite != null) {
                         taggedString = "UpgradeFrom".Translate(selectedPermit.prerequisite.LabelCap);
-                        tagged = taggedString.Resolve().Colorize(PermitUnlocked(selectedPermit.prerequisite, pawn)
-                            ? Color.white
-                            : ColorLibrary.RedReadable);
+                        tagged = taggedString.Resolve().Colorize(PermitUnlocked(selectedPermit.prerequisite, pawn) ? Color.white : ColorLibrary.RedReadable);
                         label += "\n" + tagged;
                     }
 
-                    var stuffDefOrdered =
-                        DefDatabase<OrderedStuffDef>.GetNamedSilentFail(selectedPermit.defName + "Stuff");
                     label += "\n\n";
-                    var isThingsExists = stuffDefOrdered.thingsToChoose != null;
-                    var isPawnsExists = stuffDefOrdered.pawnToChoose != null;
-                    var isStuffExists = stuffDefOrdered.stuffList != null;
+                    var stuffDefOrdered = DefDatabase<OrderedStuffDef>.GetNamedSilentFail(selectedPermit.defName + "Stuff");
+                    var stuffList = NE_Utility.GetPermitStuffList(selectedPermit);
+                    var pawnToChoose = NE_Utility.GetPermitPawnList(selectedPermit);
+                    var isThingsExists = stuffDefOrdered != null && stuffDefOrdered.thingsToChoose != null;
+                    var isPawnsExists = pawnToChoose != null;
+                    var isStuffExists = stuffList != null;
                     var isRoyalAidExists = selectedPermit.royalAid != null;
 
-                    if (isThingsExists && stuffDefOrdered.thingsToChoose.Count > 1)
-                    {
-                        if (!isStuffExists || stuffDefOrdered.stuffList.Count != stuffDefOrdered.thingsToChoose.Count)
-                        {
+                    // todo раскидать по функциям
+                    if (isThingsExists && stuffDefOrdered.thingsToChoose.Count > 1) {
+                        if (!isStuffExists || stuffList.Count != stuffDefOrdered.thingsToChoose.Count) {
                             label += "ItemIncludedInPermit".Translate() + "\n";
                             foreach (var t in stuffDefOrdered.thingsToChoose) {
                                 label += "  - " + t.label.CapitalizeFirst() + "\n";
                             }
-                        }
-                        else
-                        {
-                            for (var index = 0; index < stuffDefOrdered.thingsToChoose.Count; ++index)
-                            {
+                        } else {
+                            for (var index = 0; index < stuffDefOrdered.thingsToChoose.Count; ++index) {
                                 label += "  - " + "StuffDescription".Translate(
-                                    stuffDefOrdered.stuffList[index].stuffProps.stuffAdjective,
+                                    stuffList[index].stuffProps.stuffAdjective,
                                     stuffDefOrdered.thingsToChoose[index].label) + "\n";
                             }
                         }
-                    }
-                    else if (isPawnsExists && stuffDefOrdered.pawnToChoose.Count > 1)
-                    {
+                    } else if (isPawnsExists && pawnToChoose.Count > 1) {
                         label += "ItemIncludedInPermit".Translate() + "\n";
-                        foreach (var t in stuffDefOrdered.pawnToChoose)
-                        {
+                        foreach (var t in pawnToChoose) {
                             label += "  - " + t.LabelCap + "\n";
                         }
-                    }
-                    else if (isRoyalAidExists &&
+                    } else if (isRoyalAidExists &&
                              selectedPermit.royalAid.itemsToDrop != null &&
                              selectedPermit.royalAid.itemsToDrop[0].thingDef.defName != "Steel" &&
                              isStuffExists)
@@ -340,39 +316,36 @@ namespace NobilityExpanded
                         for (var index = 0; index < selectedPermit.royalAid.itemsToDrop.Count; ++index)
                         {
                             label += "  - " + "StuffDescription".Translate(
-                                stuffDefOrdered.stuffList[index].stuffProps.stuffAdjective,
+                                stuffList[index].stuffProps.stuffAdjective,
                                 selectedPermit.royalAid.itemsToDrop[index].Label) + "\n";
                         }
                     }
 
                     if (isThingsExists && isStuffExists && isRoyalAidExists &&
-                        stuffDefOrdered.stuffList.Count == 1 &&
+                        stuffList.Count == 1 &&
                         selectedPermit.royalAid.itemsToDrop != null &&
                         selectedPermit.royalAid.itemsToDrop[0].thingDef.defName == "Steel")
                     {
                         if (stuffDefOrdered.thingsToChoose.Count != 1) {
                             label += "StuffDescriptionSingle".Translate(
-                                stuffDefOrdered.stuffList[0].LabelCap) + "\n";
-                        }
-                        else
-                        {
+                                stuffList[0].LabelCap) + "\n";
+                        } else {
                             label += "  - " + "StuffDescription".Translate(
-                            stuffDefOrdered.stuffList[0].stuffProps.stuffAdjective,
+                            stuffList[0].stuffProps.stuffAdjective,
                             stuffDefOrdered.thingsToChoose[0].label) + "\n";
                         }
                     }
 
-                    if (stuffDefOrdered.typeOfQuality != null)
-                    {
+                    if (stuffDefOrdered != null && stuffDefOrdered.typeOfQuality != null) {
                         string qualityLabel = stuffDefOrdered.typeOfQuality + stuffDefOrdered.quality;
                         label += qualityLabel.Translate() + "\n";
                     }
                 }
-                Widgets.LabelCacheHeight(ref rect4, label);
+                Widgets.LabelCacheHeight(ref infoRect, label);
             }
+            
             Widgets.EndGroup();
         }
-
         
         private static void DrawLines()
         {
@@ -399,7 +372,6 @@ namespace NobilityExpanded
                     }
                 }
         }
-
         
         private static bool PermitUnlocked(RoyalTitlePermitDef permit, Pawn pawn)
         {
@@ -426,20 +398,49 @@ namespace NobilityExpanded
             return false;
         }
 
-        
-        private static Vector2 DrawPosition(RoyalTitlePermitDef permit)
-        {return PermitOptionSpacing;}
-        /* Fake static method, replaced in runtime with real. */
-        /* Why? I dunno, this is working that way. */
-
+        private static Vector2 DrawPosition(RoyalTitlePermitDef permit){
+            OrderedStuffDef stuffDefOrdered = DefDatabase<OrderedStuffDef>.GetNamedSilentFail(permit.defName + NE_Utility.StuffPostfix);
+            bool isExtExists = permit.HasModExtension<PermitExtensionList>();
+            int index;
+            string tab = UtilityClass.curTab;
+            Vector2 newCoords;
+            if (stuffDefOrdered != null)
+            {
+                var categoryTable = DefDatabase<RoyaltyCoordsTableDef>.GetNamedSilentFail(NE_Utility.CoordsTable + tab + "_" + stuffDefOrdered.column);
+                index = categoryTable.loadOrder.IndexOf(permit);
+                newCoords = new Vector2(categoryTable.coordX * 200f, index * 50f);
+            } else if (isExtExists) {
+                PermitExtensionList extension = permit.GetModExtension<PermitExtensionList>();
+                var column = extension.column ?? "0";
+                var categoryTable = DefDatabase<RoyaltyCoordsTableDef>.GetNamedSilentFail(NE_Utility.CoordsTable + tab + "_" + column);
+                index = categoryTable.loadOrder.IndexOf(permit);
+                newCoords = new Vector2(categoryTable.coordX * 200f, index * 50f);
+            } else {
+                RoyaltyCoordsTableDef categoryTable = DefDatabase<RoyaltyCoordsTableDef>.GetNamedSilentFail(NE_Utility.CoordsTable + tab + "_0");
+                index = categoryTable.loadOrder.IndexOf(permit);
+                switch (permit.permitPointCost)
+                {
+                    case 99:
+                        newCoords = new Vector2(60f, index * 50f + 5f);
+                        break;
+                    case 98:
+                        newCoords = new Vector2(120f, index * 50f + 5f);
+                        break;
+                    default:
+                        newCoords = new Vector2(permit.uiPosition.x * 400f, permit.uiPosition.y * 50f);
+                        break;
+                }
+            }
+            
+            return newCoords + newCoords * new Vector2(0.25f, 0.35f);;
+        }
         
         private static bool CanDrawPermit(RoyalTitlePermitDef permit)
         {
-            if (permit.permitPointCost <= 0)
+            if (permit.permitPointCost <= 0 || permit.permitPointCost == 97 || permit.permitPointCost == 96)
                 return false;
             return permit.faction == null || permit.faction == selectedFaction.def;
         }
-        
         
         private static List<FloatMenuOption> SetCategoryButton()
         {
@@ -448,7 +449,7 @@ namespace NobilityExpanded
             var dict = new Dictionary<string, Action> {};
             foreach (var category in catTable.categories)
             {
-                dict.Add(NobilitySupportUtility.PermitCategory + category, () => UtilityClass.curTab = category);
+                dict.Add(NE_Utility.PermitCategory + category, () => UtilityClass.curTab = category);
             }     
             foreach (var table in dict)
             {

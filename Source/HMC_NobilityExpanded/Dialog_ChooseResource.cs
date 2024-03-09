@@ -39,24 +39,24 @@ namespace NobilityExpanded
         {
             float num = 0f;
             Widgets.Label(0f, ref num, inRect.width, "PickResourceForDrop".Translate().Resolve());
-            Rect rect = new Rect(inRect.x, num + 15f, inRect.width, inRect.height - 120f);
+            Rect rect = new Rect(inRect.x, num + 15f, inRect.width + 30f, inRect.height - 125f);
             rect.yMax -= 4f + CloseButSize.y;
             Text.Font = GameFont.Small;
             num = rect.y;
-            Rect rect2 = new Rect(rect.x, rect.y, rect.width - 16f, scrollHeight);
-            Widgets.BeginScrollView(rect, ref scrollPosition, rect2);
-            DrawResourceChoices(rect2.width, ref num);
+            Rect choicesFullRect = new Rect(rect.x, rect.y, rect.width - 16f, scrollHeight);
+            Widgets.BeginScrollView(rect, ref scrollPosition, choicesFullRect);
+            DrawResourceChoices(choicesFullRect.width, ref num);
             if (Event.current.type == EventType.Layout) {
                 scrollHeight = Mathf.Max(num - 24f - 15f, rect.height);
             }
 
             Widgets.EndScrollView();
-            Rect rect3 = new Rect(inRect.x, rect.yMax + 15f, inRect.width, 72f);
-            TaggedString taggedString = "ChosenResourceForDropDesc".Translate().Resolve() + chosenThing.thingDef.description;
-            Widgets.Label(rect3, taggedString);
-            Rect rect4 = new Rect(0f, rect3.yMax, inRect.width, CloseButSize.y);
+            Rect descRect = new Rect(inRect.x, rect.yMax + 15f, inRect.width, 90f);
+            TaggedString taggedString = "ChosenResourceForDropDesc".Translate().Resolve() + "\n" + chosenThing.thingDef.description;
+            Widgets.Label(descRect, taggedString);
+            Rect acceptRect = new Rect(0f, descRect.yMax, inRect.width, CloseButSize.y);
             AcceptanceReport acceptanceReport = CanClose();
-            if (!Widgets.ButtonText(new Rect(rect4.xMax - CloseButSize.x, rect4.y, CloseButSize.x, CloseButSize.y), "OK".Translate())) {
+            if (!Widgets.ButtonText(new Rect(acceptRect.xMax - CloseButSize.x, acceptRect.y, CloseButSize.x, CloseButSize.y), "OK".Translate())) {
                 return;
             }
 
@@ -73,8 +73,8 @@ namespace NobilityExpanded
         private void DrawResourceChoices(float width, ref float curY)
         {
             Listing_Standard listingStandard = new Listing_Standard();
-            Rect rect = new Rect(0f, curY, width - 16f, 99999f);
-            listingStandard.Begin(rect);
+            Rect choicesRect = new Rect(0f, curY, width - 16f, 99999f);
+            listingStandard.Begin(choicesRect);
             foreach (ThingDefCountClass thing in resourceChoices) {
                 if (listingStandard.RadioButton(thing.thingDef.LabelCap, chosenThing == thing, 30f, chosenThing.thingDef.description)) {
                     chosenThing = thing;
@@ -98,8 +98,7 @@ namespace NobilityExpanded
         }
 
         public void SetData(RoyalTitlePermitWorker_DropResourcesSpecific createdWorker, Map map, Pawn caller, Faction faction, RoyalTitlePermitDef def, bool free) {
-            //resourceChoices = DefDatabase<OrderedStuffDef>.GetNamed(def.defName + "Stuff").thingsToChoose;
-            resourceChoices = def.GetModExtension<PermitExtensionSpecificList>().thingsToChoose;
+            resourceChoices = def.GetModExtension<PermitExtensionList>().thingsToChoose;
             chosenThing = resourceChoices.First();
             worker = createdWorker;
             curPawn = caller;

@@ -9,9 +9,21 @@
     </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
-        <defName>BasicProstheticsPermitSmallTitle</defName>
-        <label>Basic Prosthetics</label>
-        <description>Request a drop of different basic prosthetics.</description>
+        <defName>ProstheticsPermitSmallTitle</defName>
+        <label>Artificial Bodyparts</label>
+        <description>Request a drop of different prosthetics.</description>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
+        <defName>CombatProstheticsPermitSmallTitle</defName>
+        <label>Combat Implants and Bodyparts</label>
+        <description>Request a drop of different combat prosthetics.</description>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
+        <defName>ProductiveProstheticsPermitSmallTitle</defName>
+        <label>Workers Implants and Bodyparts</label>
+        <description>Request a drop of different prosthetics for workers.</description>
     </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesSpecific">
@@ -27,7 +39,8 @@
             <favorCost>3</favorCost>
         </royalAid>
         <modExtensions>
-            <li Class="NobilityExpanded.PermitExtensionSpecificList">
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <column>0</column>
                 <thingsToChoose>
                     <ArtificialNose>1</ArtificialNose>
                     <SimpleProstheticHand>1</SimpleProstheticHand>
@@ -40,25 +53,11 @@
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
-    // удалить если найдено
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsSpecificBase">
-        <defName>SimpleProstheticStuff</defName>
-        <column>0</column>
-        <thingsToChoose>
-            <li>ArtificialNose</li>
-            <li>SimpleProstheticHand</li>
-            <li>SimpleProstheticFoot</li>
-            <li>SimpleProstheticLeg</li>
-            <li>SimpleProstheticArm</li>
-            <li>SimpleProstheticHeart</li>
-            <li>ArtificialPelvis</li>
-        </thingsToChoose>
-    </NobilityExpanded.OrderedStuffDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesSpecific">
         <defName>BionicsProsthetic</defName>
-        <label>Bionic prosthetic</label>
-        <description>Request a drop of specific bionic prosthetic</description>
+        <label>Bionic Prosthetic</label>
+        <description>Request a drop of specific bionic prosthetic.</description>
         <minTitle>Legatus</minTitle>
         <cooldownDays>38</cooldownDays>
         <permitPointCost>3</permitPointCost>
@@ -69,7 +68,7 @@
             <favorCost>7</favorCost>
         </royalAid>
         <modExtensions>
-            <li Class="NobilityExpanded.PermitExtensionSpecificList">
+            <li Class="NobilityExpanded.PermitExtensionList">
                 <column>1</column>
                 <thingsToChoose>
                     <BionicHand>1</BionicHand>
@@ -90,36 +89,70 @@
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsSpecificBase">
-        <defName>BionicsProstheticStuff</defName>
-        <column>1</column>
-        <thingsToChoose>
-            <li>BionicHand</li>
-            <li>BionicFoot</li>
-            <li>BionicEar</li>
-            <li>BionicJaw</li>
-            <li>BionicSpine</li>
-            <li>BionicEye</li>
-            <li>BionicTongue</li>
-            <li>BionicLeg</li>
-            <li>BionicNeck</li>
-            <li>BionicLung</li>
-            <li>BionicStomach</li>
-            <li>BionicLiver</li>
-            <li>BionicKidney</li>
-            <li>BionicHeart</li>
-        </thingsToChoose>
-    </NobilityExpanded.OrderedStuffDef>
 
-    <!-- Battle Prosthetic
-    HandTalon
-    ElbowBlade                                                            
-    KneeSpike
-    VenomFangs
-    VenomTalon
-    PowerClaw
-    ProtectiveExoskeleton
-     -->
+    <RoyalTitlePermitDef ParentName="DropResourcesSpecific">
+        <defName>CyberneticProsthetic</defName>
+        <label>Cybernetic Prosthetic</label>
+        <description>Request a drop of specific bionic prosthetic.</description>
+        <minTitle>Count</minTitle>
+        <cooldownDays>45</cooldownDays>
+        <permitPointCost>5</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>10</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <column>0</column>
+                <thingsToChoose>
+                    <GTEar>1</GTEar>
+                    <GTHand>1</GTHand>
+                    <GTFoot>1</GTFoot>
+                    <ArchotechEye>1</ArchotechEye>
+                    <GTHeart>1</GTHeart>
+                    <GTKidney>1</GTKidney>
+                    <GTLung>1</GTLung>
+                    <GTLiver>1</GTLiver>
+                    <GTstomach>1</GTstomach>
+                    <GTDentures>1</GTDentures>
+                    <GTNeck>1</GTNeck>
+                    <GTSpine>1</GTSpine>
+                    <ArchotechArm>1</ArchotechArm>
+                    <ArchotechLeg>1</ArchotechLeg>
+                </thingsToChoose>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+    
+    <RoyalTitlePermitDef ParentName="DropResourcesSpecific">
+        <defName>CombatProsthetic</defName>
+        <label>Combat prosthetic</label>
+        <description>Request a drop of specific combat prosthetic</description>
+        <minTitle>Praetor</minTitle>
+        <cooldownDays>35</cooldownDays>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>7</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <column>0</column>
+                <thingsToChoose>
+                    <HandTalon>1</HandTalon>
+                    <ElbowBlade>1</ElbowBlade>
+                    <KneeSpike>1</KneeSpike>
+                    <VenomFangs>1</VenomFangs>
+                    <VenomTalon>1</VenomTalon>
+                    <PowerClaw>1</PowerClaw>
+                    <ProtectiveExoskeleton>1</ProtectiveExoskeleton>
+                </thingsToChoose>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
 
     <!-- Battle Implants
     HealingEnhancer
@@ -176,23 +209,6 @@
     DoctorCore
     DiplomatCore
     AIPersonaCore
-     -->
-
-    <!-- Cybernetic
-    GTEar
-    ArchotechEye
-    ArchotechArm
-    ArchotechLeg
-    GTHeart
-    GTLung
-    GTKidney
-    GTLiver
-    GTstomach
-    GTHand
-    GTFoot
-    GTDentures
-    GTSpine
-    GTNeck
      -->
     
 </Defs>

@@ -111,9 +111,19 @@
         <defName>EmptyTableSpace</defName>
         <label>Empty</label>
         <description>Empty</description>
-        <permitPointCost>90</permitPointCost>
+        <permitPointCost>97</permitPointCost>
         <royalAid>
-            <favorCost>90</favorCost>
+            <favorCost>97</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>EmptyPermitSpace</defName>
+        <label>Empty</label>
+        <description>Empty</description>
+        <permitPointCost>96</permitPointCost>
+        <royalAid>
+            <favorCost>96</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
     

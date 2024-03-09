@@ -5,7 +5,12 @@
         <coordX>0</coordX>
         <loadOrder>
             <li>ProstheticsPermitTitle</li>
+            <li>ProstheticsPermitSmallTitle</li>
             <li>SimpleProsthetic</li>
+            <li>CyberneticProsthetic</li>
+            <li>CombatProstheticsPermitSmallTitle</li>
+            <li>CombatProsthetic</li>
+            <li>ProductiveProstheticsPermitSmallTitle</li>
         </loadOrder>
     </NobilityExpanded.RoyaltyCoordsTableDef>
 
@@ -14,6 +19,12 @@
         <coordX>1</coordX>
         <loadOrder>
             <li>ProstheticsPermitTitle</li>
+            <li>ProstheticsPermitSmallTitle</li>
+            <li>BionicsProsthetic</li>
+            <li>EmptyPermitSpace</li>
+            <li>CombatProstheticsPermitSmallTitle</li>
+            <li>EmptyPermitSpace</li>
+            <li>ProductiveProstheticsPermitSmallTitle</li>
         </loadOrder>
     </NobilityExpanded.RoyaltyCoordsTableDef>
 </Defs>

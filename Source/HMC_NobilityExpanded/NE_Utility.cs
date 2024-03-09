@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using RimWorld;
+using Verse;
 
 namespace NobilityExpanded
 {
-    public class NobilitySupportUtility
+    public class NE_Utility
     {
         public const string PermitCategory = "PermitCategory_";
         public const string CoordsTable = "CoordsTable";
@@ -13,9 +14,20 @@ namespace NobilityExpanded
 
         private static readonly Random Random = new Random();
         public string curTab = "Resources";
+
+        public static List<ThingDef> GetPermitStuffList(RoyalTitlePermitDef permit) {
+            var stuffDefOrdered = DefDatabase<OrderedStuffDef>.GetNamedSilentFail(permit.defName + "Stuff");
+            var extension = permit.GetModExtension<PermitExtensionList>();
+            return stuffDefOrdered != null ? stuffDefOrdered.stuffList : extension.stuffList;
+        }
         
-        public static QualityCategory GenerateFromString(string quality)
-        {
+        public static List<PawnKindDef> GetPermitPawnList(RoyalTitlePermitDef permit) {
+            var stuffDefOrdered = DefDatabase<OrderedStuffDef>.GetNamedSilentFail(permit.defName + "Stuff");
+            var extension = permit.GetModExtension<PermitExtensionList>();
+            return stuffDefOrdered != null ? stuffDefOrdered.pawnToChoose : extension.pawnToChoose;
+        }
+        
+        public static QualityCategory GenerateFromString(string quality) {
             switch (quality)
             {
                 case "Awful":
@@ -37,8 +49,7 @@ namespace NobilityExpanded
             }
         }
         
-        public static QualityCategory GenerateFromStringRange(string quality)
-        {
+        public static QualityCategory GenerateFromStringRange(string quality) {
             var list = new List<QualityCategory>();
             switch (quality)
             {

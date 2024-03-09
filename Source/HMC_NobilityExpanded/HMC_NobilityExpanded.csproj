@@ -273,9 +273,9 @@
     <ItemGroup>
         <Compile Include="Dialog_ChooseResource.cs" />
         <Compile Include="HarmonyPermitTablePatch.cs" />
-        <Compile Include="NEModExtensions\PermitExtensionSpecificList.cs" />
-        <Compile Include="NobilitySupportUtility.cs" />
+        <Compile Include="NE_Utility.cs" />
         <Compile Include="OrderedStuffDef.cs" />
+        <Compile Include="PermitExtensionList.cs" />
         <Compile Include="PermitsCardCustomUtility.cs" />
         <Compile Include="RoyalTitlePermitWorker_CallPawns.cs" />
         <Compile Include="RoyalTitlePermitWorker_DropResourcesPlus.cs" />
