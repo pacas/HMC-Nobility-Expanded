@@ -6,8 +6,11 @@ namespace NobilityExpanded
 {
     public class PermitExtensionList : DefModExtension
     {
-        public string column;
-        [CanBeNull] public string row;
+        // todo color + nulls
+        public string type = "Permit";
+        public string category;
+        [CanBeNull] public int? column;
+        [CanBeNull] public int? row;
         [CanBeNull] public string typeOfDrop;
         [CanBeNull] public string typeOfItem;
         [CanBeNull] public string typeOfQuality;

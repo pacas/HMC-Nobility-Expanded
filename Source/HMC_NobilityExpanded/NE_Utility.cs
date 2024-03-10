@@ -8,12 +8,13 @@ namespace NobilityExpanded
     public class NE_Utility
     {
         public const string PermitCategory = "PermitCategory_";
-        public const string CoordsTable = "CoordsTable";
         public const string StuffPostfix = "Stuff";
         public const string CoordsTableColumn = "CoordsTableColumn_";
+        public string coordsTable = "CoordsTable";
+        public string curTab = "Resources";
+        public string spacing = "           ";
 
         private static readonly Random Random = new Random();
-        public string curTab = "Resources";
 
         public static List<ThingDef> GetPermitStuffList(RoyalTitlePermitDef permit) {
             var stuffDefOrdered = DefDatabase<OrderedStuffDef>.GetNamedSilentFail(permit.defName + "Stuff");

@@ -6,24 +6,56 @@
         <defName>ProstheticsPermitTitle</defName>
         <label>Prosthetics</label>
         <description>Request a drop of various prosthetics.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Title</type>
+                <category>Prosthetics</category>
+                <column>0</column>
+                <row>0</row>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
         <defName>ProstheticsPermitSmallTitle</defName>
         <label>Artificial Bodyparts</label>
         <description>Request a drop of different prosthetics.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Category</type>
+                <category>Prosthetics</category>
+                <column>0</column>
+                <row>1</row>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
         <defName>CombatProstheticsPermitSmallTitle</defName>
         <label>Combat Implants and Bodyparts</label>
         <description>Request a drop of different combat prosthetics.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Category</type>
+                <category>Prosthetics</category>
+                <column>0</column>
+                <row>4</row>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
         <defName>ProductiveProstheticsPermitSmallTitle</defName>
         <label>Workers Implants and Bodyparts</label>
         <description>Request a drop of different prosthetics for workers.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Category</type>
+                <category>Prosthetics</category>
+                <column>0</column>
+                <row>6</row>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesSpecific">
@@ -40,7 +72,10 @@
         </royalAid>
         <modExtensions>
             <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Prosthetics</category>
                 <column>0</column>
+                <row>2</row>
                 <thingsToChoose>
                     <ArtificialNose>1</ArtificialNose>
                     <SimpleProstheticHand>1</SimpleProstheticHand>
@@ -69,7 +104,10 @@
         </royalAid>
         <modExtensions>
             <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Prosthetics</category>
                 <column>1</column>
+                <row>2</row>
                 <thingsToChoose>
                     <BionicHand>1</BionicHand>
                     <BionicFoot>1</BionicFoot>
@@ -105,7 +143,10 @@
         </royalAid>
         <modExtensions>
             <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Prosthetics</category>
                 <column>0</column>
+                <row>3</row>
                 <thingsToChoose>
                     <GTEar>1</GTEar>
                     <GTHand>1</GTHand>
@@ -140,7 +181,10 @@
         </royalAid>
         <modExtensions>
             <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Prosthetics</category>
                 <column>0</column>
+                <row>5</row>
                 <thingsToChoose>
                     <HandTalon>1</HandTalon>
                     <ElbowBlade>1</ElbowBlade>

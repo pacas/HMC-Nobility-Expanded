@@ -11,13 +11,13 @@ namespace NobilityExpanded
     [StaticConstructorOnStartup]
     public static class PermitsCardCustomUtility
     {
-        private static Vector2 rightScrollPosition;
         public static RoyalTitlePermitDef selectedPermit;
         public static Faction selectedFaction;
-        public static readonly NE_Utility UtilityClass = new NE_Utility();
+        
+        private static Vector2 rightScrollPosition;
+        private static readonly NE_Utility Utility = new NE_Utility();
         private static readonly Vector2 PermitOptionSpacing = new Vector2(0.25f, 0.35f);
         private static readonly Texture2D SwitchFactionIcon = ContentFinder<Texture2D>.Get("UI/Icons/SwitchFaction");
-        private static readonly string spacing = "           ";
         
         private static bool ShowSwitchFactionButton
         {
@@ -100,17 +100,17 @@ namespace NobilityExpanded
                     "ReturnAllPermits_Desc".Translate(8.ToString().Named("BASEFAVORCOST"), returnCost.ToString().Named("FAVORCOST"),
                         selectedFaction.def.royalFavorLabel.Named("FAVOR")));
             }
+            
             Text.Font = GameFont.Medium;
             var currentTitle = pawn.royalty.GetCurrentTitle(selectedFaction);
             var statusLabelRect = new Rect(rect.xMin + 200f, rect.y - 2f, rect.xMax - 320f, 30f);
             var statusLabelText = "CurrentTitleCustom".Translate() +
                 (currentTitle != null
                     ? currentTitle.GetLabelFor(pawn).CapitalizeFirst()
-                    : (string)"None".Translate()) + spacing + "UnusedPermits".Translate() + ": " +
+                    : (string)"None".Translate()) + Utility.spacing + "UnusedPermits".Translate() + ": " +
                 pawn.royalty.GetPermitPoints(selectedFaction).ToString();
             if (!selectedFaction.def.royalFavorLabel.NullOrEmpty())
-                statusLabelText +=  spacing + selectedFaction.def.royalFavorLabel.CapitalizeFirst() + ": " +
-                                    pawn.royalty.GetFavor(selectedFaction).ToString();
+                statusLabelText +=  Utility.spacing + selectedFaction.def.royalFavorLabel.CapitalizeFirst() + ": " + pawn.royalty.GetFavor(selectedFaction).ToString();
             Widgets.Label(statusLabelRect, statusLabelText);
             
             var chooseCategoryRect = new Rect(rect.xMin, rect.y - 4f, 180f, 30f);
@@ -176,6 +176,7 @@ namespace NobilityExpanded
             Widgets.DrawMenuSection(rect);
             if (selectedFaction == null)
                 return;
+            // todo category optimization?
             var defsListForReading = DefDatabase<RoyalTitlePermitDef>.AllDefsListForReading;
             var outRect = rect.ContractedBy(10f);
             var middlePanel = new Rect();
@@ -189,28 +190,27 @@ namespace NobilityExpanded
             Widgets.BeginScrollView(outRect, ref rightScrollPosition, middlePanel);
             Widgets.BeginGroup(middlePanel.ContractedBy(10f));
             DrawLines();
-            foreach (var permit in defsListForReading)
-            {
-                if (!CanDrawPermit(permit)) 
+            foreach (var permit in defsListForReading) {
+                if (!CanDrawPermit(permit) || !IsFromCurrentCategory(permit)) 
                     continue;
 
-                var vector2 = DrawPosition(permit);
+                var drawPosition = DrawPosition(permit);
                 var textColor = Widgets.NormalOptionColor;
                 var bgColor = PermitUnlocked(permit, pawn)
                     ? TexUI.FinishedResearchColor
                     : TexUI.AvailResearchColor;
                 Color borderResearchColor;
-                var permitRect = new Rect(vector2.x, vector2.y, 200f, 50f);
+                var permitRect = new Rect(drawPosition.x, drawPosition.y, 200f, 50f);
                 switch (permit.permitPointCost) {
                     case 99:
                         textColor = new Color(1f, 0.5f, 0.0f, 1.0f);
                         bgColor = new Color(0.06f, 0.06f, 0.06f, 1);
-                        permitRect = new Rect(vector2.x, vector2.y, 300f, 50f);
+                        permitRect = new Rect(drawPosition.x, drawPosition.y, 300f, 50f);
                         break;
                     case 98:
                         textColor = new Color(1f, 0.8f, 0.2f, 1.0f);
                         bgColor = new Color(0.06f, 0.06f, 0.06f, 1);
-                        permitRect = new Rect(vector2.x - 25f, vector2.y, 200f, 50f);
+                        permitRect = new Rect(drawPosition.x - 25f, drawPosition.y, 200f, 50f);
                         break;
                     default:
                         if (!permit.AvailableForPawn(pawn, selectedFaction) && !PermitUnlocked(permit, pawn)) {
@@ -402,21 +402,33 @@ namespace NobilityExpanded
             OrderedStuffDef stuffDefOrdered = DefDatabase<OrderedStuffDef>.GetNamedSilentFail(permit.defName + NE_Utility.StuffPostfix);
             bool isExtExists = permit.HasModExtension<PermitExtensionList>();
             int index;
-            string tab = UtilityClass.curTab;
+            string tab = Utility.curTab;
             Vector2 newCoords;
-            if (stuffDefOrdered != null)
-            {
-                var categoryTable = DefDatabase<RoyaltyCoordsTableDef>.GetNamedSilentFail(NE_Utility.CoordsTable + tab + "_" + stuffDefOrdered.column);
+            if (stuffDefOrdered != null) {
+                var categoryTable = DefDatabase<RoyaltyCoordsTableDef>.GetNamedSilentFail(Utility.coordsTable + Utility.curTab + "_" + stuffDefOrdered.column);
                 index = categoryTable.loadOrder.IndexOf(permit);
                 newCoords = new Vector2(categoryTable.coordX * 200f, index * 50f);
             } else if (isExtExists) {
                 PermitExtensionList extension = permit.GetModExtension<PermitExtensionList>();
-                var column = extension.column ?? "0";
-                var categoryTable = DefDatabase<RoyaltyCoordsTableDef>.GetNamedSilentFail(NE_Utility.CoordsTable + tab + "_" + column);
-                index = categoryTable.loadOrder.IndexOf(permit);
-                newCoords = new Vector2(categoryTable.coordX * 200f, index * 50f);
+                var column = extension.column ?? 0;
+                var row = extension.row ?? 0;
+                switch (extension.type) {
+                    case "Title":
+                        newCoords = new Vector2(60f, row * 50f + 5f);
+                        break;
+                    case "Category":
+                        newCoords = new Vector2(120f, row * 50f + 5f);
+                        break;
+                    case "Permit":
+                        newCoords = new Vector2(column * 200f, row * 50f);
+                        break;
+                    default:
+                        Log.Error("Error in permit with defName " + permit.defName + " - wrong permit type");
+                        newCoords = new Vector2(-200f, -200f);
+                        break;
+                }
             } else {
-                RoyaltyCoordsTableDef categoryTable = DefDatabase<RoyaltyCoordsTableDef>.GetNamedSilentFail(NE_Utility.CoordsTable + tab + "_0");
+                RoyaltyCoordsTableDef categoryTable = DefDatabase<RoyaltyCoordsTableDef>.GetNamedSilentFail(Utility.coordsTable + Utility.curTab + "_0");
                 index = categoryTable.loadOrder.IndexOf(permit);
                 switch (permit.permitPointCost)
                 {
@@ -441,6 +453,23 @@ namespace NobilityExpanded
                 return false;
             return permit.faction == null || permit.faction == selectedFaction.def;
         }
+
+        private static bool IsFromCurrentCategory(RoyalTitlePermitDef permit) {
+            var ext = permit.GetModExtension<PermitExtensionList>();
+            if (ext != null && ext.category == Utility.curTab) {
+                return true;
+            }
+
+            if (DefDatabase<OrderedStuffDef>.GetNamedSilentFail(permit.defName + NE_Utility.StuffPostfix) != null) {
+                return true;
+            }
+
+            if (permit.permitPointCost > 89) {
+                return true;
+            }
+
+            return false;
+        }
         
         private static List<FloatMenuOption> SetCategoryButton()
         {
@@ -449,7 +478,7 @@ namespace NobilityExpanded
             var dict = new Dictionary<string, Action> {};
             foreach (var category in catTable.categories)
             {
-                dict.Add(NE_Utility.PermitCategory + category, () => UtilityClass.curTab = category);
+                dict.Add(NE_Utility.PermitCategory + category, () => Utility.curTab = category);
             }     
             foreach (var table in dict)
             {

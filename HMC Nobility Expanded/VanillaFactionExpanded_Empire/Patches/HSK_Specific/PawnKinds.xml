@@ -48,7 +48,7 @@
                 </value>
             </li>
             <li Class="PatchOperationReplace">
-                <xpath>/Defs/PawnKindDef[@Name="JanissaryBase"]/apparelRequired</xpath>
+                <xpath>Defs/PawnKindDef[@Name="JanissaryBase"]/apparelRequired</xpath>
                 <value>
                     <apparelRequired>
                         <li>VFEE_Apparel_JanissaryHelmet</li>
