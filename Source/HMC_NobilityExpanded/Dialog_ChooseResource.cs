@@ -70,19 +70,13 @@ namespace NobilityExpanded
             }
 
             if (acceptanceReport.Accepted) {
-                GenerateItems();
+                things = NE_Utility.GenerateItemByType(chosenThing);
                 Find.Targeter.BeginTargeting(worker);
                 Close();
                 return;
             }
                 
             Messages.Message(acceptanceReport.Reason, null, MessageTypeDefOf.RejectInput, false);
-        }
-        
-        private static void GenerateItems() {
-            var thing = ThingMaker.MakeThing(chosenThing.thing);
-            thing.stackCount = chosenThing.count;
-            things.Add(thing);
         }
         
         private static void DrawResourceChoices(float width, ref float curY)
