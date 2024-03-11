@@ -54,12 +54,13 @@ namespace NobilityExpanded
         private static readonly MethodInfo NobilityPermit = AccessTools.Method(typeof(PermitsCardCustomUtility), nameof(PermitsCardCustomUtility.DrawRecordsCard));
         public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {
-            foreach(var inst in instructions)
+            foreach (var inst in instructions)
             {
-                if(inst.Calls(VanillaPermit))
+                if (inst.Calls(VanillaPermit))
                 {
                     inst.operand = NobilityPermit;
                 }
+                
                 yield return inst;
             }
         }

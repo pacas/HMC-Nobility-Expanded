@@ -11,15 +11,13 @@ namespace NobilityExpanded
         public string category;
         [CanBeNull] public int? column;
         [CanBeNull] public int? row;
+        [CanBeNull] public List<ItemDataInfo> data;
         [CanBeNull] public string typeOfDrop;
         [CanBeNull] public string typeOfItem;
         [CanBeNull] public string typeOfQuality;
         [CanBeNull] public string ammoUsage;
-        [CanBeNull] public string quality;
+        // todo remove
         [CanBeNull] public List<ThingDef> stuffList;
-        [CanBeNull] public List<ThingDefCountClass> thingsToChoose;
         [CanBeNull] public List<PawnKindDef> pawnToChoose;
-        [CanBeNull] public List<int> ammunition;
-        [CanBeNull] public List<Gender> genders;
     }
 }

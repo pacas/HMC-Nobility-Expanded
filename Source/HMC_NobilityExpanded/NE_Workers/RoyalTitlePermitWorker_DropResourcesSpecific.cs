@@ -12,7 +12,6 @@ namespace NobilityExpanded
     {
         private static readonly Texture2D CommandTex = ContentFinder<Texture2D>.Get("UI/Commands/CallAid");
         private Faction faction;
-        public static ThingDef chosenThing = null;
 
         public override void OrderForceTarget(LocalTargetInfo target) {
             CallResources(target.Cell);
@@ -84,7 +83,7 @@ namespace NobilityExpanded
                 (def.royalAid.targetingRange <= 0.0 || target.Cell.DistanceTo(caller.Position) <=
                     (double)def.royalAid.targetingRange) && target.Cell.Walkable(map) && !target.Cell.Fogged(map);
             var window = new Dialog_ChooseResource();
-            window.SetData(this, map, caller, faction, def, free);
+            Dialog_ChooseResource.SetData(this, map, caller, faction, def, free);
             Find.WindowStack.Add(window);
         }
 

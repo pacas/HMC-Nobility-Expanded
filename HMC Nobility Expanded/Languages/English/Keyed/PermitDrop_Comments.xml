@@ -136,6 +136,14 @@
     <DropComment_SeedsTreeDrop>Trees... Eh, I wish there were more trees, sometimes all this concrete and metal luster is very annoying.</DropComment_SeedsTreeDrop>
     <DropComment_SeedsFruitDrop>Fruit is not often seen on our table, the most delicious fruits are a whole delicacy.</DropComment_SeedsFruitDrop>
 
+    <!-- Протезы -->
+    <DropComment_SimpleProsthetic>Simple prosthetics for all life's challenges.</DropComment_SimpleProsthetic>
+    <DropComment_BionicsProsthetic>Bionics are quite common on the worlds of the central segmentum, but almost none are produced in your, so shipping is a bit difficult.</DropComment_BionicsProsthetic>
+    <DropComment_CyberneticProsthetic>The best prosthetics in the entire empire - we don't have very many in our stock, all on demand in small batches.</DropComment_CyberneticProsthetic>
+    <DropComment_CombatProsthetic>Need to improve your fighters? This will help.</DropComment_CombatProsthetic>
+    <DropComment_CombatImplants>Need to improve your fighters? This will help.</DropComment_CombatImplants>
+    <DropComment_CombatImplantsAdvanced>The best combat implants for personal protection of titled persons.</DropComment_CombatImplantsAdvanced>
+
     <!-- Biotech -->
     <DropComment_BabyFoodDrop>Do you have children there? In that case, I'll even give you a little more food for the kids.</DropComment_BabyFoodDrop>
     <DropComment_VampiresFoodDrop>I hope it's just someone needs a blood transfusion. We don't usually receive such requests, be careful with such things.</DropComment_VampiresFoodDrop>

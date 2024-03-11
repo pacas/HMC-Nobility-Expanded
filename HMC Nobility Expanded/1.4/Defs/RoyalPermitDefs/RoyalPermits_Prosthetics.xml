@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <!-- Tools -->
-
+    
     <RoyalTitlePermitDef ParentName="DropResourcesTitle">
         <defName>ProstheticsPermitTitle</defName>
         <label>Prosthetics</label>
@@ -53,10 +52,12 @@
                 <type>Category</type>
                 <category>Prosthetics</category>
                 <column>0</column>
-                <row>6</row>
+                <row>7</row>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
+    
+    <!-- Category -->
 
     <RoyalTitlePermitDef ParentName="DropResourcesSpecific">
         <defName>SimpleProsthetic</defName>
@@ -65,9 +66,6 @@
         <minTitle>Acolyte</minTitle>
         <cooldownDays>21</cooldownDays>
         <royalAid>
-            <itemsToDrop>
-                <Steel>1</Steel>
-            </itemsToDrop>
             <favorCost>3</favorCost>
         </royalAid>
         <modExtensions>
@@ -76,15 +74,36 @@
                 <category>Prosthetics</category>
                 <column>0</column>
                 <row>2</row>
-                <thingsToChoose>
-                    <ArtificialNose>1</ArtificialNose>
-                    <SimpleProstheticHand>1</SimpleProstheticHand>
-                    <SimpleProstheticFoot>1</SimpleProstheticFoot>
-                    <SimpleProstheticLeg>1</SimpleProstheticLeg>
-                    <SimpleProstheticArm>1</SimpleProstheticArm>
-                    <SimpleProstheticHeart>1</SimpleProstheticHeart>
-                    <ArtificialPelvis>1</ArtificialPelvis>
-                </thingsToChoose>
+                <data>
+                    <li>
+                        <thing>SimpleProstheticHand</thing>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <thing>SimpleProstheticArm</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>SimpleProstheticFoot</thing>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <thing>SimpleProstheticLeg</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>ArtificialNose</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>SimpleProstheticHeart</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>ArtificialPelvis</thing>
+                        <count>1</count>
+                    </li>
+                </data>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
@@ -95,11 +114,8 @@
         <description>Request a drop of specific bionic prosthetic.</description>
         <minTitle>Legatus</minTitle>
         <cooldownDays>38</cooldownDays>
-        <permitPointCost>3</permitPointCost>
+        <permitPointCost>4</permitPointCost>
         <royalAid>
-            <itemsToDrop>
-                <Steel>1</Steel>
-            </itemsToDrop>
             <favorCost>7</favorCost>
         </royalAid>
         <modExtensions>
@@ -108,22 +124,68 @@
                 <category>Prosthetics</category>
                 <column>1</column>
                 <row>2</row>
-                <thingsToChoose>
-                    <BionicHand>1</BionicHand>
-                    <BionicFoot>1</BionicFoot>
-                    <BionicEar>1</BionicEar>
-                    <BionicJaw>1</BionicJaw>
-                    <BionicSpine>1</BionicSpine>
-                    <BionicEye>1</BionicEye>
-                    <BionicTongue>1</BionicTongue>
-                    <BionicLeg>1</BionicLeg>
-                    <BionicNeck>1</BionicNeck>
-                    <BionicLung>1</BionicLung>
-                    <BionicStomach>1</BionicStomach>
-                    <BionicLiver>1</BionicLiver>
-                    <BionicKidney>1</BionicKidney>
-                    <BionicHeart>1</BionicHeart>
-                </thingsToChoose>
+                <data>
+                    <li>
+                        <thing>BionicHand</thing>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <thing>BionicArm</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>BionicFoot</thing>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <thing>BionicLeg</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>BionicNeck</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>BionicSpine</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>BionicEar</thing>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <thing>BionicEye</thing>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <thing>BionicKidney</thing>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <thing>BionicLung</thing>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <thing>BionicLiver</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>BionicStomach</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>BionicHeart</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>BionicJaw</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>BionicTongue</thing>
+                        <count>1</count>
+                    </li>
+                </data>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
@@ -134,11 +196,8 @@
         <description>Request a drop of specific bionic prosthetic.</description>
         <minTitle>Count</minTitle>
         <cooldownDays>45</cooldownDays>
-        <permitPointCost>5</permitPointCost>
+        <permitPointCost>6</permitPointCost>
         <royalAid>
-            <itemsToDrop>
-                <Steel>1</Steel>
-            </itemsToDrop>
             <favorCost>10</favorCost>
         </royalAid>
         <modExtensions>
@@ -147,37 +206,79 @@
                 <category>Prosthetics</category>
                 <column>0</column>
                 <row>3</row>
-                <thingsToChoose>
-                    <GTEar>1</GTEar>
-                    <GTHand>1</GTHand>
-                    <GTFoot>1</GTFoot>
-                    <ArchotechEye>1</ArchotechEye>
-                    <GTHeart>1</GTHeart>
-                    <GTKidney>1</GTKidney>
-                    <GTLung>1</GTLung>
-                    <GTLiver>1</GTLiver>
-                    <GTstomach>1</GTstomach>
-                    <GTDentures>1</GTDentures>
-                    <GTNeck>1</GTNeck>
-                    <GTSpine>1</GTSpine>
-                    <ArchotechArm>1</ArchotechArm>
-                    <ArchotechLeg>1</ArchotechLeg>
-                </thingsToChoose>
+                <data>
+                    <li>
+                        <thing>GTHand</thing>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <thing>ArchotechArm</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>GTFoot</thing>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <thing>ArchotechLeg</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>GTNeck</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>GTSpine</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>GTEar</thing>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <thing>ArchotechEye</thing>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <thing>GTKidney</thing>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <thing>GTLung</thing>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <thing>GTLiver</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>GTHeart</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>GTstomach</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>GTDentures</thing>
+                        <count>1</count>
+                    </li>
+                </data>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
+    
+    <!-- Category -->
     
     <RoyalTitlePermitDef ParentName="DropResourcesSpecific">
         <defName>CombatProsthetic</defName>
         <label>Combat prosthetic</label>
         <description>Request a drop of specific combat prosthetic</description>
         <minTitle>Praetor</minTitle>
+        <permitPointCost>2</permitPointCost>
         <cooldownDays>35</cooldownDays>
         <royalAid>
-            <itemsToDrop>
-                <Steel>1</Steel>
-            </itemsToDrop>
-            <favorCost>7</favorCost>
+            <favorCost>10</favorCost>
         </royalAid>
         <modExtensions>
             <li Class="NobilityExpanded.PermitExtensionList">
@@ -185,32 +286,127 @@
                 <category>Prosthetics</category>
                 <column>0</column>
                 <row>5</row>
-                <thingsToChoose>
-                    <HandTalon>1</HandTalon>
-                    <ElbowBlade>1</ElbowBlade>
-                    <KneeSpike>1</KneeSpike>
-                    <VenomFangs>1</VenomFangs>
-                    <VenomTalon>1</VenomTalon>
-                    <PowerClaw>1</PowerClaw>
-                    <ProtectiveExoskeleton>1</ProtectiveExoskeleton>
-                </thingsToChoose>
+                <data>
+                    <li>
+                        <thing>HandTalon</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>ElbowBlade</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>KneeSpike</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>VenomFangs</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>VenomTalon</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>PowerClaw</thing>
+                        <count>1</count>
+                    </li>
+                </data>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
 
-    <!-- Battle Implants
-    HealingEnhancer
-    ToughskinGland
-    ArmorskinGland
-    StoneskinGland
-    Coagulator
-    Painstopper
-    DeathAcidifier
-    TacticalCorneaImplant
-    AuxiliaryAI_Sharpshooter
-    AuxiliaryAI_Commando
-    AuxiliaryAI_Brawler
-     -->
+    <RoyalTitlePermitDef ParentName="DropResourcesSpecific">
+        <defName>CombatImplants</defName>
+        <label>Combat Implants</label>
+        <description>Request a drop of specific combat prosthetic</description>
+        <minTitle>Praetor</minTitle>
+        <permitPointCost>2</permitPointCost>
+        <cooldownDays>35</cooldownDays>
+        <royalAid>
+            <favorCost>10</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Prosthetics</category>
+                <column>1</column>
+                <row>5</row>
+                <data>
+                    <li>
+                        <thing>HealingEnhancer</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>ToughskinGland</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>ArmorskinGland</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>Coagulator</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>Painstopper</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>DeathAcidifier</thing>
+                        <count>1</count>
+                    </li>
+                </data>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesSpecific">
+        <defName>CombatImplantsAdvanced</defName>
+        <label>Advanced Combat Implants</label>
+        <description>Request a drop of specific combat prosthetic</description>
+        <minTitle>Viscount</minTitle>
+        <permitPointCost>4</permitPointCost>
+        <cooldownDays>45</cooldownDays>
+        <royalAid>
+            <favorCost>10</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Prosthetics</category>
+                <column>0</column>
+                <row>6</row>
+                <data>
+                    <li>
+                        <thing>StoneskinGland</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>TacticalCorneaImplant</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>AuxiliaryAI_Sharpshooter</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>AuxiliaryAI_Commando</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>AuxiliaryAI_Brawler</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>ProtectiveExoskeleton</thing>
+                        <count>1</count>
+                    </li>
+                </data>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
 
     <!-- Productive Prosthetic
     DrillArm

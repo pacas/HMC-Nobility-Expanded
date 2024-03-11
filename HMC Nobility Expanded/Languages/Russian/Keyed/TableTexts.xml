@@ -6,6 +6,7 @@
     <ChoosePermitCategory>Выбрать категорию</ChoosePermitCategory>
     <CurrentTitleCustom>Титул: </CurrentTitleCustom>
     <PickResourceForDrop>Выберите предмет для запроса: </PickResourceForDrop>
+    <ChosenResourceCount>Количество: </ChosenResourceCount>
     <ChosenResourceForDropDesc>О предмете: </ChosenResourceForDropDesc>
     
     <!-- ===== Качество ===== -->
