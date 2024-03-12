@@ -193,9 +193,7 @@ namespace NobilityExpanded
 
                 var drawPosition = DrawPosition(permit);
                 var textColor = Widgets.NormalOptionColor;
-                var bgColor = PermitUnlocked(permit, pawn)
-                    ? TexUI.FinishedResearchColor
-                    : TexUI.AvailResearchColor;
+                var bgColor = PermitUnlocked(permit, pawn) ? TexUI.FinishedResearchColor : TexUI.AvailResearchColor;
                 Color borderResearchColor;
                 var permitRect = new Rect(drawPosition.x, drawPosition.y, 200f, 50f);
                 switch (permit.permitPointCost) {
@@ -273,9 +271,9 @@ namespace NobilityExpanded
             var end = new Vector2();
             var defsListForReading = DefDatabase<RoyalTitlePermitDef>.AllDefsListForReading;
             for (var columnIndex = 0; columnIndex < 2; ++columnIndex)
-                foreach (var permit in defsListForReading)
-                {
-                    if (!CanDrawPermit(permit)) continue;
+                foreach (var permit in defsListForReading) {
+                    if (!CanDrawPermit(permit) || !IsFromCurrentCategory(permit)) 
+                        continue;
                     var vector1 = DrawPosition(permit);
                     start.x = vector1.x;
                     start.y = vector1.y + 25f;

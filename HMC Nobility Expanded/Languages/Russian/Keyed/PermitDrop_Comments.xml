@@ -143,6 +143,9 @@
     <DropComment_CombatProsthetic>Нужно улучшить ваших бойцов? Это поможет.</DropComment_CombatProsthetic>
     <DropComment_CombatImplants>Нужно улучшить ваших бойцов? Это поможет.</DropComment_CombatImplants>
     <DropComment_CombatImplantsAdvanced>Лучшие боевые импланты для личной охраны титулованных персон.</DropComment_CombatImplantsAdvanced>
+    <DropComment_ProductionProsthetic>Нужно улучшить ваших работников? Это поможет.</DropComment_ProductionProsthetic>
+    <DropComment_ProductionImplants>Нужно улучшить ваших работников? Это поможет.</DropComment_ProductionImplants>
+    <DropComment_ProductionImplantsAdvanced>Лучшие импланты для улучшения всех рабочих показателей для лучшей прислуги титулованных персон.</DropComment_ProductionImplantsAdvanced>
 
     <!-- Biotech -->
     <DropComment_BabyFoodDrop>У вас там дети есть? В таком случае я вам немного побольше даже положу еды детишкам.</DropComment_BabyFoodDrop>

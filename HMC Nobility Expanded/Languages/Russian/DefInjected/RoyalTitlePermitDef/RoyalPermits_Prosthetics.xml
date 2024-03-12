@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    
+    <!-- инструменты -->
+    <ProstheticsPermitTitle.label>протезы и импланты</ProstheticsPermitTitle.label>
+    <ProstheticsPermitTitle.description>Запрос доставки различных протезов.</ProstheticsPermitTitle.description>
+    <ProstheticsPermitSmallTitle.label>искусственные части тела</ProstheticsPermitSmallTitle.label>
+    <ProstheticsPermitSmallTitle.description>Запрос доставки протезов.</ProstheticsPermitSmallTitle.description>
+    <CombatProstheticsPermitSmallTitle.label>боевые</CombatProstheticsPermitSmallTitle.label>
+    <CombatProstheticsPermitSmallTitle.description>Запрос доставки боевых протезов и имплантов.</CombatProstheticsPermitSmallTitle.description>
+    <ProductiveProstheticsPermitSmallTitle.label>производственные</ProductiveProstheticsPermitSmallTitle.label>
+    <ProductiveProstheticsPermitSmallTitle.description>Запрос доставки производственных протезов и имплантов.</ProductiveProstheticsPermitSmallTitle.description>
+    
+    <!-- обычные -->
+    <SimpleProsthetic.label>простые протезы</SimpleProsthetic.label>
+    <SimpleProsthetic.description>Запрос доставки простого протеза.</SimpleProsthetic.description>
+    <BionicsProsthetic.label>бионические протезы</BionicsProsthetic.label>
+    <BionicsProsthetic.description>Запрос доставки бионического протеза.</BionicsProsthetic.description>
+    <CyberneticProsthetic.label>кибернетические протезы</CyberneticProsthetic.label>
+    <CyberneticProsthetic.description>Запрос доставки кибернетического протеза.</CyberneticProsthetic.description>
+    
+    <!-- боевые -->
+    <CombatProsthetic.label>боевые протезы</CombatProsthetic.label>
+    <CombatProsthetic.description>Запрос доставки боевого протеза.</CombatProsthetic.description>
+    <CombatImplants.label>боевые импланты</CombatImplants.label>
+    <CombatImplants.description>Запрос доставки боевого импланта.</CombatImplants.description>
+    <CombatImplantsAdvanced.label>продвинутые боевые импланты</CombatImplantsAdvanced.label>
+    <CombatImplantsAdvanced.description>Запрос доставки продвинутого боевого импланта.</CombatImplantsAdvanced.description>
+
+    <!-- производственные -->
+    <ProductionProsthetic.label>производственные протезы</ProductionProsthetic.label>
+    <ProductionProsthetic.description>Запрос доставки производственного протеза.</ProductionProsthetic.description>
+    <ProductionImplants.label>производственные импланты</ProductionImplants.label>
+    <ProductionImplants.description>Запрос доставки производственного импланта.</ProductionImplants.description>
+    <ProductionImplantsAdvanced.label>продвинутые производственные импланты</ProductionImplantsAdvanced.label>
+    <ProductionImplantsAdvanced.description>Запрос доставки продвинутого производственного импланта.</ProductionImplantsAdvanced.description>
+
+</LanguageData>
