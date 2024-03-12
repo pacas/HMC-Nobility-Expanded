@@ -11,13 +11,14 @@ namespace NobilityExpanded
     {
         private float scrollHeight;
         private Vector2 scrollPosition;
-        private static RoyalTitlePermitWorker_DropResourcesSpecific worker;
+        private static RoyalTitlePermitWorker_DropResourcesWithDialog worker;
         private static ItemDataInfo chosenThing;
         private static Pawn curPawn;
         private static Map curMap;
         private static Faction curFaction;
         private static RoyalTitlePermitDef curDef;
         private static bool isFree;
+        private static bool isOnMap;
         private static List<ItemDataInfo> resourceChoices;
         private static List<Thing> things = new List<Thing>();
         
@@ -71,7 +72,12 @@ namespace NobilityExpanded
 
             if (acceptanceReport.Accepted) {
                 things = NE_Utility.GenerateItemByType(chosenThing);
-                Find.Targeter.BeginTargeting(worker);
+                if (isOnMap) {
+                    Find.Targeter.BeginTargeting(worker);
+                } else {
+                    CallResourcesToCaravan(curPawn, curFaction, isFree);
+                }
+                
                 Close();
                 return;
             }
@@ -102,7 +108,9 @@ namespace NobilityExpanded
             return !SelectionsMade() ? "ChooseThisDrop".Translate() : AcceptanceReport.WasAccepted;
         }
 
-        public static void SetData(RoyalTitlePermitWorker_DropResourcesSpecific createdWorker, Map map, Pawn caller, Faction faction, RoyalTitlePermitDef def, bool free) {
+        public static void SetData(RoyalTitlePermitWorker_DropResourcesWithDialog createdWorker, Map map, Pawn caller, 
+            Faction faction, RoyalTitlePermitDef def, bool free, bool isNotCaravan
+            ) {
             resourceChoices = def.GetModExtension<PermitExtensionList>().data;
             chosenThing = resourceChoices?.First();
             worker = createdWorker;
@@ -111,6 +119,7 @@ namespace NobilityExpanded
             curFaction = faction;
             curDef = def;
             isFree = free;
+            isOnMap = isNotCaravan;
         }
 
         public static void CallResources(IntVec3 cell) {
@@ -127,10 +136,10 @@ namespace NobilityExpanded
             curPawn.royalty.TryRemoveFavor(curFaction, curDef.royalAid.favorCost);
         }
 
-        public static void CallResourcesToCaravan() {
+        public static void CallResourcesToCaravan(Pawn caller, Faction faction, bool free) {
             var caravan = curPawn.GetCaravan();
-            foreach (var t in things) {
-                CaravanInventoryUtility.GiveThing(caravan, t);
+            foreach (var thing in things) {
+                CaravanInventoryUtility.GiveThing(caravan, thing);
             }
             
             Messages.Message(

@@ -62,8 +62,7 @@ namespace NobilityExpanded
             var pawnToChoose = GetPermitPawnList(selectedPermit);
             var isPawnsExists = pawnToChoose != null;
             var isStuffExists = stuffList != null;
-            var isRoyalAidExists = selectedPermit.royalAid != null;
-
+            var isRoyalAidExists = selectedPermit.royalAid?.itemsToDrop != null;
             bool isThingsExists = stuffDefOrdered != null && stuffDefOrdered.thingsToChoose != null && stuffDefOrdered.thingsToChoose.Count > 1;
 
             if (isThingsExists) {
@@ -85,7 +84,6 @@ namespace NobilityExpanded
                     label += "  - " + t.LabelCap + "\n";
                 }
             } else if (isRoyalAidExists &&
-                     selectedPermit.royalAid.itemsToDrop != null &&
                      selectedPermit.royalAid.itemsToDrop[0].thingDef.defName != "Steel" &&
                      isStuffExists)
             {
@@ -100,7 +98,6 @@ namespace NobilityExpanded
 
             if (isThingsExists && isStuffExists && isRoyalAidExists &&
                 stuffList.Count == 1 &&
-                selectedPermit.royalAid.itemsToDrop != null &&
                 selectedPermit.royalAid.itemsToDrop[0].thingDef.defName == "Steel")
             {
                 if (stuffDefOrdered.thingsToChoose.Count != 1) {
@@ -189,6 +186,7 @@ namespace NobilityExpanded
             }
             
             thing.stackCount = item.count;
+            things.Add(thing);
             if (item.additionalItems != null) {
                 foreach (var additionalItem in item.additionalItems) {
                     things.AddRange(GenerateItemByType(additionalItem));

@@ -285,8 +285,10 @@
         <Compile Include="NE_Data.cs" />
         <Compile Include="NE_Workers\RoyalTitlePermitWorker_CallPawns.cs" />
         <Compile Include="NE_Workers\RoyalTitlePermitWorker_DropBuildings.cs" />
+        <Compile Include="NE_Workers\RoyalTitlePermitWorker_DropResourcesBase.cs" />
         <Compile Include="NE_Workers\RoyalTitlePermitWorker_DropResourcesPlus.cs" />
-        <Compile Include="NE_Workers\RoyalTitlePermitWorker_DropResourcesSpecific.cs" />
+        <Compile Include="NE_Workers\RoyalTitlePermitWorker_DropResourcesWithDialog.cs" />
+        <Compile Include="NE_Workers\RoyalTitlePermitWorker_DropResourcesUpdated.cs" />
         <Compile Include="PermitsCardCustomUtility.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>

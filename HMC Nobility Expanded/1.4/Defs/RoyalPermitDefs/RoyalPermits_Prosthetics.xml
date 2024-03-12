@@ -59,7 +59,7 @@
     
     <!-- Category -->
 
-    <RoyalTitlePermitDef ParentName="DropResourcesSpecific">
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
         <defName>SimpleProsthetic</defName>
         <label>Simple prosthetic</label>
         <description>Request a drop of specific simple prosthetic</description>
@@ -108,7 +108,7 @@
         </modExtensions>
     </RoyalTitlePermitDef>
 
-    <RoyalTitlePermitDef ParentName="DropResourcesSpecific">
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
         <defName>BionicsProsthetic</defName>
         <label>Bionic Prosthetic</label>
         <description>Request a drop of specific bionic prosthetic.</description>
@@ -190,7 +190,7 @@
         </modExtensions>
     </RoyalTitlePermitDef>
 
-    <RoyalTitlePermitDef ParentName="DropResourcesSpecific">
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
         <defName>CyberneticProsthetic</defName>
         <label>Cybernetic Prosthetic</label>
         <description>Request a drop of specific bionic prosthetic.</description>
@@ -270,7 +270,7 @@
     
     <!-- Category -->
     
-    <RoyalTitlePermitDef ParentName="DropResourcesSpecific">
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
         <defName>CombatProsthetic</defName>
         <label>Combat prosthetic</label>
         <description>Request a drop of specific combat prosthetic</description>
@@ -316,7 +316,7 @@
         </modExtensions>
     </RoyalTitlePermitDef>
 
-    <RoyalTitlePermitDef ParentName="DropResourcesSpecific">
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
         <defName>CombatImplants</defName>
         <label>Combat Implants</label>
         <description>Request a drop of specific combat prosthetic</description>
@@ -362,7 +362,7 @@
         </modExtensions>
     </RoyalTitlePermitDef>
 
-    <RoyalTitlePermitDef ParentName="DropResourcesSpecific">
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
         <defName>CombatImplantsAdvanced</defName>
         <label>Advanced Combat Implants</label>
         <description>Request a drop of specific combat prosthetic</description>

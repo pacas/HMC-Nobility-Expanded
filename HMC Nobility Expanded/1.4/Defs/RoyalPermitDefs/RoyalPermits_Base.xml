@@ -22,9 +22,13 @@
     <RoyalTitlePermitDef ParentName="MainDropBase" Name="DropResourcesPlus" Abstract="True">
         <workerClass>NobilityExpanded.RoyalTitlePermitWorker_DropResourcesPlus</workerClass>
     </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="MainDropBase" Name="DropResourcesUpdated" Abstract="True">
+        <workerClass>NobilityExpanded.RoyalTitlePermitWorker_DropResourcesUpdated</workerClass>
+    </RoyalTitlePermitDef>
     
-    <RoyalTitlePermitDef ParentName="MainDropBase" Name="DropResourcesSpecific" Abstract="True">
-        <workerClass>NobilityExpanded.RoyalTitlePermitWorker_DropResourcesSpecific</workerClass>
+    <RoyalTitlePermitDef ParentName="MainDropBase" Name="DropResourcesWithDialog" Abstract="True">
+        <workerClass>NobilityExpanded.RoyalTitlePermitWorker_DropResourcesWithDialog</workerClass>
     </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="MainDropBase" Name="DropBuildings" Abstract="True">
@@ -99,8 +103,6 @@
     
     <!-- todo -->
     <!-- здания? -->
-    <!-- бионика? -->
-    <!-- квест присмотра за ребенком? -->
     <!-- гранаты -->
     <!-- рабы -->
     <!-- 1) Current royalty crash quest minus defence plus care for a couple of days? -->
