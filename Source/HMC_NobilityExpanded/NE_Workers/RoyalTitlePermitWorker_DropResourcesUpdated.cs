@@ -21,7 +21,7 @@ namespace NobilityExpanded
             }
 
             foreach (var item in extension.data) {
-                list.AddRange(NE_Utility.GenerateItemByType(item));
+                list.AddRange(Utilities.ItemGenerator.GenerateItemByType(item));
             }
 
             if (!list.Any()) {
@@ -51,7 +51,7 @@ namespace NobilityExpanded
             }
             
             foreach (var item in extension.data) {
-                list.AddRange(NE_Utility.GenerateItemByType(item));
+                list.AddRange(Utilities.ItemGenerator.GenerateItemByType(item));
             }
             
             if (!list.Any()) {

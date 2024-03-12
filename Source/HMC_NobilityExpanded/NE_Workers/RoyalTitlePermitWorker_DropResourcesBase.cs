@@ -7,6 +7,7 @@ using Verse;
 
 namespace NobilityExpanded
 {
+    [StaticConstructorOnStartup]
     public class RoyalTitlePermitWorker_DropResourcesBase : RoyalTitlePermitWorker_Targeted
     {
         protected static readonly Texture2D CommandTex = ContentFinder<Texture2D>.Get("UI/Commands/CallAid");

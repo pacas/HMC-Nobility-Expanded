@@ -198,11 +198,11 @@ namespace NobilityExpanded
             switch (stuffDefOrdered.typeOfQuality)
             {
                 case "Specific":
-                    return new ThingStuffPairWithQuality(item, stuff, NE_Utility.GenerateQualityFromString(stuffDefOrdered.quality)).MakeThing();
+                    return new ThingStuffPairWithQuality(item, stuff, Utilities.ItemGenerator.GenerateQualityFromString(stuffDefOrdered.quality)).MakeThing();
                 case "Range":
-                    return new ThingStuffPairWithQuality(item, stuff, NE_Utility.GenerateQualityFromStringRange(stuffDefOrdered.quality)).MakeThing();
+                    return new ThingStuffPairWithQuality(item, stuff, Utilities.ItemGenerator.GenerateQualityFromStringRange(stuffDefOrdered.quality)).MakeThing();
                 default:
-                    return new ThingStuffPairWithQuality(item, stuff, NE_Utility.GenerateQualityFromString(stuffDefOrdered.quality)).MakeThing();
+                    return new ThingStuffPairWithQuality(item, stuff, Utilities.ItemGenerator.GenerateQualityFromString(stuffDefOrdered.quality)).MakeThing();
             }
         }
         
@@ -219,13 +219,13 @@ namespace NobilityExpanded
             switch (stuffDefOrdered.typeOfQuality)
             {
                 case "Specific":
-                    comp.SetQuality(NE_Utility.GenerateQualityFromString(stuffDefOrdered.quality), ArtGenerationContext.Outsider);
+                    comp.SetQuality(Utilities.ItemGenerator.GenerateQualityFromString(stuffDefOrdered.quality), ArtGenerationContext.Outsider);
                     break;
                 case "Range":
-                    comp.SetQuality(NE_Utility.GenerateQualityFromStringRange(stuffDefOrdered.quality), ArtGenerationContext.Outsider);
+                    comp.SetQuality(Utilities.ItemGenerator.GenerateQualityFromStringRange(stuffDefOrdered.quality), ArtGenerationContext.Outsider);
                     break;
                 default:
-                    comp.SetQuality(NE_Utility.GenerateQualityFromString(stuffDefOrdered.quality), ArtGenerationContext.Outsider);
+                    comp.SetQuality(Utilities.ItemGenerator.GenerateQualityFromString(stuffDefOrdered.quality), ArtGenerationContext.Outsider);
                     break;
             }
             return thing;

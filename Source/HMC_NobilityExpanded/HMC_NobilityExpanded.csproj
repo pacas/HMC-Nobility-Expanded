@@ -281,8 +281,9 @@
         <Compile Include="NE_Defs\PermitExtensionList.cs" />
         <Compile Include="NE_Defs\RoyaltyCoordsTableDef.cs" />
         <Compile Include="NE_Defs\RoyaltyPermitCategoryTableDef.cs" />
-        <Compile Include="NE_Utility.cs" />
-        <Compile Include="NE_Data.cs" />
+        <Compile Include="NE_Utilities\ItemGenerator.cs" />
+        <Compile Include="NE_Utilities\TextFormatter.cs" />
+        <Compile Include="NE_Utilities\VarsExposer.cs" />
         <Compile Include="NE_Workers\RoyalTitlePermitWorker_CallPawns.cs" />
         <Compile Include="NE_Workers\RoyalTitlePermitWorker_DropBuildings.cs" />
         <Compile Include="NE_Workers\RoyalTitlePermitWorker_DropResourcesBase.cs" />

@@ -71,7 +71,7 @@ namespace NobilityExpanded
             }
 
             if (acceptanceReport.Accepted) {
-                things = NE_Utility.GenerateItemByType(chosenThing);
+                things = Utilities.ItemGenerator.GenerateItemByType(chosenThing);
                 if (isOnMap) {
                     Find.Targeter.BeginTargeting(worker);
                 } else {
