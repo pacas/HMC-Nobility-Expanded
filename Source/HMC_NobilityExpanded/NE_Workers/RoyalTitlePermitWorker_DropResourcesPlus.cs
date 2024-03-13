@@ -52,11 +52,11 @@ namespace NobilityExpanded
             if (workerDropResources.FillCaravanAidOption(pawn, faction, out description, out workerDropResources.free,
                     out disableNotEnoughFavor))
             {
-                var commandAction1 = new Command_Action();
-                commandAction1.defaultLabel = workerDropResources.def.LabelCap + " (" + pawn.LabelShort + ")";
-                commandAction1.defaultDesc = description;
-                commandAction1.icon = CommandTex;
-                commandAction1.action = () =>
+                var commandAction = new Command_Action();
+                commandAction.defaultLabel = workerDropResources.def.LabelCap + " (" + pawn.LabelShort + ")";
+                commandAction.defaultDesc = description;
+                commandAction.icon = CommandTex;
+                commandAction.action = () =>
                 {
                     var caravan = pawn.GetCaravan();
                     var massUsage = caravan.MassUsage;
@@ -70,13 +70,12 @@ namespace NobilityExpanded
                     else
                         CallResourcesToCaravan(pawn, faction, free);
                 };
-                var commandAction2 = commandAction1;
                 if (faction.HostileTo(Faction.OfPlayer))
-                    commandAction2.Disable(
+                    commandAction.Disable(
                         "CommandCallRoyalAidFactionHostile".Translate(faction.Named("FACTION")));
                 if (disableNotEnoughFavor)
-                    commandAction2.Disable("CommandCallRoyalAidNotEnoughFavor".Translate());
-                yield return commandAction2;
+                    commandAction.Disable("CommandCallRoyalAidNotEnoughFavor".Translate());
+                yield return commandAction;
             }
         }
 
@@ -199,11 +198,11 @@ namespace NobilityExpanded
             switch (stuffDefOrdered.typeOfQuality)
             {
                 case "Specific":
-                    return new ThingStuffPairWithQuality(item, stuff, NobilitySupportUtility.GenerateFromString(stuffDefOrdered.quality)).MakeThing();
+                    return new ThingStuffPairWithQuality(item, stuff, Utilities.ItemGenerator.GenerateQualityFromString(stuffDefOrdered.quality)).MakeThing();
                 case "Range":
-                    return new ThingStuffPairWithQuality(item, stuff, NobilitySupportUtility.GenerateFromStringRange(stuffDefOrdered.quality)).MakeThing();
+                    return new ThingStuffPairWithQuality(item, stuff, Utilities.ItemGenerator.GenerateQualityFromStringRange(stuffDefOrdered.quality)).MakeThing();
                 default:
-                    return new ThingStuffPairWithQuality(item, stuff, NobilitySupportUtility.GenerateFromString(stuffDefOrdered.quality)).MakeThing();
+                    return new ThingStuffPairWithQuality(item, stuff, Utilities.ItemGenerator.GenerateQualityFromString(stuffDefOrdered.quality)).MakeThing();
             }
         }
         
@@ -220,18 +219,16 @@ namespace NobilityExpanded
             switch (stuffDefOrdered.typeOfQuality)
             {
                 case "Specific":
-                    comp.SetQuality(NobilitySupportUtility.GenerateFromString(stuffDefOrdered.quality), ArtGenerationContext.Outsider);
+                    comp.SetQuality(Utilities.ItemGenerator.GenerateQualityFromString(stuffDefOrdered.quality), ArtGenerationContext.Outsider);
                     break;
                 case "Range":
-                    comp.SetQuality(NobilitySupportUtility.GenerateFromStringRange(stuffDefOrdered.quality), ArtGenerationContext.Outsider);
+                    comp.SetQuality(Utilities.ItemGenerator.GenerateQualityFromStringRange(stuffDefOrdered.quality), ArtGenerationContext.Outsider);
                     break;
                 default:
-                    comp.SetQuality(NobilitySupportUtility.GenerateFromString(stuffDefOrdered.quality), ArtGenerationContext.Outsider);
+                    comp.SetQuality(Utilities.ItemGenerator.GenerateQualityFromString(stuffDefOrdered.quality), ArtGenerationContext.Outsider);
                     break;
             }
             return thing;
         }
-
-        
     }
 }

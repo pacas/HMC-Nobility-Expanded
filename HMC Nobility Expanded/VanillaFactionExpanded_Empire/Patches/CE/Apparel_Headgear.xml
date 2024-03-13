@@ -234,13 +234,6 @@
                     </equippedStatOffsets>
                 </value>
             </li>
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[defName="VFEE_Apparel_JanissaryHelmet"]/costList/Plasteel</xpath>
-                <value>
-                    <Plasteel>50</Plasteel>
-                    <DevilstrandCloth>15</DevilstrandCloth>
-                </value>
-            </li>
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="VFEE_Apparel_JanissaryHelmet"]/apparel</xpath>
                 <value>

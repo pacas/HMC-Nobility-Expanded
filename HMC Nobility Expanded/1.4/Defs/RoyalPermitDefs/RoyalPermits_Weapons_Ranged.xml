@@ -44,6 +44,9 @@
             <li>WoodLog</li>
             <li>WoodLog</li>
         </stuffList>
+        <typeOfDrop>Stuff</typeOfDrop>
+        <typeOfItem>Random</typeOfItem>
+        <ammoUsage>Gun</ammoUsage>
     </NobilityExpanded.OrderedStuffDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">

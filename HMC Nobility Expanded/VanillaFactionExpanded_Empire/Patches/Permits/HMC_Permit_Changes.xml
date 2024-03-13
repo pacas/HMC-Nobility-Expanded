@@ -2,44 +2,48 @@
 <Patch>
     <Operation Class="PatchOperationSequence">
         <operations>
+            
+            <!-- Armor -->
              <li Class="PatchOperationReplace">
-                <xpath>/Defs/RoyalTitlePermitDef[defName="IndustrialArmorDrop"]/minTitle</xpath>
+                <xpath>Defs/RoyalTitlePermitDef[defName="IndustrialArmorDrop"]/minTitle</xpath>
                 <value>
                     <minTitle>Praetor</minTitle>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
-                <xpath>/Defs/RoyalTitlePermitDef[defName="SpacerArmorDropPlus"]/minTitle</xpath>
+                <xpath>Defs/RoyalTitlePermitDef[defName="SpacerArmorDropPlus"]/minTitle</xpath>
                 <value>
                     <minTitle>Count</minTitle>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
-                <xpath>/Defs/RoyalTitlePermitDef[defName="UltraArmorDrop"]/minTitle</xpath>
+                <xpath>Defs/RoyalTitlePermitDef[defName="UltraArmorDrop"]/minTitle</xpath>
                 <value>
                     <minTitle>Margrave</minTitle>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
-                <xpath>/Defs/RoyalTitlePermitDef[defName="UltraArmorDropPlus"]/minTitle</xpath>
+                <xpath>Defs/RoyalTitlePermitDef[defName="UltraArmorDropPlus"]/minTitle</xpath>
                 <value>
                     <minTitle>Consul</minTitle>
                 </value>
             </li>
+            
+            <!-- Weapons -->
             <li Class="PatchOperationReplace">
-                <xpath>/Defs/RoyalTitlePermitDef[defName="ShotgunDropPlus"]/minTitle</xpath>
+                <xpath>Defs/RoyalTitlePermitDef[defName="ShotgunDropPlus"]/minTitle</xpath>
                 <value>
                     <minTitle>Baron</minTitle>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
-                <xpath>/Defs/RoyalTitlePermitDef[defName="RifleDropPlus"]/minTitle</xpath>
+                <xpath>Defs/RoyalTitlePermitDef[defName="RifleDropPlus"]/minTitle</xpath>
                 <value>
                     <minTitle>Viscount</minTitle>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
-                <xpath>/Defs/RoyalTitlePermitDef[
+                <xpath>Defs/RoyalTitlePermitDef[
                 defName="SniperRifleDropPlus" or
                 defName="LauncherDropPlus" or
                 defName="BlasterDrop" or
@@ -51,12 +55,27 @@
                     <minTitle>Margrave</minTitle>
                 </value>
             </li>
-            
+
+            <!-- Turrets -->
             <li Class="PatchOperationReplace">
-                <xpath>/Defs/RoyalTitlePermitDef[
+                <xpath>Defs/RoyalTitlePermitDef[
                 defName="HighTechLightAutoTurretDrop" or
                 defName="HighTechHeavyAutoTurretDrop"
                 ]/minTitle</xpath>
+                <value>
+                    <minTitle>Margrave</minTitle>
+                </value>
+            </li>
+
+            <!-- Prosthetics -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/RoyalTitlePermitDef[defName="BionicsProsthetic"]/minTitle</xpath>
+                <value>
+                    <minTitle>Baron</minTitle>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/RoyalTitlePermitDef[defName="CyberneticProsthetic"]/minTitle</xpath>
                 <value>
                     <minTitle>Margrave</minTitle>
                 </value>

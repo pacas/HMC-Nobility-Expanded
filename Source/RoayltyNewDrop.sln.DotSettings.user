@@ -1,5 +1,6 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=F_003A_005CPython_005Cprojects_005CRoayltyNewDrop_005CRoayltyNewDrop_005Cbin_005CDebug_005C0Harmony_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=G_003A_005CSteam_005Csteamapps_005Cworkshop_005Ccontent_005C294100_005C2938820380_005C1_002E4_005CAssemblies_005CVFEEmpire_002Edll/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=J_003A_005CSteam_005Csteamapps_005Ccommon_005CRimWorld_005CMods_005CCombatExtended_005CAssemblies_005CCombatExtended_002Edll/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=J_003A_005CSteam_005Csteamapps_005Ccommon_005CRimWorld_005CMods_005CHarmony_005CCurrent_005CAssemblies_005C0Harmony_002Edll/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=J_003A_005CSteam_005Csteamapps_005Ccommon_005CRimWorld_005CMods_005CHarmony_005CCurrent_005CAssemblies_005CHarmonyMod_002Edll/@EntryIndexedValue">True</s:Boolean>
@@ -83,7 +84,7 @@
 	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=J_003A_005CSteam_005Csteamapps_005Ccommon_005CRimWorld_005CRimWorldWin64_005FData_005CManaged_005CUnityEngine_002EWindModule_002Edll/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=J_003A_005CSteam_005Csteamapps_005Ccommon_005CRimWorld_005CRimWorldWin64_005FData_005CManaged_005CUnityEngine_002EXRModule_002Edll/@EntryIndexedValue">True</s:Boolean>
 	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
-  &lt;Assembly Path="J:\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll" /&gt;&#xD;
-  &lt;Assembly Path="J:\Steam\steamapps\common\RimWorld\Mods\CombatExtended\Assemblies\CombatExtended.dll" /&gt;&#xD;
-  &lt;Assembly Path="J:\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll" /&gt;&#xD;
+  &lt;Assembly Path="F:\Development\Mods\RW-Empire-Rework\Source\HMC_NobilityExpanded\bin\Debug\Assembly-CSharp.dll" /&gt;&#xD;
+  &lt;Assembly Path="G:\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll" /&gt;&#xD;
+  &lt;Assembly Path="G:\Steam\steamapps\workshop\content\294100\2938820380\1.4\Assemblies\VFEEmpire.dll" /&gt;&#xD;
 &lt;/AssemblyExplorer&gt;</s:String></wpf:ResourceDictionary>

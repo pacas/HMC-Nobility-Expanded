@@ -8,7 +8,7 @@
                 <value>
                     <StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
                     <StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
-                    <StuffEffectMultiplierArmor>4.67</StuffEffectMultiplierArmor>
+                    <StuffEffectMultiplierArmor>6.67</StuffEffectMultiplierArmor>
                 </value>
             </li>
             <li Class="PatchOperationReplace">

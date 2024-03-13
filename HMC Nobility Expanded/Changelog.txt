@@ -1,12 +1,42 @@
 ----------------------------------------------------------------------
 
+- Changelog "HMC Empire Rewards" v0.15 (1.4):
+
+1) New permits with prosthetics and implants!
+2) Mod code changed - about 70% of the code!
+3) New version of permits with opening a dialog with the choice of the desired item
+4) Changed the way the table is rendered, changed the layout of the permits page
+5) Improved table rendering performance (probably will be noticeable only on the weakest machines).
+6) Fixed an error in the the bow and crossbow permit with stuff error in the console
+7) Improved material-stats dependency of deserter armor (VFEE)
+
+1) Новые привилегии с протезами и имплантами!
+2) Изменен код мода - примерно 70% кода!
+3) Новый вариант привилегий с открытием диалога с выбором желаемого предмета
+4) Изменение способа отрисовки таблицы, изменение внешнего вида страницы привилегий
+5) Улучшена производительность отрисовки таблицы (возможно будет заметно на самых слабых машинах)
+6) Исправлена ошибка в консоли для привилегии вызова лука и арбалета
+7) Улучшена зависимость статов брони дезертиров от материала (VFEE)
+
+----------------------------------------------------------------------
+
 - Changelog "HMC Empire Rewards" v0.14.4 (1.4):
 
 1) Correction of categories for Janissary armor (VFEE)
 2) Russian localization fixes (VFEE)
+3) Updated craft recipes and stats for the base Royalty armors + VFEE.
+4) Updated research positions (VFEE)
+5) Added satisfaction for the lower tier titles with clothing of higher tiers
+6) Rebalanced permits with feedback from the players
+7) Updated requirement tags for nobility bedrooms
 
 1) Исправление категорий для брони янычаров (VFEE)
 2) Фиксы русской локализации (VFEE)
+3) Обновлены рецепты крафта и статы для базовых доспехов Роялти + VFEE.
+4) Обновлены позиции в исследованиях (VFEE)
+5) Добавлена удовлетворение низких титулов одеждой более высоких тиров
+6) Перебалансирование привилегии с учетом пожеланий игроков
+7) Обновлены теги требований для спален знати
 
 ----------------------------------------------------------------------
 

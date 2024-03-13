@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <NobilityExpanded.RoyaltyCoordsTableDef>
+        <defName>CoordsTableProsthetics_0</defName>
+        <coordX>0</coordX>
+        <loadOrder>
+            <li>ProstheticsPermitTitle</li>
+            <li>ProstheticsPermitSmallTitle</li>
+            <li>SimpleProsthetic</li>
+            <li>CyberneticProsthetic</li>
+            <li>CombatProstheticsPermitSmallTitle</li>
+            <li>CombatProsthetic</li>
+            <li>ProductiveProstheticsPermitSmallTitle</li>
+        </loadOrder>
+    </NobilityExpanded.RoyaltyCoordsTableDef>
+
+    <NobilityExpanded.RoyaltyCoordsTableDef>
+        <defName>CoordsTableProsthetics_1</defName>
+        <coordX>1</coordX>
+        <loadOrder>
+            <li>ProstheticsPermitTitle</li>
+            <li>ProstheticsPermitSmallTitle</li>
+            <li>BionicsProsthetic</li>
+            <li>EmptyPermitSpace</li>
+            <li>CombatProstheticsPermitSmallTitle</li>
+            <li>EmptyPermitSpace</li>
+            <li>ProductiveProstheticsPermitSmallTitle</li>
+        </loadOrder>
+    </NobilityExpanded.RoyaltyCoordsTableDef>
+</Defs>

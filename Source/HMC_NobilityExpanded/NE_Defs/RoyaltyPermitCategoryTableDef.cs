@@ -6,6 +6,5 @@ namespace NobilityExpanded
     public class RoyaltyPermitCategoryTableDef : Def
     {
         public List<string> categories;
-        
     }
 }

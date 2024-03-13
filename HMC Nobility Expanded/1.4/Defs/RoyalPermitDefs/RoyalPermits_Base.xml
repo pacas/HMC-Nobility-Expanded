@@ -23,6 +23,14 @@
         <workerClass>NobilityExpanded.RoyalTitlePermitWorker_DropResourcesPlus</workerClass>
     </RoyalTitlePermitDef>
 
+    <RoyalTitlePermitDef ParentName="MainDropBase" Name="DropResourcesUpdated" Abstract="True">
+        <workerClass>NobilityExpanded.RoyalTitlePermitWorker_DropResourcesUpdated</workerClass>
+    </RoyalTitlePermitDef>
+    
+    <RoyalTitlePermitDef ParentName="MainDropBase" Name="DropResourcesWithDialog" Abstract="True">
+        <workerClass>NobilityExpanded.RoyalTitlePermitWorker_DropResourcesWithDialog</workerClass>
+    </RoyalTitlePermitDef>
+
     <RoyalTitlePermitDef ParentName="MainDropBase" Name="DropBuildings" Abstract="True">
         <workerClass>NobilityExpanded.RoyalTitlePermitWorker_DropBuildings</workerClass>
     </RoyalTitlePermitDef>
@@ -95,22 +103,29 @@
     
     <!-- todo -->
     <!-- здания? -->
-    <!-- квест присмотра за ребенком? -->
     <!-- гранаты -->
     <!-- рабы -->
     <!-- 1) Current royalty crash quest minus defence plus care for a couple of days? -->
     <!-- 2) Rescue quest with baby pawn and shuttle ending? -->
-    <!-- кровь -->
     <!-- добавить вкладку с особыми модовыми ресурсами и интеграцию ревий -->
-    <!-- вынести count в ordered def -->
 
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>EmptyTableSpace</defName>
         <label>Empty</label>
         <description>Empty</description>
-        <permitPointCost>90</permitPointCost>
+        <permitPointCost>97</permitPointCost>
         <royalAid>
-            <favorCost>90</favorCost>
+            <favorCost>97</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>EmptyPermitSpace</defName>
+        <label>Empty</label>
+        <description>Empty</description>
+        <permitPointCost>96</permitPointCost>
+        <royalAid>
+            <favorCost>96</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
     
