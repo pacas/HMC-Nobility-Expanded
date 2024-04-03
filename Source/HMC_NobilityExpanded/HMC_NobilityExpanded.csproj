@@ -278,13 +278,16 @@
         <Compile Include="HarmonyPermitTablePatch.cs" />
         <Compile Include="NE_Defs\ItemDataInfo.cs" />
         <Compile Include="NE_Defs\OrderedStuffDef.cs" />
+        <Compile Include="NE_Defs\PawnDataInfo.cs" />
         <Compile Include="NE_Defs\PermitExtensionList.cs" />
         <Compile Include="NE_Defs\RoyaltyCoordsTableDef.cs" />
         <Compile Include="NE_Defs\RoyaltyPermitCategoryTableDef.cs" />
         <Compile Include="NE_Utilities\ItemGenerator.cs" />
+        <Compile Include="NE_Utilities\PermitPawnsGenerator.cs" />
         <Compile Include="NE_Utilities\TextFormatter.cs" />
         <Compile Include="NE_Utilities\VarsExposer.cs" />
         <Compile Include="NE_Workers\RoyalTitlePermitWorker_CallPawns.cs" />
+        <Compile Include="NE_Workers\RoyalTitlePermitWorker_CallPawnsUpdated.cs" />
         <Compile Include="NE_Workers\RoyalTitlePermitWorker_DropBuildings.cs" />
         <Compile Include="NE_Workers\RoyalTitlePermitWorker_DropResourcesBase.cs" />
         <Compile Include="NE_Workers\RoyalTitlePermitWorker_DropResourcesPlus.cs" />

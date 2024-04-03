@@ -51,7 +51,7 @@ namespace NobilityExpanded
                     var caravan = pawn.GetCaravan();
                     var massUsage = caravan.MassUsage;
                     var extension = def.GetModExtension<PermitExtensionList>();
-                    var itemsToDrop = extension.data;
+                    var itemsToDrop = extension.itemData ?? new List<ItemDataInfo>();
                     foreach (var item in itemsToDrop)
                         massUsage += item.thing.BaseMass * item.count;
                     

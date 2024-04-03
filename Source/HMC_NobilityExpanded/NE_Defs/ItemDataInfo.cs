@@ -14,8 +14,10 @@ namespace NobilityExpanded
         // -- additional info --
         // ammoCount > 0 - drop ammo for guns
         public int ammoCount = 0;
+        
         // item made with this material
         [CanBeNull] public ThingDef stuff;
+        
         // quality
         [CanBeNull] public string quality;
         public string qualityType = "Specific";

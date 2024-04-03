@@ -102,11 +102,11 @@ namespace NobilityExpanded.Utilities
         {
             var label = "";
             var extension = selectedPermit.GetModExtension<PermitExtensionList>();
-            bool isThingsExists = extension?.data != null && extension.data.Count > 1;
+            bool isThingsExists = extension?.itemData != null && extension.itemData.Count > 1;
             
             if (isThingsExists) {
                 label += "ItemIncludedInPermit".Translate() + "\n";
-                foreach (var item in extension.data) {
+                foreach (var item in extension.itemData) {
                     if (item.stuff != null) {
                         label += "  - " + "StuffDescription".Translate(
                             item.stuff.stuffProps.stuffAdjective,

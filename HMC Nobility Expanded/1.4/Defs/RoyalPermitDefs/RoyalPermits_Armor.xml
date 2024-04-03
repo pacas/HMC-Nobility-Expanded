@@ -33,7 +33,7 @@
                 <category>Armor</category>
                 <column>0</column>
                 <row>1</row>
-                <data>
+                <itemData>
                     <li>
                         <thing>MedievalTimes_Helmet_Bascinet</thing>
                         <count>1</count>
@@ -54,7 +54,7 @@
                         <count>1</count>
                         <stuff>Plasteel</stuff>
                     </li>
-                </data>
+                </itemData>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
@@ -76,7 +76,7 @@
                 <category>Armor</category>
                 <column>1</column>
                 <row>1</row>
-                <data>
+                <itemData>
                     <li>
                         <thing>MedievalTimes_Helmet_Bascinet</thing>
                         <count>1</count>
@@ -101,7 +101,7 @@
                         <stuff>TitaniumBar</stuff>
                         <quality>Excellent</quality>
                     </li>
-                </data>
+                </itemData>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
@@ -123,7 +123,7 @@
                 <category>Armor</category>
                 <column>0</column>
                 <row>2</row>
-                <data>
+                <itemData>
                     <li>
                         <thing>Tactical_Helmet</thing>
                         <count>1</count>
@@ -144,7 +144,7 @@
                         <count>1</count>
                         <stuff>Plasteel</stuff>
                     </li>
-                </data>
+                </itemData>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
@@ -166,7 +166,7 @@
                 <category>Armor</category>
                 <column>1</column>
                 <row>2</row>
-                <data>
+                <itemData>
                     <li>
                         <thing>Tactical_Helmet</thing>
                         <count>1</count>
@@ -191,7 +191,7 @@
                         <stuff>TitaniumBar</stuff>
                         <quality>Excellent</quality>
                     </li>
-                </data>
+                </itemData>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
@@ -214,7 +214,7 @@
                 <category>Armor</category>
                 <column>0</column>
                 <row>3</row>
-                <data>
+                <itemData>
                     <li>
                         <thing>Apparel_ArmorHelmetRecon</thing>
                         <count>1</count>
@@ -235,7 +235,7 @@
                         <count>1</count>
                         <stuff>AlnicoAlloy</stuff>
                     </li>
-                </data>
+                </itemData>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
@@ -257,7 +257,7 @@
                 <category>Armor</category>
                 <column>1</column>
                 <row>3</row>
-                <data>
+                <itemData>
                     <li>
                         <thing>Apparel_ArmorHelmetRecon</thing>
                         <count>1</count>
@@ -282,7 +282,7 @@
                         <stuff>PobediteAlloy</stuff>
                         <quality>Excellent</quality>
                     </li>
-                </data>
+                </itemData>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
@@ -305,7 +305,7 @@
                 <category>Armor</category>
                 <column>0</column>
                 <row>4</row>
-                <data>
+                <itemData>
                     <li>
                         <thing>Apparel_PowerArmorHelmet</thing>
                         <count>1</count>
@@ -326,7 +326,7 @@
                         <count>1</count>
                         <stuff>TitaniumBar</stuff>
                     </li>
-                </data>
+                </itemData>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
@@ -348,7 +348,7 @@
                 <category>Armor</category>
                 <column>1</column>
                 <row>4</row>
-                <data>
+                <itemData>
                     <li>
                         <thing>Apparel_PowerArmorHelmet</thing>
                         <count>1</count>
@@ -369,7 +369,7 @@
                         <count>1</count>
                         <stuff>AlphaPoly</stuff>
                     </li>
-                </data>
+                </itemData>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>

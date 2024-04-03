@@ -39,6 +39,11 @@
         <workerClass>NobilityExpanded.RoyalTitlePermitWorker_CallPawns</workerClass>
         <usableOnWorldMap>false</usableOnWorldMap>
     </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="MainDropBase" Name="SendPawnsUpdated" Abstract="True">
+        <workerClass>NobilityExpanded.RoyalTitlePermitWorker_CallPawnsUpdated</workerClass>
+        <usableOnWorldMap>false</usableOnWorldMap>
+    </RoyalTitlePermitDef>
     
     
     <!-- Permits bases -->

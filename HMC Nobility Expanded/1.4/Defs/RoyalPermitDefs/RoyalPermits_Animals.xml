@@ -5,10 +5,18 @@
         <defName>AnimalsPermitTitle</defName>
         <label>Animals</label>
         <description>Request a drop of random animal.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Title</type>
+                <category>Animals</category>
+                <column>0</column>
+                <row>0</row>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
 
     <!-- Milk -->
-    <RoyalTitlePermitDef ParentName="SendPawns">
+    <RoyalTitlePermitDef ParentName="SendPawnsUpdated">
         <defName>MilkAnimalDrop</defName>
         <label>milk producers</label>
         <description>Request a drop of two random farm milk producers of the same species and different genders.</description>
@@ -17,36 +25,87 @@
         <cooldownDays>18</cooldownDays>
         <royalAid>
             <favorCost>4</favorCost>
-            <pawnCount>2</pawnCount>
             <targetingRange>39.9</targetingRange>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Animals</category>
+                <column>0</column>
+                <row>1</row>
+                <pawnData>
+                    <li>
+                        <pawn>Cow</pawn>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <pawn>Bison</pawn>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <pawn>Goat</pawn>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <pawn>Ibex</pawn>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <pawn>Yak</pawn>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <pawn>Muffalo</pawn>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <pawn>Buffalo</pawn>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <pawn>Dromedary</pawn>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <pawn>Sheep</pawn>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <pawn>Horse</pawn>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <pawn>Horse_Wooly</pawn>
+                        <count>2</count>
+                    </li>
+                    <li MayRequire="sarg.alphaanimals">
+                        <pawn>AA_Radyak</pawn>
+                        <count>2</count>
+                    </li>
+                    <li MayRequire="sarg.alphaanimals">
+                        <pawn>AA_SpinedGow</pawn>
+                        <count>2</count>
+                    </li>
+                    <li MayRequire="sarg.alphaanimals">
+                        <pawn>AA_ChameleonYak</pawn>
+                        <count>2</count>
+                    </li>
+                    <li MayRequire="sarg.alphaanimals">
+                        <pawn>AA_Gigantelope</pawn>
+                        <count>2</count>
+                    </li>
+                    <li MayRequire="sarg.alphaanimals">
+                        <pawn>AA_NightRam</pawn>
+                        <count>2</count>
+                    </li>
+                    <li MayRequire="sarg.alphaanimals">
+                        <pawn>AA_ShockGoat</pawn>
+                        <count>2</count>
+                    </li>
+                </pawnData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsBase">
-        <defName>MilkAnimalDropStuff</defName>
-        <genders>
-            <li>Male</li>
-            <li>Female</li>
-        </genders>
-        <pawnToChoose>
-            <li>Cow</li>
-            <li>Bison</li>
-            <li>Goat</li>
-            <li>Ibex</li>
-            <li>Yak</li>
-            <li>Muffalo</li>
-            <li>Buffalo</li>
-            <li>Dromedary</li>
-            <li>Sheep</li>
-            <li>Horse</li>
-            <li>Horse_Wooly</li>
-            <li MayRequire="sarg.alphaanimals">AA_Radyak</li>
-            <li MayRequire="sarg.alphaanimals">AA_SpinedGow</li>
-            <li MayRequire="sarg.alphaanimals">AA_ChameleonYak</li>
-            <li MayRequire="sarg.alphaanimals">AA_Gigantelope</li>
-            <li MayRequire="sarg.alphaanimals">AA_NightRam</li>
-            <li MayRequire="sarg.alphaanimals">AA_ShockGoat</li>
-        </pawnToChoose>
-    </NobilityExpanded.OrderedStuffDef>
 
     <!-- Meat -->
     <RoyalTitlePermitDef ParentName="SendPawns">

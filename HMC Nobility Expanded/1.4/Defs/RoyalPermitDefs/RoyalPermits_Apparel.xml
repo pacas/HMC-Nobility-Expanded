@@ -6,24 +6,56 @@
         <defName>ApparelPermitTitle</defName>
         <label>Apparel and Accessories</label>
         <description>Request a drop of different apparel and accessories.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Title</type>
+                <category>Apparel</category>
+                <column>0</column>
+                <row>0</row>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
         <defName>WorkerPermitSmallTitle</defName>
         <label>Workers Apparel</label>
         <description>Request a drop of different apparel for workers.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Category</type>
+                <category>Apparel</category>
+                <column>0</column>
+                <row>1</row>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
         <defName>SpecialApparelPermitSmallTitle</defName>
         <label>Special Apparel</label>
         <description>Request a drop of different apparel for soldiers and nobility.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Category</type>
+                <category>Apparel</category>
+                <column>0</column>
+                <row>5</row>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
         <defName>SimpleApparelPermitSmallTitle</defName>
         <label>Simple Apparel</label>
         <description>Request a drop of simple apparel outfits for everyday duties.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Category</type>
+                <category>Apparel</category>
+                <column>0</column>
+                <row>9</row>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
     
     <!-- Worker -->
@@ -34,27 +66,49 @@
         <permitPointCost>1</permitPointCost>
         <minTitle>Acolyte</minTitle>
         <royalAid>
-            <itemsToDrop>
-                <Apparello_Workglove>1</Apparello_Workglove>
-                <WeldingHelmet>1</WeldingHelmet>
-                <Apparello_Smithaprontosaurus>1</Apparello_Smithaprontosaurus>
-                <Apparel_BasicShirt>1</Apparel_BasicShirt>
-                <CE_Apparel_Backpack>1</CE_Apparel_Backpack>
-            </itemsToDrop>
             <favorCost>5</favorCost>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Apparel</category>
+                <column>0</column>
+                <row>2</row>
+                <itemData>
+                    <li>
+                        <thing>Apparello_Workglove</thing>
+                        <count>1</count>
+                        <stuff>Leather_Light</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>WeldingHelmet</thing>
+                        <count>1</count>
+                        <stuff>TitaniumBar</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Apparello_Smithaprontosaurus</thing>
+                        <count>1</count>
+                        <stuff>Leather_Light</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Apparel_BasicShirt</thing>
+                        <count>1</count>
+                        <stuff>Flaxcloth</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>CE_Apparel_Backpack</thing>
+                        <count>1</count>
+                        <stuff>Flaxcloth</stuff>
+                        <quality>Good</quality>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
-        <defName>SmithOutfitDropStuff</defName>
-        <quality>Good</quality>
-        <stuffList>
-            <li>Leather_Light</li>
-            <li>TitaniumBar</li>
-            <li>Leather_Light</li>
-            <li>Flaxcloth</li>
-            <li>Flaxcloth</li>
-        </stuffList>
-    </NobilityExpanded.OrderedStuffDef>
 
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
         <defName>FarmerOutfitDrop</defName>
@@ -63,54 +117,90 @@
         <permitPointCost>1</permitPointCost>
         <minTitle>Acolyte</minTitle>
         <royalAid>
-            <itemsToDrop>
-                <Apparello_Motorglove>1</Apparello_Motorglove>
-                <Apparello_Jeans>1</Apparello_Jeans>
-                <Apparello_Smithaprontosaurus>1</Apparello_Smithaprontosaurus>
-                <Apparel_BasicShirt>1</Apparel_BasicShirt>
-                <CE_Apparel_Backpack>1</CE_Apparel_Backpack>
-            </itemsToDrop>
             <favorCost>5</favorCost>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Apparel</category>
+                <column>1</column>
+                <row>2</row>
+                <itemData>
+                    <li>
+                        <thing>Apparello_Motorglove</thing>
+                        <count>1</count>
+                        <stuff>Leather_Light</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Apparello_Jeans</thing>
+                        <count>1</count>
+                        <stuff>Flaxcloth</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Apparello_Smithaprontosaurus</thing>
+                        <count>1</count>
+                        <stuff>Leather_Light</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Apparel_BasicShirt</thing>
+                        <count>1</count>
+                        <stuff>Flaxcloth</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>CE_Apparel_Backpack</thing>
+                        <count>1</count>
+                        <stuff>Flaxcloth</stuff>
+                        <quality>Good</quality>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
-        <defName>FarmerOutfitDropStuff</defName>
-        <quality>Good</quality>
-        <column>1</column>
-        <stuffList>
-            <li>Leather_Light</li>
-            <li>Flaxcloth</li>
-            <li>Leather_Light</li>
-            <li>Flaxcloth</li>
-            <li>Flaxcloth</li>
-        </stuffList>
-    </NobilityExpanded.OrderedStuffDef>
     
     
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
         <defName>ChefOutfitDrop</defName>
         <label>chef outfit</label>
         <description>Request a drop of chef outfit.</description>
-        <royalAid>
-            <itemsToDrop>
-                <Apparel_FSChefJacket>1</Apparel_FSChefJacket>
-                <Apparello_chefglove>1</Apparello_chefglove>
-                <Apparello_Chefhatplus>1</Apparello_Chefhatplus>
-                <Apparello_Cookaprontosaurus>1</Apparello_Cookaprontosaurus>
-            </itemsToDrop>
-        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Apparel</category>
+                <column>0</column>
+                <row>3</row>
+                <itemData>
+                    <li>
+                        <thing>Apparel_FSChefJacket</thing>
+                        <count>1</count>
+                        <stuff>Flaxcloth</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Apparello_chefglove</thing>
+                        <count>1</count>
+                        <stuff>Synthread</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Apparello_Chefhatplus</thing>
+                        <count>1</count>
+                        <stuff>Synthread</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Apparello_Cookaprontosaurus</thing>
+                        <count>1</count>
+                        <stuff>Flaxcloth</stuff>
+                        <quality>Good</quality>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
-        <defName>ChefOutfitDropStuff</defName>
-        <quality>Good</quality>
-        <column>1</column>
-        <stuffList>
-            <li>Flaxcloth</li>
-            <li>Synthread</li>
-            <li>Synthread</li>
-            <li>Flaxcloth</li>
-        </stuffList>
-    </NobilityExpanded.OrderedStuffDef>
     
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
         <defName>MedicOutfitDrop</defName>
@@ -118,52 +208,90 @@
         <description>Request a drop of medic outfit.</description>
         <permitPointCost>3</permitPointCost>
         <royalAid>
-            <itemsToDrop>
-                <Apparello_Meditux>1</Apparello_Meditux>
-                <Apparello_docglovetwo>1</Apparello_docglovetwo>
-                <Apparello_Docteur>1</Apparello_Docteur>
-                <Apparello_MedicalApron>1</Apparello_MedicalApron>
-            </itemsToDrop>
             <favorCost>9</favorCost>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Apparel</category>
+                <column>1</column>
+                <row>3</row>
+                <itemData>
+                    <li>
+                        <thing>Apparello_Meditux</thing>
+                        <count>1</count>
+                        <stuff>Flaxcloth</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Apparello_docglovetwo</thing>
+                        <count>1</count>
+                        <stuff>Synthread</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Apparello_Docteur</thing>
+                        <count>1</count>
+                        <stuff>Synthread</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Apparello_MedicalApron</thing>
+                        <count>1</count>
+                        <stuff>Flaxcloth</stuff>
+                        <quality>Good</quality>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
-        <defName>MedicOutfitDropStuff</defName>
-        <quality>Good</quality>
-        <stuffList>
-            <li>Flaxcloth</li>
-            <li>Synthread</li>
-            <li>Synthread</li>
-            <li>Flaxcloth</li>
-        </stuffList>
-    </NobilityExpanded.OrderedStuffDef>
 
     
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
         <defName>MinerOutfitDrop</defName>
         <label>miner outfit</label>
         <description>Request a drop of miner outfit.</description>
-        <royalAid>
-            <itemsToDrop>
-                <Apparello_Workglove>1</Apparello_Workglove>
-                <Apparello_Suspender>1</Apparello_Suspender>
-                <MiningHelmet>1</MiningHelmet>
-                <MiningVest>1</MiningVest>
-                <CE_Apparel_Backpack>1</CE_Apparel_Backpack>
-            </itemsToDrop>
-        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Apparel</category>
+                <column>0</column>
+                <row>4</row>
+                <itemData>
+                    <li>
+                        <thing>Apparello_Workglove</thing>
+                        <count>1</count>
+                        <stuff>Leather_Light</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Apparello_Suspender</thing>
+                        <count>1</count>
+                        <stuff>Flaxcloth</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>MiningHelmet</thing>
+                        <count>1</count>
+                        <stuff>TitaniumBar</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>MiningVest</thing>
+                        <count>1</count>
+                        <stuff>Synthread</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>CE_Apparel_Backpack</thing>
+                        <count>1</count>
+                        <stuff>Flaxcloth</stuff>
+                        <quality>Good</quality>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
-        <defName>MinerOutfitDropStuff</defName>
-        <quality>Good</quality>
-        <stuffList>
-            <li>Leather_Light</li>
-            <li>Flaxcloth</li>
-            <li>TitaniumBar</li>
-            <li>Synthread</li>
-            <li>Flaxcloth</li>
-        </stuffList>
-    </NobilityExpanded.OrderedStuffDef>
     
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
         <defName>ConstructorOutfitDrop</defName>
@@ -171,28 +299,49 @@
         <description>Request a drop of constructor outfit.</description>
         <permitPointCost>1</permitPointCost>
         <royalAid>
-            <itemsToDrop>
-                <Apparello_Motorglove>1</Apparello_Motorglove>
-                <Apparello_Suspender>1</Apparello_Suspender>
-                <Apparello_Smithaprontosaurus>1</Apparello_Smithaprontosaurus>
-                <Apparel_BasicShirt>1</Apparel_BasicShirt>
-                <CE_Apparel_Backpack>1</CE_Apparel_Backpack>
-            </itemsToDrop>
             <favorCost>5</favorCost>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Apparel</category>
+                <column>1</column>
+                <row>4</row>
+                <itemData>
+                    <li>
+                        <thing>Apparello_Motorglove</thing>
+                        <count>1</count>
+                        <stuff>Leather_Light</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Apparello_Suspender</thing>
+                        <count>1</count>
+                        <stuff>Flaxcloth</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Apparello_Smithaprontosaurus</thing>
+                        <count>1</count>
+                        <stuff>Leather_Light</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Apparel_BasicShirt</thing>
+                        <count>1</count>
+                        <stuff>Flaxcloth</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>CE_Apparel_Backpack</thing>
+                        <count>1</count>
+                        <stuff>Flaxcloth</stuff>
+                        <quality>Good</quality>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
-        <defName>ConstructorOutfitDropStuff</defName>
-        <quality>Good</quality>
-        <column>1</column>
-        <stuffList>
-            <li>Leather_Light</li>
-            <li>Flaxcloth</li>
-            <li>Leather_Light</li>
-            <li>Flaxcloth</li>
-            <li>Flaxcloth</li>
-        </stuffList>
-    </NobilityExpanded.OrderedStuffDef>
 
     <!-- Special -->
     
@@ -205,25 +354,43 @@
         <cooldownDays>45</cooldownDays>
         <minTitle>Praetor</minTitle>
         <royalAid>
-            <itemsToDrop>
-                <CE_Apparel_Backpack>1</CE_Apparel_Backpack>
-                <CE_Apparel_TacVest>1</CE_Apparel_TacVest>
-                <Marine_BattleMask>1</Marine_BattleMask>
-                <Rimarsenal_VestPlate>1</Rimarsenal_VestPlate>
-            </itemsToDrop>
             <favorCost>17</favorCost>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Apparel</category>
+                <column>0</column>
+                <row>6</row>
+                <itemData>
+                    <li>
+                        <thing>CE_Apparel_Backpack</thing>
+                        <count>1</count>
+                        <stuff>Synthread</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>CE_Apparel_TacVest</thing>
+                        <count>1</count>
+                        <stuff>Synthread</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Marine_BattleMask</thing>
+                        <count>1</count>
+                        <stuff>TitaniumBar</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Rimarsenal_VestPlate</thing>
+                        <count>1</count>
+                        <stuff>TitaniumBar</stuff>
+                        <quality>Good</quality>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
-        <defName>SoldierAccessoriesDropStuff</defName>
-        <quality>Good</quality>
-        <stuffList>
-            <li>Synthread</li>
-            <li>Synthread</li>
-            <li>TitaniumBar</li>
-            <li>TitaniumBar</li>
-        </stuffList>
-    </NobilityExpanded.OrderedStuffDef>
 
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
         <defName>SoldierAccessoriesAltDrop</defName>
@@ -233,26 +400,43 @@
         <minTitle>Praetor</minTitle>
         <cooldownDays>40</cooldownDays>
         <royalAid>
-            <itemsToDrop>
-                <CE_Apparel_Backpack>1</CE_Apparel_Backpack>
-                <Apparello_Ammobelt>1</Apparello_Ammobelt>
-                <Apparello_Visoor>1</Apparello_Visoor>
-                <Apparel_FlakVest>1</Apparel_FlakVest>
-            </itemsToDrop>
             <favorCost>11</favorCost>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Apparel</category>
+                <column>1</column>
+                <row>6</row>
+                <itemData>
+                    <li>
+                        <thing>CE_Apparel_Backpack</thing>
+                        <count>1</count>
+                        <stuff>Synthread</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Apparello_Ammobelt</thing>
+                        <count>1</count>
+                        <stuff>Leather_Light</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Apparello_Visoor</thing>
+                        <count>1</count>
+                        <stuff>Titanium</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Apparel_FlakVest</thing>
+                        <count>1</count>
+                        <stuff>Synthread</stuff>
+                        <quality>Good</quality>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
-        <defName>SoldierAccessoriesAltDropStuff</defName>
-        <quality>Good</quality>
-        <column>1</column>
-        <stuffList>
-            <li>Synthread</li>
-            <li>Leather_Light</li>
-            <li>Titanium</li>
-            <li>Synthread</li>
-        </stuffList>
-    </NobilityExpanded.OrderedStuffDef>
 
     <!-- Specialized -->
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
@@ -261,42 +445,54 @@
         <description>Request a drop of outfit to work in radioactive environments.</description>
         <cooldownDays>50</cooldownDays>
         <royalAid>
-            <itemsToDrop>
-                <Apparel_HS>1</Apparel_HS>
-                <Apparel_HSH>1</Apparel_HSH>
-            </itemsToDrop>
             <favorCost>8</favorCost>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Apparel</category>
+                <column>0</column>
+                <row>7</row>
+                <itemData>
+                    <li>
+                        <thing>Apparel_HS</thing>
+                        <count>1</count>
+                        <stuff>Synthread</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Apparel_HSH</thing>
+                        <count>1</count>
+                        <stuff>Synthread</stuff>
+                        <quality>Good</quality>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
-        <defName>HazmatOutfitDropStuff</defName>
-        <quality>Good</quality>
-        <stuffList>
-            <li>Synthread</li>
-            <li>Synthread</li>
-        </stuffList>
-    </NobilityExpanded.OrderedStuffDef>
 
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
         <defName>ShieldBeltDrop</defName>
         <label>shield belt</label>
         <description>Request a drop of one shield belt.</description>
         <cooldownDays>50</cooldownDays>
-        <royalAid>
-            <itemsToDrop>
-                <Apparel_ShieldBelt>1</Apparel_ShieldBelt>
-            </itemsToDrop>
-        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Apparel</category>
+                <column>1</column>
+                <row>7</row>
+                <itemData>
+                    <li>
+                        <thing>Apparel_ShieldBelt</thing>
+                        <count>1</count>
+                        <stuff>TitaniumBar</stuff>
+                        <quality>Excellent</quality>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
-        <defName>ShieldBeltDropStuff</defName>
-        <typeOfQuality>Range</typeOfQuality>
-        <quality>Good</quality>
-        <column>1</column>
-        <stuffList>
-            <li>TitaniumBar</li>
-        </stuffList>
-    </NobilityExpanded.OrderedStuffDef>
 
     <!-- Royal -->
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
@@ -307,28 +503,54 @@
         <cooldownDays>80</cooldownDays>
         <minTitle>Baron</minTitle>
         <royalAid>
-            <itemsToDrop>
-                <Apparel_ShirtRuffle>1</Apparel_ShirtRuffle>
-                <Apparel_VestRoyal>1</Apparel_VestRoyal>
-                <Apparel_Corset>1</Apparel_Corset>
-                <Apparel_RobeRoyal>1</Apparel_RobeRoyal>
-                <Apparel_Crown>1</Apparel_Crown>
-            </itemsToDrop>
             <favorCost>22</favorCost>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Apparel</category>
+                <column>0</column>
+                <row>8</row>
+                <itemData>
+                    <li>
+                        <thing>Apparel_ShirtRuffle</thing>
+                        <count>1</count>
+                        <stuff>Velour</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li>
+                        <thing>Apparel_VestRoyal</thing>
+                        <count>1</count>
+                        <stuff>Velour</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li>
+                        <thing>Apparel_Corset</thing>
+                        <count>1</count>
+                        <stuff>Velour</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li>
+                        <thing>Apparel_RobeRoyal</thing>
+                        <count>1</count>
+                        <stuff>Velour</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li>
+                        <thing>Apparel_Crown</thing>
+                        <count>1</count>
+                        <stuff>GoldBar</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
-        <defName>RoyalOutfitDropStuff</defName>
-        <typeOfQuality>Range</typeOfQuality>
-        <quality>Excellent</quality>
-        <stuffList>
-            <li>Velour</li>
-            <li>Velour</li>
-            <li>Velour</li>
-            <li>Velour</li>
-            <li>GoldBar</li>
-        </stuffList>
-    </NobilityExpanded.OrderedStuffDef>
 
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
         <defName>PsychicOutfitDrop</defName>
@@ -338,22 +560,43 @@
         <minTitle>Legatus</minTitle>
         <cooldownDays>90</cooldownDays>
         <royalAid>
-            <itemsToDrop>
-                <Apparel_PsyfocusHelmet>1</Apparel_PsyfocusHelmet>
-                <Apparel_PsyfocusShirt>1</Apparel_PsyfocusShirt>
-                <Apparel_PsyfocusVest>1</Apparel_PsyfocusVest>
-                <Apparel_PsyfocusRobe>1</Apparel_PsyfocusRobe>
-            </itemsToDrop>
             <favorCost>22</favorCost>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Apparel</category>
+                <column>1</column>
+                <row>8</row>
+                <itemData>
+                    <li>
+                        <thing>Apparel_PsyfocusHelmet</thing>
+                        <count>1</count>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li>
+                        <thing>Apparel_PsyfocusShirt</thing>
+                        <count>1</count>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li>
+                        <thing>Apparel_PsyfocusVest</thing>
+                        <count>1</count>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li>
+                        <thing>Apparel_PsyfocusRobe</thing>
+                        <count>1</count>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
-        <defName>PsychicOutfitDropStuff</defName>
-        <typeOfDrop>Quality</typeOfDrop>
-        <typeOfQuality>Range</typeOfQuality>
-        <quality>Excellent</quality>
-        <column>1</column>
-    </NobilityExpanded.OrderedStuffDef>
 
     <!-- Simple -->
 
@@ -364,29 +607,55 @@
         <permitPointCost>1</permitPointCost>
         <cooldownDays>12</cooldownDays>
         <royalAid>
-            <itemsToDrop>
-                <Apparello_Bandal>1</Apparello_Bandal>
-                <Apparel_Pants>1</Apparel_Pants>
-                <Apparel_BasicShirt>1</Apparel_BasicShirt>
-                <Apparello_Shoes>1</Apparello_Shoes>
-                <CE_Apparel_Backpack>1</CE_Apparel_Backpack>
-                <Apparello_Workglove>1</Apparello_Workglove>
-            </itemsToDrop>
             <favorCost>3</favorCost>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Apparel</category>
+                <column>0</column>
+                <row>10</row>
+                <itemData>
+                    <li>
+                        <thing>Apparello_Bandal</thing>
+                        <count>1</count>
+                        <stuff>Velour</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Apparel_Pants</thing>
+                        <count>1</count>
+                        <stuff>Velour</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Apparello_Shoes</thing>
+                        <count>1</count>
+                        <stuff>Velour</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Apparel_BasicShirt</thing>
+                        <count>1</count>
+                        <stuff>Leather_Light</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>CE_Apparel_Backpack</thing>
+                        <count>1</count>
+                        <stuff>Flaxcloth</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Apparello_Workglove</thing>
+                        <count>1</count>
+                        <stuff>Leather_Light</stuff>
+                        <quality>Good</quality>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
-        <defName>SimpleOutfitDropStuff</defName>
-        <quality>Good</quality>
-        <stuffList>
-            <li>Flaxcloth</li>
-            <li>Flaxcloth</li>
-            <li>Flaxcloth</li>
-            <li>Leather_Light</li>
-            <li>Flaxcloth</li>
-            <li>Leather_Light</li>
-        </stuffList>
-    </NobilityExpanded.OrderedStuffDef>
 
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
         <defName>SlaveOutfitDrop</defName>
@@ -395,26 +664,47 @@
         <permitPointCost>1</permitPointCost>
         <cooldownDays>7</cooldownDays>
         <royalAid>
-            <itemsToDrop>
-                <Apparel_Bonnet>1</Apparel_Bonnet>
-                <Apparel_BodyStrap>1</Apparel_BodyStrap>
-                <Apparello_Shoes>1</Apparello_Shoes>
-                <CE_Apparel_Backpack>1</CE_Apparel_Backpack>
-                <Apparel_Collar>1</Apparel_Collar>
-            </itemsToDrop>
             <favorCost>2</favorCost>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Apparel</category>
+                <column>1</column>
+                <row>10</row>
+                <itemData>
+                    <li>
+                        <thing>Apparel_Bonnet</thing>
+                        <count>1</count>
+                        <stuff>Flaxcloth</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Apparel_BodyStrap</thing>
+                        <count>1</count>
+                        <stuff>Flaxcloth</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Apparello_Shoes</thing>
+                        <count>1</count>
+                        <stuff>Leather_Light</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>CE_Apparel_Backpack</thing>
+                        <count>1</count>
+                        <stuff>Flaxcloth</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Apparel_Collar</thing>
+                        <count>1</count>
+                        <stuff>Leather_Light</stuff>
+                        <quality>Good</quality>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
-        <defName>SlaveOutfitDropStuff</defName>
-        <quality>Good</quality>
-        <column>1</column>
-        <stuffList>
-            <li>Flaxcloth</li>
-            <li>Flaxcloth</li>
-            <li>Leather_Light</li>
-            <li>Flaxcloth</li>
-            <li>Leather_Light</li>
-        </stuffList>
-    </NobilityExpanded.OrderedStuffDef>
 </Defs>

@@ -45,25 +45,42 @@
         <permitPointCost>1</permitPointCost>
         <cooldownDays>15</cooldownDays>
         <royalAid>
-            <itemsToDrop>
-                <Apparel_KidShirt>1</Apparel_KidShirt>
-                <Apparel_KidPants>1</Apparel_KidPants>
-                <Apparel_KidHelmet>1</Apparel_KidHelmet>
-                <CE_Apparel_KidBackpack>1</CE_Apparel_KidBackpack>
-            </itemsToDrop>
             <favorCost>4</favorCost>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Apparel</category>
+                <column>0</column>
+                <row>11</row>
+                <itemData>
+                    <li>
+                        <thing>Apparel_KidShirt</thing>
+                        <count>1</count>
+                        <stuff>Flaxcloth</stuff>
+                        <quality>Excellent</quality>
+                    </li>
+                    <li>
+                        <thing>Apparel_KidPants</thing>
+                        <count>1</count>
+                        <stuff>Flaxcloth</stuff>
+                        <quality>Excellent</quality>
+                    </li>
+                    <li>
+                        <thing>Apparel_KidHelmet</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                        <quality>Excellent</quality>
+                    </li>
+                    <li>
+                        <thing>CE_Apparel_KidBackpack</thing>
+                        <count>1</count>
+                        <stuff>Flaxcloth</stuff>
+                        <quality>Excellent</quality>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
-        <defName>BabyClothesDropStuff</defName>
-        <quality>Good</quality>
-        <column>1</column>
-        <stuffList>
-            <li>Flaxcloth</li>
-            <li>Flaxcloth</li>
-            <li>Plasteel</li>
-            <li>Flaxcloth</li>
-        </stuffList>
-    </NobilityExpanded.OrderedStuffDef>
     
 </Defs>

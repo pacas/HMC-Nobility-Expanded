@@ -74,7 +74,7 @@
                 <category>Prosthetics</category>
                 <column>0</column>
                 <row>2</row>
-                <data>
+                <itemData>
                     <li>
                         <thing>SimpleProstheticHand</thing>
                         <count>2</count>
@@ -107,7 +107,7 @@
                         <thing>ArtificialPelvis</thing>
                         <count>1</count>
                     </li>
-                </data>
+                </itemData>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
@@ -128,7 +128,7 @@
                 <category>Prosthetics</category>
                 <column>1</column>
                 <row>2</row>
-                <data>
+                <itemData>
                     <li>
                         <thing>BionicHand</thing>
                         <count>2</count>
@@ -189,7 +189,7 @@
                         <thing>BionicTongue</thing>
                         <count>1</count>
                     </li>
-                </data>
+                </itemData>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
@@ -210,7 +210,7 @@
                 <category>Prosthetics</category>
                 <column>0</column>
                 <row>3</row>
-                <data>
+                <itemData>
                     <li>
                         <thing>GTHand</thing>
                         <count>2</count>
@@ -267,7 +267,7 @@
                         <thing>GTDentures</thing>
                         <count>1</count>
                     </li>
-                </data>
+                </itemData>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
@@ -290,7 +290,7 @@
                 <category>Prosthetics</category>
                 <column>0</column>
                 <row>6</row>
-                <data>
+                <itemData>
                     <li>
                         <thing>HandTalon</thing>
                         <count>1</count>
@@ -323,7 +323,7 @@
                         <thing>CoagulatorRib</thing>
                         <count>1</count>
                     </li>
-                </data>
+                </itemData>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
@@ -344,7 +344,7 @@
                 <category>Prosthetics</category>
                 <column>1</column>
                 <row>6</row>
-                <data>
+                <itemData>
                     <li>
                         <thing>HealingEnhancer</thing>
                         <count>1</count>
@@ -369,7 +369,7 @@
                         <thing>DeathAcidifier</thing>
                         <count>1</count>
                     </li>
-                </data>
+                </itemData>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
@@ -390,7 +390,7 @@
                 <category>Prosthetics</category>
                 <column>0</column>
                 <row>7</row>
-                <data>
+                <itemData>
                     <li>
                         <thing>StoneskinGland</thing>
                         <count>1</count>
@@ -415,7 +415,7 @@
                         <thing>ProtectiveExoskeleton</thing>
                         <count>1</count>
                     </li>
-                </data>
+                </itemData>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
@@ -438,7 +438,7 @@
                 <category>Prosthetics</category>
                 <column>0</column>
                 <row>10</row>
-                <data>
+                <itemData>
                     <li>
                         <thing>DrillArm</thing>
                         <count>1</count>
@@ -467,7 +467,7 @@
                         <thing>AdrenalineRib</thing>
                         <count>1</count>
                     </li>
-                </data>
+                </itemData>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
@@ -488,7 +488,7 @@
                 <category>Prosthetics</category>
                 <column>1</column>
                 <row>10</row>
-                <data>
+                <itemData>
                     <li>
                         <thing>Mindscrew</thing>
                         <count>1</count>
@@ -549,7 +549,7 @@
                         <thing>MuscleStimulator</thing>
                         <count>1</count>
                     </li>
-                </data>
+                </itemData>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
@@ -570,7 +570,7 @@
                 <category>Prosthetics</category>
                 <column>0</column>
                 <row>11</row>
-                <data>
+                <itemData>
                     <li>
                         <thing>InstinctOptimizingNanobots</thing>
                         <count>1</count>
@@ -611,7 +611,7 @@
                         <thing>ExoskeletonSuit</thing>
                         <count>1</count>
                     </li>
-                </data>
+                </itemData>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>

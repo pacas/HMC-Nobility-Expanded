@@ -15,12 +15,12 @@ namespace NobilityExpanded
         private void CallResources(IntVec3 cell) {
             var list = new List<Thing>();
             var extension = def.GetModExtension<PermitExtensionList>();
-            if (extension?.data == null) {
+            if (extension?.itemData == null) {
                 Log.Error("Cannot find mod extension");
                 return;
             }
 
-            foreach (var item in extension.data) {
+            foreach (var item in extension.itemData) {
                 list.AddRange(Utilities.ItemGenerator.GenerateItemByType(item));
             }
 
@@ -45,12 +45,12 @@ namespace NobilityExpanded
             var caravan = caller.GetCaravan();
             var list = new List<Thing>();
             var extension = def.GetModExtension<PermitExtensionList>();
-            if (extension?.data == null) {
+            if (extension?.itemData == null) {
                 Log.Error("Cannot find mod extension");
                 return;
             }
             
-            foreach (var item in extension.data) {
+            foreach (var item in extension.itemData) {
                 list.AddRange(Utilities.ItemGenerator.GenerateItemByType(item));
             }
             

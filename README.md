@@ -1,5 +1,10 @@
 # HMC Nobility Expanded
-
+![Current Build](https://img.shields.io/github/v/release/pacas/HMC-Nobility-Expanded?display_name=release&style=for-the-badge&color=darkgreen&logo=github)<br>
+![Versions](https://img.shields.io/badge/version-1.3%2C_1.4-blue?style=for-the-badge)
+![Dowloads](https://img.shields.io/github/downloads/pacas/HMC-Nobility-Expanded/total?style=for-the-badge&color=blue)<br>
+![Support Me](https://img.shields.io/badge/boosty-support_me-red?style=for-the-badge&logo=boosty&labelColor=grey&link=https%3A%2F%2Fboosty.to%2Fpacas)
+![GitHub License](https://img.shields.io/github/license/pacas/HMC-Nobility-Expanded?style=for-the-badge&color=red)
+<br><br>
 ![Preview](/preview.png?raw=true "Preview")<br><br>
 <img src="https://i.imgur.com/svEwA2k.png">
 
@@ -30,9 +35,9 @@ Q: Совместимо с идущей игрой?<br>
 A: Да, но я не рекомендую добавлять его, если у вас уже есть пешка с титулом аколит или выше, так как в сумме вы получите меньше привилегий.<br>
 #-------------------------------------------------------------#<br>
 Q: Is this mod compatible with VFEE?<br>
-A: Yes! You can add to the ongoing game, but you have to do this: load a save, in runtimeGC clear the pawns, and then only open a new hierarchy tab. If it does not open, repeat until the generation can generate everything on the old save.<br>
+A: Yes! You can add to the ongoing game, but you have to do this: install https://steamcommunity.com/sharedfiles/filedetails/?id=3181327333, load a save and clear world pawns, and then only open a new hierarchy tab. If it does not open, repeat until the generation can generate everything on the old save.<br>
 Q: Совместимо с VFEE?<br>
-A: Да! Можно добавить на идущую игру, но нужно сделать так: загрузить сейв, в runtimeGC очистить пешек, после чего только открывать новую вкладку иерархии. Если она не открывается, повторять, пока генерация не сможет сгенерировать всё на старом сохранении.<br>
+A: Да! Можно добавить на идущую игру, но нужно сделать так: установить https://steamcommunity.com/sharedfiles/filedetails/?id=3181327333, загрузить сейв и очистить мировых пешек, после чего только открывать новую вкладку иерархии. Если она не открывается, повторять, пока генерация не сможет сгенерировать всё на старом сохранении.<br>
 #-------------------------------------------------------------#<br>
 Q: DISBALANCE!<br>
 A: Perhaps.<br>
