@@ -120,26 +120,53 @@
             <pawnCount>2</pawnCount>
             <targetingRange>39.9</targetingRange>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Animals</category>
+                <column>1</column>
+                <row>1</row>
+                <pawnData>
+                    <li>
+                        <pawn>Pig</pawn>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <pawn>Bison</pawn>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <pawn>Cow</pawn>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <pawn>Yak</pawn>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <pawn>Muffalo</pawn>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <pawn>Buffalo</pawn>
+                        <count>2</count>
+                    </li>
+                    <li MayRequire="sarg.alphaanimals">
+                        <pawn>AA_Radyak</pawn>
+                        <count>2</count>
+                    </li>
+                    <li MayRequire="sarg.alphaanimals">
+                        <pawn>AA_ChameleonYak</pawn>
+                        <count>2</count>
+                    </li>
+                    <li MayRequire="sarg.alphaanimals">
+                        <pawn>AA_Gigantelope</pawn>
+                        <count>2</count>
+                    </li>
+                </pawnData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsBase">
-        <defName>MeatAnimalDropStuff</defName>
-        <column>1</column>
-        <genders>
-            <li>Male</li>
-            <li>Female</li>
-        </genders>
-        <pawnToChoose>
-            <li>Pig</li>
-            <li>Cow</li>
-            <li>Bison</li>
-            <li>Yak</li>
-            <li>Muffalo</li>
-            <li>Buffalo</li>
-            <li MayRequire="sarg.alphaanimals">AA_Radyak</li>
-            <li MayRequire="sarg.alphaanimals">AA_ChameleonYak</li>
-            <li MayRequire="sarg.alphaanimals">AA_Gigantelope</li>
-        </pawnToChoose>
-    </NobilityExpanded.OrderedStuffDef>
 
     <!-- Egg -->
     <RoyalTitlePermitDef ParentName="SendPawns">

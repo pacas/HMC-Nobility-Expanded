@@ -1,4 +1,5 @@
-﻿using Verse;
+﻿using NobilityExpanded.NE_Data;
+using Verse;
 
 namespace NobilityExpanded
 {
@@ -7,6 +8,6 @@ namespace NobilityExpanded
         // pawns inside
         public PawnKindDef pawn;
         public int count;
-        public string genderInfo = "RandomBase";
+        public GenderType genderInfo = GenderType.RandomBase;
     }
 }

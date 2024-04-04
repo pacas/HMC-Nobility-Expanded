@@ -276,6 +276,7 @@
     <ItemGroup>
         <Compile Include="Dialog_ChooseResource.cs" />
         <Compile Include="HarmonyPermitTablePatch.cs" />
+        <Compile Include="NE_Data\GenderType.cs" />
         <Compile Include="NE_Defs\ItemDataInfo.cs" />
         <Compile Include="NE_Defs\OrderedStuffDef.cs" />
         <Compile Include="NE_Defs\PawnDataInfo.cs" />

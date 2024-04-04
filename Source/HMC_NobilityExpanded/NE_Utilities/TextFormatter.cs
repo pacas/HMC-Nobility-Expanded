@@ -102,7 +102,8 @@ namespace NobilityExpanded.Utilities
         {
             var label = "";
             var extension = selectedPermit.GetModExtension<PermitExtensionList>();
-            bool isThingsExists = extension?.itemData != null && extension.itemData.Count > 1;
+            bool isThingsExists = extension?.itemData != null && extension.itemData.Count > 0;
+            bool isPawnsExists = extension?.pawnData != null && extension.pawnData.Count > 0;
             
             if (isThingsExists) {
                 label += "ItemIncludedInPermit".Translate() + "\n";
@@ -116,6 +117,14 @@ namespace NobilityExpanded.Utilities
                     }
 
                     label += " x" + item.count + "\n";
+                }
+            }
+            
+            if (isPawnsExists) {
+                label += "ItemIncludedInPermit".Translate() + "\n";
+                foreach (var pawnInfo in extension.pawnData) {
+                    label += "  - " + pawnInfo.pawn.label.CapitalizeFirst();
+                    label += " x" + pawnInfo.count + "\n";
                 }
             }
 
