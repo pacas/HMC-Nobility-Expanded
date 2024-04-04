@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using CombatExtended;
+using JetBrains.Annotations;
 using RimWorld;
 using Verse;
 using Random = System.Random;
@@ -169,6 +170,23 @@ namespace NobilityExpanded.Utilities
                     });
                     return list[Random.Next(list.Count)];
             }
+        }
+
+        [CanBeNull]
+        public static Thing GenerateAmmoForTurrets(ItemDataInfo data) {
+            var turretGun = data.thing?.building?.turretGunDef;
+            if (turretGun == null)
+                return null;
+            
+            AmmoSetDef ammoUser = ThingMaker.MakeThing(turretGun).TryGetComp<CompAmmoUser>().Props.ammoSet;
+            if (ammoUser.ammoTypes.NullOrEmpty())
+                return null;
+            
+            AmmoDef ammo = ammoUser.ammoTypes[0].ammo;
+            Thing ammoThing = ThingMaker.MakeThing(ammo);
+            ammoThing.stackCount = data.ammoCount;
+
+            return ammoThing;
         }
     }
 }

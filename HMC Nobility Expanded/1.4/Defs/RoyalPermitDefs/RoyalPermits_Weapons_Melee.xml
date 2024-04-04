@@ -40,6 +40,7 @@
         <label>agile weapon +</label>
         <description>Request a drop of random agile melee weapon (daggers and shortswords).</description>
         <minTitle>Legatus</minTitle>
+        <cooldownDays>32</cooldownDays>
         <prerequisite>AgileMeleeDrop</prerequisite>
         <permitPointCost>3</permitPointCost>
         <royalAid>
@@ -109,6 +110,7 @@
         <label>sharp weapon +</label>
         <description>Request a drop of random sharp melee weapon (exclude daggers and shortswords).</description>
         <minTitle>Legatus</minTitle>
+        <cooldownDays>32</cooldownDays>
         <prerequisite>SharpMeleeDrop</prerequisite>
         <permitPointCost>3</permitPointCost>
         <royalAid>
@@ -177,6 +179,7 @@
         <label>blunt weapon +</label>
         <description>Request a drop of random blunt melee weapon (exclude daggers and shortswords).</description>
         <minTitle>Legatus</minTitle>
+        <cooldownDays>32</cooldownDays>
         <prerequisite>BluntMeleeDrop</prerequisite>
         <permitPointCost>3</permitPointCost>
         <royalAid>
@@ -238,6 +241,7 @@
         <label>heavy weapon +</label>
         <description>Request a drop of random heavy melee weapon.</description>
         <minTitle>Legatus</minTitle>
+        <cooldownDays>32</cooldownDays>
         <prerequisite>HeavyMeleeDrop</prerequisite>
         <permitPointCost>3</permitPointCost>
         <royalAid>
