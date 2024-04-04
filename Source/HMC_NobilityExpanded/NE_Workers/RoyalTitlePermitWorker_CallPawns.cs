@@ -5,6 +5,7 @@ using Verse;
 
 namespace NobilityExpanded
 {
+    [StaticConstructorOnStartup]
     public class RoyalTitlePermitWorker_CallPawns : RoyalTitlePermitWorker_Targeted
     {
         private System.Random random = new System.Random();
@@ -60,24 +61,20 @@ namespace NobilityExpanded
         public override void OrderForceTarget(LocalTargetInfo target) =>
             CallAid(caller, map, target.Cell, free);
 
-        private void CallAid(
-            Pawn caller,
-            Map map,
-            IntVec3 spawnPos,
-            bool free)
-        {
-            OrderedStuffDef stuff = DefDatabase<OrderedStuffDef>.GetNamed(def.defName + "Stuff");
-            int randomIndex = random.Next(stuff.pawnToChoose.Count);
-
-            for (var index = 0; index < def.royalAid.pawnCount; ++index)
-            {
-                PawnGenerationRequest request = new PawnGenerationRequest(
-                    stuff.pawnToChoose[randomIndex],
-                    Faction.OfPlayer, 
-                    fixedGender: stuff.genders?[index]);
-                Pawn pawn = PawnGenerator.GeneratePawn(request);
+        private void CallAid(Pawn caller, Map map, IntVec3 spawnPos, bool free) {
+            var extension = def.GetModExtension<PermitExtensionList>();
+            if (extension?.pawnData == null) {
+                Log.Error("Cannot find mod extension");
+                return;
+            }
+            
+            int randomIndex = random.Next(extension.pawnData.Count);
+            PawnDataInfo data = extension.pawnData[randomIndex];
+            for (var index = 0; index < data.count; ++index) {
+                Pawn pawn = Utilities.PermitPawnsGenerator.GeneratePawnWithGender(data, index);
                 TradeUtility.SpawnDropPod(spawnPos + new IntVec3(index, 0, 0), map, pawn);
             }
+            
             if (!free)
                 caller.royalty.TryRemoveFavor(Faction.OfEmpire, def.royalAid.favorCost);
             caller.royalty.GetPermit(def, Faction.OfEmpire).Notify_Used();

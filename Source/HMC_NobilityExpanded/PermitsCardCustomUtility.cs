@@ -190,7 +190,7 @@ namespace NobilityExpanded
                 var bgColor = PermitUnlocked(permit, pawn) ? TexUI.FinishedResearchColor : TexUI.AvailResearchColor;
                 Color borderResearchColor;
                 var permitRect = new Rect(drawPosition.x, drawPosition.y, 200f, 50f);
-                switch (permit.permitPointCost) {
+                switch (permit.permitPointCost) { // todo change to modext
                     case 99:
                         textColor = new Color(1f, 0.5f, 0.0f, 1.0f);
                         bgColor = new Color(0.06f, 0.06f, 0.06f, 1);

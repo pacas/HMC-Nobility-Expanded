@@ -4,6 +4,12 @@
     <!-- группа -->
     <AnimalsPermitTitle.label>животные</AnimalsPermitTitle.label>
     <AnimalsPermitTitle.description>Запрос доставки различных животных.</AnimalsPermitTitle.description>
+    
+    <FunctionalAnimalsPermitSmallTitle.label>функциональные животные</FunctionalAnimalsPermitSmallTitle.label>
+    <FunctionalAnimalsPermitSmallTitle.description>Запрос доставки различных функциональных животных.</FunctionalAnimalsPermitSmallTitle.description>
+    
+    <SpecialAnimalsPermitSmallTitle.label>особые животные</SpecialAnimalsPermitSmallTitle.label>
+    <SpecialAnimalsPermitSmallTitle.description>Запрос доставки различных особых животных.</SpecialAnimalsPermitSmallTitle.description>
 
     <!-- ==== -->
     <MilkAnimalDrop.label>молокопроизводящие</MilkAnimalDrop.label>

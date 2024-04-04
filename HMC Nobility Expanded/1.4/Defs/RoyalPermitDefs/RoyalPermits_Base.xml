@@ -26,7 +26,7 @@
     <RoyalTitlePermitDef ParentName="MainDropBase" Name="DropResourcesUpdated" Abstract="True">
         <workerClass>NobilityExpanded.RoyalTitlePermitWorker_DropResourcesUpdated</workerClass>
     </RoyalTitlePermitDef>
-    
+     
     <RoyalTitlePermitDef ParentName="MainDropBase" Name="DropResourcesWithDialog" Abstract="True">
         <workerClass>NobilityExpanded.RoyalTitlePermitWorker_DropResourcesWithDialog</workerClass>
     </RoyalTitlePermitDef>
@@ -35,34 +35,28 @@
         <workerClass>NobilityExpanded.RoyalTitlePermitWorker_DropBuildings</workerClass>
     </RoyalTitlePermitDef>
 
-    <RoyalTitlePermitDef ParentName="MainDropBase" Name="SendPawns" Abstract="True">
+    <RoyalTitlePermitDef ParentName="MainDropBase" Name="CallPawns" Abstract="True">
         <workerClass>NobilityExpanded.RoyalTitlePermitWorker_CallPawns</workerClass>
         <usableOnWorldMap>false</usableOnWorldMap>
     </RoyalTitlePermitDef>
-
-    <RoyalTitlePermitDef ParentName="MainDropBase" Name="SendPawnsUpdated" Abstract="True">
-        <workerClass>NobilityExpanded.RoyalTitlePermitWorker_CallPawnsUpdated</workerClass>
-        <usableOnWorldMap>false</usableOnWorldMap>
-    </RoyalTitlePermitDef>
-    
     
     <!-- Permits bases -->
     
-    <RoyalTitlePermitDef ParentName="DropResourcesPlus" Name="DropResourcesTitle" Abstract="True">
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus" Name="DropResourcesTitle" Abstract="True"> <!--todo remove-->
         <permitPointCost>99</permitPointCost>
         <royalAid>
             <favorCost>99</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
 
-    <RoyalTitlePermitDef ParentName="DropResourcesPlus" Name="DropResourcesSmallTitle" Abstract="True">
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus" Name="DropResourcesSmallTitle" Abstract="True"> <!--todo remove-->
         <permitPointCost>98</permitPointCost>
         <royalAid>
             <favorCost>98</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
 
-    <RoyalTitlePermitDef ParentName="DropResourcesPlus" Name="DropOutfitTitle" Abstract="True">
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated" Name="DropOutfitTitle" Abstract="True">
         <minTitle>Knight</minTitle>
         <cooldownDays>30</cooldownDays>
         <royalAid>

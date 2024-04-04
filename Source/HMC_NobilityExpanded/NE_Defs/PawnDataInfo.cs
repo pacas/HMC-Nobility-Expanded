@@ -7,7 +7,7 @@ namespace NobilityExpanded
     {
         // pawns inside
         public PawnKindDef pawn;
-        public int count;
+        public int count = 1;
         public GenderType genderInfo = GenderType.RandomBase;
     }
 }
