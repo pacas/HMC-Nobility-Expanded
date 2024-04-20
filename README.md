@@ -1,9 +1,9 @@
 # HMC Nobility Expanded
-![Current Build](https://img.shields.io/github/v/release/pacas/HMC-Nobility-Expanded?display_name=release&style=for-the-badge&color=darkgreen&logo=github)<br>
-![Versions](https://img.shields.io/badge/version-1.3%2C_1.4-blue?style=for-the-badge)
-![Dowloads](https://img.shields.io/github/downloads/pacas/HMC-Nobility-Expanded/total?style=for-the-badge&color=blue)<br>
-![Support Me](https://img.shields.io/badge/boosty-support_me-red?style=for-the-badge&logo=boosty&labelColor=grey&link=https%3A%2F%2Fboosty.to%2Fpacas)
-![GitHub License](https://img.shields.io/github/license/pacas/HMC-Nobility-Expanded?style=for-the-badge&color=red)
+![Versions](https://img.shields.io/badge/version-1.3%2C_1.4-blue?style=for-the-badge) 
+![Dowloads](https://img.shields.io/github/downloads/pacas/HMC-Nobility-Expanded/total?style=for-the-badge&color=blue) 
+![Support Me](https://img.shields.io/badge/boosty-support_me-red?style=for-the-badge&logo=boosty&labelColor=grey&link=https%3A%2F%2Fboosty.to%2Fpacas) 
+![GitHub License](https://img.shields.io/github/license/pacas/HMC-Nobility-Expanded?style=for-the-badge&color=red)<br>
+![Current Build](https://img.shields.io/github/v/release/pacas/HMC-Nobility-Expanded?display_name=release&style=for-the-badge&color=darkgreen&logo=github)
 <br><br>
 ![Preview](/preview.png?raw=true "Preview")<br><br>
 <img src="https://i.imgur.com/svEwA2k.png">

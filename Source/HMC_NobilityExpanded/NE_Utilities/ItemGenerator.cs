@@ -11,27 +11,30 @@ namespace NobilityExpanded.Utilities
     {
         private static readonly Random Random = new Random();
         
-        public static List<Thing> GenerateItemRandom(List<ItemDataInfo> items) {
-            var randomIndex = Random.Next(items.Count);
-            var item = items[randomIndex];
-            List<Thing> things = GenerateItemByType(item);
-            if (item.additionalItems == null)
+        public static List<Thing> GenerateItems(PermitExtensionList extension) {
+            var things = new List<Thing>();
+            if (extension?.itemData == null) {
+                Log.Error("Cannot find mod extension");
                 return things;
-
-            foreach (var itemAdditional in item.additionalItems) {
-                var thing = ThingMaker.MakeThing(itemAdditional.thing);
-                thing.stackCount = itemAdditional.count;
-                things.Add(thing);
+            }
+            
+            if (extension.randomItem) {
+                var randomIndex = Random.Next(extension.itemData.Count);
+                var item = extension.itemData[randomIndex];
+                things.AddRange(GenerateItemByType(item));
+            } else {
+                foreach (var item in extension.itemData) {
+                    things.AddRange(GenerateItemByType(item));
+                }
             }
 
             return things;
         }
 
-        public static List<Thing> GenerateItemByType(ItemDataInfo item)
-        {
+        public static List<Thing> GenerateItemByType(ItemDataInfo item) {
             List<Thing> things = new List<Thing>();
             Thing thing;
-            if (item.stuff != null){
+            if (item.stuff != null) {
                 thing = item.quality != null ? GenerateThingStuffQuality(item) : ThingMaker.MakeThing(item.thing, item.stuff);
             } else {
                 thing = item.quality != null ? GenerateThingQuality(item) : ThingMaker.MakeThing(item.thing);
@@ -60,8 +63,7 @@ namespace NobilityExpanded.Utilities
             return things;
         }
         
-        public static Thing GenerateThingStuffQuality(ItemDataInfo item)
-        {
+        public static Thing GenerateThingStuffQuality(ItemDataInfo item) {
             var stuff = item.stuff;
             var quality = item.quality;
             switch (item.quality)
@@ -75,8 +77,7 @@ namespace NobilityExpanded.Utilities
             }
         }
         
-        public static Thing GenerateThingQuality(ItemDataInfo item)
-        {
+        public static Thing GenerateThingQuality(ItemDataInfo item) {
             Thing thing = ThingMaker.MakeThing(item.thing);
             CompQuality comp = thing.TryGetComp<CompQuality>();
             var quality = item.quality;

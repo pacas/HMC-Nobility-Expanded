@@ -10,11 +10,7 @@ namespace NobilityExpanded
     {
         private System.Random random = new System.Random();
 
-        public override IEnumerable<FloatMenuOption> GetRoyalAidOptions(
-            Map map,
-            Pawn pawn,
-            Faction faction)
-        {
+        public override IEnumerable<FloatMenuOption> GetRoyalAidOptions(Map map, Pawn pawn, Faction faction) {
             RoyalTitlePermitWorker_CallPawns permitWorkerCallAid = this;
             string reason;
             if (permitWorkerCallAid.AidDisabled(map, pawn, faction, out reason))
@@ -35,11 +31,7 @@ namespace NobilityExpanded
             }
         }
 
-        private void BeginCallAid(
-            Pawn caller,
-            Map map,
-            bool free)
-        {
+        private void BeginCallAid(Pawn caller, Map map, bool free) {
             targetingParameters = new TargetingParameters();
             targetingParameters.canTargetLocations = true;
             targetingParameters.canTargetSelf = false;

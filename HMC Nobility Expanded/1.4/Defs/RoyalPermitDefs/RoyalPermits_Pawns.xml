@@ -2,48 +2,36 @@
 <Defs>
 
     <!-- Vanilla Titles -->
-    <RoyalTitlePermitDef ParentName="DropResourcesTitle">
-        <defName>BasePermitTitle</defName>
-        <label>Base Requests</label>
-        <uiPosition>(1,0)</uiPosition>
-        <description>Requests for a drop of basic resources or a shuttle</description>
-    </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesTitle">
         <defName>WorkersPermitTitle</defName>
         <label>Workers</label>
-        <uiPosition>(1,4)</uiPosition>
         <description>Requests for temporary workers</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Title</type>
+                <category>Pawns</category>
+                <row>0</row>
+                <column>0</column>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesTitle">
         <defName>SoldiersPermitTitle</defName>
         <label>Soldiers</label>
-        <uiPosition>(1,6)</uiPosition>
         <description>Requests for temporary soldiers</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Title</type>
+                <category>Pawns</category>
+                <row>3</row>
+                <column>0</column>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-
-    <RoyalTitlePermitDef ParentName="DropResourcesTitle">
-        <defName>OrbitalPermitTitle</defName>
-        <label>Military Aid</label>
-        <uiPosition>(1,9)</uiPosition>
-        <description>Requests for quick military aid.</description>
-    </RoyalTitlePermitDef>
-
-    <!-- New drops-->
-    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
-        <defName>BlocksDrop</defName>
-        <label>Blocks</label>
-        <description>Request a drop of 300 random blocks.</description>
-        <minTitle>Acolyte</minTitle>
-        <cooldownDays>14</cooldownDays>
-        <royalAid>
-            <itemsToDrop>
-                <Steel>300</Steel>
-            </itemsToDrop>
-            <favorCost>2</favorCost>
-        </royalAid>
-    </RoyalTitlePermitDef>
+    
+    <!-- New -->
 
     <RoyalTitlePermitDef>
         <defName>CallMilitaryAidSmallPlus</defName>
@@ -61,5 +49,16 @@
             <targetingRange>39.9</targetingRange>
         </royalAid>
         <cooldownDays>40</cooldownDays>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Pawns</category>
+                <row>4</row>
+                <column>1</column>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
+    
+    <!-- Overwrite -->
+    
 </Defs>

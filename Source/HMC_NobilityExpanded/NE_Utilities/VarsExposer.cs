@@ -19,6 +19,7 @@ namespace NobilityExpanded.Utilities
             return stuffDefOrdered != null ? stuffDefOrdered.stuffList : extension?.stuffList;
         }
         
+        // todo rework
         public static List<PawnKindDef> GetPermitPawnList(RoyalTitlePermitDef permit) {
             var stuffDefOrdered = DefDatabase<OrderedStuffDef>.GetNamedSilentFail(permit.defName + "Stuff");
             var extension = permit.GetModExtension<PermitExtensionList>();

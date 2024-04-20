@@ -13,11 +13,7 @@ namespace NobilityExpanded
         protected static readonly Texture2D CommandTex = ContentFinder<Texture2D>.Get("UI/Commands/CallAid");
         protected Faction faction;
 
-        public override IEnumerable<FloatMenuOption> GetRoyalAidOptions(
-            Map map,
-            Pawn pawn,
-            Faction faction)
-        {
+        public override IEnumerable<FloatMenuOption> GetRoyalAidOptions(Map map, Pawn pawn, Faction faction) {
             var workerDropResources = this;
             if (faction.HostileTo(Faction.OfPlayer)) {
                 yield return new FloatMenuOption(
@@ -33,8 +29,7 @@ namespace NobilityExpanded
             }
         }
         
-        public override IEnumerable<Gizmo> GetCaravanGizmos(Pawn pawn, Faction faction)
-        {
+        public override IEnumerable<Gizmo> GetCaravanGizmos(Pawn pawn, Faction faction) {
             var workerDropResources = this;
             string description;
             bool disableNotEnoughFavor;

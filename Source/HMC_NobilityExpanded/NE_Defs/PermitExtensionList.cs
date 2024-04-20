@@ -11,7 +11,8 @@ namespace NobilityExpanded
         public string category;
         [CanBeNull] public int? column;
         [CanBeNull] public int? row;
-        
+
+        public bool randomItem = false;
         [CanBeNull] public List<ItemDataInfo> itemData;
         [CanBeNull] public List<PawnDataInfo> pawnData;
         

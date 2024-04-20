@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesTitle">
+        <defName>BasePermitTitle</defName>
+        <label>Base Requests</label>
+        <description>Requests for a drop of basic resources or a shuttle</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Title</type>
+                <category>Resources</category>
+                <row>0</row>
+                <column>0</column>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+    
+    <!-- New -->
+    
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>BlocksDrop</defName>
+        <label>Blocks</label>
+        <description>Request a drop of 300 random blocks.</description>
+        <minTitle>Acolyte</minTitle>
+        <cooldownDays>14</cooldownDays>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>300</Steel>
+            </itemsToDrop>
+            <favorCost>2</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Resources</category>
+                <row>3</row>
+                <column>0</column>
+                <itemData>
+                    <li>
+                        <thing>BlocksMarble</thing>
+                        <count>300</count>
+                    </li>
+                    <li>
+                        <thing>BlocksSandstone</thing>
+                        <count>300</count>
+                    </li>
+                    <li>
+                        <thing>BlocksGranite</thing>
+                        <count>300</count>
+                    </li>
+                    <li>
+                        <thing>BlocksLimestone</thing>
+                        <count>300</count>
+                    </li>
+                    <li>
+                        <thing>BlocksSlate</thing>
+                        <count>300</count>
+                    </li>
+                    <li>
+                        <thing>ClayBrick</thing>
+                        <count>300</count>
+                    </li>
+                    <li>
+                        <thing>ZF_BlocksBasalt</thing>
+                        <count>300</count>
+                    </li>
+                    <li>
+                        <thing>ZF_BlocksClay</thing>
+                        <count>300</count>
+                    </li>
+                    <li>
+                        <thing>ZF_BlocksMudstone</thing>
+                        <count>300</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+    
+    <!-- Overwrite -->
+
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>SteelDrop</defName>
+        <label>iron ore</label>
+        <description>Call for a drop of 300 iron ore.</description>
+        <minTitle>Acolyte</minTitle>
+        <faction>Empire</faction>
+        <permitPointCost>1</permitPointCost>
+        <cooldownDays>20</cooldownDays>
+        <royalAid>
+            <favorCost>4</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Resources</category>
+                <row>1</row>
+                <column>0</column>
+                <itemData>
+                    <li>
+                        <thing>Steel</thing>
+                        <count>300</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>SilverDrop</defName>
+        <label>silver</label>
+        <description>Call for a drop of 1200 silver.</description>
+        <minTitle>Knight</minTitle>
+        <cooldownDays>30</cooldownDays>
+        <royalAid>
+            <favorCost>6</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Resources</category>
+                <row>1</row>
+                <column>1</column>
+                <itemData>
+                    <li>
+                        <thing>Silver</thing>
+                        <count>1200</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>FoodDrop</defName>
+        <label>food</label>
+        <description>Call for a drop of 50 packaged survival meals.</description>
+        <minTitle>Acolyte</minTitle>
+        <cooldownDays>14</cooldownDays>
+        <royalAid>
+            <favorCost>4</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Resources</category>
+                <row>2</row>
+                <column>0</column>
+                <itemData>
+                    <li>
+                        <thing>MealSurvivalPack</thing>
+                        <count>50</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdatedDropResourcesUpdated">
+        <defName>GlitterMedDrop</defName>
+        <label>glitter med</label>
+        <description>Call for a drop of 8 glitterworld medicine.</description>
+        <minTitle>Baron</minTitle> 
+        <cooldownDays>30</cooldownDays>
+        <permitPointCost>2</permitPointCost>
+        <royalAid>
+            <favorCost>8</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Resources</category>
+                <row>2</row>
+                <column>1</column>
+                <itemData>
+                    <li>
+                        <thing>MedicineUltratech</thing>
+                        <count>8</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+      
+    <RoyalTitlePermitDef>
+        <defName>CallTransportShuttle</defName>
+        <label>transport shuttle</label>
+        <description>Call a shuttle for your own use. It will transport colonists, items, and animals anywhere you like within 70 world tiles.</description>
+        <workerClass>RoyalTitlePermitWorker_CallShuttle</workerClass>
+        <minTitle>Knight</minTitle>
+        <faction>Empire</faction>
+        <permitPointCost>1</permitPointCost>
+        <cooldownDays>30</cooldownDays>
+        <usableOnWorldMap>true</usableOnWorldMap>
+        <royalAid>
+            <favorCost>8</favorCost>
+            <targetingRange>44.9</targetingRange>
+            <targetingRequireLOS>false</targetingRequireLOS>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Resources</category>
+                <row>3</row>
+                <column>1</column>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+    
+</Defs>

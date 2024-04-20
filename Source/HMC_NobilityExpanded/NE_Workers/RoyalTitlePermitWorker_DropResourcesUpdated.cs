@@ -13,17 +13,8 @@ namespace NobilityExpanded
         }
 
         private void CallResources(IntVec3 cell) {
-            var list = new List<Thing>();
             var extension = def.GetModExtension<PermitExtensionList>();
-            if (extension?.itemData == null) {
-                Log.Error("Cannot find mod extension");
-                return;
-            }
-
-            foreach (var item in extension.itemData) {
-                list.AddRange(Utilities.ItemGenerator.GenerateItemByType(item));
-            }
-
+            var list = Utilities.ItemGenerator.GenerateItems(extension);
             if (!list.Any()) {
                 Log.Error("Empty drop list");
                 return;
@@ -43,17 +34,8 @@ namespace NobilityExpanded
 
         protected override void CallResourcesToCaravan(Pawn caller, Faction faction, bool free) {
             var caravan = caller.GetCaravan();
-            var list = new List<Thing>();
             var extension = def.GetModExtension<PermitExtensionList>();
-            if (extension?.itemData == null) {
-                Log.Error("Cannot find mod extension");
-                return;
-            }
-            
-            foreach (var item in extension.itemData) {
-                list.AddRange(Utilities.ItemGenerator.GenerateItemByType(item));
-            }
-            
+            var list = Utilities.ItemGenerator.GenerateItems(extension);
             if (!list.Any()) {
                 Log.Error("Empty drop list");
                 return;

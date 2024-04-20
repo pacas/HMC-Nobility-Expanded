@@ -5,49 +5,63 @@
         <defName>RangedPermitTitle</defName>
         <label>Ranged Weapons</label>
         <description>Request a drop of random ranged weapons.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Title</type>
+                <category>Ranged</category>
+                <column>0</column>
+                <row>0</row>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
 
     <!-- Bows and crossbows -->
     
-    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
         <defName>BowDrop</defName>
         <label>Bow / Crossbow</label>
         <description>Request a drop of random bow/crossbow with ammo.</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>5</cooldownDays>
         <royalAid>
-            <itemsToDrop>
-                <Steel>1</Steel>
-            </itemsToDrop>
             <favorCost>2</favorCost>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Ranged</category>
+                <row>1</row>
+                <column>0</column>
+                <randomItem>true</randomItem>
+                <itemData>
+                    <li>
+                        <thing>Bow_Short</thing>
+                        <count>1</count>
+                        <ammoCount>75</ammoCount>
+                        <stuff>WoodLog</stuff>
+                    </li>
+                    <li>
+                        <thing>Bow_Great</thing>
+                        <count>1</count>
+                        <ammoCount>75</ammoCount>
+                        <stuff>WoodLog</stuff>
+                    </li>
+                    <li>
+                        <thing>Crossbow</thing>
+                        <count>1</count>
+                        <ammoCount>75</ammoCount>
+                        <stuff>WoodLog</stuff>
+                    </li>
+                    <li>
+                        <thing>Norbal_Scorpion</thing>
+                        <count>1</count>
+                        <ammoCount>75</ammoCount>
+                        <stuff>WoodLog</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedGunBase">
-        <defName>BowDropStuff</defName>
-        <thingsToChoose>
-            <li>Bow_Short</li>
-            <li>Bow_Great</li>
-            <li>Crossbow</li>
-            <li>Norbal_Scorpion</li>
-        </thingsToChoose>
-        <ammunition>
-            <li>75</li>
-            <li>75</li>
-            <li>75</li>
-            <li>75</li>
-            <li>75</li>
-            <li>75</li>
-        </ammunition>
-        <stuffList>
-            <li>WoodLog</li>
-            <li>WoodLog</li>
-            <li>WoodLog</li>
-            <li>WoodLog</li>
-        </stuffList>
-        <typeOfDrop>Stuff</typeOfDrop>
-        <typeOfItem>Random</typeOfItem>
-        <ammoUsage>Gun</ammoUsage>
-    </NobilityExpanded.OrderedStuffDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>BowDropPlus</defName>
@@ -93,45 +107,72 @@
     
     <!-- Pistol -->
   
-    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
         <defName>PistolDrop</defName>
         <label>pistol</label>
         <description>Request a drop of random pistol with ammo.</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>15</cooldownDays>
         <royalAid>
-            <itemsToDrop>
-                <Steel>1</Steel>
-            </itemsToDrop>
             <favorCost>4</favorCost>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Ranged</category>
+                <row>2</row>
+                <column>0</column>
+                <randomItem>true</randomItem>
+                <itemData>
+                    <li>
+                        <thing>Gun_Revolver</thing>
+                        <count>1</count>
+                        <ammoCount>60</ammoCount>
+                    </li>
+                    <li>
+                        <thing>RF_Gun_Deringer</thing>
+                        <count>1</count>
+                        <ammoCount>60</ammoCount>
+                    </li>
+                    <li>
+                        <thing>RF_Gun_AT2K</thing>
+                        <count>1</count>
+                        <ammoCount>60</ammoCount>
+                    </li>
+                    <li>
+                        <thing>RF_Gun_93R</thing>
+                        <count>1</count>
+                        <ammoCount>100</ammoCount>
+                    </li>
+                    <li>
+                        <thing>RF_Gun_VektorCP</thing>
+                        <count>1</count>
+                        <ammoCount>60</ammoCount>
+                    </li>
+                    <li MayRequire="Mlie.ApexRimworldLegends.SK">
+                        <thing>ARL_CombatHandgun</thing>
+                        <count>1</count>
+                        <ammoCount>63</ammoCount>
+                    </li>
+                    <li MayRequire="XxNelsonxX.Parabellum">
+                        <thing>Pa_SR</thing>
+                        <count>1</count>
+                        <ammoCount>48</ammoCount>
+                    </li>
+                    <li MayRequire="XxNelsonxX.Parabellum">
+                        <thing>Pa_C96M</thing>
+                        <count>1</count>
+                        <ammoCount>60</ammoCount>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Gun_TT33_HMC</thing>
+                        <count>1</count>
+                        <ammoCount>64</ammoCount>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedGunBase">
-        <defName>PistolDropStuff</defName>
-        <thingsToChoose>
-            <li>Gun_Revolver</li>
-            <li>RF_Gun_Deringer</li>
-            <li>RF_Gun_AT2K</li>
-            <li>RF_Gun_93R</li>
-            <li>RF_Gun_VektorCP</li>
-            <li MayRequire="Mlie.ApexRimworldLegends.SK">ARL_CombatHandgun</li>
-            <li MayRequire="XxNelsonxX.Parabellum">Pa_SR</li>
-            <li MayRequire="XxNelsonxX.Parabellum">Pa_C96M</li>
-            <li MayRequire="arpomo6.hmc.project">Gun_TT33_HMC</li>
-        </thingsToChoose>
-        <ammunition>
-            <li>60</li>
-            <li>60</li>
-            <li>60</li>
-            <li>100</li>
-            <li>60</li>
-            <li MayRequire="Mlie.ApexRimworldLegends.SK">63</li>
-            <li MayRequire="XxNelsonxX.Parabellum">48</li>
-            <li MayRequire="XxNelsonxX.Parabellum">60</li>
-            <li MayRequire="arpomo6.hmc.project">64</li>
-            <li MayRequire="arpomo6.hmc.project">64</li>
-        </ammunition>
-    </NobilityExpanded.OrderedStuffDef>
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>PistolDropPlus</defName>

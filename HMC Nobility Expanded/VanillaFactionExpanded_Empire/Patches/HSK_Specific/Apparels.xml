@@ -2,6 +2,16 @@
 <Patch>
     <Operation Class="PatchOperationSequence">
         <operations>
+
+            <li Class="PatchOperationAttributeSet">
+                <xpath>Defs/ThingDef[defName="VFEE_Apparel_ArmorDeserter"
+                    or defName="VFEE_Apparel_DeserterHelmet"
+                    or defName="VFEE_Apparel_JanissaryCuirass"
+                    or defName="VFEE_Apparel_JanissaryHelmet"
+                    ]</xpath>
+                <attribute>ParentName</attribute>
+                <value>ArmorSpacerBase</value>
+            </li>
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="VFEE_Apparel_JanissaryCuirass" or 
                     defName="VFEE_Apparel_JanissaryHelmet"]/statBases</xpath>
@@ -124,11 +134,6 @@
                 <value>
                     <smeltable>false</smeltable>
                 </value>
-            </li>
-            <li Class="PatchOperationAttributeSet">
-                <xpath>Defs/ThingDef[defName="VFEE_Apparel_ArmorDeserter" or defName="VFEE_Apparel_DeserterHelmet"]</xpath>
-                <attribute>ParentName</attribute>
-                <value>ArmorSpacerBase</value>
             </li>
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[defName="VFEE_Apparel_ArmorDeserter"]/thingCategories</xpath>

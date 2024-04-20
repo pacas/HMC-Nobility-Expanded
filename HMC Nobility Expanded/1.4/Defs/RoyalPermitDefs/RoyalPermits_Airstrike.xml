@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    
+    <RoyalTitlePermitDef ParentName="DropResourcesTitle">
+        <defName>OrbitalPermitTitle</defName>
+        <label>Military Aid</label>
+        <description>Requests for quick military aid.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Title</type>
+                <category>Airstrike</category>
+                <column>0</column>
+                <row>0</row>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+    
+</Defs>

@@ -277,10 +277,14 @@ namespace NobilityExpanded
                     var vector2 = DrawPosition(prerequisite);
                     end.x = vector2.x + 200f;
                     end.y = vector2.y + 25f;
-                    if ((columnIndex == 1 && selectedPermit == permit) || selectedPermit == prerequisite)
-                        Widgets.DrawLine(start, end, TexUI.HighlightLineResearchColor, 4f);
-                    else if (columnIndex == 0)
-                        Widgets.DrawLine(start, end, TexUI.DefaultLineResearchColor, 2f);
+                    var extension = permit.GetModExtension<PermitExtensionList>();
+                    int? index = extension != null ? extension.column : columnIndex;
+                    var color = index == 0
+                        ? TexUI.DefaultLineResearchColor
+                        : TexUI.HighlightLineResearchColor;
+                    var width = index == 0 ? 2f : 4f;
+                    if ((selectedPermit == permit || selectedPermit == prerequisite) || index == 0)
+                        Widgets.DrawLine(start, end, color, width);
                 }
         }
 

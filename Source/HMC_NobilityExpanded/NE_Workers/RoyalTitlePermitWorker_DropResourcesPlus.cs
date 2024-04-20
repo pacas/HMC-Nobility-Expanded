@@ -21,11 +21,7 @@ namespace NobilityExpanded
             CallResources(target.Cell);
         }
 
-        public override IEnumerable<FloatMenuOption> GetRoyalAidOptions(
-            Map map,
-            Pawn pawn,
-            Faction faction)
-        {
+        public override IEnumerable<FloatMenuOption> GetRoyalAidOptions(Map map, Pawn pawn, Faction faction) {
             var workerDropResources = this;
             if (faction.HostileTo(Faction.OfPlayer))
             {
@@ -44,8 +40,7 @@ namespace NobilityExpanded
             }
         }
 
-        public override IEnumerable<Gizmo> GetCaravanGizmos(Pawn pawn, Faction faction)
-        {
+        public override IEnumerable<Gizmo> GetCaravanGizmos(Pawn pawn, Faction faction) {
             var workerDropResources = this;
             string description;
             bool disableNotEnoughFavor;
@@ -79,8 +74,7 @@ namespace NobilityExpanded
             }
         }
 
-        private void BeginCallResources(Pawn caller, Faction faction, Map map, bool free)
-        {
+        private void BeginCallResources(Pawn caller, Faction faction, Map map, bool free) {
             targetingParameters = new TargetingParameters();
             targetingParameters.canTargetLocations = true;
             targetingParameters.canTargetBuildings = false;
@@ -95,8 +89,7 @@ namespace NobilityExpanded
             Find.Targeter.BeginTargeting(this);
         }
 
-        private void CallResources(IntVec3 cell)
-        {
+        private void CallResources(IntVec3 cell) {
             var list = new List<Thing>();
             for (var index = 0; index < def.royalAid.itemsToDrop.Count; ++index)
             {
@@ -119,8 +112,7 @@ namespace NobilityExpanded
             caller.royalty.TryRemoveFavor(faction, def.royalAid.favorCost);
         }
 
-        private void CallResourcesToCaravan(Pawn caller, Faction faction, bool free)
-        {
+        private void CallResourcesToCaravan(Pawn caller, Faction faction, bool free) {
             var caravan = caller.GetCaravan();
             for (var index = 0; index < def.royalAid.itemsToDrop.Count; ++index)
             {
@@ -139,15 +131,13 @@ namespace NobilityExpanded
             caller.royalty.TryRemoveFavor(faction, def.royalAid.favorCost);
         }
 
-        private List<Thing> GenerateItems(int index)
-        {
+        private List<Thing> GenerateItems(int index) {
             stuffDefOrdered = DefDatabase<OrderedStuffDef>.GetNamed(def.defName + "Stuff");
             List<Thing> things = new List<Thing>();
             Thing thing;
             ThingDef item;
             var randomIndex = 0;
-            switch (stuffDefOrdered.typeOfItem)
-            {
+            switch (stuffDefOrdered.typeOfItem) {
                 case "Specific":
                     item = def.royalAid.itemsToDrop[index].thingDef;
                     break;
@@ -159,8 +149,7 @@ namespace NobilityExpanded
                     item = def.royalAid.itemsToDrop[index].thingDef;
                     break;
             }
-            switch (stuffDefOrdered.typeOfDrop)
-            {
+            switch (stuffDefOrdered.typeOfDrop) {
                 case "Stuff":
                     thing = GenerateThingStuff(index, item);
                     break;
