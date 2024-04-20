@@ -60,5 +60,132 @@
     </RoyalTitlePermitDef>
     
     <!-- Overwrite -->
+
+    <RoyalTitlePermitDef>
+        <defName>CallLaborerTeam</defName>
+        <label>laborer team</label>
+        <description>Call a group of 4 laborers to assist you for 4 days. These workers can only do general labor tasks. You can control them as though they were your own colonists. You are required to keep them safe.</description>
+        <workerClass>RoyalTitlePermitWorker_CallLaborers</workerClass>
+        <minTitle>Acolyte</minTitle>
+        <faction>Empire</faction>
+        <permitPointCost>2</permitPointCost>
+        <royalAid>
+            <favorCost>4</favorCost>
+            <pawnKindDef>Empire_Common_Laborer</pawnKindDef>
+            <pawnCount>4</pawnCount>
+            <aidDurationDays>4</aidDurationDays>
+        </royalAid>
+        <cooldownDays>30</cooldownDays>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Pawns</category>
+                <row>1</row>
+                <column>0</column>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef>
+        <defName>CallLaborerGang</defName>
+        <label>laborer gang</label>
+        <description>Call a group of 8 laborers to assist you for 4 days. These workers can only do general labor tasks. You can control them as though they were your own colonists. You are required to keep them safe.</description>
+        <workerClass>RoyalTitlePermitWorker_CallLaborers</workerClass>
+        <minTitle>Count</minTitle>
+        <faction>Empire</faction>
+        <permitPointCost>3</permitPointCost>
+        <prerequisite>CallLaborerTeam</prerequisite>
+        <royalAid>
+            <favorCost>8</favorCost>
+            <pawnKindDef>Empire_Common_Laborer</pawnKindDef>
+            <pawnCount>8</pawnCount>
+            <aidDurationDays>4</aidDurationDays>
+        </royalAid>
+        <cooldownDays>38</cooldownDays>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Pawns</category>
+                <row>1</row>
+                <column>1</column>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef>
+        <defName>CallMilitaryAidSmall</defName>
+        <label>trooper squad</label>
+        <description>Call a group of 2 light troopers to aid you in battle.</description>
+        <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+        <minTitle>Acolyte</minTitle>
+        <faction>Empire</faction>
+        <permitPointCost>2</permitPointCost>
+        <royalAid>
+            <favorCost>4</favorCost>
+            <pawnKindDef>Empire_Fighter_Trooper</pawnKindDef>
+            <pawnCount>2</pawnCount>
+            <targetingRange>39.9</targetingRange>
+        </royalAid>
+        <cooldownDays>15</cooldownDays>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Pawns</category>
+                <row>4</row>
+                <column>0</column>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef>
+        <defName>CallMilitaryAidLarge</defName>
+        <label>janissary squad</label>
+        <description>Call a group of 4 professional janissaries to aid you in battle.</description>
+        <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+        <minTitle>Praetor</minTitle>
+        <faction>Empire</faction>
+        <permitPointCost>3</permitPointCost>
+        <royalAid>
+            <favorCost>6</favorCost>
+            <pawnKindDef>Empire_Fighter_Janissary</pawnKindDef>
+            <pawnCount>4</pawnCount>
+            <targetingRange>39.9</targetingRange>
+        </royalAid>
+        <cooldownDays>50</cooldownDays>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Pawns</category>
+                <row>5</row>
+                <column>0</column>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef>
+        <defName>CallMilitaryAidGrand</defName>
+        <label>cataphract squad</label>
+        <description>Call a group of 4 heavy cataphracts to aid you in battle.</description>
+        <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+        <minTitle>Count</minTitle>
+        <faction>Empire</faction>
+        <permitPointCost>4</permitPointCost>
+        <prerequisite>CallMilitaryAidLarge</prerequisite>
+        <royalAid>
+            <favorCost>8</favorCost>
+            <pawnKindDef>Empire_Fighter_Cataphract</pawnKindDef>
+            <pawnCount>4</pawnCount>
+            <targetingRange>39.9</targetingRange>
+        </royalAid>
+        <cooldownDays>60</cooldownDays>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Pawns</category>
+                <row>5</row>
+                <column>1</column>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
     
 </Defs>

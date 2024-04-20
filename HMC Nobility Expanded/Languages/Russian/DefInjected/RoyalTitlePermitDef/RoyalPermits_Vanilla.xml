@@ -24,9 +24,9 @@
     <FoodDrop.label>Сухпайки</FoodDrop.label>
     <FoodDrop.description>Запрос доставки 50 сухих пайков.</FoodDrop.description>
     <GlitterMedDrop.label>Передовые медикаменты</GlitterMedDrop.label>
-    <GlitterMedDrop.description>Запрос доставки 5 передовых медикаментов.</GlitterMedDrop.description>
+    <GlitterMedDrop.description>Запрос доставки 8 передовых медикаментов.</GlitterMedDrop.description>
     <SilverDrop.label>Серебро</SilverDrop.label>
-    <SilverDrop.description>Запрос доставки 1000 единиц серебра.</SilverDrop.description>
+    <SilverDrop.description>Запрос доставки 1200 единиц серебра.</SilverDrop.description>
     <CallTransportShuttle.label>транспортный челнок</CallTransportShuttle.label>
     <CallTransportShuttle.description>Запрос челнока для собственных нужд. Челнок может перевозить людей, животных и грузы в любую точку в радиусе 70 клеток на карте мира. Одноразовый.</CallTransportShuttle.description>
 
@@ -48,7 +48,7 @@
     <CallOrbitalSalvo.label>воздушная бомбардировка</CallOrbitalSalvo.label>
     <CallOrbitalSalvo.description>Запрос серии ударов по области вокруг указанных координат с беспилотника.</CallOrbitalSalvo.description>
     <CallOrbitalStrike.label>воздушный удар</CallOrbitalStrike.label>
-    <CallOrbitalStrike.description>Запрос одиночного воздушного удара по указанным координатам с беспилотника.</CallOrbitalStrike.description>
+    <CallOrbitalStrike.description>Запрос двойного воздушного удара по указанным координатам с беспилотника.</CallOrbitalStrike.description>
 
     <!-- biotech -->
     <BabyFoodDrop.label>детское питание</BabyFoodDrop.label>

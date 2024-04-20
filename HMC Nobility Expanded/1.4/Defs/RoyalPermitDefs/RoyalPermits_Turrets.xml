@@ -5,36 +5,84 @@
         <defName>TurretsMannedPermitTitle</defName>
         <label>Manned Turrets</label>
         <description>Request a drop of different manned turrets.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Title</type>
+                <category>Turrets</category>
+                <row>0</row>
+                <column>0</column>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesTitle">
         <defName>AutoTurretsPermitTitle</defName>
         <label>Autoturrets</label>
         <description>Request a drop of different autoturrets.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Title</type>
+                <category>Turrets</category>
+                <row>14</row>
+                <column>0</column>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
         <defName>TurretsMedievalPermitSmallTitle</defName>
         <label>Medieval turrets</label>
-        <description>Request a drop of ballistas or catapul.</description>
+        <description>Request a drop of ballistas or catapult.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Category</type>
+                <category>Turrets</category>
+                <row>1</row>
+                <column>0</column>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
         <defName>TurretsMachinegunsPermitSmallTitle</defName>
         <label>Stationary Machine Guns</label>
         <description>Request a drop of different machine guns.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Category</type>
+                <category>Turrets</category>
+                <row>3</row>
+                <column>0</column>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
         <defName>MortarsPermitSmallTitle</defName>
         <label>Mortars and Artillery</label>
         <description>Request a drop of different mortars and artillery.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Category</type>
+                <category>Turrets</category>
+                <row>6</row>
+                <column>0</column>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
         <defName>RocketsPermitSmallTitle</defName>
         <label>Rocket Launchers</label>
         <description>Request a drop of different rocket launchers.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Category</type>
+                <category>Turrets</category>
+                <row>10</row>
+                <column>0</column>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
 
     

@@ -4,7 +4,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesTitle">
         <defName>BasePermitTitle</defName>
         <label>Base Requests</label>
-        <description>Requests for a drop of basic resources or a shuttle</description>
+        <description>Requests for a drop of the resources or services</description>
         <modExtensions>
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Title</type>
@@ -78,6 +78,7 @@
     </RoyalTitlePermitDef>
     
     <!-- Overwrite -->
+    <!-- todo rework to ore -->
 
     <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
         <defName>SteelDrop</defName>
@@ -156,7 +157,7 @@
         </modExtensions>
     </RoyalTitlePermitDef>
 
-    <RoyalTitlePermitDef ParentName="DropResourcesUpdatedDropResourcesUpdated">
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
         <defName>GlitterMedDrop</defName>
         <label>glitter med</label>
         <description>Call for a drop of 8 glitterworld medicine.</description>
@@ -189,7 +190,7 @@
         <workerClass>RoyalTitlePermitWorker_CallShuttle</workerClass>
         <minTitle>Knight</minTitle>
         <faction>Empire</faction>
-        <permitPointCost>1</permitPointCost>
+        <permitPointCost>2</permitPointCost>
         <cooldownDays>30</cooldownDays>
         <usableOnWorldMap>true</usableOnWorldMap>
         <royalAid>

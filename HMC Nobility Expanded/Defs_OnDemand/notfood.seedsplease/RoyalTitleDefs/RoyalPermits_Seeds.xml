@@ -4,120 +4,197 @@
     <RoyalTitlePermitDef ParentName="DropResourcesTitle">
         <defName>SeedsPermitTitle</defName>
         <label>Seeds</label>
-        <description>Call for a drop of random seeds.</description>
+        <description>Call for a drop a box of seeds.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Title</type>
+                <category>Seeds</category>
+                <column>0</column>
+                <row>0</row>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
 
-    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
         <defName>SeedsGrainsDrop</defName>
         <label>grains</label>
-        <description>Call for a drop of 75 random grains seeds.</description>
+        <description>Call for a drop of grains seeds.</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>15</cooldownDays>
         <royalAid>
-            <itemsToDrop>
-                <Seed_Potato>75</Seed_Potato>
-            </itemsToDrop>
             <favorCost>2</favorCost>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Seeds</category>
+                <row>1</row>
+                <column>0</column>
+                <itemData>
+                    <li>
+                        <thing>Seed_Rice</thing>
+                        <count>75</count>
+                    </li>
+                    <li>
+                        <thing>Seedwheat</thing>
+                        <count>75</count>
+                    </li>
+                    <li>
+                        <thing>Seed_Corn</thing>
+                        <count>75</count>
+                    </li>
+                    <li>
+                        <thing>Seedbean</thing>
+                        <count>75</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.biomes">
+                        <thing>SeedBuckwheat</thing>
+                        <count>75</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsBase">
-        <defName>SeedsGrainsDropStuff</defName>
-        <thingsToChoose>
-            <li>Seed_Rice</li>
-            <li>Seedwheat</li>
-            <li>Seed_Corn</li>
-            <li>Seedbean</li>
-            <li MayRequire="arpomo6.hmc.biomes">SeedBuckwheat</li>
-        </thingsToChoose>
-    </NobilityExpanded.OrderedStuffDef>
 
     <!-- xxxxx -->
 
-    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
         <defName>SeedsVegesDrop</defName>
         <label>vegetables</label>
-        <description>Call for a drop of 75 random vegetables seeds.</description>
+        <description>Call for a drop of vegetables seeds.</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>15</cooldownDays>
         <royalAid>
-            <itemsToDrop>
-                <Seed_Rice>75</Seed_Rice>
-            </itemsToDrop>
             <favorCost>2</favorCost>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Seeds</category>
+                <row>1</row>
+                <column>1</column>
+                <itemData>
+                    <li>
+                        <thing>Seed_Potato</thing>
+                        <count>75</count>
+                    </li>
+                    <li>
+                        <thing>SeedCarrot</thing>
+                        <count>75</count>
+                    </li>
+                    <li>
+                        <thing>SeedTomato</thing>
+                        <count>75</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsBase">
-        <defName>SeedsVegesDropStuff</defName>
-        <column>1</column>
-        <thingsToChoose>
-            <li>Seed_Potato</li>
-            <li>SeedCarrot</li>
-            <li>SeedTomato</li>
-        </thingsToChoose>
-    </NobilityExpanded.OrderedStuffDef>
 
     <!-- xxxxx -->
     
-    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
         <defName>SeedsShroomsDrop</defName>
         <label>mushrooms spores</label>
-        <description>Call for a drop of 75 random mushrooms spores.</description>
+        <description>Call for a drop of mushrooms spores.</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>15</cooldownDays>
         <royalAid>
-            <itemsToDrop>
-                <Seed_Potato>75</Seed_Potato>
-            </itemsToDrop>
             <favorCost>2</favorCost>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Seeds</category>
+                <row>2</row>
+                <column>0</column>
+                <itemData>
+                    <li>
+                        <thing>Seedmushroom</thing>
+                        <count>75</count>
+                    </li>
+                    <li>
+                        <thing>Seed_glowbulb</thing>
+                        <count>75</count>
+                    </li>
+                    <li>
+                        <thing>Seed_Agarilux</thing>
+                        <count>75</count>
+                    </li>
+                    <li>
+                        <thing>Seed_shimmershroom</thing>
+                        <count>75</count>
+                    </li>
+                    <li MayRequire="ludeon.rimworld.ideology">
+                        <thing>Seed_Nutrifungus</thing>
+                        <count>75</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsBase">
-        <defName>SeedsShroomsDropStuff</defName>
-        <thingsToChoose>
-            <li>Seedmushroom</li>
-            <li>Seed_glowbulb</li>
-            <li>Seed_Agarilux</li>
-            <li>Seed_shimmershroom</li>
-            <li MayRequire="ludeon.rimworld.ideology">Seed_Nutrifungus</li>
-        </thingsToChoose>
-    </NobilityExpanded.OrderedStuffDef>
 
     <!-- xxxxx -->
 
-    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
         <defName>SeedsLuxDrop</defName>
         <label>cooking ingredients</label>
-        <description>Call for a drop of 50 random cooking ingredients seeds.</description>
+        <description>Call for a drop of cooking ingredients seeds.</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>24</cooldownDays>
         <royalAid>
-            <itemsToDrop>
-                <Seed_Rice>50</Seed_Rice>
-            </itemsToDrop>
             <favorCost>3</favorCost>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Seeds</category>
+                <row>2</row>
+                <column>1</column>
+                <itemData>
+                    <li>
+                        <thing>Seed_Strawberry</thing>
+                        <count>50</count>
+                    </li>
+                    <li>
+                        <thing>Seedcocoa</thing>
+                        <count>50</count>
+                    </li>
+                    <li>
+                        <thing>Seedgrape</thing>
+                        <count>50</count>
+                    </li>
+                    <li>
+                        <thing>Seedsugarcane</thing>
+                        <count>50</count>
+                    </li>
+                    <li>
+                        <thing>SeedMint</thing>
+                        <count>50</count>
+                    </li>
+                    <li>
+                        <thing>Seedonion</thing>
+                        <count>50</count>
+                    </li>
+                    <li>
+                        <thing>SeedWildRose</thing>
+                        <count>50</count>
+                    </li>
+                    <li>
+                        <thing>SeedHypericum</thing>
+                        <count>50</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsBase">
-        <defName>SeedsLuxDropStuff</defName>
-        <column>1</column>
-        <thingsToChoose>
-            <li>Seed_Strawberry</li>
-            <li>Seedcocoa</li>
-            <li>Seedgrape</li>
-            <li>Seedsugarcane</li>
-            <li>SeedMint</li>
-            <li>Seedonion</li>
-            <li>SeedWildRose</li>
-            <li>SeedHypericum</li>
-        </thingsToChoose>
-    </NobilityExpanded.OrderedStuffDef>
 
     <!-- xxxxx -->
 
-    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
         <defName>SeedsAddictiveDrop</defName>
         <label>addictive crops</label>
-        <description>Call for a drop of 35 addictive crops seeds.</description>
+        <description>Call for a drop of addictive crops seeds.</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>24</cooldownDays>
         <royalAid>
@@ -126,151 +203,259 @@
             </itemsToDrop>
             <favorCost>4</favorCost>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Seeds</category>
+                <row>3</row>
+                <column>0</column>
+                <itemData>
+                    <li>
+                        <thing>SeedCoffee</thing>
+                        <count>50</count>
+                    </li>
+                    <li>
+                        <thing>SeedTea</thing>
+                        <count>50</count>
+                    </li>
+                    <li>
+                        <thing>Seed_Hops</thing>
+                        <count>50</count>
+                    </li>
+                    <li>
+                        <thing>SeedTobacco</thing>
+                        <count>40</count>
+                    </li>
+                    <li>
+                        <thing>Seed_Smokeleaf</thing>
+                        <count>30</count>
+                    </li>
+                    <li>
+                        <thing>Seed_Psychoid</thing>
+                        <count>20</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsBase">
-        <defName>SeedsAddictiveDropStuff</defName>
-        <thingsToChoose>
-            <li>SeedTobacco</li>
-            <li>SeedCoffee</li>
-            <li>SeedTea</li>
-            <li>Seed_Hops</li>
-            <li>Seed_Smokeleaf</li>
-            <li>Seed_Psychoid</li>
-        </thingsToChoose>
-    </NobilityExpanded.OrderedStuffDef>
 
     <!-- xxxxx -->
 
-    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
         <defName>SeedsClothDrop</defName>
         <label>fiber crops</label>
-        <description>Call for a drop of 50 random fiber crops seeds.</description>
+        <description>Call for a drop of fiber crops seeds.</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>24</cooldownDays>
         <royalAid>
-            <itemsToDrop>
-                <Seed_Rice>50</Seed_Rice>
-            </itemsToDrop>
             <favorCost>2</favorCost>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Seeds</category>
+                <row>3</row>
+                <column>1</column>
+                <itemData>
+                    <li>
+                        <thing>Seed_Cotton</thing>
+                        <count>75</count>
+                    </li>
+                    <li>
+                        <thing>SeedFlax</thing>
+                        <count>60</count>
+                    </li>
+                    <li>
+                        <thing>Seed_Devilstrand</thing>
+                        <count>30</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsBase">
-        <defName>SeedsClothDropStuff</defName>
-        <column>1</column>
-        <thingsToChoose>
-            <li>Seed_Cotton</li>
-            <li>SeedFlax</li>
-            <li>Seed_Devilstrand</li>
-        </thingsToChoose>
-    </NobilityExpanded.OrderedStuffDef>
 
     <!-- xxxxx -->
 
-    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
         <defName>SeedsHealDrop</defName>
         <label>healing plants</label>
-        <description>Call for a drop of 35 random healing plants seeds.</description>
+        <description>Call for a drop of healing plants seeds.</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>24</cooldownDays>
         <royalAid>
-            <itemsToDrop>
-                <Seed_Potato>35</Seed_Potato>
-            </itemsToDrop>
             <favorCost>2</favorCost>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Seeds</category>
+                <row>4</row>
+                <column>0</column>
+                <itemData>
+                    <li>
+                        <thing>SeedAloe</thing>
+                        <count>40</count>
+                    </li>
+                    <li>
+                        <thing>SeedAloe</thing>
+                        <count>25</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsBase">
-        <defName>SeedsHealDropStuff</defName>
-        <thingsToChoose>
-            <li>SeedAloe</li>
-            <li>Seed_Healroot</li>
-        </thingsToChoose>
-    </NobilityExpanded.OrderedStuffDef>
 
     <!-- xxxxx -->
 
-    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
         <defName>SeedsUtilDrop</defName>
         <label>utility plants</label>
-        <description>Call for a drop of 25 random cooking ingredients seeds.</description>
+        <description>Call for a drop of cooking ingredients seeds.</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>24</cooldownDays>
         <royalAid>
-            <itemsToDrop>
-                <Seed_Rice>25</Seed_Rice>
-            </itemsToDrop>
             <favorCost>4</favorCost>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Seeds</category>
+                <row>4</row>
+                <column>1</column>
+                <itemData>
+                    <li>
+                        <thing>SeedNeutroFlower</thing>
+                        <count>25</count>
+                    </li>
+                    <li>
+                        <thing>Seed_CEBlazebulb</thing>
+                        <count>25</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsBase">
-        <defName>SeedsUtilDropStuff</defName>
-        <column>1</column>
-        <thingsToChoose>
-            <li>SeedNeutroFlower</li>
-            <li>Seed_CEBlazebulb</li>
-        </thingsToChoose>
-    </NobilityExpanded.OrderedStuffDef>
 
     <!-- xxxxx -->
 
-    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
         <defName>SeedsTreeDrop</defName>
         <label>trees</label>
-        <description>Call for a drop of 25 random tree seeds.</description>
+        <description>Call for a drop of tree seeds.</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>24</cooldownDays>
         <royalAid>
-            <itemsToDrop>
-                <Seed_TreeOak>25</Seed_TreeOak>
-            </itemsToDrop>
             <favorCost>2</favorCost>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Seeds</category>
+                <row>5</row>
+                <column>0</column>
+                <itemData>
+                    <li>
+                        <thing>Seed_TreeDrago</thing>
+                        <count>25</count>
+                    </li>
+                    <li>
+                        <thing>Seed_TreeOak</thing>
+                        <count>25</count>
+                    </li>
+                    <li>
+                        <thing>Seed_TreeWillow</thing>
+                        <count>25</count>
+                    </li>
+                    <li>
+                        <thing>Seed_TreeCypress</thing>
+                        <count>25</count>
+                    </li>
+                    <li>
+                        <thing>Seed_TreeMaple</thing>
+                        <count>25</count>
+                    </li>
+                    <li>
+                        <thing>Seed_TreePoplar</thing>
+                        <count>25</count>
+                    </li>
+                    <li>
+                        <thing>Seed_TreePine</thing>
+                        <count>25</count>
+                    </li>
+                    <li>
+                        <thing>Seed_TreeBirch</thing>
+                        <count>25</count>
+                    </li>
+                    <li>
+                        <thing>Seed_TreeTeak</thing>
+                        <count>25</count>
+                    </li>
+                    <li>
+                        <thing>Seed_TreeCecropia</thing>
+                        <count>25</count>
+                    </li>
+                    <li>
+                        <thing>Seed_TreePalm</thing>
+                        <count>25</count>
+                    </li>
+                    <li>
+                        <thing>Seed_TreeBamboo</thing>
+                        <count>50</count>
+                    </li>
+                    <li>
+                        <thing>SeedHeveaTree</thing>
+                        <count>20</count>
+                    </li>
+                    <li>
+                        <thing>Seed_Redwood</thing>
+                        <count>10</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.biomes">
+                        <thing>SeedIronPine</thing>
+                        <count>10</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsBase">
-        <defName>SeedsTreeDropStuff</defName>
-        <thingsToChoose>
-            <li>Seed_TreeDrago</li>
-            <li>Seed_TreeOak</li>
-            <li>Seed_TreeWillow</li>
-            <li>Seed_TreeCypress</li>
-            <li>Seed_TreeMaple</li>
-            <li>Seed_TreePoplar</li>
-            <li>Seed_TreePine</li>
-            <li>Seed_TreeBirch</li>
-            <li>Seed_TreeTeak</li>
-            <li>Seed_TreeCecropia</li>
-            <li>Seed_TreePalm</li>
-            <li>Seed_TreeBamboo</li>
-            <li>SeedHeveaTree</li>
-            <li>Seed_Redwood</li>
-            <li MayRequire="arpomo6.hmc.biomes">SeedIronPine</li>
-        </thingsToChoose>
-    </NobilityExpanded.OrderedStuffDef>
 
     <!-- xxxxx -->
 
-    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
         <defName>SeedsFruitDrop</defName>
         <label>fruit trees</label>
-        <description>Call for a drop of 20 random fruit tree seeds.</description>
+        <description>Call for a drop of fruit tree seeds.</description>
         <minTitle>Knight</minTitle>
         <cooldownDays>30</cooldownDays>
         <permitPointCost>2</permitPointCost>
         <royalAid>
-            <itemsToDrop>
-                <SeedAppletree>20</SeedAppletree>
-            </itemsToDrop>
             <favorCost>3</favorCost>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Seeds</category>
+                <row>5</row>
+                <column>1</column>
+                <itemData>
+                    <li>
+                        <thing>SeedAppletree</thing>
+                        <count>25</count>
+                    </li>
+                    <li>
+                        <thing>SeedBananaTree</thing>
+                        <count>25</count>
+                    </li>
+                    <li>
+                        <thing>SeedorangeTree</thing>
+                        <count>25</count>
+                    </li>
+                    <li>
+                        <thing>SeedPeachTree</thing>
+                        <count>25</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsBase">
-        <defName>SeedsFruitDropStuff</defName>
-        <column>1</column>
-        <thingsToChoose>
-            <li>SeedAppletree</li>
-            <li>SeedBananaTree</li>
-            <li>SeedorangeTree</li>
-            <li>SeedPeachTree</li>
-        </thingsToChoose>
-    </NobilityExpanded.OrderedStuffDef>
 </Defs>

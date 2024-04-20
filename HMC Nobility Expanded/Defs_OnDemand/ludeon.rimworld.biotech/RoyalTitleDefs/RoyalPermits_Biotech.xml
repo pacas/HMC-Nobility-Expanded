@@ -9,16 +9,25 @@
         <minTitle>Acolyte</minTitle>
         <cooldownDays>14</cooldownDays>
         <royalAid>
-            <itemsToDrop>
-                <BabyFood>250</BabyFood>
-            </itemsToDrop>
             <favorCost>2</favorCost>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Resources</category>
+                <row>4</row>
+                <column>0</column>
+                <itemData>
+                    <li>
+                        <thing>BabyFood</thing>
+                        <count>250</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsSpecificBase">
-        <defName>BabyFoodDropStuff</defName>
-    </NobilityExpanded.OrderedStuffDef>
-
+    
+    
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>VampiresFoodDrop</defName>
         <label>hemogen packs</label>
@@ -27,16 +36,25 @@
         <minTitle>Acolyte</minTitle>
         <cooldownDays>21</cooldownDays>
         <royalAid>
-            <itemsToDrop>
-                <HemogenPack>15</HemogenPack>
-            </itemsToDrop>
             <favorCost>6</favorCost>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Resources</category>
+                <row>4</row>
+                <column>1</column>
+                <itemData>
+                    <li>
+                        <thing>HemogenPack</thing>
+                        <count>15</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsSpecificBase">
-        <defName>VampiresFoodDropStuff</defName>
-    </NobilityExpanded.OrderedStuffDef>
 
+    
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
         <defName>BabyClothesDrop</defName>
         <label>baby clothes</label>
@@ -51,8 +69,8 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Apparel</category>
-                <column>0</column>
                 <row>11</row>
+                <column>0</column>
                 <itemData>
                     <li>
                         <thing>Apparel_KidShirt</thing>

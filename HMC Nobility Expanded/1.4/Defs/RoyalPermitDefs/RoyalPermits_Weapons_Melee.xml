@@ -5,6 +5,14 @@
         <defName>MeleePermitTitle</defName>
         <label>Melee Weapons</label>
         <description>Request a drop of random melee weapons.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Title</type>
+                <category>Melee</category>
+                <column>0</column>
+                <row>0</row>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
     
     <!-- Agile -->
@@ -16,24 +24,40 @@
         <minTitle>Acolyte</minTitle>
         <cooldownDays>17</cooldownDays>
         <royalAid>
-            <itemsToDrop>
-                <Steel>1</Steel>
-            </itemsToDrop>
             <favorCost>2</favorCost>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Melee</category>
+                <row>1</row>
+                <column>0</column>
+                <randomItem>true</randomItem>
+                <itemData>
+                    <li>
+                        <thing>NorbalMeleeWeapon_ShortSwordtwo</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_Knife</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_Dagger</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                    <li MayRequire="FS.ReviaRace">
+                        <thing>ReviaSerratedDagger</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
-        <defName>AgileMeleeDropStuff</defName>
-        <typeOfItem>Random</typeOfItem>
-        <stuffList>
-            <li>Plasteel</li>
-        </stuffList>
-        <thingsToChoose>
-            <li>NorbalMeleeWeapon_ShortSwordtwo</li>
-            <li>MeleeWeapon_Knife</li>
-            <li>MeleeWeapon_Dagger</li>
-        </thingsToChoose>
-    </NobilityExpanded.OrderedStuffDef>
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>AgileMeleeDropPlus</defName>
@@ -44,29 +68,62 @@
         <prerequisite>AgileMeleeDrop</prerequisite>
         <permitPointCost>3</permitPointCost>
         <royalAid>
-            <itemsToDrop>
-                <Steel>1</Steel>
-            </itemsToDrop>
             <favorCost>12</favorCost>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Melee</category>
+                <row>1</row>
+                <column>1</column>
+                <randomItem>true</randomItem>
+                <itemData>
+                    <li>
+                        <thing>MeleeWeapon_Knife</thing>
+                        <count>1</count>
+                        <stuff>Titanium</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li>
+                        <thing>NorbalMeleeWeapon_ShortSwordtwo</thing>
+                        <count>1</count>
+                        <stuff>Titanium</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_Dagger</thing>
+                        <count>1</count>
+                        <stuff>Titanium</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_Tanto</thing>
+                        <count>1</count>
+                        <stuff>Titanium</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li MayRequire="XxNelsonxX.Parabellum">
+                        <thing>Pa_S8498III</thing>
+                        <count>1</count>
+                        <stuff>Titanium</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li MayRequire="FS.ReviaRace">
+                        <thing>ReviaSerratedDagger</thing>
+                        <count>1</count>
+                        <stuff>Titanium</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
-        <defName>AgileMeleeDropPlusStuff</defName>
-        <typeOfQuality>Range</typeOfQuality>
-        <typeOfItem>Random</typeOfItem>
-        <quality>Excellent</quality>
-        <column>1</column>
-        <stuffList>
-            <li>Titanium</li>
-        </stuffList>
-        <thingsToChoose>
-            <li>MeleeWeapon_Knife</li>
-            <li>NorbalMeleeWeapon_ShortSwordtwo</li>
-            <li>MeleeWeapon_Tanto</li>
-            <li>MeleeWeapon_Dagger</li>
-            <li MayRequire="XxNelsonxX.Parabellum">Pa_S8498III</li>
-        </thingsToChoose>
-    </NobilityExpanded.OrderedStuffDef>
     
     <!-- Sharp -->
     
@@ -77,33 +134,80 @@
         <minTitle>Acolyte</minTitle>
         <cooldownDays>17</cooldownDays>
         <royalAid>
-            <itemsToDrop>
-                <Steel>1</Steel>
-            </itemsToDrop>
             <favorCost>2</favorCost>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Melee</category>
+                <row>2</row>
+                <column>0</column>
+                <randomItem>true</randomItem>
+                <itemData>
+                    <li>
+                        <thing>MeleeWeapon_Gladius</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_LongSword</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_GreatSword</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_Scimitar</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_Glaive</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_Partisan</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                    <li>
+                        <thing>NorbalMeleeWeapon_ShortSword</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                    <li>
+                        <thing>NorbalMeleeWeapon_Ax</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                    <li>
+                        <thing>NorbalMeleeWeapon_Bigax</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_Machete</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                    <li MayRequire="FS.ReviaRace">
+                        <thing>ReviaSerratedSword</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                    <li MayRequire="FS.ReviaRace">
+                        <thing>ReviaSerratedScythe</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
-        <defName>SharpMeleeDropStuff</defName>
-        <typeOfItem>Random</typeOfItem>
-        <stuffList>
-            <li>Plasteel</li>
-        </stuffList>
-        <thingsToChoose>
-            <li>MeleeWeapon_Gladius</li>
-            <li>MeleeWeapon_LongSword</li>
-            <li>MeleeWeapon_GreatSword</li>
-            <li>MeleeWeapon_Scimitar</li>
-            <li>MeleeWeapon_Glaive</li>
-            <li>MeleeWeapon_Partisan</li>
-            <li>NorbalMeleeWeapon_ShortSword</li>
-            <li>NorbalMeleeWeapon_Ax</li>
-            <li>NorbalMeleeWeapon_Bigax</li>
-            <li>MeleeWeapon_Machete</li>
-            <li>MeleeWeapon_Katana</li>
-            <li>MeleeWeapon_Tsurugi</li>
-        </thingsToChoose>
-    </NobilityExpanded.OrderedStuffDef>
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>SharpMeleeDropPlus</defName>
@@ -114,97 +218,233 @@
         <prerequisite>SharpMeleeDrop</prerequisite>
         <permitPointCost>3</permitPointCost>
         <royalAid>
-            <itemsToDrop>
-                <Steel>1</Steel>
-            </itemsToDrop>
             <favorCost>12</favorCost>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Melee</category>
+                <row>2</row>
+                <column>1</column>
+                <randomItem>true</randomItem>
+                <itemData>
+                    <li>
+                        <thing>MeleeWeapon_Gladius</thing>
+                        <count>1</count>
+                        <stuff>Titanium</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_LongSword</thing>
+                        <count>1</count>
+                        <stuff>Titanium</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_GreatSword</thing>
+                        <count>1</count>
+                        <stuff>Titanium</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_Scimitar</thing>
+                        <count>1</count>
+                        <stuff>Titanium</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_Scimitar</thing>
+                        <count>1</count>
+                        <stuff>Titanium</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_Glaive</thing>
+                        <count>1</count>
+                        <stuff>Titanium</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_Partisan</thing>
+                        <count>1</count>
+                        <stuff>Titanium</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li>
+                        <thing>NorbalMeleeWeapon_ShortSword</thing>
+                        <count>1</count>
+                        <stuff>Titanium</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li>
+                        <thing>NorbalMeleeWeapon_Ax</thing>
+                        <count>1</count>
+                        <stuff>Titanium</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li>
+                        <thing>NorbalMeleeWeapon_Bigax</thing>
+                        <count>1</count>
+                        <stuff>Titanium</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_Tsurugi</thing>
+                        <count>1</count>
+                        <stuff>Titanium</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_Machete</thing>
+                        <count>1</count>
+                        <stuff>Titanium</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_Katana</thing>
+                        <count>1</count>
+                        <stuff>Titanium</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li MayRequire="FS.ReviaRace">
+                        <thing>ReviaSerratedSword</thing>
+                        <count>1</count>
+                        <stuff>Titanium</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li MayRequire="FS.ReviaRace">
+                        <thing>ReviaSerratedScythe</thing>
+                        <count>1</count>
+                        <stuff>Titanium</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
-        <defName>SharpMeleeDropPlusStuff</defName>
-        <typeOfQuality>Range</typeOfQuality>
-        <typeOfItem>Random</typeOfItem>
-        <quality>Excellent</quality>
-        <column>1</column>
-        <stuffList>
-            <li>Titanium</li>
-        </stuffList>
-        <thingsToChoose>
-            <li>MeleeWeapon_Gladius</li>
-            <li>MeleeWeapon_LongSword</li>
-            <li>MeleeWeapon_GreatSword</li>
-            <li>MeleeWeapon_Scimitar</li>
-            <li>MeleeWeapon_Glaive</li>
-            <li>MeleeWeapon_Partisan</li>
-            <li>NorbalMeleeWeapon_ShortSword</li>
-            <li>NorbalMeleeWeapon_Ax</li>
-            <li>NorbalMeleeWeapon_Bigax</li>
-            <li>MeleeWeapon_Machete</li>
-            <li>MeleeWeapon_Katana</li>
-            <li>MeleeWeapon_Tsurugi</li>
-        </thingsToChoose>
-    </NobilityExpanded.OrderedStuffDef>
     
     <!-- Blunt -->
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>BluntMeleeDrop</defName>
         <label>Blunt weapon</label>
-        <description>Request a drop of random blunt melee weapon (exclude daggers and shortswords).</description>
+        <description>Request a drop of random blunt melee weapon.</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>17</cooldownDays>
         <royalAid>
-            <itemsToDrop>
-                <Steel>1</Steel>
-            </itemsToDrop>
             <favorCost>2</favorCost>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Melee</category>
+                <row>3</row>
+                <column>0</column>
+                <randomItem>true</randomItem>
+                <itemData>
+                    <li>
+                        <thing>MeleeWeapon_Morningstar</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_Sledgehammer</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_Monkeywrench</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_Mace</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                    <li MayRequire="FS.ReviaRace">
+                        <thing>ReviaWarPick</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
-        <defName>BluntMeleeDropStuff</defName>
-        <typeOfItem>Random</typeOfItem>
-        <stuffList>
-            <li>Plasteel</li>
-        </stuffList>
-        <thingsToChoose>
-            <li>MeleeWeapon_Morningstar</li>
-            <li>MeleeWeapon_Sledgehammer</li>
-            <li>MeleeWeapon_Monkeywrench</li>
-            <li>MeleeWeapon_Mace</li>
-        </thingsToChoose>
-    </NobilityExpanded.OrderedStuffDef>
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>BluntMeleeDropPlus</defName>
         <label>blunt weapon +</label>
-        <description>Request a drop of random blunt melee weapon (exclude daggers and shortswords).</description>
+        <description>Request a drop of random blunt melee weapon.</description>
         <minTitle>Legatus</minTitle>
         <cooldownDays>32</cooldownDays>
         <prerequisite>BluntMeleeDrop</prerequisite>
         <permitPointCost>3</permitPointCost>
         <royalAid>
-            <itemsToDrop>
-                <Steel>1</Steel>
-            </itemsToDrop>
             <favorCost>12</favorCost>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Melee</category>
+                <row>3</row>
+                <column>1</column>
+                <randomItem>true</randomItem>
+                <itemData>
+                    <li>
+                        <thing>MeleeWeapon_Morningstar</thing>
+                        <count>1</count>
+                        <stuff>TitaniumBar</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_Sledgehammer</thing>
+                        <count>1</count>
+                        <stuff>TitaniumBar</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_Monkeywrench</thing>
+                        <count>1</count>
+                        <stuff>TitaniumBar</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_Mace</thing>
+                        <count>1</count>
+                        <stuff>TitaniumBar</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li MayRequire="FS.ReviaRace">
+                        <thing>ReviaWarPick</thing>
+                        <count>1</count>
+                        <stuff>TitaniumBar</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
-        <defName>BluntMeleeDropPlusStuff</defName>
-        <typeOfQuality>Range</typeOfQuality>
-        <typeOfItem>Random</typeOfItem>
-        <quality>Excellent</quality>
-        <column>1</column>
-        <stuffList>
-            <li>Titanium</li>
-        </stuffList>
-        <thingsToChoose>
-            <li>MeleeWeapon_Morningstar</li>
-            <li>MeleeWeapon_Sledgehammer</li>
-            <li>MeleeWeapon_Monkeywrench</li>
-            <li>MeleeWeapon_Mace</li>
-        </thingsToChoose>
-    </NobilityExpanded.OrderedStuffDef>
     
     <!-- Heavy -->
     
@@ -215,26 +455,50 @@
         <minTitle>Acolyte</minTitle>
         <cooldownDays>17</cooldownDays>
         <royalAid>
-            <itemsToDrop>
-                <Steel>1</Steel>
-            </itemsToDrop>
             <favorCost>2</favorCost>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Melee</category>
+                <row>4</row>
+                <column>0</column>
+                <randomItem>true</randomItem>
+                <itemData>
+                    <li>
+                        <thing>MeleeWeapon_GreatSword</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_Glaive</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_Partisan</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_Tsurugi</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_Sledgehammer</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                    <li MayRequire="FS.ReviaRace">
+                        <thing>ReviaSerratedScythe</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
-        <defName>HeavyMeleeDropStuff</defName>
-        <typeOfItem>Random</typeOfItem>
-        <stuffList>
-            <li>Plasteel</li>
-        </stuffList>
-        <thingsToChoose>
-            <li>MeleeWeapon_GreatSword</li>
-            <li>MeleeWeapon_Glaive</li>
-            <li>MeleeWeapon_Partisan</li>
-            <li>MeleeWeapon_Tsurugi</li>
-            <li>MeleeWeapon_Sledgehammer</li>
-        </thingsToChoose>
-    </NobilityExpanded.OrderedStuffDef>
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>HeavyMeleeDropPlus</defName>
@@ -245,27 +509,68 @@
         <prerequisite>HeavyMeleeDrop</prerequisite>
         <permitPointCost>3</permitPointCost>
         <royalAid>
-            <itemsToDrop>
-                <Steel>1</Steel>
-            </itemsToDrop>
             <favorCost>12</favorCost>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Melee</category>
+                <row>3</row>
+                <column>1</column>
+                <randomItem>true</randomItem>
+                <itemData>
+                    <li>
+                        <thing>MeleeWeapon_GreatSword</thing>
+                        <count>1</count>
+                        <stuff>TitaniumBar</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_Glaive</thing>
+                        <count>1</count>
+                        <stuff>TitaniumBar</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_Partisan</thing>
+                        <count>1</count>
+                        <stuff>TitaniumBar</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_Tsurugi</thing>
+                        <count>1</count>
+                        <stuff>TitaniumBar</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_Sledgehammer</thing>
+                        <count>1</count>
+                        <stuff>TitaniumBar</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li MayRequire="FS.ReviaRace">
+                        <thing>ReviaWarPick</thing>
+                        <count>1</count>
+                        <stuff>TitaniumBar</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li MayRequire="FS.ReviaRace">
+                        <thing>ReviaChainSword</thing>
+                        <count>1</count>
+                        <stuff>Titanium</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedStuffBase">
-        <defName>HeavyMeleeDropPlusStuff</defName>
-        <typeOfQuality>Range</typeOfQuality>
-        <typeOfItem>Random</typeOfItem>
-        <quality>Excellent</quality>
-        <column>1</column>
-        <stuffList>
-            <li>Titanium</li>
-        </stuffList>
-        <thingsToChoose>
-            <li>MeleeWeapon_GreatSword</li>
-            <li>MeleeWeapon_Glaive</li>
-            <li>MeleeWeapon_Partisan</li>
-            <li>MeleeWeapon_Tsurugi</li>
-            <li>MeleeWeapon_Sledgehammer</li>
-        </thingsToChoose>
-    </NobilityExpanded.OrderedStuffDef>
+    
 </Defs>

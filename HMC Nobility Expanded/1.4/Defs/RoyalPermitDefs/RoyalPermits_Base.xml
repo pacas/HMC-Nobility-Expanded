@@ -85,11 +85,6 @@
         <typeOfItem>Random</typeOfItem>
     </NobilityExpanded.OrderedStuffDef>
 
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedBase" Name="OrderedThingsSpecificBase" Abstract="True">
-        <typeOfDrop>Pure</typeOfDrop>
-        <typeOfItem>Specific</typeOfItem>
-    </NobilityExpanded.OrderedStuffDef>
-
     <NobilityExpanded.OrderedStuffDef Name="OrderedBase" Abstract="True">
         <column>0</column>
     </NobilityExpanded.OrderedStuffDef>

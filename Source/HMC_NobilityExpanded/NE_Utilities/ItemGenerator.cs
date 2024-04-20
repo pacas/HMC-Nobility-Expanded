@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using CombatExtended;
 using JetBrains.Annotations;
 using RimWorld;
@@ -55,7 +56,7 @@ namespace NobilityExpanded.Utilities
             if (ammoUser.ammoTypes.NullOrEmpty())
                 return things;
             
-            AmmoDef ammo = ammoUser.ammoTypes[0].ammo;
+            AmmoDef ammo = ammoUser.ammoTypes.First().ammo;
             Thing ammoThing = ThingMaker.MakeThing(ammo);
             ammoThing.stackCount = item.ammoCount;
             things.Add(ammoThing);
@@ -66,8 +67,7 @@ namespace NobilityExpanded.Utilities
         public static Thing GenerateThingStuffQuality(ItemDataInfo item) {
             var stuff = item.stuff;
             var quality = item.quality;
-            switch (item.quality)
-            {
+            switch (item.qualityType) {
                 case "Specific":
                     return new ThingStuffPairWithQuality(item.thing, stuff, ItemGenerator.GenerateQualityFromString(quality)).MakeThing();
                 case "Range":

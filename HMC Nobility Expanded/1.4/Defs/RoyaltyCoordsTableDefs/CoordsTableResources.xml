@@ -9,7 +9,6 @@
             <li>FoodDrop</li>
             <li>BlocksDrop</li>
             <li MayRequire="Ludeon.Rimworld.Biotech">BabyFoodDrop</li>
-            <li MayRequire="Ludeon.Rimworld.Biotech">VampiresFoodDrop</li>
         </loadOrder>
     </NobilityExpanded.RoyaltyCoordsTableDef>
 
@@ -21,7 +20,7 @@
             <li>SilverDrop</li>
             <li>GlitterMedDrop</li>
             <li>CallTransportShuttle</li>
-            <li MayRequire="Ludeon.Rimworld.Biotech">BabyClothesDrop</li>
+            <li MayRequire="Ludeon.Rimworld.Biotech">VampiresFoodDrop</li>
         </loadOrder>
     </NobilityExpanded.RoyaltyCoordsTableDef>
 </Defs>

@@ -23,8 +23,8 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Category</type>
                 <category>Prosthetics</category>
-                <column>0</column>
                 <row>1</row>
+                <column>0</column>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
@@ -37,8 +37,8 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Category</type>
                 <category>Prosthetics</category>
+                <row>4</row>
                 <column>0</column>
-                <row>5</row>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
@@ -51,8 +51,8 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Category</type>
                 <category>Prosthetics</category>
+                <row>7</row>
                 <column>0</column>
-                <row>9</row>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
@@ -289,7 +289,7 @@
                 <type>Permit</type>
                 <category>Prosthetics</category>
                 <column>0</column>
-                <row>6</row>
+                <row>5</row>
                 <itemData>
                     <li>
                         <thing>HandTalon</thing>
@@ -343,7 +343,7 @@
                 <type>Permit</type>
                 <category>Prosthetics</category>
                 <column>1</column>
-                <row>6</row>
+                <row>5</row>
                 <itemData>
                     <li>
                         <thing>HealingEnhancer</thing>
@@ -389,7 +389,7 @@
                 <type>Permit</type>
                 <category>Prosthetics</category>
                 <column>0</column>
-                <row>7</row>
+                <row>6</row>
                 <itemData>
                     <li>
                         <thing>StoneskinGland</thing>
@@ -437,7 +437,7 @@
                 <type>Permit</type>
                 <category>Prosthetics</category>
                 <column>0</column>
-                <row>10</row>
+                <row>8</row>
                 <itemData>
                     <li>
                         <thing>DrillArm</thing>
@@ -487,7 +487,7 @@
                 <type>Permit</type>
                 <category>Prosthetics</category>
                 <column>1</column>
-                <row>10</row>
+                <row>8</row>
                 <itemData>
                     <li>
                         <thing>Mindscrew</thing>
@@ -569,7 +569,7 @@
                 <type>Permit</type>
                 <category>Prosthetics</category>
                 <column>0</column>
-                <row>11</row>
+                <row>9</row>
                 <itemData>
                     <li>
                         <thing>InstinctOptimizingNanobots</thing>
