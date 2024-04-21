@@ -338,7 +338,7 @@ namespace NobilityExpanded
         
         private static bool CanDrawPermit(RoyalTitlePermitDef permit) {
             // todo
-            if (permit.permitPointCost <= 0 || permit.permitPointCost == 97 || permit.permitPointCost == 96)
+            if (permit.permitPointCost < 0 || permit.permitPointCost == 97 || permit.permitPointCost == 96)
                 return false;
 
             if (!IsFromCurrentCategory(permit))

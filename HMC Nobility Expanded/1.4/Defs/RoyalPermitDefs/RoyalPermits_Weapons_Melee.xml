@@ -515,7 +515,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Melee</category>
-                <row>3</row>
+                <row>4</row>
                 <column>1</column>
                 <randomItem>true</randomItem>
                 <itemData>

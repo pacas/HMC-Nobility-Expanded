@@ -22,7 +22,7 @@
         <workerClass>RoyalTitlePermitWorker_OrbitalStrike</workerClass>
         <minTitle>Knight</minTitle>
         <faction>Empire</faction>
-        <permitPointCost>2</permitPointCost>
+        <permitPointCost>1</permitPointCost>
         <cooldownDays>21</cooldownDays>
         <royalAid>
             <favorCost>3</favorCost>
