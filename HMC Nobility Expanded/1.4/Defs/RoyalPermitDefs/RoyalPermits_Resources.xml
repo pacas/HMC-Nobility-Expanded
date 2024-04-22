@@ -24,9 +24,6 @@
         <minTitle>Acolyte</minTitle>
         <cooldownDays>14</cooldownDays>
         <royalAid>
-            <itemsToDrop>
-                <Steel>300</Steel>
-            </itemsToDrop>
             <favorCost>2</favorCost>
         </royalAid>
         <modExtensions>
@@ -36,6 +33,10 @@
                 <row>3</row>
                 <column>0</column>
                 <itemData>
+                    <li>
+                        <thing>ClayBrick</thing>
+                        <count>400</count>
+                    </li>
                     <li>
                         <thing>BlocksMarble</thing>
                         <count>300</count>
@@ -57,10 +58,6 @@
                         <count>300</count>
                     </li>
                     <li>
-                        <thing>ClayBrick</thing>
-                        <count>300</count>
-                    </li>
-                    <li>
                         <thing>ZF_BlocksBasalt</thing>
                         <count>300</count>
                     </li>
@@ -71,6 +68,18 @@
                     <li>
                         <thing>ZF_BlocksMudstone</thing>
                         <count>300</count>
+                    </li>
+                    <li>
+                        <thing>ZF_BlocksAlabaster</thing>
+                        <count>120</count>
+                    </li>
+                    <li>
+                        <thing>ZF_BlocksPegmatite</thing>
+                        <count>120</count>
+                    </li>
+                    <li>
+                        <thing>ZF_BlocksDunite</thing>
+                        <count>120</count>
                     </li>
                 </itemData>
             </li>
@@ -160,7 +169,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
         <defName>GlitterMedDrop</defName>
         <label>glitter med</label>
-        <description>Call for a drop of 8 glitterworld medicine.</description>
+        <description>Call for a drop of 12 glitterworld medicine.</description>
         <minTitle>Baron</minTitle> 
         <cooldownDays>30</cooldownDays>
         <permitPointCost>2</permitPointCost>
@@ -176,7 +185,7 @@
                 <itemData>
                     <li>
                         <thing>MedicineUltratech</thing>
-                        <count>8</count>
+                        <count>12</count>
                     </li>
                 </itemData>
             </li>

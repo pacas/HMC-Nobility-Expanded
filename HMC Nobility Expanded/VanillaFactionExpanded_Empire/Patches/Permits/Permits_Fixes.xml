@@ -141,6 +141,13 @@
                     <permitPointCost>3</permitPointCost>
                 </value>
             </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_StrikerTurretDrop"]/cooldownDays</xpath>
+                <value>
+                    <cooldownDays>21</cooldownDays>
+                </value>
+            </li>
             
             <li Class="PatchOperationReplace">
                 <xpath>Defs/RoyalTitlePermitDef[

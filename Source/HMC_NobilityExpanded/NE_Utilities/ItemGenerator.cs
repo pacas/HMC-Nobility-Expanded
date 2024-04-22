@@ -81,7 +81,7 @@ namespace NobilityExpanded.Utilities
             Thing thing = ThingMaker.MakeThing(item.thing);
             CompQuality comp = thing.TryGetComp<CompQuality>();
             var quality = item.quality;
-            switch (quality)
+            switch (item.qualityType)
             {
                 case "Specific":
                     comp.SetQuality(ItemGenerator.GenerateQualityFromString(quality), ArtGenerationContext.Outsider);

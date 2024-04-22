@@ -52,25 +52,7 @@
     <!-- удалить таблицы позиций -->
 
     <!--todo remove-->
-    
     <!-- Stuff bases -->
-
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedBase" Name="OrderedStuffBase" Abstract="True">
-        <typeOfDrop>StuffQuality</typeOfDrop>
-        <typeOfQuality>Specific</typeOfQuality>
-        <typeOfItem>Specific</typeOfItem>
-        <ammoUsage>False</ammoUsage>
-        <quality>Normal</quality>
-    </NobilityExpanded.OrderedStuffDef>
-
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedBase" Name="OrderedGunBase" Abstract="True">
-        <typeOfDrop>Quality</typeOfDrop>
-        <typeOfItem>Random</typeOfItem>
-        <typeOfQuality>Specific</typeOfQuality>
-        <ammoUsage>Gun</ammoUsage>
-        <quality>Normal</quality>
-    </NobilityExpanded.OrderedStuffDef>
-
     <NobilityExpanded.OrderedStuffDef ParentName="OrderedBase" Name="OrderedTurretBase" Abstract="True">
         <typeOfDrop>Stuff</typeOfDrop>
         <typeOfItem>Random</typeOfItem>
