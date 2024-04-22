@@ -14,6 +14,7 @@ namespace NobilityExpanded
         // -- additional info --
         // ammoCount > 0 - drop ammo for guns
         public int ammoCount = 0;
+        public bool isTurret = false;
         
         // item made with this material
         [CanBeNull] public ThingDef stuff;

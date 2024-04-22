@@ -40,6 +40,10 @@ namespace NobilityExpanded.Utilities
             } else {
                 thing = item.quality != null ? GenerateThingQuality(item) : ThingMaker.MakeThing(item.thing);
             }
+
+            if (item.isTurret) {
+                thing = thing.MakeMinified();
+            }
             
             thing.stackCount = item.count;
             things.Add(thing);
@@ -51,16 +55,12 @@ namespace NobilityExpanded.Utilities
             
             if (item.ammoCount == 0)
                 return things;
-            
-            AmmoSetDef ammoUser = thing.TryGetComp<CompAmmoUser>().Props.ammoSet;
-            if (ammoUser.ammoTypes.NullOrEmpty())
+
+            Thing ammoThing = item.isTurret ? GenerateAmmoForTurrets(item) : GenerateAmmoForGuns(item, thing);
+            if (ammoThing == null)
                 return things;
             
-            AmmoDef ammo = ammoUser.ammoTypes.First().ammo;
-            Thing ammoThing = ThingMaker.MakeThing(ammo);
-            ammoThing.stackCount = item.ammoCount;
             things.Add(ammoThing);
-
             return things;
         }
         
@@ -172,6 +172,19 @@ namespace NobilityExpanded.Utilities
                     return list[Random.Next(list.Count)];
             }
         }
+        
+        [CanBeNull]
+        public static Thing GenerateAmmoForGuns(ItemDataInfo item, Thing thing) {
+            AmmoSetDef ammoUser = thing.TryGetComp<CompAmmoUser>().Props.ammoSet;
+            if (ammoUser.ammoTypes.NullOrEmpty())
+                return null;
+            
+            AmmoDef ammo = ammoUser.ammoTypes.First().ammo;
+            Thing ammoThing = ThingMaker.MakeThing(ammo);
+            ammoThing.stackCount = item.ammoCount;
+
+            return ammoThing;
+        }
 
         [CanBeNull]
         public static Thing GenerateAmmoForTurrets(ItemDataInfo data) {
@@ -183,7 +196,7 @@ namespace NobilityExpanded.Utilities
             if (ammoUser.ammoTypes.NullOrEmpty())
                 return null;
             
-            AmmoDef ammo = ammoUser.ammoTypes[0].ammo;
+            AmmoDef ammo = ammoUser.ammoTypes.First().ammo;
             Thing ammoThing = ThingMaker.MakeThing(ammo);
             ammoThing.stackCount = data.ammoCount;
 

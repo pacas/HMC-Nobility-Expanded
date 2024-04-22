@@ -26,11 +26,6 @@
         <workerClass>NobilityExpanded.RoyalTitlePermitWorker_DropResourcesWithDialog</workerClass>
     </RoyalTitlePermitDef>
 
-    <RoyalTitlePermitDef ParentName="MainDropBase" Name="DropBuildings" Abstract="True">
-        <workerClass>NobilityExpanded.RoyalTitlePermitWorker_DropBuildings</workerClass>
-        <usableOnWorldMap>false</usableOnWorldMap>
-    </RoyalTitlePermitDef>
-
     <RoyalTitlePermitDef ParentName="MainDropBase" Name="CallPawns" Abstract="True">
         <workerClass>NobilityExpanded.RoyalTitlePermitWorker_CallPawns</workerClass>
         <usableOnWorldMap>false</usableOnWorldMap>
@@ -46,27 +41,6 @@
         </royalAid>
         <permitPointCost>2</permitPointCost>
     </RoyalTitlePermitDef>
-    
-    <!-- todo -->
-    <!-- гранаты -->
-    <!-- удалить таблицы позиций -->
-
-    <!--todo remove-->
-    <!-- Stuff bases -->
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedBase" Name="OrderedTurretBase" Abstract="True">
-        <typeOfDrop>Stuff</typeOfDrop>
-        <typeOfItem>Random</typeOfItem>
-        <ammoUsage>Turret</ammoUsage>
-    </NobilityExpanded.OrderedStuffDef>
-
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedBase" Name="OrderedThingsBase" Abstract="True">
-        <typeOfDrop>Pure</typeOfDrop>
-        <typeOfItem>Random</typeOfItem>
-    </NobilityExpanded.OrderedStuffDef>
-
-    <NobilityExpanded.OrderedStuffDef Name="OrderedBase" Abstract="True">
-        <column>0</column>
-    </NobilityExpanded.OrderedStuffDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>EmptyTableSpace</defName>
@@ -87,6 +61,21 @@
             <favorCost>96</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
+    
+    <!-- todo -->
+    <!-- гранаты -->
+    <!-- удалить таблицы позиций -->
+
+    <!--todo remove-->
+
+    <NobilityExpanded.OrderedStuffDef ParentName="OrderedBase" Name="OrderedThingsBase" Abstract="True">
+        <typeOfDrop>Pure</typeOfDrop>
+        <typeOfItem>Random</typeOfItem>
+    </NobilityExpanded.OrderedStuffDef>
+
+    <NobilityExpanded.OrderedStuffDef Name="OrderedBase" Abstract="True">
+        <column>0</column>
+    </NobilityExpanded.OrderedStuffDef>
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus" Name="DropResourcesTitle" Abstract="True">
         <permitPointCost>99</permitPointCost>
