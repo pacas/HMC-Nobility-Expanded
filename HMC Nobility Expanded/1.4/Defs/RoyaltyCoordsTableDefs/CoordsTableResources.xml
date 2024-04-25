@@ -6,6 +6,7 @@
         <loadOrder>
             <li>BasePermitTitle</li>
             <li>SteelDrop</li>
+            <li>IndustrialMetalsDrop</li>
             <li>FoodDrop</li>
             <li>BlocksDrop</li>
             <li MayRequire="Ludeon.Rimworld.Biotech">BabyFoodDrop</li>
@@ -18,6 +19,7 @@
         <loadOrder>
             <li>BasePermitTitle</li>
             <li>SilverDrop</li>
+            <li>PreciousMetalsDrop</li>
             <li>GlitterMedDrop</li>
             <li>CallTransportShuttle</li>
             <li MayRequire="Ludeon.Rimworld.Biotech">VampiresFoodDrop</li>
