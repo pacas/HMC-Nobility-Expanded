@@ -90,7 +90,7 @@
         <defName>IndustrialMetalsDrop</defName>
         <label>industrial metals and materials</label>
         <description>Request a drop of industrial metals with the option to select the required ones.</description>
-        <minTitle>Centurion</minTitle>
+        <minTitle>Knight</minTitle>
         <faction>Empire</faction>
         <permitPointCost>2</permitPointCost>
         <cooldownDays>30</cooldownDays>
@@ -210,10 +210,10 @@
     </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
-        <defName></defName>
+        <defName>PreciousMetalsDrop</defName>
         <label>special metals and materials</label>
         <description>Request a drop of precious ores with the option to select the required ones.</description>
-        <minTitle>Centurion</minTitle>
+        <minTitle>Knight</minTitle>
         <permitPointCost>2</permitPointCost>
         <cooldownDays>45</cooldownDays>
         <royalAid>
@@ -362,7 +362,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Resources</category>
-                <row>3</row>
+                <row>4</row>
                 <column>0</column>
                 <itemData>
                     <li>

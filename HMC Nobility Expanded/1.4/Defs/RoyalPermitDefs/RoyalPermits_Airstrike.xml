@@ -28,7 +28,7 @@
             <favorCost>3</favorCost>
             <targetingRange>64.9</targetingRange>
             <radius>2.9</radius>
-            <explosionRadiusRange>9.9</explosionRadiusRange>
+            <explosionRadiusRange>6.9</explosionRadiusRange>
             <explosionCount>2</explosionCount>
             <intervalTicks>60</intervalTicks>
             <warmupTicks>120</warmupTicks>
@@ -57,7 +57,7 @@
             <favorCost>8</favorCost>
             <targetingRange>64.9</targetingRange>
             <radius>5.9</radius>
-            <explosionRadiusRange>7.9</explosionRadiusRange>
+            <explosionRadiusRange>6.9</explosionRadiusRange>
             <explosionCount>6</explosionCount>
             <intervalTicks>60</intervalTicks>
             <warmupTicks>120</warmupTicks>
