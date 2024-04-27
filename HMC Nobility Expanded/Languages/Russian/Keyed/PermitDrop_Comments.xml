@@ -4,8 +4,10 @@
     <DropComment>Комментарий от имперского провизора:</DropComment>
     
     <!-- Ресурсы -->
-    <DropComment_SteelDrop>Железо, кровь нации... Пока у вас есть железо для создания стали, жизнь не так уж и плоха.</DropComment_SteelDrop>
-    <DropComment_SilverDrop>Деньги нужны всем, и неважно сколько. Хотя почему-то некоторые плавят их обратно в слитки серебра...</DropComment_SilverDrop>
+    <DropComment_SteelDrop>Руда - основа цивилизации. Если вас есть железо для плавки стали то, жизнь не так уж и плоха.</DropComment_SteelDrop>
+    <DropComment_SilverDrop>Деньги нужны всем, и неважно сколько. В какой бы форме они не были.</DropComment_SilverDrop>
+    <DropComment_IndustrialMetalsDrop>Эти металлы позволят вам построить общество даже на самом убогом мире смерти, если в этом есть нужда.</DropComment_IndustrialMetalsDrop>
+    <DropComment_PreciousMetalsDrop>Дорогое, ценное и не нужное большинству людей. Именно это объединяет эти материалы.</DropComment_PreciousMetalsDrop>
     <DropComment_FoodDrop>Еда нужна каждому. Ну почти каждому, меня до сих пор бросает в дрожь от этих гуманоидных роботов. А, и да, не забудьте сразу убрать еду подальше от ваших питомцев.</DropComment_FoodDrop>
     <DropComment_GlitterMedDrop>Что-то случилось? У нас есть обширный запас медицинского оборудования, и я только рад бы поделится, но знаете сколько вас таких? На всех и так не хватает, приходится отправлять не очень много.</DropComment_GlitterMedDrop>
     <DropComment_BlocksDrop>Что? Эти булыжники? Зачем они вам, для мощения улиц что ли? У нас на Фортуне такое только на всяких старых площадях встретить можно. В любом случае дело ваше.</DropComment_BlocksDrop>

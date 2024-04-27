@@ -1,5 +1,27 @@
 ----------------------------------------------------------------------
 
+- Changelog "HMC Empire Rewards" v0.16 (1.4):
+
+1) New permits with ores and metals!
+2) Blocks drop permit and all seed category permits now allow you to choose what you want!
+3) Mod code changed - improved parts of the last update, removed most of the backwards compatibility code - final update after the full VFEE update. This update also improves tab performance.
+4) Animals are now no longer fixed at 2/1 quantity when dropped, now a different quantity for each species. Example: 6 chickens but 2 alpacas.
+5) Some permits have been expanded with new items.
+6) Cooldown/cost/quantity of many permits have been changed (mostly for player profit) - air strikes, melee weapons, reinforcements, resources and seeds.
+7) Shortened gaps between sub-items in the prosthetics tab.
+8) Small integration of the Revia Mod and Maelstrom's Metals SK mods.
+
+1) Новые привилегии с рудами и металлами!
+2) Привилегии на получение блоков и все привилегии категории семян теперь позволяют выбрать нужное!
+3) Изменен код мода - улучшены части прошлого обновления, убрана большая часть кода обратной совместимости - окончательное обновление после полного обновления VFEE. Это также улучшает производительность вкладок.
+4) Животные теперь при получении не фиксированы в количестве 2/1, теперь на каждый вид разное количество. Пример: 6 куриц, но 2 альпаки.
+5) Некоторые привилегии были расширены новыми предметами.
+6) Изменены кулдауны/стоимость/количество многих привилегий (в основном в сторону игрока) - артобстрелы, оружие ближнего боя, вызов подкреплений, ресурсы и семена.
+7) Сокращены промежутки между подпунктами во вкладке протезов.
+8) Небольшая интеграция модов Revia Mod и Maelstrom's Metals SK.
+
+----------------------------------------------------------------------
+
 - Changelog "HMC Empire Rewards" v0.15 (1.4):
 
 1) New permits with prosthetics and implants!
