@@ -6,14 +6,15 @@
                 <xpath>Defs/RoyalTitlePermitDef[
                 defName="GlitterMedDrop" or
                 defName="VFEI_CallEvacShuttle" or
-                defName="VFEI_ChemfuelDrop" or
                 defName="VFEI_CallOrbitalSlicingBeam"
                 ]/prerequisite</xpath>
             </li>
-            <!-- todo add later? gold, titan, uranium, synthread and all military-->
+            <!-- todo add later? synthread and all military-->
             <li Class="PatchOperationRemove">
                 <xpath>Defs/RoyalTitlePermitDef[
-                defName="VFEI_GoldDrop" or
+                defName="VFEI_GoldDrop" or 
+                defName="VFEI_JadeDrop" or
+                defName="VFEI_ChemfuelDrop" or
                 defName="VFEI_PlasteelDrop" or
                 defName="VFEI_SynthreadDrop" or
                 defName="VFEI_HerbalMedDrop" or
@@ -38,7 +39,6 @@
                 defName="VFEI_ChemfuelDrop" or
                 defName="VFEI_ComponentDrop" or
                 defName="VFEI_WoodDrop" or
-                defName="VFEI_JadeDrop" or
                 defName="VFEI_ComponentSpacerDrop" or
                 defName="VFEI_CallTechfriar" or
                 defName="VFEI_CallAbsolver" or
@@ -52,7 +52,6 @@
                 <xpath>Defs/NobilityExpanded.RoyaltyCoordsTableDef[defName="CoordsTableResources_0"]/loadOrder</xpath>
                 <value>
                     <li>VFEI_ClothDrop</li> <!-- todo cloth all -->
-                    <li>VFEI_ChemfuelDrop</li>
                     <li>VFEI_ComponentDrop</li> <!-- todo Component all -->
                 </value>
             </li>
@@ -60,7 +59,6 @@
                 <xpath>Defs/NobilityExpanded.RoyaltyCoordsTableDef[defName="CoordsTableResources_1"]/loadOrder</xpath>
                 <value>
                     <li>VFEI_WoodDrop</li> <!-- todo Wood all -->
-                    <li>VFEI_JadeDrop</li> <!-- todo ore delete -->
                     <li>VFEI_ComponentSpacerDrop</li>
                 </value>
             </li>
