@@ -4,8 +4,10 @@
     <DropComment>Сomment from the imperial caterer:</DropComment>
     
     <!-- Ресурсы -->
-    <DropComment_SteelDrop>Iron, the lifeblood of a nation... As long as you have the iron to make steel, life is not so bad.</DropComment_SteelDrop>
-    <DropComment_SilverDrop>Everyone needs money, no matter how much. Although for some reason some people melt it back into bars of silver...</DropComment_SilverDrop>
+    <DropComment_SteelDrop>Ore is the basis of civilisation. As long as you have the iron to make steel, life is not so bad.</DropComment_SteelDrop>
+    <DropComment_SilverDrop>Everyone needs money, no matter how much. In whatever form they may be.</DropComment_SilverDrop>
+    <DropComment_IndustrialMetalsDrop>These metals will allow you to build a society on even the most miserable death world, should there be a need.</DropComment_IndustrialMetalsDrop>
+    <DropComment_PreciousMetalsDrop>Expensive, valuable and not needed by most people. This is what these materials have in common.</DropComment_PreciousMetalsDrop>
     <DropComment_FoodDrop>Everyone needs food. Well, almost everyone, I still get the shivers from those humanoid robots. Oh, and yes, don't forget to put the food away from your pets straight away.</DropComment_FoodDrop>
     <DropComment_GlitterMedDrop>Is there a problem? We have an extensive supply of medical equipment, and I'd be happy to share, but do you know how many of you there are? We don't have enough for everyone, so we don't have to send very much.</DropComment_GlitterMedDrop>
     <DropComment_BlocksDrop>What? These cobblestones? What do you use them for, paving streets or something? In Fortuna, we only find them in old squares. Anyway, it's up to you.</DropComment_BlocksDrop>

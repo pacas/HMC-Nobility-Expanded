@@ -111,7 +111,7 @@ namespace NobilityExpanded
         public static void SetData(RoyalTitlePermitWorker_DropResourcesWithDialog createdWorker, Map map, Pawn caller, 
             Faction faction, RoyalTitlePermitDef def, bool free, bool isNotCaravan
             ) {
-            resourceChoices = def.GetModExtension<PermitExtensionList>().data;
+            resourceChoices = def.GetModExtension<PermitExtensionList>().itemData;
             chosenThing = resourceChoices?.First();
             worker = createdWorker;
             curPawn = caller;

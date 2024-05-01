@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using CombatExtended;
+using JetBrains.Annotations;
 using RimWorld;
 using Verse;
 using Random = System.Random;
@@ -10,30 +12,37 @@ namespace NobilityExpanded.Utilities
     {
         private static readonly Random Random = new Random();
         
-        public static List<Thing> GenerateItemRandom(List<ItemDataInfo> items) {
-            var randomIndex = Random.Next(items.Count);
-            var item = items[randomIndex];
-            List<Thing> things = GenerateItemByType(item);
-            if (item.additionalItems == null)
+        public static List<Thing> GenerateItems(PermitExtensionList extension) {
+            var things = new List<Thing>();
+            if (extension?.itemData == null) {
+                Log.Error("Cannot find mod extension");
                 return things;
-
-            foreach (var itemAdditional in item.additionalItems) {
-                var thing = ThingMaker.MakeThing(itemAdditional.thing);
-                thing.stackCount = itemAdditional.count;
-                things.Add(thing);
+            }
+            
+            if (extension.randomItem) {
+                var randomIndex = Random.Next(extension.itemData.Count);
+                var item = extension.itemData[randomIndex];
+                things.AddRange(GenerateItemByType(item));
+            } else {
+                foreach (var item in extension.itemData) {
+                    things.AddRange(GenerateItemByType(item));
+                }
             }
 
             return things;
         }
 
-        public static List<Thing> GenerateItemByType(ItemDataInfo item)
-        {
+        public static List<Thing> GenerateItemByType(ItemDataInfo item) {
             List<Thing> things = new List<Thing>();
             Thing thing;
-            if (item.stuff != null){
+            if (item.stuff != null) {
                 thing = item.quality != null ? GenerateThingStuffQuality(item) : ThingMaker.MakeThing(item.thing, item.stuff);
             } else {
                 thing = item.quality != null ? GenerateThingQuality(item) : ThingMaker.MakeThing(item.thing);
+            }
+
+            if (item.isTurret) {
+                thing = thing.MakeMinified();
             }
             
             thing.stackCount = item.count;
@@ -46,25 +55,19 @@ namespace NobilityExpanded.Utilities
             
             if (item.ammoCount == 0)
                 return things;
-            
-            AmmoSetDef ammoUser = thing.TryGetComp<CompAmmoUser>().Props.ammoSet;
-            if (ammoUser.ammoTypes.NullOrEmpty())
+
+            Thing ammoThing = item.isTurret ? GenerateAmmoForTurrets(item) : GenerateAmmoForGuns(item, thing);
+            if (ammoThing == null)
                 return things;
             
-            AmmoDef ammo = ammoUser.ammoTypes[0].ammo;
-            Thing ammoThing = ThingMaker.MakeThing(ammo);
-            ammoThing.stackCount = item.ammoCount;
             things.Add(ammoThing);
-
             return things;
         }
         
-        public static Thing GenerateThingStuffQuality(ItemDataInfo item)
-        {
+        public static Thing GenerateThingStuffQuality(ItemDataInfo item) {
             var stuff = item.stuff;
             var quality = item.quality;
-            switch (item.quality)
-            {
+            switch (item.qualityType) {
                 case "Specific":
                     return new ThingStuffPairWithQuality(item.thing, stuff, ItemGenerator.GenerateQualityFromString(quality)).MakeThing();
                 case "Range":
@@ -74,12 +77,11 @@ namespace NobilityExpanded.Utilities
             }
         }
         
-        public static Thing GenerateThingQuality(ItemDataInfo item)
-        {
+        public static Thing GenerateThingQuality(ItemDataInfo item) {
             Thing thing = ThingMaker.MakeThing(item.thing);
             CompQuality comp = thing.TryGetComp<CompQuality>();
             var quality = item.quality;
-            switch (quality)
+            switch (item.qualityType)
             {
                 case "Specific":
                     comp.SetQuality(ItemGenerator.GenerateQualityFromString(quality), ArtGenerationContext.Outsider);
@@ -169,6 +171,36 @@ namespace NobilityExpanded.Utilities
                     });
                     return list[Random.Next(list.Count)];
             }
+        }
+        
+        [CanBeNull]
+        public static Thing GenerateAmmoForGuns(ItemDataInfo item, Thing thing) {
+            AmmoSetDef ammoUser = thing.TryGetComp<CompAmmoUser>().Props.ammoSet;
+            if (ammoUser.ammoTypes.NullOrEmpty())
+                return null;
+            
+            AmmoDef ammo = ammoUser.ammoTypes.First().ammo;
+            Thing ammoThing = ThingMaker.MakeThing(ammo);
+            ammoThing.stackCount = item.ammoCount;
+
+            return ammoThing;
+        }
+
+        [CanBeNull]
+        public static Thing GenerateAmmoForTurrets(ItemDataInfo data) {
+            var turretGun = data.thing?.building?.turretGunDef;
+            if (turretGun == null)
+                return null;
+            
+            AmmoSetDef ammoUser = ThingMaker.MakeThing(turretGun).TryGetComp<CompAmmoUser>().Props.ammoSet;
+            if (ammoUser.ammoTypes.NullOrEmpty())
+                return null;
+            
+            AmmoDef ammo = ammoUser.ammoTypes.First().ammo;
+            Thing ammoThing = ThingMaker.MakeThing(ammo);
+            ammoThing.stackCount = data.ammoCount;
+
+            return ammoThing;
         }
     }
 }

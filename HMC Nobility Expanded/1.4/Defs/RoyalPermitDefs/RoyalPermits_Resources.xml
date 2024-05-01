@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesTitle">
+        <defName>BasePermitTitle</defName>
+        <label>Base Requests</label>
+        <description>Requests for a drop of the resources or services</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Title</type>
+                <category>Resources</category>
+                <row>0</row>
+                <column>0</column>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+    
+    <!-- New -->
+    
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>BlocksDrop</defName>
+        <label>Blocks</label>
+        <description>Request a drop of blocks or bricks with the option to select the required ones.</description>
+        <minTitle>Acolyte</minTitle>
+        <cooldownDays>14</cooldownDays>
+        <royalAid>
+            <favorCost>2</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Resources</category>
+                <row>3</row>
+                <column>0</column>
+                <itemData>
+                    <li>
+                        <thing>ClayBrick</thing>
+                        <count>400</count>
+                    </li>
+                    <li>
+                        <thing>BlocksMarble</thing>
+                        <count>300</count>
+                    </li>
+                    <li>
+                        <thing>BlocksSandstone</thing>
+                        <count>300</count>
+                    </li>
+                    <li>
+                        <thing>BlocksGranite</thing>
+                        <count>300</count>
+                    </li>
+                    <li>
+                        <thing>BlocksLimestone</thing>
+                        <count>300</count>
+                    </li>
+                    <li>
+                        <thing>BlocksSlate</thing>
+                        <count>300</count>
+                    </li>
+                    <li>
+                        <thing>ZF_BlocksBasalt</thing>
+                        <count>300</count>
+                    </li>
+                    <li>
+                        <thing>ZF_BlocksClay</thing>
+                        <count>300</count>
+                    </li>
+                    <li>
+                        <thing>ZF_BlocksMudstone</thing>
+                        <count>300</count>
+                    </li>
+                    <li>
+                        <thing>ZF_BlocksAlabaster</thing>
+                        <count>120</count>
+                    </li>
+                    <li>
+                        <thing>ZF_BlocksPegmatite</thing>
+                        <count>120</count>
+                    </li>
+                    <li>
+                        <thing>ZF_BlocksDunite</thing>
+                        <count>120</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>IndustrialMetalsDrop</defName>
+        <label>industrial metals and materials</label>
+        <description>Request a drop of industrial metals with the option to select the required ones.</description>
+        <minTitle>Knight</minTitle>
+        <faction>Empire</faction>
+        <permitPointCost>2</permitPointCost>
+        <cooldownDays>30</cooldownDays>
+        <royalAid>
+            <favorCost>6</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Resources</category>
+                <row>2</row>
+                <column>0</column>
+                <itemData>
+                    <li>
+                        <thing>Plasteel</thing>
+                        <count>500</count>
+                    </li>
+                    <li>
+                        <thing>CopperBar</thing>
+                        <count>500</count>
+                    </li>
+                    <li>
+                        <thing>TinBar</thing>
+                        <count>500</count>
+                    </li>
+                    <li>
+                        <thing>Bronze</thing>
+                        <count>500</count>
+                    </li>
+                    <li>
+                        <thing>AluminiumBar</thing>
+                        <count>500</count>
+                    </li>
+                    <li MayRequire="Soul.MaelstromsMetals.sk">
+                        <thing>Gritsteel</thing>
+                        <count>1000</count>
+                    </li>
+                    <li MayRequire="Soul.MaelstromsMetals.sk">
+                        <thing>Razorsteel</thing>
+                        <count>180</count>
+                    </li>
+                    <li MayRequire="Soul.MaelstromsMetals.sk">
+                        <thing>Shardplate</thing>
+                        <count>100</count>
+                    </li>
+                    <li>
+                        <thing>LeadBar</thing>
+                        <count>220</count>
+                    </li>
+                    <li>
+                        <thing>NickelBar</thing>
+                        <count>125</count>
+                    </li>
+                    <li>
+                        <thing>Cobalt</thing>
+                        <count>100</count>
+                    </li>
+                    <li>
+                        <thing>FerrosiliconAlloy</thing>
+                        <count>250</count>
+                    </li>
+                    <li>
+                        <thing>CupronickelAlloy</thing>
+                        <count>200</count>
+                    </li>
+                    <li>
+                        <thing>SteelBar</thing>
+                        <count>200</count>
+                    </li>
+                    <li>
+                        <thing>AlnicoAlloy</thing>
+                        <count>175</count>
+                    </li>
+                    <li>
+                        <thing>Tungsten</thing>
+                        <count>50</count>
+                    </li>
+                    <li>
+                        <thing>TitaniumBar</thing>
+                        <count>75</count>
+                    </li>
+                    <li>
+                        <thing>NitinolAlloy</thing>
+                        <count>50</count>
+                    </li>
+                    <li>
+                        <thing>PobediteAlloy</thing>
+                        <count>50</count>
+                    </li>
+                    <li>
+                        <thing>Titanium</thing>
+                        <count>40</count>
+                    </li>
+                    <li>
+                        <thing>StelliteAlloy</thing>
+                        <count>50</count>
+                    </li>
+                    <li>
+                        <thing>CarbonAlloy</thing>
+                        <count>50</count>
+                    </li>
+                    <li>
+                        <thing>DepletedUranium</thing>
+                        <count>125</count>
+                    </li>
+                    <li MayRequire="Soul.MaelstromsMetals.sk">
+                        <thing>Greenglow</thing>
+                        <count>125</count>
+                    </li>
+                    <li MayRequire="Soul.MaelstromsMetals.sk">
+                        <thing>Neutrite</thing>
+                        <count>75</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>PreciousMetalsDrop</defName>
+        <label>special metals and materials</label>
+        <description>Request a drop of precious ores with the option to select the required ones.</description>
+        <minTitle>Knight</minTitle>
+        <permitPointCost>2</permitPointCost>
+        <cooldownDays>45</cooldownDays>
+        <royalAid>
+            <favorCost>9</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Resources</category>
+                <row>2</row>
+                <column>1</column>
+                <itemData>
+                    <li>
+                        <thing>SilverBar</thing>
+                        <count>500</count>
+                    </li>
+                    <li>
+                        <thing>GoldBar</thing>
+                        <count>100</count>
+                    </li>
+                    <li MayRequire="Soul.MaelstromsMetals.sk">
+                        <thing>Prismallium</thing>
+                        <count>100</count>
+                    </li>
+                    <li MayRequire="Soul.MaelstromsMetals.sk">
+                        <thing>Avarisum</thing>
+                        <count>45</count>
+                    </li>
+                    <li MayRequire="Soul.MaelstromsMetals.sk">
+                        <thing>MechHardlight</thing>
+                        <count>75</count>
+                    </li>
+                    <li>
+                        <thing>AlphaPoly</thing>
+                        <count>50</count>
+                    </li>
+                    <li>
+                        <thing>BetaPoly</thing>
+                        <count>35</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+    
+    <!-- Overwrite -->
+
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>SteelDrop</defName>
+        <label>raw ores</label>
+        <description>Request a drop of raw ores with the option to select the required ones.</description>
+        <minTitle>Acolyte</minTitle>
+        <faction>Empire</faction>
+        <permitPointCost>1</permitPointCost>
+        <cooldownDays>12</cooldownDays>
+        <royalAid>
+            <favorCost>4</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Resources</category>
+                <row>1</row>
+                <column>0</column>
+                <itemData>
+                    <li>
+                        <thing>Steel</thing>
+                        <count>200</count>
+                    </li>
+                    <li>
+                        <thing>Copper</thing>
+                        <count>200</count>
+                    </li>
+                    <li>
+                        <thing>Tin</thing>
+                        <count>200</count>
+                    </li>
+                    <li>
+                        <thing>Aluminium</thing>
+                        <count>200</count>
+                    </li>
+                    <li>
+                        <thing>Anglesite</thing>
+                        <count>60</count>
+                    </li>
+                    <li>
+                        <thing>Nickel</thing>
+                        <count>45</count>
+                    </li>
+                    <li>
+                        <thing>Ilmenite</thing>
+                        <count>30</count>
+                    </li>
+                    <li>
+                        <thing>Wolframite</thing>
+                        <count>30</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>SilverDrop</defName>
+        <label>precious ores</label>
+        <description>Request a drop of precious ores with the option to select the required ones.</description>
+        <minTitle>Knight</minTitle>
+        <cooldownDays>25</cooldownDays>
+        <royalAid>
+            <favorCost>6</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Resources</category>
+                <row>1</row>
+                <column>1</column>
+                <itemData>
+                    <li>
+                        <thing>Silver</thing>
+                        <count>1200</count>
+                    </li>
+                    <li>
+                        <thing>Gold</thing>
+                        <count>50</count>
+                    </li>
+                    <li>
+                        <thing>Jade</thing>
+                        <count>125</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>FoodDrop</defName>
+        <label>food</label>
+        <description>Request a drop of 50 packaged survival meals.</description>
+        <minTitle>Acolyte</minTitle>
+        <cooldownDays>14</cooldownDays>
+        <royalAid>
+            <favorCost>4</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Resources</category>
+                <row>4</row>
+                <column>0</column>
+                <itemData>
+                    <li>
+                        <thing>MealSurvivalPack</thing>
+                        <count>50</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>GlitterMedDrop</defName>
+        <label>glitter med</label>
+        <description>Request a drop of 12 glitterworld medicine.</description>
+        <minTitle>Baron</minTitle> 
+        <cooldownDays>30</cooldownDays>
+        <permitPointCost>2</permitPointCost>
+        <royalAid>
+            <favorCost>8</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Resources</category>
+                <row>3</row>
+                <column>1</column>
+                <itemData>
+                    <li>
+                        <thing>MedicineUltratech</thing>
+                        <count>12</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+      
+    <RoyalTitlePermitDef>
+        <defName>CallTransportShuttle</defName>
+        <label>transport shuttle</label>
+        <description>Call a shuttle for your own use. It will transport colonists, items, and animals anywhere you like within 70 world tiles.</description>
+        <workerClass>RoyalTitlePermitWorker_CallShuttle</workerClass>
+        <minTitle>Knight</minTitle>
+        <faction>Empire</faction>
+        <permitPointCost>2</permitPointCost>
+        <cooldownDays>30</cooldownDays>
+        <usableOnWorldMap>true</usableOnWorldMap>
+        <royalAid>
+            <favorCost>8</favorCost>
+            <targetingRange>44.9</targetingRange>
+            <targetingRequireLOS>false</targetingRequireLOS>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Resources</category>
+                <row>4</row>
+                <column>1</column>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+    
+</Defs>

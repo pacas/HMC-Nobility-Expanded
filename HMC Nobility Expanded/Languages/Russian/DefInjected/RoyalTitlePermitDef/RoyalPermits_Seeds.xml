@@ -6,33 +6,33 @@
     <SeedsPermitTitle.description>Запрос доставки семян.</SeedsPermitTitle.description>
     
     <SeedsGrainsDrop.label>злаковые</SeedsGrainsDrop.label>
-    <SeedsGrainsDrop.description>Запрос доставки 75 семян злаковых.</SeedsGrainsDrop.description>
+    <SeedsGrainsDrop.description>Запрос доставки семян злаковых.</SeedsGrainsDrop.description>
 
     <SeedsVegesDrop.label>овощи</SeedsVegesDrop.label>
-    <SeedsVegesDrop.description>Запрос доставки 75 семян овощей.</SeedsVegesDrop.description>
+    <SeedsVegesDrop.description>Запрос доставки семян овощей.</SeedsVegesDrop.description>
 
     <SeedsShroomsDrop.label>споры грибов</SeedsShroomsDrop.label>
-    <SeedsShroomsDrop.description>Запрос доставки 75 спор грибов.</SeedsShroomsDrop.description>
+    <SeedsShroomsDrop.description>Запрос доставки спор грибов.</SeedsShroomsDrop.description>
 
     <SeedsLuxDrop.label>кулинарные культуры</SeedsLuxDrop.label>
-    <SeedsLuxDrop.description>Запрос доставки 50 семян кулинарных культур.</SeedsLuxDrop.description>
+    <SeedsLuxDrop.description>Запрос доставки семян кулинарных культур.</SeedsLuxDrop.description>
 
     <SeedsAddictiveDrop.label>аддиктивные культуры</SeedsAddictiveDrop.label>
-    <SeedsAddictiveDrop.description>Запрос доставки 35 семян аддиктивных культур.</SeedsAddictiveDrop.description>
+    <SeedsAddictiveDrop.description>Запрос доставки семян аддиктивных культур.</SeedsAddictiveDrop.description>
 
     <SeedsClothDrop.label>волокнистые культуры</SeedsClothDrop.label>
-    <SeedsClothDrop.description>Запрос доставки 50 семян волокнистых культур.</SeedsClothDrop.description>
+    <SeedsClothDrop.description>Запрос доставки семян волокнистых культур.</SeedsClothDrop.description>
 
     <SeedsHealDrop.label>лечебные культуры</SeedsHealDrop.label>
-    <SeedsHealDrop.description>Запрос доставки 35 лечебных культур.</SeedsHealDrop.description>
+    <SeedsHealDrop.description>Запрос доставки лечебных культур.</SeedsHealDrop.description>
 
     <SeedsUtilDrop.label>утилитарные культуры</SeedsUtilDrop.label>
-    <SeedsUtilDrop.description>Запрос доставки 25 семян утилитарных культур.</SeedsUtilDrop.description>
+    <SeedsUtilDrop.description>Запрос доставки семян утилитарных культур.</SeedsUtilDrop.description>
 
     <SeedsTreeDrop.label>деревья</SeedsTreeDrop.label>
-    <SeedsTreeDrop.description>Запрос доставки 25 семян деревьев.</SeedsTreeDrop.description>
+    <SeedsTreeDrop.description>Запрос доставки семян деревьев.</SeedsTreeDrop.description>
 
     <SeedsFruitDrop.label>фруктовые деревья</SeedsFruitDrop.label>
-    <SeedsFruitDrop.description>Запрос доставки 20 семян фруктовых деревьев.</SeedsFruitDrop.description>
+    <SeedsFruitDrop.description>Запрос доставки семян фруктовых деревьев.</SeedsFruitDrop.description>
 
 </LanguageData>

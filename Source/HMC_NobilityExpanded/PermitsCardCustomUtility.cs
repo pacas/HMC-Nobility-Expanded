@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using NobilityExpanded.Utilities;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -132,8 +133,7 @@ namespace NobilityExpanded
             Find.WindowStack.Add(new FloatMenu(tabOptions));
         }
         
-        private static void DoLeftRect(Rect rect, Pawn pawn)
-        {
+        private static void DoLeftRect(Rect rect, Pawn pawn) {
             var leftPanel = new Rect(rect);
             Widgets.BeginGroup(leftPanel);
             if (selectedPermit != null) {
@@ -167,8 +167,7 @@ namespace NobilityExpanded
             Widgets.EndGroup();
         }
         
-        private static void DoMiddleRect(Rect rect, Pawn pawn)
-        {
+        private static void DoMiddleRect(Rect rect, Pawn pawn) {
             Widgets.DrawMenuSection(rect);
             if (selectedFaction == null)
                 return;
@@ -177,20 +176,20 @@ namespace NobilityExpanded
             var middlePanel = new Rect();
             var newCoords = new Vector2(240f, 50f);
             middlePanel.width = (newCoords + newCoords * new Vector2(0.25f, 0.35f)).x + 200f + 26f;
-            foreach (var permit in defsListForReading.Where(CanDrawPermit).Where(IsFromCurrentCategory)) {
+            foreach (var permit in defsListForReading.Where(CanDrawPermit)) {
                 middlePanel.height = Mathf.Max(middlePanel.height, DrawPosition(permit).y + 50f + 26f);
             }
 
             Widgets.BeginScrollView(outRect, ref rightScrollPosition, middlePanel);
             Widgets.BeginGroup(middlePanel.ContractedBy(10f));
             DrawLines();
-            foreach (var permit in defsListForReading.Where(CanDrawPermit).Where(IsFromCurrentCategory)) {
+            foreach (var permit in defsListForReading.Where(CanDrawPermit)) {
                 var drawPosition = DrawPosition(permit);
                 var textColor = Widgets.NormalOptionColor;
                 var bgColor = PermitUnlocked(permit, pawn) ? TexUI.FinishedResearchColor : TexUI.AvailResearchColor;
                 Color borderResearchColor;
                 var permitRect = new Rect(drawPosition.x, drawPosition.y, 200f, 50f);
-                switch (permit.permitPointCost) {
+                switch (permit.permitPointCost) { // todo change to modext
                     case 99:
                         textColor = new Color(1f, 0.5f, 0.0f, 1.0f);
                         bgColor = new Color(0.06f, 0.06f, 0.06f, 1);
@@ -233,8 +232,7 @@ namespace NobilityExpanded
             Widgets.EndScrollView();
         }
         
-        private static void DoRightRect(Rect rect, Pawn pawn)
-        {
+        private static void DoRightRect(Rect rect, Pawn pawn) {
             var currentTitle = pawn.royalty.GetCurrentTitle(selectedFaction);
             var rightRect = new Rect(rect);
             Widgets.BeginGroup(rightRect);
@@ -258,36 +256,36 @@ namespace NobilityExpanded
             
             Widgets.EndGroup();
         }
-        
-        private static void DrawLines()
-        {
+
+        private static void DrawLines() {
             var start = new Vector2();
             var end = new Vector2();
             var defsListForReading = DefDatabase<RoyalTitlePermitDef>.AllDefsListForReading;
-            for (var columnIndex = 0; columnIndex < 2; ++columnIndex)
-                foreach (var permit in defsListForReading) {
-                    if (!CanDrawPermit(permit) || !IsFromCurrentCategory(permit)) 
-                        continue;
-                    var vector1 = DrawPosition(permit);
-                    start.x = vector1.x;
-                    start.y = vector1.y + 25f;
-                    var prerequisite = permit.prerequisite;
-                    if (prerequisite == null)
-                        continue;
-                    var vector2 = DrawPosition(prerequisite);
-                    end.x = vector2.x + 200f;
-                    end.y = vector2.y + 25f;
-                    if ((columnIndex == 1 && selectedPermit == permit) || selectedPermit == prerequisite)
-                        Widgets.DrawLine(start, end, TexUI.HighlightLineResearchColor, 4f);
-                    else if (columnIndex == 0)
-                        Widgets.DrawLine(start, end, TexUI.DefaultLineResearchColor, 2f);
-                }
+            foreach (var permit in defsListForReading) {
+                if (!CanDrawPermit(permit))
+                    continue;
+                var vector1 = DrawPosition(permit);
+                start.x = vector1.x;
+                start.y = vector1.y + 25f;
+                var prerequisite = permit.prerequisite;
+                if (prerequisite == null)
+                    continue;
+                var vector2 = DrawPosition(prerequisite);
+                end.x = vector2.x + 200f;
+                end.y = vector2.y + 25f;
+                bool isSecond = selectedPermit == prerequisite;
+                var color = isSecond
+                    ? TexUI.HighlightLineResearchColor
+                    : TexUI.DefaultLineResearchColor;
+                var width = isSecond ? 4f : 2f;
+                Widgets.DrawLine(start, end, color, width);
+            }
         }
 
-        private static Vector2 DrawPosition(RoyalTitlePermitDef permit){
+        private static Vector2 DrawPosition(RoyalTitlePermitDef permit) {
             OrderedStuffDef stuffDefOrdered = DefDatabase<OrderedStuffDef>.GetNamedSilentFail(permit.defName + Utilities.VarsExposer.stuffPostfix);
             bool isExtExists = permit.HasModExtension<PermitExtensionList>();
-            var tableName = Utilities.VarsExposer.coordsTable + curTab + "_";
+            var tableName = VarsExposer.coordsTable + curTab + "_";
             int index;
             Vector2 newCoords;
             if (stuffDefOrdered != null) {
@@ -314,34 +312,14 @@ namespace NobilityExpanded
                         break;
                 }
             } else {
-                RoyaltyCoordsTableDef categoryTable = DefDatabase<RoyaltyCoordsTableDef>.GetNamedSilentFail(tableName + "0");
-                index = categoryTable.loadOrder.IndexOf(permit);
-                switch (permit.permitPointCost)
-                {
-                    case 99:
-                        newCoords = new Vector2(80f, index * 50f + 5f);
-                        break;
-                    case 98:
-                        newCoords = new Vector2(140f, index * 50f + 5f);
-                        break;
-                    default:
-                        newCoords = new Vector2(permit.uiPosition.x * 400f, permit.uiPosition.y * 50f);
-                        break;
-                }
+                newCoords = new Vector2(0f, -200f);
+                Log.ErrorOnce("Found error in title permit render - wrong position. Bugged permit defName - " + permit.defName, 43);
             }
             
             return newCoords + newCoords * new Vector2(0.25f, 0.35f);
         }
         
-        private static bool CanDrawPermit(RoyalTitlePermitDef permit) {
-            // todo
-            if (permit.permitPointCost <= 0 || permit.permitPointCost == 97 || permit.permitPointCost == 96)
-                return false;
-            return permit.faction == null || permit.faction == selectedFaction.def;
-        }
-        
-        private static bool PermitUnlocked(RoyalTitlePermitDef permit, Pawn pawn)
-        {
+        private static bool PermitUnlocked(RoyalTitlePermitDef permit, Pawn pawn) {
             if (pawn.royalty.HasPermit(permit, selectedFaction)) 
                 return true;
 
@@ -357,17 +335,33 @@ namespace NobilityExpanded
 
             return false;
         }
+        
+        private static bool CanDrawPermit(RoyalTitlePermitDef permit) {
+            // todo
+            if (permit.permitPointCost < 0 || permit.permitPointCost == 97 || permit.permitPointCost == 96)
+                return false;
+
+            if (!IsFromCurrentCategory(permit))
+                return false;
+            
+            return permit.faction == null || permit.faction == selectedFaction.def;
+        }
 
         private static bool IsFromCurrentCategory(RoyalTitlePermitDef permit) {
             var ext = permit.GetModExtension<PermitExtensionList>();
             if (ext != null) {
                 return ext.category == curTab;
             }
-
-            if (DefDatabase<OrderedStuffDef>.GetNamedSilentFail(permit.defName + Utilities.VarsExposer.stuffPostfix) != null) {
+            
+            // todo I will kill you
+            RoyaltyCoordsTableDef categoryTable0 = DefDatabase<RoyaltyCoordsTableDef>.GetNamedSilentFail(VarsExposer.coordsTable + curTab + "_0");
+            RoyaltyCoordsTableDef categoryTable1 = DefDatabase<RoyaltyCoordsTableDef>.GetNamedSilentFail(VarsExposer.coordsTable + curTab + "_1");
+            var index0 = categoryTable0.loadOrder.IndexOf(permit);
+            var index1 = categoryTable1.loadOrder.IndexOf(permit);
+            if (index0 > 0 || index1 > 0) {
                 return true;
             }
-
+            
             return permit.permitPointCost > 89;
         }
         

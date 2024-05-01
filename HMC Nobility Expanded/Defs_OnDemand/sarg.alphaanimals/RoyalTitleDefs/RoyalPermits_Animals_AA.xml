@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
     <!-- Spiders -->
-    <RoyalTitlePermitDef ParentName="SendPawns">
+    <RoyalTitlePermitDef ParentName="CallPawns">
         <defName>SpiderAnimalDrop</defName>
         <label>spiders</label>
         <description>Request a drop of two random spiders of the same species from Alpha Animals. Web them down!</description>
@@ -14,16 +13,35 @@
             <pawnCount>2</pawnCount>
             <targetingRange>39.9</targetingRange>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Animals</category>
+                <row>8</row>
+                <column>0</column>
+                <pawnData>
+                    <li>
+                        <pawn>AA_Animalisk</pawn>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <pawn>AA_Blizzarisk</pawn>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <pawn>AA_Cinderlisk</pawn>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <pawn>AA_Feralisk</pawn>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <pawn>AA_Junglelisk</pawn>
+                        <count>2</count>
+                    </li>
+                </pawnData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsBase">
-        <defName>SpiderAnimalDropStuff</defName>
-        <column>1</column>
-        <pawnToChoose>
-            <li MayRequire="sarg.alphaanimals">AA_Animalisk</li>
-            <li MayRequire="sarg.alphaanimals">AA_Blizzarisk</li>
-            <li MayRequire="sarg.alphaanimals">AA_Cinderlisk</li>
-            <li MayRequire="sarg.alphaanimals">AA_Feralisk</li>
-            <li MayRequire="sarg.alphaanimals">AA_Junglelisk</li>
-        </pawnToChoose>
-    </NobilityExpanded.OrderedStuffDef>
 </Defs>

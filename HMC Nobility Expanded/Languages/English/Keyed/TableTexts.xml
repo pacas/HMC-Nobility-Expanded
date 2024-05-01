@@ -3,6 +3,8 @@
     
     <PrivilegesPointsRequired>Permit points cost: {0}</PrivilegesPointsRequired>
     <ItemIncludedInPermit>Contains:</ItemIncludedInPermit>
+    <DropTypeRandom>Type: random</DropTypeRandom>
+    <DropTypeSpecific>Type: specific</DropTypeSpecific>
     <ChoosePermitCategory>Choose category</ChoosePermitCategory>
     <CurrentTitleCustom>Title: </CurrentTitleCustom>
     <PickResourceForDrop>Select the item to request: </PickResourceForDrop>

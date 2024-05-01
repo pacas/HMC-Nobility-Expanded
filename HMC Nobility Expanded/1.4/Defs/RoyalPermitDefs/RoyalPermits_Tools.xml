@@ -33,7 +33,7 @@
                 <category>Tools</category>
                 <column>0</column>
                 <row>1</row>
-                <data>
+                <itemData>
                     <li>
                         <thing>TFJ_Tool_Woodcutting_Handaxe</thing>
                         <count>1</count>
@@ -69,7 +69,7 @@
                         <count>1</count>
                         <stuff>Plasteel</stuff>
                     </li>
-                </data>
+                </itemData>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
@@ -91,7 +91,7 @@
                 <category>Tools</category>
                 <column>1</column>
                 <row>1</row>
-                <data>
+                <itemData>
                     <li>
                         <thing>TFJ_Tool_Woodcutting_Handaxe</thing>
                         <count>1</count>
@@ -134,7 +134,7 @@
                         <stuff>AluminiumBar</stuff>
                         <quality>Excellent</quality>
                     </li>
-                </data>
+                </itemData>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
@@ -158,13 +158,13 @@
                 <category>Tools</category>
                 <column>0</column>
                 <row>2</row>
-                <data>
+                <itemData>
                     <li>
                         <thing>TFJ_Tool_Multitool</thing>
                         <count>1</count>
                         <stuff>AlnicoAlloy</stuff>
                     </li>
-                </data>
+                </itemData>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
@@ -186,14 +186,14 @@
                 <category>Tools</category>
                 <column>1</column>
                 <row>2</row>
-                <data>
+                <itemData>
                     <li>
                         <thing>TFJ_Tool_Multitool</thing>
                         <count>1</count>
                         <stuff>Titanium</stuff>
                         <quality>Excellent</quality>
                     </li>
-                </data>
+                </itemData>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>

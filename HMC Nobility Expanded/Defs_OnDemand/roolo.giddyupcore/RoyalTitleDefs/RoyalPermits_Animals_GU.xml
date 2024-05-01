@@ -1,33 +1,54 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <!-- Mounts -->
-    <RoyalTitlePermitDef ParentName="SendPawns">
+    <RoyalTitlePermitDef ParentName="CallPawns">
         <defName>MountsAnimalDrop</defName>
         <label>mounts</label>
         <description>Request a drop of one random mount animal.</description>
         <permitPointCost>1</permitPointCost>
         <minTitle>Acolyte</minTitle>
-        <cooldownDays>14</cooldownDays>
+        <cooldownDays>12</cooldownDays>
         <royalAid>
             <favorCost>9</favorCost>
             <pawnCount>1</pawnCount>
             <targetingRange>39.9</targetingRange>
         </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Animals</category>
+                <row>5</row>
+                <column>1</column>
+                <pawnData>
+                    <li>
+                        <pawn>Ostrich</pawn>
+                    </li>
+                    <li>
+                        <pawn>Horse</pawn>
+                    </li>
+                    <li>
+                        <pawn>Alpaca</pawn>
+                    </li>
+                    <li MayRequire="sarg.alphaanimals">
+                        <pawn>AA_Gigantelope</pawn>
+                    </li>
+                    <li MayRequire="sarg.alphaanimals">
+                        <pawn>AA_DesertAve</pawn>
+                    </li>
+                    <li MayRequire="sarg.alphaanimals">
+                        <pawn>AA_FrostAve</pawn>
+                    </li>
+                    <li MayRequire="sarg.alphaanimals">
+                        <pawn>AA_MeadowAve</pawn>
+                    </li>
+                    <li MayRequire="sarg.alphaanimals">
+                        <pawn>AA_NightAve</pawn>
+                    </li>
+                    <li MayRequire="sarg.alphaanimals">
+                        <pawn>AA_RoyalAve</pawn>
+                    </li>
+                </pawnData>
+            </li>
+        </modExtensions>
     </RoyalTitlePermitDef>
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedThingsBase">
-        <defName>MountsAnimalDropStuff</defName>
-        <pawnToChoose>
-            <li>Ostrich</li>
-            <li>Horse</li>
-            <!-- <li>Horse_Wooly</li> -->
-            <!-- <li>Donkey</li> -->
-            <li>Alpaca</li>
-            <li MayRequire="sarg.alphaanimals">AA_Gigantelope</li>
-            <li MayRequire="sarg.alphaanimals">AA_DesertAve</li>
-            <li MayRequire="sarg.alphaanimals">AA_FrostAve</li>
-            <li MayRequire="sarg.alphaanimals">AA_MeadowAve</li>
-            <li MayRequire="sarg.alphaanimals">AA_NightAve</li>
-            <li MayRequire="sarg.alphaanimals">AA_RoyalAve</li>
-        </pawnToChoose>
-    </NobilityExpanded.OrderedStuffDef>
 </Defs>

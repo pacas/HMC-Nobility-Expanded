@@ -3,6 +3,8 @@
     
     <PrivilegesPointsRequired>Требуется очков привилегий: {0}</PrivilegesPointsRequired>
     <ItemIncludedInPermit>Содержит:</ItemIncludedInPermit>
+    <DropTypeRandom>Тип: случайный выбор</DropTypeRandom>
+    <DropTypeSpecific>Тип: предустановленный выбор</DropTypeSpecific>
     <ChoosePermitCategory>Выбрать категорию</ChoosePermitCategory>
     <CurrentTitleCustom>Титул: </CurrentTitleCustom>
     <PickResourceForDrop>Выберите предмет для запроса: </PickResourceForDrop>
