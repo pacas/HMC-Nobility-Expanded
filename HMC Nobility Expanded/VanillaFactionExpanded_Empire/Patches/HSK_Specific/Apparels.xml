@@ -250,9 +250,9 @@
                 <value>
                     <equippedStatOffsets>
                         <MoveSpeed>-1.2</MoveSpeed>
-                        <CarryWeight>50</CarryWeight>
+                        <CarryWeight>55</CarryWeight>
                         <ToxicEnvironmentResistance>0.3</ToxicEnvironmentResistance>
-                        <CarryBulk>15</CarryBulk>
+                        <CarryBulk>14</CarryBulk>
                         <WorkSpeedGlobal>-0.25</WorkSpeedGlobal>
                         <ShootingAccuracyPawn>-0.1</ShootingAccuracyPawn>
                         <AimingDelayFactor>0.14</AimingDelayFactor>

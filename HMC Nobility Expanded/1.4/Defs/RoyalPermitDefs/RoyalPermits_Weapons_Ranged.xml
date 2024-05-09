@@ -263,14 +263,14 @@
                         <qualityType>Range</qualityType>
                     </li>
                     <li MayRequire="arpomo6.hmc.project">
-                        <thing>ARL_CombatHandgun</thing>
+                        <thing>Gun_GreaterDesertEagle</thing>
                         <count>1</count>
                         <ammoCount>36</ammoCount>
                         <quality>Excellent</quality>
                         <qualityType>Range</qualityType>
                     </li>
                     <li MayRequire="arpomo6.hmc.project">
-                        <thing>ARL_HandCannon</thing>
+                        <thing>Gun_RSH12s</thing>
                         <count>1</count>
                         <ammoCount>35</ammoCount>
                         <quality>Excellent</quality>

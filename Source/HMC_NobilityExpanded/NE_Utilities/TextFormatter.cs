@@ -87,16 +87,23 @@ namespace NobilityExpanded.Utilities
             
             if (isThingsExists) {
                 label += "ItemIncludedInPermit".Translate() + "\n";
+                int counter = 0;
                 foreach (var item in extension.itemData) {
-                    if (item.stuff != null) {
-                        label += "  - " + "StuffDescription".Translate(
-                            item.stuff.stuffProps.stuffAdjective,
-                            item.thing.LabelCap);
-                    } else {
-                        label += "  - " + item.thing.label.CapitalizeFirst();
-                    }
+                    counter++;
+                    try {
+                        if (item.stuff != null) {
+                            label += "  - " + "StuffDescription".Translate(
+                                item.stuff.stuffProps.stuffAdjective,
+                                item.thing.LabelCap);
+                        } else {
+                            label += "  - " + item.thing.label.CapitalizeFirst();
+                        }
 
-                    label += " x" + item.count + "\n";
+                        label += " x" + item.count + "\n";
+                    } catch {
+                        Log.Error("Error in permit " + selectedPermit.LabelCap + " - missing item at pos " + counter);
+                        continue;
+                    }
                 }
             }
             
