@@ -5,13 +5,13 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/StorytellerDef[defName = "VFEE_AriadneArchduchess"]/comps/li[@Class="VFEEmpire.StorytellerCompProperties_WealthSteps"]/wealthIncrease</xpath>
                 <value>
-                    <wealthIncrease>10000</wealthIncrease>
+                    <wealthIncrease>7500</wealthIncrease>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
                 <xpath>Defs/FactionDef[defName = "VFEE_Deserters"]/earliestRaidDays</xpath>
                 <value>
-                    <earliestRaidDays>180</earliestRaidDays>
+                    <earliestRaidDays>150</earliestRaidDays>
                 </value>
             </li>
             <li Class="PatchOperationReplace">

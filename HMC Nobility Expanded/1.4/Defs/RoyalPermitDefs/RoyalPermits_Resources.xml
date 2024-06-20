@@ -15,8 +15,233 @@
         </modExtensions>
     </RoyalTitlePermitDef>
     
+    <!-- Overwrite -->
+
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>SteelDrop</defName>
+        <label>raw ores</label>
+        <description>Request a drop of raw ores with the option to select the required ones.</description>
+        <minTitle>Acolyte</minTitle>
+        <faction>Empire</faction>
+        <permitPointCost>1</permitPointCost>
+        <cooldownDays>12</cooldownDays>
+        <royalAid>
+            <favorCost>4</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Resources</category>
+                <row>1</row>
+                <column>0</column>
+                <itemData>
+                    <li>
+                        <thing>Steel</thing>
+                        <count>200</count>
+                    </li>
+                    <li>
+                        <thing>Copper</thing>
+                        <count>200</count>
+                    </li>
+                    <li>
+                        <thing>Tin</thing>
+                        <count>200</count>
+                    </li>
+                    <li>
+                        <thing>Aluminium</thing>
+                        <count>200</count>
+                    </li>
+                    <li>
+                        <thing>Anglesite</thing>
+                        <count>60</count>
+                    </li>
+                    <li>
+                        <thing>Nickel</thing>
+                        <count>45</count>
+                    </li>
+                    <li>
+                        <thing>Ilmenite</thing>
+                        <count>30</count>
+                    </li>
+                    <li>
+                        <thing>Wolframite</thing>
+                        <count>30</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>SilverDrop</defName>
+        <label>precious ores</label>
+        <description>Request a drop of precious ores with the option to select the required ones.</description>
+        <minTitle>Knight</minTitle>
+        <cooldownDays>25</cooldownDays>
+        <royalAid>
+            <favorCost>6</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Resources</category>
+                <row>1</row>
+                <column>1</column>
+                <itemData>
+                    <li>
+                        <thing>Silver</thing>
+                        <count>1200</count>
+                    </li>
+                    <li>
+                        <thing>Gold</thing>
+                        <count>50</count>
+                    </li>
+                    <li>
+                        <thing>Jade</thing>
+                        <count>125</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>FoodDrop</defName>
+        <label>food package</label>
+        <description>Request a drop of a variety of meals for your colony.</description>
+        <minTitle>Acolyte</minTitle>
+        <cooldownDays>14</cooldownDays>
+        <royalAid>
+            <favorCost>4</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Resources</category>
+                <row>3</row>
+                <column>0</column>
+                <itemData>
+                    <li>
+                        <thing>FriedVegetables</thing>
+                        <count>50</count>
+                    </li>
+                    <li>
+                        <thing>MealSimple</thing>
+                        <count>50</count>
+                    </li>
+                    <li>
+                        <thing>bread</thing>
+                        <count>50</count>
+                    </li>
+                    <li>
+                        <thing>RoastedMeat</thing>
+                        <count>50</count>
+                    </li>
+                    <li>
+                        <thing>MealFine</thing>
+                        <count>30</count>
+                    </li>
+                    <li>
+                        <thing>MealLavish</thing>
+                        <count>20</count>
+                    </li>
+                    <li>
+                        <thing>Pizza</thing>
+                        <count>20</count>
+                    </li>
+                    <li>
+                        <thing>PieBlueberry</thing>
+                        <count>20</count>
+                    </li>
+                    <li>
+                        <thing>MetalCannedMeat_prime</thing>
+                        <count>500</count>
+                    </li>
+                    <li>
+                        <thing>PickledVeg</thing>
+                        <count>200</count>
+                    </li>
+                    <li>
+                        <thing>MealSurvivalPack</thing>
+                        <count>40</count>
+                    </li>
+                    <li>
+                        <thing>MealNutrientPaste</thing>
+                        <count>75</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>GlitterMedDrop</defName>
+        <label>medicine package</label>
+        <description>Request a drop of a variety of medicine kits.</description>
+        <minTitle>Knight</minTitle> 
+        <cooldownDays>14</cooldownDays>
+        <royalAid>
+            <favorCost>7</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Resources</category>
+                <row>3</row>
+                <column>1</column>
+                <itemData>
+                    <li>
+                        <thing>Bandagekit</thing>
+                        <count>30</count>
+                    </li>
+                    <li>
+                        <thing>MedicalDrink</thing>
+                        <count>12</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Fungicine</thing>
+                        <count>10</count>
+                    </li>
+                    <li>
+                        <thing>MedicineIndustrial</thing>
+                        <count>6</count>
+                    </li>
+                    <li>
+                        <thing>MedicineUltratech</thing>
+                        <count>2</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef>
+        <defName>CallTransportShuttle</defName>
+        <label>transport shuttle</label>
+        <description>Call a shuttle for your own use. It will transport colonists, items, and animals anywhere you like within 70 world tiles.</description>
+        <workerClass>RoyalTitlePermitWorker_CallShuttle</workerClass>
+        <minTitle>Knight</minTitle>
+        <faction>Empire</faction>
+        <permitPointCost>2</permitPointCost>
+        <cooldownDays>30</cooldownDays>
+        <usableOnWorldMap>true</usableOnWorldMap>
+        <royalAid>
+            <favorCost>8</favorCost>
+            <targetingRange>44.9</targetingRange>
+            <targetingRequireLOS>false</targetingRequireLOS>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Resources</category>
+                <row>7</row>
+                <column>1</column>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
     <!-- New -->
-    
+
     <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
         <defName>BlocksDrop</defName>
         <label>Blocks</label>
@@ -30,7 +255,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Resources</category>
-                <row>3</row>
+                <row>4</row>
                 <column>0</column>
                 <itemData>
                     <li>
@@ -88,7 +313,7 @@
 
     <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
         <defName>IndustrialMetalsDrop</defName>
-        <label>industrial metals and materials</label>
+        <label>industrial metals &amp; materials</label>
         <description>Request a drop of industrial metals with the option to select the required ones.</description>
         <minTitle>Knight</minTitle>
         <faction>Empire</faction>
@@ -211,7 +436,7 @@
 
     <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
         <defName>PreciousMetalsDrop</defName>
-        <label>special metals and materials</label>
+        <label>special metals &amp; materials</label>
         <description>Request a drop of precious ores with the option to select the required ones.</description>
         <minTitle>Knight</minTitle>
         <permitPointCost>2</permitPointCost>
@@ -258,58 +483,50 @@
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
-    
-    <!-- Overwrite -->
 
     <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
-        <defName>SteelDrop</defName>
-        <label>raw ores</label>
-        <description>Request a drop of raw ores with the option to select the required ones.</description>
-        <minTitle>Acolyte</minTitle>
-        <faction>Empire</faction>
-        <permitPointCost>1</permitPointCost>
-        <cooldownDays>12</cooldownDays>
+        <defName>ClothDrop</defName>
+        <label>textiles &amp; leather package</label>
+        <description>Request a drop of a variety of textile, wool or leather boxes.</description>
+        <minTitle>Knight</minTitle>
+        <cooldownDays>30</cooldownDays>
         <royalAid>
-            <favorCost>4</favorCost>
+            <favorCost>7</favorCost>
         </royalAid>
         <modExtensions>
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Resources</category>
-                <row>1</row>
+                <row>5</row>
                 <column>0</column>
                 <itemData>
                     <li>
-                        <thing>Steel</thing>
+                        <thing>Cloth</thing>
+                        <count>750</count>
+                    </li>
+                    <li>
+                        <thing>HempCloth</thing>
+                        <count>300</count>
+                    </li>
+                    <li>
+                        <thing>Flaxcloth</thing>
                         <count>200</count>
                     </li>
                     <li>
-                        <thing>Copper</thing>
-                        <count>200</count>
+                        <thing>DevilstrandCloth</thing>
+                        <count>150</count>
                     </li>
                     <li>
-                        <thing>Tin</thing>
-                        <count>200</count>
+                        <thing>Velour</thing>
+                        <count>100</count>
                     </li>
                     <li>
-                        <thing>Aluminium</thing>
-                        <count>200</count>
+                        <thing>Synthread</thing>
+                        <count>100</count>
                     </li>
                     <li>
-                        <thing>Anglesite</thing>
-                        <count>60</count>
-                    </li>
-                    <li>
-                        <thing>Nickel</thing>
-                        <count>45</count>
-                    </li>
-                    <li>
-                        <thing>Ilmenite</thing>
-                        <count>30</count>
-                    </li>
-                    <li>
-                        <thing>Wolframite</thing>
-                        <count>30</count>
+                        <thing>Hyperweave</thing>
+                        <count>70</count>
                     </li>
                 </itemData>
             </li>
@@ -317,11 +534,11 @@
     </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
-        <defName>SilverDrop</defName>
-        <label>precious ores</label>
-        <description>Request a drop of precious ores with the option to select the required ones.</description>
+        <defName>WoolDrop</defName>
+        <label>wool &amp; leather package</label>
+        <description>Request a drop of a variety of textile, wool or leather boxes.</description>
         <minTitle>Knight</minTitle>
-        <cooldownDays>25</cooldownDays>
+        <cooldownDays>30</cooldownDays>
         <royalAid>
             <favorCost>6</favorCost>
         </royalAid>
@@ -329,98 +546,282 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Resources</category>
-                <row>1</row>
+                <row>5</row>
                 <column>1</column>
                 <itemData>
                     <li>
-                        <thing>Silver</thing>
-                        <count>1200</count>
+                        <thing>WoolSheep</thing>
+                        <count>500</count>
                     </li>
                     <li>
-                        <thing>Gold</thing>
+                        <thing>WoolMuffalo</thing>
+                        <count>300</count>
+                    </li>
+                    <li>
+                        <thing>WoolDromedary</thing>
+                        <count>275</count>
+                    </li>
+                    <li>
+                        <thing>WoolMegasloth</thing>
+                        <count>250</count>
+                    </li>
+                    <li>
+                        <thing>WoolAlpaca</thing>
+                        <count>250</count>
+                    </li>
+                    <li>
+                        <thing>WoolBison</thing>
+                        <count>250</count>
+                    </li>
+                    <li>
+                        <thing>Chitin</thing>
+                        <count>200</count>
+                    </li>
+                    <li>
+                        <thing>ChitinPlating</thing>
                         <count>50</count>
                     </li>
                     <li>
-                        <thing>Jade</thing>
-                        <count>125</count>
+                        <thing>Leather_Patch</thing>
+                        <count>1000</count>
+                    </li>
+                    <li>
+                        <thing>Leather_Plain</thing>
+                        <count>750</count>
+                    </li>
+                    <li>
+                        <thing>Leather_Light</thing>
+                        <count>500</count>
+                    </li>
+                    <li>
+                        <thing>Leather_Heavy</thing>
+                        <count>400</count>
+                    </li>
+                    <li>
+                        <thing>Leather_Pig</thing>
+                        <count>500</count>
+                    </li>
+                    <li>
+                        <thing>Leather_Camel</thing>
+                        <count>350</count>
+                    </li>
+                    <li>
+                        <thing>Leather_Bluefur</thing>
+                        <count>350</count>
+                    </li>
+                    <li>
+                        <thing>Leather_Bear</thing>
+                        <count>250</count>
+                    </li>
+                    <li>
+                        <thing>Leather_Nightling</thing>
+                        <count>250</count>
+                    </li>
+                    <li>
+                        <thing>Leather_Thrumbo</thing>
+                        <count>100</count>
                     </li>
                 </itemData>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
 
-    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
-        <defName>FoodDrop</defName>
-        <label>food</label>
-        <description>Request a drop of 50 packaged survival meals.</description>
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>WoodDrop</defName>
+        <label>wood bundles</label>
+        <description>Request a drop of a various types of wood and planks bundles.</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>14</cooldownDays>
         <royalAid>
-            <favorCost>4</favorCost>
+            <favorCost>5</favorCost>
         </royalAid>
         <modExtensions>
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Resources</category>
-                <row>4</row>
+                <row>6</row>
                 <column>0</column>
                 <itemData>
                     <li>
-                        <thing>MealSurvivalPack</thing>
-                        <count>50</count>
+                        <thing>WoodLog</thing>
+                        <count>750</count>
+                    </li>
+                    <li>
+                        <thing>WoodPlank</thing>
+                        <count>750</count>
+                    </li>
+                    <li>
+                        <thing>Bamboo</thing>
+                        <count>600</count>
+                    </li>
+                    <li>
+                        <thing>BambooPlank</thing>
+                        <count>600</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.biomes">
+                        <thing>IronWoodLogHMC</thing>
+                        <count>450</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.biomes">
+                        <thing>IronWoodPlankHMC</thing>
+                        <count>450</count>
+                    </li>
+                    <li>
+                        <thing>RedWoodLog</thing>
+                        <count>400</count>
+                    </li>
+                    <li>
+                        <thing>RedWoodPlank</thing>
+                        <count>400</count>
+                    </li>
+                    <li>
+                        <thing>Kindling</thing>
+                        <count>600</count>
                     </li>
                 </itemData>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
 
-    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
-        <defName>GlitterMedDrop</defName>
-        <label>glitter med</label>
-        <description>Request a drop of 12 glitterworld medicine.</description>
-        <minTitle>Baron</minTitle> 
-        <cooldownDays>30</cooldownDays>
-        <permitPointCost>2</permitPointCost>
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>ComponentsDrop</defName>
+        <label>components &amp; electronic</label>
+        <description>Request a drop of a variety of gears, switches and light bulbs for tech advancing.</description>
+        <minTitle>Baron</minTitle>
+        <cooldownDays>14</cooldownDays>
+        <permitPointCost>3</permitPointCost>
         <royalAid>
-            <favorCost>8</favorCost>
+            <favorCost>12</favorCost>
         </royalAid>
         <modExtensions>
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Resources</category>
-                <row>3</row>
+                <row>6</row>
                 <column>1</column>
                 <itemData>
                     <li>
-                        <thing>MedicineUltratech</thing>
-                        <count>12</count>
+                        <thing>ComponentMedieval</thing>
+                        <count>300</count>
+                    </li>
+                    <li>
+                        <thing>ComponentIndustrial</thing>
+                        <count>120</count>
+                    </li>
+                    <li>
+                        <thing>ComponentAdvanced</thing>
+                        <count>50</count>
+                    </li>
+                    <li>
+                        <thing>ComponentSpacer</thing>
+                        <count>15</count>
+                    </li>
+                    <li>
+                        <thing>ComponentUltra</thing>
+                        <count>8</count>
+                    </li>
+                    <li>
+                        <thing>Mechanism</thing>
+                        <count>50</count>
+                    </li>
+                    <li>
+                        <thing>AdvMechanism</thing>
+                        <count>25</count>
+                    </li>
+                    <li>
+                        <thing>ElectronicComponents</thing>
+                        <count>150</count>
+                    </li>
+                    <li>
+                        <thing>Electronics</thing>
+                        <count>20</count>
+                    </li>
+                    <li>
+                        <thing>Microchips</thing>
+                        <count>10</count>
+                    </li>
+                    <li>
+                        <thing>BioMicrochips</thing>
+                        <count>3</count>
+                    </li>
+                    <li>
+                        <thing>Wire</thing>
+                        <count>1500</count>
+                    </li>
+                    <li>
+                        <thing>MagneticMaterial</thing>
+                        <count>50</count>
+                    </li>
+                    <li>
+                        <thing>BiosyntheticMaterial</thing>
+                        <count>50</count>
+                    </li>
+                    <li>
+                        <thing>Hexcell</thing>
+                        <count>25</count>
                     </li>
                 </itemData>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
-      
-    <RoyalTitlePermitDef>
-        <defName>CallTransportShuttle</defName>
-        <label>transport shuttle</label>
-        <description>Call a shuttle for your own use. It will transport colonists, items, and animals anywhere you like within 70 world tiles.</description>
-        <workerClass>RoyalTitlePermitWorker_CallShuttle</workerClass>
-        <minTitle>Knight</minTitle>
-        <faction>Empire</faction>
-        <permitPointCost>2</permitPointCost>
-        <cooldownDays>30</cooldownDays>
-        <usableOnWorldMap>true</usableOnWorldMap>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>ChemicalsDrop</defName>
+        <label>chemicals</label>
+        <description>Request a drop of a various types of chemicals.</description>
+        <minTitle>Praetor</minTitle>
+        <cooldownDays>14</cooldownDays>
         <royalAid>
-            <favorCost>8</favorCost>
-            <targetingRange>44.9</targetingRange>
-            <targetingRequireLOS>false</targetingRequireLOS>
+            <favorCost>6</favorCost>
         </royalAid>
         <modExtensions>
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Resources</category>
-                <row>4</row>
-                <column>1</column>
+                <row>7</row>
+                <column>0</column>
+                <itemData>
+                    <li>
+                        <thing>Nitre</thing>
+                        <count>150</count>
+                    </li>
+                    <li>
+                        <thing>Sulfur</thing>
+                        <count>100</count>
+                    </li>
+                    <li>
+                        <thing>Polymers</thing>
+                        <count>250</count>
+                    </li>
+                    <li>
+                        <thing>Sulphates</thing>
+                        <count>100</count>
+                    </li>
+                    <li>
+                        <thing>SyntheticAmmonia</thing>
+                        <count>50</count>
+                    </li>
+                    <li>
+                        <thing>Paraffins</thing>
+                        <count>50</count>
+                    </li>
+                    <li>
+                        <thing>Plastic</thing>
+                        <count>75</count>
+                    </li>
+                    <li>
+                        <thing>Rubber</thing>
+                        <count>60</count>
+                    </li>
+                    <li>
+                        <thing>SyntheticFibers</thing>
+                        <count>40</count>
+                    </li>
+                    <li>
+                        <thing>Carbon</thing>
+                        <count>15</count>
+                    </li>
+                </itemData>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>

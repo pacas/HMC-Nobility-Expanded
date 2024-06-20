@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-    <!-- ванильные заголовки -->
+    <!-- заголовки -->
     <BasePermitTitle.label>Базовые запросы</BasePermitTitle.label>
     <BasePermitTitle.description>Запросы доставки основных ресурсов или вызова челнока.</BasePermitTitle.description>
     <WorkersPermitTitle.label>Рабочие</WorkersPermitTitle.label>
@@ -10,29 +10,44 @@
     <SoldiersPermitTitle.description>Запросы временных солдат.</SoldiersPermitTitle.description>
     <OrbitalPermitTitle.label>Военная помощь</OrbitalPermitTitle.label>
     <OrbitalPermitTitle.description>Запросы быстрой военной помощи.</OrbitalPermitTitle.description>
-
-    <!-- почти ванильные привилегии -->
-    <CallMilitaryAidSmallPlus.label>большой отряд пехотинцев</CallMilitaryAidSmallPlus.label>
-    <CallMilitaryAidSmallPlus.description>Вызов группы из 6 легковооружённых пехотинцев для помощи в бою.</CallMilitaryAidSmallPlus.description>
+    
+    <!-- ванильные привилегии -->
+    <!-- ресурсы -->
+    <!-- базовые -->
+    <CallTransportShuttle.label>транспортный челнок</CallTransportShuttle.label>
+    <CallTransportShuttle.description>Запрос челнока для собственных нужд. Челнок может перевозить людей, животных и грузы в любую точку в радиусе 70 клеток на карте мира. Одноразовый.</CallTransportShuttle.description>
+    <!-- перезапись -->
+    <SteelDrop.label>обычные руды</SteelDrop.label>
+    <SteelDrop.description>Запрос доставки сырой руды на выбор.</SteelDrop.description>
+    <SilverDrop.label>ценные руды</SilverDrop.label>
+    <SilverDrop.description>Запрос доставки ценной руды на выбор.</SilverDrop.description>
+    <FoodDrop.label>наборы блюд</FoodDrop.label>
+    <FoodDrop.description>Запрос доставки разнообразных блюд и продуктов долгого хранения.</FoodDrop.description>
+    <GlitterMedDrop.label>медикаменты</GlitterMedDrop.label>
+    <GlitterMedDrop.description>Запрос доставки различных медикаментов.</GlitterMedDrop.description>
+    <!-- новые -->
     <BlocksDrop.label>каменные блоки</BlocksDrop.label>
     <BlocksDrop.description>Запрос доставки каменных блоков или кирпичей на выбор.</BlocksDrop.description>
     <IndustrialMetalsDrop.label>индустриальные металлы и материалы</IndustrialMetalsDrop.label>
     <IndustrialMetalsDrop.description>Запрос доставки сырой руды на выбор.</IndustrialMetalsDrop.description>
     <PreciousMetalsDrop.label>особые металлы и материалы</PreciousMetalsDrop.label>
     <PreciousMetalsDrop.description>Запрос доставки сырой руды на выбор.</PreciousMetalsDrop.description>
-    
-    <!-- ванильные привилегии -->
-    <!-- базовые -->
-    <SteelDrop.label>обычные руды</SteelDrop.label>
-    <SteelDrop.description>Запрос доставки сырой руды на выбор.</SteelDrop.description>
-    <SilverDrop.label>ценные руды</SilverDrop.label>
-    <SilverDrop.description>запрос доставки ценной руды на выбор.</SilverDrop.description>
-    <FoodDrop.label>сухпайки</FoodDrop.label>
-    <FoodDrop.description>Запрос доставки 50 сухих пайков.</FoodDrop.description>
-    <GlitterMedDrop.label>передовые медикаменты</GlitterMedDrop.label>
-    <GlitterMedDrop.description>Запрос доставки 12 передовых медикаментов.</GlitterMedDrop.description>
-    <CallTransportShuttle.label>транспортный челнок</CallTransportShuttle.label>
-    <CallTransportShuttle.description>Запрос челнока для собственных нужд. Челнок может перевозить людей, животных и грузы в любую точку в радиусе 70 клеток на карте мира. Одноразовый.</CallTransportShuttle.description>
+    <ClothDrop.label>текстиль</ClothDrop.label>
+    <ClothDrop.description>Запрос доставки текстиля на выбор.</ClothDrop.description>
+    <WoolDrop.label>шерсть и кожа</WoolDrop.label>
+    <WoolDrop.description>Запрос доставки различных видов шерсти и кожи на выбор.</WoolDrop.description>
+    <WoodDrop.label>древесина</WoodDrop.label>
+    <WoodDrop.description>Запрос доставки вязанок дров, древесины или досок на выбор.</WoodDrop.description>
+    <ComponentsDrop.label>шерсть и кожа</ComponentsDrop.label>
+    <ComponentsDrop.description>Запрос доставки различных видов шерсти и кожи на выбор.</ComponentsDrop.description>
+    <ChemicalsDrop.label>химикаты и реагенты</ChemicalsDrop.label>
+    <ChemicalsDrop.description>Запрос доставки различных видов химикатов и реагентов на выбор.</ChemicalsDrop.description>
+    <!-- biotech -->
+    <BabyFoodDrop.label>детское питание</BabyFoodDrop.label>
+    <BabyFoodDrop.description>Запрос доставки 250 детских овощных пюрешек.</BabyFoodDrop.description>
+    <VampiresFoodDrop.label>гемоген-пакет</VampiresFoodDrop.label>
+    <VampiresFoodDrop.description>Запрос 15 гемоген-пакетов.</VampiresFoodDrop.description>
+
 
     <!-- рабочие -->
     <CallLaborerGang.label>рабочая бригада</CallLaborerGang.label>
@@ -47,17 +62,13 @@
     <CallMilitaryAidLarge.description>Вызов группы из 4 профессиональных янычар для помощи в бою.</CallMilitaryAidLarge.description>
     <CallMilitaryAidSmall.label>малый отряд пехотинцев</CallMilitaryAidSmall.label>
     <CallMilitaryAidSmall.description>Вызов группы из 2 легковооружённых пехотинцев для помощи в бою.</CallMilitaryAidSmall.description>
+    <CallMilitaryAidSmallPlus.label>большой отряд пехотинцев</CallMilitaryAidSmallPlus.label>
+    <CallMilitaryAidSmallPlus.description>Вызов группы из 6 легковооружённых пехотинцев для помощи в бою.</CallMilitaryAidSmallPlus.description>
 
     <!-- бомбы -->
     <CallOrbitalSalvo.label>воздушная бомбардировка</CallOrbitalSalvo.label>
     <CallOrbitalSalvo.description>Запрос серии ударов по области вокруг указанных координат с беспилотника.</CallOrbitalSalvo.description>
     <CallOrbitalStrike.label>воздушный удар</CallOrbitalStrike.label>
     <CallOrbitalStrike.description>Запрос двойного воздушного удара по указанным координатам с беспилотника.</CallOrbitalStrike.description>
-
-    <!-- biotech -->
-    <BabyFoodDrop.label>детское питание</BabyFoodDrop.label>
-    <BabyFoodDrop.description>Запрос доставки 250 детских овощных пюрешек.</BabyFoodDrop.description>
-    <VampiresFoodDrop.label>гемоген-пакет</VampiresFoodDrop.label>
-    <VampiresFoodDrop.description>Запрос 15 гемоген-пакетов.</VampiresFoodDrop.description>
 
 </LanguageData>
