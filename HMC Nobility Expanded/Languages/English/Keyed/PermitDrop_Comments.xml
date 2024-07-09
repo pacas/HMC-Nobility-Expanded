@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
     
-    <DropComment>Сomment from the imperial caterer:</DropComment>
+    <DropComment>Comment from the imperial caterer:</DropComment>
     
     <!-- Ресурсы -->
     <DropComment_SteelDrop>Ore is the basis of civilisation. As long as you have the iron to make steel, life is not so bad.</DropComment_SteelDrop>
@@ -12,6 +12,10 @@
     <DropComment_GlitterMedDrop>Is there a problem? We have an extensive supply of medical equipment, and I'd be happy to share, but do you know how many of you there are? We don't have enough for everyone, so we don't have to send very much.</DropComment_GlitterMedDrop>
     <DropComment_BlocksDrop>What? These cobblestones? What do you use them for, paving streets or something? In Fortuna, we only find them in old squares. Anyway, it's up to you.</DropComment_BlocksDrop>
     <DropComment_CallTransportShuttle>Need something moved? You are welcome, I will send you a bird.</DropComment_CallTransportShuttle>
+    <DropComment_ClothDrop>Usually synthread is cheaper than natural fabric, but we've had a whole planet-farm recently integrated, tons of stuff available again.</DropComment_ClothDrop>
+    <DropComment_WoolDrop>Usually synthread is cheaper than natural leather and wool, but we've had a whole planet-farm recently integrated, tons of stuff available again.</DropComment_WoolDrop>
+    <DropComment_ComponentsDrop>Parts, gears, pistons, something else... Figure it out for yourself.</DropComment_ComponentsDrop>
+    <DropComment_ChemicalsDrop>It's some sort of chemicals I don't recognize. I'll tell the packers to pack this stuff better.</DropComment_ChemicalsDrop>
 
     <!-- Люди -->
     <DropComment_CallLaborerTeam>Not enough hands? We have a selection of low-skilled workers from the lower levels of the planet just for you!</DropComment_CallLaborerTeam>
@@ -56,7 +60,7 @@
 
     <!-- Броня -->
     <DropComment_ArmorDrop>What is bacinet? Never mind, just redirecting the request.</DropComment_ArmorDrop>
-    <DropComment_ArmorDropPlus>Seriously? Bacinet made of ferrotitanium? Your right, but that seems like an odd use of material to me.</DropComment_ArmorDropPlus>
+    <DropComment_ArmorDropPlus>Seriously? Bacinet made of ferrotitanium? Your choice, but that seems like an odd use of material to me.</DropComment_ArmorDropPlus>
     <DropComment_IndustrialArmorDrop>The classic armor of our new colonies. We always have one set ready to ship, specify your body size.</DropComment_IndustrialArmorDrop>
     <DropComment_IndustrialArmorDropPlus>Hmm, improved classic colonial armor? I would recommend just ordering something better, but suit yourself.</DropComment_IndustrialArmorDropPlus>
     <DropComment_SpacerArmorDrop>Now that's a great choice, you have taste. Imperial Guard armor is reliable and easy to handle, and we always have a huge supply of repaired armor after battles with mechanoids!</DropComment_SpacerArmorDrop>

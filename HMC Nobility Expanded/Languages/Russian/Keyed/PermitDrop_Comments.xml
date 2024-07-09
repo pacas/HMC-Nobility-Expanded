@@ -12,6 +12,10 @@
     <DropComment_GlitterMedDrop>Что-то случилось? У нас есть обширный запас медицинского оборудования, и я только рад бы поделится, но знаете сколько вас таких? На всех и так не хватает, приходится отправлять не очень много.</DropComment_GlitterMedDrop>
     <DropComment_BlocksDrop>Что? Эти булыжники? Зачем они вам, для мощения улиц что ли? У нас на Фортуне такое только на всяких старых площадях встретить можно. В любом случае дело ваше.</DropComment_BlocksDrop>
     <DropComment_CallTransportShuttle>Нужно что-то перевезти? Это всегда пожалуйста, вышлю вам птичку.</DropComment_CallTransportShuttle>
+    <DropComment_ClothDrop>Обычно синткань дешевле натуральной ткани, но у нас тут целая планета-ферма была недавно интегрирована, куча всего снова доступна.</DropComment_ClothDrop>
+    <DropComment_WoolDrop>Обычно синткань дешевле натуральной кожи и шерсти, но у нас тут целая планета-ферма была недавно интегрирована, куча всего снова доступна.</DropComment_WoolDrop>
+    <DropComment_ComponentsDrop>Детали, шестерни, поршни, что-то ещё... Сами разбирайтесь что там.</DropComment_ComponentsDrop>
+    <DropComment_ChemicalsDrop>Какая-то химия непонятная. Попрошу упаковщиков запаковать всё это получше.</DropComment_ChemicalsDrop>
 
     <!-- Люди -->
     <DropComment_CallLaborerTeam>Не хватает рук? У нас есть отборный низкоквалифицированный персонал с нижних уровней планеты специально для вас!</DropComment_CallLaborerTeam>
