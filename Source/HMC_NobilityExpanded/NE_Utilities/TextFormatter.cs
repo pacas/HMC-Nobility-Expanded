@@ -86,6 +86,13 @@ namespace NobilityExpanded.Utilities
             label += "\n";
             
             if (isThingsExists) {
+                if (extension.itemData[0].quality != null) {
+                    string qualityLabel = extension.itemData[0].qualityType + extension.itemData[0].quality;
+                    label += qualityLabel.Translate() + "\n\n";
+                } else {
+                    label += "\n";
+                }
+
                 label += "ItemIncludedInPermit".Translate() + "\n";
                 int counter = 0;
                 foreach (var item in extension.itemData) {
@@ -99,13 +106,7 @@ namespace NobilityExpanded.Utilities
                             label += "  - " + item.thing.label.CapitalizeFirst();
                         }
 
-                        label += "x" + item.count;
-                        if (item.quality != null) {
-                            string qualityLabel = item.qualityType + item.quality;
-                            label += "\n" + qualityLabel.Translate() + "\n";
-                        } else {
-                            label += "\n";
-                        }
+                        label += " x" + item.count + "\n";
                     } catch {
                         Log.Error("Error in permit " + selectedPermit.LabelCap + " - missing item at pos " + counter);
                         continue;

@@ -15,8 +15,8 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Resources</category>
-                <row>8</row>
-                <column>0</column>
+                <row>7</row>
+                <column>1</column>
                 <itemData>
                     <li>
                         <thing>BabyFood</thing>
@@ -43,7 +43,7 @@
                 <type>Permit</type>
                 <category>Resources</category>
                 <row>8</row>
-                <column>1</column>
+                <column>0</column>
                 <itemData>
                     <li>
                         <thing>HemogenPack</thing>
