@@ -235,7 +235,7 @@
                 <type>Permit</type>
                 <category>Resources</category>
                 <row>7</row>
-                <column>1</column>
+                <column>0</column>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
@@ -256,7 +256,7 @@
                 <type>Permit</type>
                 <category>Resources</category>
                 <row>4</row>
-                <column>0</column>
+                <column>1</column>
                 <itemData>
                     <li>
                         <thing>ClayBrick</thing>
@@ -602,16 +602,8 @@
                         <count>500</count>
                     </li>
                     <li>
-                        <thing>Leather_Camel</thing>
-                        <count>350</count>
-                    </li>
-                    <li>
                         <thing>Leather_Bluefur</thing>
                         <count>350</count>
-                    </li>
-                    <li>
-                        <thing>Leather_Bear</thing>
-                        <count>250</count>
                     </li>
                     <li>
                         <thing>Leather_Nightling</thing>
@@ -639,7 +631,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Resources</category>
-                <row>6</row>
+                <row>4</row>
                 <column>0</column>
                 <itemData>
                     <li>
@@ -778,7 +770,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Resources</category>
-                <row>7</row>
+                <row>6</row>
                 <column>0</column>
                 <itemData>
                     <li>

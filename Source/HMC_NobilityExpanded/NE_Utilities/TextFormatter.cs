@@ -99,7 +99,13 @@ namespace NobilityExpanded.Utilities
                             label += "  - " + item.thing.label.CapitalizeFirst();
                         }
 
-                        label += " x" + item.count + "\n";
+                        label += "x" + item.count;
+                        if (item.quality != null) {
+                            string qualityLabel = item.qualityType + item.quality;
+                            label += "\n" + qualityLabel.Translate() + "\n";
+                        } else {
+                            label += "\n";
+                        }
                     } catch {
                         Log.Error("Error in permit " + selectedPermit.LabelCap + " - missing item at pos " + counter);
                         continue;
