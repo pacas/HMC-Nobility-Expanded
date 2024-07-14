@@ -86,6 +86,13 @@ namespace NobilityExpanded.Utilities
             label += "\n";
             
             if (isThingsExists) {
+                if (extension.itemData[0].quality != null) {
+                    string qualityLabel = extension.itemData[0].qualityType + extension.itemData[0].quality;
+                    label += qualityLabel.Translate() + "\n\n";
+                } else {
+                    label += "\n";
+                }
+
                 label += "ItemIncludedInPermit".Translate() + "\n";
                 int counter = 0;
                 foreach (var item in extension.itemData) {

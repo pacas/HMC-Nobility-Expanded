@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+    <!-- заголовки -->
+    <BasePermitTitle.label>Ресурсы</BasePermitTitle.label>
+    <BasePermitTitle.description>Запросы доставки ресурсов или услуг.</BasePermitTitle.description>
+    <HSKBasePermitSmallTitle.label>Базовые запросы</HSKBasePermitSmallTitle.label>
+    <HSKBasePermitSmallTitle.description>Запросы доставки основных ресурсов или услуг.</HSKBasePermitSmallTitle.description>
+    <BiotechPermitSmallTitle.label>Биотех</BiotechPermitSmallTitle.label>
+    <BiotechPermitSmallTitle.description>Запросы доставки ресурсов из DLC Biotech.</BiotechPermitSmallTitle.description>
+    
+    <!-- базовые -->
+    <CallTransportShuttle.label>транспортный челнок</CallTransportShuttle.label>
+    <CallTransportShuttle.description>Запрос челнока для собственных нужд. Челнок может перевозить людей, животных и грузы в любую точку в радиусе 70 клеток на карте мира. Одноразовый.</CallTransportShuttle.description>
+    
+    <!-- перезапись -->
+    <SteelDrop.label>обычные руды</SteelDrop.label>
+    <SteelDrop.description>Запрос доставки сырой руды на выбор.</SteelDrop.description>
+    <SilverDrop.label>ценные руды</SilverDrop.label>
+    <SilverDrop.description>Запрос доставки ценной руды на выбор.</SilverDrop.description>
+    <FoodDrop.label>наборы блюд</FoodDrop.label>
+    <FoodDrop.description>Запрос доставки разнообразных блюд и продуктов долгого хранения.</FoodDrop.description>
+    <GlitterMedDrop.label>медикаменты</GlitterMedDrop.label>
+    <GlitterMedDrop.description>Запрос доставки различных медикаментов.</GlitterMedDrop.description>
+    
+    <!-- новые -->
+    <BlocksDrop.label>каменные блоки</BlocksDrop.label>
+    <BlocksDrop.description>Запрос доставки каменных блоков или кирпичей на выбор.</BlocksDrop.description>
+    <IndustrialMetalsDrop.label>индустриальные металлы и материалы</IndustrialMetalsDrop.label>
+    <IndustrialMetalsDrop.description>Запрос доставки сырой руды на выбор.</IndustrialMetalsDrop.description>
+    <PreciousMetalsDrop.label>особые металлы и материалы</PreciousMetalsDrop.label>
+    <PreciousMetalsDrop.description>Запрос доставки сырой руды на выбор.</PreciousMetalsDrop.description>
+    <ClothDrop.label>текстиль</ClothDrop.label>
+    <ClothDrop.description>Запрос доставки текстиля на выбор.</ClothDrop.description>
+    <WoolDrop.label>шерсть и кожа</WoolDrop.label>
+    <WoolDrop.description>Запрос доставки различных видов шерсти и кожи на выбор.</WoolDrop.description>
+    <WoodDrop.label>древесина</WoodDrop.label>
+    <WoodDrop.description>Запрос доставки вязанок дров, древесины или досок на выбор.</WoodDrop.description>
+    <ComponentsDrop.label>компоненты и электроника</ComponentsDrop.label>
+    <ComponentsDrop.description>Запрос доставки различных компонентов на выбор.</ComponentsDrop.description>
+    <ChemicalsDrop.label>химикаты и реагенты</ChemicalsDrop.label>
+    <ChemicalsDrop.description>Запрос доставки различных видов химикатов и реагентов на выбор.</ChemicalsDrop.description>
+    
+    <!-- biotech -->
+    <VampiresFoodDrop.label>гемоген-пакет</VampiresFoodDrop.label>
+    <VampiresFoodDrop.description>Запрос гемоген-пакетов.</VampiresFoodDrop.description>
+
+</LanguageData>

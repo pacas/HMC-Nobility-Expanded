@@ -1,6 +1,22 @@
 ----------------------------------------------------------------------
 
-- Changelog "HMC Empire Rewards" v0.16.1 (1.4):
+- Changelog "HMC Empire Rewards" v0.17 - Overstocking (1.4):
+
+1) Improved airstrike permits
+2) Many new permits with resources for the initial game and beyond
+3) Improved difficulty curve for deserters raids (VFEE)
+4) Added a description of the quality of things in permits if it exists and not normal
+5) Removed baby food permit, moved to general food permit as option
+
+1) Улучшены привилегии бомбардировки
+2) Множество новых привилегий с ресурсами для начальной игры и далее
+3) Улучшена кривая сложности рейдов дезертиров (VFEE)
+4) Добавлено описание качества вещей в привилегиях, если оно есть и не является обычным
+5) Убрана привилегия на детское питание, перемещено в общую привилегию на продукты питания как опция
+
+----------------------------------------------------------------------
+
+- Changelog "HMC Empire Rewards" v0.16.1 - Industrialization and Expansion (1.4):
 
 1) Fixed an error when HSK More content is enabled
 2) Added error handling in case of changes in HSK code 
@@ -16,7 +32,7 @@
 
 ----------------------------------------------------------------------
 
-- Changelog "HMC Empire Rewards" v0.16 (1.4):
+- Changelog "HMC Empire Rewards" v0.16 - Industrialization and Expansion (1.4):
 
 1) New permits with ores and metals!
 2) Blocks drop permit and all seed category permits now allow you to choose what you want!

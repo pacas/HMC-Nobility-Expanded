@@ -23,12 +23,12 @@
         <minTitle>Knight</minTitle>
         <faction>Empire</faction>
         <permitPointCost>1</permitPointCost>
-        <cooldownDays>21</cooldownDays>
+        <cooldownDays>18</cooldownDays>
         <royalAid>
             <favorCost>3</favorCost>
             <targetingRange>64.9</targetingRange>
-            <radius>2.9</radius>
-            <explosionRadiusRange>6.9</explosionRadiusRange>
+            <radius>4.9</radius>
+            <explosionRadiusRange>5.9</explosionRadiusRange>
             <explosionCount>2</explosionCount>
             <intervalTicks>60</intervalTicks>
             <warmupTicks>120</warmupTicks>
@@ -52,12 +52,12 @@
         <faction>Empire</faction>
         <permitPointCost>3</permitPointCost>
         <prerequisite>CallOrbitalStrike</prerequisite>
-        <cooldownDays>21</cooldownDays>
+        <cooldownDays>18</cooldownDays>
         <royalAid>
             <favorCost>8</favorCost>
             <targetingRange>64.9</targetingRange>
             <radius>5.9</radius>
-            <explosionRadiusRange>6.9</explosionRadiusRange>
+            <explosionRadiusRange>5.9</explosionRadiusRange>
             <explosionCount>6</explosionCount>
             <intervalTicks>60</intervalTicks>
             <warmupTicks>120</warmupTicks>

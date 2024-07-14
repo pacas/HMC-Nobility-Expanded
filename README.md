@@ -37,7 +37,8 @@ This mod changes the system of rewards from the Empire to a more universal and a
 * Seeds
 </details>
 <hr>
-**Русский:**
+
+**Русский:** 
 Этот мод изменяет систему вознаграждений от Империи на более универсальную и в то же время вариативную.  Больше нет универсального выбора что брать, теперь перед выбором нужно подумать и решить, стоит ли оставить очки напоследок, или же взять что-то сейчас. При этом у большинства привилегий были изменены сроки повторного вызова и стоимость, потому внимательно читайте что вы выбираете. Будет больше, всё ещё WIP.
 
 *Особенности:*
@@ -77,6 +78,19 @@ Q: Is this mod compatible with VFEE?<br>
 A: Yes! You can add to the ongoing game, but you have to do this: install https://steamcommunity.com/sharedfiles/filedetails/?id=3181327333, load a save and clear world pawns, and then only open a new hierarchy tab. If it does not open, repeat until the generation can generate everything on the old save.<br>
 Q: Совместимо с VFEE?<br>
 A: Да! Можно добавить на идущую игру, но нужно сделать так: установить https://steamcommunity.com/sharedfiles/filedetails/?id=3181327333, загрузить сейв и очистить мировых пешек, после чего только открывать новую вкладку иерархии. Если она не открывается, повторять, пока генерация не сможет сгенерировать всё на старом сохранении.<br>
+<hr>
+Q: Which mods are compatible except VFEE?<br>
+В: Какие моды совместимы помимо VFEE?<br><br>
+1) Alpha Animals<br>
+2) HMC More Content<br>
+3) Parabellum<br>
+4) Giddy-Up 2<br>
+5) Seeds Please<br>
+6) Seventh Seraph Weapons<br>
+7) Apex Rimworld Legends<br>
+8) Maelstroms Metals<br>
+9) Revia Race<br>
+<br>
 <hr>
 Q: DISBALANCE!<br>
 A: Perhaps.<br>

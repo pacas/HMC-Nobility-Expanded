@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+    <!-- заголовки -->
+    <OrbitalPermitTitle.label>Военная помощь</OrbitalPermitTitle.label>
+    <OrbitalPermitTitle.description>Запросы быстрой военной помощи.</OrbitalPermitTitle.description>
+    
+    <!-- бомбы -->
+    <CallOrbitalSalvo.label>воздушная бомбардировка</CallOrbitalSalvo.label>
+    <CallOrbitalSalvo.description>Запрос серии ударов по области вокруг указанных координат с беспилотника.</CallOrbitalSalvo.description>
+    <CallOrbitalStrike.label>воздушный удар</CallOrbitalStrike.label>
+    <CallOrbitalStrike.description>Запрос двойного воздушного удара по указанным координатам с беспилотника.</CallOrbitalStrike.description>
+
+</LanguageData>

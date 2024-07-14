@@ -1,34 +1,23 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
-        <defName>BabyFoodDrop</defName>
-        <label>baby food</label>
-        <description>Request a drop of 75 vegetarian mash for babies.</description>
-        <permitPointCost>1</permitPointCost>
-        <minTitle>Acolyte</minTitle>
-        <cooldownDays>14</cooldownDays>
-        <royalAid>
-            <favorCost>2</favorCost>
-        </royalAid>
+    <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
+        <defName>BiotechPermitSmallTitle</defName>
+        <label>Biotech</label>
+        <description>Request a drop of Biotech resources.</description>
         <modExtensions>
             <li Class="NobilityExpanded.PermitExtensionList">
-                <type>Permit</type>
+                <type>Category</type>
                 <category>Resources</category>
-                <row>5</row>
                 <column>0</column>
-                <itemData>
-                    <li>
-                        <thing>BabyFood</thing>
-                        <count>250</count>
-                    </li>
-                </itemData>
+                <row>9</row>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
     
-    
-    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+    <!-- Resources -->
+
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
         <defName>VampiresFoodDrop</defName>
         <label>hemogen packs</label>
         <description>Request a drop of 15 hemogen packs.</description>
@@ -42,8 +31,8 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Resources</category>
-                <row>5</row>
-                <column>1</column>
+                <row>10</row>
+                <column>0</column>
                 <itemData>
                     <li>
                         <thing>HemogenPack</thing>
@@ -54,6 +43,7 @@
         </modExtensions>
     </RoyalTitlePermitDef>
 
+    <!-- Apparel -->
     
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
         <defName>BabyClothesDrop</defName>
