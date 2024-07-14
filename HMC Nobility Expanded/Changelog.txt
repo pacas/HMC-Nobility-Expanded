@@ -1,5 +1,19 @@
 ----------------------------------------------------------------------
 
+- Changelog "HMC Empire Rewards" v0.17 (1.4):
+
+1) Improved airstrike permits
+2) Many new permits with resources for the initial game and beyond
+3) Improved difficulty curve for deserters raids (VFEE)
+4) Added a description of the quality of things in permits if it is exists and not normal
+
+1) Улучшены привилегии бомбардировки
+2) Множество новых привилегий с ресурсами для начальной игры и далее
+3) Улучшена кривая сложности рейдов дезертиров (VFEE)
+4) Добавлено описание качества вещей в привилегиях, если оно есть и не является обычным
+
+----------------------------------------------------------------------
+
 - Changelog "HMC Empire Rewards" v0.16.1 (1.4):
 
 1) Fixed an error when HSK More content is enabled

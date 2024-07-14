@@ -79,6 +79,19 @@ A: Yes! You can add to the ongoing game, but you have to do this: install https:
 Q: Совместимо с VFEE?<br>
 A: Да! Можно добавить на идущую игру, но нужно сделать так: установить https://steamcommunity.com/sharedfiles/filedetails/?id=3181327333, загрузить сейв и очистить мировых пешек, после чего только открывать новую вкладку иерархии. Если она не открывается, повторять, пока генерация не сможет сгенерировать всё на старом сохранении.<br>
 <hr>
+Q: Which mods are compatible except VFEE?<br>
+В: Какие моды совместимы помимо VFEE?<br><br>
+1) Alpha Animals<br>
+2) HMC More Content<br>
+3) Parabellum<br>
+4) Giddy-Up 2<br>
+5) Seeds Please<br>
+6) Seventh Seraph Weapons<br>
+7) Apex Rimworld Legends<br>
+8) Maelstroms Metals<br>
+9) Revia Race<br>
+<br>
+<hr>
 Q: DISBALANCE!<br>
 A: Perhaps.<br>
 Q: ИМБА!<br>
