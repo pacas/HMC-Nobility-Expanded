@@ -16,7 +16,6 @@
     </RoyalTitlePermitDef>
     
     <!-- Resources -->
-    <!-- 10 -->
 
     <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
         <defName>VampiresFoodDrop</defName>
@@ -38,32 +37,6 @@
                     <li>
                         <thing>HemogenPack</thing>
                         <count>15</count>
-                    </li>
-                </itemData>
-            </li>
-        </modExtensions>
-    </RoyalTitlePermitDef>
-
-    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
-        <defName>BabyFoodDrop</defName>
-        <label>baby food</label>
-        <description>Request a drop of 75 vegetarian mash for babies.</description>
-        <permitPointCost>1</permitPointCost>
-        <minTitle>Acolyte</minTitle>
-        <cooldownDays>14</cooldownDays>
-        <royalAid>
-            <favorCost>2</favorCost>
-        </royalAid>
-        <modExtensions>
-            <li Class="NobilityExpanded.PermitExtensionList">
-                <type>Permit</type>
-                <category>Resources</category>
-                <row>10</row>
-                <column>1</column>
-                <itemData>
-                    <li>
-                        <thing>BabyFood</thing>
-                        <count>250</count>
                     </li>
                 </itemData>
             </li>

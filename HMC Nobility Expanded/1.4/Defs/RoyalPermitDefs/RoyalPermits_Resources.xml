@@ -304,7 +304,7 @@
         <minTitle>Acolyte</minTitle>
         <cooldownDays>14</cooldownDays>
         <royalAid>
-            <favorCost>4</favorCost>
+            <favorCost>3</favorCost>
         </royalAid>
         <modExtensions>
             <li Class="NobilityExpanded.PermitExtensionList">
@@ -361,6 +361,10 @@
                         <thing>MealNutrientPaste</thing>
                         <count>75</count>
                     </li>
+                    <li MayRequire="ludeon.rimworld.biotech">
+                        <thing>BabyFood</thing>
+                        <count>250</count>
+                    </li>
                 </itemData>
             </li>
         </modExtensions>
@@ -388,15 +392,15 @@
                     </li>
                     <li>
                         <thing>MedicalDrink</thing>
-                        <count>12</count>
+                        <count>15</count>
                     </li>
                     <li MayRequire="arpomo6.hmc.project">
                         <thing>Fungicine</thing>
-                        <count>10</count>
+                        <count>12</count>
                     </li>
                     <li>
                         <thing>MedicineIndustrial</thing>
-                        <count>6</count>
+                        <count>8</count>
                     </li>
                     <li>
                         <thing>MedicineUltratech</thing>

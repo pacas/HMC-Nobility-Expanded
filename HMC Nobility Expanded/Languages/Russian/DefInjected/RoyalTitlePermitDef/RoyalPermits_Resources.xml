@@ -36,15 +36,13 @@
     <WoolDrop.description>Запрос доставки различных видов шерсти и кожи на выбор.</WoolDrop.description>
     <WoodDrop.label>древесина</WoodDrop.label>
     <WoodDrop.description>Запрос доставки вязанок дров, древесины или досок на выбор.</WoodDrop.description>
-    <ComponentsDrop.label>компоненты</ComponentsDrop.label>
+    <ComponentsDrop.label>компоненты и электроника</ComponentsDrop.label>
     <ComponentsDrop.description>Запрос доставки различных компонентов на выбор.</ComponentsDrop.description>
     <ChemicalsDrop.label>химикаты и реагенты</ChemicalsDrop.label>
     <ChemicalsDrop.description>Запрос доставки различных видов химикатов и реагентов на выбор.</ChemicalsDrop.description>
     
     <!-- biotech -->
-    <BabyFoodDrop.label>детское питание</BabyFoodDrop.label>
-    <BabyFoodDrop.description>Запрос доставки 250 детских овощных пюрешек.</BabyFoodDrop.description>
     <VampiresFoodDrop.label>гемоген-пакет</VampiresFoodDrop.label>
-    <VampiresFoodDrop.description>Запрос 15 гемоген-пакетов.</VampiresFoodDrop.description>
+    <VampiresFoodDrop.description>Запрос гемоген-пакетов.</VampiresFoodDrop.description>
 
 </LanguageData>
