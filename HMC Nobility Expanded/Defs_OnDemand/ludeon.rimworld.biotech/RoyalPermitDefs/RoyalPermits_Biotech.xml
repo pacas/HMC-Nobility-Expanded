@@ -97,6 +97,7 @@
         <defName>ColonistRomanceFemaleDrop</defName>
         <label>highmate (female)</label>
         <description>Request a new female colonist-highmate.</description>
+        <minTitle>Baron</minTitle>
         <modExtensions>
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
@@ -118,6 +119,7 @@
         <defName>ColonistRomanceMaleDrop</defName>
         <label>highmate (male)</label>
         <description>Request a new male colonist-highmate.</description>
+        <minTitle>Baron</minTitle>
         <modExtensions>
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
