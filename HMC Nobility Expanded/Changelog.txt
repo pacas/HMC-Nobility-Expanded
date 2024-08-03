@@ -1,5 +1,17 @@
 ----------------------------------------------------------------------
 
+- Changelog "HMC Empire Rewards" v0.18 - Royal Court (1.4):
+
+1) New category of permits - colonists! Requests of colonists is tied to their skills.
+2) Based on colonists category, also added highmate permit if biotech is available. Imperial Civil Services - royal maiden to every court!
+3) Removed all Legacy code, mod is now completely cleaned up.
+
+1) Новая категория привилегий - колонисты! Заказ колонистов привязан к их навыкам.
+2) На основе категорий колонистов также добавлен заказ ангелов, если есть биотех. Имперуслуги!
+3) Удален весь Legacy код, теперь мод полностью очищен.
+
+----------------------------------------------------------------------
+
 - Changelog "HMC Empire Rewards" v0.17 - Overstocking (1.4):
 
 1) Improved airstrike permits
