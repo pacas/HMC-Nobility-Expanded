@@ -10,6 +10,8 @@
             <Bisexual>0</Bisexual>
         </forcedTraits>
         <maxGenerationAge>24</maxGenerationAge>
+        <allowOldAgeInjuries>false</allowOldAgeInjuries>
+        <generateInitialNonFamilyRelations>false</generateInitialNonFamilyRelations>
         <xenotypeSet>
             <xenotypeChances>
                 <Highmate>1</Highmate>
