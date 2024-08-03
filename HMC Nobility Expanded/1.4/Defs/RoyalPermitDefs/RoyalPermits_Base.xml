@@ -13,10 +13,6 @@
     </RoyalTitlePermitDef>
     
     <!-- Workers bases -->
-    
-    <RoyalTitlePermitDef ParentName="MainDropBase" Name="DropResourcesPlus" Abstract="True">
-        <workerClass>NobilityExpanded.RoyalTitlePermitWorker_DropResourcesPlus</workerClass>
-    </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="MainDropBase" Name="DropResourcesUpdated" Abstract="True">
         <workerClass>NobilityExpanded.RoyalTitlePermitWorker_DropResourcesUpdated</workerClass>
@@ -26,7 +22,7 @@
         <workerClass>NobilityExpanded.RoyalTitlePermitWorker_DropResourcesWithDialog</workerClass>
     </RoyalTitlePermitDef>
 
-    <RoyalTitlePermitDef ParentName="MainDropBase" Name="CallPawns" Abstract="True">
+    <RoyalTitlePermitDef ParentName="MainDropBase" Name="DropAnimals" Abstract="True">
         <workerClass>NobilityExpanded.RoyalTitlePermitWorker_CallPawns</workerClass>
         <usableOnWorldMap>false</usableOnWorldMap>
     </RoyalTitlePermitDef>
@@ -42,29 +38,18 @@
         <permitPointCost>2</permitPointCost>
     </RoyalTitlePermitDef>
 
-    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
-        <defName>EmptyTableSpace</defName>
-        <label>Empty</label>
-        <description>Empty</description>
-        <permitPointCost>97</permitPointCost>
+    <RoyalTitlePermitDef ParentName="DropAnimals" Name="DropPawns" Abstract="True">
+        <permitPointCost>2</permitPointCost>
+        <minTitle>Knight</minTitle>
+        <cooldownDays>30</cooldownDays>
         <royalAid>
-            <favorCost>97</favorCost>
-        </royalAid>
-    </RoyalTitlePermitDef>
-
-    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
-        <defName>EmptyPermitSpace</defName>
-        <label>Empty</label>
-        <description>Empty</description>
-        <permitPointCost>96</permitPointCost>
-        <royalAid>
-            <favorCost>96</favorCost>
+            <favorCost>10</favorCost>
+            <targetingRange>39.9</targetingRange>
         </royalAid>
     </RoyalTitlePermitDef>
     
     <!-- todo -->
     <!-- гранаты -->
-    <!-- пешки со скиллами -->
     <!-- Advanced Shield Belts -->
     <!-- Edge of Descension Monoblades ? -->
     <!-- Minerals Ancient Stones -->
@@ -74,27 +59,15 @@
     <!-- A RimWorld of Magic ? -->
     <!-- нейротренеры -->
     <!-- штрафбат как боевую поддержку - низкая стоимость / кд / навыки / оружие -->
-    <!-- удалить таблицы позиций -->
-
-    <!--todo remove-->
-
-    <NobilityExpanded.OrderedStuffDef ParentName="OrderedBase" Name="OrderedThingsBase" Abstract="True">
-        <typeOfDrop>Pure</typeOfDrop>
-        <typeOfItem>Random</typeOfItem>
-    </NobilityExpanded.OrderedStuffDef>
-
-    <NobilityExpanded.OrderedStuffDef Name="OrderedBase" Abstract="True">
-        <column>0</column>
-    </NobilityExpanded.OrderedStuffDef>
     
-    <RoyalTitlePermitDef ParentName="DropResourcesPlus" Name="DropResourcesTitle" Abstract="True">
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated" Name="DropResourcesTitle" Abstract="True">
         <permitPointCost>99</permitPointCost>
         <royalAid>
             <favorCost>99</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
 
-    <RoyalTitlePermitDef ParentName="DropResourcesPlus" Name="DropResourcesSmallTitle" Abstract="True">
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated" Name="DropResourcesSmallTitle" Abstract="True">
         <permitPointCost>98</permitPointCost>
         <royalAid>
             <favorCost>98</favorCost>

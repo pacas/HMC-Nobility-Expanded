@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+    <ColonistShooting.label>колонист</ColonistShooting.label>
+    <ColonistMelee.label>колонист</ColonistMelee.label>
+    <ColonistConstruction.label>колонист</ColonistConstruction.label>
+    <ColonistMining.label>колонист</ColonistMining.label>
+    <ColonistCooking.label>колонист</ColonistCooking.label>
+    <ColonistPlants.label>колонист</ColonistPlants.label>
+    <ColonistAnimals.label>колонист</ColonistAnimals.label>
+    <ColonistCrafting.label>колонист</ColonistCrafting.label>
+    <ColonistArtistic.label>колонист</ColonistArtistic.label>
+    <ColonistMedicine.label>колонист</ColonistMedicine.label>
+    <ColonistSocial.label>колонист</ColonistSocial.label>
+    <ColonistIntellectual.label>колонист</ColonistIntellectual.label>
+    <ColonistRomance.label>колонист</ColonistRomance.label>
+    
+</LanguageData>

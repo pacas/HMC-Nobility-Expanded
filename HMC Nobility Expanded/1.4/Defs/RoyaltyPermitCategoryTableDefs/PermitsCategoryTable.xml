@@ -12,6 +12,7 @@
             <li>Turrets</li>
             <li>Airstrike</li>
             <li>Pawns</li>
+            <li>Colonists</li>
             <li>Animals</li>
             <li>Prosthetics</li>
             <li MayRequire="notfood.seedsplease">Seeds</li>

@@ -33,44 +33,6 @@ namespace NobilityExpanded.Utilities
             
             return label;
         }
-
-        public static TaggedString FormAdditionalPermitInfoStuff(RoyalTitlePermitDef selectedPermit)
-        {
-            var label = "";
-            var stuffDefOrdered = DefDatabase<OrderedStuffDef>.GetNamedSilentFail(selectedPermit.defName + "Stuff");
-            var stuffList = VarsExposer.GetPermitStuffList(selectedPermit);
-            var pawnToChoose = VarsExposer.GetPermitPawnList(selectedPermit);
-            var isPawnsExists = pawnToChoose != null;
-            var isStuffExists = stuffList != null;
-            bool isThingsExists = stuffDefOrdered?.thingsToChoose != null && stuffDefOrdered.thingsToChoose.Count > 1;
-
-            if (isThingsExists) {
-                if (!isStuffExists || stuffList.Count != stuffDefOrdered.thingsToChoose.Count) {
-                    label += "ItemIncludedInPermit".Translate() + "\n";
-                    foreach (var t in stuffDefOrdered.thingsToChoose) {
-                        label += "  - " + t.label.CapitalizeFirst() + "\n";
-                    }
-                } else {
-                    for (var index = 0; index < stuffDefOrdered.thingsToChoose.Count; ++index) {
-                        label += "  - " + "StuffDescription".Translate(
-                            stuffList[index].stuffProps.stuffAdjective,
-                            stuffDefOrdered.thingsToChoose[index].label) + "\n";
-                    }
-                }
-            } else if (isPawnsExists && pawnToChoose.Count > 1) {
-                label += "ItemIncludedInPermit".Translate() + "\n";
-                foreach (var t in pawnToChoose) {
-                    label += "  - " + t.LabelCap + "\n";
-                }
-            }
-
-            if (stuffDefOrdered != null && stuffDefOrdered.typeOfQuality != null) {
-                string qualityLabel = stuffDefOrdered.typeOfQuality + stuffDefOrdered.quality;
-                label += qualityLabel.Translate() + "\n";
-            }
-
-            return label;
-        }
         
         public static TaggedString FormAdditionalPermitInfoExtension(RoyalTitlePermitDef selectedPermit)
         {

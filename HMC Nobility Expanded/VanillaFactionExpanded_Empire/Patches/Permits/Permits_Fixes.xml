@@ -49,32 +49,6 @@
                 defName="VFEI_CallEvacShuttle"
                 ]/uiPosition</xpath>
             </li>
-            <li Class="PatchOperationAdd">
-                <xpath>Defs/NobilityExpanded.RoyaltyCoordsTableDef[defName="CoordsTablePawns_0"]/loadOrder</xpath>
-                <value>
-                    <li>VFEI_CallTechfriar</li>
-                </value>
-            </li>
-            <li Class="PatchOperationAdd">
-                <xpath>Defs/NobilityExpanded.RoyaltyCoordsTableDef[defName="CoordsTablePawns_1"]/loadOrder</xpath>
-                <value>
-                    <li>VFEI_CallAbsolver</li>
-                </value>
-            </li>
-            <li Class="PatchOperationAdd">
-                <xpath>Defs/NobilityExpanded.RoyaltyCoordsTableDef[defName="CoordsTableAirstrike_0"]/loadOrder</xpath>
-                <value>
-                    <li>VFEI_StrikerTurretDrop</li>
-                    <li>VFEI_CallEvacShuttle</li>
-                </value>
-            </li>
-            <li Class="PatchOperationAdd">
-                <xpath>Defs/NobilityExpanded.RoyaltyCoordsTableDef[defName="CoordsTableAirstrike_1"]/loadOrder</xpath>
-                <value>
-                    <li>VFEI_BurnoutShieldDrop</li>
-                    <li>VFEI_CallOrbitalSlicingBeam</li>
-                </value>
-            </li>
             
             <li Class="PatchOperationReplace">
                 <xpath>Defs/RoyalTitlePermitDef[

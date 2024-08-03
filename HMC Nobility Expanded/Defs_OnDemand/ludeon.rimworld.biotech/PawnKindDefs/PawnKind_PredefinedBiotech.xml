@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    
+    <PawnKindDef ParentName="DefinedColonistBase">
+        <defName>ColonistRomance</defName>
+        <disallowedTraits>
+            <li>Gay</li>
+        </disallowedTraits>
+        <forcedTraits>
+            <Bisexual>0</Bisexual>
+        </forcedTraits>
+        <maxGenerationAge>24</maxGenerationAge>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Highmate>1</Highmate>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+    
+</Defs>

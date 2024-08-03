@@ -91,4 +91,48 @@
         </modExtensions>
     </RoyalTitlePermitDef>
     
+    <!-- Colonists -->
+
+    <RoyalTitlePermitDef ParentName="DropPawns">
+        <defName>ColonistRomanceFemaleDrop</defName>
+        <label>highmate (female)</label>
+        <description>Request a new female colonist-highmate.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Colonists</category>
+                <row>7</row>
+                <column>0</column>
+                <pawnData>
+                    <li>
+                        <pawn>ColonistRomance</pawn>
+                        <count>1</count>
+                        <genderInfo>Female</genderInfo>
+                    </li>
+                </pawnData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+    
+    <RoyalTitlePermitDef ParentName="DropPawns">
+        <defName>ColonistRomanceMaleDrop</defName>
+        <label>highmate (male)</label>
+        <description>Request a new male colonist-highmate.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Colonists</category>
+                <row>7</row>
+                <column>1</column>
+                <pawnData>
+                    <li>
+                        <pawn>ColonistRomance</pawn>
+                        <count>1</count>
+                        <genderInfo>Male</genderInfo>
+                    </li>
+                </pawnData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+    
 </Defs>

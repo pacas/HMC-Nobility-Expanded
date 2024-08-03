@@ -35,6 +35,7 @@
     <!-- ===== Категория ===== -->
     <PermitCategory_Resources>Базовые ресурсы</PermitCategory_Resources>
     <PermitCategory_Pawns>Союзники</PermitCategory_Pawns>
+    <PermitCategory_Colonists>Колонисты</PermitCategory_Colonists>
     <PermitCategory_Airstrike>Военная поддержка</PermitCategory_Airstrike>
     <PermitCategory_Tools>Инструменты</PermitCategory_Tools>
     <PermitCategory_Armor>Броня</PermitCategory_Armor>

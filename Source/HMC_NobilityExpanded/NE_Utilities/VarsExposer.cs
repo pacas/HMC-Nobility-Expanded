@@ -12,18 +12,5 @@ namespace NobilityExpanded.Utilities
         public static string stuffPostfix = "Stuff";
         public static string coordsTable = "CoordsTable";
         public static string spacing = "          ";
-        
-        public static List<ThingDef> GetPermitStuffList(RoyalTitlePermitDef permit) {
-            var stuffDefOrdered = DefDatabase<OrderedStuffDef>.GetNamedSilentFail(permit.defName + "Stuff");
-            var extension = permit.GetModExtension<PermitExtensionList>();
-            return stuffDefOrdered != null ? stuffDefOrdered.stuffList : extension?.stuffList;
-        }
-        
-        // todo rework
-        public static List<PawnKindDef> GetPermitPawnList(RoyalTitlePermitDef permit) {
-            var stuffDefOrdered = DefDatabase<OrderedStuffDef>.GetNamedSilentFail(permit.defName + "Stuff");
-            var extension = permit.GetModExtension<PermitExtensionList>();
-            return stuffDefOrdered != null ? stuffDefOrdered.pawnToChoose : extension?.pawnToChoose;
-        }
     }
 }
