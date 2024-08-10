@@ -154,6 +154,22 @@
     <DropComment_ProductionImplants>Do you need to improve your workers? This will help.</DropComment_ProductionImplants>
     <DropComment_ProductionImplantsAdvanced>The best work performance enhancement implants for the best servants of titled persons.</DropComment_ProductionImplantsAdvanced>
 
+    <!-- Колонисты -->
+    <DropComment_ColonistShootingDrop>Any self-respecting nobleman should have a personal guard.</DropComment_ColonistShootingDrop>
+    <DropComment_ColonistMeleeDrop>Any self-respecting nobleman should have a personal guard.</DropComment_ColonistMeleeDrop>
+    <DropComment_ColonistConstructionDrop>Somebody has to build you a palace, right?</DropComment_ColonistConstructionDrop>
+    <DropComment_ColonistMiningDrop>Somebody has to mine the materials for your palace (better yet, just order from us), right?</DropComment_ColonistMiningDrop>
+    <DropComment_ColonistCookingDrop>Somebody has to be your personal chef (you can order food from us, but it will arrive cold), right?</DropComment_ColonistCookingDrop>
+    <DropComment_ColonistPlantsDrop>Somebody has to grow food for your personal chef's kitchen, right?</DropComment_ColonistPlantsDrop>
+    <DropComment_ColonistAnimalsDrop>Somebody has to grow meat for your personal chef's kitchen, right?</DropComment_ColonistAnimalsDrop>
+    <DropComment_ColonistCraftingDrop>Somebody has to make you a crown and sew you velvet robes, right?</DropComment_ColonistCraftingDrop>
+    <DropComment_ColonistMedicineDrop>Somebody has to cure you of any illness, right?</DropComment_ColonistMedicineDrop>
+    <DropComment_ColonistSocialDrop>Somebody has to negotiate with all those savages on your planet, right?</DropComment_ColonistSocialDrop>
+    <DropComment_ColonistIntellectualDrop>Somebody has to improve your standard of living (we can't supply you with absolutely everything this far out), right?</DropComment_ColonistIntellectualDrop>
+    <DropComment_ColonistArtisticDrop>Somebody has to be a court jester (and occasionally do art), right? Just be warned - we can't test the skill of such a candidate.</DropComment_ColonistArtisticDrop>
+    <DropComment_ColonistRomanceFemaleDrop>Maidenless? Just request one!</DropComment_ColonistRomanceFemaleDrop>
+    <DropComment_ColonistRomanceMaleDrop>Unwed maiden? Just request one!</DropComment_ColonistRomanceMaleDrop>
+
     <!-- Biotech -->
     <DropComment_BabyFoodDrop>Do you have children there? In that case, I'll even give you a little more food for the kids.</DropComment_BabyFoodDrop>
     <DropComment_VampiresFoodDrop>I hope it's just someone needs a blood transfusion. We don't usually receive such requests, be careful with such things.</DropComment_VampiresFoodDrop>

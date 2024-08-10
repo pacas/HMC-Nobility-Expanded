@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+    <!-- заголовки -->
+    <ColonistsPermitTitle.label>Колонисты</ColonistsPermitTitle.label>
+    <ColonistsPermitTitle.description>Запросы дополнительных людей к вашему двору.</ColonistsPermitTitle.description>
+    
+    <!-- колонисты -->
+    <ColonistShootingDrop.label>стрелок</ColonistShootingDrop.label>
+    <ColonistShootingDrop.description>Запрос колониста с хорошим навыком стрельбы.</ColonistShootingDrop.description>
+    <ColonistMeleeDrop.label>мечник</ColonistMeleeDrop.label>
+    <ColonistMeleeDrop.description>Запрос колониста с хорошим навыком ближнего боя.</ColonistMeleeDrop.description>
+    <ColonistConstructionDrop.label>строитель</ColonistConstructionDrop.label>
+    <ColonistConstructionDrop.description>Запрос колониста с хорошим навыком строительства.</ColonistConstructionDrop.description>
+    <ColonistMiningDrop.label>шахтёр</ColonistMiningDrop.label>
+    <ColonistMiningDrop.description>Запрос колониста с хорошим навыком шахтера.</ColonistMiningDrop.description>
+    <ColonistCookingDrop.label>повар</ColonistCookingDrop.label>
+    <ColonistCookingDrop.description>Запрос колониста с хорошим навыком готовки.</ColonistCookingDrop.description>
+    <ColonistPlantsDrop.label>фермер</ColonistPlantsDrop.label>
+    <ColonistPlantsDrop.description>Запрос колониста с хорошим навыком работы с растениями.</ColonistPlantsDrop.description>
+    <ColonistAnimalsDrop.label>погонщик</ColonistAnimalsDrop.label>
+    <ColonistAnimalsDrop.description>Запрос колониста с хорошим навыком работы с животными.</ColonistAnimalsDrop.description>
+    <ColonistCraftingDrop.label>ремесленник</ColonistCraftingDrop.label>
+    <ColonistCraftingDrop.description>Запрос колониста с хорошим навыком ремесла.</ColonistCraftingDrop.description>
+    <ColonistMedicineDrop.label>медик</ColonistMedicineDrop.label>
+    <ColonistMedicineDrop.description>Запрос колониста с хорошим навыком медицины.</ColonistMedicineDrop.description>
+    <ColonistSocialDrop.label>дипломат</ColonistSocialDrop.label>
+    <ColonistSocialDrop.description>Запрос колониста с хорошим навыком переговоров.</ColonistSocialDrop.description>
+    <ColonistIntellectualDrop.label>учёный</ColonistIntellectualDrop.label>
+    <ColonistIntellectualDrop.description>Запрос колониста с хорошим навыком исследований.</ColonistIntellectualDrop.description>
+    <ColonistArtisticDrop.label>артист</ColonistArtisticDrop.label>
+    <ColonistArtisticDrop.description>Запрос колониста с навыком искусства. Внимание - каждый может назвать себя артистом.</ColonistArtisticDrop.description>
+    <ColonistRomanceFemaleDrop.label>ангел (женщина)</ColonistRomanceFemaleDrop.label>
+    <ColonistRomanceFemaleDrop.description>Запрос колониста-ангела.</ColonistRomanceFemaleDrop.description>
+    <ColonistRomanceMaleDrop.label>ангел (мужчина)</ColonistRomanceMaleDrop.label>
+    <ColonistRomanceMaleDrop.description>Запрос колониста-ангела.</ColonistRomanceMaleDrop.description>
+
+</LanguageData>

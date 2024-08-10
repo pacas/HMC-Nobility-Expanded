@@ -44,7 +44,7 @@
     </RoyalTitlePermitDef>
 
     <!-- Milk -->
-    <RoyalTitlePermitDef ParentName="CallPawns">
+    <RoyalTitlePermitDef ParentName="DropAnimals">
         <defName>MilkAnimalDrop</defName>
         <label>milk producers</label>
         <description>Request a drop of two random farm milk producers of the same species and different genders.</description>
@@ -136,7 +136,7 @@
     </RoyalTitlePermitDef>
 
     <!-- Meat -->
-    <RoyalTitlePermitDef ParentName="CallPawns">
+    <RoyalTitlePermitDef ParentName="DropAnimals">
         <defName>MeatAnimalDrop</defName>
         <label>meat producers</label>
         <description>Request a drop of two random farm meat producers of the same species and different genders.</description>
@@ -197,7 +197,7 @@
     </RoyalTitlePermitDef>
 
     <!-- Egg -->
-    <RoyalTitlePermitDef ParentName="CallPawns">
+    <RoyalTitlePermitDef ParentName="DropAnimals">
         <defName>EggAnimalDrop</defName>
         <label>egg layers</label>
         <description>Request a drop of a random farm egg layers of the same species and different genders.</description>
@@ -246,7 +246,7 @@
     </RoyalTitlePermitDef>
 
     <!-- Wool -->
-    <RoyalTitlePermitDef ParentName="CallPawns">
+    <RoyalTitlePermitDef ParentName="DropAnimals">
         <defName>WoolAnimalDrop</defName>
         <label>wool producers</label>
         <description>Request a drop of two random wool producers of the same species and different genders.</description>
@@ -315,7 +315,7 @@
     </RoyalTitlePermitDef>
 
     <!-- Caravan -->
-    <RoyalTitlePermitDef ParentName="CallPawns">
+    <RoyalTitlePermitDef ParentName="DropAnimals">
         <defName>CaravanAnimalDrop</defName>
         <label>pack animals</label>
         <description>Request a drop of two random caravan animals of the same species and different genders.</description>
@@ -388,7 +388,7 @@
     </RoyalTitlePermitDef>
     
     <!-- Pet -->
-    <RoyalTitlePermitDef ParentName="CallPawns">
+    <RoyalTitlePermitDef ParentName="DropAnimals">
         <defName>PetAnimalDrop</defName>
         <label>pets</label>
         <description>Request a drop of one random pet animal.</description>
@@ -468,7 +468,7 @@
     </RoyalTitlePermitDef>
 
     <!-- Battle -->
-    <RoyalTitlePermitDef ParentName="CallPawns">
+    <RoyalTitlePermitDef ParentName="DropAnimals">
         <defName>BattleAnimalDrop</defName>
         <label>war beasts</label>
         <description>Request a drop of two random battle animals of the same species. Or geese.</description>
@@ -588,7 +588,7 @@
     </RoyalTitlePermitDef>
 
     <!-- Exotic -->
-    <RoyalTitlePermitDef ParentName="CallPawns">
+    <RoyalTitlePermitDef ParentName="DropAnimals">
         <defName>ExoticAnimalDrop</defName>
         <label>exotic</label>
         <description>Request a drop of two random exotic animals of the same species and different genders.</description>
@@ -637,7 +637,7 @@
     </RoyalTitlePermitDef>
 
     <!-- Mythical -->
-    <RoyalTitlePermitDef ParentName="CallPawns">
+    <RoyalTitlePermitDef ParentName="DropAnimals">
         <defName>MythicalAnimalDrop</defName>
         <label>mythical</label>
         <description>Request a drop of one random mythical animal. Or a cat.</description>

@@ -240,15 +240,9 @@ namespace NobilityExpanded
                 var infoRect = new Rect(0.0f, 0.0f, rightRect.width, 0.0f);
                 var label = "";
 
-                if (selectedPermit.permitPointCost < 90)
-                {
+                if (selectedPermit.permitPointCost < 90) {
                     label += Utilities.TextFormatter.FormBasicPermitInfo(selectedPermit, selectedFaction, currentTitle, PermitUnlocked(selectedPermit.prerequisite, pawn));
-                    var stuffDefOrdered = DefDatabase<OrderedStuffDef>.GetNamedSilentFail(selectedPermit.defName + "Stuff");
-                    bool isStuff = stuffDefOrdered != null;
-                    bool isRoyalAidExists = selectedPermit?.royalAid?.itemsToDrop != null;
-                    label += isStuff && isRoyalAidExists ? 
-                        Utilities.TextFormatter.FormAdditionalPermitInfoStuff(selectedPermit) : 
-                        Utilities.TextFormatter.FormAdditionalPermitInfoExtension(selectedPermit);
+                    label += Utilities.TextFormatter.FormAdditionalPermitInfoExtension(selectedPermit);
                 }
                 
                 Widgets.LabelCacheHeight(ref infoRect, label);
@@ -283,16 +277,9 @@ namespace NobilityExpanded
         }
 
         private static Vector2 DrawPosition(RoyalTitlePermitDef permit) {
-            OrderedStuffDef stuffDefOrdered = DefDatabase<OrderedStuffDef>.GetNamedSilentFail(permit.defName + Utilities.VarsExposer.stuffPostfix);
             bool isExtExists = permit.HasModExtension<PermitExtensionList>();
-            var tableName = VarsExposer.coordsTable + curTab + "_";
-            int index;
             Vector2 newCoords;
-            if (stuffDefOrdered != null) {
-                var categoryTable = DefDatabase<RoyaltyCoordsTableDef>.GetNamedSilentFail(tableName + stuffDefOrdered.column);
-                index = categoryTable.loadOrder.IndexOf(permit);
-                newCoords = new Vector2(categoryTable.coordX * 240f, index * 50f);
-            } else if (isExtExists) {
+             if (isExtExists) {
                 PermitExtensionList extension = permit.GetModExtension<PermitExtensionList>();
                 var column = extension.column ?? 0;
                 var row = extension.row ?? 0;
@@ -337,7 +324,6 @@ namespace NobilityExpanded
         }
         
         private static bool CanDrawPermit(RoyalTitlePermitDef permit) {
-            // todo
             if (permit.permitPointCost < 0 || permit.permitPointCost == 97 || permit.permitPointCost == 96)
                 return false;
 
@@ -351,15 +337,6 @@ namespace NobilityExpanded
             var ext = permit.GetModExtension<PermitExtensionList>();
             if (ext != null) {
                 return ext.category == curTab;
-            }
-            
-            // todo I will kill you
-            RoyaltyCoordsTableDef categoryTable0 = DefDatabase<RoyaltyCoordsTableDef>.GetNamedSilentFail(VarsExposer.coordsTable + curTab + "_0");
-            RoyaltyCoordsTableDef categoryTable1 = DefDatabase<RoyaltyCoordsTableDef>.GetNamedSilentFail(VarsExposer.coordsTable + curTab + "_1");
-            var index0 = categoryTable0.loadOrder.IndexOf(permit);
-            var index1 = categoryTable1.loadOrder.IndexOf(permit);
-            if (index0 > 0 || index1 > 0) {
-                return true;
             }
             
             return permit.permitPointCost > 89;

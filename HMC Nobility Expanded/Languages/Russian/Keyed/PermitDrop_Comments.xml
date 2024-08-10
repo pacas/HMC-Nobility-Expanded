@@ -154,6 +154,22 @@
     <DropComment_ProductionImplants>Нужно улучшить ваших работников? Это поможет.</DropComment_ProductionImplants>
     <DropComment_ProductionImplantsAdvanced>Лучшие импланты для улучшения всех рабочих показателей для лучшей прислуги титулованных персон.</DropComment_ProductionImplantsAdvanced>
 
+    <!-- Колонисты -->
+    <DropComment_ColonistShootingDrop>Личная охрана должна быть у любого уважающего себя дворянина.</DropComment_ColonistShootingDrop>
+    <DropComment_ColonistMeleeDrop>Личная охрана должна быть у любого уважающего себя дворянина.</DropComment_ColonistMeleeDrop>
+    <DropComment_ColonistConstructionDrop>Кто-то же должен построить вам дворец?</DropComment_ColonistConstructionDrop>
+    <DropComment_ColonistMiningDrop>Кто-то же должен добыть материалы на дворец (лучше просто закажите у нас)?</DropComment_ColonistMiningDrop>
+    <DropComment_ColonistCookingDrop>Кто-то же должен быть вам личным поваром (можете заказать у нас, но прибудет холодным)?</DropComment_ColonistCookingDrop>
+    <DropComment_ColonistPlantsDrop>Кто-то же должен выращивать еду для кухни вашего личного повара?</DropComment_ColonistPlantsDrop>
+    <DropComment_ColonistAnimalsDrop>Кто-то же должен выращивать мясо для кухни вашего личного повара?</DropComment_ColonistAnimalsDrop>
+    <DropComment_ColonistCraftingDrop>Кто-то же должен создать вам корону и сшить бархатные одежды?</DropComment_ColonistCraftingDrop>
+    <DropComment_ColonistMedicineDrop>Кто-то же должен вылечить вас от любого недуга?</DropComment_ColonistMedicineDrop>
+    <DropComment_ColonistSocialDrop>Кто-то же должен договариваться со всеми этими дикарями на вашей планете?</DropComment_ColonistSocialDrop>
+    <DropComment_ColonistIntellectualDrop>Кто-то же должен улучшать ваш уровень жизни (мы не можем поставить вам абсолютно всё в такую даль)?</DropComment_ColonistIntellectualDrop>
+    <DropComment_ColonistArtisticDrop>Кто-то же должен быть придворным шутом (и иногда заниматься искусством)? Только учтите - мы не можем проверить навык такого кандидата.</DropComment_ColonistArtisticDrop>
+    <DropComment_ColonistRomanceFemaleDrop>Одиноки? Просто закажите себе пару!</DropComment_ColonistRomanceFemaleDrop>
+    <DropComment_ColonistRomanceMaleDrop>Одиноки? Просто закажите себе пару!</DropComment_ColonistRomanceMaleDrop>
+
     <!-- Biotech -->
     <DropComment_BabyFoodDrop>У вас там дети есть? В таком случае я вам немного побольше даже положу еды детишкам.</DropComment_BabyFoodDrop>
     <DropComment_VampiresFoodDrop>Надеюсь, всего-то кому-то требуется переливание крови? У нас обычно таких запросов не делают, аккуратнее с таким.</DropComment_VampiresFoodDrop>
