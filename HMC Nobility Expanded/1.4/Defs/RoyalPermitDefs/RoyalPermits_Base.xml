@@ -40,7 +40,7 @@
 
     <RoyalTitlePermitDef ParentName="DropAnimals" Name="DropPawns" Abstract="True">
         <permitPointCost>2</permitPointCost>
-        <minTitle>Knight</minTitle>
+        <minTitle>Praetor</minTitle>
         <cooldownDays>30</cooldownDays>
         <royalAid>
             <favorCost>10</favorCost>
