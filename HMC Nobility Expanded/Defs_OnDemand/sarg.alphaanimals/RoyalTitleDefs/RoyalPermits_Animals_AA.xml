@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <!-- Spiders -->
-    <RoyalTitlePermitDef ParentName="CallPawns">
+    <RoyalTitlePermitDef ParentName="DropAnimals">
         <defName>SpiderAnimalDrop</defName>
         <label>spiders</label>
         <description>Request a drop of two random spiders of the same species from Alpha Animals. Web them down!</description>

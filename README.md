@@ -32,6 +32,7 @@ This mod changes the system of rewards from the Empire to a more universal and a
 * Turrets and mortars (with ammo included)
 * Animals
 * Allies
+* Colonists
 * Military aid
 * Prosthetics and implants
 * Seeds
@@ -62,6 +63,7 @@ This mod changes the system of rewards from the Empire to a more universal and a
 * Турели и миномёты (патроны в комплекте)
 * Животные
 * Союзники
+* Колонисты
 * Военная поддержка
 * Протезы и импланты
 * Семена
