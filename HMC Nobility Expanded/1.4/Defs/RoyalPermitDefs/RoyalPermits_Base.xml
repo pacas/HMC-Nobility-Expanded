@@ -49,16 +49,15 @@
     </RoyalTitlePermitDef>
     
     <!-- todo -->
-    <!-- гранаты -->
-    <!-- Advanced Shield Belts -->
-    <!-- Edge of Descension Monoblades ? -->
-    <!-- Minerals Ancient Stones -->
-    <!-- More Tools -->
-    <!-- SRTS Expanded plus addons -->
-    <!-- Alpha Bees ? -->
-    <!-- A RimWorld of Magic ? -->
-    <!-- нейротренеры -->
-    <!-- штрафбат как боевую поддержку - низкая стоимость / кд / навыки / оружие -->
+    <!-- 
+    1) More Tools
+    2) A RimWorld of Magic - добавить сплав
+    3) Edge of Descension Monoblades - пару слабых мечей + лучшие на макс титулах
+    4) Advanced Shield Belts
+    5) Боеприпасы
+    6) Гранаты
+    7) Нейротренеры
+    -->
     
     <RoyalTitlePermitDef ParentName="DropResourcesUpdated" Name="DropResourcesTitle" Abstract="True">
         <permitPointCost>99</permitPointCost>
