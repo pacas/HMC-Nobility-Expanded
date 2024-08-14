@@ -51,12 +51,11 @@
     <!-- todo -->
     <!-- 
     1) More Tools
-    2) A RimWorld of Magic - добавить сплав
-    3) Edge of Descension Monoblades - пару слабых мечей + лучшие на макс титулах
-    4) Advanced Shield Belts
-    5) Боеприпасы
-    6) Гранаты
-    7) Нейротренеры
+    2) Edge of Descension Monoblades - пару слабых мечей + лучшие на макс титулах
+    3) Advanced Shield Belts
+    4) Боеприпасы
+    5) Гранаты
+    6) Нейротренеры
     -->
     
     <RoyalTitlePermitDef ParentName="DropResourcesUpdated" Name="DropResourcesTitle" Abstract="True">

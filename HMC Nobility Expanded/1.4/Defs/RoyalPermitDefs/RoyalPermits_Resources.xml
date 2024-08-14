@@ -115,6 +115,10 @@
                         <thing>Jade</thing>
                         <count>125</count>
                     </li>
+                    <li MayRequire="torann.arimworldofmagic">
+                        <thing>RawMagicyte</thing>
+                        <count>125</count>
+                    </li>
                 </itemData>
             </li>
         </modExtensions>
@@ -269,6 +273,10 @@
                     <li>
                         <thing>GoldBar</thing>
                         <count>100</count>
+                    </li>
+                    <li MayRequire="torann.arimworldofmagic">
+                        <thing>PureMagicyteBar</thing>
+                        <count>200</count>
                     </li>
                     <li MayRequire="Soul.MaelstromsMetals.sk">
                         <thing>Prismallium</thing>

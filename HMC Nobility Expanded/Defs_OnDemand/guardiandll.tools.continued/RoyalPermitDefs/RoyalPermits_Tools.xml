@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>PlantsWorkerDrop</defName>
+        <label>plants worker tools</label>
+        <description>Request a drop of chainsaw and cultivator.</description>
+        <minTitle>Legatus</minTitle>
+        <cooldownDays>45</cooldownDays>
+        <permitPointCost>1</permitPointCost>
+        <royalAid>
+            <favorCost>6</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Tools</category>
+                <row>3</row>
+                <column>0</column>
+                <itemData>
+                    <li>
+                        <thing>Dll_Tool_Chainsaw</thing>
+                        <count>1</count>
+                        <stuff>TitaniumAlloy</stuff>
+                    </li>
+                    <li>
+                        <thing>Dll_Tool_Agriculture</thing>
+                        <count>1</count>
+                        <stuff>TitaniumAlloy</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>MinerWorkerDrop</defName>
+        <label>miner tools</label>
+        <description>Request a drop of jackhammer and pickaxe.</description>
+        <minTitle>Legatus</minTitle>
+        <cooldownDays>45</cooldownDays>
+        <permitPointCost>1</permitPointCost>
+        <royalAid>
+            <favorCost>6</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Tools</category>
+                <row>3</row>
+                <column>1</column>
+                <itemData>
+                    <li>
+                        <thing>Dll_Tool_Jackhammer</thing>
+                        <count>1</count>
+                        <stuff>TitaniumAlloy</stuff>
+                    </li>
+                    <li>
+                        <thing>TFJ_Tool_Mining_Pickaxe</thing>
+                        <count>1</count>
+                        <stuff>TitaniumAlloy</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>BuilderWorkerDrop</defName>
+        <label>builder tools</label>
+        <description>Request a drop of angle grinder, shovel and building hammer.</description>
+        <minTitle>Legatus</minTitle>
+        <cooldownDays>45</cooldownDays>
+        <permitPointCost>1</permitPointCost>
+        <royalAid>
+            <favorCost>6</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Tools</category>
+                <row>4</row>
+                <column>0</column>
+                <itemData>
+                    <li>
+                        <thing>Dll_Tool_AngleGrinder</thing>
+                        <count>1</count>
+                        <stuff>TitaniumAlloy</stuff>
+                    </li>
+                    <li>
+                        <thing>Dll_Tool_Shovel</thing>
+                        <count>1</count>
+                        <stuff>TitaniumAlloy</stuff>
+                    </li>
+                    <li>
+                        <thing>TFJ_Tool_Building_Hammer</thing>
+                        <count>1</count>
+                        <stuff>TitaniumAlloy</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>CraftsmanWorkerDrop</defName>
+        <label>craftsman tools</label>
+        <description>Request a drop of soldering iron, toolbox and hammer.</description>
+        <minTitle>Legatus</minTitle>
+        <cooldownDays>45</cooldownDays>
+        <permitPointCost>1</permitPointCost>
+        <royalAid>
+            <favorCost>6</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Tools</category>
+                <row>4</row>
+                <column>1</column>
+                <itemData>
+                    <li>
+                        <thing>Dll_Tool_SolderingIron</thing>
+                        <count>1</count>
+                        <stuff>TitaniumAlloy</stuff>
+                    </li>
+                    <li>
+                        <thing>Dll_Tool_ToolBox</thing>
+                        <count>1</count>
+                        <stuff>TitaniumAlloy</stuff>
+                    </li>
+                    <li>
+                        <thing>TFJ_Tool_Building_Hammer</thing>
+                        <count>1</count>
+                        <stuff>TitaniumAlloy</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>MedicWorkerDrop</defName>
+        <label>medic tools</label>
+        <description>Request a drop of medicine bag and bone saw.</description>
+        <minTitle>Legatus</minTitle>
+        <cooldownDays>45</cooldownDays>
+        <permitPointCost>1</permitPointCost>
+        <royalAid>
+            <favorCost>6</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Tools</category>
+                <row>5</row>
+                <column>0</column>
+                <itemData>
+                    <li>
+                        <thing>Dll_Tool_Medbag</thing>
+                        <count>1</count>
+                        <stuff>TitaniumAlloy</stuff>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_Bonesaw</thing>
+                        <count>1</count>
+                        <stuff>TitaniumAlloy</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>JanitorWorkerDrop</defName>
+        <label>janitor tools</label>
+        <description>Request a drop of leaf blower and broom.</description>
+        <minTitle>Legatus</minTitle>
+        <cooldownDays>45</cooldownDays>
+        <permitPointCost>1</permitPointCost>
+        <royalAid>
+            <favorCost>6</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Tools</category>
+                <row>5</row>
+                <column>1</column>
+                <itemData>
+                    <li>
+                        <thing>Dll_Tool_LeafBlower</thing>
+                        <count>1</count>
+                        <stuff>TitaniumAlloy</stuff>
+                    </li>
+                    <li>
+                        <thing>TFJ_Tool_Broom</thing>
+                        <count>1</count>
+                        <stuff>TitaniumAlloy</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>ScientistWorkerDrop</defName>
+        <label>scientist tools</label>
+        <description>Request a drop of a pocket computer.</description>
+        <minTitle>Baron</minTitle>
+        <cooldownDays>60</cooldownDays>
+        <permitPointCost>2</permitPointCost>
+        <royalAid>
+            <favorCost>6</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Tools</category>
+                <row>6</row>
+                <column>0</column>
+                <itemData>
+                    <li>
+                        <thing>Dll_Tool_PDA</thing>
+                        <count>1</count>
+                        <stuff>TitaniumAlloy</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+    
+</Defs>

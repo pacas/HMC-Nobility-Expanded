@@ -1,5 +1,12 @@
 ----------------------------------------------------------------------
 
+- Changelog "HMC Empire Rewards" v0.18.1 - Royal Court (1.4):
+
+1) Fixed Alpha Animals spider permit.
+
+1) Исправлена привилегия на пауков из Alpha Animals.
+----------------------------------------------------------------------
+
 - Changelog "HMC Empire Rewards" v0.18 - Royal Court (1.4):
 
 1) New category of permits - colonists! Requests of colonists is tied to their skills.
