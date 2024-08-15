@@ -8,4 +8,21 @@
     <RoyalTitleDef Name="StellarchBase" Abstract="True">
     </RoyalTitleDef>
 
+
+    <RoyalTitleDef ParentName="BaseEmpireTitleNPCUltra">
+        <defName>VFEE_HighStellarch</defName>
+        <label>Augustus</label>
+        <labelFemale>Augustus</labelFemale>
+        <description>After several particularly despotic Padishah-emperors and bloody revolutions, the imperial authorities decided to introduce the title of augustus, co-emperors, whose main purpose is to limit the power of the monarch. As the heads of the Great Houses, such co-emperors do not receive any real power, but they do have additional abilities, such as vetoing the most controversial laws, provided they have the support of the other noble Houses.</description>
+        <seniority>950</seniority>
+        <commonality>0</commonality>
+        <modExtensions>
+            <li Class="VFEEmpire.RoyalTitleDefExtension">
+                <iconPath>UI/NobleRanks/RoyalTitleIcon_HighStellarch</iconPath>
+                <greyIconPath>UI/GreyTitleIcons/RoyalTitleIcon_HighStellarch</greyIconPath>
+                <kindForHierarchy>VFEE_Empire_Royal_HighStellarch</kindForHierarchy>
+            </li>
+        </modExtensions>
+    </RoyalTitleDef>
+
 </Defs>
