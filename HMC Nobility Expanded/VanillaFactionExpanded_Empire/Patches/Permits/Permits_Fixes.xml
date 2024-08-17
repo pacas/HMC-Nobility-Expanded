@@ -9,7 +9,6 @@
                 defName="VFEI_CallOrbitalSlicingBeam"
                 ]/prerequisite</xpath>
             </li>
-            <!-- todo add later military-->
             <li Class="PatchOperationRemove">
                 <xpath>Defs/RoyalTitlePermitDef[
                 defName="VFEI_GoldDrop" or 

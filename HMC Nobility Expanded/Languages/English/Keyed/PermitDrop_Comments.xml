@@ -74,6 +74,13 @@
     <DropComment_ToolDropPlus>Do you want durable tools? Well, that's not hard to arrange. It's not a bad thing to work with such a tool yourself.</DropComment_ToolDropPlus>
     <DropComment_AdvToolDrop>The Multitool is a tool of the workers of the Empire's core. They do not appear often outside of it, but you can request one.</DropComment_AdvToolDrop>
     <DropComment_AdvToolDropPlus>The Multitool from AdvancedMachines™ is the best multitool available for purchase. The Empire buys them in whole lots, so you can get one, too.</DropComment_AdvToolDropPlus>
+    <DropComment_PlantsWorkerDrop>As you sow, so shall you reap.</DropComment_PlantsWorkerDrop>
+    <DropComment_MinerWorkerDrop>A smart man will not go up or around the mountain - a smart man will dismantle it and build a palace out of it.</DropComment_MinerWorkerDrop>
+    <DropComment_BuilderWorkerDrop>Every man is the architect of his own fortune.</DropComment_BuilderWorkerDrop>
+    <DropComment_CraftsmanWorkerDrop>Forge your future. And also titanium, stellite, and God knows how many other things you don't need to know about.</DropComment_CraftsmanWorkerDrop>.
+    <DropComment_MedicWorkerDrop>The cost of a surgeon's mistake is always too high. These tools allow you to buy the chance of survival.</DropComment_MedicWorkerDrop>
+    <DropComment_JanitorWorkerDrop>Are you sure you need this? Are you sure?</DropComment_JanitorWorkerDrop>.
+    <DropComment_ScientistWorkerDrop>Most importantly, do not install games on this PDA.</DropComment_ScientistWorkerDrop>
 
     <!-- Турели -->
     <DropComment_BallistaDrop>Ballistas? Why do you need them, just get something better.</DropComment_BallistaDrop>

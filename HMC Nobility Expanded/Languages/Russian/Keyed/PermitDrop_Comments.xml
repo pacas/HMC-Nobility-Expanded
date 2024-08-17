@@ -74,6 +74,13 @@
     <DropComment_ToolDropPlus>Хотите долговечные инструменты? Ну, это устроить несложно. Таким инструментом и самому поработать не грех.</DropComment_ToolDropPlus>
     <DropComment_AdvToolDrop>Мультитул - инструмент рабочих планет ядра Империи. Они нечасто появляются за его пределами, но вы можете запросить один такой.</DropComment_AdvToolDrop>
     <DropComment_AdvToolDropPlus>Мультитул от AdvancedMachines™ - лучший доступный для покупки мультитул. Империя закупает их целыми партиями, так что и вам найдётся.</DropComment_AdvToolDropPlus>
+    <DropComment_PlantsWorkerDrop>Как посеешь, так и пожнешь.</DropComment_PlantsWorkerDrop>
+    <DropComment_MinerWorkerDrop>Умный в гору не пойдет - умный гору разберет и построит из неё дворец.</DropComment_MinerWorkerDrop>
+    <DropComment_BuilderWorkerDrop>Каждый сам строитель своего счастья.</DropComment_BuilderWorkerDrop>
+    <DropComment_CraftsmanWorkerDrop>Куй железо пока горячо. А также титан, стеллит и ещё бог знает сколько всего, о чем вам знать нет смысла.</DropComment_CraftsmanWorkerDrop>
+    <DropComment_MedicWorkerDrop>Цена ошибки хирурга всегда слишком высока. Эти инструменты позволяют купить шанс выживания.</DropComment_MedicWorkerDrop>
+    <DropComment_JanitorWorkerDrop>Вы точно уверены, что вам это надо? Точно? Серьезно, не стоит.</DropComment_JanitorWorkerDrop>
+    <DropComment_ScientistWorkerDrop>Главное не устанавливайте на этот КПК игры.</DropComment_ScientistWorkerDrop>
 
     <!-- Турели -->
     <DropComment_BallistaDrop>Баллисты? Зачем они вам, просто возьмите что-то получше.</DropComment_BallistaDrop>
