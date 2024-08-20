@@ -27,8 +27,6 @@
     
     <HazmatOutfitDrop.label>набор химзащиты</HazmatOutfitDrop.label>
     <HazmatOutfitDrop.description>Запрос доставки набора химзащиты.</HazmatOutfitDrop.description>
-    <ShieldBeltDrop.label>пояс-щит</ShieldBeltDrop.label>
-    <ShieldBeltDrop.description>Запрос доставки одного пояса-щита.</ShieldBeltDrop.description>
 
     <RoyalOutfitDrop.label>одеяния знати</RoyalOutfitDrop.label>
     <RoyalOutfitDrop.description>Запрос доставки набора одеяния знати.</RoyalOutfitDrop.description>

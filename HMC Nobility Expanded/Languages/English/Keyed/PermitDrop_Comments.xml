@@ -44,8 +44,6 @@
     <DropComment_SpiderAnimalDrop>Spiders? Seriously? I wouldn't even go near them, and you want to live with them? You're insane.</DropComment_SpiderAnimalDrop>
 
     <!-- Одежда -->
-    <DropComment_SoldierAccessoriesDrop>Ah, stormtrooper gear. If your guard needs extra gear besides armor, that's your choice. That one won't take bullets, not like these scouts.</DropComment_SoldierAccessoriesDrop>
-    <DropComment_SoldierAccessoriesAltDrop>Ah, scouting gear. It's always good to have guards who can react quickly to threats, because all those stormtroopers are so slow...</DropComment_SoldierAccessoriesAltDrop>
     <DropComment_SmithOutfitDrop>Clothes for the blacksmith? I don't have the slightest idea what's supposed to be there, so I clarify... Oh, I see, it's easy to arrange.</DropComment_SmithOutfitDrop>
     <DropComment_FarmerOutfitDrop>Clothes for the farmer? I don't have the slightest idea what's supposed to be there, so I clarify... Oh, I see, it's easy to arrange.</DropComment_FarmerOutfitDrop>
     <DropComment_ChefOutfitDrop>Clothes for the chef? I don't have the slightest idea what's supposed to be there, so I clarify... Oh, I see, it's easy to arrange.</DropComment_ChefOutfitDrop>
@@ -56,7 +54,6 @@
     <DropComment_HazmatOutfitDrop>Chemical protection? What are you doing out there that needs chemical protection? You'd better not violate the galactic code now that you're part of the Empire. But if anything, I didn't see anything.</DropComment_HazmatOutfitDrop>
     <DropComment_RoyalOutfitDrop>Clothes for the nobility. We have our own particular style of clothing on Fortuna, if you want, I'll request a full set. Quality is guaranteed.</DropComment_RoyalOutfitDrop>
     <DropComment_PsychicOutfitDrop>Clothes for psykers? They' re respectable people, of course, but a lot of people are afraid of them, so even famous psykers prefer not to advertise their abilities. However, it is your right, we are ready to provide you with a set.</DropComment_PsychicOutfitDrop>
-    <DropComment_ShieldBeltDrop>Shield belt, useful thing, saved a lot of people, so we always have a reserve. Shall I prepare it for shipment?</DropComment_ShieldBeltDrop>
     <DropComment_SimpleOutfitDrop>Simple clothes for simple folks. We have plenty of those.</DropComment_SimpleOutfitDrop>
 
     <!-- Броня -->
@@ -68,6 +65,12 @@
     <DropComment_SpacerArmorDropPlus>A kit of the highest officers of the Imperial Guard. Normally you can't get such kits, but many kits created on Vulcan go through Fortuna, so I'm willing to arrange one for you.</DropComment_SpacerArmorDropPlus>
     <DropComment_UltraArmorDrop>I would have to go to the Capital Office on Juno for permission to issue such a suite. It is indeed one of the finest armors in the Empire, produced only on Vulcan, and only some of the most titled people in the Empire receive it.</DropComment_UltraArmorDrop>
     <DropComment_UltraArmorDropPlus>An upgraded set of ultra armor? I have no right to even apply for it, I refer you directly to the Capital Office...</DropComment_UltraArmorDropPlus>
+    <DropComment_SoldierAccessoriesDrop>Ah, stormtrooper gear. If your guard needs extra gear besides armor, that's your choice. That one won't take bullets, not like these scouts.</DropComment_SoldierAccessoriesDrop>
+    <DropComment_SoldierAccessoriesAltDrop>Ah, scouting gear. It's always good to have guards who can react quickly to threats, because all those stormtroopers are so slow...</DropComment_SoldierAccessoriesAltDrop>
+    <DropComment_ShieldBeltDrop>Shield belt, useful thing, saved a lot of people, so we always have a reserve. Shall I prepare it for shipment?</DropComment_ShieldBeltDrop>
+    <DropComment_ShieldHeavyBeltDrop>Shield belt, useful thing, saved a lot of people, so we always have a reserve. Shall I prepare it for shipment?</DropComment_ShieldHeavyBeltDrop>
+    <DropComment_ShieldQRBeltDrop>Shield belt, useful thing, saved a lot of people, so we always have a reserve. Shall I prepare it for shipment?</DropComment_ShieldQRBeltDrop>
+    <DropComment_ShieldRangedBeltDrop>Ranged belt-shield is a relatively new technology, so I have an outright ban on giving these samples to certain titles.</DropComment_ShieldRangedBeltDrop>
 
     <!-- Инструменты -->
     <DropComment_ToolDrop>A set of tools? Well, that's never too much to ask, especially if you give them out to the slaves on the plantations.</DropComment_ToolDrop>

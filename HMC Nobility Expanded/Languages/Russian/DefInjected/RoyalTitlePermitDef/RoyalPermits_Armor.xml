@@ -39,4 +39,14 @@
     <SoldierAccessoriesAltDrop.label>набор разведчика</SoldierAccessoriesAltDrop.label>
     <SoldierAccessoriesAltDrop.description>Запрос доставки набора аксесссуаров для разведчика. Полная броня не входит в комплект.</SoldierAccessoriesAltDrop.description>
 
+    <!-- щиты -->
+    <ShieldBeltDrop.label>пояс-щит</ShieldBeltDrop.label>
+    <ShieldBeltDrop.description>Запрос доставки одного пояса-щита.</ShieldBeltDrop.description>
+    <ShieldHeavyBeltDrop.label>тяжелый пояс-щит</ShieldHeavyBeltDrop.label>
+    <ShieldHeavyBeltDrop.description>Запрос доставки одного тяжелого пояса-щита.</ShieldHeavyBeltDrop.description>
+    <ShieldQRBeltDrop.label>быстрозарядный пояс-щит</ShieldQRBeltDrop.label>
+    <ShieldQRBeltDrop.description>Запрос доставки одного быстрозарядного пояса-щита.</ShieldQRBeltDrop.description>
+    <ShieldRangedBeltDrop.label>стрелковый пояс-щит</ShieldRangedBeltDrop.label>
+    <ShieldRangedBeltDrop.description>Запрос доставки одного стрелкового пояса-щита.</ShieldRangedBeltDrop.description>
+
 </LanguageData>
