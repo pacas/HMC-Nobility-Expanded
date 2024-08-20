@@ -92,6 +92,8 @@ Q: Which mods are compatible except VFEE?<br>
 7) Apex Rimworld Legends<br>
 8) Maelstroms Metals<br>
 9) Revia Race<br>
+10) More Tools<br>
+11) Advanced Shield Belts<br>
 <br>
 <hr>
 Q: DISBALANCE!<br>

@@ -29,4 +29,10 @@
     <HeavyMeleeDropPlus.label>тяжёлое оружие +</HeavyMeleeDropPlus.label>
     <HeavyMeleeDropPlus.description>Запрос доставки случайного улучшенного тяжёлого оружия ближнего боя.</HeavyMeleeDropPlus.description>
 
+    <!-- моноклинки -->
+    <EODBladeDrop.label>моноклинок</EODBladeDrop.label>
+    <EODBladeDrop.description>Запрос доставки моноклинка престижа.</EODBladeDrop.description>
+    <EODBladePlusDrop.label>синхромоноклинок</EODBladePlusDrop.label>
+    <EODBladePlusDrop.description>Запрос доставки синхромоноклинка престижа.</EODBladePlusDrop.description>
+
 </LanguageData>
