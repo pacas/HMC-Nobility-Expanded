@@ -5,13 +5,41 @@
     <RoyalTitlePermitDef ParentName="DropResourcesTitle">
         <defName>ArmorPermitTitle</defName>
         <label>Armor</label>
-        <description>Request a drop of armor.</description>
+        <description>Request a drop of armor and accessories.</description>
         <modExtensions>
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Title</type>
                 <category>Armor</category>
                 <column>0</column>
                 <row>0</row>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesTitle">
+        <defName>ArmorPermitSmallTitle</defName>
+        <label>Armor Sets</label>
+        <description>Request a drop of different armor set.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Title</type>
+                <category>Armor</category>
+                <column>0</column>
+                <row>1</row>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
+        <defName>AccessoriesPermitSmallTitle</defName>
+        <label>Accessories</label>
+        <description>Request a drop of different apparel for soldiers and nobility.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Category</type>
+                <category>Armor</category>
+                <column>0</column>
+                <row>6</row>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
@@ -32,7 +60,7 @@
                 <type>Permit</type>
                 <category>Armor</category>
                 <column>0</column>
-                <row>1</row>
+                <row>2</row>
                 <itemData>
                     <li>
                         <thing>MedievalTimes_Helmet_Bascinet</thing>
@@ -75,7 +103,7 @@
                 <type>Permit</type>
                 <category>Armor</category>
                 <column>1</column>
-                <row>1</row>
+                <row>2</row>
                 <itemData>
                     <li>
                         <thing>MedievalTimes_Helmet_Bascinet</thing>
@@ -122,7 +150,7 @@
                 <type>Permit</type>
                 <category>Armor</category>
                 <column>0</column>
-                <row>2</row>
+                <row>3</row>
                 <itemData>
                     <li>
                         <thing>Tactical_Helmet</thing>
@@ -165,7 +193,7 @@
                 <type>Permit</type>
                 <category>Armor</category>
                 <column>1</column>
-                <row>2</row>
+                <row>3</row>
                 <itemData>
                     <li>
                         <thing>Tactical_Helmet</thing>
@@ -213,7 +241,7 @@
                 <type>Permit</type>
                 <category>Armor</category>
                 <column>0</column>
-                <row>3</row>
+                <row>4</row>
                 <itemData>
                     <li>
                         <thing>Apparel_ArmorHelmetRecon</thing>
@@ -256,7 +284,7 @@
                 <type>Permit</type>
                 <category>Armor</category>
                 <column>1</column>
-                <row>3</row>
+                <row>4</row>
                 <itemData>
                     <li>
                         <thing>Apparel_ArmorHelmetRecon</thing>
@@ -304,7 +332,7 @@
                 <type>Permit</type>
                 <category>Armor</category>
                 <column>0</column>
-                <row>4</row>
+                <row>5</row>
                 <itemData>
                     <li>
                         <thing>Apparel_PowerArmorHelmet</thing>
@@ -347,7 +375,7 @@
                 <type>Permit</type>
                 <category>Armor</category>
                 <column>1</column>
-                <row>4</row>
+                <row>5</row>
                 <itemData>
                     <li>
                         <thing>Apparel_PowerArmorHelmet</thing>
@@ -373,4 +401,122 @@
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
+
+    <!-- Accessories -->
+    
+    <RoyalTitlePermitDef ParentName="DropOutfitTitle">
+        <defName>SoldierAccessoriesDrop</defName>
+        <label>heavy combat accessories</label>
+        <description>Request a drop of classic heavy soldier accessories. Full armor is not included.</description>
+        <permitPointCost>4</permitPointCost>
+        <cooldownDays>45</cooldownDays>
+        <minTitle>Praetor</minTitle>
+        <royalAid>
+            <favorCost>17</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Armor</category>
+                <column>1</column>
+                <row>7</row>
+                <itemData>
+                    <li>
+                        <thing>CE_Apparel_Backpack</thing>
+                        <count>1</count>
+                        <stuff>Synthread</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>CE_Apparel_TacVest</thing>
+                        <count>1</count>
+                        <stuff>Synthread</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Marine_BattleMask</thing>
+                        <count>1</count>
+                        <stuff>TitaniumBar</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Rimarsenal_VestPlate</thing>
+                        <count>1</count>
+                        <stuff>TitaniumBar</stuff>
+                        <quality>Good</quality>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropOutfitTitle">
+        <defName>SoldierAccessoriesAltDrop</defName>
+        <label>light recon accessories</label>
+        <description>Request a drop of classic recon accessories. Full armor is not included.</description>
+        <permitPointCost>3</permitPointCost>
+        <minTitle>Praetor</minTitle>
+        <cooldownDays>40</cooldownDays>
+        <royalAid>
+            <favorCost>11</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Armor</category>
+                <column>0</column>
+                <row>7</row>
+                <itemData>
+                    <li>
+                        <thing>CE_Apparel_Backpack</thing>
+                        <count>1</count>
+                        <stuff>Synthread</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Apparello_Ammobelt</thing>
+                        <count>1</count>
+                        <stuff>Leather_Light</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Apparello_Visoor</thing>
+                        <count>1</count>
+                        <stuff>Titanium</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Apparel_FlakVest</thing>
+                        <count>1</count>
+                        <stuff>Synthread</stuff>
+                        <quality>Good</quality>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropOutfitTitle">
+        <defName>ShieldBeltDrop</defName>
+        <label>shield belt</label>
+        <description>Request a drop of one shield belt.</description>
+        <cooldownDays>50</cooldownDays>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Armor</category>
+                <column>0</column>
+                <row>8</row>
+                <itemData>
+                    <li>
+                        <thing>Apparel_ShieldBelt</thing>
+                        <count>1</count>
+                        <stuff>TitaniumBar</stuff>
+                        <quality>Excellent</quality>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+    
 </Defs>

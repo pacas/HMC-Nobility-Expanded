@@ -4,6 +4,10 @@
     <!-- броня -->
     <ArmorPermitTitle.label>броня</ArmorPermitTitle.label>
     <ArmorPermitTitle.description>Запрос доставки брони.</ArmorPermitTitle.description>
+    <ArmorPermitSmallTitle.label>наборы брони</ArmorPermitSmallTitle.label>
+    <ArmorPermitSmallTitle.description>Запрос доставки различных наборов брони.</ArmorPermitSmallTitle.description>
+    <AccessoriesPermitSmallTitle.label>аксессуары</AccessoriesPermitSmallTitle.label>
+    <AccessoriesPermitSmallTitle.description>Запрос доставки различных аксессуаров к броне.</AccessoriesPermitSmallTitle.description>
     
     <!-- средневековая -->
     <ArmorDrop.label>средневековая броня</ArmorDrop.label>
@@ -28,5 +32,11 @@
     <UltraArmorDrop.description>Запрос доставки набора практически лучшей брони, доступной вашему титулу.</UltraArmorDrop.description>
     <UltraArmorDropPlus.label>ультра броня +</UltraArmorDropPlus.label>
     <UltraArmorDropPlus.description>Запрос доставки набора лучшей брони, доступной вашему титулу.</UltraArmorDropPlus.description>
+
+    <!-- специальная -->
+    <SoldierAccessoriesDrop.label>набор штурмовика</SoldierAccessoriesDrop.label>
+    <SoldierAccessoriesDrop.description>Запрос доставки набора аксесссуаров для штурмовика. Полная броня не входит в комплект.</SoldierAccessoriesDrop.description>
+    <SoldierAccessoriesAltDrop.label>набор разведчика</SoldierAccessoriesAltDrop.label>
+    <SoldierAccessoriesAltDrop.description>Запрос доставки набора аксесссуаров для разведчика. Полная броня не входит в комплект.</SoldierAccessoriesAltDrop.description>
 
 </LanguageData>

@@ -4,8 +4,8 @@
 
     <RoyalTitlePermitDef ParentName="DropResourcesTitle">
         <defName>ApparelPermitTitle</defName>
-        <label>Apparel and Accessories</label>
-        <description>Request a drop of different apparel and accessories.</description>
+        <label>Apparel</label>
+        <description>Request a drop of different apparel.</description>
         <modExtensions>
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Title</type>
@@ -18,28 +18,14 @@
 
     <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
         <defName>WorkerPermitSmallTitle</defName>
-        <label>Workers Apparel</label>
-        <description>Request a drop of different apparel for workers.</description>
+        <label>Specialized Sets</label>
+        <description>Request a drop of different apparel for different tasks.</description>
         <modExtensions>
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Category</type>
                 <category>Apparel</category>
                 <column>0</column>
                 <row>1</row>
-            </li>
-        </modExtensions>
-    </RoyalTitlePermitDef>
-
-    <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
-        <defName>SpecialApparelPermitSmallTitle</defName>
-        <label>Special Apparel</label>
-        <description>Request a drop of different apparel for soldiers and nobility.</description>
-        <modExtensions>
-            <li Class="NobilityExpanded.PermitExtensionList">
-                <type>Category</type>
-                <category>Apparel</category>
-                <column>0</column>
-                <row>5</row>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
@@ -53,7 +39,7 @@
                 <type>Category</type>
                 <category>Apparel</category>
                 <column>0</column>
-                <row>9</row>
+                <row>7</row>
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
@@ -343,157 +329,6 @@
         </modExtensions>
     </RoyalTitlePermitDef>
 
-    <!-- Special -->
-    
-    <!-- Soldier -->
-    <RoyalTitlePermitDef ParentName="DropOutfitTitle">
-        <defName>SoldierAccessoriesDrop</defName>
-        <label>heavy soldier accessories</label>
-        <description>Request a drop of classic heavy soldier accessories. Full armor is not included.</description>
-        <permitPointCost>4</permitPointCost>
-        <cooldownDays>45</cooldownDays>
-        <minTitle>Praetor</minTitle>
-        <royalAid>
-            <favorCost>17</favorCost>
-        </royalAid>
-        <modExtensions>
-            <li Class="NobilityExpanded.PermitExtensionList">
-                <type>Permit</type>
-                <category>Apparel</category>
-                <column>0</column>
-                <row>6</row>
-                <itemData>
-                    <li>
-                        <thing>CE_Apparel_Backpack</thing>
-                        <count>1</count>
-                        <stuff>Synthread</stuff>
-                        <quality>Good</quality>
-                    </li>
-                    <li>
-                        <thing>CE_Apparel_TacVest</thing>
-                        <count>1</count>
-                        <stuff>Synthread</stuff>
-                        <quality>Good</quality>
-                    </li>
-                    <li>
-                        <thing>Marine_BattleMask</thing>
-                        <count>1</count>
-                        <stuff>TitaniumBar</stuff>
-                        <quality>Good</quality>
-                    </li>
-                    <li>
-                        <thing>Rimarsenal_VestPlate</thing>
-                        <count>1</count>
-                        <stuff>TitaniumBar</stuff>
-                        <quality>Good</quality>
-                    </li>
-                </itemData>
-            </li>
-        </modExtensions>
-    </RoyalTitlePermitDef>
-
-    <RoyalTitlePermitDef ParentName="DropOutfitTitle">
-        <defName>SoldierAccessoriesAltDrop</defName>
-        <label>recon soldier accessories</label>
-        <description>Request a drop of classic recon soldier accessories. Full armor is not included.</description>
-        <permitPointCost>3</permitPointCost>
-        <minTitle>Praetor</minTitle>
-        <cooldownDays>40</cooldownDays>
-        <royalAid>
-            <favorCost>11</favorCost>
-        </royalAid>
-        <modExtensions>
-            <li Class="NobilityExpanded.PermitExtensionList">
-                <type>Permit</type>
-                <category>Apparel</category>
-                <column>1</column>
-                <row>6</row>
-                <itemData>
-                    <li>
-                        <thing>CE_Apparel_Backpack</thing>
-                        <count>1</count>
-                        <stuff>Synthread</stuff>
-                        <quality>Good</quality>
-                    </li>
-                    <li>
-                        <thing>Apparello_Ammobelt</thing>
-                        <count>1</count>
-                        <stuff>Leather_Light</stuff>
-                        <quality>Good</quality>
-                    </li>
-                    <li>
-                        <thing>Apparello_Visoor</thing>
-                        <count>1</count>
-                        <stuff>Titanium</stuff>
-                        <quality>Good</quality>
-                    </li>
-                    <li>
-                        <thing>Apparel_FlakVest</thing>
-                        <count>1</count>
-                        <stuff>Synthread</stuff>
-                        <quality>Good</quality>
-                    </li>
-                </itemData>
-            </li>
-        </modExtensions>
-    </RoyalTitlePermitDef>
-
-    <!-- Specialized -->
-    <RoyalTitlePermitDef ParentName="DropOutfitTitle">
-        <defName>HazmatOutfitDrop</defName>
-        <label>hazmat outfit</label>
-        <description>Request a drop of outfit to work in radioactive environments.</description>
-        <cooldownDays>50</cooldownDays>
-        <royalAid>
-            <favorCost>8</favorCost>
-        </royalAid>
-        <modExtensions>
-            <li Class="NobilityExpanded.PermitExtensionList">
-                <type>Permit</type>
-                <category>Apparel</category>
-                <column>0</column>
-                <row>7</row>
-                <itemData>
-                    <li>
-                        <thing>Apparel_HS</thing>
-                        <count>1</count>
-                        <stuff>Synthread</stuff>
-                        <quality>Good</quality>
-                    </li>
-                    <li>
-                        <thing>Apparel_HSH</thing>
-                        <count>1</count>
-                        <stuff>Synthread</stuff>
-                        <quality>Good</quality>
-                    </li>
-                </itemData>
-            </li>
-        </modExtensions>
-    </RoyalTitlePermitDef>
-
-    <RoyalTitlePermitDef ParentName="DropOutfitTitle">
-        <defName>ShieldBeltDrop</defName>
-        <label>shield belt</label>
-        <description>Request a drop of one shield belt.</description>
-        <cooldownDays>50</cooldownDays>
-        <modExtensions>
-            <li Class="NobilityExpanded.PermitExtensionList">
-                <type>Permit</type>
-                <category>Apparel</category>
-                <column>1</column>
-                <row>7</row>
-                <itemData>
-                    <li>
-                        <thing>Apparel_ShieldBelt</thing>
-                        <count>1</count>
-                        <stuff>TitaniumBar</stuff>
-                        <quality>Excellent</quality>
-                    </li>
-                </itemData>
-            </li>
-        </modExtensions>
-    </RoyalTitlePermitDef>
-
     <!-- Royal -->
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
         <defName>RoyalOutfitDrop</defName>
@@ -510,7 +345,7 @@
                 <type>Permit</type>
                 <category>Apparel</category>
                 <column>0</column>
-                <row>8</row>
+                <row>5</row>
                 <itemData>
                     <li>
                         <thing>Apparel_ShirtRuffle</thing>
@@ -567,7 +402,7 @@
                 <type>Permit</type>
                 <category>Apparel</category>
                 <column>1</column>
-                <row>8</row>
+                <row>5</row>
                 <itemData>
                     <li>
                         <thing>Apparel_PsyfocusHelmet</thing>
@@ -598,6 +433,39 @@
         </modExtensions>
     </RoyalTitlePermitDef>
 
+    <!-- Specialized -->
+    <RoyalTitlePermitDef ParentName="DropOutfitTitle">
+        <defName>HazmatOutfitDrop</defName>
+        <label>hazmat outfit</label>
+        <description>Request a drop of outfit to work in radioactive environments.</description>
+        <cooldownDays>50</cooldownDays>
+        <royalAid>
+            <favorCost>8</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Apparel</category>
+                <column>0</column>
+                <row>6</row>
+                <itemData>
+                    <li>
+                        <thing>Apparel_HS</thing>
+                        <count>1</count>
+                        <stuff>Synthread</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Apparel_HSH</thing>
+                        <count>1</count>
+                        <stuff>Synthread</stuff>
+                        <quality>Good</quality>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
     <!-- Simple -->
 
     <RoyalTitlePermitDef ParentName="DropOutfitTitle">
@@ -614,7 +482,7 @@
                 <type>Permit</type>
                 <category>Apparel</category>
                 <column>0</column>
-                <row>10</row>
+                <row>8</row>
                 <itemData>
                     <li>
                         <thing>Apparello_Bandal</thing>
@@ -671,7 +539,7 @@
                 <type>Permit</type>
                 <category>Apparel</category>
                 <column>1</column>
-                <row>10</row>
+                <row>8</row>
                 <itemData>
                     <li>
                         <thing>Apparel_Bonnet</thing>
@@ -707,4 +575,5 @@
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
+
 </Defs>
