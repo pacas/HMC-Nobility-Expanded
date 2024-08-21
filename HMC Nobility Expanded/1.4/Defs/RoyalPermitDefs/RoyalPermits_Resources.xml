@@ -854,5 +854,34 @@
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>SerumsDrop</defName>
+        <label>medicine serums</label>
+        <description>Request a drop of a mech serums of your choice.</description>
+        <minTitle>Count</minTitle>
+        <cooldownDays>45</cooldownDays>
+        <royalAid>
+            <favorCost>21</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Resources</category>
+                <row>8</row>
+                <column>1</column>
+                <itemData>
+                    <li>
+                        <thing>MechSerumHealer</thing>
+                        <count>3</count>
+                    </li>
+                    <li>
+                        <thing>MechSerumResurrector</thing>
+                        <count>1</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
     
 </Defs>

@@ -21,12 +21,12 @@
                     <li>
                         <thing>Dll_Tool_Chainsaw</thing>
                         <count>1</count>
-                        <stuff>TitaniumAlloy</stuff>
+                        <stuff>TitaniumBar</stuff>
                     </li>
                     <li>
                         <thing>Dll_Tool_Agriculture</thing>
                         <count>1</count>
-                        <stuff>TitaniumAlloy</stuff>
+                        <stuff>TitaniumBar</stuff>
                     </li>
                 </itemData>
             </li>
@@ -53,12 +53,12 @@
                     <li>
                         <thing>Dll_Tool_Jackhammer</thing>
                         <count>1</count>
-                        <stuff>TitaniumAlloy</stuff>
+                        <stuff>TitaniumBar</stuff>
                     </li>
                     <li>
                         <thing>TFJ_Tool_Mining_Pickaxe</thing>
                         <count>1</count>
-                        <stuff>TitaniumAlloy</stuff>
+                        <stuff>TitaniumBar</stuff>
                     </li>
                 </itemData>
             </li>
@@ -85,17 +85,17 @@
                     <li>
                         <thing>Dll_Tool_AngleGrinder</thing>
                         <count>1</count>
-                        <stuff>TitaniumAlloy</stuff>
+                        <stuff>TitaniumBar</stuff>
                     </li>
                     <li>
                         <thing>Dll_Tool_Shovel</thing>
                         <count>1</count>
-                        <stuff>TitaniumAlloy</stuff>
+                        <stuff>TitaniumBar</stuff>
                     </li>
                     <li>
                         <thing>TFJ_Tool_Building_Hammer</thing>
                         <count>1</count>
-                        <stuff>TitaniumAlloy</stuff>
+                        <stuff>TitaniumBar</stuff>
                     </li>
                 </itemData>
             </li>
@@ -122,17 +122,17 @@
                     <li>
                         <thing>Dll_Tool_SolderingIron</thing>
                         <count>1</count>
-                        <stuff>TitaniumAlloy</stuff>
+                        <stuff>TitaniumBar</stuff>
                     </li>
                     <li>
                         <thing>Dll_Tool_ToolBox</thing>
                         <count>1</count>
-                        <stuff>TitaniumAlloy</stuff>
+                        <stuff>TitaniumBar</stuff>
                     </li>
                     <li>
                         <thing>TFJ_Tool_Building_Hammer</thing>
                         <count>1</count>
-                        <stuff>TitaniumAlloy</stuff>
+                        <stuff>TitaniumBar</stuff>
                     </li>
                 </itemData>
             </li>
@@ -159,12 +159,12 @@
                     <li>
                         <thing>Dll_Tool_Medbag</thing>
                         <count>1</count>
-                        <stuff>TitaniumAlloy</stuff>
+                        <stuff>TitaniumBar</stuff>
                     </li>
                     <li>
                         <thing>MeleeWeapon_Bonesaw</thing>
                         <count>1</count>
-                        <stuff>TitaniumAlloy</stuff>
+                        <stuff>TitaniumBar</stuff>
                     </li>
                 </itemData>
             </li>
@@ -191,12 +191,12 @@
                     <li>
                         <thing>Dll_Tool_LeafBlower</thing>
                         <count>1</count>
-                        <stuff>TitaniumAlloy</stuff>
+                        <stuff>TitaniumBar</stuff>
                     </li>
                     <li>
                         <thing>TFJ_Tool_Broom</thing>
                         <count>1</count>
-                        <stuff>TitaniumAlloy</stuff>
+                        <stuff>TitaniumBar</stuff>
                     </li>
                 </itemData>
             </li>
@@ -223,7 +223,7 @@
                     <li>
                         <thing>Dll_Tool_PDA</thing>
                         <count>1</count>
-                        <stuff>TitaniumAlloy</stuff>
+                        <stuff>TitaniumBar</stuff>
                     </li>
                 </itemData>
             </li>

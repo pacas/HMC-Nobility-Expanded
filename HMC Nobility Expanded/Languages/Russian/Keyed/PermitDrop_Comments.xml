@@ -17,6 +17,7 @@
     <DropComment_WoodDrop>Обычно пластик и металлы дешевле натурального дерева, но у нас тут целая планета-ферма была недавно интегрирована, куча всего снова доступна.</DropComment_WoodDrop>
     <DropComment_ComponentsDrop>Детали, шестерни, поршни, что-то ещё... Сами разбирайтесь что там.</DropComment_ComponentsDrop>
     <DropComment_ChemicalsDrop>Какая-то химия непонятная. Попрошу упаковщиков запаковать всё это получше.</DropComment_ChemicalsDrop>
+    <DropComment_SerumsDrop>Вершина технологий нашего мира. Я знаю о них только из-за своей работы. Мгновенное исцеление и воскрешение - ресурс опасный.</DropComment_SerumsDrop>
 
     <!-- Люди -->
     <DropComment_CallLaborerTeam>Не хватает рук? У нас есть отборный низкоквалифицированный персонал с нижних уровней планеты специально для вас!</DropComment_CallLaborerTeam>

@@ -6,8 +6,6 @@
     <BasePermitTitle.description>Запросы доставки ресурсов или услуг.</BasePermitTitle.description>
     <HSKBasePermitSmallTitle.label>Базовые запросы</HSKBasePermitSmallTitle.label>
     <HSKBasePermitSmallTitle.description>Запросы доставки основных ресурсов или услуг.</HSKBasePermitSmallTitle.description>
-    <BiotechPermitSmallTitle.label>Биотех</BiotechPermitSmallTitle.label>
-    <BiotechPermitSmallTitle.description>Запросы доставки ресурсов из DLC Biotech.</BiotechPermitSmallTitle.description>
     
     <!-- базовые -->
     <CallTransportShuttle.label>транспортный челнок</CallTransportShuttle.label>
@@ -40,6 +38,8 @@
     <ComponentsDrop.description>Запрос доставки различных компонентов на выбор.</ComponentsDrop.description>
     <ChemicalsDrop.label>химикаты и реагенты</ChemicalsDrop.label>
     <ChemicalsDrop.description>Запрос доставки различных видов химикатов и реагентов на выбор.</ChemicalsDrop.description>
+    <SerumsDrop.label>сыворотки</SerumsDrop.label>
+    <SerumsDrop.description>Запрос доставки сыворотки на выбор.</SerumsDrop.description>
     
     <!-- biotech -->
     <VampiresFoodDrop.label>гемоген-пакет</VampiresFoodDrop.label>
