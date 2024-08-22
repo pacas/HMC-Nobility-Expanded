@@ -51,6 +51,10 @@
                 <column>0</column>
                 <itemData>
                     <li>
+                        <thing>Coal</thing>
+                        <count>250</count>
+                    </li>
+                    <li>
                         <thing>Steel</thing>
                         <count>200</count>
                     </li>
