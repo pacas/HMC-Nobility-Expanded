@@ -5,7 +5,7 @@
         <defName>EODBladeDrop</defName>
         <label>monoblade</label>
         <description>Request a drop of a prestige monoblade.</description>
-        <minTitle>Viscount</minTitle>
+        <minTitle>Count</minTitle>
         <cooldownDays>45</cooldownDays>
         <permitPointCost>2</permitPointCost>
         <royalAid>
