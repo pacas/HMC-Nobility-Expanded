@@ -5,6 +5,8 @@
             <li Class="PatchOperationRemove">
                 <xpath>Defs/RoyalTitlePermitDef[
                 defName="GlitterMedDrop" or
+                defName="VFEI_CallImperialRegiment" or
+                defName="VFEI_CallStellicGuards" or
                 defName="VFEI_CallEvacShuttle" or
                 defName="VFEI_CallOrbitalSlicingBeam"
                 ]/prerequisite</xpath>
@@ -27,14 +29,10 @@
                 defName="VFEI_HyperweaveDrop" or
                 defName="VFEI_HEShellsDrop" or
                 defName="VFEI_NobleFoodDrop" or
-                    
                 defName="VFEI_CallTrooperPlatoon" or
                 defName="VFEI_CallJanissaryPlatoon" or
                 defName="VFEI_CallCataphractPlatoon" or
                 defName="VFEI_CallLaborerUnion" or
-                defName="VFEI_CallStellicGuards" or
-                defName="VFEI_CallImperialRegiment" or
-                    
                 defName="VFEI_StoneDrop"]
                 </xpath>
             </li>
@@ -47,6 +45,87 @@
                 defName="VFEI_BurnoutShieldDrop" or
                 defName="VFEI_CallEvacShuttle"
                 ]/uiPosition</xpath>
+            </li>
+
+            <li Class="PatchOperationAddModExtension">
+                <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallStellicGuards"]</xpath>
+                <value>
+                    <li Class="NobilityExpanded.PermitExtensionList">
+                        <type>Permit</type>
+                        <category>Pawns</category>
+                        <row>6</row>
+                        <column>0</column>
+                    </li>
+                </value>
+            </li>
+            <li Class="PatchOperationAddModExtension">
+                <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallImperialRegiment"]</xpath>
+                <value>
+                    <li Class="NobilityExpanded.PermitExtensionList">
+                        <type>Permit</type>
+                        <category>Pawns</category>
+                        <row>6</row>
+                        <column>1</column>
+                    </li>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallStellicGuards"]/minTitle</xpath>
+                <value>
+                    <minTitle>Duke</minTitle>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallImperialRegiment"]/minTitle</xpath>
+                <value>
+                    <minTitle>Consul</minTitle>
+                </value>
+            </li>
+            
+            
+            <li Class="PatchOperationAddModExtension">
+                <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_StrikerTurretDrop"]</xpath>
+                <value>
+                    <li Class="NobilityExpanded.PermitExtensionList">
+                        <type>Permit</type>
+                        <category>Airstrike</category>
+                        <row>2</row>
+                        <column>0</column>
+                    </li>
+                </value>
+            </li>
+            <li Class="PatchOperationAddModExtension">
+                <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_BurnoutShieldDrop"]</xpath>
+                <value>
+                    <li Class="NobilityExpanded.PermitExtensionList">
+                        <type>Permit</type>
+                        <category>Airstrike</category>
+                        <row>2</row>
+                        <column>1</column>
+                    </li>
+                </value>
+            </li>
+            <li Class="PatchOperationAddModExtension">
+                <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallEvacShuttle"]</xpath>
+                <value>
+                    <li Class="NobilityExpanded.PermitExtensionList">
+                        <type>Permit</type>
+                        <category>Airstrike</category>
+                        <row>3</row>
+                        <column>0</column>
+                    </li>
+                </value>
+            </li>
+            <li Class="PatchOperationAddModExtension">
+                <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallOrbitalSlicingBeam"]</xpath>
+                <value>
+                    <li Class="NobilityExpanded.PermitExtensionList">
+                        <type>Permit</type>
+                        <category>Airstrike</category>
+                        <row>3</row>
+                        <column>1</column>
+                    </li>
+                </value>
             </li>
             
             <li Class="PatchOperationReplace">
@@ -78,6 +157,8 @@
             
             <li Class="PatchOperationReplace">
                 <xpath>Defs/RoyalTitlePermitDef[
+                defName="VFEI_CallImperialRegiment" or
+                defName="VFEI_CallStellicGuards" or
                 defName="VFEI_CallTechfriar" or
                 defName="VFEI_CallAbsolver"
                 ]/permitPointCost</xpath>
@@ -89,7 +170,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallOrbitalSlicingBeam"]/permitPointCost</xpath>
                 <value>
-                    <permitPointCost>8</permitPointCost>
+                    <permitPointCost>5</permitPointCost>
                 </value>
             </li>
             
