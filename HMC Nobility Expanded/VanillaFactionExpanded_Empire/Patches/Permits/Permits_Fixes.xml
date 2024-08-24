@@ -81,6 +81,29 @@
                     <minTitle>Consul</minTitle>
                 </value>
             </li>
+
+            <li Class="PatchOperationAddModExtension">
+                <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallTechfriar"]</xpath>
+                <value>
+                    <li Class="NobilityExpanded.PermitExtensionList">
+                        <type>Permit</type>
+                        <category>Pawns</category>
+                        <row>7</row>
+                        <column>0</column>
+                    </li>
+                </value>
+            </li>
+            <li Class="PatchOperationAddModExtension">
+                <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallAbsolver"]</xpath>
+                <value>
+                    <li Class="NobilityExpanded.PermitExtensionList">
+                        <type>Permit</type>
+                        <category>Pawns</category>
+                        <row>7</row>
+                        <column>1</column>
+                    </li>
+                </value>
+            </li>
             
             
             <li Class="PatchOperationAddModExtension">
@@ -130,8 +153,8 @@
             
             <li Class="PatchOperationReplace">
                 <xpath>Defs/RoyalTitlePermitDef[
-                defName="VFEI_BurnoutShieldDrop" or
-                defName="VFEI_CallEvacShuttle"
+                    defName="VFEI_StrikerTurretDrop" or
+                    defName="VFEI_CallEvacShuttle"
                 ]/permitPointCost</xpath>
                 <value>
                     <permitPointCost>2</permitPointCost>
@@ -140,8 +163,8 @@
             
             <li Class="PatchOperationReplace">
                 <xpath>Defs/RoyalTitlePermitDef[
-                defName="VFEI_StrikerTurretDrop" or
-                defName="VFEI_CallEvacShuttle"
+                    defName="VFEI_CallTechfriar" or
+                    defName="VFEI_CallAbsolver"
                 ]/permitPointCost</xpath>
                 <value>
                     <permitPointCost>3</permitPointCost>
@@ -149,18 +172,37 @@
             </li>
 
             <li Class="PatchOperationReplace">
-                <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_StrikerTurretDrop"]/cooldownDays</xpath>
+                <xpath>Defs/RoyalTitlePermitDef[
+                    defName="VFEI_StrikerTurretDrop" or
+                    defName="VFEI_BurnoutShieldDrop"
+                ]/cooldownDays</xpath>
+                <value>
+                    <cooldownDays>15</cooldownDays>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/RoyalTitlePermitDef[
+                    defName="VFEI_CallEvacShuttle"
+                    ]/cooldownDays</xpath>
                 <value>
                     <cooldownDays>21</cooldownDays>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/RoyalTitlePermitDef[
+                    defName="VFEI_CallOrbitalSlicingBeam"
+                    ]/cooldownDays</xpath>
+                <value>
+                    <cooldownDays>45</cooldownDays>
                 </value>
             </li>
             
             <li Class="PatchOperationReplace">
                 <xpath>Defs/RoyalTitlePermitDef[
-                defName="VFEI_CallImperialRegiment" or
-                defName="VFEI_CallStellicGuards" or
-                defName="VFEI_CallTechfriar" or
-                defName="VFEI_CallAbsolver"
+                    defName="VFEI_CallImperialRegiment" or
+                    defName="VFEI_CallStellicGuards"
                 ]/permitPointCost</xpath>
                 <value>
                     <permitPointCost>4</permitPointCost>

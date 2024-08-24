@@ -30,36 +30,6 @@
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
-    
-    <!-- New -->
-
-    <RoyalTitlePermitDef>
-        <defName>CallMilitaryAidSmallPlus</defName>
-        <label>big trooper squad</label>
-        <description>Call a group of 6 light troopers to aid you in battle.</description>
-        <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
-        <minTitle>Praetor</minTitle>
-        <faction>Empire</faction>
-        <prerequisite>CallMilitaryAidSmall</prerequisite>
-        <permitPointCost>3</permitPointCost>
-        <royalAid>
-            <favorCost>6</favorCost>
-            <pawnKindDef>Empire_Fighter_Trooper</pawnKindDef>
-            <pawnCount>6</pawnCount>
-            <targetingRange>39.9</targetingRange>
-        </royalAid>
-        <cooldownDays>40</cooldownDays>
-        <modExtensions>
-            <li Class="NobilityExpanded.PermitExtensionList">
-                <type>Permit</type>
-                <category>Pawns</category>
-                <row>4</row>
-                <column>1</column>
-            </li>
-        </modExtensions>
-    </RoyalTitlePermitDef>
-    
-    <!-- Overwrite -->
 
     <RoyalTitlePermitDef>
         <defName>CallLaborerTeam</defName>
@@ -136,6 +106,33 @@
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
+    
+    
+    <RoyalTitlePermitDef>
+        <defName>CallMilitaryAidSmallPlus</defName>
+        <label>big trooper squad</label>
+        <description>Call a group of 6 light troopers to aid you in battle.</description>
+        <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+        <minTitle>Praetor</minTitle>
+        <faction>Empire</faction>
+        <prerequisite>CallMilitaryAidSmall</prerequisite>
+        <permitPointCost>2</permitPointCost>
+        <royalAid>
+            <favorCost>6</favorCost>
+            <pawnKindDef>Empire_Fighter_Trooper</pawnKindDef>
+            <pawnCount>6</pawnCount>
+            <targetingRange>39.9</targetingRange>
+        </royalAid>
+        <cooldownDays>40</cooldownDays>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Pawns</category>
+                <row>4</row>
+                <column>1</column>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef>
         <defName>CallMilitaryAidLarge</defName>
@@ -169,7 +166,7 @@
         <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
         <minTitle>Count</minTitle>
         <faction>Empire</faction>
-        <permitPointCost>4</permitPointCost>
+        <permitPointCost>2</permitPointCost>
         <prerequisite>CallMilitaryAidLarge</prerequisite>
         <royalAid>
             <favorCost>8</favorCost>

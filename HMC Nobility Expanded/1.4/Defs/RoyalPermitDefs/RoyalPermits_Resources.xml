@@ -39,7 +39,7 @@
         <minTitle>Acolyte</minTitle>
         <faction>Empire</faction>
         <permitPointCost>1</permitPointCost>
-        <cooldownDays>12</cooldownDays>
+        <cooldownDays>30</cooldownDays>
         <royalAid>
             <favorCost>4</favorCost>
         </royalAid>
@@ -52,39 +52,39 @@
                 <itemData>
                     <li>
                         <thing>Coal</thing>
-                        <count>250</count>
+                        <count>750</count>
                     </li>
                     <li>
                         <thing>Steel</thing>
-                        <count>200</count>
+                        <count>500</count>
                     </li>
                     <li>
                         <thing>Copper</thing>
-                        <count>200</count>
+                        <count>500</count>
                     </li>
                     <li>
                         <thing>Tin</thing>
-                        <count>200</count>
+                        <count>500</count>
                     </li>
                     <li>
                         <thing>Aluminium</thing>
-                        <count>200</count>
+                        <count>500</count>
                     </li>
                     <li>
                         <thing>Anglesite</thing>
-                        <count>60</count>
+                        <count>200</count>
                     </li>
                     <li>
                         <thing>Nickel</thing>
-                        <count>45</count>
+                        <count>150</count>
                     </li>
                     <li>
                         <thing>Ilmenite</thing>
-                        <count>30</count>
+                        <count>100</count>
                     </li>
                     <li>
                         <thing>Wolframite</thing>
-                        <count>30</count>
+                        <count>100</count>
                     </li>
                 </itemData>
             </li>
@@ -96,7 +96,7 @@
         <label>precious ores</label>
         <description>Request a drop of precious ores with the option to select the required ones.</description>
         <minTitle>Knight</minTitle>
-        <cooldownDays>25</cooldownDays>
+        <cooldownDays>30</cooldownDays>
         <royalAid>
             <favorCost>6</favorCost>
         </royalAid>
@@ -109,7 +109,7 @@
                 <itemData>
                     <li>
                         <thing>Silver</thing>
-                        <count>1200</count>
+                        <count>1500</count>
                     </li>
                     <li>
                         <thing>Gold</thing>
@@ -769,63 +769,63 @@
                 <itemData>
                     <li>
                         <thing>ComponentMedieval</thing>
-                        <count>300</count>
-                    </li>
-                    <li>
-                        <thing>ComponentIndustrial</thing>
                         <count>120</count>
                     </li>
                     <li>
+                        <thing>ComponentIndustrial</thing>
+                        <count>50</count>
+                    </li>
+                    <li>
                         <thing>ComponentAdvanced</thing>
-                        <count>50</count>
-                    </li>
-                    <li>
-                        <thing>ComponentSpacer</thing>
-                        <count>15</count>
-                    </li>
-                    <li>
-                        <thing>ComponentUltra</thing>
-                        <count>8</count>
-                    </li>
-                    <li>
-                        <thing>Mechanism</thing>
-                        <count>50</count>
-                    </li>
-                    <li>
-                        <thing>AdvMechanism</thing>
-                        <count>25</count>
-                    </li>
-                    <li>
-                        <thing>ElectronicComponents</thing>
-                        <count>150</count>
-                    </li>
-                    <li>
-                        <thing>Electronics</thing>
                         <count>20</count>
                     </li>
                     <li>
-                        <thing>Microchips</thing>
-                        <count>10</count>
+                        <thing>ComponentSpacer</thing>
+                        <count>5</count>
                     </li>
                     <li>
-                        <thing>BioMicrochips</thing>
+                        <thing>ComponentUltra</thing>
                         <count>3</count>
                     </li>
                     <li>
+                        <thing>Mechanism</thing>
+                        <count>20</count>
+                    </li>
+                    <li>
+                        <thing>AdvMechanism</thing>
+                        <count>10</count>
+                    </li>
+                    <li>
+                        <thing>ElectronicComponents</thing>
+                        <count>30</count>
+                    </li>
+                    <li>
+                        <thing>Electronics</thing>
+                        <count>5</count>
+                    </li>
+                    <li>
+                        <thing>Microchips</thing>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <thing>BioMicrochips</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
                         <thing>Wire</thing>
-                        <count>1500</count>
+                        <count>500</count>
                     </li>
                     <li>
                         <thing>MagneticMaterial</thing>
-                        <count>50</count>
+                        <count>15</count>
                     </li>
                     <li>
                         <thing>BiosyntheticMaterial</thing>
-                        <count>50</count>
+                        <count>15</count>
                     </li>
                     <li>
                         <thing>Hexcell</thing>
-                        <count>25</count>
+                        <count>15</count>
                     </li>
                 </itemData>
             </li>

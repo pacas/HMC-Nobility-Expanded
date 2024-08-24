@@ -116,12 +116,12 @@
   <VFEI_CallEvacShuttle.description>Запрос бронированного челнока для собственных нужд. Челнок может перевозить людей, животных и грузы в любую точку в радиусе 40 клеток на карте мира. Он пробудет на карте очень ограниченное время.</VFEI_CallEvacShuttle.description>
 
   <!-- EN: call stellic guards -->
-  <VFEI_CallStellicGuards.label>вызов отряда телохранителей стелларха</VFEI_CallStellicGuards.label>
+  <VFEI_CallStellicGuards.label>отряд телохранителей стелларха</VFEI_CallStellicGuards.label>
   <!-- EN: Call a group of 6 stellic guards, ranged and melee, to aid you in battle. -->
   <VFEI_CallStellicGuards.description>Вызов группы из 6 телохранителей стелларха, вооружённых для дальнего и ближнего боя, для помощи в бою.</VFEI_CallStellicGuards.description>
 
   <!-- EN: call imperial regiment -->
-  <VFEI_CallImperialRegiment.label>вызов имперского полка</VFEI_CallImperialRegiment.label>
+  <VFEI_CallImperialRegiment.label>имперский полк</VFEI_CallImperialRegiment.label>
   <!-- EN: Call a group of 10 janissaries and 6 heavy cataphracts that will arrive in an armed shuttle, to aid you in battle. You cannot control them, but they will help you eliminate any threats in the area. They will leave after all threats are eliminated. -->
   <VFEI_CallImperialRegiment.description>Вызов группы из 10 янычар и 6 тяжеловооружённых катафрактариев, которые прибудут на бронированном челноке, для помощи в бою. Они помогут вам устранить любые угрозы, а после этого покинут карту. Управлять ими напрямую нельзя.</VFEI_CallImperialRegiment.description>
   

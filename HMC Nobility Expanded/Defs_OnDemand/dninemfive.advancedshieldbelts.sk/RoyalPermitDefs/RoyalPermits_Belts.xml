@@ -5,6 +5,7 @@
         <defName>ShieldHeavyBeltDrop</defName>
         <label>heavy shield belt</label>
         <description>Request a drop of one heavy shield belt.</description>
+        <permitPointCost>1</permitPointCost>
         <prerequisite>ShieldBeltDrop</prerequisite>
         <cooldownDays>15</cooldownDays>
         <minTitle>Legatus</minTitle>
@@ -30,6 +31,7 @@
         <defName>ShieldQRBeltDrop</defName>
         <label>quick-recharge shield belt</label>
         <description>Request a drop of one quick-recharge shield belt.</description>
+        <permitPointCost>1</permitPointCost>
         <prerequisite>ShieldBeltDrop</prerequisite>
         <cooldownDays>15</cooldownDays>
         <minTitle>Legatus</minTitle>

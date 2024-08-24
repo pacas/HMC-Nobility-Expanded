@@ -22,7 +22,7 @@
         <description>Request a drop of different armor set.</description>
         <modExtensions>
             <li Class="NobilityExpanded.PermitExtensionList">
-                <type>Title</type>
+                <type>Category</type>
                 <category>Armor</category>
                 <column>0</column>
                 <row>1</row>
@@ -500,6 +500,7 @@
         <defName>ShieldBeltDrop</defName>
         <label>shield belt</label>
         <description>Request a drop of one shield belt.</description>
+        <permitPointCost>1</permitPointCost>
         <cooldownDays>15</cooldownDays>
         <modExtensions>
             <li Class="NobilityExpanded.PermitExtensionList">

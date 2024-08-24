@@ -641,7 +641,7 @@
         <defName>MythicalAnimalDrop</defName>
         <label>mythical</label>
         <description>Request a drop of one random mythical animal. Or a cat.</description>
-        <permitPointCost>5</permitPointCost>
+        <permitPointCost>4</permitPointCost>
         <minTitle>Baron</minTitle>
         <cooldownDays>60</cooldownDays>
         <royalAid>
