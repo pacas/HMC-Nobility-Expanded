@@ -51,7 +51,6 @@
     <!-- todo -->
     <!--
     Боеприпасы + Гранаты
-    VFEE military
     -->
     
     <RoyalTitlePermitDef ParentName="DropResourcesUpdated" Name="DropResourcesTitle" Abstract="True">

@@ -72,7 +72,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallStellicGuards"]/minTitle</xpath>
                 <value>
-                    <minTitle>Duke</minTitle>
+                    <minTitle>Margrave</minTitle>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
@@ -88,7 +88,7 @@
                     <li Class="NobilityExpanded.PermitExtensionList">
                         <type>Permit</type>
                         <category>Pawns</category>
-                        <row>7</row>
+                        <row>2</row>
                         <column>0</column>
                     </li>
                 </value>
@@ -100,7 +100,7 @@
                         <type>Permit</type>
                         <category>Pawns</category>
                         <row>7</row>
-                        <column>1</column>
+                        <column>0</column>
                     </li>
                 </value>
             </li>
@@ -148,6 +148,25 @@
                         <row>3</row>
                         <column>1</column>
                     </li>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallStellicGuards"]/label</xpath>
+                <value>
+                    <label>elite troops</label>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallStellicGuards"]/description</xpath>
+                <value>
+                    <description>Call a group of 6 elite troops, ranged and melee, to aid you in battle.</description>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallImperialRegiment"]/label</xpath>
+                <value>
+                    <label>strike squad</label>
                 </value>
             </li>
             

@@ -16,7 +16,7 @@
         </modExtensions>
     </RoyalTitlePermitDef>
 
-    <RoyalTitlePermitDef ParentName="DropResourcesTitle">
+    <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
         <defName>ArmorPermitSmallTitle</defName>
         <label>Armor Sets</label>
         <description>Request a drop of different armor set.</description>

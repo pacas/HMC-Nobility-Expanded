@@ -863,6 +863,7 @@
         <defName>SerumsDrop</defName>
         <label>medicine serums</label>
         <description>Request a drop of a mech serums of your choice.</description>
+        <permitPointCost>3</permitPointCost>
         <minTitle>Count</minTitle>
         <cooldownDays>45</cooldownDays>
         <royalAid>
