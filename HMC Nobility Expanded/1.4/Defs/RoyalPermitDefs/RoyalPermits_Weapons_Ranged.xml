@@ -194,7 +194,6 @@
         <minTitle>Knight</minTitle>
         <cooldownDays>22</cooldownDays>
         <prerequisite>PistolDrop</prerequisite>
-        <permitPointCost>2</permitPointCost>
         <royalAid>
             <favorCost>7</favorCost>
         </royalAid>
@@ -303,7 +302,7 @@
         <description>Request a drop of random SMG with ammo.</description>
         <minTitle>Knight</minTitle>
         <cooldownDays>16</cooldownDays>
-        <permitPointCost>2</permitPointCost>
+        <permitPointCost>1</permitPointCost>
         <royalAid>
             <favorCost>6</favorCost>
         </royalAid>
@@ -402,7 +401,7 @@
         <minTitle>Legatus</minTitle>
         <cooldownDays>28</cooldownDays>
         <prerequisite>SMGDrop</prerequisite>
-        <permitPointCost>3</permitPointCost>
+        <permitPointCost>2</permitPointCost>
         <royalAid>
             <favorCost>12</favorCost>
         </royalAid>
@@ -497,7 +496,6 @@
         <description>Request a drop of random shotgun with ammo. Only basic ones.</description>
         <minTitle>Knight</minTitle>
         <cooldownDays>16</cooldownDays>
-        <permitPointCost>2</permitPointCost>
         <royalAid>
             <favorCost>8</favorCost>
         </royalAid>
@@ -581,7 +579,7 @@
         <minTitle>Legatus</minTitle>
         <cooldownDays>28</cooldownDays>
         <prerequisite>ShotgunDrop</prerequisite>
-        <permitPointCost>3</permitPointCost>
+        <permitPointCost>2</permitPointCost>
         <royalAid>
             <favorCost>15</favorCost>
         </royalAid>
@@ -676,7 +674,7 @@
         <description>Request a drop of random rifle with ammo. Only basic ones.</description>
         <minTitle>Praetor</minTitle>
         <cooldownDays>30</cooldownDays>
-        <permitPointCost>3</permitPointCost>
+        <permitPointCost>2</permitPointCost>
         <royalAid>
             <favorCost>10</favorCost>
         </royalAid>
@@ -1001,7 +999,7 @@
         <description>Request a drop of random sniper rifle with ammo. Only basic ones.</description>
         <minTitle>Baron</minTitle>
         <cooldownDays>40</cooldownDays>
-        <permitPointCost>3</permitPointCost>
+        <permitPointCost>2</permitPointCost>
         <royalAid>
             <favorCost>11</favorCost>
         </royalAid>
@@ -1065,7 +1063,7 @@
         <minTitle>Count</minTitle>
         <cooldownDays>65</cooldownDays>
         <prerequisite>SniperRifleDrop</prerequisite>
-        <permitPointCost>5</permitPointCost>
+        <permitPointCost>4</permitPointCost>
         <royalAid>
             <favorCost>22</favorCost>
         </royalAid>
@@ -1251,7 +1249,7 @@
         <description>Request a drop of random machine gun with ammo. Only basic ones.</description>
         <minTitle>Baron</minTitle>
         <cooldownDays>40</cooldownDays>
-        <permitPointCost>3</permitPointCost>
+        <permitPointCost>2</permitPointCost>
         <royalAid>
             <favorCost>11</favorCost>
         </royalAid>
@@ -1335,7 +1333,7 @@
         <minTitle>Count</minTitle>
         <cooldownDays>65</cooldownDays>
         <prerequisite>MGDrop</prerequisite>
-        <permitPointCost>5</permitPointCost>
+        <permitPointCost>4</permitPointCost>
         <royalAid>
             <favorCost>22</favorCost>
         </royalAid>
@@ -1504,7 +1502,7 @@
         <minTitle>Count</minTitle>
         <cooldownDays>90</cooldownDays>
         <prerequisite>LauncherDrop</prerequisite>
-        <permitPointCost>5</permitPointCost>
+        <permitPointCost>4</permitPointCost>
         <royalAid>
             <favorCost>22</favorCost>
         </royalAid>
@@ -1578,7 +1576,7 @@
         <description>Request a drop of random blaster weapon with ammo.</description>
         <minTitle>Count</minTitle>
         <cooldownDays>75</cooldownDays>
-        <permitPointCost>6</permitPointCost>
+        <permitPointCost>5</permitPointCost>
         <royalAid>
             <favorCost>22</favorCost>
         </royalAid>
@@ -1643,7 +1641,7 @@
         <description>Request a drop of random laser rifle with ammo.</description>
         <minTitle>Count</minTitle>
         <cooldownDays>75</cooldownDays>
-        <permitPointCost>6</permitPointCost>
+        <permitPointCost>5</permitPointCost>
         <royalAid>
             <favorCost>22</favorCost>
         </royalAid>
@@ -1715,7 +1713,7 @@
         <description>Request a drop of random plasmer with ammo.</description>
         <minTitle>Count</minTitle>
         <cooldownDays>75</cooldownDays>
-        <permitPointCost>6</permitPointCost>
+        <permitPointCost>5</permitPointCost>
         <royalAid>
             <favorCost>22</favorCost>
         </royalAid>
@@ -1808,7 +1806,7 @@
         <description>Request a drop of random charge rifle with ammo.</description>
         <minTitle>Count</minTitle>
         <cooldownDays>90</cooldownDays>
-        <permitPointCost>7</permitPointCost>
+        <permitPointCost>6</permitPointCost>
         <royalAid>
             <favorCost>22</favorCost>
         </royalAid>

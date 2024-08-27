@@ -93,7 +93,7 @@
         <label>ballista</label>
         <description>Request a drop of two ballistas with ammo.</description>
         <minTitle>Acolyte</minTitle>
-        <cooldownDays>30</cooldownDays>
+        <cooldownDays>15</cooldownDays>
         <permitPointCost>1</permitPointCost>
         <royalAid>
             <favorCost>10</favorCost>
@@ -122,7 +122,7 @@
         <label>catapult</label>
         <description>Request a drop of one catapult with ammo.</description>
         <minTitle>Acolyte</minTitle>
-        <cooldownDays>40</cooldownDays>
+        <cooldownDays>20</cooldownDays>
         <permitPointCost>1</permitPointCost>
         <royalAid>
             <favorCost>10</favorCost>
@@ -152,7 +152,7 @@
         <label>7.62x51mm M240B MG</label>
         <description>Request a drop of one 7.62x51mm M240B MG with ammo.</description>
         <minTitle>Knight</minTitle>
-        <cooldownDays>50</cooldownDays>
+        <cooldownDays>25</cooldownDays>
         <permitPointCost>2</permitPointCost>
         <royalAid>
             <favorCost>12</favorCost>
@@ -181,7 +181,7 @@
         <label>50BMG M2 Browning MG</label>
         <description>Request a drop of one 50BMG M2 Browning MG with ammo.</description>
         <minTitle>Praetor</minTitle>
-        <cooldownDays>70</cooldownDays>
+        <cooldownDays>35</cooldownDays>
         <permitPointCost>3</permitPointCost>
         <royalAid>
             <favorCost>14</favorCost>
@@ -211,7 +211,7 @@
         <label>M134 minigun</label>
         <description>Request a drop of one M134 minigun with ammo.</description>
         <minTitle>Praetor</minTitle>
-        <cooldownDays>60</cooldownDays>
+        <cooldownDays>30</cooldownDays>
         <permitPointCost>3</permitPointCost>
         <royalAid>
             <favorCost>12</favorCost>
@@ -240,7 +240,7 @@
         <label>14.5mm KPV MG</label>
         <description>Request a drop of one 14.5mm KPV MG with ammo.</description>
         <minTitle>Legatus</minTitle>
-        <cooldownDays>80</cooldownDays>
+        <cooldownDays>40</cooldownDays>
         <permitPointCost>3</permitPointCost>
         <royalAid>
             <favorCost>14</favorCost>
@@ -271,7 +271,7 @@
         <label>AGS-17</label>
         <description>Request a drop of one AGS-17 with ammo.</description>
         <minTitle>Praetor</minTitle>
-        <cooldownDays>68</cooldownDays>
+        <cooldownDays>35</cooldownDays>
         <permitPointCost>3</permitPointCost>
         <royalAid>
             <favorCost>12</favorCost>
@@ -300,7 +300,7 @@
         <label>AGS-30</label>
         <description>Request a drop of one AGS-30 with ammo.</description>
         <minTitle>Legatus</minTitle>
-        <cooldownDays>80</cooldownDays>
+        <cooldownDays>40</cooldownDays>
         <prerequisite>AGS17TurretDrop</prerequisite>
         <permitPointCost>2</permitPointCost>
         <royalAid>
@@ -331,7 +331,7 @@
         <label>81mm artillery mortar</label>
         <description>Request a drop of one 81mm artillery mortar with ammo.</description>
         <minTitle>Legatus</minTitle>
-        <cooldownDays>60</cooldownDays>
+        <cooldownDays>45</cooldownDays>
         <permitPointCost>3</permitPointCost>
         <royalAid>
             <favorCost>12</favorCost>
@@ -360,7 +360,7 @@
         <label>90mm flak turret</label>
         <description>Request a drop of one 90mm flak turret with ammo.</description>
         <minTitle>Baron</minTitle>
-        <cooldownDays>70</cooldownDays>
+        <cooldownDays>60</cooldownDays>
         <permitPointCost>4</permitPointCost>
         <royalAid>
             <favorCost>14</favorCost>
@@ -390,7 +390,7 @@
         <label>120mm tank cannon turret</label>
         <description>Request a drop of one 120mm tank cannon turret with ammo.</description>
         <minTitle>Viscount</minTitle>
-        <cooldownDays>90</cooldownDays>
+        <cooldownDays>70</cooldownDays>
         <permitPointCost>4</permitPointCost>
         <royalAid>
             <favorCost>20</favorCost>
@@ -419,7 +419,7 @@
         <label>155mm Howitzer cannon turret</label>
         <description>Request a drop of one 155mm Howitzer cannon turret with ammo.</description>
         <minTitle>Count</minTitle>
-        <cooldownDays>100</cooldownDays>
+        <cooldownDays>75</cooldownDays>
         <permitPointCost>5</permitPointCost>
         <royalAid>
             <favorCost>24</favorCost>
@@ -450,8 +450,8 @@
         <label>MS FGM-148 Javelin</label>
         <description>Request a drop of one MS FGM-148 Javelin with ammo.</description>
         <minTitle>Baron</minTitle>
-        <cooldownDays>80</cooldownDays>
-        <permitPointCost>3</permitPointCost>
+        <cooldownDays>60</cooldownDays>
+        <permitPointCost>2</permitPointCost>
         <royalAid>
             <favorCost>14</favorCost>
         </royalAid>
@@ -480,8 +480,8 @@
         <description>Request a drop of one BGM-71 TOW with ammo.</description>
         <minTitle>Baron</minTitle>
         <prerequisite>JavelinTurretDrop</prerequisite>
-        <cooldownDays>80</cooldownDays>
-        <permitPointCost>2</permitPointCost>
+        <cooldownDays>60</cooldownDays>
+        <permitPointCost>3</permitPointCost>
         <royalAid>
             <favorCost>14</favorCost>
         </royalAid>
@@ -510,8 +510,8 @@
         <label>Medium missile system</label>
         <description>Request a drop of one medium missile system with ammo.</description>
         <minTitle>Viscount</minTitle>
-        <cooldownDays>90</cooldownDays>
-        <permitPointCost>4</permitPointCost>
+        <cooldownDays>60</cooldownDays>
+        <permitPointCost>3</permitPointCost>
         <royalAid>
             <favorCost>20</favorCost>
         </royalAid>
@@ -539,7 +539,7 @@
         <label>Heavy missile system</label>
         <description>Request a drop of one heavy missile system with ammo.</description>
         <minTitle>Count</minTitle>
-        <cooldownDays>100</cooldownDays>
+        <cooldownDays>60</cooldownDays>
         <prerequisite>MediumRKDrop</prerequisite>
         <permitPointCost>4</permitPointCost>
         <royalAid>
@@ -571,8 +571,8 @@
         <label>sentry light turret</label>
         <description>Request a drop of two sentry light turrets with ammo.</description>
         <minTitle>Legatus</minTitle>
-        <cooldownDays>60</cooldownDays>
-        <permitPointCost>3</permitPointCost>
+        <cooldownDays>40</cooldownDays>
+        <permitPointCost>2</permitPointCost>
         <royalAid>
             <favorCost>13</favorCost>
         </royalAid>
@@ -600,9 +600,9 @@
         <label>sentry heavy turret</label>
         <description>Request a drop of two sentry heavy turrets with ammo.</description>
         <minTitle>Baron</minTitle>
-        <cooldownDays>90</cooldownDays>
+        <cooldownDays>60</cooldownDays>
         <prerequisite>LightAutoTurretDrop</prerequisite>
-        <permitPointCost>6</permitPointCost>
+        <permitPointCost>4</permitPointCost>
         <royalAid>
             <favorCost>20</favorCost>
         </royalAid>
@@ -631,8 +631,8 @@
         <label>sentry rocket launcher</label>
         <description>Request a drop of one sentry rocket launcher with ammo.</description>
         <minTitle>Viscount</minTitle>
-        <cooldownDays>80</cooldownDays>
-        <permitPointCost>5</permitPointCost>
+        <cooldownDays>45</cooldownDays>
+        <permitPointCost>4</permitPointCost>
         <royalAid>
             <favorCost>20</favorCost>
         </royalAid>
@@ -660,8 +660,8 @@
         <label>sentry naval turret</label>
         <description>Request a drop of one sentry naval turret with ammo.</description>
         <minTitle>Viscount</minTitle>
-        <cooldownDays>90</cooldownDays>
-        <permitPointCost>5</permitPointCost>
+        <cooldownDays>45</cooldownDays>
+        <permitPointCost>4</permitPointCost>
         <royalAid>
             <favorCost>20</favorCost>
         </royalAid>
@@ -690,8 +690,8 @@
         <label>sentry blaster turret</label>
         <description>Request a drop of two sentry blaster turrets with ammo.</description>
         <minTitle>Count</minTitle>
-        <cooldownDays>100</cooldownDays>
-        <permitPointCost>7</permitPointCost>
+        <cooldownDays>75</cooldownDays>
+        <permitPointCost>5</permitPointCost>
         <royalAid>
             <favorCost>24</favorCost>
         </royalAid>
@@ -719,8 +719,8 @@
         <label>sentry laserbeam turret</label>
         <description>Request a drop of two sentry laserbeam turrets with ammo.</description>
         <minTitle>Count</minTitle>
-        <cooldownDays>100</cooldownDays>
-        <permitPointCost>7</permitPointCost>
+        <cooldownDays>75</cooldownDays>
+        <permitPointCost>5</permitPointCost>
         <royalAid>
             <favorCost>24</favorCost>
         </royalAid>
