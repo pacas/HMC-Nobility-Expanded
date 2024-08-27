@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesTitle">
+        <defName>TurretsMannedPermitTitle</defName>
+        <label>Manned Turrets</label>
+        <description>Request a drop of different manned turrets.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Title</type>
+                <category>Turrets</category>
+                <row>0</row>
+                <column>0</column>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesTitle">
+        <defName>AutoTurretsPermitTitle</defName>
+        <label>Autoturrets</label>
+        <description>Request a drop of different autoturrets.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Title</type>
+                <category>Turrets</category>
+                <row>14</row>
+                <column>0</column>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
+        <defName>TurretsMedievalPermitSmallTitle</defName>
+        <label>Medieval turrets</label>
+        <description>Request a drop of ballistas or catapult.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Category</type>
+                <category>Turrets</category>
+                <row>1</row>
+                <column>0</column>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
+        <defName>TurretsMachinegunsPermitSmallTitle</defName>
+        <label>Stationary Machine Guns</label>
+        <description>Request a drop of different machine guns.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Category</type>
+                <category>Turrets</category>
+                <row>3</row>
+                <column>0</column>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
+        <defName>MortarsPermitSmallTitle</defName>
+        <label>Mortars and Artillery</label>
+        <description>Request a drop of different mortars and artillery.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Category</type>
+                <category>Turrets</category>
+                <row>6</row>
+                <column>0</column>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
+        <defName>RocketsPermitSmallTitle</defName>
+        <label>Rocket Launchers</label>
+        <description>Request a drop of different rocket launchers.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Category</type>
+                <category>Turrets</category>
+                <row>10</row>
+                <column>0</column>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    
+    <!-- Manned -->
+    <!-- Ballista and Catapult-->
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>BallistaDrop</defName>
+        <label>ballista</label>
+        <description>Request a drop of two ballistas with ammo.</description>
+        <minTitle>Acolyte</minTitle>
+        <cooldownDays>30</cooldownDays>
+        <permitPointCost>1</permitPointCost>
+        <royalAid>
+            <favorCost>10</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Turrets</category>
+                <row>2</row>
+                <column>0</column>
+                <itemData>
+                    <li>
+                        <thing>MedievalTimes_Ballista</thing>
+                        <count>2</count>
+                        <ammoCount>40</ammoCount>
+                        <isTurret>true</isTurret>
+                        <stuff>WoodPlank</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>CatapultDrop</defName>
+        <label>catapult</label>
+        <description>Request a drop of one catapult with ammo.</description>
+        <minTitle>Acolyte</minTitle>
+        <cooldownDays>40</cooldownDays>
+        <permitPointCost>1</permitPointCost>
+        <royalAid>
+            <favorCost>10</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Turrets</category>
+                <row>2</row>
+                <column>1</column>
+                <itemData>
+                    <li>
+                        <thing>Medieval_Catapult</thing>
+                        <count>1</count>
+                        <ammoCount>20</ammoCount>
+                        <isTurret>true</isTurret>
+                        <stuff>WoodPlank</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <!-- MG1 -->
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>MG1LightTurretDrop</defName>
+        <label>7.62x51mm M240B MG</label>
+        <description>Request a drop of one 7.62x51mm M240B MG with ammo.</description>
+        <minTitle>Knight</minTitle>
+        <cooldownDays>50</cooldownDays>
+        <permitPointCost>2</permitPointCost>
+        <royalAid>
+            <favorCost>12</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Turrets</category>
+                <row>4</row>
+                <column>0</column>
+                <itemData>
+                    <li>
+                        <thing>Turret_M240B</thing>
+                        <count>1</count>
+                        <ammoCount>400</ammoCount>
+                        <isTurret>true</isTurret>
+                        <stuff>SteelBar</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>MG1HeavyTurretDrop</defName>
+        <label>50BMG M2 Browning MG</label>
+        <description>Request a drop of one 50BMG M2 Browning MG with ammo.</description>
+        <minTitle>Praetor</minTitle>
+        <cooldownDays>70</cooldownDays>
+        <permitPointCost>3</permitPointCost>
+        <royalAid>
+            <favorCost>14</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Turrets</category>
+                <row>4</row>
+                <column>1</column>
+                <itemData>
+                    <li>
+                        <thing>Turret_M2Browning</thing>
+                        <count>1</count>
+                        <ammoCount>450</ammoCount>
+                        <isTurret>true</isTurret>
+                        <stuff>TitaniumBar</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <!-- MG2 -->
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>MG2LightTurretDrop</defName>
+        <label>M134 minigun</label>
+        <description>Request a drop of one M134 minigun with ammo.</description>
+        <minTitle>Praetor</minTitle>
+        <cooldownDays>60</cooldownDays>
+        <permitPointCost>3</permitPointCost>
+        <royalAid>
+            <favorCost>12</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Turrets</category>
+                <row>5</row>
+                <column>0</column>
+                <itemData>
+                    <li>
+                        <thing>Turret_Minigun</thing>
+                        <count>1</count>
+                        <ammoCount>500</ammoCount>
+                        <isTurret>true</isTurret>
+                        <stuff>SteelBar</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>MG2HeavyTurretDrop</defName>
+        <label>14.5mm KPV MG</label>
+        <description>Request a drop of one 14.5mm KPV MG with ammo.</description>
+        <minTitle>Legatus</minTitle>
+        <cooldownDays>80</cooldownDays>
+        <permitPointCost>3</permitPointCost>
+        <royalAid>
+            <favorCost>14</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Turrets</category>
+                <row>5</row>
+                <column>1</column>
+                <itemData>
+                    <li>
+                        <thing>Turret_KPV</thing>
+                        <count>1</count>
+                        <ammoCount>480</ammoCount>
+                        <isTurret>true</isTurret>
+                        <stuff>TitaniumBar</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <!-- Mortars -->
+    <!-- AGS -->
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>AGS17TurretDrop</defName>
+        <label>AGS-17</label>
+        <description>Request a drop of one AGS-17 with ammo.</description>
+        <minTitle>Praetor</minTitle>
+        <cooldownDays>68</cooldownDays>
+        <permitPointCost>3</permitPointCost>
+        <royalAid>
+            <favorCost>12</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Turrets</category>
+                <row>7</row>
+                <column>0</column>
+                <itemData>
+                    <li>
+                        <thing>Turret_AGSThirty</thing>
+                        <count>1</count>
+                        <ammoCount>45</ammoCount>
+                        <isTurret>true</isTurret>
+                        <stuff>SteelBar</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>AGS30TurretDrop</defName>
+        <label>AGS-30</label>
+        <description>Request a drop of one AGS-30 with ammo.</description>
+        <minTitle>Legatus</minTitle>
+        <cooldownDays>80</cooldownDays>
+        <prerequisite>AGS17TurretDrop</prerequisite>
+        <permitPointCost>2</permitPointCost>
+        <royalAid>
+            <favorCost>14</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Turrets</category>
+                <row>7</row>
+                <column>1</column>
+                <itemData>
+                    <li>
+                        <thing>Turret_AGS30GrenadeLauncher</thing>
+                        <count>1</count>
+                        <ammoCount>50</ammoCount>
+                        <isTurret>true</isTurret>
+                        <stuff>TitaniumBar</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <!-- 81/90 -->
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>A81MortarDrop</defName>
+        <label>81mm artillery mortar</label>
+        <description>Request a drop of one 81mm artillery mortar with ammo.</description>
+        <minTitle>Legatus</minTitle>
+        <cooldownDays>60</cooldownDays>
+        <permitPointCost>3</permitPointCost>
+        <royalAid>
+            <favorCost>12</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Turrets</category>
+                <row>8</row>
+                <column>0</column>
+                <itemData>
+                    <li>
+                        <thing>Turret_Mortar</thing>
+                        <count>1</count>
+                        <ammoCount>10</ammoCount>
+                        <isTurret>true</isTurret>
+                        <stuff>SteelBar</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>A90MortarDrop</defName>
+        <label>90mm flak turret</label>
+        <description>Request a drop of one 90mm flak turret with ammo.</description>
+        <minTitle>Baron</minTitle>
+        <cooldownDays>70</cooldownDays>
+        <permitPointCost>4</permitPointCost>
+        <royalAid>
+            <favorCost>14</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Turrets</category>
+                <row>8</row>
+                <column>1</column>
+                <itemData>
+                    <li>
+                        <thing>Turret_Flak</thing>
+                        <count>1</count>
+                        <ammoCount>10</ammoCount>
+                        <isTurret>true</isTurret>
+                        <stuff>SteelBar</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <!-- 120/155 -->
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>A120MortarDrop</defName>
+        <label>120mm tank cannon turret</label>
+        <description>Request a drop of one 120mm tank cannon turret with ammo.</description>
+        <minTitle>Viscount</minTitle>
+        <cooldownDays>90</cooldownDays>
+        <permitPointCost>4</permitPointCost>
+        <royalAid>
+            <favorCost>20</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Turrets</category>
+                <row>9</row>
+                <column>0</column>
+                <itemData>
+                    <li>
+                        <thing>Turret_Cannon</thing>
+                        <count>1</count>
+                        <ammoCount>10</ammoCount>
+                        <isTurret>true</isTurret>
+                        <stuff>SteelBar</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>A155MortarDrop</defName>
+        <label>155mm Howitzer cannon turret</label>
+        <description>Request a drop of one 155mm Howitzer cannon turret with ammo.</description>
+        <minTitle>Count</minTitle>
+        <cooldownDays>100</cooldownDays>
+        <permitPointCost>5</permitPointCost>
+        <royalAid>
+            <favorCost>24</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Turrets</category>
+                <row>9</row>
+                <column>1</column>
+                <itemData>
+                    <li>
+                        <thing>HowitzerTurretGun</thing>
+                        <count>1</count>
+                        <ammoCount>10</ammoCount>
+                        <isTurret>true</isTurret>
+                        <stuff>SteelBar</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <!-- RK -->
+    <!-- RK1 -->
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>JavelinTurretDrop</defName>
+        <label>MS FGM-148 Javelin</label>
+        <description>Request a drop of one MS FGM-148 Javelin with ammo.</description>
+        <minTitle>Baron</minTitle>
+        <cooldownDays>80</cooldownDays>
+        <permitPointCost>3</permitPointCost>
+        <royalAid>
+            <favorCost>14</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Turrets</category>
+                <row>11</row>
+                <column>0</column>
+                <itemData>
+                    <li>
+                        <thing>LightMissileSystem</thing>
+                        <count>1</count>
+                        <ammoCount>10</ammoCount>
+                        <isTurret>true</isTurret>
+                        <stuff>SteelBar</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+    
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>TOWTurretDrop</defName>
+        <label>BGM-71 TOW</label>
+        <description>Request a drop of one BGM-71 TOW with ammo.</description>
+        <minTitle>Baron</minTitle>
+        <prerequisite>JavelinTurretDrop</prerequisite>
+        <cooldownDays>80</cooldownDays>
+        <permitPointCost>2</permitPointCost>
+        <royalAid>
+            <favorCost>14</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Turrets</category>
+                <row>11</row>
+                <column>1</column>
+                <itemData>
+                    <li>
+                        <thing>Turret_TOWLauncher</thing>
+                        <count>1</count>
+                        <ammoCount>10</ammoCount>
+                        <isTurret>true</isTurret>
+                        <stuff>TitaniumBar</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <!-- RK2 -->
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>MediumRKDrop</defName>
+        <label>Medium missile system</label>
+        <description>Request a drop of one medium missile system with ammo.</description>
+        <minTitle>Viscount</minTitle>
+        <cooldownDays>90</cooldownDays>
+        <permitPointCost>4</permitPointCost>
+        <royalAid>
+            <favorCost>20</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Turrets</category>
+                <row>12</row>
+                <column>0</column>
+                <itemData>
+                    <li>
+                        <thing>MediumMissileSystem</thing>
+                        <count>1</count>
+                        <ammoCount>10</ammoCount>
+                        <isTurret>true</isTurret>
+                        <stuff>SteelBar</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>HeavyRKDrop</defName>
+        <label>Heavy missile system</label>
+        <description>Request a drop of one heavy missile system with ammo.</description>
+        <minTitle>Count</minTitle>
+        <cooldownDays>100</cooldownDays>
+        <prerequisite>MediumRKDrop</prerequisite>
+        <permitPointCost>4</permitPointCost>
+        <royalAid>
+            <favorCost>24</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Turrets</category>
+                <row>12</row>
+                <column>1</column>
+                <itemData>
+                    <li>
+                        <thing>RLGun</thing>
+                        <count>1</count>
+                        <ammoCount>10</ammoCount>
+                        <isTurret>true</isTurret>
+                        <stuff>SteelBar</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <!-- AI -->
+    <!-- Sentry -->
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>LightAutoTurretDrop</defName>
+        <label>sentry light turret</label>
+        <description>Request a drop of two sentry light turrets with ammo.</description>
+        <minTitle>Legatus</minTitle>
+        <cooldownDays>60</cooldownDays>
+        <permitPointCost>3</permitPointCost>
+        <royalAid>
+            <favorCost>13</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Turrets</category>
+                <row>15</row>
+                <column>0</column>
+                <itemData>
+                    <li>
+                        <thing>Turret_MiniTurret</thing>
+                        <count>2</count>
+                        <ammoCount>600</ammoCount>
+                        <isTurret>true</isTurret>
+                        <stuff>SteelBar</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>HeavyAutoTurretDrop</defName>
+        <label>sentry heavy turret</label>
+        <description>Request a drop of two sentry heavy turrets with ammo.</description>
+        <minTitle>Baron</minTitle>
+        <cooldownDays>90</cooldownDays>
+        <prerequisite>LightAutoTurretDrop</prerequisite>
+        <permitPointCost>6</permitPointCost>
+        <royalAid>
+            <favorCost>20</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Turrets</category>
+                <row>15</row>
+                <column>1</column>
+                <itemData>
+                    <li>
+                        <thing>Turret_Autocannon</thing>
+                        <count>2</count>
+                        <ammoCount>600</ammoCount>
+                        <isTurret>true</isTurret>
+                        <stuff>TitaniumBar</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <!-- Big Sentry -->
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>BigLightAutoTurretDrop</defName>
+        <label>sentry rocket launcher</label>
+        <description>Request a drop of one sentry rocket launcher with ammo.</description>
+        <minTitle>Viscount</minTitle>
+        <cooldownDays>80</cooldownDays>
+        <permitPointCost>5</permitPointCost>
+        <royalAid>
+            <favorCost>20</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Turrets</category>
+                <row>16</row>
+                <column>0</column>
+                <itemData>
+                    <li>
+                        <thing>Turret_SentryRocketLauncher</thing>
+                        <count>1</count>
+                        <ammoCount>27</ammoCount>
+                        <isTurret>true</isTurret>
+                        <stuff>TitaniumBar</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>BigHeavyAutoTurretDrop</defName>
+        <label>sentry naval turret</label>
+        <description>Request a drop of one sentry naval turret with ammo.</description>
+        <minTitle>Viscount</minTitle>
+        <cooldownDays>90</cooldownDays>
+        <permitPointCost>5</permitPointCost>
+        <royalAid>
+            <favorCost>20</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Turrets</category>
+                <row>16</row>
+                <column>1</column>
+                <itemData>
+                    <li>
+                        <thing>NavalGunTurretGun</thing>
+                        <count>1</count>
+                        <ammoCount>60</ammoCount>
+                        <isTurret>true</isTurret>
+                        <stuff>TitaniumBar</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <!-- HighTech Sentry -->
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>HighTechLightAutoTurretDrop</defName>
+        <label>sentry blaster turret</label>
+        <description>Request a drop of two sentry blaster turrets with ammo.</description>
+        <minTitle>Count</minTitle>
+        <cooldownDays>100</cooldownDays>
+        <permitPointCost>7</permitPointCost>
+        <royalAid>
+            <favorCost>24</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Turrets</category>
+                <row>17</row>
+                <column>0</column>
+                <itemData>
+                    <li>
+                        <thing>Turret_Blaster</thing>
+                        <count>2</count>
+                        <ammoCount>300</ammoCount>
+                        <isTurret>true</isTurret>
+                        <stuff>TitaniumBar</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>HighTechHeavyAutoTurretDrop</defName>
+        <label>sentry laserbeam turret</label>
+        <description>Request a drop of two sentry laserbeam turrets with ammo.</description>
+        <minTitle>Count</minTitle>
+        <cooldownDays>100</cooldownDays>
+        <permitPointCost>7</permitPointCost>
+        <royalAid>
+            <favorCost>24</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Turrets</category>
+                <row>17</row>
+                <column>1</column>
+                <itemData>
+                    <li>
+                        <thing>Turret_Sniper</thing>
+                        <count>2</count>
+                        <ammoCount>360</ammoCount>
+                        <isTurret>true</isTurret>
+                        <stuff>TitaniumBar</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+    
+</Defs>

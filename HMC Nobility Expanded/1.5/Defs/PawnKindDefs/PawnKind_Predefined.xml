@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <PawnKindDef Abstract="True" Name="DefinedColonistBase" ParentName="SK_BasePlayerPawnKind">
+        <defaultFactionType>PlayerColony</defaultFactionType>
+        <label>colonist</label>
+        <apparelTags>
+            <li>Outlander</li>
+        </apparelTags>
+        <disallowedTraits>
+            <li>Nudist</li>
+            <li>Cannibal</li>
+            <li>Asexual</li>
+            <li>CreepyBreathing</li>
+            <li>Pyromaniac</li>
+        </disallowedTraits>
+        <techHediffsDisallowTags>
+            <li>PainCauser</li>
+        </techHediffsDisallowTags>
+        <humanPregnancyChance>0</humanPregnancyChance>
+        <maxGenerationAge>40</maxGenerationAge>
+        <apparelMoney>1000~1700</apparelMoney>
+        <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+        <initialResistanceRange>13~21</initialResistanceRange>
+    </PawnKindDef>
+    
+    <PawnKindDef ParentName="DefinedColonistBase">
+        <defName>ColonistShooting</defName>
+        <requiredWorkTags>
+            <li>Violent</li>
+            <li>Shooting</li>
+            <li>ManualDumb</li>
+        </requiredWorkTags>
+        <isFighter>true</isFighter>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>12~16</range>
+            </li>
+        </skills>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.7</Baseliner>
+                <Hussar MayRequire="Ludeon.RimWorld.Biotech">0.3</Hussar>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="DefinedColonistBase">
+        <defName>ColonistMelee</defName>
+        <requiredWorkTags>
+            <li>Violent</li>
+            <li>ManualDumb</li>
+        </requiredWorkTags>
+        <isFighter>true</isFighter>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>12~16</range>
+            </li>
+        </skills>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.7</Baseliner>
+                <Hussar MayRequire="Ludeon.RimWorld.Biotech">0.3</Hussar>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="DefinedColonistBase">
+        <defName>ColonistCrafting</defName>
+        <requiredWorkTags>
+            <li>Crafting</li>
+            <li>ManualDumb</li>
+        </requiredWorkTags>
+        <skills>
+            <li>
+                <skill>Crafting</skill>
+                <range>12~16</range>
+            </li>
+        </skills>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.7</Baseliner>
+                <Genie MayRequire="Ludeon.RimWorld.Biotech">0.3</Genie>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="DefinedColonistBase">
+        <defName>ColonistConstruction</defName>
+        <requiredWorkTags>
+            <li>Constructing</li>
+            <li>ManualDumb</li>
+        </requiredWorkTags>
+        <skills>
+            <li>
+                <skill>Construction</skill>
+                <range>12~16</range>
+            </li>
+        </skills>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Baseliner MayRequire="Ludeon.RimWorld.Biotech">1</Baseliner>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="DefinedColonistBase">
+        <defName>ColonistMining</defName>
+        <requiredWorkTags>
+            <li>Mining</li>
+            <li>ManualDumb</li>
+        </requiredWorkTags>
+        <skills>
+            <li>
+                <skill>Mining</skill>
+                <range>12~16</range>
+            </li>
+        </skills>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.7</Baseliner>
+                <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0.3</Dirtmole>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="DefinedColonistBase">
+        <defName>ColonistCooking</defName>
+        <requiredWorkTags>
+            <li>Cooking</li>
+            <li>ManualDumb</li>
+        </requiredWorkTags>
+        <skills>
+            <li>
+                <skill>Cooking</skill>
+                <range>12~16</range>
+            </li>
+        </skills>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Baseliner MayRequire="Ludeon.RimWorld.Biotech">1</Baseliner>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="DefinedColonistBase">
+        <defName>ColonistPlants</defName>
+        <requiredWorkTags>
+            <li>PlantWork</li>
+            <li>ManualDumb</li>
+        </requiredWorkTags>
+        <skills>
+            <li>
+                <skill>Plants</skill>
+                <range>12~16</range>
+            </li>
+        </skills>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Baseliner MayRequire="Ludeon.RimWorld.Biotech">1</Baseliner>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+    
+    <PawnKindDef ParentName="DefinedColonistBase">
+        <defName>ColonistAnimals</defName>
+        <requiredWorkTags>
+            <li>Animals</li>
+            <li>ManualDumb</li>
+        </requiredWorkTags>
+        <skills>
+            <li>
+                <skill>Animals</skill>
+                <range>12~16</range>
+            </li>
+        </skills>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Baseliner MayRequire="Ludeon.RimWorld.Biotech">1</Baseliner>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="DefinedColonistBase">
+        <defName>ColonistArtistic</defName>
+        <requiredWorkTags>
+            <li>Artistic</li>
+        </requiredWorkTags>
+        <skills>
+            <li>
+                <skill>Artistic</skill>
+                <range>5~19</range>
+            </li>
+        </skills>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.6</Baseliner>
+                <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0.1</Dirtmole>
+                <Genie MayRequire="Ludeon.RimWorld.Biotech">0.15</Genie>
+                <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.1</Neanderthal>
+                <Highmate MayRequire="Ludeon.RimWorld.Biotech">0.05</Highmate>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="DefinedColonistBase">
+        <defName>ColonistMedicine</defName>
+        <requiredWorkTags>
+            <li>Caring</li>
+            <li>ManualDumb</li>
+        </requiredWorkTags>
+        <skills>
+            <li>
+                <skill>Medicine</skill>
+                <range>12~16</range>
+            </li>
+        </skills>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Baseliner MayRequire="Ludeon.RimWorld.Biotech">1</Baseliner>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="DefinedColonistBase">
+        <defName>ColonistSocial</defName>
+        <requiredWorkTags>
+            <li>Social</li>
+            <li>ManualDumb</li>
+        </requiredWorkTags>
+        <skills>
+            <li>
+                <skill>Social</skill>
+                <range>12~16</range>
+            </li>
+        </skills>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.95</Baseliner>
+                <Highmate MayRequire="Ludeon.RimWorld.Biotech">0.05</Highmate>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="DefinedColonistBase">
+        <defName>ColonistIntellectual</defName>
+        <requiredWorkTags>
+            <li>Intellectual</li>
+            <li>ManualDumb</li>
+        </requiredWorkTags>
+        <skills>
+            <li>
+                <skill>Intellectual</skill>
+                <range>12~16</range>
+            </li>
+        </skills>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.7</Baseliner>
+                <Genie MayRequire="Ludeon.RimWorld.Biotech">0.3</Genie>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+</Defs>

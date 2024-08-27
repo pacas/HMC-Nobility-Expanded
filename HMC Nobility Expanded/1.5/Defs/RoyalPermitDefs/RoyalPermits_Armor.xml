@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- Armor -->
+
+    <RoyalTitlePermitDef ParentName="DropResourcesTitle">
+        <defName>ArmorPermitTitle</defName>
+        <label>Armor</label>
+        <description>Request a drop of armor and accessories.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Title</type>
+                <category>Armor</category>
+                <column>0</column>
+                <row>0</row>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
+        <defName>ArmorPermitSmallTitle</defName>
+        <label>Armor Sets</label>
+        <description>Request a drop of different armor set.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Category</type>
+                <category>Armor</category>
+                <column>0</column>
+                <row>1</row>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
+        <defName>AccessoriesPermitSmallTitle</defName>
+        <label>Accessories</label>
+        <description>Request a drop of different apparel for soldiers and nobility.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Category</type>
+                <category>Armor</category>
+                <column>0</column>
+                <row>6</row>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+    
+    <!-- Tier 1 -->
+
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>ArmorDrop</defName>
+        <label>medieval armor</label>
+        <description>Request a drop of medieval armor pack.</description>
+        <minTitle>Acolyte</minTitle>
+        <cooldownDays>18</cooldownDays>
+        <royalAid>
+            <favorCost>3</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Armor</category>
+                <column>0</column>
+                <row>2</row>
+                <itemData>
+                    <li>
+                        <thing>MedievalTimes_Helmet_Bascinet</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                    <li>
+                        <thing>MedievalTimes_Plates_Full_Cloaked</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                    <li>
+                        <thing>MedievalTimes_Gloves_Plated</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                    <li>
+                        <thing>Apparello_MetalBoots</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+    
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>ArmorDropPlus</defName>
+        <label>medieval armor +</label>
+        <description>Request a drop of medieval armor pack.</description>
+        <minTitle>Knight</minTitle>
+        <cooldownDays>30</cooldownDays>
+        <prerequisite>ArmorDrop</prerequisite>
+        <permitPointCost>2</permitPointCost>
+        <royalAid>
+            <favorCost>7</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Armor</category>
+                <column>1</column>
+                <row>2</row>
+                <itemData>
+                    <li>
+                        <thing>MedievalTimes_Helmet_Bascinet</thing>
+                        <count>1</count>
+                        <stuff>TitaniumBar</stuff>
+                        <quality>Excellent</quality>
+                    </li>
+                    <li>
+                        <thing>MedievalTimes_Plates_Full_Cloaked</thing>
+                        <count>1</count>
+                        <stuff>TitaniumBar</stuff>
+                        <quality>Excellent</quality>
+                    </li>
+                    <li>
+                        <thing>MedievalTimes_Gloves_Plated</thing>
+                        <count>1</count>
+                        <stuff>TitaniumBar</stuff>
+                        <quality>Excellent</quality>
+                    </li>
+                    <li>
+                        <thing>Apparello_MetalBoots</thing>
+                        <count>1</count>
+                        <stuff>TitaniumBar</stuff>
+                        <quality>Excellent</quality>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+    
+    <!-- Tier 2 -->
+
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>IndustrialArmorDrop</defName>
+        <label>industrial armor</label>
+        <description>Request a drop of industrial armor pack.</description>
+        <minTitle>Knight</minTitle>
+        <cooldownDays>23</cooldownDays>
+        <royalAid>
+            <favorCost>5</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Armor</category>
+                <column>0</column>
+                <row>3</row>
+                <itemData>
+                    <li>
+                        <thing>Tactical_Helmet</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                    <li>
+                        <thing>Marine_Armor</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                    <li>
+                        <thing>Apparello_ReinforcedGlove</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                    <li>
+                        <thing>MedievalTimes_Boots_Steel_Plated</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+    
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>IndustrialArmorDropPlus</defName>
+        <label>industrial armor +</label>
+        <description>Request a drop of industrial armor pack.</description>
+        <minTitle>Legatus</minTitle>
+        <cooldownDays>40</cooldownDays>
+        <prerequisite>IndustrialArmorDrop</prerequisite>
+        <permitPointCost>2</permitPointCost>
+        <royalAid>
+            <favorCost>9</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Armor</category>
+                <column>1</column>
+                <row>3</row>
+                <itemData>
+                    <li>
+                        <thing>Tactical_Helmet</thing>
+                        <count>1</count>
+                        <stuff>TitaniumBar</stuff>
+                        <quality>Excellent</quality>
+                    </li>
+                    <li>
+                        <thing>Marine_Armor</thing>
+                        <count>1</count>
+                        <stuff>TitaniumBar</stuff>
+                        <quality>Excellent</quality>
+                    </li>
+                    <li>
+                        <thing>Apparello_ReinforcedGlove</thing>
+                        <count>1</count>
+                        <stuff>TitaniumBar</stuff>
+                        <quality>Excellent</quality>
+                    </li>
+                    <li>
+                        <thing>MedievalTimes_Boots_Steel_Plated</thing>
+                        <count>1</count>
+                        <stuff>TitaniumBar</stuff>
+                        <quality>Excellent</quality>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <!-- Tier 3 -->
+
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>SpacerArmorDrop</defName>
+        <label>spacer armor</label>
+        <description>Request a drop of spacer armor pack.</description>
+        <minTitle>Baron</minTitle>
+        <cooldownDays>45</cooldownDays>
+        <permitPointCost>3</permitPointCost>
+        <royalAid>
+            <favorCost>12</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Armor</category>
+                <column>0</column>
+                <row>4</row>
+                <itemData>
+                    <li>
+                        <thing>Apparel_ArmorHelmetRecon</thing>
+                        <count>1</count>
+                        <stuff>AlnicoAlloy</stuff>
+                    </li>
+                    <li>
+                        <thing>Apparel_ArmorRecon</thing>
+                        <count>1</count>
+                        <stuff>AlnicoAlloy</stuff>
+                    </li>
+                    <li>
+                        <thing>MedievalTimes_Gloves_Combat</thing>
+                        <count>1</count>
+                        <stuff>AlnicoAlloy</stuff>
+                    </li>
+                    <li>
+                        <thing>MedievalTimes_Boots_Combat</thing>
+                        <count>1</count>
+                        <stuff>AlnicoAlloy</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+    
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>SpacerArmorDropPlus</defName>
+        <label>spacer armor +</label>
+        <description>Request a drop of spacer armor pack.</description>
+        <minTitle>Viscount</minTitle>
+        <prerequisite>SpacerArmorDrop</prerequisite>
+        <cooldownDays>62</cooldownDays>
+        <permitPointCost>4</permitPointCost>
+        <royalAid>
+            <favorCost>16</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Armor</category>
+                <column>1</column>
+                <row>4</row>
+                <itemData>
+                    <li>
+                        <thing>Apparel_ArmorHelmetRecon</thing>
+                        <count>1</count>
+                        <stuff>PobediteAlloy</stuff>
+                        <quality>Excellent</quality>
+                    </li>
+                    <li>
+                        <thing>Apparel_ArmorRecon</thing>
+                        <count>1</count>
+                        <stuff>PobediteAlloy</stuff>
+                        <quality>Excellent</quality>
+                    </li>
+                    <li>
+                        <thing>MedievalTimes_Gloves_Combat</thing>
+                        <count>1</count>
+                        <stuff>PobediteAlloy</stuff>
+                        <quality>Excellent</quality>
+                    </li>
+                    <li>
+                        <thing>MedievalTimes_Boots_Combat</thing>
+                        <count>1</count>
+                        <stuff>PobediteAlloy</stuff>
+                        <quality>Excellent</quality>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <!-- Tier 4 -->
+    
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>UltraArmorDrop</defName>
+        <label>ultra armor</label>
+        <description>Request a drop of ultra armor pack.</description>
+        <minTitle>Viscount</minTitle>
+        <cooldownDays>70</cooldownDays>
+        <permitPointCost>6</permitPointCost>
+        <royalAid>
+            <favorCost>16</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Armor</category>
+                <column>0</column>
+                <row>5</row>
+                <itemData>
+                    <li>
+                        <thing>Apparel_PowerArmorHelmet</thing>
+                        <count>1</count>
+                        <stuff>TitaniumBar</stuff>
+                    </li>
+                    <li>
+                        <thing>Apparel_PowerArmor</thing>
+                        <count>1</count>
+                        <stuff>TitaniumBar</stuff>
+                    </li>
+                    <li>
+                        <thing>MedievalTimes_Gauntlets_Techno</thing>
+                        <count>1</count>
+                        <stuff>TitaniumBar</stuff>
+                    </li>
+                    <li>
+                        <thing>MedievalTimes_Boots_Techno</thing>
+                        <count>1</count>
+                        <stuff>TitaniumBar</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+    
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>UltraArmorDropPlus</defName>
+        <label>ultra armor +</label>
+        <description>Request a drop of ultra armor pack.</description>
+        <minTitle>Count</minTitle>
+        <cooldownDays>135</cooldownDays>
+        <prerequisite>UltraArmorDrop</prerequisite>
+        <permitPointCost>8</permitPointCost>
+        <royalAid>
+            <favorCost>28</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Armor</category>
+                <column>1</column>
+                <row>5</row>
+                <itemData>
+                    <li>
+                        <thing>Apparel_PowerArmorHelmet</thing>
+                        <count>1</count>
+                        <stuff>AlphaPoly</stuff>
+                    </li>
+                    <li>
+                        <thing>Apparel_PowerArmor</thing>
+                        <count>1</count>
+                        <stuff>BetaPoly</stuff>
+                    </li>
+                    <li>
+                        <thing>MedievalTimes_Gauntlets_Techno</thing>
+                        <count>1</count>
+                        <stuff>AlphaPoly</stuff>
+                    </li>
+                    <li>
+                        <thing>MedievalTimes_Boots_Techno</thing>
+                        <count>1</count>
+                        <stuff>AlphaPoly</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <!-- Accessories -->
+    
+    <RoyalTitlePermitDef ParentName="DropOutfitTitle">
+        <defName>SoldierAccessoriesDrop</defName>
+        <label>heavy combat accessories</label>
+        <description>Request a drop of classic heavy soldier accessories. Full armor is not included.</description>
+        <permitPointCost>4</permitPointCost>
+        <cooldownDays>45</cooldownDays>
+        <minTitle>Praetor</minTitle>
+        <royalAid>
+            <favorCost>17</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Armor</category>
+                <column>1</column>
+                <row>7</row>
+                <itemData>
+                    <li>
+                        <thing>CE_Apparel_Backpack</thing>
+                        <count>1</count>
+                        <stuff>Synthread</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>CE_Apparel_TacVest</thing>
+                        <count>1</count>
+                        <stuff>Synthread</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Marine_BattleMask</thing>
+                        <count>1</count>
+                        <stuff>TitaniumBar</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Rimarsenal_VestPlate</thing>
+                        <count>1</count>
+                        <stuff>TitaniumBar</stuff>
+                        <quality>Good</quality>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropOutfitTitle">
+        <defName>SoldierAccessoriesAltDrop</defName>
+        <label>light recon accessories</label>
+        <description>Request a drop of classic recon accessories. Full armor is not included.</description>
+        <permitPointCost>3</permitPointCost>
+        <minTitle>Praetor</minTitle>
+        <cooldownDays>40</cooldownDays>
+        <royalAid>
+            <favorCost>11</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Armor</category>
+                <column>0</column>
+                <row>7</row>
+                <itemData>
+                    <li>
+                        <thing>CE_Apparel_Backpack</thing>
+                        <count>1</count>
+                        <stuff>Synthread</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Apparello_Ammobelt</thing>
+                        <count>1</count>
+                        <stuff>Leather_Light</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Apparello_Visoor</thing>
+                        <count>1</count>
+                        <stuff>Titanium</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>Apparel_FlakVest</thing>
+                        <count>1</count>
+                        <stuff>Synthread</stuff>
+                        <quality>Good</quality>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropOutfitTitle">
+        <defName>ShieldBeltDrop</defName>
+        <label>shield belt</label>
+        <description>Request a drop of one shield belt.</description>
+        <permitPointCost>1</permitPointCost>
+        <cooldownDays>15</cooldownDays>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Armor</category>
+                <column>0</column>
+                <row>8</row>
+                <itemData>
+                    <li>
+                        <thing>Apparel_ShieldBelt</thing>
+                        <count>1</count>
+                        <stuff>TitaniumBar</stuff>
+                        <quality>Excellent</quality>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+    
+</Defs>

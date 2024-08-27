@@ -1,6 +1,8 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=F_003A_005CDevelopment_005CMods_005Cv1_002E4_005CAssemblies_005C0Harmony_002Edll/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=F_003A_005CDevelopment_005CMods_005Cv1_002E4_005CAssemblies_005CAssembly_002DCSharp_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=F_003A_005CDevelopment_005CMods_005Cv1_002E5_005C0Harmony_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=F_003A_005CDevelopment_005CMods_005Cv1_002E5_005CAssembly_002DCSharp_002Edll/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=F_003A_005CPython_005Cprojects_005CRoayltyNewDrop_005CRoayltyNewDrop_005Cbin_005CDebug_005C0Harmony_002Edll/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=G_003A_005CSteam_005Csteamapps_005Cworkshop_005Ccontent_005C294100_005C2938820380_005C1_002E4_005CAssemblies_005CVFEEmpire_002Edll/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=J_003A_005CSteam_005Csteamapps_005Ccommon_005CRimWorld_005CMods_005CCombatExtended_005CAssemblies_005CCombatExtended_002Edll/@EntryIndexedValue">True</s:Boolean>

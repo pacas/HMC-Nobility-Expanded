@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- Tools -->
+
+    <RoyalTitlePermitDef ParentName="DropResourcesTitle">
+        <defName>ToolPermitTitle</defName>
+        <label>Tools</label>
+        <description>Request a drop of tool box.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Title</type>
+                <category>Tools</category>
+                <column>0</column>
+                <row>0</row>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <!-- xxxxx -->
+
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>ToolDrop</defName>
+        <label>conventional tools</label>
+        <description>Request a drop of tool box with various tools.</description>
+        <minTitle>Acolyte</minTitle>
+        <cooldownDays>17</cooldownDays>
+        <royalAid>
+            <favorCost>2</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Tools</category>
+                <column>0</column>
+                <row>1</row>
+                <itemData>
+                    <li>
+                        <thing>TFJ_Tool_Woodcutting_Handaxe</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                    <li>
+                        <thing>TFJ_Tool_Mining_Pickaxe</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                    <li>
+                        <thing>TFJ_Tool_Building_Hammer</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                    <li>
+                        <thing>TFJ_Tool_Sickle</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                    <li>
+                        <thing>TFJ_Tool_Hoe</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_Knife</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                    <li>
+                        <thing>TFJ_Tool_Broom</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>ToolDropPlus</defName>
+        <label>conventional tools +</label>
+        <description>Request a drop of tool box with various tools with better base materials.</description>
+        <minTitle>Praetor</minTitle>
+        <cooldownDays>30</cooldownDays>
+        <prerequisite>ToolDrop</prerequisite>
+        <permitPointCost>1</permitPointCost>
+        <royalAid>
+            <favorCost>6</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Tools</category>
+                <column>1</column>
+                <row>1</row>
+                <itemData>
+                    <li>
+                        <thing>TFJ_Tool_Woodcutting_Handaxe</thing>
+                        <count>1</count>
+                        <stuff>Titanium</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>TFJ_Tool_Mining_Pickaxe</thing>
+                        <count>1</count>
+                        <stuff>Titanium</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>TFJ_Tool_Building_Hammer</thing>
+                        <count>1</count>
+                        <stuff>Titanium</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>TFJ_Tool_Sickle</thing>
+                        <count>1</count>
+                        <stuff>Titanium</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>TFJ_Tool_Hoe</thing>
+                        <count>1</count>
+                        <stuff>Titanium</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_Knife</thing>
+                        <count>1</count>
+                        <stuff>Titanium</stuff>
+                        <quality>Good</quality>
+                    </li>
+                    <li>
+                        <thing>TFJ_Tool_Broom</thing>
+                        <count>1</count>
+                        <stuff>AluminiumBar</stuff>
+                        <quality>Good</quality>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>AdvToolDrop</defName>
+        <label>multitool</label>
+        <description>Request a drop of one multitool.</description>
+        <minTitle>Baron</minTitle>
+        <cooldownDays>45</cooldownDays>
+        <permitPointCost>1</permitPointCost>
+        <royalAid>
+            <favorCost>6</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Tools</category>
+                <column>0</column>
+                <row>2</row>
+                <itemData>
+                    <li>
+                        <thing>TFJ_Tool_Multitool</thing>
+                        <count>1</count>
+                        <stuff>AlnicoAlloy</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>AdvToolDropPlus</defName>
+        <label>multitool +</label>
+        <description>Request a drop of one multitool.</description>
+        <minTitle>Count</minTitle>
+        <cooldownDays>60</cooldownDays>
+        <prerequisite>AdvToolDrop</prerequisite>
+        <permitPointCost>3</permitPointCost>
+        <royalAid>
+            <favorCost>12</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Tools</category>
+                <column>1</column>
+                <row>2</row>
+                <itemData>
+                    <li>
+                        <thing>TFJ_Tool_Multitool</thing>
+                        <count>1</count>
+                        <stuff>Titanium</stuff>
+                        <quality>Excellent</quality>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+    
+</Defs>
