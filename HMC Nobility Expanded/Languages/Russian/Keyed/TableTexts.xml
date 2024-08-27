@@ -2,6 +2,7 @@
 <LanguageData>
     
     <PrivilegesPointsRequired>Требуется очков привилегий: {0}</PrivilegesPointsRequired>
+    <NextDropAvailable>Интервал между запросами</NextDropAvailable>
     <ItemIncludedInPermit>Содержит:</ItemIncludedInPermit>
     <DropTypeRandom>Тип: случайный выбор</DropTypeRandom>
     <DropTypeSpecific>Тип: предустановленный выбор</DropTypeSpecific>

@@ -755,7 +755,7 @@
         <label>components &amp; electronic</label>
         <description>Request a drop of a variety of gears, switches and light bulbs for tech advancing.</description>
         <minTitle>Baron</minTitle>
-        <cooldownDays>14</cooldownDays>
+        <cooldownDays>21</cooldownDays>
         <permitPointCost>3</permitPointCost>
         <royalAid>
             <favorCost>12</favorCost>
@@ -817,15 +817,15 @@
                     </li>
                     <li>
                         <thing>MagneticMaterial</thing>
-                        <count>15</count>
+                        <count>8</count>
                     </li>
                     <li>
                         <thing>BiosyntheticMaterial</thing>
-                        <count>15</count>
+                        <count>8</count>
                     </li>
                     <li>
                         <thing>Hexcell</thing>
-                        <count>15</count>
+                        <count>10</count>
                     </li>
                 </itemData>
             </li>

@@ -2,6 +2,7 @@
 <LanguageData>
     
     <PrivilegesPointsRequired>Permit points cost: {0}</PrivilegesPointsRequired>
+    <NextDropAvailable>Requests interval</NextDropAvailable>
     <ItemIncludedInPermit>Contains:</ItemIncludedInPermit>
     <DropTypeRandom>Type: random</DropTypeRandom>
     <DropTypeSpecific>Type: specific</DropTypeSpecific>

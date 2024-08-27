@@ -10,7 +10,7 @@ namespace NobilityExpanded.Utilities
             TaggedString taggedString;
             string tagged;
             
-            var label = "Cooldown".Translate() + ": " + "PeriodDays".Translate(selectedPermit.cooldownDays);
+            var label = "NextDropAvailable".Translate() + ": " + "PeriodDays".Translate(selectedPermit.cooldownDays);
             label += "\n\n" + "PrivilegesPointsRequired".Translate(selectedPermit.permitPointCost);
             if (selectedPermit.royalAid != null && selectedPermit.royalAid.favorCost > 0 && !selectedFaction.def.royalFavorLabel.NullOrEmpty()) {
                 label += "\n\n" + "CooldownUseFavorCost".Translate(selectedFaction.def.royalFavorLabel.Named("HONOR")).CapitalizeFirst();
