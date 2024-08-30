@@ -17,6 +17,7 @@
     <DropComment_WoodDrop>Обычно пластик и металлы дешевле натурального дерева, но у нас тут целая планета-ферма была недавно интегрирована, куча всего снова доступна.</DropComment_WoodDrop>
     <DropComment_ComponentsDrop>Детали, шестерни, поршни, что-то ещё... Сами разбирайтесь что там.</DropComment_ComponentsDrop>
     <DropComment_ChemicalsDrop>Какая-то химия непонятная. Попрошу упаковщиков запаковать всё это получше.</DropComment_ChemicalsDrop>
+    <DropComment_SerumsDrop>Вершина технологий нашего мира. Я знаю о них только из-за своей работы. Мгновенное исцеление и воскрешение - ресурс опасный.</DropComment_SerumsDrop>
 
     <!-- Люди -->
     <DropComment_CallLaborerTeam>Не хватает рук? У нас есть отборный низкоквалифицированный персонал с нижних уровней планеты специально для вас!</DropComment_CallLaborerTeam>
@@ -44,8 +45,6 @@
     <DropComment_SpiderAnimalDrop>Пауки? Серьезно? Я не стал бы даже приближаться к ним, а вы хотите жить с ними? Вы безумны.</DropComment_SpiderAnimalDrop>
 
     <!-- Одежда -->
-    <DropComment_SoldierAccessoriesDrop>А, снаряжение штурмовика. Если вашему охраннику нужно дополнительное снаряжение помимо брони, то это ваш выбор. Такого не возьмут пули, не то что этих разведчиков.</DropComment_SoldierAccessoriesDrop>
-    <DropComment_SoldierAccessoriesAltDrop>А, снаряжение разведчика. Всегда полезно иметь охрану, способную быстро реагировать на угрозы, а то все эти штурмовики такие медленные...</DropComment_SoldierAccessoriesAltDrop>
     <DropComment_SmithOutfitDrop>Одежда для кузнеца? Не имею ни малейшего понятия, что же там должно быть, уточняю... А, понял, легко устроим.</DropComment_SmithOutfitDrop>
     <DropComment_FarmerOutfitDrop>Одежда для фермера? Не имею ни малейшего понятия, что же там должно быть, уточняю... А, понял, легко устроим.</DropComment_FarmerOutfitDrop>
     <DropComment_ChefOutfitDrop>Одежда для повара? Не имею ни малейшего понятия, что же там должно быть, уточняю... А, понял, легко устроим.</DropComment_ChefOutfitDrop>
@@ -56,7 +55,6 @@
     <DropComment_HazmatOutfitDrop>Химзащита? Вы что там такое делаете, что вам нужна химзащита? Вам лучше бы не нарушать галактический кодекс, раз вы стали частью Империи. Но если что, я ничего не видел.</DropComment_HazmatOutfitDrop>
     <DropComment_RoyalOutfitDrop>Одежда для знати. У нас на Фортуне есть свой определённый стиль одежды, если хотите, я запрошу полный набор. Качество гарантируется.</DropComment_RoyalOutfitDrop>
     <DropComment_PsychicOutfitDrop>Одежда для псайкеров? Люди, они, конечно, уважаемые, но их многие боятся, потому даже известные псайкеры предпочитают не афишировать свои способности. Однако право ваше, мы готовы предоставить вам комплект.</DropComment_PsychicOutfitDrop>
-    <DropComment_ShieldBeltDrop>Пояс-щит, полезная штука, много кого спасти успела, потому у нас всегда запас есть. Подготовить к отправке?</DropComment_ShieldBeltDrop>
     <DropComment_SimpleOutfitDrop>Простая одежда для простых людей. Такого у нас навалом.</DropComment_SimpleOutfitDrop>
 
     <!-- Броня -->
@@ -68,12 +66,25 @@
     <DropComment_SpacerArmorDropPlus>Набор высших офицеров имперской гвардии. Обычно такие наборы не достать, но многие создаваемые на Вулкане комплекты идут через Фортуну, так что я готов организовать вам такой.</DropComment_SpacerArmorDropPlus>
     <DropComment_UltraArmorDrop>За разрешением на выдачу такого комплекта мне придётся обращаться к столичной канцелярии на Юноне. Это действительно один из лучших видов брони во всей Империи, производимая только на Вулкане, и получают её только одни из самых титулованных людей в Империи.</DropComment_UltraArmorDrop>
     <DropComment_UltraArmorDropPlus>Улучшенный комплект ультра брони? Я не имею права даже обращаться за ней, перенаправляю вас сразу на столичную канцелярию...</DropComment_UltraArmorDropPlus>
+    <DropComment_SoldierAccessoriesDrop>А, снаряжение штурмовика. Если вашему охраннику нужно дополнительное снаряжение помимо брони, то это ваш выбор. Такого не возьмут пули, не то что этих разведчиков.</DropComment_SoldierAccessoriesDrop>
+    <DropComment_SoldierAccessoriesAltDrop>А, снаряжение разведчика. Всегда полезно иметь охрану, способную быстро реагировать на угрозы, а то все эти штурмовики такие медленные...</DropComment_SoldierAccessoriesAltDrop>
+    <DropComment_ShieldBeltDrop>Пояс-щит, полезная штука, много кого спасти успела, потому у нас всегда запас есть. Подготовить к отправке?</DropComment_ShieldBeltDrop>
+    <DropComment_ShieldHeavyBeltDrop>Пояс-щит, полезная штука, много кого спасти успела, потому у нас всегда запас есть. Подготовить к отправке?</DropComment_ShieldHeavyBeltDrop>
+    <DropComment_ShieldQRBeltDrop>Пояс-щит, полезная штука, много кого спасти успела, потому у нас всегда запас есть. Подготовить к отправке?</DropComment_ShieldQRBeltDrop>
+    <DropComment_ShieldRangedBeltDrop>Стрелковый пояс-щит - относительно новая технология, потому у меня есть прямой запрет на передачу этих образцов некоторым титулам.</DropComment_ShieldRangedBeltDrop>
 
     <!-- Инструменты -->
     <DropComment_ToolDrop>Набор инструментов? Ну, это никогда лишним не будет, особенно если выдать их рабам на плантациях.</DropComment_ToolDrop>
     <DropComment_ToolDropPlus>Хотите долговечные инструменты? Ну, это устроить несложно. Таким инструментом и самому поработать не грех.</DropComment_ToolDropPlus>
     <DropComment_AdvToolDrop>Мультитул - инструмент рабочих планет ядра Империи. Они нечасто появляются за его пределами, но вы можете запросить один такой.</DropComment_AdvToolDrop>
     <DropComment_AdvToolDropPlus>Мультитул от AdvancedMachines™ - лучший доступный для покупки мультитул. Империя закупает их целыми партиями, так что и вам найдётся.</DropComment_AdvToolDropPlus>
+    <DropComment_PlantsWorkerDrop>Как посеешь, так и пожнешь.</DropComment_PlantsWorkerDrop>
+    <DropComment_MinerWorkerDrop>Умный в гору не пойдет - умный гору разберет и построит из неё дворец.</DropComment_MinerWorkerDrop>
+    <DropComment_BuilderWorkerDrop>Каждый сам строитель своего счастья.</DropComment_BuilderWorkerDrop>
+    <DropComment_CraftsmanWorkerDrop>Куй железо пока горячо. А также титан, стеллит и ещё бог знает сколько всего, о чем вам знать нет смысла.</DropComment_CraftsmanWorkerDrop>
+    <DropComment_MedicWorkerDrop>Цена ошибки хирурга всегда слишком высока. Эти инструменты позволяют купить шанс выживания.</DropComment_MedicWorkerDrop>
+    <DropComment_JanitorWorkerDrop>Вы точно уверены, что вам это надо? Точно? Серьезно, не стоит.</DropComment_JanitorWorkerDrop>
+    <DropComment_ScientistWorkerDrop>Главное не устанавливайте на этот КПК игры.</DropComment_ScientistWorkerDrop>
 
     <!-- Турели -->
     <DropComment_BallistaDrop>Баллисты? Зачем они вам, просто возьмите что-то получше.</DropComment_BallistaDrop>
@@ -108,6 +119,8 @@
     <DropComment_BluntMeleeDropPlus>Лучшие мастера и качественные материалы, и ваше оружие будет нести свет Императора во все части галактики ещё эффективнее!</DropComment_BluntMeleeDropPlus>
     <DropComment_HeavyMeleeDrop>Тяжелое оружие - всегда весомый аргумент. Мне знакомый рассказывал как он бунт на Авроре подавлял, имперские рыцари одним видом своего оружия подавляли всех.</DropComment_HeavyMeleeDrop>
     <DropComment_HeavyMeleeDropPlus>Лучшие мастера и качественные материалы, и ваше оружие будет нести свет Императора во все части галактики ещё эффективнее!</DropComment_HeavyMeleeDropPlus>
+    <DropComment_EODBladeDrop>Моноклинки - один из лучших типов клинков современности. Клинки более цивилизованной эпохи, которые ныне производятся только на главных и самых продвинутых мануфакторумах. Обязательно берите.</DropComment_EODBladeDrop>
+    <DropComment_EODBladePlusDrop>Моноклинки - один из лучших типов клинков современности. А в этом ещё и заключен боевой ИИ. Клинки более цивилизованной эпохи, которые ныне производятся только на главных и самых продвинутых мануфакторумах. Обязательно берите.</DropComment_EODBladePlusDrop>
 
     <!-- Дальний бой -->
     <DropComment_BowDrop>Нужно - забирайте. Бесплатно не можем отдать только из-за доставки. Полный склад всякого такого, но не дают нам просто выкинуть в печь. Но мы вам стрел запихнем побольше.</DropComment_BowDrop>

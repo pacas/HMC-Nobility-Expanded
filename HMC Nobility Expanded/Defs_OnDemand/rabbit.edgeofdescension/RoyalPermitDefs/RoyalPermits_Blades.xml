@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>EODBladeDrop</defName>
+        <label>monoblade</label>
+        <description>Request a drop of a prestige monoblade.</description>
+        <minTitle>Count</minTitle>
+        <cooldownDays>45</cooldownDays>
+        <permitPointCost>2</permitPointCost>
+        <royalAid>
+            <favorCost>20</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Melee</category>
+                <row>5</row>
+                <column>0</column>
+                <itemData>
+                    <li>
+                        <thing>MeleeWeapon_MonobladePrestige</thing>
+                        <count>1</count>
+                        <stuff>Titanium</stuff>
+                        <quality>Excellent</quality>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>EODBladePlusDrop</defName>
+        <label>persona monoblade</label>
+        <description>Request a drop of a prestige persona monoblade.</description>
+        <minTitle>Count</minTitle>
+        <cooldownDays>45</cooldownDays>
+        <prerequisite>EODBladeDrop</prerequisite>
+        <permitPointCost>3</permitPointCost>
+        <royalAid>
+            <favorCost>20</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Melee</category>
+                <row>5</row>
+                <column>1</column>
+                <itemData>
+                    <li>
+                        <thing>MeleeWeapon_MonobladePrestigeBladelink</thing>
+                        <count>1</count>
+                        <stuff>Titanium</stuff>
+                        <quality>Excellent</quality>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+    
+</Defs>

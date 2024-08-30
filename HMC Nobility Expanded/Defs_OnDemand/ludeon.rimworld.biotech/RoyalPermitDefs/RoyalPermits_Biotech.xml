@@ -1,29 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-    <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
-        <defName>BiotechPermitSmallTitle</defName>
-        <label>Biotech</label>
-        <description>Request a drop of Biotech resources.</description>
-        <modExtensions>
-            <li Class="NobilityExpanded.PermitExtensionList">
-                <type>Category</type>
-                <category>Resources</category>
-                <column>0</column>
-                <row>9</row>
-            </li>
-        </modExtensions>
-    </RoyalTitlePermitDef>
     
     <!-- Resources -->
 
     <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
         <defName>VampiresFoodDrop</defName>
         <label>hemogen packs</label>
-        <description>Request a drop of 15 hemogen packs.</description>
+        <description>Request a drop of 10 hemogen packs.</description>
         <permitPointCost>1</permitPointCost>
         <minTitle>Acolyte</minTitle>
-        <cooldownDays>21</cooldownDays>
+        <cooldownDays>10</cooldownDays>
         <royalAid>
             <favorCost>6</favorCost>
         </royalAid>
@@ -31,12 +17,12 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Resources</category>
-                <row>10</row>
+                <row>9</row>
                 <column>0</column>
                 <itemData>
                     <li>
                         <thing>HemogenPack</thing>
-                        <count>15</count>
+                        <count>10</count>
                     </li>
                 </itemData>
             </li>
@@ -59,7 +45,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Apparel</category>
-                <row>11</row>
+                <row>9</row>
                 <column>0</column>
                 <itemData>
                     <li>

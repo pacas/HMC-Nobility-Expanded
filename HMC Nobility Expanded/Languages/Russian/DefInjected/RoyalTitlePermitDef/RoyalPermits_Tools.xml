@@ -17,4 +17,27 @@
     <AdvToolDropPlus.label>мультитул +</AdvToolDropPlus.label>
     <AdvToolDropPlus.description>Запрос доставки одного мультитула.</AdvToolDropPlus.description>
 
+    <!-- more tools -->
+    <PlantsWorkerDrop.label>набор фермера</PlantsWorkerDrop.label>
+    <PlantsWorkerDrop.description>Запрос доставки бензопилы и культиватора.</PlantsWorkerDrop.description>
+    
+    <MinerWorkerDrop.label>набор шахтера</MinerWorkerDrop.label>
+    <MinerWorkerDrop.description>Запрос доставки отбойного молота и кирки.</MinerWorkerDrop.description>
+    
+    <BuilderWorkerDrop.label>набор строителя</BuilderWorkerDrop.label>
+    <BuilderWorkerDrop.description>Запрос доставки шлифовальной машинки, лопаты и молотка.</BuilderWorkerDrop.description>
+    
+    <CraftsmanWorkerDrop.label>набор ремесленника</CraftsmanWorkerDrop.label>
+    <CraftsmanWorkerDrop.description>Запрос доставки паяльника, ящика для инструментов и молотка.</CraftsmanWorkerDrop.description>
+
+    <MedicWorkerDrop.label>набор медика</MedicWorkerDrop.label>
+    <MedicWorkerDrop.description>Запрос доставки медицинской сумки и пилы по кости.</MedicWorkerDrop.description>
+
+    <JanitorWorkerDrop.label>набор уборщика</JanitorWorkerDrop.label>
+    <JanitorWorkerDrop.description>Запрос доставки листодува и метлы.</JanitorWorkerDrop.description>
+
+    <ScientistWorkerDrop.label>набор ученого</ScientistWorkerDrop.label>
+    <ScientistWorkerDrop.description>Запрос доставки КПК.</ScientistWorkerDrop.description>
+
+
 </LanguageData>

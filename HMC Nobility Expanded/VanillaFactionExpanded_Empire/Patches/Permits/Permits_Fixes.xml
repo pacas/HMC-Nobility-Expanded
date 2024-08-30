@@ -5,11 +5,12 @@
             <li Class="PatchOperationRemove">
                 <xpath>Defs/RoyalTitlePermitDef[
                 defName="GlitterMedDrop" or
+                defName="VFEI_CallImperialRegiment" or
+                defName="VFEI_CallStellicGuards" or
                 defName="VFEI_CallEvacShuttle" or
                 defName="VFEI_CallOrbitalSlicingBeam"
                 ]/prerequisite</xpath>
             </li>
-            <!-- todo add later military-->
             <li Class="PatchOperationRemove">
                 <xpath>Defs/RoyalTitlePermitDef[
                 defName="VFEI_GoldDrop" or 
@@ -28,14 +29,10 @@
                 defName="VFEI_HyperweaveDrop" or
                 defName="VFEI_HEShellsDrop" or
                 defName="VFEI_NobleFoodDrop" or
-                    
                 defName="VFEI_CallTrooperPlatoon" or
                 defName="VFEI_CallJanissaryPlatoon" or
                 defName="VFEI_CallCataphractPlatoon" or
                 defName="VFEI_CallLaborerUnion" or
-                defName="VFEI_CallStellicGuards" or
-                defName="VFEI_CallImperialRegiment" or
-                    
                 defName="VFEI_StoneDrop"]
                 </xpath>
             </li>
@@ -49,11 +46,134 @@
                 defName="VFEI_CallEvacShuttle"
                 ]/uiPosition</xpath>
             </li>
+
+            <li Class="PatchOperationAddModExtension">
+                <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallStellicGuards"]</xpath>
+                <value>
+                    <li Class="NobilityExpanded.PermitExtensionList">
+                        <type>Permit</type>
+                        <category>Pawns</category>
+                        <row>6</row>
+                        <column>0</column>
+                    </li>
+                </value>
+            </li>
+            <li Class="PatchOperationAddModExtension">
+                <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallImperialRegiment"]</xpath>
+                <value>
+                    <li Class="NobilityExpanded.PermitExtensionList">
+                        <type>Permit</type>
+                        <category>Pawns</category>
+                        <row>6</row>
+                        <column>1</column>
+                    </li>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallStellicGuards"]/minTitle</xpath>
+                <value>
+                    <minTitle>Margrave</minTitle>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallImperialRegiment"]/minTitle</xpath>
+                <value>
+                    <minTitle>Consul</minTitle>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAddModExtension">
+                <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallTechfriar"]</xpath>
+                <value>
+                    <li Class="NobilityExpanded.PermitExtensionList">
+                        <type>Permit</type>
+                        <category>Pawns</category>
+                        <row>2</row>
+                        <column>0</column>
+                    </li>
+                </value>
+            </li>
+            <li Class="PatchOperationAddModExtension">
+                <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallAbsolver"]</xpath>
+                <value>
+                    <li Class="NobilityExpanded.PermitExtensionList">
+                        <type>Permit</type>
+                        <category>Pawns</category>
+                        <row>7</row>
+                        <column>0</column>
+                    </li>
+                </value>
+            </li>
+            
+            
+            <li Class="PatchOperationAddModExtension">
+                <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_StrikerTurretDrop"]</xpath>
+                <value>
+                    <li Class="NobilityExpanded.PermitExtensionList">
+                        <type>Permit</type>
+                        <category>Airstrike</category>
+                        <row>2</row>
+                        <column>0</column>
+                    </li>
+                </value>
+            </li>
+            <li Class="PatchOperationAddModExtension">
+                <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_BurnoutShieldDrop"]</xpath>
+                <value>
+                    <li Class="NobilityExpanded.PermitExtensionList">
+                        <type>Permit</type>
+                        <category>Airstrike</category>
+                        <row>2</row>
+                        <column>1</column>
+                    </li>
+                </value>
+            </li>
+            <li Class="PatchOperationAddModExtension">
+                <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallEvacShuttle"]</xpath>
+                <value>
+                    <li Class="NobilityExpanded.PermitExtensionList">
+                        <type>Permit</type>
+                        <category>Airstrike</category>
+                        <row>3</row>
+                        <column>0</column>
+                    </li>
+                </value>
+            </li>
+            <li Class="PatchOperationAddModExtension">
+                <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallOrbitalSlicingBeam"]</xpath>
+                <value>
+                    <li Class="NobilityExpanded.PermitExtensionList">
+                        <type>Permit</type>
+                        <category>Airstrike</category>
+                        <row>3</row>
+                        <column>1</column>
+                    </li>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallStellicGuards"]/label</xpath>
+                <value>
+                    <label>elite troops</label>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallStellicGuards"]/description</xpath>
+                <value>
+                    <description>Call a group of 6 elite troops, ranged and melee, to aid you in battle.</description>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallImperialRegiment"]/label</xpath>
+                <value>
+                    <label>strike squad</label>
+                </value>
+            </li>
             
             <li Class="PatchOperationReplace">
                 <xpath>Defs/RoyalTitlePermitDef[
-                defName="VFEI_BurnoutShieldDrop" or
-                defName="VFEI_CallEvacShuttle"
+                    defName="VFEI_StrikerTurretDrop" or
+                    defName="VFEI_CallEvacShuttle"
                 ]/permitPointCost</xpath>
                 <value>
                     <permitPointCost>2</permitPointCost>
@@ -62,8 +182,8 @@
             
             <li Class="PatchOperationReplace">
                 <xpath>Defs/RoyalTitlePermitDef[
-                defName="VFEI_StrikerTurretDrop" or
-                defName="VFEI_CallEvacShuttle"
+                    defName="VFEI_CallTechfriar" or
+                    defName="VFEI_CallAbsolver"
                 ]/permitPointCost</xpath>
                 <value>
                     <permitPointCost>3</permitPointCost>
@@ -71,16 +191,37 @@
             </li>
 
             <li Class="PatchOperationReplace">
-                <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_StrikerTurretDrop"]/cooldownDays</xpath>
+                <xpath>Defs/RoyalTitlePermitDef[
+                    defName="VFEI_StrikerTurretDrop" or
+                    defName="VFEI_BurnoutShieldDrop"
+                ]/cooldownDays</xpath>
+                <value>
+                    <cooldownDays>15</cooldownDays>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/RoyalTitlePermitDef[
+                    defName="VFEI_CallEvacShuttle"
+                    ]/cooldownDays</xpath>
                 <value>
                     <cooldownDays>21</cooldownDays>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/RoyalTitlePermitDef[
+                    defName="VFEI_CallOrbitalSlicingBeam"
+                    ]/cooldownDays</xpath>
+                <value>
+                    <cooldownDays>45</cooldownDays>
                 </value>
             </li>
             
             <li Class="PatchOperationReplace">
                 <xpath>Defs/RoyalTitlePermitDef[
-                defName="VFEI_CallTechfriar" or
-                defName="VFEI_CallAbsolver"
+                    defName="VFEI_CallImperialRegiment" or
+                    defName="VFEI_CallStellicGuards"
                 ]/permitPointCost</xpath>
                 <value>
                     <permitPointCost>4</permitPointCost>
@@ -90,7 +231,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallOrbitalSlicingBeam"]/permitPointCost</xpath>
                 <value>
-                    <permitPointCost>8</permitPointCost>
+                    <permitPointCost>5</permitPointCost>
                 </value>
             </li>
             

@@ -2,6 +2,13 @@
 <Patch>
     <Operation Class="PatchOperationSequence">
         <operations>
+            <!-- Resources -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/RoyalTitlePermitDef[defName="SerumsDrop"]/minTitle</xpath>
+                <value>
+                    <minTitle>Margrave</minTitle>
+                </value>
+            </li>
             
             <!-- Armor -->
              <li Class="PatchOperationReplace">

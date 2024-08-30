@@ -2,12 +2,10 @@
 <LanguageData>
 
     <!-- группа -->
-    <ApparelPermitTitle.label>одежда и аксесссуары</ApparelPermitTitle.label>
-    <ApparelPermitTitle.description>Запрос доставки различной одежды и аксесссуаров.</ApparelPermitTitle.description>
-    <WorkerPermitSmallTitle.label>одежда для рабочих</WorkerPermitSmallTitle.label>
-    <WorkerPermitSmallTitle.description>Запрос доставки различной одежды для рабочих.</WorkerPermitSmallTitle.description>
-    <SpecialApparelPermitSmallTitle.label>спецодежда</SpecialApparelPermitSmallTitle.label>
-    <SpecialApparelPermitSmallTitle.description>Запрос доставки различной одежды для солдат и дворянства.</SpecialApparelPermitSmallTitle.description>
+    <ApparelPermitTitle.label>одежда</ApparelPermitTitle.label>
+    <ApparelPermitTitle.description>Запрос доставки различной одежды.</ApparelPermitTitle.description>
+    <WorkerPermitSmallTitle.label>наборы одежды</WorkerPermitSmallTitle.label>
+    <WorkerPermitSmallTitle.description>Запрос доставки различной одежды для различных задач.</WorkerPermitSmallTitle.description>
     <SimpleApparelPermitSmallTitle.label>простая одежда</SimpleApparelPermitSmallTitle.label>
     <SimpleApparelPermitSmallTitle.description>Запрос доставки различной простой одежды для повседневных задач.</SimpleApparelPermitSmallTitle.description>
 
@@ -26,17 +24,9 @@
     <MinerOutfitDrop.description>Запрос доставки набора одежды шахтёра.</MinerOutfitDrop.description>
     <ConstructorOutfitDrop.label>одежда строителя</ConstructorOutfitDrop.label>
     <ConstructorOutfitDrop.description>Запрос доставки набора одежды строителя.</ConstructorOutfitDrop.description>
-
-    <!-- специальная -->
-    <SoldierAccessoriesDrop.label>набор штурмовика</SoldierAccessoriesDrop.label>
-    <SoldierAccessoriesDrop.description>Запрос доставки набора аксесссуаров для штурмовика. Полная броня не входит в комплект.</SoldierAccessoriesDrop.description>
-    <SoldierAccessoriesAltDrop.label>набор разведчика</SoldierAccessoriesAltDrop.label>
-    <SoldierAccessoriesAltDrop.description>Запрос доставки набора аксесссуаров для разведчика. Полная броня не входит в комплект.</SoldierAccessoriesAltDrop.description>
     
     <HazmatOutfitDrop.label>набор химзащиты</HazmatOutfitDrop.label>
     <HazmatOutfitDrop.description>Запрос доставки набора химзащиты.</HazmatOutfitDrop.description>
-    <ShieldBeltDrop.label>пояс-щит</ShieldBeltDrop.label>
-    <ShieldBeltDrop.description>Запрос доставки одного пояса-щита.</ShieldBeltDrop.description>
 
     <RoyalOutfitDrop.label>одеяния знати</RoyalOutfitDrop.label>
     <RoyalOutfitDrop.description>Запрос доставки набора одеяния знати.</RoyalOutfitDrop.description>

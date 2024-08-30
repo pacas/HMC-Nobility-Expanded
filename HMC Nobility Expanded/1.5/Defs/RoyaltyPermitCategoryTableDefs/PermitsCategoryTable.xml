@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <NobilityExpanded.RoyaltyPermitCategoryTableDef>
+        <defName>PermitCategoryTable</defName>
+        <categories>
+            <li>Resources</li>
+            <li>Tools</li>
+            <li>Armor</li>
+            <li>Apparel</li>
+            <li>Melee</li>
+            <li>Ranged</li>
+            <li>Turrets</li>
+            <li>Airstrike</li>
+            <li>Pawns</li>
+            <li>Colonists</li>
+            <li>Animals</li>
+            <li>Prosthetics</li>
+            <li MayRequire="notfood.seedsplease">Seeds</li>
+        </categories>
+    </NobilityExpanded.RoyaltyPermitCategoryTableDef>
+</Defs>

@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    
+    <RoyalTitlePermitDef ParentName="DropResourcesTitle">
+        <defName>ProstheticsPermitTitle</defName>
+        <label>Prosthetics</label>
+        <description>Request a drop of various prosthetics.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Title</type>
+                <category>Prosthetics</category>
+                <column>0</column>
+                <row>0</row>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
+        <defName>ProstheticsPermitSmallTitle</defName>
+        <label>Artificial Bodyparts</label>
+        <description>Request a drop of different prosthetics.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Category</type>
+                <category>Prosthetics</category>
+                <row>1</row>
+                <column>0</column>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
+        <defName>CombatProstheticsPermitSmallTitle</defName>
+        <label>Combat</label>
+        <description>Request a drop of different combat prosthetics.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Category</type>
+                <category>Prosthetics</category>
+                <row>4</row>
+                <column>0</column>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
+        <defName>ProductiveProstheticsPermitSmallTitle</defName>
+        <label>Productive</label>
+        <description>Request a drop of different prosthetics for workers.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Category</type>
+                <category>Prosthetics</category>
+                <row>7</row>
+                <column>0</column>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+    
+    <!-- Parts -->
+
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>SimpleProsthetic</defName>
+        <label>Simple prosthetic</label>
+        <description>Request a drop of specific simple prosthetics.</description>
+        <minTitle>Acolyte</minTitle>
+        <cooldownDays>21</cooldownDays>
+        <royalAid>
+            <favorCost>3</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Prosthetics</category>
+                <column>0</column>
+                <row>2</row>
+                <itemData>
+                    <li>
+                        <thing>SimpleProstheticHand</thing>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <thing>SimpleProstheticArm</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>SimpleProstheticFoot</thing>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <thing>SimpleProstheticLeg</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>ArtificialNose</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>CochlearImplant</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>SimpleProstheticHeart</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>ArtificialPelvis</thing>
+                        <count>1</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>BionicsProsthetic</defName>
+        <label>Bionic prosthetic</label>
+        <description>Request a drop of specific bionic prosthetic.</description>
+        <minTitle>Legatus</minTitle>
+        <cooldownDays>38</cooldownDays>
+        <permitPointCost>4</permitPointCost>
+        <royalAid>
+            <favorCost>7</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Prosthetics</category>
+                <column>1</column>
+                <row>2</row>
+                <itemData>
+                    <li>
+                        <thing>BionicHand</thing>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <thing>BionicArm</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>BionicFoot</thing>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <thing>BionicLeg</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>BionicNeck</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>BionicSpine</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>BionicEar</thing>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <thing>BionicEye</thing>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <thing>BionicKidney</thing>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <thing>BionicLung</thing>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <thing>BionicLiver</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>BionicStomach</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>BionicHeart</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>BionicJaw</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>BionicTongue</thing>
+                        <count>1</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>CyberneticProsthetic</defName>
+        <label>Cybernetic prosthetic</label>
+        <description>Request a drop of specific bionic prosthetic.</description>
+        <minTitle>Count</minTitle>
+        <cooldownDays>45</cooldownDays>
+        <permitPointCost>6</permitPointCost>
+        <royalAid>
+            <favorCost>10</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Prosthetics</category>
+                <column>0</column>
+                <row>3</row>
+                <itemData>
+                    <li>
+                        <thing>GTHand</thing>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <thing>ArchotechArm</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>GTFoot</thing>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <thing>ArchotechLeg</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>GTNeck</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>GTSpine</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>GTEar</thing>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <thing>ArchotechEye</thing>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <thing>GTKidney</thing>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <thing>GTLung</thing>
+                        <count>2</count>
+                    </li>
+                    <li>
+                        <thing>GTLiver</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>GTHeart</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>GTstomach</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>GTDentures</thing>
+                        <count>1</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+    
+    <!-- Combat -->
+    
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>CombatProsthetic</defName>
+        <label>Combat prosthetics</label>
+        <description>Request a drop of specific combat prosthetics.</description>
+        <minTitle>Praetor</minTitle>
+        <permitPointCost>2</permitPointCost>
+        <cooldownDays>35</cooldownDays>
+        <royalAid>
+            <favorCost>10</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Prosthetics</category>
+                <column>0</column>
+                <row>5</row>
+                <itemData>
+                    <li>
+                        <thing>HandTalon</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>ElbowBlade</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>KneeSpike</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>VenomFangs</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>VenomTalon</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>PowerClaw</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>PainkillerRib</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>CoagulatorRib</thing>
+                        <count>1</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>CombatImplants</defName>
+        <label>Combat implants</label>
+        <description>Request a drop of specific combat implants.</description>
+        <minTitle>Praetor</minTitle>
+        <permitPointCost>2</permitPointCost>
+        <cooldownDays>35</cooldownDays>
+        <royalAid>
+            <favorCost>10</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Prosthetics</category>
+                <column>1</column>
+                <row>5</row>
+                <itemData>
+                    <li>
+                        <thing>HealingEnhancer</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>ToughskinGland</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>ArmorskinGland</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>Coagulator</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>Painstopper</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>DeathAcidifier</thing>
+                        <count>1</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>CombatImplantsAdvanced</defName>
+        <label>Advanced combat implants</label>
+        <description>Request a drop of specific advanced combat prosthetics.</description>
+        <minTitle>Viscount</minTitle>
+        <permitPointCost>4</permitPointCost>
+        <cooldownDays>45</cooldownDays>
+        <royalAid>
+            <favorCost>10</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Prosthetics</category>
+                <column>0</column>
+                <row>6</row>
+                <itemData>
+                    <li>
+                        <thing>StoneskinGland</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>TacticalCorneaImplant</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>AuxiliaryAI_Sharpshooter</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>AuxiliaryAI_Commando</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>AuxiliaryAI_Brawler</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>ProtectiveExoskeleton</thing>
+                        <count>1</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <!-- Production -->
+
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>ProductionProsthetic</defName>
+        <label>Production prosthetics</label>
+        <description>Request a drop of specific production prosthetics.</description>
+        <minTitle>Praetor</minTitle>
+        <permitPointCost>2</permitPointCost>
+        <cooldownDays>35</cooldownDays>
+        <royalAid>
+            <favorCost>10</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Prosthetics</category>
+                <column>0</column>
+                <row>8</row>
+                <itemData>
+                    <li>
+                        <thing>DrillArm</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>FieldHand</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>AestheticNose</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>DetoxifierStomach</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>ReprocessorStomach</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>NuclearStomach</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>AdrenalineRib</thing>
+                        <count>1</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>ProductionImplants</defName>
+        <label>Production implants</label>
+        <description>Request a drop of specific production implants.</description>
+        <minTitle>Praetor</minTitle>
+        <permitPointCost>2</permitPointCost>
+        <cooldownDays>35</cooldownDays>
+        <royalAid>
+            <favorCost>10</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Prosthetics</category>
+                <column>1</column>
+                <row>8</row>
+                <itemData>
+                    <li>
+                        <thing>Mindscrew</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>GastroAnalyzer</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>Immunoenhancer</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>CircadianAssistant</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>CircadianHalfCycler</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>LearningAssistant</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>PsychicSensitizer</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>PsychicHarmonizer</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>PsychicReader</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>MedicalRib</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>DruggedRib</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>HeaterRib</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>CoolerRib</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>Joywire</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>MuscleStimulator</thing>
+                        <count>1</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>ProductionImplantsAdvanced</defName>
+        <label>Advanced production implants</label>
+        <description>Request a drop of specific advanced production prosthetics.</description>
+        <minTitle>Viscount</minTitle>
+        <permitPointCost>4</permitPointCost>
+        <cooldownDays>45</cooldownDays>
+        <royalAid>
+            <favorCost>10</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Prosthetics</category>
+                <column>0</column>
+                <row>9</row>
+                <itemData>
+                    <li>
+                        <thing>InstinctOptimizingNanobots</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>OrganicOptimizingNanobots</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>Neurocalculator</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>BrainStimulator</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>ConstructorCore</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>FarmerCore</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>MinerCore</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>DoctorCore</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>DiplomatCore</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>ExoskeletonSuit</thing>
+                        <count>1</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+</Defs>

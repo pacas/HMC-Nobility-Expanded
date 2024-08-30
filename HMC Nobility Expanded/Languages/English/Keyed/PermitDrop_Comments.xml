@@ -17,6 +17,7 @@
     <DropComment_WoodDrop>Usually plastic and metals is cheaper than natural wood, but we've had a whole planet-farm recently integrated, tons of stuff available again.</DropComment_WoodDrop>
     <DropComment_ComponentsDrop>Parts, gears, pistons, something else... Figure it out for yourself.</DropComment_ComponentsDrop>
     <DropComment_ChemicalsDrop>It's some sort of chemicals I don't recognize. I'll tell the packers to pack this stuff better.</DropComment_ChemicalsDrop>
+    <DropComment_SerumsDrop>The pinnacle of technology in our world. I only know about them because of my work. Instant healing and resurrection is a dangerously powerful resource.</DropComment_SerumsDrop>
 
     <!-- Люди -->
     <DropComment_CallLaborerTeam>Not enough hands? We have a selection of low-skilled workers from the lower levels of the planet just for you!</DropComment_CallLaborerTeam>
@@ -44,8 +45,6 @@
     <DropComment_SpiderAnimalDrop>Spiders? Seriously? I wouldn't even go near them, and you want to live with them? You're insane.</DropComment_SpiderAnimalDrop>
 
     <!-- Одежда -->
-    <DropComment_SoldierAccessoriesDrop>Ah, stormtrooper gear. If your guard needs extra gear besides armor, that's your choice. That one won't take bullets, not like these scouts.</DropComment_SoldierAccessoriesDrop>
-    <DropComment_SoldierAccessoriesAltDrop>Ah, scouting gear. It's always good to have guards who can react quickly to threats, because all those stormtroopers are so slow...</DropComment_SoldierAccessoriesAltDrop>
     <DropComment_SmithOutfitDrop>Clothes for the blacksmith? I don't have the slightest idea what's supposed to be there, so I clarify... Oh, I see, it's easy to arrange.</DropComment_SmithOutfitDrop>
     <DropComment_FarmerOutfitDrop>Clothes for the farmer? I don't have the slightest idea what's supposed to be there, so I clarify... Oh, I see, it's easy to arrange.</DropComment_FarmerOutfitDrop>
     <DropComment_ChefOutfitDrop>Clothes for the chef? I don't have the slightest idea what's supposed to be there, so I clarify... Oh, I see, it's easy to arrange.</DropComment_ChefOutfitDrop>
@@ -56,7 +55,6 @@
     <DropComment_HazmatOutfitDrop>Chemical protection? What are you doing out there that needs chemical protection? You'd better not violate the galactic code now that you're part of the Empire. But if anything, I didn't see anything.</DropComment_HazmatOutfitDrop>
     <DropComment_RoyalOutfitDrop>Clothes for the nobility. We have our own particular style of clothing on Fortuna, if you want, I'll request a full set. Quality is guaranteed.</DropComment_RoyalOutfitDrop>
     <DropComment_PsychicOutfitDrop>Clothes for psykers? They' re respectable people, of course, but a lot of people are afraid of them, so even famous psykers prefer not to advertise their abilities. However, it is your right, we are ready to provide you with a set.</DropComment_PsychicOutfitDrop>
-    <DropComment_ShieldBeltDrop>Shield belt, useful thing, saved a lot of people, so we always have a reserve. Shall I prepare it for shipment?</DropComment_ShieldBeltDrop>
     <DropComment_SimpleOutfitDrop>Simple clothes for simple folks. We have plenty of those.</DropComment_SimpleOutfitDrop>
 
     <!-- Броня -->
@@ -68,12 +66,25 @@
     <DropComment_SpacerArmorDropPlus>A kit of the highest officers of the Imperial Guard. Normally you can't get such kits, but many kits created on Vulcan go through Fortuna, so I'm willing to arrange one for you.</DropComment_SpacerArmorDropPlus>
     <DropComment_UltraArmorDrop>I would have to go to the Capital Office on Juno for permission to issue such a suite. It is indeed one of the finest armors in the Empire, produced only on Vulcan, and only some of the most titled people in the Empire receive it.</DropComment_UltraArmorDrop>
     <DropComment_UltraArmorDropPlus>An upgraded set of ultra armor? I have no right to even apply for it, I refer you directly to the Capital Office...</DropComment_UltraArmorDropPlus>
+    <DropComment_SoldierAccessoriesDrop>Ah, stormtrooper gear. If your guard needs extra gear besides armor, that's your choice. That one won't take bullets, not like these scouts.</DropComment_SoldierAccessoriesDrop>
+    <DropComment_SoldierAccessoriesAltDrop>Ah, scouting gear. It's always good to have guards who can react quickly to threats, because all those stormtroopers are so slow...</DropComment_SoldierAccessoriesAltDrop>
+    <DropComment_ShieldBeltDrop>Shield belt, useful thing, saved a lot of people, so we always have a reserve. Shall I prepare it for shipment?</DropComment_ShieldBeltDrop>
+    <DropComment_ShieldHeavyBeltDrop>Shield belt, useful thing, saved a lot of people, so we always have a reserve. Shall I prepare it for shipment?</DropComment_ShieldHeavyBeltDrop>
+    <DropComment_ShieldQRBeltDrop>Shield belt, useful thing, saved a lot of people, so we always have a reserve. Shall I prepare it for shipment?</DropComment_ShieldQRBeltDrop>
+    <DropComment_ShieldRangedBeltDrop>Ranged belt-shield is a relatively new technology, so I have an outright ban on giving these samples to certain titles.</DropComment_ShieldRangedBeltDrop>
 
     <!-- Инструменты -->
     <DropComment_ToolDrop>A set of tools? Well, that's never too much to ask, especially if you give them out to the slaves on the plantations.</DropComment_ToolDrop>
     <DropComment_ToolDropPlus>Do you want durable tools? Well, that's not hard to arrange. It's not a bad thing to work with such a tool yourself.</DropComment_ToolDropPlus>
     <DropComment_AdvToolDrop>The Multitool is a tool of the workers of the Empire's core. They do not appear often outside of it, but you can request one.</DropComment_AdvToolDrop>
     <DropComment_AdvToolDropPlus>The Multitool from AdvancedMachines™ is the best multitool available for purchase. The Empire buys them in whole lots, so you can get one, too.</DropComment_AdvToolDropPlus>
+    <DropComment_PlantsWorkerDrop>As you sow, so shall you reap.</DropComment_PlantsWorkerDrop>
+    <DropComment_MinerWorkerDrop>A smart man will not go up or around the mountain - a smart man will dismantle it and build a palace out of it.</DropComment_MinerWorkerDrop>
+    <DropComment_BuilderWorkerDrop>Every man is the architect of his own fortune.</DropComment_BuilderWorkerDrop>
+    <DropComment_CraftsmanWorkerDrop>Forge your future. And also titanium, stellite, and God knows how many other things you don't need to know about.</DropComment_CraftsmanWorkerDrop>.
+    <DropComment_MedicWorkerDrop>The cost of a surgeon's mistake is always too high. These tools allow you to buy the chance of survival.</DropComment_MedicWorkerDrop>
+    <DropComment_JanitorWorkerDrop>Are you sure you need this? Are you sure?</DropComment_JanitorWorkerDrop>.
+    <DropComment_ScientistWorkerDrop>Most importantly, do not install games on this PDA.</DropComment_ScientistWorkerDrop>
 
     <!-- Турели -->
     <DropComment_BallistaDrop>Ballistas? Why do you need them, just get something better.</DropComment_BallistaDrop>
@@ -108,6 +119,8 @@
     <DropComment_BluntMeleeDropPlus>The best craftsmen and quality materials, and your weapons will carry the light of the Emperor to all parts of the galaxy even more effectively!</DropComment_BluntMeleeDropPlus>
     <DropComment_HeavyMeleeDrop>Heavy weapons are always a powerful argument. An acquaintance of mine told me how he suppressed a riot on the Aurora, the imperial knights were suppressing everyone with one sight of their weapons.</DropComment_HeavyMeleeDrop>
     <DropComment_HeavyMeleeDropPlus>The best craftsmen and quality materials, and your weapons will carry the light of the Emperor to all parts of the galaxy even more effectively!</DropComment_HeavyMeleeDropPlus>
+    <DropComment_EODBladeDrop>Monoblades are one of the best types of blades of modern times. Blades of a more civilized era, which are now produced only in the main and most advanced manufactoriums. You should definitely get one.</DropComment_EODBladeDrop>
+    <DropComment_EODBladePlusDrop>Monoblades are one of the best types of blades of modern times. And it also includes a combat AI. Blades of a more civilized era, which are now produced only in the main and most advanced manufactoriums. You should definitely get one.</DropComment_EODBladePlusDrop>
 
     <!-- Дальний бой -->
     <DropComment_BowDrop>If you need it, you can have it. The only reason we can't give it away for free is because of shipping. We got a warehouse full of stuff, but they won't let us just throw it in the furnace. But we'll give you more arrows.</DropComment_BowDrop>
