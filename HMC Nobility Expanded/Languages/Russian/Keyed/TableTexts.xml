@@ -11,6 +11,7 @@
     <PickResourceForDrop>Выберите предмет для запроса: </PickResourceForDrop>
     <ChosenResourceCount>Количество: </ChosenResourceCount>
     <ChosenResourceForDropDesc>О предмете: </ChosenResourceForDropDesc>
+    <CommandCallRoyalAidFavorOption>Осталось - {0_numCase ? день : дня : дней}, вызов за {1} ед. милости</CommandCallRoyalAidFavorOption>
     
     <!-- ===== Качество ===== -->
     <SpecificAwful>Качество: ужасное</SpecificAwful>

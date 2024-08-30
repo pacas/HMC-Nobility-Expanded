@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------
 
-- Changelog "HMC Empire Rewards" v0.19 - Multitasking (1.4):
+- Changelog "HMC Empire Rewards" v0.19 - Multitasking (1.5):
 
 1) Mod Integrations:
     * More Tools
@@ -10,9 +10,10 @@
 2) Fixed infamous VFEE_HighStellarch bug
 3) Minor rework of armor and clothing categories
 4) New serum permit, added coal to the ores permit
-5) Fixed permits from VFEE, added 2 new ones, reduced orbital laser price
+5) Fixed permits from VFEE, added 2 new ones, reduced orbital laser price, buffed strike turrets
 6) A bunch of different balance edits so that some permits aren't useless!
 If you've already picked your favorites, I recommend revisiting the list (I don't nerf the strong ones, I buff the weak ones, I'm not a helldivers author)
+7) 1.5 version
 
 1) Интеграции модов:
     * More Tools
@@ -22,9 +23,10 @@ If you've already picked your favorites, I recommend revisiting the list (I don'
 2) Исправлена вечная ошибка VFEE_HighStellarch
 3) Небольшая переделка категорий брони и одежды
 4) Новая привилегия на сыворотки, в привилегию руд добавлена угольная
-5) Исправлены привилегии из VFEE, добавлены оттуда 2 новых, уменьшена цена орбитального лазера
+5) Исправлены привилегии из VFEE, добавлены оттуда 2 новых, уменьшена цена орбитального лазера, улучшены ударные турели
 6) Куча различных балансных правок, чтобы некоторые привилегии не были бесполезными!
 Если уже выбрали любимые, рекомендую пересмотреть список (я не нерфлю сильные, а баффаю слабые, я не авторы хеллдайверс)
+7) Версия для 1.5
 
 ----------------------------------------------------------------------
 
