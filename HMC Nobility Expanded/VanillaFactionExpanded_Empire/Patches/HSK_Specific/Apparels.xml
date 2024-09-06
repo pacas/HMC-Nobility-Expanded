@@ -41,17 +41,12 @@
                     <MarketValue>1800</MarketValue>
                 </value>
             </li>
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[defName="VFEE_Apparel_JanissaryHelmet"]/thingCategories</xpath>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="VFEE_Apparel_JanissaryHelmet"]</xpath>
                 <value>
                     <thingCategories>
                         <li>MediumHelmetsCat</li>
                     </thingCategories>
-                </value>
-            </li>
-            <li Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="VFEE_Apparel_JanissaryHelmet"]</xpath>
-                <value>
                     <stuffCategories>
                         <li>StrongMetallic</li>
                     </stuffCategories>
