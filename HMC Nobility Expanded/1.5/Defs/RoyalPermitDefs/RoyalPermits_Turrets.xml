@@ -266,15 +266,16 @@
 
     <!-- Mortars -->
     <!-- AGS -->
+
     <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
         <defName>AGS17TurretDrop</defName>
         <label>AGS-17</label>
         <description>Request a drop of one AGS-17 with ammo.</description>
         <minTitle>Praetor</minTitle>
-        <cooldownDays>35</cooldownDays>
-        <permitPointCost>3</permitPointCost>
+        <cooldownDays>40</cooldownDays>
+        <permitPointCost>2</permitPointCost>
         <royalAid>
-            <favorCost>12</favorCost>
+            <favorCost>14</favorCost>
         </royalAid>
         <modExtensions>
             <li Class="NobilityExpanded.PermitExtensionList">
@@ -286,7 +287,7 @@
                     <li>
                         <thing>Turret_AGSThirty</thing>
                         <count>1</count>
-                        <ammoCount>45</ammoCount>
+                        <ammoCount>50</ammoCount>
                         <isTurret>true</isTurret>
                         <stuff>SteelBar</stuff>
                     </li>
@@ -294,17 +295,17 @@
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
-
+    
     <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
         <defName>AGS30TurretDrop</defName>
-        <label>AGS-30</label>
-        <description>Request a drop of one AGS-30 with ammo.</description>
+        <label>AGL Grenade Launcher</label>
+        <description>Request a drop of one AGL Grenade Launcher with ammo.</description>
         <minTitle>Legatus</minTitle>
-        <cooldownDays>40</cooldownDays>
+        <cooldownDays>65</cooldownDays>
+        <permitPointCost>3</permitPointCost>
         <prerequisite>AGS17TurretDrop</prerequisite>
-        <permitPointCost>2</permitPointCost>
         <royalAid>
-            <favorCost>14</favorCost>
+            <favorCost>18</favorCost>
         </royalAid>
         <modExtensions>
             <li Class="NobilityExpanded.PermitExtensionList">
@@ -314,9 +315,9 @@
                 <column>1</column>
                 <itemData>
                     <li>
-                        <thing>Turret_AGS30GrenadeLauncher</thing>
+                        <thing>Turret_AGLGrenadeLauncher</thing>
                         <count>1</count>
-                        <ammoCount>50</ammoCount>
+                        <ammoCount>45</ammoCount>
                         <isTurret>true</isTurret>
                         <stuff>TitaniumBar</stuff>
                     </li>

@@ -158,6 +158,7 @@
                     <WorkToMake>65000</WorkToMake>
                 </value>
             </li>
+            
             <!-- Armor Deserter -->
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[defName="VFEE_Apparel_ArmorDeserter" or defName="VFEE_Apparel_ArmorAbsolver"]/thingCategories</xpath>
@@ -221,6 +222,12 @@
                 </value>
             </li>
             <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VFEE_Apparel_ArmorDeserter"]/statBases/MaxHitPoints</xpath>
+                <value>
+                    <MaxHitPoints>250</MaxHitPoints>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[defName="VFEE_Apparel_ArmorDeserter"]/equippedStatOffsets</xpath>
                 <value>
                     <equippedStatOffsets>
@@ -280,6 +287,12 @@
                 <xpath>Defs/ThingDef[defName="VFEE_Apparel_DeserterHelmet"]/statBases/MarketValue</xpath>
                 <value>
                     <MarketValue>1300</MarketValue>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VFEE_Apparel_DeserterHelmet"]/statBases/MaxHitPoints</xpath>
+                <value>
+                    <MaxHitPoints>100</MaxHitPoints>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
