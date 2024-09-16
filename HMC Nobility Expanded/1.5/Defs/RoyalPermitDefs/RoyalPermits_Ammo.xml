@@ -1,0 +1,764 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    
+    <RoyalTitlePermitDef ParentName="DropResourcesTitle">
+        <defName>AmmunitionPermitTitle</defName>
+        <label>Ammunition</label>
+        <description>Request a drop of various ammunition.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Title</type>
+                <category>Ammunition</category>
+                <column>0</column>
+                <row>0</row>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
+        <defName>AmmoConventionalPermitSmallTitle</defName>
+        <label>Conventional ammunition</label>
+        <description>Request a drop of different conventional ammunition.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Category</type>
+                <category>Ammunition</category>
+                <row>1</row>
+                <column>0</column>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
+        <defName>AmmoArtilleryPermitSmallTitle</defName>
+        <label>Artillery shells</label>
+        <description>Request a drop of different artillery shells.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Category</type>
+                <category>Ammunition</category>
+                <row>5</row>
+                <column>0</column>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
+        <defName>AmmoFuturisticPermitSmallTitle</defName>
+        <label>Advanced ammunition</label>
+        <description>Request a drop of different conventional ammunition.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Category</type>
+                <category>Ammunition</category>
+                <row>7</row>
+                <column>0</column>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>PistolAmmoDrop</defName>
+        <label>Small calibers</label>
+        <description>Request a drop of specific small calibers.</description>
+        <minTitle>Acolyte</minTitle>
+        <permitPointCost>1</permitPointCost>
+        <cooldownDays>30</cooldownDays>
+        <royalAid>
+            <favorCost>2</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Ammunition</category>
+                <row>2</row>
+                <column>0</column>
+                <itemData>
+                    <li>
+                        <thing>Ammo_9x19mmPara_FMJ</thing>
+                        <count>500</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_9x19mmPara_AP</thing>
+                        <count>400</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_9x19mmPara_HP</thing>
+                        <count>400</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_45ACP_FMJ</thing>
+                        <count>500</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_45ACP_AP</thing>
+                        <count>400</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_45ACP_HP</thing>
+                        <count>400</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_762x25mmTT_FMJ</thing>
+                        <count>500</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_762x25mmTT_AP</thing>
+                        <count>400</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_762x25mmTT_HP</thing>
+                        <count>400</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_762x25mmTT_API</thing>
+                        <count>270</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>ShotgunAmmoDrop</defName>
+        <label>Shotgun shells</label>
+        <description>Request a drop of specific shotgun shells.</description>
+        <minTitle>Acolyte</minTitle>
+        <permitPointCost>1</permitPointCost>
+        <cooldownDays>30</cooldownDays>
+        <royalAid>
+            <favorCost>2</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Ammunition</category>
+                <row>2</row>
+                <column>1</column>
+                <itemData>
+                    <li>
+                        <thing>Ammo_12Gauge_Buck</thing>
+                        <count>300</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_12Gauge_Slug</thing>
+                        <count>210</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_12Gauge_Beanbag</thing>
+                        <count>210</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_12Gauge_ElectroSlug</thing>
+                        <count>150</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_12Gauge_F</thing>
+                        <count>120</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_12Gauge_S</thing>
+                        <count>120</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_12Gauge_DB</thing>
+                        <count>120</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>RifleAmmoDrop</defName>
+        <label>Smaller rifle cartridges</label>
+        <description>Request a drop of specific rifle cartridges.</description>
+        <minTitle>Knight</minTitle>
+        <permitPointCost>1</permitPointCost>
+        <cooldownDays>30</cooldownDays>
+        <royalAid>
+            <favorCost>2</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Ammunition</category>
+                <row>3</row>
+                <column>0</column>
+                <itemData>
+                    <!-- 556x45mm -->
+                    <li>
+                        <thing>Ammo_556x45mmNATO_FMJ</thing>
+                        <count>500</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_556x45mmNATO_AP</thing>
+                        <count>400</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_556x45mmNATO_HP</thing>
+                        <count>400</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_556x45mmNATO_Incendiary</thing>
+                        <count>350</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_556x45mmNATO_Sabot</thing>
+                        <count>350</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_556x45mmNATO_HE_HMC</thing>
+                        <count>350</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_556x45mmNATO_HE</thing>
+                        <count>270</count>
+                    </li>
+                    <!-- 5x50mmCaseless -->
+                    <li>
+                        <thing>Ammo_5x50mmCaseless_Sabot</thing>
+                        <count>350</count>
+                    </li>
+                    <!-- 545x39mm -->
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_545x39mmSoviet_FMJ</thing>
+                        <count>500</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_545x39mmSoviet_AP</thing>
+                        <count>400</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_545x39mmSoviet_HP</thing>
+                        <count>400</count>
+                    </li>
+                    <!-- 9x39mm -->
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_9x39mmSoviet_FMJ</thing>
+                        <count>500</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_9x39mmSoviet_AP</thing>
+                        <count>400</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_9x39mmSoviet_SH</thing>
+                        <count>400</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_9x39mmSoviet_EMP</thing>
+                        <count>350</count>
+                    </li>
+                    <!-- 473x33mm -->
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_473x33mmCaseless_FMJ</thing>
+                        <count>500</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_473x33mmCaseless_AP</thing>
+                        <count>400</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_473x33mmCaseless_HP</thing>
+                        <count>400</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_473x33mmCaseless_EMP</thing>
+                        <count>350</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>RifleAmmoDrop</defName>
+        <label>Bigger rifle cartridges</label>
+        <description>Request a drop of specific rifle cartridges.</description>
+        <minTitle>Knight</minTitle>
+        <permitPointCost>1</permitPointCost>
+        <cooldownDays>30</cooldownDays>
+        <royalAid>
+            <favorCost>3</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Ammunition</category>
+                <row>3</row>
+                <column>1</column>
+                <itemData>
+                    <!-- 762x39mm -->
+                    <li>
+                        <thing>Ammo_762x39mmSoviet_FMJ</thing>
+                        <count>500</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_762x39mmSoviet_AP</thing>
+                        <count>400</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_762x39mmSoviet_HP</thing>
+                        <count>400</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_762x39mmSoviet_Incendiary</thing>
+                        <count>350</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_762x39mmSoviet_Sabot</thing>
+                        <count>350</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_762x39mmSoviet_HE</thing>
+                        <count>270</count>
+                    </li>
+                    <!-- 762x51mm -->
+                    <li>
+                        <thing>Ammo_762x51mmNATO_FMJ</thing>
+                        <count>500</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_762x51mmNATO_AP</thing>
+                        <count>400</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_762x51mmNATO_HP</thing>
+                        <count>400</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_762x51mmNATO_Incendiary</thing>
+                        <count>350</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_762x51mmNATO_HE</thing>
+                        <count>270</count>
+                    </li>
+                    <!-- 303British -->
+                    <li>
+                        <thing>Ammo_303British_FMJ</thing>
+                        <count>500</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_303British_AP</thing>
+                        <count>400</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_303British_HP</thing>
+                        <count>400</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_303British_Incendiary</thing>
+                        <count>350</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_303British_Sabot</thing>
+                        <count>350</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_303British_HE</thing>
+                        <count>270</count>
+                    </li>
+                    <!-- 762x54mmR -->
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_762x54mmR_FMJ</thing>
+                        <count>500</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_762x54mmR_AP</thing>
+                        <count>400</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_762x54mmR_HP</thing>
+                        <count>400</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>HighCalibersAmmoDrop</defName>
+        <label>High calibers</label>
+        <description>Request a drop of specific high calibers.</description>
+        <minTitle>Praetor</minTitle>
+        <permitPointCost>1</permitPointCost>
+        <cooldownDays>30</cooldownDays>
+        <royalAid>
+            <favorCost>3</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Ammunition</category>
+                <row>4</row>
+                <column>0</column>
+                <itemData>
+                    <!-- 50BMG -->
+                    <li>
+                        <thing>Ammo_50BMG_FMJ</thing>
+                        <count>300</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_50BMG_AP</thing>
+                        <count>250</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_50BMG_Sabot</thing>
+                        <count>250</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_50BMG_Incendiary</thing>
+                        <count>200</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_50BMG_HE</thing>
+                        <count>150</count>
+                    </li>
+                    <!-- 145x114mm -->
+                    <li>
+                        <thing>Ammo_145x114mm_FMJ</thing>
+                        <count>300</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_145x114mm_AP</thing>
+                        <count>250</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_145x114mm_Sabot</thing>
+                        <count>250</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_145x114mm_Incendiary</thing>
+                        <count>200</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_145x114mm_HE</thing>
+                        <count>150</count>
+                    </li>
+                    <!-- 127x55mm -->
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_127x55mmAR_FMJ</thing>
+                        <count>300</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_127x55mmAR_API</thing>
+                        <count>250</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_127x55mmAR_Sabot</thing>
+                        <count>250</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_127x55mmAR_HE</thing>
+                        <count>200</count>
+                    </li>
+                    <!-- 338LM -->
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_338LM_FMJ</thing>
+                        <count>300</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_338LM_AP</thing>
+                        <count>250</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_338LM_HP</thing>
+                        <count>250</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_338LM_EMP</thing>
+                        <count>200</count>
+                    </li>
+                    <!-- 408CT -->
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_408CT_FMJ</thing>
+                        <count>300</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_408CT_AP</thing>
+                        <count>250</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_408CT_HP</thing>
+                        <count>250</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_408CT_EMP</thing>
+                        <count>200</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>GrenadesAmmoDrop</defName>
+        <label>Grenade cartridges</label>
+        <description>Request a drop of specific grenade cartridges.</description>
+        <minTitle>Legatus</minTitle>
+        <permitPointCost>1</permitPointCost>
+        <cooldownDays>30</cooldownDays>
+        <royalAid>
+            <favorCost>4</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Ammunition</category>
+                <row>4</row>
+                <column>1</column>
+                <itemData>
+                    <!-- 30x29mm -->
+                    <li>
+                        <thing>Ammo_30x29mmGrenade_HE</thing>
+                        <count>120</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_30x29mmGrenade_HEDP</thing>
+                        <count>120</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_30x29mmGrenade_HE_TFuzed</thing>
+                        <count>100</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_30x29mmGrenade_EMP</thing>
+                        <count>75</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_30x29mmGrenade_Smoke</thing>
+                        <count>120</count>
+                    </li>
+                    <!-- 40x46mm -->
+                    <li>
+                        <thing>Ammo_40x46mmGrenade_HE</thing>
+                        <count>120</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_40x46mmGrenade_HEDP</thing>
+                        <count>120</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_40x46mmGrenade_HE_TFuzed</thing>
+                        <count>100</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_40x46mmGrenade_EMP</thing>
+                        <count>75</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_40x46mmGrenade_Smoke</thing>
+                        <count>120</count>
+                    </li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">
+                        <thing>Ammo_40x46mmGrenade_Tox</thing>
+                        <count>120</count>
+                    </li>
+                    <!-- 25x40mm -->
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_25x40mmGrenade_HE</thing>
+                        <count>120</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_25x40mmGrenade_Incendiary</thing>
+                        <count>100</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_25x40mmGrenade_EMP</thing>
+                        <count>75</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>RocketsAmmoDrop</defName>
+        <label>Rockets</label>
+        <description>Request a drop of specific rockets.</description>
+        <minTitle>Legatus</minTitle>
+        <permitPointCost>1</permitPointCost>
+        <cooldownDays>30</cooldownDays>
+        <royalAid>
+            <favorCost>4</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Ammunition</category>
+                <row>5</row>
+                <column>0</column>
+                <itemData>
+                    <!-- RPG7 -->
+                    <li>
+                        <thing>Ammo_RPG7Grenade_HEAT</thing>
+                        <count>15</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_RPG7Grenade_Frag</thing>
+                        <count>15</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_RPG7Grenade_Thermobaric</thing>
+                        <count>8</count>
+                    </li>
+                    <!-- 145x114mm -->
+                    <li>
+                        <thing>Ammo_SPG9Rocket_HEAT</thing>
+                        <count>15</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_SPG9Rocket_Frag</thing>
+                        <count>15</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_SPG9Rocket_EMP</thing>
+                        <count>8</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_SPG9Rocket_Thermobaric</thing>
+                        <count>8</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>SmallShellsAmmoDrop</defName>
+        <label>Smaller shells</label>
+        <description>Request a drop of specific smaller artillery shells.</description>
+        <minTitle>Baron</minTitle>
+        <permitPointCost>1</permitPointCost>
+        <cooldownDays>30</cooldownDays>
+        <royalAid>
+            <favorCost>5</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Ammunition</category>
+                <row>6</row>
+                <column>0</column>
+                <itemData>
+                    <!-- 81mm -->
+                    <li>
+                        <thing>Shell_HighExplosive</thing>
+                        <count>15</count>
+                    </li>
+                    <li>
+                        <thing>Shell_Incendiary</thing>
+                        <count>15</count>
+                    </li>
+                    <li>
+                        <thing>Shell_HighExplosive_HFuzed</thing>
+                        <count>12</count>
+                    </li>
+                    <li>
+                        <thing>Shell_EMP</thing>
+                        <count>8</count>
+                    </li>
+                    <li>
+                        <thing>Shell_AntigrainWarhead</thing>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <thing>Shell_Firefoam</thing>
+                        <count>20</count>
+                    </li>
+                    <li>
+                        <thing>Shell_Smoke</thing>
+                        <count>20</count>
+                    </li>
+                    <!-- 90mm -->
+                    <li>
+                        <thing>Ammo_90mmCannonShell_HEAT</thing>
+                        <count>12</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_90mmCannonShell_AP</thing>
+                        <count>12</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_90mmCannonShell_HE</thing>
+                        <count>12</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_90mmCannonShell_HE_TFuzed</thing>
+                        <count>12</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_40x46mmGrenade_EMP</thing>
+                        <count>10</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_90mmCannonShell_EMP</thing>
+                        <count>8</count>
+                    </li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">
+                        <thing>Ammo_90mmCannonShell_Plasma</thing>
+                        <count>8</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>BigShellsAmmoDrop</defName>
+        <label>Bigger shells</label>
+        <description>Request a drop of specific bigger artillery shells.</description>
+        <minTitle>Baron</minTitle>
+        <permitPointCost>1</permitPointCost>
+        <cooldownDays>30</cooldownDays>
+        <royalAid>
+            <favorCost>5</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Ammunition</category>
+                <row>6</row>
+                <column>1</column>
+                <itemData>
+                    <!-- 120mm -->
+                    <li>
+                        <thing>Ammo_120mmCannonShell_HEAT</thing>
+                        <count>10</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_120mmCannonShell_HE</thing>
+                        <count>8</count>
+                    </li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">
+                        <thing>Ammo_120mmCannonShell_Plasma</thing>
+                        <count>5</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_155mmHowitzerShell_Incendiary</thing>
+                        <count>7</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_155mmHowitzerShell_HE</thing>
+                        <count>5</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_155mmHowitzerShell_HE_HFuzed</thing>
+                        <count>5</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_155mmHowitzerShell_EMP</thing>
+                        <count>5</count>
+                    </li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">
+                        <thing>Ammo_155mmHowitzerShell_Plasma</thing>
+                        <count>4</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+    
+</Defs>
