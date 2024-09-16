@@ -199,25 +199,13 @@
                         <thing>Ammo_556x45mmNATO_HP</thing>
                         <count>400</count>
                     </li>
-                    <li>
-                        <thing>Ammo_556x45mmNATO_Incendiary</thing>
-                        <count>350</count>
-                    </li>
-                    <li>
-                        <thing>Ammo_556x45mmNATO_Sabot</thing>
-                        <count>350</count>
-                    </li>
                     <li MayRequire="arpomo6.hmc.project">
                         <thing>Ammo_556x45mmNATO_HE_HMC</thing>
                         <count>350</count>
                     </li>
-                    <li>
-                        <thing>Ammo_556x45mmNATO_HE</thing>
-                        <count>270</count>
-                    </li>
                     <!-- 5x50mmCaseless -->
                     <li>
-                        <thing>Ammo_5x50mmCaseless_Sabot</thing>
+                        <thing>Ammo_5x100mmCaseless_Sabot</thing>
                         <count>350</count>
                     </li>
                     <!-- 545x39mm -->
@@ -302,18 +290,6 @@
                         <thing>Ammo_762x39mmSoviet_HP</thing>
                         <count>400</count>
                     </li>
-                    <li>
-                        <thing>Ammo_762x39mmSoviet_Incendiary</thing>
-                        <count>350</count>
-                    </li>
-                    <li>
-                        <thing>Ammo_762x39mmSoviet_Sabot</thing>
-                        <count>350</count>
-                    </li>
-                    <li>
-                        <thing>Ammo_762x39mmSoviet_HE</thing>
-                        <count>270</count>
-                    </li>
                     <!-- 762x51mm -->
                     <li>
                         <thing>Ammo_762x51mmNATO_FMJ</thing>
@@ -327,14 +303,6 @@
                         <thing>Ammo_762x51mmNATO_HP</thing>
                         <count>400</count>
                     </li>
-                    <li>
-                        <thing>Ammo_762x51mmNATO_Incendiary</thing>
-                        <count>350</count>
-                    </li>
-                    <li>
-                        <thing>Ammo_762x51mmNATO_HE</thing>
-                        <count>270</count>
-                    </li>
                     <!-- 303British -->
                     <li>
                         <thing>Ammo_303British_FMJ</thing>
@@ -347,18 +315,6 @@
                     <li>
                         <thing>Ammo_303British_HP</thing>
                         <count>400</count>
-                    </li>
-                    <li>
-                        <thing>Ammo_303British_Incendiary</thing>
-                        <count>350</count>
-                    </li>
-                    <li>
-                        <thing>Ammo_303British_Sabot</thing>
-                        <count>350</count>
-                    </li>
-                    <li>
-                        <thing>Ammo_303British_HE</thing>
-                        <count>270</count>
                     </li>
                     <!-- 762x54mmR -->
                     <li MayRequire="arpomo6.hmc.project">
@@ -401,10 +357,6 @@
                         <count>300</count>
                     </li>
                     <li>
-                        <thing>Ammo_50BMG_AP</thing>
-                        <count>250</count>
-                    </li>
-                    <li>
                         <thing>Ammo_50BMG_Sabot</thing>
                         <count>250</count>
                     </li>
@@ -420,14 +372,6 @@
                     <li>
                         <thing>Ammo_145x114mm_FMJ</thing>
                         <count>300</count>
-                    </li>
-                    <li>
-                        <thing>Ammo_145x114mm_AP</thing>
-                        <count>250</count>
-                    </li>
-                    <li>
-                        <thing>Ammo_145x114mm_Sabot</thing>
-                        <count>250</count>
                     </li>
                     <li>
                         <thing>Ammo_145x114mm_Incendiary</thing>
@@ -513,10 +457,6 @@
                     <!-- 30x29mm -->
                     <li>
                         <thing>Ammo_30x29mmGrenade_HE</thing>
-                        <count>120</count>
-                    </li>
-                    <li>
-                        <thing>Ammo_30x29mmGrenade_HEDP</thing>
                         <count>120</count>
                     </li>
                     <li>
@@ -613,14 +553,6 @@
                         <thing>Ammo_SPG9Rocket_Frag</thing>
                         <count>15</count>
                     </li>
-                    <li>
-                        <thing>Ammo_SPG9Rocket_EMP</thing>
-                        <count>8</count>
-                    </li>
-                    <li>
-                        <thing>Ammo_SPG9Rocket_Thermobaric</thing>
-                        <count>8</count>
-                    </li>
                 </itemData>
             </li>
         </modExtensions>
@@ -678,10 +610,6 @@
                         <count>12</count>
                     </li>
                     <li>
-                        <thing>Ammo_90mmCannonShell_AP</thing>
-                        <count>12</count>
-                    </li>
-                    <li>
                         <thing>Ammo_90mmCannonShell_HE</thing>
                         <count>12</count>
                     </li>
@@ -735,10 +663,6 @@
                     <li MayRequire="Ludeon.RimWorld.Biotech">
                         <thing>Ammo_120mmCannonShell_Plasma</thing>
                         <count>5</count>
-                    </li>
-                    <li>
-                        <thing>Ammo_155mmHowitzerShell_Incendiary</thing>
-                        <count>7</count>
                     </li>
                     <li>
                         <thing>Ammo_155mmHowitzerShell_HE</thing>
