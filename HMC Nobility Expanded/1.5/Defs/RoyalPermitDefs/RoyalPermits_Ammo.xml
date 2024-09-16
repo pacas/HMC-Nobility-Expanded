@@ -37,7 +37,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Category</type>
                 <category>Ammunition</category>
-                <row>5</row>
+                <row>6</row>
                 <column>0</column>
             </li>
         </modExtensions>
@@ -51,7 +51,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Category</type>
                 <category>Ammunition</category>
-                <row>7</row>
+                <row>8</row>
                 <column>0</column>
             </li>
         </modExtensions>
@@ -572,7 +572,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Ammunition</category>
-                <row>6</row>
+                <row>7</row>
                 <column>0</column>
                 <itemData>
                     <!-- 81mm -->
@@ -648,7 +648,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Ammunition</category>
-                <row>6</row>
+                <row>7</row>
                 <column>1</column>
                 <itemData>
                     <!-- 120mm -->
