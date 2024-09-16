@@ -170,7 +170,7 @@
     </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
-        <defName>RifleAmmoDrop</defName>
+        <defName>SmallRifleAmmoDrop</defName>
         <label>Smaller rifle cartridges</label>
         <description>Request a drop of specific rifle cartridges.</description>
         <minTitle>Knight</minTitle>
@@ -273,7 +273,7 @@
     </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
-        <defName>RifleAmmoDrop</defName>
+        <defName>BigRifleAmmoDrop</defName>
         <label>Bigger rifle cartridges</label>
         <description>Request a drop of specific rifle cartridges.</description>
         <minTitle>Knight</minTitle>
