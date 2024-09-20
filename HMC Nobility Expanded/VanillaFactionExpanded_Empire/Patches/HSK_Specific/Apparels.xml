@@ -21,6 +21,17 @@
                     <StuffEffectMultiplierArmor>6.4</StuffEffectMultiplierArmor>
                 </value>
             </li>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[
+                    defName="VFEE_Apparel_TechfriarCrown" or
+                    defName="VFEE_Apparel_AbsolverHelmet" or
+                    defName="VFEE_Apparel_DeserterHelmet" or
+                    defName="VFEE_Apparel_JanissaryHelmet" or
+                    defName="VFEE_Apparel_ArmorDeserter" or
+                    defName="VFEE_Apparel_ArmorAbsolver" or
+                    defName="VFEE_Apparel_JanissaryCuirass"
+                    ]/comps/li[@Class="CompProperties_Biocodable"]</xpath>
+            </li>
 
             <!-- Janissary Helmet -->
             <li Class="PatchOperationReplace">
@@ -41,16 +52,9 @@
                     <MarketValue>1800</MarketValue>
                 </value>
             </li>
-            <li Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="VFEE_Apparel_JanissaryHelmet"]</xpath>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VFEE_Apparel_JanissaryHelmet"]/recipeMaker</xpath>
                 <value>
-                    <thingCategories>
-                        <li>MediumHelmetsCat</li>
-                    </thingCategories>
-                    <stuffCategories>
-                        <li>StrongMetallic</li>
-                    </stuffCategories>
-                    <costStuffCount>55</costStuffCount>
                     <recipeMaker Inherit="False">
                         <workSpeedStat>SmithingSpeed</workSpeedStat>
                         <workSkill>Crafting</workSkill>
@@ -65,6 +69,18 @@
                             <li>HyperTailoringBench</li>
                         </recipeUsers>
                     </recipeMaker>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="VFEE_Apparel_JanissaryHelmet"]</xpath>
+                <value>
+                    <thingCategories>
+                        <li>MediumHelmetsCat</li>
+                    </thingCategories>
+                    <stuffCategories>
+                        <li>StrongMetallic</li>
+                    </stuffCategories>
+                    <costStuffCount>55</costStuffCount>
                 </value>
             </li>
             
@@ -95,13 +111,9 @@
                     </thingCategories>
                 </value>
             </li>
-            <li Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="VFEE_Apparel_JanissaryCuirass"]</xpath>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VFEE_Apparel_JanissaryCuirass"]/recipeMaker</xpath>
                 <value>
-                    <stuffCategories>
-                        <li>StrongMetallic</li>
-                    </stuffCategories>
-                    <costStuffCount>110</costStuffCount>
                     <recipeMaker Inherit="False">
                         <workSpeedStat>SmithingSpeed</workSpeedStat>
                         <workSkill>Crafting</workSkill>
@@ -116,6 +128,15 @@
                             <li>HyperTailoringBench</li>
                         </recipeUsers>
                     </recipeMaker>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="VFEE_Apparel_JanissaryCuirass"]</xpath>
+                <value>
+                    <stuffCategories>
+                        <li>StrongMetallic</li>
+                    </stuffCategories>
+                    <costStuffCount>110</costStuffCount>
                 </value>
             </li>
             
