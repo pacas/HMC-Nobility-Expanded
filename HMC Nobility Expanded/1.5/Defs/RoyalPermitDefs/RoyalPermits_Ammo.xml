@@ -171,7 +171,7 @@
 
     <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
         <defName>SmallRifleAmmoDrop</defName>
-        <label>Smaller rifle cartridges</label>
+        <label>small rifle cartridges</label>
         <description>Request a drop of specific rifle cartridges.</description>
         <minTitle>Knight</minTitle>
         <permitPointCost>1</permitPointCost>
@@ -262,7 +262,7 @@
 
     <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
         <defName>BigRifleAmmoDrop</defName>
-        <label>Bigger rifle cartridges</label>
+        <label>medium rifle cartridges</label>
         <description>Request a drop of specific rifle cartridges.</description>
         <minTitle>Knight</minTitle>
         <permitPointCost>1</permitPointCost>
@@ -336,7 +336,7 @@
 
     <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
         <defName>HighCalibersAmmoDrop</defName>
-        <label>High calibers</label>
+        <label>big rifle cartridges</label>
         <description>Request a drop of specific high calibers.</description>
         <minTitle>Praetor</minTitle>
         <permitPointCost>1</permitPointCost>
@@ -379,6 +379,32 @@
                     </li>
                     <li>
                         <thing>Ammo_145x114mm_HE</thing>
+                        <count>150</count>
+                    </li>
+                    <!-- 20x102mm -->
+                    <li>
+                        <thing>Ammo_20x102mm_FMJ</thing>
+                        <count>300</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_20x102mm_Incendiary</thing>
+                        <count>200</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_20x102mm_HE</thing>
+                        <count>150</count>
+                    </li>
+                    <!-- 30x173mm -->
+                    <li>
+                        <thing>Ammo_30x173mm_FMJ</thing>
+                        <count>300</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_30x173mm_Incendiary</thing>
+                        <count>200</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_30x173mm_HE</thing>
                         <count>150</count>
                     </li>
                     <!-- 127x55mm -->
@@ -431,6 +457,32 @@
                     <li MayRequire="arpomo6.hmc.project">
                         <thing>Ammo_408CT_EMP</thing>
                         <count>200</count>
+                    </li>
+                    <!-- 127x108mm -->
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_127x108mm_FMJ</thing>
+                        <count>300</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_127x108mm_Incendiary</thing>
+                        <count>250</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_127x108mm_Sabot</thing>
+                        <count>250</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_127x108mm_HE</thing>
+                        <count>200</count>
+                    </li>
+                    <!-- 700NE -->
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_700NE_HP</thing>
+                        <count>300</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_700NE_S</thing>
+                        <count>300</count>
                     </li>
                 </itemData>
             </li>
@@ -542,9 +594,9 @@
                     </li>
                     <li>
                         <thing>Ammo_RPG7Grenade_Thermobaric</thing>
-                        <count>8</count>
+                        <count>10</count>
                     </li>
-                    <!-- 145x114mm -->
+                    <!-- SPG9 -->
                     <li>
                         <thing>Ammo_SPG9Rocket_HEAT</thing>
                         <count>15</count>
@@ -553,6 +605,60 @@
                         <thing>Ammo_SPG9Rocket_Frag</thing>
                         <count>15</count>
                     </li>
+                    <!-- 130mm -->
+                    <li>
+                        <thing>Ammo_130mmRocketMissile</thing>
+                        <count>15</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>FuelAmmoDrop</defName>
+        <label>Fuel cells</label>
+        <description>Request a drop of specific fuel cells.</description>
+        <minTitle>Legatus</minTitle>
+        <permitPointCost>1</permitPointCost>
+        <cooldownDays>30</cooldownDays>
+        <royalAid>
+            <favorCost>4</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Ammunition</category>
+                <row>5</row>
+                <column>1</column>
+                <itemData>
+                    <!-- 30x64mm -->
+                    <li>
+                        <thing>Ammo_30x64mmFuel_Incendiary</thing>
+                        <count>500</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_30x64mmFuel_Thermobaric</thing>
+                        <count>400</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_30x64mmFuel_Foam</thing>
+                        <count>700</count>
+                    </li>
+                    <!-- 80x256mm -->
+                    <li>
+                        <thing>Ammo_80x256mmFuel_Thermobaric</thing>
+                        <count>100</count>
+                    </li>
+                    <!-- 110x384mm -->
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_110x384mmDoom_Thermobaric</thing>
+                        <count>50</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_110x384mmDoom_Plasma</thing>
+                        <count>50</count>
+                    </li>
                 </itemData>
             </li>
         </modExtensions>
@@ -560,7 +666,7 @@
 
     <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
         <defName>SmallShellsAmmoDrop</defName>
-        <label>Smaller shells</label>
+        <label>shells</label>
         <description>Request a drop of specific smaller artillery shells.</description>
         <minTitle>Baron</minTitle>
         <permitPointCost>1</permitPointCost>
@@ -636,7 +742,7 @@
 
     <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
         <defName>BigShellsAmmoDrop</defName>
-        <label>Bigger shells</label>
+        <label>big shells</label>
         <description>Request a drop of specific bigger artillery shells.</description>
         <minTitle>Baron</minTitle>
         <permitPointCost>1</permitPointCost>
@@ -679,6 +785,96 @@
                     <li MayRequire="Ludeon.RimWorld.Biotech">
                         <thing>Ammo_155mmHowitzerShell_Plasma</thing>
                         <count>4</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>ChargedAmmoDrop</defName>
+        <label>Charged ammunition</label>
+        <description>Request a drop of specific charged ammunition.</description>
+        <minTitle>Baron</minTitle>
+        <permitPointCost>1</permitPointCost>
+        <cooldownDays>30</cooldownDays>
+        <royalAid>
+            <favorCost>4</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Ammunition</category>
+                <row>9</row>
+                <column>0</column>
+                <itemData>
+                    <!-- 6x24mm -->
+                    <li>
+                        <thing>Ammo_6x24mmCharged</thing>
+                        <count>500</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_6x24mmCharged_AP</thing>
+                        <count>450</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_6x24mmCharged_Ion</thing>
+                        <count>400</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_GaussCharged</thing>
+                        <count>50</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>EnergyAmmoDrop</defName>
+        <label>Energy ammunition</label>
+        <description>Request a drop of specific energy ammunition.</description>
+        <minTitle>Viscount</minTitle>
+        <permitPointCost>1</permitPointCost>
+        <cooldownDays>30</cooldownDays>
+        <royalAid>
+            <favorCost>5</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Ammunition</category>
+                <row>9</row>
+                <column>1</column>
+                <itemData>
+                    <!-- Futuristic -->
+                    <li>
+                        <thing>Ammo_BlasterBolt</thing>
+                        <count>500</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_BlasterPelletBolt</thing>
+                        <count>500</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_PlasmaBolt</thing>
+                        <count>500</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_PlasmaPelletBolt</thing>
+                        <count>500</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_ChargedLaser</thing>
+                        <count>500</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_ChargedLaser_Stable</thing>
+                        <count>500</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_RailRay</thing>
+                        <count>50</count>
                     </li>
                 </itemData>
             </li>

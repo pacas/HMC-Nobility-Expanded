@@ -44,6 +44,7 @@
     <PermitCategory_Apparel>Одежда и аксессуары</PermitCategory_Apparel>
     <PermitCategory_Melee>Холодное оружие</PermitCategory_Melee>
     <PermitCategory_Ranged>Огнестрельное оружие</PermitCategory_Ranged>
+    <PermitCategory_Ammunition>Боеприпасы</PermitCategory_Ammunition>
     <PermitCategory_Turrets>Турели и миномёты</PermitCategory_Turrets>
     <PermitCategory_Animals>Животные</PermitCategory_Animals>
     <PermitCategory_Seeds>Семена</PermitCategory_Seeds>

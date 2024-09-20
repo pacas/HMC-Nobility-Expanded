@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>MagAmmoDrop</defName>
+        <label>Magnetic ammunition</label>
+        <description>Request a drop of specific magnetic ammunition.</description>
+        <minTitle>Viscount</minTitle>
+        <permitPointCost>1</permitPointCost>
+        <cooldownDays>30</cooldownDays>
+        <royalAid>
+            <favorCost>5</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Ammunition</category>
+                <row>10</row>
+                <column>0</column>
+                <itemData>
+                    <!-- Futuristic -->
+                    <li>
+                        <thing>Ammo_67x29mm_AP</thing>
+                        <count>500</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_67x29mm_EMP</thing>
+                        <count>500</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_12Mag_Buck</thing>
+                        <count>180</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_12Mag_ElectroSlug</thing>
+                        <count>140</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+    
+</Defs>
