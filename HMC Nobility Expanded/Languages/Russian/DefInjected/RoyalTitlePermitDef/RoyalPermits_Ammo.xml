@@ -7,7 +7,7 @@
     <AmmoConventionalPermitSmallTitle.description>Запрос доставки различных стандартных видов боеприпасов.</AmmoConventionalPermitSmallTitle.description>
     <AmmoArtilleryPermitSmallTitle.label>артиллерийские снаряды</AmmoArtilleryPermitSmallTitle.label>
     <AmmoArtilleryPermitSmallTitle.description>Запрос доставки различных снарядов для минометов.</AmmoArtilleryPermitSmallTitle.description>
-    <AmmoFuturisticPermitSmallTitle.label>средневековая броня</AmmoFuturisticPermitSmallTitle.label>
+    <AmmoFuturisticPermitSmallTitle.label>продвинутые боеприпасы</AmmoFuturisticPermitSmallTitle.label>
     <AmmoFuturisticPermitSmallTitle.description>Запрос доставки набора средневековых доспехов.</AmmoFuturisticPermitSmallTitle.description>
     
     
@@ -38,7 +38,7 @@
     <EnergyAmmoDrop.label>энергетические патроны</EnergyAmmoDrop.label>
     <EnergyAmmoDrop.description>Запрос доставки разных энергетических патронов.</EnergyAmmoDrop.description>
     
-    <MagAmmoDrop.label>магнитные</MagAmmoDrop.label>
+    <MagAmmoDrop.label>магнитные патроны</MagAmmoDrop.label>
     <MagAmmoDrop.description>Запрос доставки разных магнитных патронов.</MagAmmoDrop.description>
 
 </LanguageData>

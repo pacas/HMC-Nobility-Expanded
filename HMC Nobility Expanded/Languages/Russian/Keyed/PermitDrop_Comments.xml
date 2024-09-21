@@ -144,6 +144,18 @@
     <DropComment_PlasmerDrop>Плазмеры - лучшая категория оружия как по мне. Хотя в Империи энергооружие распределено достаточно равномерно, лично себе я попросил выдать именно служебный плазмер.</DropComment_PlasmerDrop>
     <DropComment_ChargeRailDrop>Энерговинтовки - редкость даже среди обычных подразделений, ведь они требуют куда больших навыков, чем любое другое оружие. Не каждый справится с ним, а отдачей рейлгана вообще проверяют некоторых перспективных солдат на тип подходящего им оружия.</DropComment_ChargeRailDrop>
 
+    <!-- Боеприпасы -->
+    <DropComment_SeedsGrainsDrop>Злаковые - лучший завтрак что на планетах ядра, что у вас! Правда у нас их не выращивают.</DropComment_SeedsGrainsDrop>
+    <DropComment_SeedsVegesDrop>Овощи - идеальный обед. Полезный и иногда даже сытный. Жаль что их не так много завозят...</DropComment_SeedsVegesDrop>
+    <DropComment_SeedsShroomsDrop>Грибы крайне вкусные. Жаль что у меня непереносимость, только их бы и ел...</DropComment_SeedsShroomsDrop>
+    <DropComment_SeedsLuxDrop>Тут в наборе все вот эти штуки, которые для высокой кухни. Без понятия зачем нужна половина их этого списка.</DropComment_SeedsLuxDrop>
+    <DropComment_SeedsAddictiveDrop>Мы, конечно, можем предоставить и такое, но только если вы подпишите формы 28М/13-23, 13Г-14ПОТ и 8РТВ/Г№231.</DropComment_SeedsAddictiveDrop>
+    <DropComment_SeedsClothDrop>Ткань из растительных волокон - дорогое удовольствие на этом мире. Полагаю, что аналогичная ситуация у вас с синтетикой...</DropComment_SeedsClothDrop>
+    <DropComment_SeedsHealDrop>Лечение растениями? А так вообще можно?</DropComment_SeedsHealDrop>
+    <DropComment_SeedsUtilDrop>Скажу честно - не имею ни малейшего понятия, что это. Смотрите сами по списку.</DropComment_SeedsUtilDrop>
+    <DropComment_SeedsTreeDrop>Деревья... Эх, хотел бы я побольше деревьев, иногда весь этот бетонно-металлический лоск очень раздражает.</DropComment_SeedsTreeDrop>
+    <DropComment_SeedsFruitDrop>Фрукты нечасто можно увидеть у нас на столе, самые вкусные фрукты это целый деликатес.</DropComment_SeedsFruitDrop>
+
     <!-- Семена -->
     <DropComment_SeedsGrainsDrop>Злаковые - лучший завтрак что на планетах ядра, что у вас! Правда у нас их не выращивают.</DropComment_SeedsGrainsDrop>
     <DropComment_SeedsVegesDrop>Овощи - идеальный обед. Полезный и иногда даже сытный. Жаль что их не так много завозят...</DropComment_SeedsVegesDrop>

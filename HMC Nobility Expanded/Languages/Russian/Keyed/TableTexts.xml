@@ -5,7 +5,8 @@
     <NextDropAvailable>Интервал между запросами</NextDropAvailable>
     <ItemIncludedInPermit>Содержит:</ItemIncludedInPermit>
     <DropTypeRandom>Тип: случайный выбор</DropTypeRandom>
-    <DropTypeSpecific>Тип: предустановленный выбор</DropTypeSpecific>
+    <DropTypeSpecific>Тип: передача всего</DropTypeSpecific>
+    <DropTypeChoose>Тип: предметы на выбор</DropTypeChoose>
     <ChoosePermitCategory>Выбрать категорию</ChoosePermitCategory>
     <CurrentTitleCustom>Титул: </CurrentTitleCustom>
     <PickResourceForDrop>Выберите предмет для запроса: </PickResourceForDrop>

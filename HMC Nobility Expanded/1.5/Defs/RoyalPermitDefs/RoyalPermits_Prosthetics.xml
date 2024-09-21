@@ -72,6 +72,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Prosthetics</category>
+                <chooseTag>true</chooseTag>
                 <column>0</column>
                 <row>2</row>
                 <itemData>
@@ -126,6 +127,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Prosthetics</category>
+                <chooseTag>true</chooseTag>
                 <column>1</column>
                 <row>2</row>
                 <itemData>
@@ -208,6 +210,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Prosthetics</category>
+                <chooseTag>true</chooseTag>
                 <column>0</column>
                 <row>3</row>
                 <itemData>
@@ -288,6 +291,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Prosthetics</category>
+                <chooseTag>true</chooseTag>
                 <column>0</column>
                 <row>5</row>
                 <itemData>
@@ -342,6 +346,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Prosthetics</category>
+                <chooseTag>true</chooseTag>
                 <column>1</column>
                 <row>5</row>
                 <itemData>
@@ -388,6 +393,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Prosthetics</category>
+                <chooseTag>true</chooseTag>
                 <column>0</column>
                 <row>6</row>
                 <itemData>
@@ -436,6 +442,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Prosthetics</category>
+                <chooseTag>true</chooseTag>
                 <column>0</column>
                 <row>8</row>
                 <itemData>
@@ -486,6 +493,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Prosthetics</category>
+                <chooseTag>true</chooseTag>
                 <column>1</column>
                 <row>8</row>
                 <itemData>
@@ -568,6 +576,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Prosthetics</category>
+                <chooseTag>true</chooseTag>
                 <column>0</column>
                 <row>9</row>
                 <itemData>

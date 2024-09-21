@@ -71,6 +71,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Ammunition</category>
+                <chooseTag>true</chooseTag>
                 <row>2</row>
                 <column>0</column>
                 <itemData>
@@ -133,6 +134,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Ammunition</category>
+                <chooseTag>true</chooseTag>
                 <row>2</row>
                 <column>1</column>
                 <itemData>
@@ -183,6 +185,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Ammunition</category>
+                <chooseTag>true</chooseTag>
                 <row>3</row>
                 <column>0</column>
                 <itemData>
@@ -274,6 +277,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Ammunition</category>
+                <chooseTag>true</chooseTag>
                 <row>3</row>
                 <column>1</column>
                 <itemData>
@@ -329,6 +333,23 @@
                         <thing>Ammo_762x54mmR_HP</thing>
                         <count>400</count>
                     </li>
+                    <!-- 127x55mm -->
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_127x55mmAR_FMJ</thing>
+                        <count>300</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_127x55mmAR_API</thing>
+                        <count>250</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_127x55mmAR_Sabot</thing>
+                        <count>250</count>
+                    </li>
+                    <li MayRequire="arpomo6.hmc.project">
+                        <thing>Ammo_127x55mmAR_HE</thing>
+                        <count>200</count>
+                    </li>
                 </itemData>
             </li>
         </modExtensions>
@@ -348,6 +369,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Ammunition</category>
+                <chooseTag>true</chooseTag>
                 <row>4</row>
                 <column>0</column>
                 <itemData>
@@ -406,23 +428,6 @@
                     <li>
                         <thing>Ammo_30x173mm_HE</thing>
                         <count>150</count>
-                    </li>
-                    <!-- 127x55mm -->
-                    <li MayRequire="arpomo6.hmc.project">
-                        <thing>Ammo_127x55mmAR_FMJ</thing>
-                        <count>300</count>
-                    </li>
-                    <li MayRequire="arpomo6.hmc.project">
-                        <thing>Ammo_127x55mmAR_API</thing>
-                        <count>250</count>
-                    </li>
-                    <li MayRequire="arpomo6.hmc.project">
-                        <thing>Ammo_127x55mmAR_Sabot</thing>
-                        <count>250</count>
-                    </li>
-                    <li MayRequire="arpomo6.hmc.project">
-                        <thing>Ammo_127x55mmAR_HE</thing>
-                        <count>200</count>
                     </li>
                     <!-- 338LM -->
                     <li MayRequire="arpomo6.hmc.project">
@@ -503,6 +508,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Ammunition</category>
+                <chooseTag>true</chooseTag>
                 <row>4</row>
                 <column>1</column>
                 <itemData>
@@ -580,6 +586,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Ammunition</category>
+                <chooseTag>true</chooseTag>
                 <row>5</row>
                 <column>0</column>
                 <itemData>
@@ -629,6 +636,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Ammunition</category>
+                <chooseTag>true</chooseTag>
                 <row>5</row>
                 <column>1</column>
                 <itemData>
@@ -678,6 +686,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Ammunition</category>
+                <chooseTag>true</chooseTag>
                 <row>7</row>
                 <column>0</column>
                 <itemData>
@@ -754,6 +763,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Ammunition</category>
+                <chooseTag>true</chooseTag>
                 <row>7</row>
                 <column>1</column>
                 <itemData>
@@ -805,6 +815,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Ammunition</category>
+                <chooseTag>true</chooseTag>
                 <row>9</row>
                 <column>0</column>
                 <itemData>
@@ -844,6 +855,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Ammunition</category>
+                <chooseTag>true</chooseTag>
                 <row>9</row>
                 <column>1</column>
                 <itemData>
