@@ -5,33 +5,32 @@
     <AmmunitionPermitTitle.description>Запрос доставки боеприпасов.</AmmunitionPermitTitle.description>
     <AmmoConventionalPermitSmallTitle.label>стандартные боеприпасы</AmmoConventionalPermitSmallTitle.label>
     <AmmoConventionalPermitSmallTitle.description>Запрос доставки различных стандартных видов боеприпасов.</AmmoConventionalPermitSmallTitle.description>
-    <AmmoArtilleryPermitSmallTitle.label>артиллерийские снаряды</AmmoArtilleryPermitSmallTitle.label>
-    <AmmoArtilleryPermitSmallTitle.description>Запрос доставки различных снарядов для минометов.</AmmoArtilleryPermitSmallTitle.description>
     <AmmoFuturisticPermitSmallTitle.label>продвинутые боеприпасы</AmmoFuturisticPermitSmallTitle.label>
     <AmmoFuturisticPermitSmallTitle.description>Запрос доставки набора средневековых доспехов.</AmmoFuturisticPermitSmallTitle.description>
     
     
-    <PistolAmmoDrop.label>малые калибры</PistolAmmoDrop.label>
-    <PistolAmmoDrop.description>Запрос доставки разных малых калибров.</PistolAmmoDrop.description>
+    <PistolAmmoDrop.label>пистолетные калибры</PistolAmmoDrop.label>
+    <PistolAmmoDrop.description>Запрос доставки разных пистолетных калибров.</PistolAmmoDrop.description>
     <ShotgunAmmoDrop.label>дробовые патроны</ShotgunAmmoDrop.label>
     <ShotgunAmmoDrop.description>Запрос доставки разных дробовых патронов.</ShotgunAmmoDrop.description>
-    <SmallRifleAmmoDrop.label>малые ружейные калибры</SmallRifleAmmoDrop.label>
-    <SmallRifleAmmoDrop.description>Запрос доставки разных ружейных калибров.</SmallRifleAmmoDrop.description>
-    <BigRifleAmmoDrop.label>средние ружейные калибры</BigRifleAmmoDrop.label>
-    <BigRifleAmmoDrop.description>Запрос доставки разных ружейных калибров.</BigRifleAmmoDrop.description>
-    <HighCalibersAmmoDrop.label>большие ружейные калибры</HighCalibersAmmoDrop.label>
-    <HighCalibersAmmoDrop.description>Запрос доставки разных ружейных калибров.</HighCalibersAmmoDrop.description>
+    
+    <SmallRifleAmmoDrop.label>малые калибры</SmallRifleAmmoDrop.label>
+    <SmallRifleAmmoDrop.description>Запрос доставки разных калибров.</SmallRifleAmmoDrop.description>
+    <MediumRifleAmmoDrop.label>средние калибры</MediumRifleAmmoDrop.label>
+    <MediumRifleAmmoDrop.description>Запрос доставки разных калибров.</MediumRifleAmmoDrop.description>
+    <BigRifleAmmoDrop.label>большие калибры</BigRifleAmmoDrop.label>
+    <BigRifleAmmoDrop.description>Запрос доставки разных калибров.</BigRifleAmmoDrop.description>
+    <GiantRifleAmmoDrop.label>гигантские калибры</GiantRifleAmmoDrop.label>
+    <GiantRifleAmmoDrop.description>Запрос доставки разных калибров.</GiantRifleAmmoDrop.description>
+    
     <GrenadesAmmoDrop.label>гранатные калибры</GrenadesAmmoDrop.label>
     <GrenadesAmmoDrop.description>Запрос доставки разных гранат для стрельбы.</GrenadesAmmoDrop.description>
     <RocketsAmmoDrop.label>ракеты</RocketsAmmoDrop.label>
     <RocketsAmmoDrop.description>Запрос доставки разных ракет.</RocketsAmmoDrop.description>
     <FuelAmmoDrop.label>топливные ячейки</FuelAmmoDrop.label>
     <FuelAmmoDrop.description>Запрос доставки разных топливных ячеек.</FuelAmmoDrop.description>
-    
-    <SmallShellsAmmoDrop.label>снаряды</SmallShellsAmmoDrop.label>
-    <SmallShellsAmmoDrop.description>Запрос доставки разных снарядов.</SmallShellsAmmoDrop.description>
-    <BigShellsAmmoDrop.label>большие снаряды</BigShellsAmmoDrop.label>
-    <BigShellsAmmoDrop.description>Запрос доставки разных снарядов.</BigShellsAmmoDrop.description>
+    <ShellsAmmoDrop.label>снаряды</ShellsAmmoDrop.label>
+    <ShellsAmmoDrop.description>Запрос доставки разных снарядов (все 80, 90, 120 и 155 мм включены).</ShellsAmmoDrop.description>
     
     <ChargedAmmoDrop.label>заряженные патроны</ChargedAmmoDrop.label>
     <ChargedAmmoDrop.description>Запрос доставки разных заряженных патронов.</ChargedAmmoDrop.description>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    
+
     <RoyalTitlePermitDef ParentName="DropResourcesTitle">
         <defName>AmmunitionPermitTitle</defName>
         <label>Ammunition</label>
@@ -30,20 +30,6 @@
     </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
-        <defName>AmmoArtilleryPermitSmallTitle</defName>
-        <label>Artillery shells</label>
-        <description>Request a drop of different artillery shells.</description>
-        <modExtensions>
-            <li Class="NobilityExpanded.PermitExtensionList">
-                <type>Category</type>
-                <category>Ammunition</category>
-                <row>6</row>
-                <column>0</column>
-            </li>
-        </modExtensions>
-    </RoyalTitlePermitDef>
-
-    <RoyalTitlePermitDef ParentName="DropResourcesSmallTitle">
         <defName>AmmoFuturisticPermitSmallTitle</defName>
         <label>Advanced ammunition</label>
         <description>Request a drop of different conventional ammunition.</description>
@@ -51,7 +37,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Category</type>
                 <category>Ammunition</category>
-                <row>8</row>
+                <row>7</row>
                 <column>0</column>
             </li>
         </modExtensions>
@@ -59,8 +45,8 @@
 
     <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
         <defName>PistolAmmoDrop</defName>
-        <label>Small calibers</label>
-        <description>Request a drop of specific small calibers.</description>
+        <label>pistols calibers</label>
+        <description>Request a drop of specific pistols calibers.</description>
         <minTitle>Acolyte</minTitle>
         <permitPointCost>1</permitPointCost>
         <cooldownDays>30</cooldownDays>
@@ -173,7 +159,7 @@
 
     <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
         <defName>SmallRifleAmmoDrop</defName>
-        <label>small rifle cartridges</label>
+        <label>small cartridges</label>
         <description>Request a drop of specific rifle cartridges.</description>
         <minTitle>Knight</minTitle>
         <permitPointCost>1</permitPointCost>
@@ -264,8 +250,8 @@
     </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
-        <defName>BigRifleAmmoDrop</defName>
-        <label>medium rifle cartridges</label>
+        <defName>MediumRifleAmmoDrop</defName>
+        <label>medium cartridges</label>
         <description>Request a drop of specific rifle cartridges.</description>
         <minTitle>Knight</minTitle>
         <permitPointCost>1</permitPointCost>
@@ -356,8 +342,8 @@
     </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
-        <defName>HighCalibersAmmoDrop</defName>
-        <label>big rifle cartridges</label>
+        <defName>BigRifleAmmoDrop</defName>
+        <label>big cartridges</label>
         <description>Request a drop of specific high calibers.</description>
         <minTitle>Praetor</minTitle>
         <permitPointCost>1</permitPointCost>
@@ -403,32 +389,6 @@
                         <thing>Ammo_145x114mm_HE</thing>
                         <count>150</count>
                     </li>
-                    <!-- 20x102mm -->
-                    <li>
-                        <thing>Ammo_20x102mm_FMJ</thing>
-                        <count>300</count>
-                    </li>
-                    <li>
-                        <thing>Ammo_20x102mm_Incendiary</thing>
-                        <count>200</count>
-                    </li>
-                    <li>
-                        <thing>Ammo_20x102mm_HE</thing>
-                        <count>150</count>
-                    </li>
-                    <!-- 30x173mm -->
-                    <li>
-                        <thing>Ammo_30x173mm_FMJ</thing>
-                        <count>300</count>
-                    </li>
-                    <li>
-                        <thing>Ammo_30x173mm_Incendiary</thing>
-                        <count>200</count>
-                    </li>
-                    <li>
-                        <thing>Ammo_30x173mm_HE</thing>
-                        <count>150</count>
-                    </li>
                     <!-- 338LM -->
                     <li MayRequire="arpomo6.hmc.project">
                         <thing>Ammo_338LM_FMJ</thing>
@@ -463,23 +423,6 @@
                         <thing>Ammo_408CT_EMP</thing>
                         <count>200</count>
                     </li>
-                    <!-- 127x108mm -->
-                    <li MayRequire="arpomo6.hmc.project">
-                        <thing>Ammo_127x108mm_FMJ</thing>
-                        <count>300</count>
-                    </li>
-                    <li MayRequire="arpomo6.hmc.project">
-                        <thing>Ammo_127x108mm_Incendiary</thing>
-                        <count>250</count>
-                    </li>
-                    <li MayRequire="arpomo6.hmc.project">
-                        <thing>Ammo_127x108mm_Sabot</thing>
-                        <count>250</count>
-                    </li>
-                    <li MayRequire="arpomo6.hmc.project">
-                        <thing>Ammo_127x108mm_HE</thing>
-                        <count>200</count>
-                    </li>
                     <!-- 700NE -->
                     <li MayRequire="arpomo6.hmc.project">
                         <thing>Ammo_700NE_HP</thing>
@@ -488,6 +431,55 @@
                     <li MayRequire="arpomo6.hmc.project">
                         <thing>Ammo_700NE_S</thing>
                         <count>300</count>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
+        <defName>GiantRifleAmmoDrop</defName>
+        <label>giant cartridges</label>
+        <description>Request a drop of specific high calibers.</description>
+        <minTitle>Praetor</minTitle>
+        <permitPointCost>1</permitPointCost>
+        <cooldownDays>30</cooldownDays>
+        <royalAid>
+            <favorCost>3</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Ammunition</category>
+                <chooseTag>true</chooseTag>
+                <row>4</row>
+                <column>1</column>
+                <itemData>
+                    <!-- 20x102mm -->
+                    <li>
+                        <thing>Ammo_20x102mm_FMJ</thing>
+                        <count>300</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_20x102mm_Incendiary</thing>
+                        <count>200</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_20x102mm_HE</thing>
+                        <count>150</count>
+                    </li>
+                    <!-- 30x173mm -->
+                    <li>
+                        <thing>Ammo_30x173mm_FMJ</thing>
+                        <count>300</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_30x173mm_Incendiary</thing>
+                        <count>200</count>
+                    </li>
+                    <li>
+                        <thing>Ammo_30x173mm_HE</thing>
+                        <count>150</count>
                     </li>
                 </itemData>
             </li>
@@ -509,8 +501,8 @@
                 <type>Permit</type>
                 <category>Ammunition</category>
                 <chooseTag>true</chooseTag>
-                <row>4</row>
-                <column>1</column>
+                <row>5</row>
+                <column>0</column>
                 <itemData>
                     <!-- 30x29mm -->
                     <li>
@@ -588,7 +580,7 @@
                 <category>Ammunition</category>
                 <chooseTag>true</chooseTag>
                 <row>5</row>
-                <column>0</column>
+                <column>1</column>
                 <itemData>
                     <!-- RPG7 -->
                     <li>
@@ -637,8 +629,8 @@
                 <type>Permit</type>
                 <category>Ammunition</category>
                 <chooseTag>true</chooseTag>
-                <row>5</row>
-                <column>1</column>
+                <row>6</row>
+                <column>0</column>
                 <itemData>
                     <!-- 30x64mm -->
                     <li>
@@ -673,9 +665,9 @@
     </RoyalTitlePermitDef>
 
     <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
-        <defName>SmallShellsAmmoDrop</defName>
+        <defName>ShellsAmmoDrop</defName>
         <label>shells</label>
-        <description>Request a drop of specific smaller artillery shells.</description>
+        <description>Request a drop of specific artillery shells (all 80, 90, 120 and 155mm included).</description>
         <minTitle>Baron</minTitle>
         <permitPointCost>1</permitPointCost>
         <cooldownDays>30</cooldownDays>
@@ -687,8 +679,8 @@
                 <type>Permit</type>
                 <category>Ammunition</category>
                 <chooseTag>true</chooseTag>
-                <row>7</row>
-                <column>0</column>
+                <row>6</row>
+                <column>1</column>
                 <itemData>
                     <!-- 81mm -->
                     <li>
@@ -744,29 +736,6 @@
                         <thing>Ammo_90mmCannonShell_Plasma</thing>
                         <count>8</count>
                     </li>
-                </itemData>
-            </li>
-        </modExtensions>
-    </RoyalTitlePermitDef>
-
-    <RoyalTitlePermitDef ParentName="DropResourcesWithDialog">
-        <defName>BigShellsAmmoDrop</defName>
-        <label>big shells</label>
-        <description>Request a drop of specific bigger artillery shells.</description>
-        <minTitle>Baron</minTitle>
-        <permitPointCost>1</permitPointCost>
-        <cooldownDays>30</cooldownDays>
-        <royalAid>
-            <favorCost>5</favorCost>
-        </royalAid>
-        <modExtensions>
-            <li Class="NobilityExpanded.PermitExtensionList">
-                <type>Permit</type>
-                <category>Ammunition</category>
-                <chooseTag>true</chooseTag>
-                <row>7</row>
-                <column>1</column>
-                <itemData>
                     <!-- 120mm -->
                     <li>
                         <thing>Ammo_120mmCannonShell_HEAT</thing>
@@ -816,7 +785,7 @@
                 <type>Permit</type>
                 <category>Ammunition</category>
                 <chooseTag>true</chooseTag>
-                <row>9</row>
+                <row>8</row>
                 <column>0</column>
                 <itemData>
                     <!-- 6x24mm -->
@@ -856,7 +825,7 @@
                 <type>Permit</type>
                 <category>Ammunition</category>
                 <chooseTag>true</chooseTag>
-                <row>9</row>
+                <row>8</row>
                 <column>1</column>
                 <itemData>
                     <!-- Futuristic -->
@@ -892,5 +861,5 @@
             </li>
         </modExtensions>
     </RoyalTitlePermitDef>
-    
+
 </Defs>

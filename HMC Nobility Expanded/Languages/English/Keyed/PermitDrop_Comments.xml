@@ -144,6 +144,21 @@
     <DropComment_PlasmerDrop>Plasmers are the best category of weapon in my opinion. Although there is a fairly even distribution of energy weapons in the Empire, I personally asked to be issued with a service plasmer.</DropComment_PlasmerDrop>
     <DropComment_ChargeRailDrop>Energy rifles are rare even among special units, because they require much more skill than any other weapon. Not everyone can handle them, and Railgun recoil is sometimes used as a test for some prospective soldiers on what type of weapon is suits for them.</DropComment_ChargeRailDrop>
 
+    <!-- Боеприпасы -->
+    <DropComment_PistolAmmoDrop>Simple ammo for simple people.</DropComment_PistolAmmoDrop>
+    <DropComment_ShotgunAmmoDrop>Always useful if you need to pacify a crowd.</DropComment_ShotgunAmmoDrop>
+    <DropComment_SmallRifleAmmoDrop>The gold standard of gunsmithing in a compact version. Take it, there will always be a gun to it.</DropComment_SmallRifleAmmoDrop>
+    <DropComment_MediumRifleAmmoDrop>The gold standard of gunsmithing in a powerful version. Take it, there will always be a gun to it.</DropComment_MediumRifleAmmoDrop>
+    <DropComment_BigRifleAmmoDrop>In case the powerful one is no longer enough, there is always these one. But usually for such calibers it is better to make weapons yourself or request them from our warehouses.</DropComment_BigRifleAmmoDrop>
+    <DropComment_GiantRifleAmmoDrop>For the most extreme cases where size is very important.</DropComment_GiantRifleAmmoDrop>
+    <DropComment_GrenadesAmmoDrop>Throwing explosions at problems is always the solution.</DropComment_GrenadesAmmoDrop>
+    <DropComment_RocketsAmmoDrop>...And if the explosions have to hit far away, add engines to them!</DropComment_RocketsAmmoDrop>
+    <DropComment_FuelAmmoDrop>And let the world burn. Or at least the part of it that's against you.</DropComment_FuelAmmoDrop>
+    <DropComment_ShellsAmmoDrop>Sometimes changing the landscape can involve an unusual approach and creative...</DropComment_ShellsAmmoDrop>
+    <DropComment_ChargedAmmoDrop>New generation calibers hit harder, fly faster, penetrate better, but the feeling is not the same....</DropComment_ChargedAmmoDrop>
+    <DropComment_EnergyAmmoDrop>Shooting pure energy has been a dream of humans for millennia, now such weapons are everywhere, they are powerful, but the dream feels shattered from the final reality...</DropComment_EnergyAmmoDrop>
+    <DropComment_MagAmmoDrop>Found recently in the ruins of the forge planet, these prototype cartridges have been reconstructed and are now spreading across the galaxy once again.</DropComment_MagAmmoDrop>
+
     <!-- Семена -->
     <DropComment_SeedsGrainsDrop>Grains in any kind are the best breakfast both on the core planets and on the Rim! But we don't have them much here.</DropComment_SeedsGrainsDrop>
     <DropComment_SeedsVegesDrop>Vegetables are the perfect lunch. Healthy and sometimes even nourishing. It's a pity there are not so many of them on Fortuna...</DropComment_SeedsVegesDrop>
