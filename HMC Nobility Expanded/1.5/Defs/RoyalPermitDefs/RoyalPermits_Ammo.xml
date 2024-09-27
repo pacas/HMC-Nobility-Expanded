@@ -732,7 +732,7 @@
                         <thing>Ammo_90mmCannonShell_EMP</thing>
                         <count>8</count>
                     </li>
-                    <li MayRequire="Ludeon.RimWorld.Biotech">
+                    <li MayRequire="arpomo6.hmc.project">
                         <thing>Ammo_90mmCannonShell_Plasma</thing>
                         <count>8</count>
                     </li>
@@ -745,7 +745,7 @@
                         <thing>Ammo_120mmCannonShell_HE</thing>
                         <count>8</count>
                     </li>
-                    <li MayRequire="Ludeon.RimWorld.Biotech">
+                    <li MayRequire="arpomo6.hmc.project">
                         <thing>Ammo_120mmCannonShell_Plasma</thing>
                         <count>5</count>
                     </li>
@@ -761,7 +761,7 @@
                         <thing>Ammo_155mmHowitzerShell_EMP</thing>
                         <count>5</count>
                     </li>
-                    <li MayRequire="Ludeon.RimWorld.Biotech">
+                    <li MayRequire="arpomo6.hmc.project">
                         <thing>Ammo_155mmHowitzerShell_Plasma</thing>
                         <count>4</count>
                     </li>
