@@ -1,5 +1,27 @@
 ----------------------------------------------------------------------
 
+- Changelog "HMC Empire Rewards" v0.20 - Gunner Stash (1.4):
+
+1) Added a more accurate description of the type of permit - every item in the description, random item or item of choice.
+2) Slightly increased the number of points required for rank advancement.
+3) New permit category - ammo and projectiles + full integration of ammo from HSK More Content.
+4) Slightly reduced the point requirements for some permits.
+5) Fixes for permits broken in 1.5 due to renaming of defs.
+(VFEE):
+6) Reduced deserter armor stats so you don't get one of the better armor types too early.
+7) Fixed issues with crafting, categories, and other armor bugs such as pathRelToParent=/codedPawn, parent=VFEE_Apparel_ArmorDeserter
+
+1) Добавлено более точное описание типа привилегии - всё в описании, случайный предмет или предмет на выбор.
+2) Немного увеличено количество требуемых для повышения ранга очков милости.
+3) Новая категория привилегий - патроны и снаряды + полная интеграция патронов из HSK More Content.
+4) Немного уменьшены требования по очкам в некоторых привилегиях.
+5) Исправления для сломанных в 1.5 привилегий из-за переименования дефов.
+(VFEE):
+6) Уменьшены характеристики дезертирской брони, чтобы не получить один из лучших типов брони слишком рано.
+7) Исправлены проблемы с крафтом, категориями и прочими ошибками брони, такие как pathRelToParent=/codedPawn, parent=VFEE_Apparel_ArmorDeserter
+
+----------------------------------------------------------------------
+
 - Changelog "HMC Empire Rewards" v0.19 - Multitasking (1.5):
 
 1) Mod Integrations:
