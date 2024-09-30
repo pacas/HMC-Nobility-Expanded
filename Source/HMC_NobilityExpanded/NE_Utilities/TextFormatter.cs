@@ -44,9 +44,15 @@ namespace NobilityExpanded.Utilities
             if (extension == null)
                 return label;
 
-            label += extension.randomItem ? "DropTypeRandom".Translate() : "DropTypeSpecific".Translate();
+            if (extension.randomItem) {
+                label += "DropTypeRandom".Translate();
+            } else if (extension.chooseTag) {
+                label += "DropTypeChoose".Translate();
+            }else {
+                label += "DropTypeSpecific".Translate();
+            }
+             
             label += "\n";
-            
             if (isThingsExists) {
                 if (extension.itemData[0].quality != null) {
                     string qualityLabel = extension.itemData[0].qualityType + extension.itemData[0].quality;
@@ -71,7 +77,6 @@ namespace NobilityExpanded.Utilities
                         label += " x" + item.count + "\n";
                     } catch {
                         Log.Error("Error in permit " + selectedPermit.LabelCap + " - missing item at pos " + counter);
-                        continue;
                     }
                 }
             }

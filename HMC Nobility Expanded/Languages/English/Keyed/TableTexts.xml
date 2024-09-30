@@ -4,8 +4,9 @@
     <PrivilegesPointsRequired>Permit points cost: {0}</PrivilegesPointsRequired>
     <NextDropAvailable>Requests interval</NextDropAvailable>
     <ItemIncludedInPermit>Contains:</ItemIncludedInPermit>
-    <DropTypeRandom>Type: random</DropTypeRandom>
-    <DropTypeSpecific>Type: specific</DropTypeSpecific>
+    <DropTypeRandom>Type: random items</DropTypeRandom>
+    <DropTypeSpecific>Type: predefined items</DropTypeSpecific>
+    <DropTypeChoose>Type: choose items</DropTypeChoose>
     <ChoosePermitCategory>Choose category</ChoosePermitCategory>
     <CurrentTitleCustom>Title: </CurrentTitleCustom>
     <PickResourceForDrop>Select the item to request: </PickResourceForDrop>
@@ -42,6 +43,7 @@
     <PermitCategory_Apparel>Apparel and accessories</PermitCategory_Apparel>
     <PermitCategory_Melee>Melee weapons</PermitCategory_Melee>
     <PermitCategory_Ranged>Ranged weapons</PermitCategory_Ranged>
+    <PermitCategory_Ammunition>Ammunition</PermitCategory_Ammunition>
     <PermitCategory_Turrets>Turrets and mortars</PermitCategory_Turrets>
     <PermitCategory_Animals>Animals</PermitCategory_Animals>
     <PermitCategory_Seeds>Seeds</PermitCategory_Seeds>

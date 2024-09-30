@@ -41,7 +41,7 @@ namespace NobilityExpanded
             ___quickSearchWidget.Reset();
             PermitsCardCustomUtility.selectedPermit = null;
             PermitsCardCustomUtility.selectedFaction = !ModLister.RoyaltyInstalled || Current.ProgramState != ProgramState.Playing ? null : Faction.OfEmpire;
-            PermitsCardUtility.selectedFaction = !ModLister.RoyaltyInstalled || Current.ProgramState != ProgramState.Playing ? null : Faction.OfEmpire;
+            PermitsCardCustomUtility.selectedFaction = !ModLister.RoyaltyInstalled || Current.ProgramState != ProgramState.Playing ? null : Faction.OfEmpire;
             return false;
         }
     }

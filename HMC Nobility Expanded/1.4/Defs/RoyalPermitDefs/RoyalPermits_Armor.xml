@@ -408,7 +408,7 @@
         <defName>SoldierAccessoriesDrop</defName>
         <label>heavy combat accessories</label>
         <description>Request a drop of classic heavy soldier accessories. Full armor is not included.</description>
-        <permitPointCost>4</permitPointCost>
+        <permitPointCost>3</permitPointCost>
         <cooldownDays>45</cooldownDays>
         <minTitle>Praetor</minTitle>
         <royalAid>
@@ -454,7 +454,7 @@
         <defName>SoldierAccessoriesAltDrop</defName>
         <label>light recon accessories</label>
         <description>Request a drop of classic recon accessories. Full armor is not included.</description>
-        <permitPointCost>3</permitPointCost>
+        <permitPointCost>2</permitPointCost>
         <minTitle>Praetor</minTitle>
         <cooldownDays>40</cooldownDays>
         <royalAid>

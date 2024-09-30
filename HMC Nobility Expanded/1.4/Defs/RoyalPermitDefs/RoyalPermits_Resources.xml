@@ -47,6 +47,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Resources</category>
+                <chooseTag>true</chooseTag>
                 <row>2</row>
                 <column>0</column>
                 <itemData>
@@ -104,6 +105,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Resources</category>
+                <chooseTag>true</chooseTag>
                 <row>2</row>
                 <column>1</column>
                 <itemData>
@@ -145,6 +147,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Resources</category>
+                <chooseTag>true</chooseTag>
                 <row>3</row>
                 <column>0</column>
                 <itemData>
@@ -267,6 +270,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Resources</category>
+                <chooseTag>true</chooseTag>
                 <row>3</row>
                 <column>1</column>
                 <itemData>
@@ -322,6 +326,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Resources</category>
+                <chooseTag>true</chooseTag>
                 <row>4</row>
                 <column>0</column>
                 <itemData>
@@ -395,6 +400,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Resources</category>
+                <chooseTag>true</chooseTag>
                 <row>4</row>
                 <column>1</column>
                 <itemData>
@@ -438,6 +444,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Resources</category>
+                <chooseTag>true</chooseTag>
                 <row>5</row>
                 <column>0</column>
                 <itemData>
@@ -495,6 +502,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Resources</category>
+                <chooseTag>true</chooseTag>
                 <row>5</row>
                 <column>1</column>
                 <itemData>
@@ -566,6 +574,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Resources</category>
+                <chooseTag>true</chooseTag>
                 <row>6</row>
                 <column>0</column>
                 <itemData>
@@ -615,6 +624,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Resources</category>
+                <chooseTag>true</chooseTag>
                 <row>6</row>
                 <column>1</column>
                 <itemData>
@@ -702,12 +712,13 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Resources</category>
+                <chooseTag>true</chooseTag>
                 <row>7</row>
                 <column>0</column>
                 <itemData>
                     <li>
                         <thing>Nitre</thing>
-                        <count>150</count>
+                        <count>350</count>
                     </li>
                     <li>
                         <thing>Sulfur</thing>
@@ -764,6 +775,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Resources</category>
+                <chooseTag>true</chooseTag>
                 <row>7</row>
                 <column>1</column>
                 <itemData>
@@ -869,6 +881,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Resources</category>
+                <chooseTag>true</chooseTag>
                 <row>8</row>
                 <column>1</column>
                 <itemData>

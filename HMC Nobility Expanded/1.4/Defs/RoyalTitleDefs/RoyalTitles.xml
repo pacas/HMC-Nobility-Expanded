@@ -279,7 +279,7 @@
         <label>immune</label>
         <description>The title immune is held by those who have in some important way marked themselves as militia. While the title is not noble and does not grant more economic freedoms than a Quirite, it does give its holder the right to use low-level psi-attacks.\n\nIn the Empire, the title is often held by junior officers and other more or less significant people. Many people spend their lives as immune, seeking success in other fields.</description>
         <seniority>50</seniority>
-        <favorCost>6</favorCost>
+        <favorCost>9</favorCost>
         <permitPointsAwarded>0</permitPointsAwarded>
         <changeHeirQuestPoints>500</changeHeirQuestPoints>
         <commonality>1</commonality>
@@ -293,7 +293,7 @@
         <label>dean</label>
         <description>The dean is the second rung to the imperial nobility through army titles. For the most part, they are simply immune, possessing special skills or abilities that are exempt from some tedious or dangerous work required of other militia in the service. As a rule, they also receive a higher salary than ordinary militia. Holders of this title occupy a wide range of positions in the army hierarchy - but some are just students, learning to lead troops, manage societies, or use psycasts in specialized schools. Others come from wealthy families who may have a city estate or manor.\n\nDuring wartime, a dean may serve his legion as a specialist or advisor and command a small detachment of fighters.\n\nWhile the immune is perceived purely as an appendage to important individuals, sending the dean to negotiate can itself be perceived as an insult.\n\nPermit points given - 1 points.</description>
         <seniority>100</seniority>
-        <favorCost>7</favorCost>
+        <favorCost>10</favorCost>
         <minExpectation>Moderate</minExpectation>
         <changeHeirQuestPoints>1000</changeHeirQuestPoints>
         <recruitmentResistanceOffset>8</recruitmentResistanceOffset>
@@ -334,7 +334,7 @@
         <label>centurion</label>
         <description>The title Centurion in the Empire is awarded either to members of the nobility who have successfully completed their training but have not achieved much in the way of leadership, or to outstanding deans in the army. Many centurions remain with the title forever, and outside of war represent respected stewards or advisors, and in campaigns represent a combat commander. In land battles, a Centurion leads a cohort, while in space battles he leads destroyers or battle groups.Most Centurions are quite wealthy, though there are exceptions.\n\n Centurion psionics are involved in espionage, sabotage and supporting fighters on the battlefield with their abilities.\n\nPermit points given - 2 points.</description>
         <seniority>200</seniority>
-        <favorCost>9</favorCost>
+        <favorCost>12</favorCost>
         <minExpectation>High</minExpectation>
         <changeHeirQuestPoints>1400</changeHeirQuestPoints>
         <recruitmentResistanceOffset>20</recruitmentResistanceOffset>
@@ -390,7 +390,7 @@
         <label>tribune</label>
         <description>The title of tribune serves as a bridge between the army and the petty nobility, which already had some real power.\n\nHe is usually young and may belong to the most powerful families of the House or be a close friend of the legate. Nevertheless, his position was the second most senior in the legion, right after the legate. In wartime, the tribunes served as advisers and deputies to the legate.\n\nPermit points given - 2 points.</description>
         <seniority>400</seniority>
-        <favorCost>11</favorCost>
+        <favorCost>14</favorCost>
         <minExpectation>SkyHigh</minExpectation>
         <requiredMinimumApparelQuality>Normal</requiredMinimumApparelQuality>
         <changeHeirQuestPoints>2000</changeHeirQuestPoints>
@@ -495,7 +495,7 @@
         <label>legate</label>
         <description>The title of legate is almost identical to that of lord, except for two important things.\n\nIn the first place, a legate is subject to conscription and, if drafted, becomes commander of the imperial legion assigned to him. Second, a legate title is not hereditary, unlike a barony. In peacetime, legates govern the districts to which they are appointed by the planetary council.\n\nIn the Empire, the title of legatus is transitive - usually only through military service (or personal orders from higher lords) can an ordinary free citizen rise to the titles of nobility.\n\nPermit points given - 3 points.</description>
         <seniority>450</seniority>
-        <favorCost>12</favorCost>
+        <favorCost>16</favorCost>
         <minExpectation>SkyHigh</minExpectation>
         <requiredMinimumApparelQuality>Normal</requiredMinimumApparelQuality>
         <changeHeirQuestPoints>2300</changeHeirQuestPoints>
@@ -623,7 +623,7 @@
         <labelFemale>lady</labelFemale>
         <description>The title of lord is the lowest of the middle nobility. While holders of lower titles are usually engaged in military service or commerce, lords are semi-independent rulers. Each lord is subordinate to his ruler, but his obligations are mostly limited to supplying troops and finances and do not include personal service.\nIn the Empire, a lord typically owns a city district, a mining colony, or something similar. At wartime, a lord may formally be the captain of a large ship or lead a legion if required to do so.\n\nPermit points given - 4 points.</description>
         <seniority>500</seniority>
-        <favorCost>14</favorCost>
+        <favorCost>18</favorCost>
         <minExpectation>Noble</minExpectation>
         <requiredMinimumApparelQuality>Normal</requiredMinimumApparelQuality>
         <changeHeirQuestPoints>2600</changeHeirQuestPoints>
@@ -804,7 +804,7 @@
         <labelFemale>viscountess</labelFemale>
         <description>Viscount is a transitional stage between lord and count. This title was originally given to deputy of the count, but in the course of reforms in the Empire it became a full title.\nIn peacetime, viscount is usually a ruler of an entire city or colony, and may also have a small personal fleet, but with a limit on small ships.\n\nPermit points given - 4 points.</description>
         <seniority>550</seniority>
-        <favorCost>16</favorCost>
+        <favorCost>20</favorCost>
         <minExpectation>Royal</minExpectation>
         <requiredMinimumApparelQuality>Normal</requiredMinimumApparelQuality>
         <changeHeirQuestPoints>3000</changeHeirQuestPoints>
@@ -1001,7 +1001,7 @@
         <labelFemale>countess</labelFemale>
         <description>The title of count is the middle rank of middle nobility. Counts own entire provinces and, unlike Viscounts, can have a personal fleet, including large ships.\n\nPermit points given - 5 points.</description>
         <seniority>600</seniority>
-        <favorCost>18</favorCost>
+        <favorCost>23</favorCost>
         <minExpectation>Royal</minExpectation>
         <requiredMinimumApparelQuality>Normal</requiredMinimumApparelQuality>
         <changeHeirQuestPoints>3500</changeHeirQuestPoints>

@@ -1,9 +1,9 @@
 # HMC Nobility Expanded
-![Versions](https://img.shields.io/badge/version-1.3%2C_1.4-blue?style=for-the-badge) 
-![Dowloads](https://img.shields.io/github/downloads/pacas/HMC-Nobility-Expanded/total?style=for-the-badge&color=blue) 
-![Support Me](https://img.shields.io/badge/boosty-support_me-red?style=for-the-badge&logo=boosty&labelColor=grey&link=https%3A%2F%2Fboosty.to%2Fpacas) 
-![GitHub License](https://img.shields.io/github/license/pacas/HMC-Nobility-Expanded?style=for-the-badge&color=red)<br>
-![Current Build](https://img.shields.io/github/v/release/pacas/HMC-Nobility-Expanded?display_name=release&style=for-the-badge&color=darkgreen&logo=github)
+![Versions](https://img.shields.io/badge/supported_versions-1.4%2C_1.5-3c6bbc?style=for-the-badge)
+![Archive](https://img.shields.io/badge/archive_versions-1.3-3c6bbc?style=for-the-badge)
+![Dowloads](https://img.shields.io/github/downloads/pacas/HMC-Nobility-Expanded/total?style=for-the-badge&color=3c6bbc) <br>
+![Current Build](https://img.shields.io/github/v/release/pacas/HMC-Nobility-Expanded?display_name=release&style=for-the-badge&color=8c0e00&logo=github) 
+![Support Me](https://img.shields.io/badge/boosty-support_me-8c0e00?style=for-the-badge&logo=boosty&labelColor=grey&link=https%3A%2F%2Fboosty.to%2Fpacas) 
 <br><br>
 ![Preview](/preview.png?raw=true "Preview")<br><br>
 <img src="https://i.imgur.com/svEwA2k.png">
@@ -30,6 +30,7 @@ This mod changes the system of rewards from the Empire to a more universal and a
 * Melee weapons
 * Ranged weapons (with ammo included)
 * Turrets and mortars (with ammo included)
+* Ammunition
 * Animals
 * Allies
 * Colonists
@@ -61,6 +62,7 @@ This mod changes the system of rewards from the Empire to a more universal and a
 * Холодное оружие
 * Огнестрельное оружие (патроны в комплекте)
 * Турели и миномёты (патроны в комплекте)
+* Боеприпасы
 * Животные
 * Союзники
 * Колонисты
@@ -95,8 +97,7 @@ Q: Which mods are compatible except VFEE?<br>
 * Revia Race<br>
 * More Tools<br>
 * Advanced Shield Belts<br>
-* Edge of Descension - Monoblades
-<br>
+* Edge of Descension - Monoblades<br>
 <hr>
 Q: DISBALANCE!<br>
 A: Perhaps.<br>

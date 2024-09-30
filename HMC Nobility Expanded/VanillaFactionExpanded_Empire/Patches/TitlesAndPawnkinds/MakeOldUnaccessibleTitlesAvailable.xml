@@ -8,7 +8,7 @@
             <li Class="PatchOperationAdd">
                 <xpath>Defs/RoyalTitleDef[defName="Margrave"]</xpath>
                 <value>
-                    <favorCost>28</favorCost>
+                    <favorCost>32</favorCost>
                     <minExpectation>Royal</minExpectation>
                     <requiredMinimumApparelQuality>Good</requiredMinimumApparelQuality>
                     <changeHeirQuestPoints>3700</changeHeirQuestPoints>
