@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------
 
-- Changelog "HMC Empire Rewards" v0.20 - Gunner Stash (1.4):
+- Changelog "HMC Empire Rewards" v0.20 - Gunner Stash (1.4, 1.5):
 
 1) Added a more accurate description of the type of permit - every item in the description, random item or item of choice.
 2) Slightly increased the number of points required for rank advancement.
@@ -22,7 +22,7 @@
 
 ----------------------------------------------------------------------
 
-- Changelog "HMC Empire Rewards" v0.19 - Multitasking (1.5):
+- Changelog "HMC Empire Rewards" v0.19 - Multitasking (1.4, 1.5):
 
 1) Mod Integrations:
     * More Tools
