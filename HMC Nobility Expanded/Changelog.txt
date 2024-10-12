@@ -1,5 +1,15 @@
 ----------------------------------------------------------------------
 
+- Changelog "HMC Empire Rewards" v0.20.1 - Gunner Stash (1.4, 1.5):
+
+1) Fixed a bug when generating pawns if the generator was selecting pawnkind from this mod 
+2) Fixed too big raidpoints per colony cost for deserters (VFEE)
+
+1) Исправлена ошибка при генерации пешек, если генератор выбирал pawnkind колонистов мода
+2) Исправлены завышенные показатели рейдпоинтов за стоимость колонии для дезертиров (VFEE)
+
+----------------------------------------------------------------------
+
 - Changelog "HMC Empire Rewards" v0.20 - Gunner Stash (1.4, 1.5):
 
 1) Added a more accurate description of the type of permit - every item in the description, random item or item of choice.

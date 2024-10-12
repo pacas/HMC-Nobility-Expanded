@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
     <PawnKindDef Abstract="True" Name="DefinedColonistBase" ParentName="SK_BasePlayerPawnKind">
-        <defaultFactionType>PlayerColony</defaultFactionType>
         <label>colonist</label>
         <apparelTags>
             <li>Outlander</li>
