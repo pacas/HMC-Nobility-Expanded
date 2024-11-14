@@ -21,7 +21,7 @@
             <ThingDef Class="CombatExtended.AmmoDef" ParentName="30x64mmFuelBase">
                 <defName>Ammo_40x68mmDemo_Thump</defName>
                 <label>40x68mm charge cell (Demolition)</label>
-                <description>Сharge cells of increased power, which allow to demolish buildings. When used against humans, death of an unarmored target is guaranteed.</description>
+                <description>Сharged cells of increased power, which allow to demolish buildings. When used against humans, death of an unarmored target is guaranteed.</description>
                 <graphicData>
                     <texPath>Things/Ammo/Charged/LargeConc</texPath>
                     <graphicClass>Graphic_StackCount</graphicClass>
@@ -37,6 +37,14 @@
                 <thingSetMakerTags>
                     <li>HSKCombatSuppliesAmmoHC</li>
                 </thingSetMakerTags>
+                <modExtensions>
+                    <li Class="VFED.ContrabandExtension" MayRequire="OskarPotocki.VFE.Deserters">
+                        <category>VFED_Imperial</category>
+                        <intelCost>5</intelCost>
+                        <useCriticalIntel>false</useCriticalIntel>
+                        <countMult>30</countMult>
+                    </li>
+                </modExtensions>
             </ThingDef>
 
             <ThingDef ParentName="SK_BaseBullet">
