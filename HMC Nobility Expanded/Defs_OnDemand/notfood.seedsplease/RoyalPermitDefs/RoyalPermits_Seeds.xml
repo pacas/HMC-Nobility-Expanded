@@ -28,6 +28,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Seeds</category>
+                <chooseTag>true</chooseTag>
                 <row>1</row>
                 <column>0</column>
                 <itemData>
@@ -71,6 +72,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Seeds</category>
+                <chooseTag>true</chooseTag>
                 <row>1</row>
                 <column>1</column>
                 <itemData>
@@ -106,6 +108,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Seeds</category>
+                <chooseTag>true</chooseTag>
                 <row>2</row>
                 <column>0</column>
                 <itemData>
@@ -149,6 +152,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Seeds</category>
+                <chooseTag>true</chooseTag>
                 <row>2</row>
                 <column>1</column>
                 <itemData>
@@ -207,6 +211,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Seeds</category>
+                <chooseTag>true</chooseTag>
                 <row>3</row>
                 <column>0</column>
                 <itemData>
@@ -254,6 +259,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Seeds</category>
+                <chooseTag>true</chooseTag>
                 <row>3</row>
                 <column>1</column>
                 <itemData>
@@ -289,6 +295,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Seeds</category>
+                <chooseTag>true</chooseTag>
                 <row>4</row>
                 <column>0</column>
                 <itemData>
@@ -320,6 +327,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Seeds</category>
+                <chooseTag>true</chooseTag>
                 <row>4</row>
                 <column>1</column>
                 <itemData>
@@ -351,6 +359,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Seeds</category>
+                <chooseTag>true</chooseTag>
                 <row>5</row>
                 <column>0</column>
                 <itemData>
@@ -435,6 +444,7 @@
             <li Class="NobilityExpanded.PermitExtensionList">
                 <type>Permit</type>
                 <category>Seeds</category>
+                <chooseTag>true</chooseTag>
                 <row>5</row>
                 <column>1</column>
                 <itemData>
