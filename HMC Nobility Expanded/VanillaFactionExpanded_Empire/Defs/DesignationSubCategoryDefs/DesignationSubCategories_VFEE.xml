@@ -17,4 +17,17 @@
 		<debug>false</debug>
 	</ArchitectSense.DesignationSubCategoryDef>
 
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_RoyaltyFloorCovering</defName>
+		<label>royal floor covering</label>
+		<description>Best floor covering for royal persons.</description>
+		<defNames>
+			<li>VFEE_LargeRoyalRug</li>
+			<li>VFEE_GrandRoyalRug</li>
+			<li>VFEE_ImperialSlab</li>
+		</defNames>
+		<designationCategory>Accessories</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+
 </Defs>

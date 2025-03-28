@@ -86,13 +86,13 @@
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                 <defName>VFEE_Gun_ChargeThumper</defName>
                 <statBases>
-                    <Mass>8</Mass>
+                    <Mass>7</Mass>
                     <RangedWeapon_Cooldown>0.43</RangedWeapon_Cooldown>
                     <SightsEfficiency>1</SightsEfficiency>
-                    <ShotSpread>0.15</ShotSpread>
-                    <SwayFactor>1.8</SwayFactor>
-                    <Bulk>10</Bulk>
-                    <WorkToMake>39500</WorkToMake>
+                    <ShotSpread>0.1</ShotSpread>
+                    <SwayFactor>1.3</SwayFactor>
+                    <Bulk>8</Bulk>
+                    <WorkToMake>31500</WorkToMake>
                 </statBases>
                 <Properties>
                     <recoilAmount>1.0</recoilAmount>

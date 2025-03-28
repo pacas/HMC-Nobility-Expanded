@@ -66,6 +66,27 @@
                     </smeltProducts>
                 </value>
             </li>
+
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VFEE_MeleeWeapon_Toxblade"]/weaponClasses</xpath>
+                <value>
+                    <weaponClasses>
+                        <li>MeleePiercer</li>
+                        <li>Ultratech</li>
+                    </weaponClasses>
+                    <thingCategories Inherit="False">
+                        <li>AgileMelee</li>
+                        <li>SharpMelee</li>
+                    </thingCategories>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VFEE_MeleeWeapon_Toxblade"]/statBases/MarketValue</xpath>
+                <value>
+                    <MarketValue>3000</MarketValue>
+                </value>
+            </li>
         </operations>
     </Operation>
 </Patch>

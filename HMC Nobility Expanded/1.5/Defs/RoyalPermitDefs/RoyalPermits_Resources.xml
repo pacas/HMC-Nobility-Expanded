@@ -111,11 +111,19 @@
                 <itemData>
                     <li>
                         <thing>Silver</thing>
-                        <count>1500</count>
+                        <count>1800</count>
                     </li>
                     <li>
                         <thing>Gold</thing>
-                        <count>50</count>
+                        <count>60</count>
+                    </li>
+                    <li>
+                        <thing>Glowstone</thing>
+                        <count>90</count>
+                    </li>
+                    <li>
+                        <thing>Coldstone</thing>
+                        <count>60</count>
                     </li>
                     <li>
                         <thing>Jade</thing>
