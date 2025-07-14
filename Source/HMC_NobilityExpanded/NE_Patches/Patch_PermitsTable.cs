@@ -1,21 +1,12 @@
-﻿using System.Collections.Generic;
-using System.Reflection;
-using HarmonyLib;
+﻿using HarmonyLib;
 using RimWorld;
+using System.Collections.Generic;
+using System.Reflection;
 using UnityEngine;
 using Verse;
 
 namespace NobilityExpanded
 {
-    [StaticConstructorOnStartup]
-    public static class HarmonyPatches
-    {
-        static HarmonyPatches()
-        {
-            Harmony harmonyInstance = new Harmony("hmc.pacas.empire");
-            harmonyInstance.PatchAll();
-        }
-    }
 
     [HarmonyPatch(typeof(StatsReportUtility), nameof(StatsReportUtility.Reset))]
     public static class StatsResetPatch

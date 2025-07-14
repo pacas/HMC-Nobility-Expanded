@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    
+    <RoyalTitlePermitDef ParentName="DropResourcesTitle">
+        <defName>SpecialPermitTitle</defName>
+        <label>Special Permits</label>
+        <description>Requests for unique Empire permits.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Title</type>
+                <category>Special</category>
+                <column>0</column>
+                <row>0</row>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>MintBasicDrop</defName>
+        <label>castain machine template</label>
+        <description>Request a drop of box with castain machine template.</description>
+        <minTitle>Baron</minTitle>
+        <cooldownDays>30</cooldownDays>
+        <royalAid>
+            <favorCost>2</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Special</category>
+                <column>0</column>
+                <row>1</row>
+                <itemData>
+                    <li>
+                        <thing>TFJ_Tool_Woodcutting_Handaxe</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
+        <defName>MintAdvancedDrop</defName>
+        <label>industrial castain machine template</label>
+        <description>Request a drop of box with castain machine template.</description>
+        <minTitle>Count</minTitle>
+        <cooldownDays>30</cooldownDays>
+        <royalAid>
+            <favorCost>2</favorCost>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Special</category>
+                <column>1</column>
+                <row>1</row>
+                <itemData>
+                    <li>
+                        <thing>TFJ_Tool_Woodcutting_Handaxe</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                </itemData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    
+</Defs>

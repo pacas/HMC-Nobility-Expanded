@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="XmlExtensions.ForEach">
+        <xpath>Defs/TraderKindDef/stockGenerators/li[@Class="StockGenerator_SingleDef"]/thingDef[text()="Silver"]</xpath>
+        <storeIn>DEF</storeIn>
+        <apply>
+            <Operation Class="XmlExtensions.CreateDocument">
+                <docName>TradersDefs</docName>
+                <xpath>{DEF}</xpath>
+            </Operation>
+        </apply>
+    </Operation>
+    <Operation Class="XmlExtensions.ForEach">
+        <xmlDoc>TradersDefs</xmlDoc>
+        <xpath>TradersDefs/TraderKindDef/defName</xpath>
+        <storeIn>DEF</storeIn>
+        <apply>
+            <Operation Class="XmlExtensions.CreateVariable">
+                <xmlDoc>TradersDefs</xmlDoc>
+                <storeIn>coinsCount</storeIn>
+                <value>{DEF}/stockGenerators/li[thingDef="Silver"]/countRange</value>
+                <fromXml>true</fromXml>
+                <operation>/</operation>
+                <value2>50</value2>
+                <apply>
+                    <Operation Class="XmlExtensions.PatchOperationAdd">
+                        <xmlDoc>TradersDefs</xmlDoc>
+                        <xpath>{DEF}/stockGenerators</xpath>
+                        <value>
+                            <li Class="StockGenerator_SingleDef">
+                                <thingDef>SilverCoin</thingDef>
+                                <countRange>{coinsCount}</countRange>
+                            </li>
+                        </value>
+                    </Operation>
+                </apply>
+            </Operation>
+            <Operation Class="XmlExtensions.PatchOperationMath">
+                <xmlDoc>TradersDefs</xmlDoc>
+                <xpath>{DEF}/stockGenerators/li[@Class="StockGenerator_SingleDef"][thingDef="Silver"]/countRange</xpath>
+                <value>0.5</value>
+                <operation>*</operation>
+            </Operation>
+        </apply>
+    </Operation>
+    <Operation Class="XmlExtensions.MergeDocument">
+        <docName>TradersDefs</docName>
+    </Operation>
+</Patch>

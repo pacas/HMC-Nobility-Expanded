@@ -17,6 +17,12 @@
                     <ArmorRating_Sharp>1.5</ArmorRating_Sharp>
                 </value>
             </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="VFEE_Apparel_TechfriarCrown"]/apparel</xpath>
+                <value>
+                    <parentTagDef>ApparelHead</parentTagDef>
+                </value>
+            </li>
             <!-- Absolver Helmet -->
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="VFEE_Apparel_AbsolverHelmet"]/statBases</xpath>
@@ -68,6 +74,7 @@
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="VFEE_Apparel_AbsolverHelmet"]/apparel</xpath>
                 <value>
+                    <parentTagDef>ApparelHead</parentTagDef>
                     <immuneToToxGasExposure>true</immuneToToxGasExposure>
                 </value>
             </li>
@@ -153,6 +160,7 @@
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="VFEE_Apparel_DeserterHelmet"]/apparel</xpath>
                 <value>
+                    <parentTagDef>ApparelHead</parentTagDef>
                     <immuneToToxGasExposure>false</immuneToToxGasExposure>
                 </value>
             </li>
@@ -237,6 +245,7 @@
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="VFEE_Apparel_JanissaryHelmet"]/apparel</xpath>
                 <value>
+                    <parentTagDef>ApparelHead</parentTagDef>
                     <immuneToToxGasExposure>true</immuneToToxGasExposure>
                 </value>
             </li>
