@@ -17,8 +17,8 @@
 
     <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
         <defName>MintBasicDrop</defName>
-        <label>castain machine template</label>
-        <description>Request a drop of box with castain machine template.</description>
+        <label>coin minting die</label>
+        <description>Request a drop of box with coin minting die.</description>
         <minTitle>Baron</minTitle>
         <cooldownDays>30</cooldownDays>
         <royalAid>
@@ -32,9 +32,8 @@
                 <row>1</row>
                 <itemData>
                     <li>
-                        <thing>TFJ_Tool_Woodcutting_Handaxe</thing>
+                        <thing>CoinMintingDie</thing>
                         <count>1</count>
-                        <stuff>Plasteel</stuff>
                     </li>
                 </itemData>
             </li>
@@ -43,12 +42,12 @@
 
     <RoyalTitlePermitDef ParentName="DropResourcesUpdated">
         <defName>MintAdvancedDrop</defName>
-        <label>industrial castain machine template</label>
-        <description>Request a drop of box with castain machine template.</description>
+        <label>modern coin minting die</label>
+        <description>Request a drop of box with coin minting die.</description>
         <minTitle>Count</minTitle>
         <cooldownDays>30</cooldownDays>
         <royalAid>
-            <favorCost>2</favorCost>
+            <favorCost>4</favorCost>
         </royalAid>
         <modExtensions>
             <li Class="NobilityExpanded.PermitExtensionList">
@@ -58,9 +57,8 @@
                 <row>1</row>
                 <itemData>
                     <li>
-                        <thing>TFJ_Tool_Woodcutting_Handaxe</thing>
+                        <thing>CoinMintingDieAdvanced</thing>
                         <count>1</count>
-                        <stuff>Plasteel</stuff>
                     </li>
                 </itemData>
             </li>

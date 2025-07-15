@@ -1,5 +1,17 @@
 ----------------------------------------------------------------------
 
+- Changelog "HMC Empire Rewards" v1.0 - Still Alive (1.4, 1.5):
+
+1) I forgot all the changes I made here
+2) Fixed a couple of bugs
+3) VFEE edits
+
+1) Я забыл все правки, что я тут делал
+2) Пофиксил пару багов
+3) Правки VFEE
+
+----------------------------------------------------------------------
+
 - Changelog "HMC Empire Rewards" v0.20.1 - Gunner Stash (1.4, 1.5):
 
 1) Fixed a bug when generating pawns if the generator was selecting pawnkind from this mod 

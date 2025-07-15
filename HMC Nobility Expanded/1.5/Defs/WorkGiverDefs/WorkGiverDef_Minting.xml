@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <WorkGiverDef ParentName="WorkGiverPrioritizeSustains">
+        <defName>DoBillsMinting</defName>
+        <label>coin minting</label>
+        <workType>Crafting</workType>
+        <priorityInType>40</priorityInType>
+        <fixedBillGiverDefs>
+            <li>TableMinting</li>
+        </fixedBillGiverDefs>
+        <verb>coin minting</verb>
+        <gerund>mint coins at</gerund>
+    </WorkGiverDef>
+</Defs>
