@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-    <Operation Class="XmlExtensions.ForEach">
+    <!--<Operation Class="XmlExtensions.ForEach">
         <xpath>Defs/TraderKindDef/stockGenerators/li[thingDef="Silver"]</xpath>
         <storeIn>DEF</storeIn>
         <apply>
             <Operation Class="XmlExtensions.CreateVariable">
                 <storeIn>coinsCount</storeIn>
                 <value>{DEF}/stockGenerators/li[thingDef="Silver"]/countRange</value>
-                <!--<fromXml>true</fromXml>-->
+                <fromXml>true</fromXml>
                 <value2>0.05</value2>
                 <operation>*</operation>
                 <apply>
@@ -29,5 +29,5 @@
                 <operation>*</operation>
             </Operation>
         </apply>
-    </Operation>
+    </Operation>-->
 </Patch>

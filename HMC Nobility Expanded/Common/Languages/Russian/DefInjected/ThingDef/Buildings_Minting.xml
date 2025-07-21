@@ -4,4 +4,7 @@
     <TableMinting.label>чеканный станок</TableMinting.label>
     <TableMinting.description>Чеканный станок предназначен для изготовления монет путём нанесения изображения на металлические заготовки. Он использует давление, создаваемое механическим или гидравлическим приводом, чтобы прижать клише к заготовке.</TableMinting.description>
 
+    <TableMintingAdvanced.label>современный чеканный станок</TableMintingAdvanced.label>
+    <TableMintingAdvanced.description>Чеканный станок предназначен для изготовления монет путём нанесения изображения на металлические заготовки. Он использует давление, создаваемое механическим или гидравлическим приводом, чтобы прижать клише к заготовке.</TableMintingAdvanced.description>
+
 </LanguageData>

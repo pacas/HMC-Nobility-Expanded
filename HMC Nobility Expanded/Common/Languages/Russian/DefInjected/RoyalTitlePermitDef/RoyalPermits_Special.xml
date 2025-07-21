@@ -7,9 +7,9 @@
     
     <!-- бомбы -->
     <MintBasicDrop.label>клише для монет</MintBasicDrop.label>
-    <MintBasicDrop.description>Запрос клише для монет, которое используется для минтинга своих монет на гуртильном станке.</MintBasicDrop.description>
+    <MintBasicDrop.description>Запрос клише для монет, которое используется для чеканки своих монет.</MintBasicDrop.description>
     
-    <MintAdvancedDrop.label>индустриальное клише для монет</MintAdvancedDrop.label>
-    <MintAdvancedDrop.description>Запрос клише для монет, которое используется для минтинга своих монет на индустриальном гуртильном станке.</MintAdvancedDrop.description>
+    <MintAdvancedDrop.label>современное клише для монет</MintAdvancedDrop.label>
+    <MintAdvancedDrop.description>Запрос клише для монет, которое используется для чеканки своих монет.</MintAdvancedDrop.description>
 
 </LanguageData>

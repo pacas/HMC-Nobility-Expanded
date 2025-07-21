@@ -6,6 +6,7 @@
         <soundWorking>Recipe_Machining</soundWorking>
         <recipeUsers>
             <li>TableMinting</li>
+            <li>TableMintingAdvanced</li>
         </recipeUsers>
         <workSkill>Crafting</workSkill>
         <workSkillLearnFactor>0.3</workSkillLearnFactor>

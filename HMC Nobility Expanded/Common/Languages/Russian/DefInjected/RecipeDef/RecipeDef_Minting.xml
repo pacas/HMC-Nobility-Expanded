@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    
+    <MakeSilverCoins.label>отчеканить серебряные монеты (х10)</MakeSilverCoins.label>
+    <MakeSilverCoins.description>Отчеканить серебряные монеты. Производится 10 штук.</MakeSilverCoins.description>
+    <MakeSilverCoins.jobString>чеканит монеты</MakeSilverCoins.jobString>
+
+    <MakeSilverCoinsMore.label>отчеканить серебряные монеты (х50)</MakeSilverCoinsMore.label>
+    <MakeSilverCoinsMore.description>Отчеканить серебряные монеты. Производится 50 штук.</MakeSilverCoinsMore.description>
+    <MakeSilverCoinsMore.jobString>чеканит монеты</MakeSilverCoinsMore.jobString>
+
+    <MakeSilverCoinsBulk.label>отчеканить серебряные монеты (х100)</MakeSilverCoinsBulk.label>
+    <MakeSilverCoinsBulk.description>Отчеканить серебряные монеты. Производится 100 штук.</MakeSilverCoinsBulk.description>
+    <MakeSilverCoinsBulk.jobString>чеканит монеты</MakeSilverCoinsBulk.jobString>
+
+    <MakeGoldCoins.label>отчеканить золотую монету (х1)</MakeGoldCoins.label>
+    <MakeGoldCoins.description>Отчеканить золотую монету. Производится 1 штука.</MakeGoldCoins.description>
+    <MakeGoldCoins.jobString>чеканит монеты</MakeGoldCoins.jobString>
+
+    <MakeGoldCoinsMore.label>отчеканить золотые монеты (х10)</MakeGoldCoinsMore.label>
+    <MakeGoldCoinsMore.description>Отчеканить золотые монеты. Производится 10 штук.</MakeGoldCoinsMore.description>
+    <MakeGoldCoinsMore.jobString>чеканит монеты</MakeGoldCoinsMore.jobString>
+
+    <MakeGoldCoinsBulk.label>отчеканить золотые монеты (х50)</MakeGoldCoinsBulk.label>
+    <MakeGoldCoinsBulk.description>Отчеканить золотые монеты. Производится 50 штук.</MakeGoldCoinsBulk.description>
+    <MakeGoldCoinsBulk.jobString>чеканит монеты</MakeGoldCoinsBulk.jobString>
+    
+</LanguageData>
