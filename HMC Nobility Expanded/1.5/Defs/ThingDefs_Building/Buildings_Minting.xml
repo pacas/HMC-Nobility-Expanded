@@ -97,7 +97,9 @@
         <graphicData>
             <texPath>Things/Building/Production/Minting/TableMintingPressAdv</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(1.0, 1.0)</drawSize>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(1.6, 1.6)</drawSize>
+            <drawOffset>(0, 0, 0.4)</drawOffset>
             <shadowData>
                 <volume>(0.67, 1.0, 0.8)</volume>
                 <offset>(0,0,0)</offset>

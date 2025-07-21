@@ -24,5 +24,31 @@
     <MakeGoldCoinsBulk.label>отчеканить золотые монеты (х50)</MakeGoldCoinsBulk.label>
     <MakeGoldCoinsBulk.description>Отчеканить золотые монеты. Производится 50 штук.</MakeGoldCoinsBulk.description>
     <MakeGoldCoinsBulk.jobString>чеканит монеты</MakeGoldCoinsBulk.jobString>
+
+
+
+    <MakeSilverBlanks.label>изготовить серебряные монетные заготовки (х10)</MakeSilverBlanks.label>
+    <MakeSilverBlanks.description>Изготовить серебряные монетные заготовки. Производится 10 штук.</MakeSilverBlanks.description>
+    <MakeSilverBlanks.jobString>делает монетные заготовки</MakeSilverBlanks.jobString>
+
+    <MakeSilverBlanksMore.label>изготовить серебряные монетные заготовки (х50)</MakeSilverBlanksMore.label>
+    <MakeSilverBlanksMore.description>Изготовить серебряные монетные заготовки. Производится 50 штук.</MakeSilverBlanksMore.description>
+    <MakeSilverBlanksMore.jobString>делает монетные заготовки</MakeSilverBlanksMore.jobString>
+
+    <MakeSilverBlanksBulk.label>изготовить серебряные монетные заготовки (х100)</MakeSilverBlanksBulk.label>
+    <MakeSilverBlanksBulk.description>Изготовить серебряные монетные заготовки. Производится 100 штук.</MakeSilverBlanksBulk.description>
+    <MakeSilverBlanksBulk.jobString>делает монетные заготовки</MakeSilverBlanksBulk.jobString>
+
+    <MakeGoldBlanks.label>изготовить золотую монетную заготовку (х1)</MakeGoldBlanks.label>
+    <MakeGoldBlanks.description>Изготовить золотую монетную заготовку. Производится 1 штука.</MakeGoldBlanks.description>
+    <MakeGoldBlanks.jobString>делает монетные заготовки</MakeGoldBlanks.jobString>
+
+    <MakeGoldBlanksMore.label>изготовить золотые монетные заготовки (х10)</MakeGoldBlanksMore.label>
+    <MakeGoldBlanksMore.description>Изготовить золотые монетные заготовки. Производится 10 штук.</MakeGoldBlanksMore.description>
+    <MakeGoldBlanksMore.jobString>делает монетные заготовки</MakeGoldBlanksMore.jobString>
+
+    <MakeGoldBlanksBulk.label>изготовить золотые монетные заготовки (х50)</MakeGoldBlanksBulk.label>
+    <MakeGoldBlanksBulk.description>Изготовить золотые монетные заготовки. Производится 50 штук.</MakeGoldBlanksBulk.description>
+    <MakeGoldBlanksBulk.jobString>делает монетные заготовки</MakeGoldBlanksBulk.jobString>
     
 </LanguageData>

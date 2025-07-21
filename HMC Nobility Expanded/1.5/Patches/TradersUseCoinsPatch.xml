@@ -1,33 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-    <!--<Operation Class="XmlExtensions.ForEach">
-        <xpath>Defs/TraderKindDef/stockGenerators/li[thingDef="Silver"]</xpath>
-        <storeIn>DEF</storeIn>
-        <apply>
-            <Operation Class="XmlExtensions.CreateVariable">
-                <storeIn>coinsCount</storeIn>
-                <value>{DEF}/stockGenerators/li[thingDef="Silver"]/countRange</value>
-                <fromXml>true</fromXml>
-                <value2>0.05</value2>
-                <operation>*</operation>
-                <apply>
-                    <Operation Class="XmlExtensions.PatchOperationAdd">
-                        <xmlDoc>TradersDefs</xmlDoc>
-                        <xpath>{DEF}/stockGenerators</xpath>
-                        <value>
-                            <li Class="StockGenerator_SingleDef">
-                                <thingDef>SilverCoin</thingDef>
-                                <countRange>{coinsCount}</countRange>
-                            </li>
-                        </value>
-                    </Operation>
-                </apply>
-            </Operation>
-            <Operation Class="XmlExtensions.PatchOperationMath">
-                <xpath>{DEF}/stockGenerators/li[thingDef="Silver"]/countRange</xpath>
-                <value>0.5</value>
-                <operation>*</operation>
-            </Operation>
-        </apply>
-    </Operation>-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TraderKindDef/stockGenerators</xpath>
+        <value>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>SilverCoin</thingDef>
+                <countRange>10~50</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>GoldCoin</thingDef>
+                <countRange>1~5</countRange>
+            </li>
+        </value>
+    </Operation>
 </Patch>
