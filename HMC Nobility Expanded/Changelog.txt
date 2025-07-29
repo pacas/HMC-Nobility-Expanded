@@ -1,5 +1,15 @@
 ----------------------------------------------------------------------
 
+- Changelog "HMC Empire Rewards" v1.1 - Commerce Rush (1.5):
+
+1) New coin minting system! 
+2) Coin minting requires Empire ranks to get glittertech-coded minting die, coded with specific number of uses.
+
+1) Новая система чеканки монет!
+2) Чеканка требует ранг в Империи для получения особой высокотехнологичной заготовки, которая имеет ограниченное число использований.
+
+----------------------------------------------------------------------
+
 - Changelog "HMC Empire Rewards" v1.0 - Still Alive (1.4, 1.5):
 
 1) I forgot all the changes I made here
