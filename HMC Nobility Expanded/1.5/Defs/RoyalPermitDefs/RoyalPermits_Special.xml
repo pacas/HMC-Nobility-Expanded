@@ -46,8 +46,9 @@
         <description>Request a drop of box with coin minting die.</description>
         <minTitle>Count</minTitle>
         <cooldownDays>30</cooldownDays>
+        <prerequisite>MintBasicDrop</prerequisite>
         <royalAid>
-            <favorCost>4</favorCost>
+            <favorCost>2</favorCost>
         </royalAid>
         <modExtensions>
             <li Class="NobilityExpanded.PermitExtensionList">
