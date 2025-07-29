@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <RecipeDef Name="MintingRecipeBase" Abstract="True">
+        <workSpeedStat>SmithingSpeed</workSpeedStat>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <recipeUsers>
+            <li>TableMinting</li>
+            <li>TableMintingAdvanced</li>
+        </recipeUsers>
+        <workSkill>Crafting</workSkill>
+        <workSkillLearnFactor>0.3</workSkillLearnFactor>
+        <researchPrerequisite>Craft_B1</researchPrerequisite>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="MintingRecipeBase">
+        <defName>MakeSilverCoins</defName>
+        <label>mint silver coins (х10)</label>
+        <description>Mint silver coins. Produces 10.</description>
+        <jobString>Minting silver coins.</jobString>
+        <workAmount>1000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>SilverCoinBlank</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>SilverBar</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <SilverCoin>10</SilverCoin>
+        </products>
+        <skillRequirements>
+            <Crafting>5</Crafting>
+        </skillRequirements>
+    </RecipeDef>
+    <RecipeDef ParentName="MintingRecipeBase">
+        <defName>MakeSilverCoinsMore</defName>
+        <label>mint silver coins (х50)</label>
+        <description>Mint silver coins. Produces 50.</description>
+        <jobString>Minting silver coins.</jobString>
+        <workAmount>5000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>SilverCoinBlank</li>
+                    </thingDefs>
+                </filter>
+                <count>50</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>SilverCoinBlank</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <SilverCoin>50</SilverCoin>
+        </products>
+        <skillRequirements>
+            <Crafting>5</Crafting>
+        </skillRequirements>
+    </RecipeDef>
+    <RecipeDef ParentName="MintingRecipeBase">
+        <defName>MakeSilverCoinsBulk</defName>
+        <label>mint silver coins (х100)</label>
+        <description>Mint silver coins. Produces 100.</description>
+        <jobString>Minting silver coins.</jobString>
+        <workAmount>10000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>SilverCoinBlank</li>
+                    </thingDefs>
+                </filter>
+                <count>100</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>SilverCoinBlank</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <SilverCoin>100</SilverCoin>
+        </products>
+        <skillRequirements>
+            <Crafting>5</Crafting>
+        </skillRequirements>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="MintingRecipeBase">
+        <defName>MakeGoldCoins</defName>
+        <label>mint gold coin (x1)</label>
+        <description>Mint gold coin. Produces 1.</description>
+        <jobString>Minting gold coin.</jobString>
+        <workAmount>100</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>GoldCoinBlank</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <products>
+            <GoldCoin>1</GoldCoin>
+        </products>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>GoldCoinBlank</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <skillRequirements>
+            <Crafting>9</Crafting>
+        </skillRequirements>
+    </RecipeDef>
+    <RecipeDef ParentName="MintingRecipeBase">
+        <defName>MakeGoldCoinsMore</defName>
+        <label>mint gold coins (x10)</label>
+        <description>Mint gold coins. Produces 10.</description>
+        <jobString>Minting gold coins.</jobString>
+        <workAmount>1000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>GoldCoinBlank</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <products>
+            <GoldCoin>10</GoldCoin>
+        </products>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>GoldCoinBlank</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <skillRequirements>
+            <Crafting>9</Crafting>
+        </skillRequirements>
+    </RecipeDef>
+    <RecipeDef ParentName="MintingRecipeBase">
+        <defName>MakeGoldCoinsBulk</defName>
+        <label>mint gold coins (x50)</label>
+        <description>Mint gold coins. Produces 50.</description>
+        <jobString>Minting gold coins.</jobString>
+        <workAmount>5000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>GoldCoinBlank</li>
+                    </thingDefs>
+                </filter>
+                <count>50</count>
+            </li>
+        </ingredients>
+        <products>
+            <GoldCoin>50</GoldCoin>
+        </products>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>GoldCoinBlank</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <skillRequirements>
+            <Crafting>9</Crafting>
+        </skillRequirements>
+    </RecipeDef>
+    
+    
+    <RecipeDef ParentName="MintingRecipeBase">
+        <defName>MakeSilverBlanks</defName>
+        <label>make silver blanks (x10)</label>
+        <description>Make silver blanks. Produces 10.</description>
+        <jobString>Making silver blanks.</jobString>
+        <workAmount>1000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>CopperBar</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>SilverBar</li>
+                    </thingDefs>
+                </filter>
+                <count>35</count>
+            </li>
+        </ingredients>
+        <products>
+            <SilverCoinBlank>10</SilverCoinBlank>
+        </products>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>CopperBar</li>
+                <li>SilverBar</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <skillRequirements>
+            <Crafting>5</Crafting>
+        </skillRequirements>
+    </RecipeDef>
+    <RecipeDef ParentName="MintingRecipeBase">
+        <defName>MakeSilverBlanksMore</defName>
+        <label>make silver blanks (x50)</label>
+        <description>Make silver blanks. Produces 50.</description>
+        <jobString>Making silver blanks.</jobString>
+        <workAmount>5000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>CopperBar</li>
+                    </thingDefs>
+                </filter>
+                <count>50</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>SilverBar</li>
+                    </thingDefs>
+                </filter>
+                <count>175</count>
+            </li>
+        </ingredients>
+        <products>
+            <SilverCoinBlank>50</SilverCoinBlank>
+        </products>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>CopperBar</li>
+                <li>SilverBar</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <skillRequirements>
+            <Crafting>5</Crafting>
+        </skillRequirements>
+    </RecipeDef>
+    <RecipeDef ParentName="MintingRecipeBase">
+        <defName>MakeSilverBlanksBulk</defName>
+        <label>make silver blanks (x100)</label>
+        <description>Make silver blanks. Produces 100.</description>
+        <jobString>Making silver blanks.</jobString>
+        <workAmount>10000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>CopperBar</li>
+                    </thingDefs>
+                </filter>
+                <count>100</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>SilverBar</li>
+                    </thingDefs>
+                </filter>
+                <count>350</count>
+            </li>
+        </ingredients>
+        <products>
+            <SilverCoinBlank>100</SilverCoinBlank>
+        </products>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>CopperBar</li>
+                <li>SilverBar</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <skillRequirements>
+            <Crafting>5</Crafting>
+        </skillRequirements>
+    </RecipeDef>
+
+    <RecipeDef ParentName="MintingRecipeBase">
+        <defName>MakeGoldBlanks</defName>
+        <label>make gold blanks (x1)</label>
+        <description>Make gold blank. Produces 1.</description>
+        <jobString>Making gold blank.</jobString>
+        <workAmount>100</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>CopperBar</li>
+                    </thingDefs>
+                </filter>
+                <count>4</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>GoldBar</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <products>
+            <GoldCoinBlank>1</GoldCoinBlank>
+        </products>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>CopperBar</li>
+                <li>GoldBar</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <skillRequirements>
+            <Crafting>9</Crafting>
+        </skillRequirements>
+    </RecipeDef>
+    <RecipeDef ParentName="MintingRecipeBase">
+        <defName>MakeGoldBlanksMore</defName>
+        <label>make gold blanks (x10)</label>
+        <description>Make gold blanks. Produces 10.</description>
+        <jobString>Making gold blanks.</jobString>
+        <workAmount>1000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>CopperBar</li>
+                    </thingDefs>
+                </filter>
+                <count>40</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>GoldBar</li>
+                    </thingDefs>
+                </filter>
+                <count>100</count>
+            </li>
+        </ingredients>
+        <products>
+            <GoldCoinBlank>10</GoldCoinBlank>
+        </products>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>CopperBar</li>
+                <li>GoldBar</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <skillRequirements>
+            <Crafting>9</Crafting>
+        </skillRequirements>
+    </RecipeDef>
+    <RecipeDef ParentName="MintingRecipeBase">
+        <defName>MakeGoldBlanksBulk</defName>
+        <label>make gold blanks (x50)</label>
+        <description>Make gold blanks. Produces 50.</description>
+        <jobString>Making gold blanks.</jobString>
+        <workAmount>5000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>CopperBar</li>
+                    </thingDefs>
+                </filter>
+                <count>200</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>GoldBar</li>
+                    </thingDefs>
+                </filter>
+                <count>500</count>
+            </li>
+        </ingredients>
+        <products>
+            <GoldCoinBlank>50</GoldCoinBlank>
+        </products>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>CopperBar</li>
+                <li>GoldBar</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <skillRequirements>
+            <Crafting>9</Crafting>
+        </skillRequirements>
+    </RecipeDef>
+</Defs>

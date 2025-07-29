@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Minting</defName>
+		<label>minting presses</label>
+		<description>Mint your own coins, just be mindful.</description>
+		<defNames>
+			<li>TableMinting</li>
+            <li>TableMintingAdvanced</li>
+		</defNames>
+		<designationCategory>Production</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	
+</Defs>	

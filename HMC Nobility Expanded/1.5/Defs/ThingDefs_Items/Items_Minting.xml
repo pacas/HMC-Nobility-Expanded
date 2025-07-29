@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!--  Coins  -->
+    <ThingDef ParentName="SK_ResourceBase" Name="CoinBase" Abstract="True">
+        <description>Love the Empire or hate it, there's no denying the power of their coins. Their value is backed by the silver and gold they're made of, and a ton of Imperial goods that even a polite barbarian can buy (assuming he's not reduced to a pile of ash by the cataphracts on the outskirts of a trading post).</description>
+		<techLevel>Medieval</techLevel>
+        <soundInteract>Silver_Drop</soundInteract>
+        <soundDrop>Silver_Drop</soundDrop>
+		<resourceReadoutPriority>First</resourceReadoutPriority>
+		<resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
+        <useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<smallVolume>true</smallVolume>
+		<smeltable>false</smeltable>
+        <statBases>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Flammability>0</Flammability>
+			<Mass>0.025</Mass>
+			<Bulk>0.02</Bulk>
+		</statBases>
+        <thingCategories>
+            <li>Coins</li>
+        </thingCategories>
+        <tradeTags>
+            <li>Currency</li>
+        </tradeTags>
+        <tradeability>All</tradeability>
+        <stackLimit>500</stackLimit>
+    </ThingDef>
+    
+    <ThingDef ParentName="CoinBase">
+		<defName>SilverCoin</defName>
+		<label>silver imperial coin</label>
+		<graphicData>
+            <texPath>Things/Item/Coins/SilverCoin</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+			<MarketValue>25</MarketValue>
+            <RoyalFavorValue>0.015</RoyalFavorValue>
+		</statBases>
+		<possessionCount>2</possessionCount>
+	</ThingDef>
+    
+    <ThingDef ParentName="CoinBase">
+		<defName>GoldCoin</defName>
+		<label>gold imperial coin</label>
+		<graphicData>
+            <texPath>Things/Item/Coins/GoldCoin</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+			<MarketValue>500</MarketValue>
+            <RoyalFavorValue>0.3</RoyalFavorValue>
+		</statBases>
+	</ThingDef>
+
+
+    <!--  MintDie  -->
+    <ThingDef ParentName="SK_ResourceBase" Name="MintingDieBase" Abstract="True">
+        <description>A coin minting die is a metal tool with an engraved relief design on its surface that corresponds to the image on a coin. During the minting process, the die is used to imprint the design and inscriptions onto a coin blank under high pressure.</description>
+        <tradeability>None</tradeability>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <stackLimit>5</stackLimit>
+        <tickerType>Rare</tickerType>
+        <techLevel>Industrial</techLevel>
+        <statBases>
+            <DeteriorationRate>0</DeteriorationRate>
+            <Flammability>1</Flammability>
+            <Mass>5</Mass>
+            <Bulk>2</Bulk>
+        </statBases>
+        <thingCategories>
+            <li>MintingTools</li>
+        </thingCategories>
+    </ThingDef>
+    
+    <ThingDef ParentName="MintingDieBase">
+        <defName>CoinMintingDie</defName>
+        <label>coin minting die</label>
+        <graphicData>
+            <texPath>Things/Item/Resource/MintingDieBasic</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>5000</MarketValue>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="MintingDieBase">
+        <defName>CoinMintingDieAdvanced</defName>
+        <label>modern coin minting die</label>
+        <graphicData>
+            <texPath>Things/Item/Resource/MintingDieBasic</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>10000</MarketValue>
+        </statBases>
+    </ThingDef>
+
+
+    <!--  Templates  -->
+    <ThingDef ParentName="SK_ResourceBase" Name="MintingBlanksBase" Abstract="True">
+        <description>A coin blank is a metal disk of a specific shape, weight, and size used as the base for producing coins. Before minting, blanks are processed to achieve the required purity, thickness, and surface quality.</description>
+        <tradeability>None</tradeability>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <stackLimit>750</stackLimit>
+        <tickerType>Rare</tickerType>
+        <techLevel>Medieval</techLevel>
+        <statBases>
+            <DeteriorationRate>0</DeteriorationRate>
+            <Flammability>0</Flammability>
+            <Mass>0.025</Mass>
+            <Bulk>0.02</Bulk>
+        </statBases>
+        <thingCategories>
+            <li>MintingTools</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="MintingBlanksBase">
+        <defName>SilverCoinBlank</defName>
+        <label>silver coins blank</label>
+        <graphicData>
+            <texPath>Things/Item/Coins/SilverCoinBlanks</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>15</MarketValue>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="MintingBlanksBase">
+        <defName>GoldCoinBlank</defName>
+        <label>gold coins blank</label>
+        <graphicData>
+            <texPath>Things/Item/Coins/GoldCoinBlanks</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>300</MarketValue>
+        </statBases>
+    </ThingDef>
+
+</Defs>

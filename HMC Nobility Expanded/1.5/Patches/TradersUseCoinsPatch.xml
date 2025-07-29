@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TraderKindDef/stockGenerators</xpath>
+        <value>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>SilverCoin</thingDef>
+                <countRange>10~50</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>GoldCoin</thingDef>
+                <countRange>1~5</countRange>
+            </li>
+        </value>
+    </Operation>
+</Patch>

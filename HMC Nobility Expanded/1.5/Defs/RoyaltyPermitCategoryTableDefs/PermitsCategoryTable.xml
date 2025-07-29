@@ -17,6 +17,7 @@
             <li>Animals</li>
             <li>Prosthetics</li>
             <li MayRequire="notfood.seedsplease">Seeds</li>
+            <li>Special</li>
         </categories>
     </NobilityExpanded.RoyaltyPermitCategoryTableDef>
 </Defs>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+    <!-- заголовки -->
+    <SpecialPermitTitle.label>Особые привилегии</SpecialPermitTitle.label>
+    <SpecialPermitTitle.description>Запросы га получение особых привилегий от Империи.</SpecialPermitTitle.description>
+    
+    <!-- бомбы -->
+    <MintBasicDrop.label>клише для монет</MintBasicDrop.label>
+    <MintBasicDrop.description>Запрос клише для монет, которое используется для чеканки своих монет.</MintBasicDrop.description>
+    
+    <MintAdvancedDrop.label>современное клише для монет</MintAdvancedDrop.label>
+    <MintAdvancedDrop.description>Запрос клише для монет, которое используется для чеканки своих монет.</MintAdvancedDrop.description>
+
+</LanguageData>
