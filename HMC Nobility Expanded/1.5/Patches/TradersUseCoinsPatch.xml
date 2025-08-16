@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/TraderKindDef/stockGenerators</xpath>
+        <xpath>Defs/TraderKindDef[defName!="Empire_Caravan_TributeCollector"]/stockGenerators</xpath>
         <value>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>SilverCoin</thingDef>

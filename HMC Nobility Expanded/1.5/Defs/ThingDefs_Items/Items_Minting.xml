@@ -37,7 +37,6 @@
         </graphicData>
         <statBases>
 			<MarketValue>25</MarketValue>
-            <RoyalFavorValue>0.015</RoyalFavorValue>
 		</statBases>
 		<possessionCount>2</possessionCount>
 	</ThingDef>
@@ -51,7 +50,6 @@
         </graphicData>
         <statBases>
 			<MarketValue>500</MarketValue>
-            <RoyalFavorValue>0.3</RoyalFavorValue>
 		</statBases>
 	</ThingDef>
 
