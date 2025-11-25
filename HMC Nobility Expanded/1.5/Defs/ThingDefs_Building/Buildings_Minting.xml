@@ -124,6 +124,9 @@
         </stuffCategories>
         <costStuffCount>220</costStuffCount>
         <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+            <li>BuildingsProduction</li>
+        </thingCategories>
         <statBases>
             <WorkToBuild>7500</WorkToBuild>
             <MaxHitPoints>500</MaxHitPoints>
