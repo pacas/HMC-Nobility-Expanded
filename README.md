@@ -1,8 +1,8 @@
 # HMC Nobility Expanded
-![Versions](https://img.shields.io/badge/supported_versions-1.4%2C_1.5-3c6bbc?style=for-the-badge)
+![Versions](https://img.shields.io/badge/supported_versions-1.4%2C_1.5%2C_1.6-3c6bbc?style=for-the-badge)
 ![Archive](https://img.shields.io/badge/archive_versions-1.3-3c6bbc?style=for-the-badge)
-![Dowloads](https://img.shields.io/github/downloads/pacas/HMC-Nobility-Expanded/total?style=for-the-badge&color=3c6bbc) <br>
-![Current Build](https://img.shields.io/github/v/release/pacas/HMC-Nobility-Expanded?display_name=release&style=for-the-badge&color=8c0e00&logo=github) 
+<!--![Dowloads](https://img.shields.io/github/downloads/pacas/HMC-Nobility-Expanded/total?style=for-the-badge&color=3c6bbc) <br>
+![Current Build](https://img.shields.io/github/v/release/pacas/HMC-Nobility-Expanded?display_name=release&style=for-the-badge&color=8c0e00&logo=github) -->
 ![Support Me](https://img.shields.io/badge/boosty-support_me-8c0e00?style=for-the-badge&logo=boosty&labelColor=grey&link=https%3A%2F%2Fboosty.to%2Fpacas) 
 <br><br>
 ![Preview](/preview.png?raw=true "Preview")<br><br>
@@ -37,6 +37,7 @@ This mod changes the system of rewards from the Empire to a more universal and a
 * Military aid
 * Prosthetics and implants
 * Seeds
+* Special
 </details>
 <hr>
 
@@ -69,6 +70,7 @@ This mod changes the system of rewards from the Empire to a more universal and a
 * Военная поддержка
 * Протезы и импланты
 * Семена
+* Особое
 </details>
 <br>
 <img src="https://i.imgur.com/5KVUmeE.png">
@@ -90,7 +92,7 @@ Q: Which mods are compatible except VFEE?<br>
 * HMC More Content<br>
 * Parabellum<br>
 * Giddy-Up 2<br>
-*  Seeds Please<br>
+* Seeds Please<br>
 * Seventh Seraph Weapons<br>
 * Apex Rimworld Legends<br>
 * Maelstroms Metals<br>
