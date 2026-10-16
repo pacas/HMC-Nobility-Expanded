@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[@Name="ApparelVestRoyalTier5Base"]/apparel/tags</xpath>
+                <value>
+                    <li>RoyalTier2</li>
+                    <li>RoyalTier3</li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="Apparel_RobeRoyal"]/apparel/tags</xpath>
+                <value>
+                    <li>RoyalTier2</li>
+                    <li>RoyalTier3</li>
+                    <li>RoyalTier5</li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="Apparel_Coronet"]/apparel/tags</xpath>
+                <value>
+                    <li>RoyalTier2</li>
+                    <li>RoyalTier3</li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="Apparel_Crown"]/apparel/tags</xpath>
+                <value>
+                    <li>RoyalTier2</li>
+                    <li>RoyalTier3</li>
+                    <li>RoyalTier5</li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="Apparel_CrownStellic"]/apparel/tags</xpath>
+                <value>
+                    <li>RoyalTier2</li>
+                    <li>RoyalTier3</li>
+                    <li>RoyalTier5</li>
+                    <li>RoyalTier6</li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="Apparel_Cape"]/apparel/tags</xpath>
+                <value>
+                    <li>RoyalTier3</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

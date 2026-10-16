@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    
+    <RoyalTitlePermitDef ParentName="DropResourcesTitle">
+        <defName>OrbitalPermitTitle</defName>
+        <label>Military Aid</label>
+        <description>Requests for quick military aid.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Title</type>
+                <category>Airstrike</category>
+                <column>0</column>
+                <row>0</row>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef>
+        <defName>CallOrbitalStrike</defName>
+        <label>drone strike</label>
+        <description>Call two single-impact drone strikes at a target position.</description>
+        <workerClass>RoyalTitlePermitWorker_OrbitalStrike</workerClass>
+        <minTitle>Knight</minTitle>
+        <faction>Empire</faction>
+        <permitPointCost>1</permitPointCost>
+        <cooldownDays>18</cooldownDays>
+        <royalAid>
+            <favorCost>3</favorCost>
+            <targetingRange>64.9</targetingRange>
+            <radius>4.9</radius>
+            <explosionRadiusRange>5.9</explosionRadiusRange>
+            <explosionCount>2</explosionCount>
+            <intervalTicks>60</intervalTicks>
+            <warmupTicks>120</warmupTicks>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Airstrike</category>
+                <row>1</row>
+                <column>0</column>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef>
+        <defName>CallOrbitalSalvo</defName>
+        <label>drone salvo</label>
+        <description>Call a salvo of drone strikes around a target position.</description>
+        <workerClass>RoyalTitlePermitWorker_OrbitalStrike</workerClass>
+        <minTitle>Praetor</minTitle>
+        <faction>Empire</faction>
+        <permitPointCost>3</permitPointCost>
+        <prerequisite>CallOrbitalStrike</prerequisite>
+        <cooldownDays>18</cooldownDays>
+        <royalAid>
+            <favorCost>8</favorCost>
+            <targetingRange>64.9</targetingRange>
+            <radius>5.9</radius>
+            <explosionRadiusRange>5.9</explosionRadiusRange>
+            <explosionCount>6</explosionCount>
+            <intervalTicks>60</intervalTicks>
+            <warmupTicks>120</warmupTicks>
+        </royalAid>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Airstrike</category>
+                <row>1</row>
+                <column>1</column>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+    
+</Defs>

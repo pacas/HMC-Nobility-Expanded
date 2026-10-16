@@ -202,5 +202,9 @@
     <DropComment_BabyFoodDrop>Do you have children there? In that case, I'll even give you a little more food for the kids.</DropComment_BabyFoodDrop>
     <DropComment_VampiresFoodDrop>I hope it's just someone needs a blood transfusion. We don't usually receive such requests, be careful with such things.</DropComment_VampiresFoodDrop>
     <DropComment_BabyClothesDrop>Shirt? Check. Pants. Check. Helmet and backpack... Why do you need a kid-sized helmet?</DropComment_BabyClothesDrop>
+    
+    <!-- Особое -->
+    <DropComment_MintBasicDrop>Planning to mint your own coins? Just don’t get too carried away - after all, you know how many noble houses have come to ruin over exactly that?</DropComment_MintBasicDrop>
+    <DropComment_MintAdvancedDrop>These forms are intended solely for trusted representatives of the Empire on the planet; use them, and bear in mind the threat that lies behind every new coin...</DropComment_MintAdvancedDrop>
 
 </LanguageData>

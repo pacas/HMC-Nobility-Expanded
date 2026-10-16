@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using RimWorld;
+﻿using RimWorld;
 using RimWorld.Planet;
 using Verse;
 
@@ -20,7 +19,7 @@ namespace NobilityExpanded
                 return;
             }
             
-            var info = new ActiveDropPodInfo();
+            var info = new ActiveTransporterInfo();
             info.innerContainer.TryAddRangeOrTransfer(list);
             DropPodUtility.MakeDropPodAt(cell, map, info);
             Messages.Message("MessagePermitTransportDrop".Translate(faction.Named("FACTION")),

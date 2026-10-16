@@ -50,5 +50,6 @@
     <PermitCategory_Animals>Животные</PermitCategory_Animals>
     <PermitCategory_Seeds>Семена</PermitCategory_Seeds>
     <PermitCategory_Prosthetics>Протезы и импланты</PermitCategory_Prosthetics>
+    <PermitCategory_Special>Особое</PermitCategory_Special>
 
 </LanguageData>

@@ -202,5 +202,9 @@
     <DropComment_BabyFoodDrop>У вас там дети есть? В таком случае я вам немного побольше даже положу еды детишкам.</DropComment_BabyFoodDrop>
     <DropComment_VampiresFoodDrop>Надеюсь, всего-то кому-то требуется переливание крови? У нас обычно таких запросов не делают, аккуратнее с таким.</DropComment_VampiresFoodDrop>
     <DropComment_BabyClothesDrop>Рубашка? Есть. Штаны. Есть. Шлем и рюкзак... А зачем это вам нужен шлем детского размера?</DropComment_BabyClothesDrop>
+
+    <!-- Особое -->
+    <DropComment_MintBasicDrop>Печатать монеты собрались? Главное не увлекайтесь, а то знаете сколько знатных домов погорело на этом?</DropComment_MintBasicDrop>
+    <DropComment_MintAdvancedDrop>Эти формы предназначены для только доверенных представителей Империи на планете, пользуйтесь и помните об угрозе, стоящей за каждой новой монетой...</DropComment_MintAdvancedDrop>
     
 </LanguageData>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <!-- Thank to MasakiTenchi for the code https://github.com/masakitenchi/Masakis-HSK-Patch -->
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/QuestScriptDef[defName="BuildMonument_Basic" or
+                        defName="BuildMonument_TimeProtect"]</xpath>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/RulePackDef[defName="QuestConstructionNameCommon" or 
+                        defName="QuestConstructionDescriptionCommon" or
+                        defName="BuildMonumentWorker"]</xpath>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

@@ -125,7 +125,7 @@ namespace NobilityExpanded
         public static void CallResources(IntVec3 cell) {
             if (!things.Any())
                 return;
-            var info = new ActiveDropPodInfo();
+            var info = new ActiveTransporterInfo();
             info.innerContainer.TryAddRangeOrTransfer(things);
             DropPodUtility.MakeDropPodAt(cell, curMap, info);
             Messages.Message("MessagePermitTransportDrop".Translate(curFaction.Named("FACTION")),
