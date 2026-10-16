@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <RoyalTitlePermitDef ParentName="DropResourcesTitle">
+        <defName>ColonistsPermitTitle</defName>
+        <label>Colonists</label>
+        <description>Good candidates for new colonists</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Title</type>
+                <category>Colonists</category>
+                <row>0</row>
+                <column>0</column>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropPawns">
+        <defName>ColonistShootingDrop</defName>
+        <label>gunner</label>
+        <description>Request a new colonist with good shooting skill.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Colonists</category>
+                <row>1</row>
+                <column>0</column>
+                <pawnData>
+                    <li>
+                        <pawn>ColonistShooting</pawn>
+                        <count>1</count>
+                    </li>
+                </pawnData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+    
+    <RoyalTitlePermitDef ParentName="DropPawns">
+        <defName>ColonistMeleeDrop</defName>
+        <label>swordsman</label>
+        <description>Request a new colonist with good melee skill.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Colonists</category>
+                <row>1</row>
+                <column>1</column>
+                <pawnData>
+                    <li>
+                        <pawn>ColonistMelee</pawn>
+                        <count>1</count>
+                    </li>
+                </pawnData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropPawns">
+        <defName>ColonistConstructionDrop</defName>
+        <label>builder</label>
+        <description>Request a new colonist with good construction skill.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Colonists</category>
+                <row>2</row>
+                <column>0</column>
+                <pawnData>
+                    <li>
+                        <pawn>ColonistConstruction</pawn>
+                        <count>1</count>
+                    </li>
+                </pawnData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropPawns">
+        <defName>ColonistMiningDrop</defName>
+        <label>miner</label>
+        <description>Request a new colonist with good mining skill.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Colonists</category>
+                <row>2</row>
+                <column>1</column>
+                <pawnData>
+                    <li>
+                        <pawn>ColonistMining</pawn>
+                        <count>1</count>
+                    </li>
+                </pawnData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropPawns">
+        <defName>ColonistCookingDrop</defName>
+        <label>chef</label>
+        <description>Request a new colonist with good cooking skill.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Colonists</category>
+                <row>3</row>
+                <column>0</column>
+                <pawnData>
+                    <li>
+                        <pawn>ColonistCooking</pawn>
+                        <count>1</count>
+                    </li>
+                </pawnData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropPawns">
+        <defName>ColonistPlantsDrop</defName>
+        <label>farmer</label>
+        <description>Request a new colonist with good plants skill.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Colonists</category>
+                <row>3</row>
+                <column>1</column>
+                <pawnData>
+                    <li>
+                        <pawn>ColonistPlants</pawn>
+                        <count>1</count>
+                    </li>
+                </pawnData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropPawns">
+        <defName>ColonistAnimalsDrop</defName>
+        <label>rancher</label>
+        <description>Request a new colonist with good animals skill.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Colonists</category>
+                <row>4</row>
+                <column>0</column>
+                <pawnData>
+                    <li>
+                        <pawn>ColonistAnimals</pawn>
+                        <count>1</count>
+                    </li>
+                </pawnData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropPawns">
+        <defName>ColonistCraftingDrop</defName>
+        <label>crafter</label>
+        <description>Request a new colonist with good crafting skill.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Colonists</category>
+                <row>4</row>
+                <column>1</column>
+                <pawnData>
+                    <li>
+                        <pawn>ColonistCrafting</pawn>
+                        <count>1</count>
+                    </li>
+                </pawnData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropPawns">
+        <defName>ColonistMedicineDrop</defName>
+        <label>medic</label>
+        <description>Request a new colonist with good medicine skill.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Colonists</category>
+                <row>5</row>
+                <column>0</column>
+                <pawnData>
+                    <li>
+                        <pawn>ColonistMedicine</pawn>
+                        <count>1</count>
+                    </li>
+                </pawnData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropPawns">
+        <defName>ColonistSocialDrop</defName>
+        <label>diplomat</label>
+        <description>Request a new colonist with good social skill.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Colonists</category>
+                <row>5</row>
+                <column>1</column>
+                <pawnData>
+                    <li>
+                        <pawn>ColonistSocial</pawn>
+                        <count>1</count>
+                    </li>
+                </pawnData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropPawns">
+        <defName>ColonistIntellectualDrop</defName>
+        <label>scientist</label>
+        <description>Request a new colonist with good intellectual skill.</description>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Colonists</category>
+                <row>6</row>
+                <column>0</column>
+                <pawnData>
+                    <li>
+                        <pawn>ColonistIntellectual</pawn>
+                        <count>1</count>
+                    </li>
+                </pawnData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="DropPawns">
+        <defName>ColonistArtisticDrop</defName>
+        <label>artist</label>
+        <description>Request a new colonist with artistic skill. Attention - anyone can call themselves an artist.</description>
+        <permitPointCost>1</permitPointCost>
+        <modExtensions>
+            <li Class="NobilityExpanded.PermitExtensionList">
+                <type>Permit</type>
+                <category>Colonists</category>
+                <row>6</row>
+                <column>1</column>
+                <pawnData>
+                    <li>
+                        <pawn>ColonistArtistic</pawn>
+                        <count>1</count>
+                    </li>
+                </pawnData>
+            </li>
+        </modExtensions>
+    </RoyalTitlePermitDef>
+    
+</Defs>

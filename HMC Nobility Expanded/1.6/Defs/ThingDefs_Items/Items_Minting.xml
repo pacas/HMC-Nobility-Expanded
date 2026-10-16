@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!--  MintDie  -->
+    <ThingDef ParentName="ResourceBase" Name="MintingDieBase" Abstract="True">
+        <description>A coin minting die is a metal tool with an engraved relief design on its surface that corresponds to the image on a coin. During the minting process, the die is used to imprint the design and inscriptions onto a coin blank under high pressure.</description>
+        <tradeability>None</tradeability>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <stackLimit>5</stackLimit>
+        <tickerType>Rare</tickerType>
+        <techLevel>Industrial</techLevel>
+        <statBases>
+            <DeteriorationRate>0</DeteriorationRate>
+            <Flammability>1</Flammability>
+            <Mass>5</Mass>
+            <Bulk>2</Bulk>
+        </statBases>
+        <thingCategories>
+            <li>MintingTools</li>
+        </thingCategories>
+    </ThingDef>
+    
+    <ThingDef ParentName="MintingDieBase">
+        <defName>CoinMintingDie</defName>
+        <label>coin minting die</label>
+        <graphicData>
+            <texPath>Things/Item/Resource/MintingDieBasic</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>5000</MarketValue>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="MintingDieBase">
+        <defName>CoinMintingDieAdvanced</defName>
+        <label>modern coin minting die</label>
+        <graphicData>
+            <texPath>Things/Item/Resource/MintingDieBasic</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>10000</MarketValue>
+        </statBases>
+    </ThingDef>
+
+
+    <!--  Templates  -->
+    <ThingDef ParentName="ResourceBase" Name="MintingBlanksBase" Abstract="True">
+        <description>A coin blank is a metal disk of a specific shape, weight, and size used as the base for producing coins. Before minting, blanks are processed to achieve the required purity, thickness, and surface quality.</description>
+        <tradeability>None</tradeability>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <stackLimit>750</stackLimit>
+        <tickerType>Rare</tickerType>
+        <techLevel>Medieval</techLevel>
+        <statBases>
+            <DeteriorationRate>0</DeteriorationRate>
+            <Flammability>0</Flammability>
+            <Mass>0.025</Mass>
+            <Bulk>0.02</Bulk>
+        </statBases>
+        <thingCategories>
+            <li>MintingTools</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="MintingBlanksBase">
+        <defName>SilverCoinBlank</defName>
+        <label>silver coins blank</label>
+        <graphicData>
+            <texPath>Things/Item/Coins/SilverCoinBlanks</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>15</MarketValue>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="MintingBlanksBase">
+        <defName>GoldCoinBlank</defName>
+        <label>gold coins blank</label>
+        <graphicData>
+            <texPath>Things/Item/Coins/GoldCoinBlanks</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>300</MarketValue>
+        </statBases>
+    </ThingDef>
+
+</Defs>

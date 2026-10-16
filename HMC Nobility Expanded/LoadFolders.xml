@@ -14,6 +14,13 @@
 		<li IfModActive="OskarPotocki.VFE.Empire">VanillaFactionExpanded_Empire</li>
 		<li IfModActive="OskarPotocki.VFE.Empire">VFEE_Patch/1.5</li>
 	</v1.5>
+	<v1.6>
+		<li>/</li>
+		<li>1.6</li>
+		<li>Common</li>
+		<li IfModActive="OskarPotocki.VFE.Empire">VanillaFactionExpanded_Empire</li>
+		<li IfModActive="OskarPotocki.VFE.Empire">VFEE_Patch/1.6</li>
+	</v1.6>
 </loadFolders>
 
 

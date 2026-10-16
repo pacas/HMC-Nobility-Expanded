@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("HMC_NobilityExpanded")]
-[assembly: AssemblyCopyright("Copyright Pacas©  2023")]
+[assembly: AssemblyCopyright("Copyright Pacas©  2026")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
