@@ -37,6 +37,7 @@
     <!-- ===== Category ===== -->
     <PermitCategory_Resources>Basic resources</PermitCategory_Resources>
     <PermitCategory_Pawns>Allies</PermitCategory_Pawns>
+    <PermitCategory_Colonists>Colonists</PermitCategory_Colonists>
     <PermitCategory_Airstrike>Military aid</PermitCategory_Airstrike>
     <PermitCategory_Tools>Tools</PermitCategory_Tools>
     <PermitCategory_Armor>Armor</PermitCategory_Armor>
