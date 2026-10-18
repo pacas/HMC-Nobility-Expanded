@@ -1,4 +1,5 @@
-﻿using RimWorld;
+﻿using System.Collections.Generic;
+using RimWorld;
 using RimWorld.Planet;
 using Verse;
 
@@ -31,8 +32,7 @@ namespace NobilityExpanded
             caller.royalty.TryRemoveFavor(faction, def.royalAid.favorCost);
         }
 
-        protected override void CallResourcesToCaravan(Pawn caller, Faction faction, bool free) {
-            var caravan = caller.GetCaravan();
+        protected override void BeginCallResourcesToCaravan(Pawn caller, Faction faction, bool free) {
             var extension = def.GetModExtension<PermitExtensionList>();
             var list = Utilities.ItemGenerator.GenerateItems(extension);
             if (!list.Any()) {
@@ -40,6 +40,16 @@ namespace NobilityExpanded
                 return;
             }
 
+            if (Utilities.ItemGenerator.WouldOverloadCaravan(caller.GetCaravan(), list))
+                Find.WindowStack.Add(Dialog_MessageBox.CreateConfirmation(
+                    "DropResourcesOverweightConfirm".Translate(),
+                    () => CallResourcesToCaravan(caller, faction, free, list), true));
+            else
+                CallResourcesToCaravan(caller, faction, free, list);
+        }
+
+        private void CallResourcesToCaravan(Pawn caller, Faction faction, bool free, List<Thing> list) {
+            var caravan = caller.GetCaravan();
             foreach (var thing in list) {
                 CaravanInventoryUtility.GiveThing(caravan, thing);
             }
