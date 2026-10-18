@@ -1,12 +1,13 @@
 ﻿using System.Collections.Generic;
 using JetBrains.Annotations;
+using NobilityExpanded.NE_Data;
 using Verse;
 
 namespace NobilityExpanded
 {
     public class PermitExtensionList : DefModExtension
     {
-        public string type = "Permit";
+        public PermitEntryType type = PermitEntryType.Permit;
         public string category;
         [CanBeNull] public int? column;
         [CanBeNull] public int? row;
