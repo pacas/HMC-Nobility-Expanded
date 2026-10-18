@@ -18,17 +18,22 @@ namespace HMC_NE_VFEE
     [HarmonyPatch(typeof(EmpireTitleUtility), "CanInvite")]
     public static class CanInvitePatch
     {
-        public static bool Prefix(RoyalTitleDef title, ref bool __result)
+        // VFEE itself only excludes Emperor and HighStellarch, heads of the houses and the lowest titles are added here
+        private static readonly HashSet<string> NonInvitableTitles = new HashSet<string>
         {
-            RoyalTitleDef Emperor = DefDatabase<RoyalTitleDef>.GetNamedSilentFail("Emperor");
-            RoyalTitleDef Stellarch = DefDatabase<RoyalTitleDef>.GetNamedSilentFail("Stellarch");
-            RoyalTitleDef August = DefDatabase<RoyalTitleDef>.GetNamedSilentFail("VFEE_HighStellarch");
-            RoyalTitleDef MinorHead = DefDatabase<RoyalTitleDef>.GetNamedSilentFail("MinorHead");
-            RoyalTitleDef Freeholder = DefDatabase<RoyalTitleDef>.GetNamedSilentFail("Freeholder");
-            RoyalTitleDef Yeoman = DefDatabase<RoyalTitleDef>.GetNamedSilentFail("Yeoman");
-            RoyalTitleDef Acolyte = DefDatabase<RoyalTitleDef>.GetNamedSilentFail("Acolyte");
-            __result = title != Emperor && title != Stellarch && title != August && title != MinorHead && title != Freeholder && title != Yeoman && title != Acolyte;
-            return false;
+            "Emperor",
+            "Stellarch",
+            "VFEE_HighStellarch",
+            "MinorHead",
+            "Freeholder",
+            "Yeoman",
+            "Acolyte",
+        };
+
+        public static void Postfix(RoyalTitleDef title, ref bool __result)
+        {
+            if (title != null && NonInvitableTitles.Contains(title.defName))
+                __result = false;
         }
     }
 }
