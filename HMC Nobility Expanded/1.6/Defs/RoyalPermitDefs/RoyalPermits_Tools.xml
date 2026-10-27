@@ -35,27 +35,27 @@
                 <row>1</row>
                 <itemData>
                     <li>
-                        <thing>TFJ_Tool_Woodcutting_Handaxe</thing>
+                        <thing>Tool_Woodcutting_Handaxe</thing>
                         <count>1</count>
                         <stuff>Plasteel</stuff>
                     </li>
                     <li>
-                        <thing>TFJ_Tool_Mining_Pickaxe</thing>
+                        <thing>Tool_Mining_Pickaxe</thing>
                         <count>1</count>
                         <stuff>Plasteel</stuff>
                     </li>
                     <li>
-                        <thing>TFJ_Tool_Building_Hammer</thing>
+                        <thing>Tool_Building_Hammer</thing>
                         <count>1</count>
                         <stuff>Plasteel</stuff>
                     </li>
                     <li>
-                        <thing>TFJ_Tool_Sickle</thing>
+                        <thing>Tool_Sickle</thing>
                         <count>1</count>
                         <stuff>Plasteel</stuff>
                     </li>
                     <li>
-                        <thing>TFJ_Tool_Hoe</thing>
+                        <thing>Tool_Hoe</thing>
                         <count>1</count>
                         <stuff>Plasteel</stuff>
                     </li>
@@ -65,7 +65,7 @@
                         <stuff>Plasteel</stuff>
                     </li>
                     <li>
-                        <thing>TFJ_Tool_Broom</thing>
+                        <thing>Tool_Broom</thing>
                         <count>1</count>
                         <stuff>Plasteel</stuff>
                     </li>
@@ -93,31 +93,31 @@
                 <row>1</row>
                 <itemData>
                     <li>
-                        <thing>TFJ_Tool_Woodcutting_Handaxe</thing>
+                        <thing>Tool_Woodcutting_Handaxe</thing>
                         <count>1</count>
                         <stuff>Titanium</stuff>
                         <quality>Good</quality>
                     </li>
                     <li>
-                        <thing>TFJ_Tool_Mining_Pickaxe</thing>
+                        <thing>Tool_Mining_Pickaxe</thing>
                         <count>1</count>
                         <stuff>Titanium</stuff>
                         <quality>Good</quality>
                     </li>
                     <li>
-                        <thing>TFJ_Tool_Building_Hammer</thing>
+                        <thing>Tool_Building_Hammer</thing>
                         <count>1</count>
                         <stuff>Titanium</stuff>
                         <quality>Good</quality>
                     </li>
                     <li>
-                        <thing>TFJ_Tool_Sickle</thing>
+                        <thing>Tool_Sickle</thing>
                         <count>1</count>
                         <stuff>Titanium</stuff>
                         <quality>Good</quality>
                     </li>
                     <li>
-                        <thing>TFJ_Tool_Hoe</thing>
+                        <thing>Tool_Hoe</thing>
                         <count>1</count>
                         <stuff>Titanium</stuff>
                         <quality>Good</quality>
@@ -129,7 +129,7 @@
                         <quality>Good</quality>
                     </li>
                     <li>
-                        <thing>TFJ_Tool_Broom</thing>
+                        <thing>Tool_Broom</thing>
                         <count>1</count>
                         <stuff>AluminiumBar</stuff>
                         <quality>Good</quality>
@@ -157,7 +157,7 @@
                 <row>2</row>
                 <itemData>
                     <li>
-                        <thing>TFJ_Tool_Multitool</thing>
+                        <thing>Tool_Multitool</thing>
                         <count>1</count>
                         <stuff>AlnicoAlloy</stuff>
                     </li>
@@ -185,7 +185,7 @@
                 <row>2</row>
                 <itemData>
                     <li>
-                        <thing>TFJ_Tool_Multitool</thing>
+                        <thing>Tool_Multitool</thing>
                         <count>1</count>
                         <stuff>Titanium</stuff>
                         <quality>Excellent</quality>
