@@ -30,8 +30,12 @@ namespace NobilityExpanded
             ___cachedDrawEntries.Clear();
             ___cachedEntryValues.Clear();
             ___quickSearchWidget.Reset();
+            var faction = !ModLister.RoyaltyInstalled || Current.ProgramState != ProgramState.Playing ? null : Faction.OfEmpire;
+            // нужно ставить и оригинальные состояния, чтобы инфокарта показывала вкладку вообще
+            PermitsCardUtility.selectedPermit = null;
+            PermitsCardUtility.selectedFaction = faction;
             PermitsCardCustomUtility.selectedPermit = null;
-            PermitsCardCustomUtility.selectedFaction = !ModLister.RoyaltyInstalled || Current.ProgramState != ProgramState.Playing ? null : Faction.OfEmpire;
+            PermitsCardCustomUtility.selectedFaction = faction;
             return false;
         }
     }
