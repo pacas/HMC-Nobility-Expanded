@@ -75,9 +75,9 @@ namespace NobilityExpanded
                 if (isOnMap) {
                     Find.Targeter.BeginTargeting(worker);
                 } else {
-                    CallResourcesToCaravan(curPawn, curFaction, isFree);
+                    CallResourcesToCaravanChecked();
                 }
-                
+
                 Close();
                 return;
             }
@@ -91,7 +91,7 @@ namespace NobilityExpanded
             Rect choicesRect = new Rect(0f, curY, width - 16f, 99999f);
             listingStandard.Begin(choicesRect);
             foreach (ItemDataInfo data in resourceChoices) {
-                if (listingStandard.RadioButton(data.thing.LabelCap, chosenThing == data, 30f, chosenThing.thing.description)) {
+                if (listingStandard.RadioButton(data.thing.LabelCap, chosenThing == data, 30f, data.thing.description)) {
                     chosenThing = data;
                 }
             }
@@ -134,6 +134,17 @@ namespace NobilityExpanded
             if (isFree)
                 return;
             curPawn.royalty.TryRemoveFavor(curFaction, curDef.royalAid.favorCost);
+        }
+
+        private static void CallResourcesToCaravanChecked() {
+            var caravan = curPawn.GetCaravan();
+            if (Utilities.ItemGenerator.WouldOverloadCaravan(caravan, things)) {
+                Find.WindowStack.Add(Dialog_MessageBox.CreateConfirmation(
+                    "DropResourcesOverweightConfirm".Translate(),
+                    () => CallResourcesToCaravan(curPawn, curFaction, isFree), true));
+            } else {
+                CallResourcesToCaravan(curPawn, curFaction, isFree);
+            }
         }
 
         public static void CallResourcesToCaravan(Pawn caller, Faction faction, bool free) {

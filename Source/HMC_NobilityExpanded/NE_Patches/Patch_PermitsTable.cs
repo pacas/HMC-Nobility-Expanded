@@ -30,9 +30,12 @@ namespace NobilityExpanded
             ___cachedDrawEntries.Clear();
             ___cachedEntryValues.Clear();
             ___quickSearchWidget.Reset();
+            var faction = !ModLister.RoyaltyInstalled || Current.ProgramState != ProgramState.Playing ? null : Faction.OfEmpire;
+            // нужно ставить и оригинальные состояния, чтобы инфокарта показывала вкладку вообще
+            PermitsCardUtility.selectedPermit = null;
+            PermitsCardUtility.selectedFaction = faction;
             PermitsCardCustomUtility.selectedPermit = null;
-            PermitsCardCustomUtility.selectedFaction = !ModLister.RoyaltyInstalled || Current.ProgramState != ProgramState.Playing ? null : Faction.OfEmpire;
-            PermitsCardCustomUtility.selectedFaction = !ModLister.RoyaltyInstalled || Current.ProgramState != ProgramState.Playing ? null : Faction.OfEmpire;
+            PermitsCardCustomUtility.selectedFaction = faction;
             return false;
         }
     }
@@ -59,7 +62,12 @@ namespace NobilityExpanded
     [HarmonyPatch(typeof(Dialog_InfoCard), "get_InitialSize")]
     public static class WindowSizePatch
     {
-        public static bool Prefix(ref Vector2 __result) {
+        // The permits tab can be switched to on any humanlike pawn card, so only these cards get the bigger size
+        public static bool Prefix(Thing ___thing, ref Vector2 __result) {
+            var pawn = ___thing as Pawn;
+            if (pawn == null || !pawn.RaceProps.Humanlike || !ModsConfig.RoyaltyActive)
+                return true;
+
             __result = new Vector2(1100f, 880f);
             return false;
         }

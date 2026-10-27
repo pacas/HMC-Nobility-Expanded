@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using NobilityExpanded.NE_Data;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -147,7 +148,7 @@ namespace NobilityExpanded
                     yPos += descRect.height + 26f;
                 }
                 
-                if (selectedPermit.permitPointCost < 90) {
+                if (!IsHeader(selectedPermit)) {
                     var commentRect = new Rect(0.0f, yPos, leftPanel.width, 0.0f);
                     var dropComment = "DropComment_" + selectedPermit.defName;
                     string label = "\n" + "DropComment".Translate() + "\n\n" + dropComment.Translate();
@@ -155,7 +156,7 @@ namespace NobilityExpanded
                 }
                 
                 var acceptRect = new Rect(0.0f, leftPanel.height - 50f, leftPanel.width, 50f);
-                if (selectedPermit.AvailableForPawn(pawn, selectedFaction) && !PermitUnlocked(selectedPermit, pawn) &&
+                if (!IsHeader(selectedPermit) && selectedPermit.AvailableForPawn(pawn, selectedFaction) && !PermitUnlocked(selectedPermit, pawn) &&
                     Widgets.ButtonText(acceptRect, "AcceptPermit".Translate()))
                 {
                     SoundDefOf.Quest_Accepted.PlayOneShotOnCamera();
@@ -188,13 +189,13 @@ namespace NobilityExpanded
                 var bgColor = PermitUnlocked(permit, pawn) ? TexUI.FinishedResearchColor : TexUI.AvailResearchColor;
                 Color borderResearchColor;
                 var permitRect = new Rect(drawPosition.x, drawPosition.y, 200f, 50f);
-                switch (permit.permitPointCost) { // todo change to modext
-                    case 99:
+                switch (EntryTypeOf(permit)) {
+                    case PermitEntryType.Title:
                         textColor = new Color(1f, 0.5f, 0.0f, 1.0f);
                         bgColor = new Color(0.06f, 0.06f, 0.06f, 1);
                         permitRect = new Rect(drawPosition.x - 20f, drawPosition.y, 340f, 50f);
                         break;
-                    case 98:
+                    case PermitEntryType.Category:
                         textColor = new Color(1f, 0.8f, 0.2f, 1.0f);
                         bgColor = new Color(0.06f, 0.06f, 0.06f, 1);
                         permitRect = new Rect(drawPosition.x - 35f, drawPosition.y, 220f, 50f);
@@ -239,7 +240,7 @@ namespace NobilityExpanded
                 var infoRect = new Rect(0.0f, 0.0f, rightRect.width, 0.0f);
                 var label = "";
 
-                if (selectedPermit.permitPointCost < 90) {
+                if (!IsHeader(selectedPermit)) {
                     label += Utilities.TextFormatter.FormBasicPermitInfo(selectedPermit, selectedFaction, currentTitle, PermitUnlocked(selectedPermit.prerequisite, pawn));
                     label += Utilities.TextFormatter.FormAdditionalPermitInfoExtension(selectedPermit);
                 }
@@ -283,13 +284,13 @@ namespace NobilityExpanded
                 var column = extension.column ?? 0;
                 var row = extension.row ?? 0;
                 switch (extension.type) {
-                    case "Title":
+                    case PermitEntryType.Title:
                         newCoords = new Vector2(80f, row * 50f + 5f);
                         break;
-                    case "Category":
+                    case PermitEntryType.Category:
                         newCoords = new Vector2(140f, row * 50f + 5f);
                         break;
-                    case "Permit":
+                    case PermitEntryType.Permit:
                         newCoords = new Vector2(column * 240f, row * 50f);
                         break;
                     default:
@@ -323,22 +324,25 @@ namespace NobilityExpanded
         }
         
         private static bool CanDrawPermit(RoyalTitlePermitDef permit) {
-            if (permit.permitPointCost < 0 || permit.permitPointCost == 97 || permit.permitPointCost == 96)
-                return false;
-
             if (!IsFromCurrentCategory(permit))
                 return false;
-            
+
             return permit.faction == null || permit.faction == selectedFaction.def;
         }
 
         private static bool IsFromCurrentCategory(RoyalTitlePermitDef permit) {
             var ext = permit.GetModExtension<PermitExtensionList>();
-            if (ext != null) {
-                return ext.category == curTab;
-            }
-            
-            return permit.permitPointCost > 89;
+            return ext != null && ext.category == curTab;
+        }
+
+        // permits without the extension are not a part of the table, so they count as regular ones
+        private static PermitEntryType EntryTypeOf(RoyalTitlePermitDef permit) {
+            var ext = permit.GetModExtension<PermitExtensionList>();
+            return ext != null ? ext.type : PermitEntryType.Permit;
+        }
+
+        private static bool IsHeader(RoyalTitlePermitDef permit) {
+            return EntryTypeOf(permit) != PermitEntryType.Permit;
         }
         
         private static List<FloatMenuOption> SetCategoryButton()

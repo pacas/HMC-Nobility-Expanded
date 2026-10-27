@@ -9,6 +9,7 @@ namespace NobilityExpanded
     public class RoyalTitlePermitWorker_CallPawns : RoyalTitlePermitWorker_Targeted
     {
         private System.Random random = new System.Random();
+        private Faction faction;
 
         public override IEnumerable<FloatMenuOption> GetRoyalAidOptions(Map map, Pawn pawn, Faction faction) {
             RoyalTitlePermitWorker_CallPawns permitWorkerCallAid = this;
@@ -26,12 +27,12 @@ namespace NobilityExpanded
                 string description = (permitWorkerCallAid.def.LabelCap + ": ");
                 bool free;
                 if (permitWorkerCallAid.FillAidOption(pawn, faction, ref description, out free))
-                    action = (() => BeginCallAid(pawn, map, free));
+                    action = (() => BeginCallAid(pawn, faction, map, free));
                 yield return new FloatMenuOption(description, action, faction.def.FactionIcon, faction.Color);
             }
         }
 
-        private void BeginCallAid(Pawn caller, Map map, bool free) {
+        private void BeginCallAid(Pawn caller, Faction faction, Map map, bool free) {
             targetingParameters = new TargetingParameters();
             targetingParameters.canTargetLocations = true;
             targetingParameters.canTargetSelf = false;
@@ -45,6 +46,7 @@ namespace NobilityExpanded
                 !target.Cell.Fogged(map) && DropCellFinder.CanPhysicallyDropInto(target.Cell, map, true) &&
                 target.Cell.GetEdifice(map) == null && !target.Cell.Impassable(map));
             this.caller = caller;
+            this.faction = faction;
             this.map = map;
             this.free = free;
             Find.Targeter.BeginTargeting(this);
@@ -68,9 +70,9 @@ namespace NobilityExpanded
             }
             
             if (!free)
-                caller.royalty.TryRemoveFavor(Faction.OfEmpire, def.royalAid.favorCost);
-            caller.royalty.GetPermit(def, Faction.OfEmpire).Notify_Used();
-            Messages.Message("MessagePermitTransportDrop".Translate(Faction.OfEmpire.Named("FACTION")),
+                caller.royalty.TryRemoveFavor(faction, def.royalAid.favorCost);
+            caller.royalty.GetPermit(def, faction).Notify_Used();
+            Messages.Message("MessagePermitTransportDrop".Translate(faction.Named("FACTION")),
                 new LookTargets(spawnPos, map), MessageTypeDefOf.NeutralEvent);
         }
     }

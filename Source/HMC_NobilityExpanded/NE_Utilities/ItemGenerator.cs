@@ -3,6 +3,7 @@ using System.Linq;
 using CombatExtended;
 using JetBrains.Annotations;
 using RimWorld;
+using RimWorld.Planet;
 using Verse;
 using Random = System.Random;
 
@@ -11,11 +12,19 @@ namespace NobilityExpanded.Utilities
     public static class ItemGenerator
     {
         private static readonly Random Random = new Random();
-        
+
+        public static float TotalMass(IEnumerable<Thing> things) {
+            return things.Sum(thing => thing.GetStatValue(StatDefOf.Mass) * thing.stackCount);
+        }
+
+        public static bool WouldOverloadCaravan(Caravan caravan, IEnumerable<Thing> things) {
+            return caravan.MassUsage + TotalMass(things) > caravan.MassCapacity;
+        }
+
         public static List<Thing> GenerateItems(PermitExtensionList extension) {
             var things = new List<Thing>();
-            if (extension?.itemData == null) {
-                Log.Error("Cannot find mod extension");
+            if (extension?.itemData == null || extension.itemData.Count == 0) {
+                Log.Error("Cannot find mod extension or its item data");
                 return things;
             }
             
@@ -34,6 +43,11 @@ namespace NobilityExpanded.Utilities
 
         public static List<Thing> GenerateItemByType(ItemDataInfo item) {
             List<Thing> things = new List<Thing>();
+            if (item?.thing == null) {
+                Log.Error("Permit item has no thing def, skipping it");
+                return things;
+            }
+
             Thing thing;
             if (item.stuff != null) {
                 thing = item.quality != null ? GenerateThingStuffQuality(item) : ThingMaker.MakeThing(item.thing, item.stuff);
@@ -80,6 +94,11 @@ namespace NobilityExpanded.Utilities
         public static Thing GenerateThingQuality(ItemDataInfo item) {
             Thing thing = ThingMaker.MakeThing(item.thing);
             CompQuality comp = thing.TryGetComp<CompQuality>();
+            if (comp == null) {
+                Log.Error("Permit item " + item.thing.defName + " has quality set, but no CompQuality - quality ignored");
+                return thing;
+            }
+
             var quality = item.quality;
             switch (item.qualityType)
             {
@@ -175,10 +194,15 @@ namespace NobilityExpanded.Utilities
         
         [CanBeNull]
         public static Thing GenerateAmmoForGuns(ItemDataInfo item, Thing thing) {
-            AmmoSetDef ammoUser = thing.TryGetComp<CompAmmoUser>().Props.ammoSet;
+            AmmoSetDef ammoUser = thing.TryGetComp<CompAmmoUser>()?.Props?.ammoSet;
+            if (ammoUser == null) {
+                Log.Error("Permit item " + thing.def.defName + " has ammoCount, but no ammo set - ammo skipped");
+                return null;
+            }
+
             if (ammoUser.ammoTypes.NullOrEmpty())
                 return null;
-            
+
             AmmoDef ammo = ammoUser.ammoTypes.First().ammo;
             Thing ammoThing = ThingMaker.MakeThing(ammo);
             ammoThing.stackCount = item.ammoCount;
@@ -189,13 +213,20 @@ namespace NobilityExpanded.Utilities
         [CanBeNull]
         public static Thing GenerateAmmoForTurrets(ItemDataInfo data) {
             var turretGun = data.thing?.building?.turretGunDef;
-            if (turretGun == null)
+            if (turretGun == null) {
+                Log.Error("Permit turret " + data.thing?.defName + " has ammoCount, but no turret gun - ammo skipped");
                 return null;
-            
-            AmmoSetDef ammoUser = ThingMaker.MakeThing(turretGun).TryGetComp<CompAmmoUser>().Props.ammoSet;
+            }
+
+            AmmoSetDef ammoUser = turretGun.GetCompProperties<CompProperties_AmmoUser>()?.ammoSet;
+            if (ammoUser == null) {
+                Log.Error("Permit turret " + data.thing.defName + " has ammoCount, but its gun has no ammo set - ammo skipped");
+                return null;
+            }
+
             if (ammoUser.ammoTypes.NullOrEmpty())
                 return null;
-            
+
             AmmoDef ammo = ammoUser.ammoTypes.First().ammo;
             Thing ammoThing = ThingMaker.MakeThing(ammo);
             ammoThing.stackCount = data.ammoCount;

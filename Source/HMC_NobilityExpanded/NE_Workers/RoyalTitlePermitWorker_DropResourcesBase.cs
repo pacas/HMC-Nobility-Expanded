@@ -42,21 +42,7 @@ namespace NobilityExpanded
                 defaultLabel = workerDropResources.def.LabelCap + " (" + pawn.LabelShort + ")",
                 defaultDesc = description,
                 icon = CommandTex,
-                action = () => {
-                    var caravan = pawn.GetCaravan();
-                    var massUsage = caravan.MassUsage;
-                    var extension = def.GetModExtension<PermitExtensionList>();
-                    var itemsToDrop = extension.itemData ?? new List<ItemDataInfo>();
-                    foreach (var item in itemsToDrop)
-                        massUsage += item.thing.BaseMass * item.count;
-                    
-                    if (massUsage > (double)caravan.MassCapacity)
-                        Find.WindowStack.Add(Dialog_MessageBox.CreateConfirmation(
-                            "DropResourcesOverweightConfirm".Translate(),
-                            () => CallResourcesToCaravan(pawn, faction, free), true));
-                    else
-                        CallResourcesToCaravan(pawn, faction, free);
-                },
+                action = () => BeginCallResourcesToCaravan(pawn, faction, free),
             };
 
             if (faction.HostileTo(Faction.OfPlayer))
@@ -86,8 +72,9 @@ namespace NobilityExpanded
             Find.Targeter.BeginTargeting(this);
         }
 
-        protected virtual void CallResourcesToCaravan(Pawn caller, Faction faction, bool free) {
-            
+        // generate what will be dropped (or let the player choose it) and check the caravan mass against that
+        protected virtual void BeginCallResourcesToCaravan(Pawn caller, Faction faction, bool free) {
+
         }
     }
 }
