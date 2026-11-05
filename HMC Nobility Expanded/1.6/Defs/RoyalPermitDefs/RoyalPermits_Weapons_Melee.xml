@@ -35,7 +35,7 @@
                 <randomItem>true</randomItem>
                 <itemData>
                     <li>
-                        <thing>NorbalMeleeWeapon_ShortSwordtwo</thing>
+                        <thing>MeleeWeapon_LongSeax</thing>
                         <count>1</count>
                         <stuff>Plasteel</stuff>
                     </li>
@@ -86,7 +86,7 @@
                         <qualityType>Range</qualityType>
                     </li>
                     <li>
-                        <thing>NorbalMeleeWeapon_ShortSwordtwo</thing>
+                        <thing>MeleeWeapon_LongSeax</thing>
                         <count>1</count>
                         <stuff>Titanium</stuff>
                         <quality>Excellent</quality>
@@ -175,17 +175,17 @@
                         <stuff>Plasteel</stuff>
                     </li>
                     <li>
-                        <thing>NorbalMeleeWeapon_ShortSword</thing>
+                        <thing>MeleeWeapon_RuneSword</thing>
                         <count>1</count>
                         <stuff>Plasteel</stuff>
                     </li>
                     <li>
-                        <thing>NorbalMeleeWeapon_Ax</thing>
+                        <thing>MeleeWeapon_WarAxe</thing>
                         <count>1</count>
                         <stuff>Plasteel</stuff>
                     </li>
                     <li>
-                        <thing>NorbalMeleeWeapon_Bigax</thing>
+                        <thing>MeleeWeapon_BattleAxe</thing>
                         <count>1</count>
                         <stuff>Plasteel</stuff>
                     </li>
@@ -278,28 +278,28 @@
                         <qualityType>Range</qualityType>
                     </li>
                     <li>
-                        <thing>NorbalMeleeWeapon_ShortSword</thing>
+                        <thing>MeleeWeapon_RuneSword</thing>
                         <count>1</count>
                         <stuff>Titanium</stuff>
                         <quality>Excellent</quality>
                         <qualityType>Range</qualityType>
                     </li>
                     <li>
-                        <thing>NorbalMeleeWeapon_Ax</thing>
+                        <thing>MeleeWeapon_WarAxe</thing>
                         <count>1</count>
                         <stuff>Titanium</stuff>
                         <quality>Excellent</quality>
                         <qualityType>Range</qualityType>
                     </li>
                     <li>
-                        <thing>NorbalMeleeWeapon_Bigax</thing>
+                        <thing>MeleeWeapon_BattleAxe</thing>
                         <count>1</count>
                         <stuff>Titanium</stuff>
                         <quality>Excellent</quality>
                         <qualityType>Range</qualityType>
                     </li>
                     <li>
-                        <thing>MeleeWeapon_Tsurugi</thing>
+                        <thing>MeleeWeapon_Buster</thing>
                         <count>1</count>
                         <stuff>Titanium</stuff>
                         <quality>Excellent</quality>
@@ -481,7 +481,12 @@
                         <stuff>Plasteel</stuff>
                     </li>
                     <li>
-                        <thing>MeleeWeapon_Tsurugi</thing>
+                        <thing>MeleeWeapon_Halberd</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_Buster</thing>
                         <count>1</count>
                         <stuff>Plasteel</stuff>
                     </li>
@@ -541,7 +546,14 @@
                         <qualityType>Range</qualityType>
                     </li>
                     <li>
-                        <thing>MeleeWeapon_Tsurugi</thing>
+                        <thing>MeleeWeapon_Halberd</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_Buster</thing>
                         <count>1</count>
                         <stuff>Plasteel</stuff>
                         <quality>Excellent</quality>
@@ -549,6 +561,13 @@
                     </li>
                     <li>
                         <thing>MeleeWeapon_Sledgehammer</thing>
+                        <count>1</count>
+                        <stuff>Plasteel</stuff>
+                        <quality>Excellent</quality>
+                        <qualityType>Range</qualityType>
+                    </li>
+                    <li>
+                        <thing>MeleeWeapon_Slayer</thing>
                         <count>1</count>
                         <stuff>Plasteel</stuff>
                         <quality>Excellent</quality>
